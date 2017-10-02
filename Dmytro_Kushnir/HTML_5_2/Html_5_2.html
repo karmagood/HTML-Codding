@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5.2</title>
+</head>
+<body>
+
+
+<main>
+
+    <header>
+        <img title="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" height="48" width="72" alt="W3C">
+
+        <HGROUP>
+            <h1>
+                <dfn><abbr title="World Wide Web Consorcium">W3C</abbr></dfn>
+                <dfn><abbr title="Hypertext Markup Language ">HTML</abbr></dfn> 5.2
+            </h1>
+            <h2>
+                <abbr title="World Wide Web Consorcium">W3C</abbr> Candidate Recommendation,
+                <time datetime="2017-08-08">8 August 2017</time>
+            </h2>
+        </HGROUP>
+    </header>
+
+    <article>
+        <dl>
+            <dt>This version:</dt>
+            <dd><a href="#">https://www.w3.org/TR/2017/CR-html52-20170808/</a></dd>
+            <dt>Latest published version:</dt>
+            <dd><a href="#">https://www.w3.org/TR/html52/</a></dd>
+            <dt>Latest version of HTML:</dt>
+            <dd><a href="#">https://www.w3.org/TR/html/</a></dd>
+            <dt>Editor's Draft:</dt>
+            <dd><a href="#">https://w3c.github.io/html/</a></dd>
+            <dt>Previous Versions:</dt>
+            <dd><a href="#">https://www.w3.org/TR/2017/WD-html52-20170718/</a></dd>
+            <dt>Editors:</dt>
+            <dd><a href="#">Steve Faulkner</a> (The Paciello Group)</dd>
+            <dd><a href="#">Arron Eicholz</a> (Microsoft)</dd>
+            <dd><a href="#">Travis Leithead </a>(Microsoft)</dd>
+            <dd><a href="#">Alex Danilo</a> (Google)</dd>
+            <dd><a href="#">Sangwhan Moon</a> (Invited Expert)</dd>
+            <dt>Former Editors:</dt>
+            <dd><a href="#">Erika Doyle Navara</a> (Microsoft)</dd>
+            <dd><a href="#">Theresa O'Connor</a> (Apple Inc.)</dd>
+            <dd><a href="#">Robin Berjon </a>(<abbr>W3C</abbr>)</dd>
+            <dt>Participate:</dt>
+            <dd><a href="#">File an issue</a> (<a href="#">open issues</a> )</dd>
+            <dt>Others:</dt>
+            <dd><a href="#">Single page version</a></dd>
+        </dl>
+        <footer>
+            <small>
+                <a href="#"> Copyright</a> ©
+                <time datetime="2017">2017</time>
+                <a href="#"><abbr title="World Wide Web Consorcium">
+                    W3C
+                </abbr>
+                </a>® (
+                <abbr title="Massachusets Institute of Tecnology">
+                    MIT
+                </abbr>,
+                <abbr title="European Research ...whatsoever">
+                    ERCIM
+                </abbr>,
+                <a href="#">
+                    Keio
+                </a>,
+                <a href="#">
+                    Beihang
+                </a>).
+                <abbr>
+                    W3C
+                </abbr>
+                <a href="#">
+                    liability
+                </a>
+                ,
+                <a href="#">
+                    trademark
+                </a>
+                and
+                <a href="#">
+                    permissive document license
+                </a>
+                rules apply.
+            </small>
+        </footer>
+        <hr size="10" color="black">
+        <article>
+            <h2>Abstract</h2>
+
+
+            <p>This specification defines the 5th major version,
+                second minor revision of the core language of the World Wide Web:
+                the Hypertext Markup Language (HTML). In this version, new features
+                continue to be introduced to help Web application authors, new elements
+                to be introduced based on research into prevailing authoring practices,
+                and special attention continues to be given to defining clear conformance
+                criteria for user agents in an effort to improve interoperability.
+            </p>
+        </article>
+
+        <h2>Status of this document</h2>
+        <p>
+            <em>
+                This section describes the status of this document at the time of its publication.
+                Other documents may supersede this document. A list of current <abbr title="World Wide Web Consorcium">W3C</abbr>
+                publications and the latest revision of this technical report can be found in
+                the <a href="#"> <abbr title="World Wide Web Consorcium">W3C</abbr> technical reports
+                index</a> at https://www.w3.org/TR/.
+            </em>
+        </p>
+        <p>
+            This document was published by the
+        <address><a href="#">Web Platform Working Group</a></address>
+        as a Candidate Recommendation
+        for HTML 5.2, reflecting the "leading edge" of what is interoperably deployed as HTML.
+        This document is intended to become a W3C Recommendation.
+        </p>
+        <p>
+            Features which are shown not to have implementation may be removed from this specification.
+        </p>
+        <p>
+            The following features are explicitly "at risk" and unless testing during Candidate Recommendation
+            demonstrates interoperable implementation of each feature it will be removed,
+            per <a href="#"> W3C Process - 6.4 Candidate Recommendation</a>:
+        </p>
+        <ul>
+            <li>The <a href="#"><code>input/inputmode</code></a> attribute for <a href="#"><code>&ltinput&gt</code></a>
+                element
+            </li>
+            <li>The <a href="#"><code>&ltmenu&gt</code></a> and <a href="#"><code>&ltmenuitem&gt</code></a> elements
+            </li>
+            <li>The <code>allow-presentation</code> sanboxing flag for the <a href="#"><code>sandbox</code></a>
+                attribute of an <a href="#"><code>&ltiframe&gt</code></a></li>
+            <li>The <a href="#"><code>&ltdialog&gt</code></a> element</li>
+            <li>The <a href="#"> <code>datetime</code></a> state for the <a href="#"><code>&ltinput&gt</code></a>
+                element
+            </li>
+            <li>The plugin API</li>
+        </ul>
+        <small>
+            This document is governed by the <a href="#">
+            <time datetime="2017-03-01">1 March 2017</time>
+            <abbr title="World Wide Web Consorcium">W3C</abbr> Process Document </a>.
+        </small>
+    </article>
+</main>
+
+
+<header>
+    <aside>
+        <nav>
+            <h2>
+                table of contents
+            </h2>
+            <ol>
+                <li> Introduction
+                    <ol>
+                        <li>Background</li>
+                        <li>Audience</li>
+                        <li>Scope</li>
+                        <li>History</li>
+                        <li>Design notes
+                            <ol>
+                                <li>Serializability of script execution</li>
+                                <li>Compliance with other specifications</li>
+                                <li>Extensibility</li>
+                            </ol>
+                        </li>
+                        <li>HTML vs XML Syntax</li>
+                    </ol>
+                </li>
+                <li> Common infrastructure
+                <li>Terminology
+                    <ol>
+                        <li>Resources</li>
+                        <li> XML compatibility</li>
+                    </ol>
+                </li>
+            </ol>
+
+            <h3>Changes </h3>
+            <ul>
+                <li>Changes between Working Draft 2 and the First Public Working Draft</li>
+                <li>Changes since HTML 5.1 - Note that these may change if the HTML 5.1 specification is updated.</li>
+            </ul>
+            <h3> Acknowledgements </h3>
+            <ul>
+                <li>People who have contributed to this version of HTML</li>
+                <li>People who have contributed to previous revisions of HTML 5.x</li>
+            </ul>
+        </nav>
+    </aside>
+</header>
+
+</body>
+</html>
