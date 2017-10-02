@@ -1,0 +1,249 @@
+.main-nav-el,
+.search,
+.logo sub,
+.logo img
+{
+    display: inline-block;
+}
+body{
+    margin:0;
+    font-family: "Roboto", sans-serif;
+}
+.main-nav{
+    padding: 0 16px;
+}
+
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+.material-icons{
+    color: #8b898b;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.logo sup{
+    color: #8b898b;
+    font-size: 10px;
+}
+.details{
+    padding: 8px;
+    margin-right: 16px;
+}
+
+.logo a img{
+    width: 80px;
+    vertical-align: middle;
+}
+.logo{
+    width: 129px;
+}
+
+.logo a{
+    display: inline-block;
+    height: 24px;
+}
+
+.search{
+    width: 88%;
+    height: 28px;
+    /*padding: 2px 6px;*/
+}
+.search input{
+    padding-left: 1%;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #8b898b;
+    font-family: 'Roboto',sans-serif;
+    display: inline-block;
+}
+.search i{
+    display: inline-block;
+    float: right;
+    position: relative;
+    margin-top: -26px;
+    margin-right: 1%;
+
+}
+.search i:hover{
+    color: #2b2b2b;
+}
+.form-search{
+    height: 30px;
+    width: 50%;
+    margin: 0 40px;
+    border: 1px solid #d3d1d3;
+    border-radius: 2px;
+}
+
+.form-search button{
+    float: right;
+    display: inline-block;
+    background: #f2f2f2;
+    width: 10%;
+    height: 100%;
+    border-left: 1px solid #d3d1d3;
+
+}
+.form-search button:hover{
+    background: #eae8ea;
+}
+.form-search button i{
+    font-size: 20px;
+}
+
+.right-nav{
+    float: right;
+}
+.right-nav button{
+    padding: 8px;
+}
+.signin{
+    vertical-align: middle;
+    top: 16px;
+    padding: 16px;
+    color: rgb(255, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+.main-header{
+    margin: 0;
+    box-shadow: 3px 3px 2px rgba(17, 17, 17, 0.06);
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    background: #fffeff;
+    padding-top: 8px;
+}
+
+.left-menu{
+    display: inline-block;
+    background: #f6f4f6;
+    width: 240px;
+    font-size: 14px;
+    height: 100%;
+    margin-top: 56px;
+    float: left;
+}
+.left-menu nav{
+    padding: 12px 0;
+    border-bottom: 1px solid #efedef;
+
+}
+
+.red-icons{
+    width: 24px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+}
+.hover-red:hover{
+    color: red;
+}
+.hover-red{
+    vertical-align: middle;
+}
+
+.left-menu{
+    overflow-y: hidden;
+    bottom: 0;
+}
+
+
+.left-menu-el{
+    display: block;
+    font-family: "Roboto", sans-serif;
+    color: rgb(17,17,17);
+    padding: 8px 24px;
+}
+.left-menu-el:hover{
+    background-color: #eceaec;
+}
+.left-menu-el i{
+    margin-right: 26px;
+}
+.left-menu-el img{
+    margin-right: 30px;
+}
+.youtube-best,
+.see-chanel,
+.settings{
+    border-bottom: 1px solid #efedef;
+    padding: 8px 0;
+}
+.youtube-best a span{
+    line-height: 24px;
+}
+.youtube-best p{
+    font-size: 14px;
+    padding-left: 24px;
+    color: #8b898b;
+    text-transform: uppercase;
+}
+.signin-for-chanel{
+    padding: 2px 32px 16px 32px;
+    border-bottom: 1px solid #efedef;
+    color: rgb(17,17,17);
+}
+.signin-for-chanel a{
+    color: red;
+    text-transform: uppercase;
+}
+
+.left-menu footer{
+    padding: 12px 27px;
+    color: #8b898b;
+    font-size: 13px;
+}
+
+.left-menu footer a{
+    margin-right: 8px;
+    color: #8b898b;
+}
+
+main{
+    display: inline-block;
+    background: #fbf9fb;
+    margin-top: 60px;
+    padding: 0 9%;
+    width: 860px;
+
+}
+.video{
+    float: left;
+    cursor: pointer;
+    margin-right: 4px;
+    margin-bottom: 24px;
+}
+
+.video-details p{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.video-details a,
+.video-details span{
+    color: #8b898b;
+    font-size: 13px;
+}
+
+.views::after{
+    content: '•';
+    margin: 0 4px;
+}
+
+.video-details a:hover{
+    color: #2b2b2b;
+}
+
+.video-details{
+    padding-right: 24px;
+}
