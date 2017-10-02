@@ -196,3 +196,8 @@ a {
     background-color: red;
     justify-self: right;
 }*/
+
+.main_navigation{position: -webkit-sticky;
+position: sticky;
+    top: 0;
+}
