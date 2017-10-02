@@ -1,0 +1,198 @@
+* {
+    font-family: "Segoe UI", Tahoma;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main_navigation ul {
+    padding-left: 25px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #3b5998;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.main_navigation li, .language_section li {
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.main_navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.fa:hover {
+    color: black !important;
+}
+
+input[type="submit"] {
+    font-family: FontAwesome, sans-serif;
+}
+
+.separator {
+    width: 15vw;
+}
+
+body {
+    background-color: #d8dfea !important;
+    margin: 0 !important;
+}
+
+.flex-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+
+    font-weight: bold;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.flex-item {
+    margin: 5px;
+}
+
+.flex1 {
+    flex: 0.8;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 1.5;
+    margin-right: 10px;
+}
+
+.flex4 {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    flex: 0.8;
+}
+
+.main_navigation img {
+    border-radius: 30px;
+}
+
+.image-div {
+    align-items: center;
+}
+
+.flex1 ul, .flex1 aside, .flex3 ul {
+    padding-left: 20px;
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.flex1 li:hover {
+    background-color: #e9ebee;
+}
+
+.flex1 aside a {
+    display: inline-block;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.this_week_section li:hover {
+    background-color: #e9ebee;
+}
+
+.language_section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.post-item h2{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.three-section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.three-section button{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+.post-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+
+.close-classic {
+    color: dimgrey;
+    font-size: 15px;
+    position: absolute;
+    right: 1px;
+    text-decoration: none;
+    top: 1px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.close-classic:after {
+    content: 'X'; }
+
+
+
+.dialog {
+    float: left;
+    position: relative;
+}
+
+.games-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contacts section img{
+    margin-right: 5px;
+}
+/*
+.present-item{
+    background-color: red;
+    justify-self: right;
+}*/
