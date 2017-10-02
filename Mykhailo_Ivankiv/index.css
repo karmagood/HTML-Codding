@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-image: url("pattern.svg");
+    color: #ecf0f1;
+    font-family: "PT Serif", sans-serif;
+}
+
+div {
+
+    min-height: 40px;
+    margin: 10px;
+    border: 2px dashed black;
+}
+
+#id1 {
+    background-color: #1abc9c;
+}
+
+#id2 {
+    height: 100px;
+    width: 100px;
+    background-color: #c0392b;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    margin: 0;
+}
+#id3 {
+    background-color: #9b59b6;
+    position: relative;
+}
