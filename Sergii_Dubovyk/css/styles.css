@@ -9,7 +9,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: fixed;
+    /*position: fixed;*/
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 .page-header {
@@ -62,7 +65,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 3%;
     width: 40%;
     padding-bottom: 7px;
     padding-top: 7px;
@@ -76,6 +78,7 @@ body{
 }
 
 .search form, input{
+    display: flex;
     align-self: flex-start;
     margin-left: auto;
     height: 24px;
@@ -85,13 +88,22 @@ body{
     border-bottom-left-radius: 3px;
 }
 
+.search button{
+    float: left;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: none;
+}
+
 *, ::after, ::before {
     box-sizing: inherit;
 }
 
 .left-sidebar {
     width: 15%;
-    padding-left: 3%;
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: -50px;*/
     position: fixed;
 /*    border: 2px #000 dotted;*/
 }
@@ -101,8 +113,9 @@ body{
 }
 
 .left-sidebar section a{
-    width: inherit;
-    padding: 4px;
+    width: 80%;
+    padding-top: 4px;
+    padding-bottom: 4px;
     display: block;
     font-weight: lighter;
     color: #000000;
@@ -137,11 +150,11 @@ section a.active{
 .content {
     background-color: #e9ebee;
     max-width: 100%;
-    margin: 0px;
-    padding-top: 75px;
+    padding-left: 5%;
+    padding-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .main-area {
@@ -152,7 +165,7 @@ section a.active{
 }
 
 .content-main{
-    width: 55%;
+    width: 60%;
     padding-left: 18%;
     margin-left: 20px;
 }
@@ -186,7 +199,8 @@ section a.active{
 
 .messages{
     width: 15%;
-    height: 90%;
+    padding-top: 55px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -194,6 +208,12 @@ section a.active{
     right:0;
     /*border: 2px #000 dotted;*/
 }
+
+
+.messages ul::-webkit-scrollbar {
+    display: none;
+}
+
 
 .messages ul {
     overflow-y: scroll;
@@ -221,10 +241,12 @@ section a.active{
 }
 
 .right-sidebar{
-    max-width: 20%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    max-width: 30%;
     margin-left: 15px;
     margin-right: 15px;
-
 }
 
 .right-sidebar img{
