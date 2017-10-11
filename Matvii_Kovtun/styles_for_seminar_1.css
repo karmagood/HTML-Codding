@@ -1,0 +1,33 @@
+body {
+            font-family: "PT Serif", serif;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 8px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "PT Sans", sans-serif;
+        }
+
+        code {
+            border-radius: 5px;
+            font-family: "Fira Code", monospace;
+        }
+
+        blockquote {
+            border-left: 2px double black;
+            padding-left: 12px;
+            position: relative;
+        }
+
+        blockquote:before {
+            content: "\"";
+            position: absolute;
+            left: -25px;
+            top: -12px;
+            font-size: 50px;
+            font-family: "PT Sans", serif;
+        }
+
