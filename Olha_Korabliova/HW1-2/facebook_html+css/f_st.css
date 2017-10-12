@@ -1,0 +1,336 @@
+body {
+    margin: 0;
+    background-color: #E9EBEE;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*===================================================*/
+
+header {
+    position: fixed;
+    height: 45px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    background-color: #4267B2;
+    border-bottom: #29487d solid 1px;
+}
+
+header * {
+    position: absolute;
+    width: 1220px;
+    left: calc(50% - 610px);
+}
+
+a.h-icon i {
+    color: #1A2947;
+    margin: 10px;
+    font-size: 25px;
+}
+
+a.h-icon:hover i {
+    color: #0D1524;
+}
+
+a#logo {
+    margin: 5px 0 0 10px;
+    font-size: 30px;
+}
+
+header input[type="search"] {
+    left: 45px;
+    margin-top: 10px;
+    width: 500px;
+    height: 24px;
+}
+
+header i.fa.fa-search {
+    left: 550px;
+    margin: 10px 5px 5px 1px;
+    background-color: #F6F7F9;
+    font-size: 15px;
+    padding: 5px 15px 5px 10px;
+    border-radius: 2px;
+    width: 10px;
+}
+
+header i.fa.fa-search:hover {
+    background-color: #D6D6D6;
+}
+
+a#user-name .userpic {
+    left: 650px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+a#user-name span {
+    left: 680px;
+}
+
+a#home {
+    left: 730px;
+}
+
+a#user-name span, a#home {
+    padding: 2px 10px 2px 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Gill Sans, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+a#friend-req {
+    left: 850px;
+}
+
+a#messages {
+    left: 890px;
+}
+
+a#notifications {
+    left: 930px;
+}
+
+a#help {
+    left: 990px;
+}
+
+a#other-info {
+    left: 1030px;
+}
+
+/*===================================================*/
+
+.payload {
+    position: absolute;
+    width: 1220px;
+    top: 45px;
+    background-color: #1abc9c;
+    left: calc(50% - 610px);
+}
+
+/*===================================================*/
+
+.tool-bar {
+    position: fixed;
+    top: 45px;
+    width: 280px;
+    line-height: 25px;
+    overflow: auto;
+    bottom: 0;
+    padding-left: 10px;
+}
+
+.tool-bar h3 {
+    color: #4B4F56;
+}
+
+.tool-bar li:not(.see-more-li):hover {
+    background-color: #F6F7F9;
+    text-decoration: none;
+    padding: 5px;
+    border: #dddfe2 solid 1px;
+    border-radius: 3px;
+}
+
+.tool-bar li:not(.see-more-li):active {
+    background-color: #DDDFE2;
+}
+
+.tool-bar li {
+    padding: 5px;
+}
+
+/*===================================================*/
+
+.news-feed {
+    position: absolute;
+    left: 280px;
+    top: 0;
+    width: 610px;
+    margin: 10px;
+}
+
+section#post-field {
+    display: block;
+    /*position: relative;*/
+    border: #dddfe2 solid 1px;
+    border-radius: 3px;
+}
+
+div#make-post {
+    background-color: #F6F7F9;
+    padding: 10px;
+    border-bottom: #dddfe2 solid 1px;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+}
+
+section#post-field form, div#add-content {
+    padding: 10px;
+    size: 50px;
+    background: white;
+}
+
+div#add-content {
+    padding: 10px;
+    border-top: #dddfe2 solid 1px;
+}
+
+div#add-content a {
+    background-color: #F6F7F9;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+div#add-content a:hover {
+    background-color: #DDDFE2;
+}
+
+section#facebook-post div {
+    display: block;
+    background-color: white;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border: #dddfe2 solid 1px;
+    border-radius: 3px;
+}
+
+/*===================================================*/
+
+.ad-feed {
+    position: absolute;
+    left: 920px;
+    top: 0;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.ad-feed section {
+    margin: 10px auto 10px auto;
+    padding: 5px;
+}
+
+a.new-story img {
+    height: 45px;
+    border: #557AD5 solid 2px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+#stories div {
+    display: inline-block;
+    margin: 0 2px 0 2px;
+    padding: 2px;
+    background-color: #F6F7F9;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.ad-feed h4 {
+    color: #90949C;
+    margin: 5px;
+}
+
+#stories, #unread-notif, #friend-suggestion {
+    border: #dddfe2 solid 1px;
+    border-radius: 3px;
+    background-color: white;
+}
+
+#stories {
+    margin: 0;
+}
+
+.ad-feed a, .like-com-share i {
+    color: #616770;
+}
+
+#unread-notif li {
+    padding: 2px;
+    margin: 2px;
+}
+
+#unread-notif li:hover {
+    background-color: #F6F7F9;
+    border-radius: 3px;
+}
+
+#friend-suggestion {
+    display: block;
+    padding: 8px;
+}
+
+#friend-suggestion .user-profile img {
+    position: absolute;
+    left: 10px;
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#friend-suggestion p {
+    position: relative;
+    left: 65px;
+    top: 5px;
+    font-size: 13px;
+}
+
+/*===================================================*/
+
+time {
+    color: #90949C;
+}
+
+img.userpic {
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+main a.user-profile:hover, a.add-info:hover {
+    text-decoration: underline;
+}
+
+a:not(.see-more):link, a:not(.see-more):visited {
+    color: black;
+    text-decoration: none;
+}
+
+#unread-notif a, div.language a:not(#eng), .who-liked i,
+#facebook-post .user-profile, #facebook-post .add-info {
+    color: #365899;
+}
+
+div.language a:not(#eng):hover {
+    text-decoration: underline;
+}
+
+#facebook-info {
+    padding: 0;
+}
+
+#facebook-info div {
+    border: #dddfe2 solid 1px;
+    border-radius: 3px;
+    background-color: white;
+    padding: 5px;
+}
+
+#facebook-info footer a, #eng {
+    color: #616770;
+    padding: 5px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
