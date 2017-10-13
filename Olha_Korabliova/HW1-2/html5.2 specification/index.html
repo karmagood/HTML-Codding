@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5.2 Specification</title>
+</head>
+<body>
+<p>↑ Jump to Table of Contents← Collapse Sidebar</p>
+<img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" width="80">
+<h1>HTML 5.2</h1>
+<h2>W3C Candidate Recommendation, 8 August 2017</h2>
+<div>
+    <dl>
+        <dt>This version:</dt>
+        <dd><a href="https://www.w3.org/TR/2017/CR-html52-20170808/">https://www.w3.org/TR/2017/CR-html52-20170808/</a>
+        </dd>
+        <dt>Latest published version:</dt>
+        <dd><a href="https://www.w3.org/TR/html52/">https://www.w3.org/TR/html52/</a></dd>
+        <dt>Latest version of HTML:</dt>
+        <dd><a href="https://www.w3.org/TR/html/">https://www.w3.org/TR/html/</a></dd>
+        <dt>Editor's Draft:</dt>
+        <dd><a href="https://w3c.github.io/html/">https://w3c.github.io/html/</a></dd>
+        <dt>Previous Versions:</dt>
+        <dd><a href="https://www.w3.org/TR/2017/WD-html52-20170718/">https://www.w3.org/TR/2017/WD-html52-20170718/</a>
+        </dd>
+        <dt>Editors:</dt>
+        <dd>Steve Faulkner (The Paciello Group)</dd>
+        <dd>Arron Eicholz (Microsoft)</dd>
+        <dd>Travis Leithead (Microsoft)</dd>
+        <dd>Alex Danilo (Google)</dd>
+        <dd>Sangwhan Moon (Invited Expert)</dd>
+        <dt>Former Editors:</dt>
+        <dd>Erika Doyle Navara (Microsoft)</dd>
+        <dd>Theresa O'Connor (Apple Inc.)</dd>
+        <dd>Robin Berjon (W3C)</dd>
+        <dt>Default Ref Status:</dt>
+        <dd></dd>
+        snapshot
+    </dl>
+    <dt>Participate:</dt>
+    <dd>File an issue (open issues)</dd>
+    <dt>Others:</dt>
+    <dd>Single page version</dd>
+    </dl>
+    <p>Copyright © 2017 W3C® (MIT, ERCIM, Keio, Beihang). W3C liability, trademark and permissive document license rules
+        apply. </p>
+</div>
+<div>
+    <h2>Abstract</h2>
+
+    <p>This specification defines the 5th major version, second minor revision of the core language of the World Wide
+        Web: the Hypertext Markup Language (HTML). In this version, new features continue to be introduced to help Web
+        application authors, new elements continue to be introduced based on research into prevailing authoring
+        practices, and special attention continues to be given to defining clear conformance criteria for user agents in
+        an effort to improve interoperability.</p>
+    <h2>Status of this document</h2>
+
+    <p><i>This section describes the status of this document at the time of its publication. Other documents may
+        supersede this document. A list of current W3C publications and the latest revision of this technical report can
+        be found in the W3C technical reports index at https://www.w3.org/TR/.</i></p>
+
+    <p>This document was published by the Web Platform Working Group as a Candidate Recommendation for HTML 5.2,
+        reflecting the "leading edge" of what is interoperably deployed as HTML. This document is intended to become a
+        W3C Recommendation.</p>
+
+    <p>Features which are shown not to have implementation may be removed from this specification.</p>
+
+    <p>The following features are explicitly "at risk" and unless testing during Candidate Recommendation demonstrates
+        interoperable implementation of each feature it will be removed, per W3C Process - 6.4 Candidate Recommendation:
+    <ul>
+        <li>The input/inputmode attribute for input elements</li>
+        <li>The menu and menuitem elements</li>
+        <li>The allow-presentation sanboxing flag for the sandbox attribute of an iframe</li>
+        <li>The dialog element</li>
+        <li>The datetime state for the input element</li>
+        <li>The plugin API</li>
+    </ul>
+    <p>If you wish to make comments regarding this document, please send them to this specification's GitHub repository
+        or public mailing list public-html@w3.org (archived, see instructions). When sending e-mail, please put the text
+        “html” in the subject, preferably like this: “[html] …summary of comment…“. All comments are welcome.</p>
+
+    <p>The Working Group expects to demonstrate 2 implementations of the features listed in this specification by the
+        end of the Candidate Recommendation phase. An implementation report will be produced for this version to
+        demonstrate that in almost every case changes are matched by interoperable implementation.</p>
+
+    <p>W3C publishes a Candidate Recommendation to indicate that the document is believed to be stable and to encourage
+        implementation by the developer community. This Candidate Recommendation is expected to advance to Proposed
+        Recommendation no earlier than 5 September 2017.</p>
+
+    <p>Publication as a Candidate Recommendation does not imply endorsement by the W3C Membership. This is a draft
+        document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite
+        this document as other than work in progress.</p>
+
+    <p>This document was produced by a group operating under the 5 February 2004 W3C Patent Policy. W3C maintains a
+        public list of any patent disclosures made in connection with the deliverables of the group; that page also
+        includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the
+        individual believes contains Essential Claim(s) must disclose the information in accordance with section 6 of
+        the W3C Patent Policy.</p>
+
+    <p>This document is governed by the 1 March 2017 W3C Process Document.</p>
+    <nav>
+        <h2>Table of Contents</h2>
+        <ol>
+            <li>1 Introduction</li>
+            <ol>
+                <li>1.1 Background</li>
+                <li>1.2 Audience</li>
+                <li>1.3 Scope</li>
+                <li>1.4 History</li>
+                <li>1.5 Design notes</li>
+                <ol>
+                    <li>1.5.1 Serializability of script execution</li>
+                    <li>1.5.2 Compliance with other specifications</li>
+                    <li>1.5.3 Extensibility</li>
+                </ol>
+                <li>1.6 HTML vs XML Syntax</li>
+                <li>1.7 Structure of this specification</li>
+                <ol>
+                    <li>1.7.1 How to read this specification</li>
+                    <li>1.7.2 Typographic conventions</li>
+                </ol>
+                <li>1.8 Privacy concerns</li>
+                <li>1.9 A quick introduction to HTML</li>
+                <ol>
+                    <li>1.9.1 Writing secure applications with HTML</li>
+                    <li>1.9.2 Common pitfalls to avoid when using the scripting APIs</li>
+                    <li>1.9.3 How to catch mistakes when writing HTML: validators and conformance checkers</li>
+                </ol>
+                <li>1.10 Conformance requirements for authors</li>
+                <ol>
+                    <li>1.10.1 Presentational markup</li>
+                    <li>1.10.2 Syntax errors</li>
+                    <li>1.10.3 Restrictions on content models and on attribute values</li>
+                </ol>
+                <li>1.11 Suggested reading</li>
+            </ol>
+        </ol>
+    </nav>
+</div>
+<div>
+    <ul><p>#willful-violationReferenced in:</p>
+
+        <li>2.2.2. Dependencies (2)</li>
+        <li>2.2.4. Interactions with XPath and XSLT (2)</li>
+        <li>4.10.5.1.5. E-mail state (type=email)</li>
+        <li>7.1.3.7. Integration with the JavaScript job queue</li>
+        <li>9.2. Parsing XML documents (2)</li>
+        <li>11.3.4. Other elements, attributes and APIs</li>
+    </ul>
+    <ul><p>#thisReferenced in:</p>
+
+        <li>1.7.2. Typographic conventions (2)</li>
+    </ul>
+    <ul><p>#elementdef-thisReferenced in:</p>
+
+        <li>1.7.2. Typographic conventions</li>
+    </ul>
+
+    <ul><p>#fingerprinting-vectorReferenced in:</p>
+
+        <li>1.8. Privacy concerns</li>
+        <li>2.1.5. Plugins</li>
+        <li>2.2.1. Conformance classes</li>
+        <li>2.6.2. Processing model</li>
+        <li>3.1.2. Resource metadata management</li>
+        <li>4.7.13.6. Offsets into the media resource</li>
+        <li>4.10.5.1.19. Submit Button state (type=submit)</li>
+        <li>4.10.5.1.21. Reset Button state (type=reset)</li>
+        <li>7.7.1.5. Plugins (2)</li>
+    </ul>
+
+    <ul><p>#documentReferenced in:</p>
+
+        <li>2.1. Terminology</li>
+        <li>10.4.2. Images</li>
+    </ul>
+
+    <ul><p>#html-documentReferenced in:</p>
+
+        <li>2.1. Terminology</li>
+        <li>2.2.2. Dependencies</li>
+        <li>2.2.4. Interactions with XPath and XSLT</li>
+        <li>2.5.1. Terminology</li>
+        <li>3.2.5. Global attributes</li>
+        <li>3.2.5.2. The lang and xml:lang attributes (2) (3)</li>
+        <li>3.2.5.4. The xml:base attribute (XML only)</li>
+        <li>3.2.5.7. Embedding custom non-visible data with the data-* attributes</li>
+        <li>4.2.5.3. Pragma directives</li>
+        <li>4.2.5.5. Specifying the document’s character encoding (2)</li>
+        <li>4.7.6. The iframe element</li>
+        <li>4.7.7. The embed element</li>
+        <li>4.7.18. SVG</li>
+        <li>4.12.2. The noscript element (2) (3)</li>
+        <li>4.12.3. The template element (2)</li>
+        <li>4.15.1. Case-sensitivity (2) (3)</li>
+        <li>6.1. Browsing contexts</li>
+        <li>6.7.1. Navigating across documents</li>
+        <li>6.7.2. Page load processing model for HTML files</li>
+        <li>6.7.4. Page load processing model for text files</li>
+        <li>6.7.6. Page load processing model for media</li>
+        <li>6.7.7. Page load processing model for content that uses plugins</li>
+        <li>6.7.8. Page load processing model for inline content that doesn’t have a DOM</li>
+        <li>7.4. Dynamic markup insertion</li>
+        <li>8.2. Parsing HTML documents</li>
+        <li>8.4. Parsing HTML fragments</li>
+        <li>10.3.9. Tables</li>
+        <li>12.1. text/html</li>
+    </ul>
+
+    <ul><p>#xml-documentReferenced in:</p>
+
+        <li>2.1. Terminology (2)</li>
+        <li>2.2.2. Dependencies</li>
+        <li>3.2.2. Elements in the DOM</li>
+        <li>3.2.5. Global attributes (2)</li>
+        <li>3.2.5.2. The lang and xml:lang attributes</li>
+        <li>3.2.5.4. The xml:base attribute (XML only)</li>
+        <li>4.2.5. The meta element</li>
+        <li>4.2.5.3. Pragma directives (2)</li>
+        <li>4.7.6. The iframe element (2)</li>
+        <li>4.12.2. The noscript element</li>
+        <li>4.15.1. Case-sensitivity (2)</li>
+        <li>6.7.1. Navigating across documents (2)</li>
+        <li>7.4. Dynamic markup insertion</li>
+        <li>7.4.1. Opening the input stream (2)</li>
+        <li>7.4.2. Closing the input stream (2)</li>
+        <li>7.4.3. document.write() (2)</li>
+        <li>7.4.4. document.writeln()</li>
+        <li>9.2. Parsing XML documents (2)</li>
+    </ul>
+
+    <ul><p>#in-parallelReferenced in:</p>
+
+        <li>2.6.2. Processing model</li>
+        <li>4.7.5. The img element (2) (3) (4) (5)</li>
+        <li>4.7.6. The iframe element</li>
+        <li>4.7.13.5. Loading the media resource (2) (3) (4) (5) (6)</li>
+        <li>4.7.13.9. Seeking</li>
+        <li>4.7.13.11.3. Sourcing out-of-band text tracks (2)</li>
+        <li>4.8.5. Downloading resources</li>
+        <li>4.8.6.5. Link type "icon"</li>
+        <li>4.10.5.1.18. File Upload state (type=file)</li>
+        <li>4.12.1. The script element (2) (3) (4) (5) (6)</li>
+        <li>4.12.4. The canvas element</li>
+        <li>6.6.2. The History interface</li>
+        <li>6.7.1. Navigating across documents (2) (3)</li>
+        <li>7.1.3.2. Fetching scripts</li>
+        <li>7.1.4.2. Processing model (2) (3)</li>
+        <li>7.5. Timers</li>
+        <li>7.6.2. Printing</li>
+        <li>7.8. Images (2) (3) (4) (5) (6) (7)</li>
+    </ul>
+</div>
+
+</body>
+</html>

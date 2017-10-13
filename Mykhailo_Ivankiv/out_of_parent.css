@@ -1,0 +1,19 @@
+body {
+    color: #ecf0f1;
+    font-family: "PT Sans", sans-serif;
+    margin: 0;
+    background: #3498db;
+    background-image: url("pattern.svg");
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    border: 2px dashed black;
+    margin: 50px;
+}
+
+#id1 {background-color: #1abc9c;}
+#id2 {background-color: #c0392b;}
+#id3 {background-color: #9b59b6;}

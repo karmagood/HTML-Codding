@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5.2</title>
+</head>
+<body>
+<div>
+    <header>
+        <h1>HTML 5.2</h1>
+        <h2>
+             <span>
+                 Editor's Draft,
+                 <time datetime="2017-09-20">20 September 2017</time>
+             </span>
+        </h2>
+    </header>
+    <div>
+        <dl>
+            <dt>
+                This version:
+            </dt>
+            <dd>
+                <a href="https://w3c.github.io/html/">https://w3c.github.io/html/</a>
+            </dd>
+            <dt>
+                Latest published version:
+            </dt>
+            <dd>
+                <a href="https://www.w3.org/TR/html52/">https://www.w3.org/TR/html52/</a>
+            </dd>
+            <dt>
+                Editors:
+            </dt>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Steve Faulkner</a>
+                <span>(The Paciello Group)</span>
+            </dd>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Aaron Eicholz</a>
+                <span>(Microsoft)</span>
+            </dd>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Travis Leithhead</a>
+                <span>(Microsoft)</span>
+            </dd>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Alex Danilo</a>
+                <span>(Google)</span>
+            </dd>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Sangwhan Moon</a>
+                <span>(W3C)</span>
+            </dd>
+            <dt>
+                Former Editors:
+            </dt>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Erika Doyle Navara</a>
+                <span>(Microsoft)</span>
+            </dd>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Theresa O'Connor</a>
+                <span>(Apple Inc.)</span>
+            </dd>
+            <dd>
+                <a href="mailto:sfaulkner@paciellogroup.com">Robin Berjon</a>
+                <span>(W3C)</span>
+            </dd>
+            <dt>
+                Default Ref Status:
+            </dt>
+            <dd>
+                <span>snapshot</span>
+            </dd>
+            <dt>
+                Participate:
+            </dt>
+            <dd>
+                <a href="https://github.com/w3c/html/issues/new">File an issue</a>
+                <span>(<a href="https://github.com/w3c/html/issues">Open issues</a>)</span>
+            </dd>
+            <dt>
+                Others:
+            </dt>
+            <dd>
+                <a href="https://w3c.github.io/html/single-page.html">Single page version</a>
+            </dd>
+        </dl>
+    </div>
+    <div>
+        <p>
+            <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a>
+            @ 2017
+            <a href="http://www.w3.org/">
+                <abbr title="World Wide Web Consortium">W3C</abbr>
+            </a>
+            <sup>®</sup>
+            (
+            <a href="http://www.csail.mit.edu/">
+                <abbr title="Massachusetts Institute of Technology">MIT</abbr>
+            </a>
+            ,
+            <a href="http://www.ercim.eu/">
+                <abbr title="Massachusetts Institute of Technology">ERCIM</abbr>
+            </a>
+            ). W3C
+            <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>
+            ,
+            <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a>
+            and
+            <a href="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document
+                license</a>
+            rules apply.
+        </p>
+        <hr>
+    </div>
+    <div>
+        <h2><span>Abstract</span></h2>
+        <p>This specification defines the 5th major version, second minor revision of the core language of the World
+            Wide Web: the Hypertext Markup Language (HTML).
+            In this version, new features continue to be introduced to help Web application authors, new elements
+            continue to be introduced based on research into prevailing authoring practices,
+            and special attention continues to be given to defining clear conformance criteria for user agents in an
+            effort to improve interoperability.</p>
+    </div>
+    <div>
+        <h2><span>Status of this document</span></h2>
+        <p>This section describes the status of this document at the time of its publication. Other documents may
+            supersede this document.
+            A list of current <abbr title="World Wide Web">W3C</abbr> publications and the latest revision of this
+            technical report can be found in the <a href="http://www.w3.org/TR/">W3C technical reports index</a> at
+            http://www.w3.org/TR/.</p>
+        <p>This document was published by the <a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working
+            Group</a> as a Editors Draft. This document is intended to become a W3C Recommendation. Feedback and
+            comments on this specification are welcome.
+            Please use <a href="https://github.com/w3c/html/issues">Github issues</a>. Historical discussions can be
+            found in the <a href="http://lists.w3.org/Archives/Public/public-html/">public-html@w3.org archives.</a></p>
+    </div>
+    <div>
+        <h2><span>Table of Contents</span></h2>
+        <ol>
+            <li>Introduction</li>
+            <ol>
+                <li>Background</li>
+                <li>Audience</li>
+                <li>Scope</li>
+                <li>History</li>
+                <li>Design notes</li>
+                <ol>
+                    <li>Serializability of script execution</li>
+                    <li>Compliance with other specifications</li>
+                    <li>Extensibility</li>
+                </ol>
+                <li>HTML vs XML Syntax</li>
+                <li>Structure of this specification</li>
+                <ol>
+                    <li>How to read this specification</li>
+                    <li>Typographic conventions</li>
+                </ol>
+                <li>Privacy concerns</li>
+            </ol>
+            <li>Common infrastructure</li>
+            <ol>
+                <li>Terminology</li>
+            </ol>
+        </ol>
+    </div>
+</div>
+</body>
+</html>

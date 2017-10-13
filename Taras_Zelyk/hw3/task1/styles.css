@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    height: 100%;
+    margin: 0 auto;
+    width: 600px;
+}
+
+aside {
+    background-color: #2ECC71;
+    display: inline-block;
+    float: right;
+    height: 80%;
+    width: 20%;
+}
+
+footer {
+    background-color: #F39C12;
+    clear: both;
+    height: 10%;
+    width: 100%;
+}
+
+header {
+    background-color: #9B59B6;
+    height: 10%;
+    width: 100%;
+}
+
+html, body {
+    height: 100%;
+}
+
+main {
+    background-color: #E74C3C;
+    display: inline-block;
+    float: left;
+    height: 80%;
+    width: 80%;
+}
+
+p {
+    padding: 10px;
+}
