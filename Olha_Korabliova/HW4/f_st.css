@@ -19,8 +19,10 @@ header {
 
 header * {
     position: absolute;
-    width: 1220px;
-    left: calc(50% - 610px);
+    width: 1200px;
+    /*left: calc(50% - 610px);*/
+    left: calc(25% - 300px);
+    right: calc(75% - 900px);
 }
 
 a.h-icon i {
@@ -106,10 +108,10 @@ a#other-info {
 
 .payload {
     position: absolute;
-    width: 1220px;
+    width: 1200px;
     top: 45px;
-    background-color: #1abc9c;
-    left: calc(50% - 610px);
+    left: calc(25% - 300px);
+    right: calc(75% - 900px);
 }
 
 /*===================================================*/
@@ -117,7 +119,7 @@ a#other-info {
 .tool-bar {
     position: fixed;
     top: 45px;
-    width: 280px;
+    width: 240px;
     line-height: 25px;
     overflow: auto;
     bottom: 0;
@@ -148,19 +150,19 @@ a#other-info {
 
 .news-feed {
     position: absolute;
-    left: 280px;
+    left: 240px;
     top: 0;
-    width: 610px;
+    width: 550px;
     margin: 10px;
 }
 
-section#post-field {
+#post-field {
     display: block;
     border: #dddfe2 solid 1px;
     border-radius: 3px;
 }
 
-div#make-post {
+#make-post {
     background-color: #F6F7F9;
     padding: 10px;
     border-bottom: #dddfe2 solid 1px;
@@ -168,30 +170,29 @@ div#make-post {
     font-weight: bold;
 }
 
-
-section#post-field form, div#add-content {
+#post-field form, #add-content {
     padding: 10px;
     size: 50px;
     background: white;
 }
 
-div#add-content {
+#add-content {
     padding: 10px;
     border-top: #dddfe2 solid 1px;
 }
 
-div#add-content a {
+#add-content a {
     background-color: #F6F7F9;
     border-radius: 10px;
     padding: 5px;
     margin: 5px;
 }
 
-div#add-content a:hover {
+#add-content a:hover {
     background-color: #DDDFE2;
 }
 
-section#facebook-post div {
+#facebook-post div {
     display: block;
     background-color: white;
     margin: 10px auto 10px auto;
@@ -213,9 +214,9 @@ section#facebook-post div {
 
 .ad-feed {
     position: absolute;
-    left: 920px;
+    left: 810px;
     top: 0;
-    width: 300px;
+    width: 290px;
     margin-top: 10px;
 }
 
@@ -293,7 +294,95 @@ a.new-story img {
 
 /*===================================================*/
 
-time {
+.friends-and-games {
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    overflow: auto;
+    z-index: -1;
+    border: #a1a6ba solid 1px;
+    padding-left: 5px;
+}
+
+.friends-and-games h6 {
+    margin: 5px;
+    color: #a1a6ba;
+}
+
+.friends-and-games h6 a {
+    color: #a1a6ba;
+    float: right;
+}
+
+.friends-and-games img {
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+#your-games, #recommended-games {
+    border-bottom: #a1a6ba solid 1px;
+    padding-bottom: 5px;
+}
+
+#online-friends, #more-contacts {
+    overflow: auto;
+    position: relative;
+    height: 210px;
+    padding: 3px;
+    margin: 3px;
+}
+
+#online-friends {
+    border-bottom: #a1a6ba solid 1px;
+}
+
+#more-contacts {
+    border-top: #a1a6ba solid 1px;
+}
+
+#online-friends a, #more-contacts a {
+    line-height: 3px;
+}
+
+#more-contacts h5 {
+    padding-top: 5px;
+    margin: 2px;
+}
+
+#online-friends span {
+    background: #42b72a;
+    border-radius: 50%;
+    display: inline-block;
+    height: 6px;
+    margin-left: 4px;
+    width: 6px;
+}
+
+.friends-and-games footer input {
+    position: absolute;
+    width: 90%;
+    height: 25px;
+    bottom: 0;
+    left: 0;
+    border: #a1a6ba solid 1px;
+    border-radius: 3px;
+}
+
+.friends-and-games footer button {
+    position: absolute;
+    bottom: 0;
+    left: 90%;
+    width: 10%;
+    padding: 5px 5px 5px 3px;
+    height: 25px;
+}
+
+/*===================================================*/
+
+time, #friend-suggestion .mutual-frs {
     color: #90949C;
 }
 
@@ -316,7 +405,8 @@ a:not(.see-more):link, a:not(.see-more):visited {
 }
 
 #unread-notif a, div.language a:not(#eng), .who-liked i,
-#facebook-post .user-profile, #facebook-post .add-info {
+#facebook-post .user-profile, #facebook-post .add-info,
+#friend-suggestion a.user-name {
     color: #365899;
 }
 

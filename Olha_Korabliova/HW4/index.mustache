@@ -241,8 +241,8 @@
                              src="{{user-picture}}"/>
                     </a>
                     <p>
-                        <a href="{{user-link}}">{{user-name}}</a><br>
-                        <a href="#">{{mutual-friends}}</a><br>
+                        <a class="user-name" href="{{user-link}}">{{user-name}}</a><br>
+                        <a class="mutual-frs" href="#">{{mutual-friends}}</a><br>
                         <button>
                             <i class="fa fa-user-plus"></i>
                             Add Friend
@@ -250,7 +250,6 @@
                     </p>
                 </div>
             {{/friends-suggestions}}
-
         </section>
         <section id="facebook-info">
             <small>
@@ -274,5 +273,67 @@
         </section>
     </aside>
 </section>
+<aside class="friends-and-games">
+    <section id="games">
+        <div id="your-games">
+            <h6>YOUR GAMES
+                <small>
+                    <a href="#" class="see-more">MORE</a>
+                </small>
+            </h6>
+            {{#user-games}}
+                <a href="{{game-link}}">
+                    <img src="{{img-src}}"/>
+                </a>
+            {{/user-games}}
+        </div>
+        <div id="recommended-games">
+            <h6>RECOMMENDED GAMES
+                <small>
+                    <a href="#" class="see-more">MORE</a>
+                </small>
+            </h6>
+            <a href="#"><i class="material-icons">keyboard_arrow_left</i></a>
+            {{#games-suggestions}}
+                <a href="{{game-link}}">
+                    <img src="{{img-src}}"/>
+                </a>
+            {{/games-suggestions}}
+            <a href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+        </div>
+    </section>
+    <section id="online-friends">
+        {{#online-friends}}
+            <a href="{{user-link}}">
+                <p>
+                    <img src="{{user-pic}}"/>
+                    <small>{{user-name}}</small>
+                    <span></span>
+                </p>
+            </a>
+        {{/online-friends}}
+    </section>
+    <section id="more-contacts">
+        <h5 style="color: black;">MORE CONTACTS</h5>
+        {{#more-friends}}
+            <a href="{{user-link}}">
+                <p>
+                    <img src="{{user-pic}}"/>
+                    <small>{{user-name}}</small>
+                    <span></span>
+                </p>
+            </a>
+        {{/more-friends}}
+    </section>
+    <footer>
+        <form action="#">
+            <input type="search" placeholder="Search">
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </footer>
+</aside>
+
 </body>
 </html>
