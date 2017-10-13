@@ -6,6 +6,8 @@ ul {
     list-style-type: none;
 }
 
+.main_navigation{position: fixed;
+    top: 0; z-index: 1; width: 100%;}
 .main_navigation ul {
     padding-left: 25px;
     padding-right: 10px;
@@ -15,6 +17,7 @@ ul {
     background-color: #3b5998;
     font-weight: bold;
     font-size: 13px;
+    margin: 0 !important;
 }
 
 .main_navigation li, .language_section li {
@@ -48,44 +51,54 @@ body {
 }
 
 .flex-container {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-
-    font-weight: bold;
-    align-items: flex-start;
-    justify-content: space-between;
+    position: absolute;
+    width: 1014px;
+    top: 50px;
+    left: calc(43% - 507px);
 }
 
-.flex-item {
-    margin: 5px;
-}
 
 .flex1 {
-    flex: 0.8;
-}
-
-.flex2 {
-    flex: 2;
-}
-
-.flex3 {
-    flex: 1.5;
+    position: fixed;
+    top: 50px;
+    width: 184px;
     margin-right: 10px;
 }
 
-.flex4 {
-    margin-top: 0 !important;
-    margin-left: 0 !important;
-    flex: 0.8;
+.flex2 {
+    margin-right: 10px;
+    position: absolute;
+    left: 194px;
+    top: 0;
+    width: 500px;
 }
 
-.main_navigation img {
+.flex3 {
+    position: absolute;
+    left: 704px;
+    top: 0;
+    width: 308px;
+}
+
+.flex4 {
+   position: fixed;
+    overflow-y: scroll;
+    height: 100%;    top:50px;
+    right:0;
+    bottom: 0;
+    width:200px;
+}
+
+@media screen and (max-width: 1220px){
+    .flex4{display: none}
+}
+
+@media screen and (max-width: 1220px) {
+    .flex-container{
+        left: calc(50% - 507px);
+    }
+}
+    .main_navigation img {
     border-radius: 30px;
 }
 
@@ -191,8 +204,3 @@ a {
 .contacts section img{
     margin-right: 5px;
 }
-/*
-.present-item{
-    background-color: red;
-    justify-self: right;
-}*/
