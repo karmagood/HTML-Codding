@@ -17,6 +17,7 @@ header{
 h1{
     padding: 10px 20px;
     margin: 0;
+    overflow: auto;
 }
 
 .main{
@@ -58,6 +59,7 @@ footer{
     background-color: bisque;
     padding: 10px;
     font-family:PT Sans, sans-serif;
+    overflow: auto;
 }
 
 
