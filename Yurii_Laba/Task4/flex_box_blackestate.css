@@ -1,0 +1,116 @@
+body{
+    margin: 0 250px;
+}
+.flex-container1 {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 100px;
+}
+
+.start-inf h1{
+
+     width: 200px;
+
+     margin: 10px;
+     font-weight: normal;
+     font-size: 30px;
+     line-height: 1.2;
+}
+
+.start-inf h6{
+
+    width: 200px;
+
+    margin: 10px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.start-inf p{
+    width: 200px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.start-inf1 {
+    align-self:flex-end;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+
+
+
+.flex-container2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.flex-container2 h3{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.flex-container2 img{
+    margin-left: 100px;
+}
+
+.flex-container3 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.flex-container3 h3{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+}
+.flex-container3 img{
+    margin-left: 100px;
+}
+
+#TRoom{
+    margin-left: 400px;
+}
+.flex-container4{
+    display: flex;
+    margin-left: 400px;
+
+}
+
+
+.flex-container4 p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 15px;
+}
+
+.wineTypes{
+    display: flex;
+}
+
+.wineTypes p{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+
+}
+.flex-container5{
+    display: flex;
+    margin-left: 500px;
+
+}
+.comment{
+    align-self:center;
+    margin-top: 100px;
+    /*background-color: red;*/
+}
+
+
