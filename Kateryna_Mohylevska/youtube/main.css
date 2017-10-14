@@ -104,8 +104,29 @@ button{
     width: 240px;
     font-size: 14px;
     float: left;
-    padding-top: 56px;
+    margin-top: 56px;
+    position: fixed;
+    height: calc(100% - 56px);
 }
+.left-menu:hover{
+    overflow-y: auto;
+}
+
+.left-menu::-webkit-scrollbar-track
+{
+    background-color: #f6f4f6;
+}
+
+.left-menu::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+.left-menu::-webkit-scrollbar-thumb
+{
+    background-color: #cac8ca;
+}
+
 
 .left-menu nav,
 .youtube-best{
@@ -181,22 +202,63 @@ main{
     width: calc(100% - 240px);
     float: right;
     margin-top: 56px;
-
 }
+
 .recommended{
-    padding: 0 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efedef;
 }
-
-.recommended div{
+.recommended-content,
+.channel-content{
+    padding: 0 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.recommended header{
+    padding-left: 11%;
+}
+
+.channel header{
+    display: flex;
+    padding: 15px 11%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.channel header div{
+    display: flex;
+    align-items: center;
+}
+.channel header p{
+    font-size: 13px;
+    margin: 0;
+    color: #8b898b;
+}
+.channel header a{
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+.channel header h4{
+    margin: 0;
+    padding: 0 5px;
+}
+.channel{
+    padding: 20px 0;
+    border-bottom: 1px solid #efedef;
 }
 .recommended footer{
     font-size: 13px;
     color: #8b898b;
     text-transform: uppercase;
     cursor: pointer;
+    padding-left: 11%;
 }
 .video{
     cursor: pointer;

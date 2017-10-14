@@ -32,7 +32,7 @@
 </header>
 
 
-<div class="left-menu">
+<aside class="left-menu">
     <nav>
         <a href="/" class="left-menu-el">
             <i class="material-icons hover-red">home</i>
@@ -119,14 +119,14 @@
         <br><br>
         <p>© 2017 YouTube, LLC</p>
     </footer>
-</div>
+</aside>
 
 <main>
     <section class="recommended">
         <header>
             <h4>Рекомендовано</h4>
         </header>
-        <div>
+        <div class="recommended-content">
             {{#recommended}}
             <section class="video">
                 <img src="{{url}}" alt="video" width="210px">
@@ -138,10 +138,59 @@
                 </div>
             </section>
             {{/recommended}}
+
         </div>
         <footer>
             Показати більше
         </footer>
+    </section>
+
+    <section class="channel">
+        <header>
+            <div>
+                <img height="32" width="32" src="https://yt3.ggpht.com/-62eFsC66a_s/AAAAAAAAAAI/AAAAAAAAAAA/S1aw6wY6HsM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                <h4>serial</h4>
+                <p>Рекомендований канал</p>
+            </div>
+            <a href="/">Підписатися 1.1 млн</a>
+        </header>
+        <div class="channel-content">
+            {{#channel}}
+                <section class="video">
+                    <img src="{{url}}" alt="video" width="210px">
+                    <div class="video-details">
+                        <p>{{video-name}}</p>
+                        <a href="/">{{channel-name}}</a>
+                        <span class="views">{{views}} переглядів</span>
+                        <time datetime="{{datetime}}">{{time}}</time>
+                    </div>
+                </section>
+            {{/channel}}
+        </div>
+    </section>
+
+    <section class="channel">
+        <header>
+            <div>
+                <img height="32" width="32" src="https://yt3.ggpht.com/-62eFsC66a_s/AAAAAAAAAAI/AAAAAAAAAAA/S1aw6wY6HsM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                <h4>serial</h4>
+                <p>Рекомендований канал</p>
+            </div>
+            <a href="/">Підписатися 1.1 млн</a>
+        </header>
+        <div class="channel-content">
+            {{#channel}}
+                <section class="video">
+                    <img src="{{url}}" alt="video" width="210px">
+                    <div class="video-details">
+                        <p>{{video-name}}</p>
+                        <a href="/">{{channel-name}}</a>
+                        <span class="views">{{views}} переглядів</span>
+                        <time datetime="{{datetime}}">{{time}}</time>
+                    </div>
+                </section>
+            {{/channel}}
+        </div>
     </section>
 </main>
 
