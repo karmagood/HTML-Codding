@@ -16,7 +16,6 @@ def hello_world():
     data = json.load(data_file)
 
     rendered = pystache.render(view, data)
-    print(rendered)
     return rendered
 
 
