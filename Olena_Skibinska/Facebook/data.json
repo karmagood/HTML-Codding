@@ -1,0 +1,197 @@
+{
+  "chapters": [
+    {
+      "chapter-title": "header",
+      "header-items": [
+        {
+          "facebook-logo": "img/facebook-logo.png",
+          "header-placeholder": "Шукайте людей, місця та речі",
+          "my-photo-small": "img/small-ava.png",
+          "name": "Olena",
+          "main-button": "Головна",
+          "new-news": "img/main-small-20.png",
+          "small-friends-icon": "img/small-friends.png",
+          "small-message-icon": "img/small-mes.png",
+          "small-news-icon": "img/small-news.png",
+          "small-question-icon": "img/small-que.png"
+        }
+      ]
+    },
+    {
+      "chapter-title": "person-section",
+      "person-section-items": [
+        {
+          "background-image": "img/back-fon.png",
+          "my-photo-big": "img/my-ava.jpg",
+          "first-name": "Olena",
+          "last-name": "Skibinska",
+          "update-info-btn": "Оновити інформацію",
+          "number-of-updates": "2",
+          "view-activity-log-btn": "Журнал активності",
+          "timeline": "Життєпис",
+          "about": "Про себе",
+          "friends": "Друзі",
+          "num-of-friends": "304",
+          "photos": "Світлини",
+          "more": "Більше"
+        }
+      ]
+    },
+    {
+      "chapter-title": "aside-tool-bar",
+      "aside-tool-bar-items": [
+        {
+          "intro-img": "img/about-mys.png",
+          "intro": "Про себе",
+          "plus": "+",
+          "intro-questions": "Що робить вас щасливим?",
+          "education-icon": "img/studied.png",
+          "education-info": "Навчалася у Український католицький університет UCuniversity",
+          "lives-in-icon": "img/house.png",
+          "lives-in-info": "Живе у Lviv, Ukraine",
+          "from-icon": "img/place-home.png",
+          "from-info": "Із Lviv, Ukraine",
+          "add-img-icon": "img/add-photo-icon.png",
+          "add-img": "Додайте обрані світлини",
+          "add-ad-links": "Додати Instagram, веб-сайти, інші посилання",
+          "img-icon": "img/images.png",
+          "img": "Світлини",
+          "photo-1": "img/ph-1.png",
+          "photo-2": "img/ph-2.png",
+          "photo-3": "img/ph-3.png",
+          "photo-4": "img/ph-4.png",
+          "photo-5": "img/ph-5.png",
+          "photo-6": "img/ph-6.png",
+          "photo-7": "img/ph-7.png",
+          "photo-8": "img/ph-8.png",
+          "photo-9": "img/ph-9.png",
+          "friends-icon": "img/friends.png",
+          "friends": "Друзі",
+          "num-of-friends": "304",
+          "friend-1": "img/fr-1.png",
+          "friend-2": "img/fr-2.png",
+          "friend-3": "img/fr-3.png",
+          "friend-4": "img/fr-4.png",
+          "friend-5": "img/fr-5.png",
+          "friend-6": "img/fr-6.png",
+          "friend-7": "img/fr-7.png",
+          "friend-8": "img/fr-8.png",
+          "friend-9": "img/fr-9.png",
+          "view-icon": "img/c-fr.PNG",
+          "view-exp": "See what you have in common with your friends.",
+          "view-btn": "Переглянути",
+          "featured-album-icon": "img/featured-alb.png",
+          "featured-albums": "Featured Albums",
+          "languages": "Українська· English (US) · Русский · Español · Português (Brasil)"
+        }
+      ]
+    },
+    {
+      "chapter-title": "footer",
+      "footer-items": [
+        {
+          "footer-info": "Конфіденційність · Умови користування ·Розміщення реклами · Типи реклами · Реп'яшки ·Facebook",
+          "year": "2017"
+        }
+      ]
+    },
+    {
+      "chapter-title": "main",
+      "main-items": [
+        {
+          "post-icon": "img/center-nav1.png",
+          "post": "Допис",
+          "media-icon": "img/center-nav2.png",
+          "media": "Світлини/Відео",
+          "live-video-icon": "img/center-nav3.png",
+          "live-video": "Відео наживо",
+          "life-event-icon": "img/center-nav4.png",
+          "life-event": "Життєва позиція",
+          "my-photo-medium": "img/small-ava2.jpg",
+          "main-placeholder": "Що у вас на думці?",
+          "friends-btn": "Друзі",
+          "dropdown-icon": "img/dropdown.png",
+          "publish-btn": "Опублікувати"
+        }
+      ]
+    },
+    {
+      "chapter-title": "aside-friends-online",
+      "aside-friends-online-items": [
+        {
+          "friend-1":{
+            "first-name":"Андрій",
+            "last-name":"Журавчак",
+            "img":"img/Andriy-Jur.jpg"
+          },
+          "friend-2":{
+            "first-name":"Dmitriy",
+            "last-name":"Kushnir",
+            "img":"img/Dmytro-Kus.jpg"
+          },
+          "friend-3":{
+            "first-name":"Marta",
+            "last-name":"Skibinska",
+            "img":"img/Marta-Skib.jpg"
+          },
+          "friend-4":{
+            "first-name":"Mykhaylo",
+            "last-name":"Shelemba",
+            "img":"img/Mych-Shelemba.jpg"
+          },
+          "friend-5":{
+            "first-name":"Zhenia",
+            "last-name":"Orenchuk",
+            "img":"img/Jenya.jpg"
+          },
+          "friend-6":{
+            "first-name":"Oleg",
+            "last-name":"Farenyuk",
+            "img":"img/Oleg-Far.jpg"
+          },
+          "friend-7":{
+            "first-name":"Орест",
+            "last-name":"Регусевич",
+            "img":"img/Orest-Reh.jpg"
+          },
+          "friend-8":{
+            "first-name":"Ostap",
+            "last-name":"Kharysh",
+            "img":"img/Ostap-Harysh.jpg"
+          },
+          "friend-9":{
+            "first-name":"Roman",
+            "last-name":"Datsko",
+            "img":"img/Roman-Dat.jpg"
+          },
+          "friend-10":{
+            "first-name":"Ярина",
+            "last-name":"Кордуба",
+            "img":"img/Yaryna-Kor.jpg"
+          },
+          "friend-11":{
+            "first-name":"Yurii",
+            "last-name":"Laba",
+            "img":"img/Yuriy-Laba.jpg"
+          },
+          "friend-12":{
+            "first-name":"Oksana",
+            "last-name":"Oleniuk",
+            "img":"img/Ok-Olen.jpg"
+          },
+          "friend-13":{
+            "first-name":"Maryana",
+            "last-name":"Mysak",
+            "img":"img/Mar-Mys.jpg"
+          },
+          "more-contacts":"Більше контактів (22)",
+          "friend-14":{
+            "first-name":"Matt",
+            "last-name":"Kovtun",
+            "img":"img/Matt-Kov.jpg"
+          }
+        }
+      ]
+    }
+  ]
+}

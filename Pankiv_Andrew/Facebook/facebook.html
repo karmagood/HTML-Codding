@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Андрій Паньків</title>
+    <link rel="stylesheet" type="text/css" href="facebook.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script id="test" type="application/json" src="../data.json"></script>
+</head>
+<body>
+<div id="body">
+    <nav class="navbar navbar-fixed-top">
+        <a href="#" name="FbLogo"><img src="../Images/fb_logo.png"/></a>
+        <form id="search-form"><input type="text" placeholder="Андрій Паньків" id="search-input">
+            <input type="submit" value="Search">
+        </form>
+        <a href="#" name="ProfilePage"><img class="img-circle" src="../Images/profile_photo.jpg"
+                                            id="profile-photo">Андрій</a>
+        <a href="#" name="Main">Головна</a>
+        <a href="#" name="Friends"><img src="../Images/friends.png"></a>
+        <a href="#" name="Messages"><img src="../Images/messages.png"></a>
+        <a href="#" name="News"><img src="../Images/fb_planet.png"></a>
+        <a href="#" name="Questions"><img src="../Images/question_mark.png"></a>
+        <form id="navbar-dropdown" class="dropdown show">
+            <select>
+                <option value="#"></option>
+                <option value="Створити сторінку">Створити сторінку</option>
+                <option value="Створити спільноту">Створити спільноту</option>
+                <option value="Нові групи">Нові групи</option>
+                <option value="Створити рекламу">Створити рекламу</option>
+                <option value="Реклама на Facebook">Реклама на Facebook</option>
+                <option value="Журнал активності">Журнал активності</option>
+                <option value="Налаштування стрічки новин">Налаштування стрічки новин</option>
+                <option value="Налаштування">Налаштування</option>
+                <option value="Вийти">Вийти</option>
+            </select>
+        </form>
+    </nav>
+    <header>
+        <div>
+            <a href="#" name="ChangeBackgroundPhoto"><img src="../Images/background_photo.jpg" name="BackgroundPhoto"/></a>
+            <a href="#" name="ChangeProfilePhoto"><img src="../Images/profile_photo.jpg" name="ProfilePhoto"/></a>
+            <a href="#" name="UpdateYourInfo">Оновити інформацію</a>
+            <a href="#" name="ActivityList">Переглянути журнал активності</a>
+            <form id="Activity-dropdown">
+                <select>
+                    <option value="...">...</option>
+                    <option value="Переглянути як ...">Переглянути як ...</option>
+                    <option value="Налаштування Життєпису">Налаштування життєпису</option>
+                </select>
+            </form>
+        </div>
+        <div>
+            <a href="#" class="under-profile-photo" name="AboutLife">Життєпис</a>
+            <a href="#" class="under-profile-photo" name="AboutMe">Про себе</a>
+            <a href="#" class="under-profile-photo" name="FriendsU">Друзі 209</a>
+            <a href="#" class="under-profile-photo" name="Photos">Світлини</a>
+            <form id="More-dropdown" class="under-profile-photo">
+                <select>
+                    <option value="Більше">Більше</option>
+                    <option value="Відео">Відео</option>
+                    <option value="Відмітки">Відмітки</option>
+                    <option value="Спорт">Спорт</option>
+                    <option value="Музика">Музика</option>
+                    <option value="Фільма">Фільми</option>
+                    <option value="Теепередачі">Телепередачі</option>
+                    <option value="Книжки">Книжки</option>
+                    <option value="Додатки та ігри">Додатки та ігри</option>
+                    <option value="Вподобання">Вподобання</option>
+                    <option value="Події">Події</option>
+                    <option value="Огляди">Огляди</option>
+                    <option value="Групи">Групи</option>
+                    <option value="Нотатки">Нотатки</option>
+                </select>
+            </form>
+        </div>
+    </header>
+
+
+    <div class="posts">
+        <div id="AddNewEvent" class="posts">
+            <a href="#" name="ToAddText" class="in-dopus">Допис</a>
+            <a href="#" name="ToAddVideo" class="in-dopus">Світлини/Відео</a>
+            <a href="#" name="ToAddVideoOnline" class="in-dopus">Відео наживо</a>
+            <a href="#" name="ToAddLifeEvent" class="in-dopus">Життєва подія</a>
+            <form id="dopus">
+                <input id="OnMyMind" type="text" placeholder="Що у Вас на думці?">
+                <input id="SubmitButton" type="submit" placeholder="Опублікувати">
+            </form>
+            <form id="share-dropdown">
+                <select>
+                    <option value="Друзі">Друзі</option>
+                    <option value="Публічно">Публічно</option>
+                    <option value="Друзі, крім...">Друзі, крім...</option>
+                    <option value="Конкретні друзі">Конкретні друзі</option>
+                    <option value="Лише я">Лише я</option>
+                    <option value="Власний">Власний</option>
+                </select>
+            </form>
+        </div>
+        <article id="firstpost" class="posts">
+            <p><a href="#" name="FbContact"><strong>Olesia Pankiv</strong></a><em> додала </em>
+                <a href="#" name="NewNews">3 нові світлини -</a>
+                <img src="../Images/glass.png"><a href="#" name="FbSticker"> <strong>Red
+                    wine</strong></a><em>at</em>
+                <img src="../Images/map_point.png"><a href="#" name="FbPlace"><strong>Saharum Beach</strong></a>
+                with <a href="#" name="FbContact"><strong>Паньків Олег</strong></a> <em>and</em>
+                <a href="#" name="FbContact"><strong>2 others</strong></a>
+                <em>9 вересня о 14:27 Sali, Zadar Country, Croatia</em></p>
+            <form>
+                <select name="WhoCanSee">
+                    <option value="#"></option>
+                    <option value="У вашому життєписі">У вашому життєписі: Друзі ваших друзів</option>
+                    <option value="Позначити або прибрати позначку..">Поскаржитись або прибрати позначку...</option>
+                </select>
+            </form>
+            <p><img src="../Images/Rest1.jpg" class="post-image">
+                <img src="../Images/Rest2.jpg" class="post-image">
+                <img src="../Images/Rest3.jpg" class="post-image"></p>
+            <form name="UnderPostButtons">
+                <button type="button" name="LikeButton">Подобається</button>
+                <button type="button" name="CommentButton">Коментувати</button>
+                <button type="button" name="ShareButton">Поширити</button>
+            </form>
+            <img src="../Images/profile_photo.jpg" height="30" class="under-post-possibilities img-circle">
+            <form class="under-post-possibilities">
+                <input type="text" name="under-post-comment" placeholder="Прокоментуйте...">
+            </form>
+            <form class="under-post-possibilities" name="add-smth">
+                <button type="button" name="InsertEmoji"><img src="../Images/smile_fb.png"></button>
+                <button type="button" name="InsertPhotos"><img src="../Images/camera_fb.png"></button>
+                <button type="button" name="InsertGif"><img src="../Images/Gif_fb.png"></button>
+                <button type="button" name="InsertStickers"><img src="../Images/Sticers_fb.png"></button>
+            </form>
+        </article>
+    </div>
+
+    <aside id="right-aside-bar">
+        <form class="inside-aside-bar">
+            <p>Ваші ігри <a href="#">ще</a></p>
+            <button type="button"><img src="../Images/Ahar.io.png" class="games-images img-circle"></button>
+            <button type="button"><img src="../Images/Lego_shit.png" class="games-images img-circle"></button>
+            <button type="button"><img src="../Images/WalkingDead(no).png" class="games-images img-circle"></button>
+        </form>
+        <form class="inside-aside-bar">
+            <p>Рекомендовані ігри <a href="#">ще</a></p>
+            <button type="button"><img src="../Images/Helicopter.png" class="games-images img-circle"></button>
+            <button type="button"><img src="../Images/Artilery.png" class="games-images img-circle"></button>
+            <button type="button"><img src="../Images/JetpackRunner.png" class="games-images img-circle"></button>
+        </form>
+        <div class="scroll">
+            <section class="inside-aside-bar">
+                <ul>
+                    <li><a href="#" name="FbContact"><img src="../Images/MartaDatsyuk.png">Marta Datsyuk</a></li>
+                    <li><a href="#" name="FbContact"><img src="../Images/BogdanPetryshak.png">Богдан Петришак</a>
+                    </li>
+                    <li><a href="#" name="FbContact"><img src="../Images/SofiaPatyk.png">Sofia Patyk</a></li>
+                    <li><a href="#" name="FbContact"><img src="../Images/MartaDatsyuk.png">Marta Datsyuk</a></li>
+                    <li><a href="#" name="FbContact"><img src="../Images/BogdanPetryshak.png">Богдан Петришак</a>
+                    </li>
+                    <li><a href="#" name="FbContact"><img src="../Images/SofiaPatyk.png">Sofia Patyk</a></li>
+                    <li><a href="#" name="FbContact"><img src="../Images/MartaDatsyuk.png">Marta Datsyuk</a></li>
+                    <li><a href="#" name="FbContact"><img src="../Images/BogdanPetryshak.png">Богдан Петришак</a>
+                    </li>
+                    <li><a href="#" name="FbContact"><img src="../Images/SofiaPatyk.png">Sofia Patyk</a></li>
+                </ul>
+            </section>
+            <form class="inside-aside-bar">
+                <button type="button" name="MoreContacts"><strong>Більше контактів</strong>(15)</button>
+                <ul>
+                    <li><a href="#" name="FbContact"><img src="../Images/MartaDatsyuk.png">Marta Datsyuk</a></li>
+                    <li><a href="#" name="FbContact"><img src="../Images/BogdanPetryshak.png">Богдан Петришак</a>
+                    </li>
+                    <li><a href="#" name="FbContact"><img src="../Images/SofiaPatyk.png">Sofia Patyk</a></li>
+                </ul>
+            </form>
+            <form>
+                <p><img src="../Images/Search.png"><input type="text" placeholder="Пошук">
+                    <button type="button" name="Settings"><img src="../Images/Settings.png"></button>
+                    <button type="button" name="NewMessage"><img src="../Images/NewMessage.png"></button>
+                    <button type="button" name="NewChat"><img src="../Images/NewChat.png"></button>
+                </p>
+            </form>
+        </div>
+    </aside>
+
+
+    <aside class="left-aside-bar">
+        <p><img src="../Images/fb_planet.png"/>Про себе</p>
+        <section>
+            <a href="#" name="FbQuestion">+ Що робить вас щасливим?</a>
+        </section>
+        <section>
+            <ul>
+                <li>Вивчає комп'ютерні технології в <a href="#">УКУ</a></li>
+                <li>Навчався в <a href="#" name="FbSchool">ллг</a></li>
+                <li>Живе у <a href="#" name="FbLiving"> Lviv, Ukraine</a></li>
+                <li>Із <a href="#" name="FbLiving"> Lviv, Ukraine</a></li>
+            </ul>
+            <section>
+                <a href="#" name="AddNewPhotos">Додайте обрані світлини</a>
+            </section>
+            <section>
+                <a href="#" name="AddInstAndOthers">+ Додати Instagram, веб-сайти, інші посилання</a>
+            </section>
+        </section>
+        <section>
+            <p><img src="../Images/Images.png">Світлини</p>
+            <form>
+                <select>
+                    <option value="#"></option>
+                    <option value="Переглянути світлини, приховані з життєпису">Переглянути світлини, приховані з
+                        життєпису
+                    </option>
+                </select>
+            </form>
+            <figure class="gallery">
+                <img src="../Images/fb_image1.jpg">
+                <img src="../Images/fb_image2.jpg">
+                <img src="../Images/fb_image3.jpg">
+                <img src="../Images/fb_image4.jpg">
+                <img src="../Images/fb_image5.jpg">
+                <img src="../Images/fb_image6.jpg">
+                <img src="../Images/fb_image7.jpg">
+                <img src="../Images/fb_image8.jpg">
+                <img src="../Images/fb_image9.jpg">
+            </figure>
+        </section>
+        <section>
+            <p>Друзі 209</p>
+            <figure class="inside-friends-set">
+                <a href="#" name="FbContact1"><img src="../Images/Vitalik.png"></a>
+                <a href="#" name="FbContact2"><img src="../Images/Piotr.png"></a>
+                <a href="#" name="FbContact3"><img src="../Images/Vitalik.png"></a>
+                <a href="#" name="FbContact4"><img src="../Images/Piotr.png"></a>
+                <a href="#" name="FbContact3"><img src="../Images/Vitalik.png"></a>
+                <a href="#" name="FbContact4"><img src="../Images/Piotr.png"></a>
+                <a href="#" name="FbContact3"><img src="../Images/Vitalik.png" class="stupidphotos"></a>
+                <a href="#" name="FbContact4"><img src="../Images/Piotr.png" class="stupidphotos"></a>
+                <a href="#" name="FbContact3"><img src="../Images/Vitalik.png" class="stupidphotos"></a>
+                <p id="InCommon"><img src="../Images/PhotoAlbum.png">See what you have in common with your friends</p>
+                <form>
+                    <button type="button" name="Overview">Переглянути</button>
+                </form>
+            </figure>
+        </section>
+        <section id="section_featured_albums">
+            <p><img src="../Images/Stack.png"><a href="#" name="FeaturedAlbums"><strong>Featured Albums</strong></a></p>
+        </section>
+        <section id="Languages">
+            <p><em>Українська </em><a href="#" name="EnglishLanguage">English(US) </a>
+                <a href="#" name="RussianLanguage">Русский </a>
+                <a href="#" name="EspanolLanguage">Espanol </a>
+                <a href="#" name="BrasilLanguage">Portugues(Brasil) </a>
+                <button type="button" name="PlusButton"><strong>+</strong></button>
+            </p>
+        </section>
+    </aside>
+    <footer>
+        <p><a href="#" name="Confidence"><em>Конфіденційність </em></a>
+            <a href="#" name="RulesOfUsage"><em>Умови користування </em></a><br/>
+            <a href="#" name="Advertisement"><em>Розміщення реклами </em></a>
+            <a href="#" name="TypeOfAdvertisement"><em>Типи Реклами </em></a><br/>
+            <a href="#" name="Rabbits"><em>Реп'яшки </em></a>
+        </p>
+        <form>
+            <select>
+                <option value="Ще">Ще</option>
+                <option value="Про нас">Про нас</option>
+                <option value="Кар'єра">Кар'єра</option>
+                <option value="Створити сторінку">Створити сторінку</option>
+                <option value="Розробники">Розробники</option>
+                <option value="Допомога">Допомога</option>
+            </select>
+        </form>
+        <p>Facebook @ 2017</p>
+    </footer>
+</div>
+</body>
+</html>

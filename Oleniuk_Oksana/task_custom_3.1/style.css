@@ -1,0 +1,52 @@
+/*This page is made this the following property: the content of the site will be always responce and at the center*/
+/*removes space above*/
+body {
+    margin: 0;
+}
+
+/*makes content at the center*/
+.content {
+    max-width: 600px;
+    margin: auto;
+}
+
+/*removes space above*/
+
+h1 {
+    padding: 2%;
+    margin: 0;
+    background-color: purple;
+}
+
+/*removes space above*/
+section {
+    margin: 0;
+}
+
+/*makes content inline*/
+article {
+    /*margin: 0;*/
+    height: 800px;
+    display: inline-flex;
+}
+
+p {
+    padding: 20px;
+}
+
+#art-blue {
+    background-color: blue;
+    width: 400px;
+}
+
+#art-green {
+    background-color: green;
+    width: 200px;
+
+}
+
+footer {
+    margin: 0;
+    padding: 2%;
+    background-color: yellow;
+}
