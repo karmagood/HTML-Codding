@@ -1,0 +1,46 @@
+{
+    "u_name": "Sergey",
+    "u_full_name": "Sergey Dubovyk",
+    "shortcuts":[
+        {"target": "", "img_link": "img/profile_pic.jpg", "link_name": "CS@UCU Rulezz"},
+        {"target": "", "img_link": "img/profile_pic.jpg", "link_name": "CS@UCU Sucks"}
+    ],
+    "explore": [
+        {"target": "", "img_link": "img/profile_pic.jpg", "link_name": "Events"},
+        {"target": "", "img_link": "img/profile_pic.jpg", "link_name": "Groupts"},
+        {"target": "", "img_link": "img/profile_pic.jpg", "link_name": "Friends lists"}
+    ],
+    "event_counter": "3",
+    "birthdays": [
+        {"u_name": "Semen Senkivskiy", "u_link": "/#?target=birthday"},
+        {"u_name": "Google Brin", "u_link": "/#?target=birthday"}
+    ],
+    "posts":[
+        {"p_author": "Andrey Rodionov", "p_action": "feels", "p_event": "happy", "p_date": "September 21 at 10:12am", "p_image": "img/lohika.jpg",
+        "p_content": "Це мій третій пакуночок від Lohika, перші два були від <a>Taras Matyashovsky</a> з <a>#uadevclub</a> та <a>Morning@Lohika</a> З задоволенням користуюсь їх вмістом ;)"}
+    ],
+    "stories": true,
+    "suggested_page": {
+        "img_src": "img/infosec_page.png",
+        "page_name": "Berezha Security",
+        "page_type": "Computer Company",
+        "likes_num": "324"
+    },
+    "messages": [
+        {
+            "u_name": "Nina Bondar",
+            "u_profile": "img/profile_pic.jpg"
+        },
+        {
+            "u_name": "Nina Bondar",
+            "u_profile": "img/profile_pic.jpg"
+        },
+        {
+            "u_name": "Nina Bondar",
+            "u_profile": "img/profile_pic.jpg"
+        },
+        {
+            "u_name": "Nina Bondar",
+            "u_profile": "img/profile_pic.jpg"
+        }]
+}
