@@ -19,7 +19,7 @@ At this moment there`re such assignments in this directory:
 
 ## Author
 
-Web-apps in this folder are created by Sergey Dubovyk (ya, that`s me;)) In case of any questions or if you wanna hire me or if you`re a [violent psychopath who knows where you live](https://groups.google.com/forum/#!msg/comp.lang.c++/rYCO5yn4lXw/oITtSkZOtoUJ) and [Habrahabr](https://habrahabr.ru/post/302570/), you can find me by dubovyk (at) ucu.edu.ua (who knows, may be scrapers` devs couldn`t think about such 'awesome' defense agains them).
+Web-apps in this folder are created by Sergey Dubovyk (ya, that's me;)) In case of any questions or if you wanna hire me or if you're a [violent psychopath who knows where you live](https://groups.google.com/forum/#!msg/comp.lang.c++/rYCO5yn4lXw/oITtSkZOtoUJ) and [Habrahabr](https://habrahabr.ru/post/302570/), you can find me by dubovyk (at) ucu.edu.ua (who knows, may be scrapers' devs couldn't think about such 'awesome' defense agains them).
 
 ## License
 
