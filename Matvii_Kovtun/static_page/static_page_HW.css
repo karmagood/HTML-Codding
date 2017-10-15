@@ -1,0 +1,60 @@
+
+div {
+    opacity: .9;
+    padding: 10px;
+    overflow: auto;
+}
+
+body {
+
+    margin: 0;
+}
+
+.id0 {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    right: 30%;
+    bottom: 0;
+}
+
+.id1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20px;
+    background-color: #3D9970;
+}
+
+.id2 {
+    top: 40px;
+    bottom: 40px;
+    right: 35%;
+    display: inline-block;
+    background-color: indigo;
+    position: absolute;
+
+}
+
+.id3 {
+    background-color: coral;
+    display: inline-block;
+    position: absolute;
+    bottom: 40px;
+    left: 65%;
+    top: 40px;
+}
+
+.id4 {
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+
+

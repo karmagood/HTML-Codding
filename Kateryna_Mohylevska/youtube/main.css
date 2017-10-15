@@ -1,97 +1,96 @@
-.main-nav-el,
-.search,
-.logo sub,
-.logo img
-{
-    display: inline-block;
-}
 body{
     margin:0;
     font-family: "Roboto", sans-serif;
-}
-.main-nav{
-    padding: 0 16px;
-}
-
-
-button{
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 a{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+button{
+    border: none;
+}
+
 .material-icons{
     color: #8b898b;
-    vertical-align: middle;
     cursor: pointer;
 }
-.logo sup{
+.main-header{
+    margin: 0;
+    box-shadow: 3px 3px 2px rgba(17, 17, 17, 0.06);
+    width: 100%;
+    position: fixed;
+    background: #fffeff;
+}
+.main-nav{
+    height:56px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav .material-icons{
+    padding: 0 8px;}
+
+.left-aside sup{
     color: #8b898b;
     font-size: 10px;
 }
+
+.left-aside{
+    display: flex;
+}
+.left-aside img{
+    align-self: center;
+}
+
 .details{
-    padding: 8px;
+    align-self: center;
     margin-right: 16px;
 }
-
-.logo a img{
-    width: 80px;
-    vertical-align: middle;
-}
-.logo{
-    width: 129px;
+.right-aside{
+    display: flex;
+    align-items: center;
 }
 
-.logo a{
-    display: inline-block;
-    height: 24px;
-}
-
-.search{
-    width: 88%;
-    height: 28px;
-    /*padding: 2px 6px;*/
-}
-.search input{
-    padding-left: 1%;
-    border: none;
-    width: 100%;
-    height: 100%;
-    font-size: 16px;
-    color: #8b898b;
-    font-family: 'Roboto',sans-serif;
-    display: inline-block;
-}
-.search i{
-    display: inline-block;
-    float: right;
-    position: relative;
-    margin-top: -26px;
-    margin-right: 1%;
-
-}
-.search i:hover{
-    color: #2b2b2b;
+.signin{
+    color: rgb(255, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 0 16px;
+    font-weight: bold;
 }
 .form-search{
     height: 30px;
     width: 50%;
-    margin: 0 40px;
     border: 1px solid #d3d1d3;
     border-radius: 2px;
+    display: flex;
+    align-items: center;
+}
+.form-search input{
+    width: 88%;
+    height:26px;
+    font-size: 16px;
+    color: #8b898b;
+    font-family: 'Roboto',sans-serif;
+    border: none;
+    padding-left: 1%;
+}
+
+.keyboard{
+    position: relative;
+    margin-right: 1%;
+
+}
+.keyboard:hover{
+    color: #2b2b2b;
 }
 
 .form-search button{
-    float: right;
-    display: inline-block;
     background: #f2f2f2;
-    width: 10%;
-    height: 100%;
+    width: 65px;
+    height: inherit;
     border-left: 1px solid #d3d1d3;
-
 }
 .form-search button:hover{
     background: #eae8ea;
@@ -100,88 +99,76 @@ a{
     font-size: 20px;
 }
 
-.right-nav{
-    float: right;
-}
-.right-nav button{
-    padding: 8px;
-}
-.signin{
-    vertical-align: middle;
-    top: 16px;
-    padding: 16px;
-    color: rgb(255, 0, 0);
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-.main-header{
-    margin: 0;
-    box-shadow: 3px 3px 2px rgba(17, 17, 17, 0.06);
-    height: 48px;
-    width: 100%;
-    position: fixed;
-    background: #fffeff;
-    padding-top: 8px;
-}
-
 .left-menu{
-    display: inline-block;
     background: #f6f4f6;
     width: 240px;
     font-size: 14px;
-    height: 100%;
+    float: left;
     margin-top: 56px;
-    float: left;
+    position: fixed;
+    height: calc(100% - 56px);
 }
+.left-menu:hover{
+    overflow-y: auto;
+}
+
+.left-menu::-webkit-scrollbar-track
+{
+    background-color: #f6f4f6;
+}
+
+.left-menu::-webkit-scrollbar
+{
+    width: 8px;
+}
+
+.left-menu::-webkit-scrollbar-thumb
+{
+    background-color: #cac8ca;
+}
+
+
+.left-menu nav,
+.youtube-best{
+    display: flex;
+    flex-direction: column;
+}
+
 .left-menu nav{
-    padding: 12px 0;
+    padding-top: 10px;
     border-bottom: 1px solid #efedef;
-
 }
 
-.red-icons{
-    width: 24px;
-    border-radius: 50%;
-    display: block;
-    float: left;
-}
-.hover-red:hover{
-    color: red;
-}
-.hover-red{
-    vertical-align: middle;
-}
-
-.left-menu{
-    overflow-y: hidden;
-    bottom: 0;
-}
-
-
-.left-menu-el{
-    display: block;
-    font-family: "Roboto", sans-serif;
-    color: rgb(17,17,17);
-    padding: 8px 24px;
-}
-.left-menu-el:hover{
-    background-color: #eceaec;
-}
-.left-menu-el i{
-    margin-right: 26px;
-}
-.left-menu-el img{
-    margin-right: 30px;
-}
 .youtube-best,
 .see-chanel,
 .settings{
     border-bottom: 1px solid #efedef;
     padding: 8px 0;
 }
-.youtube-best a span{
-    line-height: 24px;
+.left-menu-el{
+    font-family: "Roboto", sans-serif;
+    color: rgb(17,17,17);
+    padding: 8px 24px;
+    display: flex;
+    align-items: center;
 }
+.left-menu-el:hover{
+    background-color: #eceaec;
+}
+
+.red-icons{
+    width: 24px;
+    border-radius: 50%;
+}
+.hover-red:hover{
+    color: red;
+}
+.left-menu-el i,
+.left-menu-el img{
+    margin-right: 26px;
+}
+
+
 .youtube-best p{
     font-size: 14px;
     padding-left: 24px;
@@ -192,6 +179,7 @@ a{
     padding: 2px 32px 16px 32px;
     border-bottom: 1px solid #efedef;
     color: rgb(17,17,17);
+    font-weight: bold;
 }
 .signin-for-chanel a{
     color: red;
@@ -210,18 +198,76 @@ a{
 }
 
 main{
-    display: inline-block;
     background: #fbf9fb;
-    margin-top: 60px;
-    padding: 0 9%;
-    width: 860px;
+    width: calc(100% - 240px);
+    float: right;
+    margin-top: 56px;
+}
+
+.recommended{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #efedef;
+}
+.recommended-content,
+.channel-content{
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.recommended header{
+    padding-left: 11%;
+}
+
+.channel header{
+    display: flex;
+    padding: 15px 11%;
+    justify-content: space-between;
+    align-items: center;
 
 }
+.channel header div{
+    display: flex;
+    align-items: center;
+}
+.channel header p{
+    font-size: 13px;
+    margin: 0;
+    color: #8b898b;
+}
+.channel header a{
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+
+}
+.channel header h4{
+    margin: 0;
+    padding: 0 5px;
+}
+.channel{
+    padding: 20px 0;
+    border-bottom: 1px solid #efedef;
+}
+.recommended footer{
+    font-size: 13px;
+    color: #8b898b;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding-left: 11%;
+}
 .video{
-    float: left;
     cursor: pointer;
     margin-right: 4px;
     margin-bottom: 24px;
+}
+.video-details{
+    display: flex;
+    flex-direction: column;
 }
 
 .video-details p{
@@ -230,6 +276,7 @@ main{
 }
 
 .video-details a,
+.video-details time,
 .video-details span{
     color: #8b898b;
     font-size: 13px;
@@ -242,8 +289,4 @@ main{
 
 .video-details a:hover{
     color: #2b2b2b;
-}
-
-.video-details{
-    padding-right: 24px;
 }

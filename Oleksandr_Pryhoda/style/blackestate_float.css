@@ -1,0 +1,125 @@
+body {
+    margin: 65px auto;
+    width: 1200px;
+}
+
+header {
+    margin: auto;
+    width: 1100px;
+    height: 550px;
+}
+
+.head-class-1{
+    width: 190px;
+    float: left;
+}
+
+.head-class-2 {
+    width: 230px;
+    float: left;
+    margin-left: 40px;
+}
+
+.head-class-3 {
+    width: 150px;
+    float:right;
+    margin-right: 10px;
+}
+
+.head-class-4 {
+    width: 190px;
+    float: right;
+}
+
+.nav-bar-class {
+    clear: both;
+    padding-top: 30px;
+}
+
+.nav-bar-class a, p, ul {
+    width: 230px;
+    height: 150px;
+    float: left;
+    margin: 0;
+}
+
+.inner-list {
+}
+
+.inner-list a, li {
+    height: 20px;
+    list-style: none;
+}
+
+.last-elem {
+    float: right;
+}
+
+.image-section {
+    clear: both;
+}
+
+.image-section img {
+}
+
+.img-1 {
+}
+
+.img-2 {
+}
+
+.text-section {
+    clear: both;
+    padding-top: 50px;
+    height: 400px;
+}
+
+.text-section img, p {
+    float: right;
+}
+
+.text-section p {
+    padding-right: 150px;
+    width: 280px;
+}
+
+.text-image-section {
+    clear: both;
+}
+
+.text-image-section div {
+    float: left;
+    margin-left: 120px;
+}
+
+.text-image-section img {
+    float: right;
+}
+
+
+.text-image-section p, h5 {
+}
+
+.room-section {
+    clear: both;
+    padding-top: 120px;
+    height: 400px;
+}
+
+.room-section p, ul{
+    float: right;
+}
+
+.room-section h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.image-section-2 {
+    clear: both;
+    height: 500px;
+}
+
+.menu-section {
+    
+}
