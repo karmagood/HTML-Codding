@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Пошта Ucu.edu.ua</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        #heder{
+            background-color:#f0f0f0;
+            display: block;
+            border-bottom: solid lightgray 1px;
+
+        }
+        #heder2{
+            border-bottom: solid lightgray 1px;
+        }
+        #search_button{
+
+            vertical-align: top;
+            margin-top: -5px;
+            width: 55px;
+            height: 30px;
+            border: transparent;
+            vertical-align: text-top;
+            margin-left: -4px;
+            background-color: DodgerBlue;
+        }
+        #search{
+            margin-top: -5px;
+            height: 30px;
+            width: 43%;
+            vertical-align: text-top;
+            border: solid cornflowerblue 1px;
+        }
+        #Ucu{
+            margin-left: 2%;
+            margin-right: 2%;
+        }
+        #opt_button{
+
+            margin-top: -5px;
+            position: fixed;
+            left: 85%;
+            top: 3%;
+            border: transparent;
+            background-color: transparent;
+
+        }
+        .glyphicon-th{
+            font-size: 20px;
+            color: gray;
+
+        }
+        .glyphicon-search{
+            font-size: 15px;
+            color: white;
+        }
+        .glyphicon-user{
+            font-size: 18px;
+        }
+        #user{
+            position: fixed;
+            left: 95%;
+            top: 2%;
+            border: transparent;
+            background-color: transparent;
+        }
+        #notification{
+            position: fixed;
+            left: 90%;
+            top:2%;
+            padding: 5px;
+            border-radius:50%;
+            border: transparent;
+            background-color: gray;
+            color: white;
+            font-size: 10px;
+        }
+        #selector{
+            margin: 12px;
+            margin-left: 20px;
+            font-size: 20px;
+            color: #d14836;
+            vertical-align:top;
+
+            border: transparent;
+        }
+        #check{
+            color: gray;
+            margin-left:-5px ;
+            border: transparent;
+            background-color: transparent;
+        }
+        #select1{
+            margin: 10px;
+            margin-left: 80px;
+            margin-right: 5px;
+            width: 70px;
+            height: 30px;
+            background-color: #f0f0f0;
+            border: solid lightgray 1px;
+            border-radius: 2px;
+        }
+        .refresh{
+
+            width: 70px;
+            height: 30px;
+            margin-right: 5px;
+            margin-left:10px ;
+            background-color: #f0f0f0;
+            border: solid lightgray 1px;
+            border-radius: 2px;
+            color: gray;
+        }
+        #num_of_mails{
+            margin-left: 43%;
+        }
+        .nav_buttons{
+            height: 30px;
+            width: 50px;
+            margin: 3px;
+            background-color: #f0f0f0;
+            border: solid lightgray 1px;
+            border-radius: 2px;
+        }
+
+        #send{
+
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #f0f0f0;
+            width: 100px;
+            height: 30px;
+            padding: -10px;
+            border: transparent;
+            border-radius: 2px;
+            background-color: #d14836;
+        }
+        .left_buttons{
+            background-color: transparent;
+            border: transparent;
+            margin-left: -5px;
+        }
+        .menu{
+            margin-top: 4px;
+        }
+        #side_menu{
+
+            margin-left: 20px;
+            float: left;
+            width: 10%;
+        }
+        #emails{
+            float: right;
+            width: 88%;
+            background-color: #f0f0f0;
+
+        }
+        .mail{
+            overflow: hidden;
+            white-space: nowrap;
+            border-bottom: lightgray solid 1px;
+        }
+        .checkbbox{
+            float: left;
+            width: 2%;
+            margin-left: 20px;
+            margin-right: 30px;
+        }
+        .subject{
+            width: 10%;
+            float: left;
+            margin-right: 50px;
+        }
+        .date{
+            float: right;
+            margin-right: 20px;
+        }
+        .subjectmail{
+            float: left;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+<div id="heder">
+
+    <img id="Ucu" src="https://www.google.com/a/ucu.edu.ua/images/logo.gif" width="143" height="59" border="0" alt="Пошта Ucu.edu.ua від Google">
+
+    <input id="search">
+    <button id="search_button">
+        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </button>
+
+    <button id="opt_button">
+        <span  class="glyphicon glyphicon-th" aria-hidden="true"></span>
+    </button>
+    <button id="user">
+        <span  class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    </button>
+    <button id="notification">
+        <span  class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+    </button>
+</div>
+<div id="heder2">
+    <select id="selector">
+        <option value="Пошта">Пошта</option>
+    </select>
+
+    <button id="select1">
+        <input id="checkBox" type="checkbox">
+        <select id="check">
+            <option value="Пошта"></option>
+        </select>
+    </button>
+    <button class="refresh">
+        <span  class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+    </button>
+    <select class="refresh">
+        <option value="Більше">Більше</option>
+    </select>
+    <b id="num_of_mails">1-50</b>
+    з
+    <b>1260</b>
+    <button class="nav_buttons">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    </button>
+    <button class="nav_buttons">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </button>
+    <button class="nav_buttons">
+        <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+    </button>
+    <button class="nav_buttons">
+        <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+    </button>
+</div>
+<div id="side_menu">
+    <button id="send">
+        Надіслати
+    </button>
+    <div class="menu">
+        <a href="#" style="color: #d14836"><b>Вхідні</b></a>
+    </div>
+    <div class="menu">
+        <button class="left_buttons">Із зірочкою</button>
+    </div>
+    <div class="menu">
+        <button class="left_buttons">
+            Надіслані
+        </button>
+    </div>
+    <div class="menu">
+        <button class="left_buttons">
+            <b>Чернетки (6)</b>
+        </button>
+    </div>
+    <div class="menu">
+        <button class="left_buttons">
+            Більше
+        </button>
+    </div>
+
+</div>
+<div id="emails">
+    <div class="mail">
+        <div class="checkbbox">
+            <input type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div>
+    <div class="mail">
+        <div class="checkbbox">
+            <input class="box" type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div>
+    <div class="mail">
+        <div class="checkbbox">
+            <input type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div>
+    <div class="mail">
+        <div class="checkbbox">
+            <input type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div>
+    <div class="mail">
+        <div class="checkbbox">
+            <input type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div>
+    <div class="mail">
+        <div class="checkbbox">
+            <input type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div>
+    <div class="mail">
+        <div class="checkbbox">
+            <input type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div>
+    <div class="mail">
+        <div class="checkbbox">
+            <input type="checkbox" name="t" value="15eae135d5382843">
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+        </div>
+        <div class="subjectmail">
+            <div class="subject">
+                Уряд студентів
+            </div>
+            <div class="mail">
+                – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+                ознайомчу сесію
+            </div>
+        </div>
+        <div class="date">
+            23 вер.
+        </div>
+    </div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div><div class="mail">
+    <div class="checkbbox">
+        <input type="checkbox" name="t" value="15eae135d5382843">
+        <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+    </div>
+    <div class="subjectmail">
+        <div class="subject">
+            Уряд студентів
+        </div>
+        <div class="mail">
+            – Вітаємо! Друзі, студентська організація «Світи» з великою радістю запрошує усіх бажаючих на першу
+            ознайомчу сесію
+        </div>
+    </div>
+    <div class="date">
+        23 вер.
+    </div>
+</div>
+</div>
+</body>
+</html>

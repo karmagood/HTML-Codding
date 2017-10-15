@@ -1,0 +1,196 @@
+.nav-1 {
+    background-color: #F1F1F1;
+    /*border-radius: 5px;*/
+    border-bottom: 1px solid #cecaca;
+}
+
+.nav-2 {
+
+}
+
+#grid-nav-1, #grid-nav-2, #grid-nav-3 {
+    display: grid;
+}
+
+#grid-nav-1 {
+    grid-template-columns: 202px 1fr 352px; /* three columns */
+    grid-template-rows: 60px auto auto; /* three rows  */
+}
+
+#grid-nav-2 {
+    grid-template-columns: 202px 1fr; /* three columns */
+    grid-template-rows: 60px auto; /* three rows  */
+}
+
+#grid-nav-3 {
+    grid-template-columns: 202px 1fr 706px; /* three columns */
+    grid-template-rows: 515px auto auto; /* three rows  */
+}
+
+#nav-search {
+    margin-top: 2%;
+    margin-bottom: 2%;}
+.nav-search-styles{
+
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+#nav-search-input{
+    display: inline-flex;
+    width: 600px;
+    height: 30px;
+    border: 1px solid #cecaca;
+}
+#nav-search-input:hover{
+    /*border: #cecaca;*/
+}
+#nav-submit-input{
+    width: 60px;
+    height: 30px;
+    background-color: #4485F4;
+    border: 1px solid #4485F4;
+    border-bottom-right-radius: 1px;
+    border-top-right-radius: 1px;
+    }
+
+#circle-photo {
+    border-radius: 15px;
+}
+
+#mail-nav-2 {
+    color: #D64937;
+    font-stretch: ultra-condensed;
+    font: 1.5em serif;
+    text-align: center;
+}
+
+#logo-inline {
+    align-items: center;
+    display: inline-flex;
+}
+
+.nav-button-style {
+    border-radius: 4px;
+    border: 1px solid #cecaca;
+    background-color: #F1F1F1;
+    width: 69px;
+    height: 29px;
+
+}
+
+#nav-group-left {
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-left: 20px;
+
+}
+
+#nav-group-right {
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-right: 20px;
+}
+
+#nav-group-middle {
+    border-radius: 0px;
+
+}
+
+#nav-item-margin {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+#aside-red-button {
+    background-color: #D64937;
+    width: 130px;
+    height: 35px;
+    color: white;
+    border: 1px solid #D64937;
+    border-radius: 3px;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+ul > li {
+    list-style: none;
+}
+
+ul > li:before {
+    color: red;
+    content: "|";
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid #cecaca;
+
+}
+
+input{
+
+}
+
+/*checkbox*/
+/*.checkboxFive {*/
+/*!*width: 25px;*!*/
+/*!*margin: 20px 100px;*!*/
+/*!*position: relative;*!*/
+/*}*/
+/*.checkboxFive label {*/
+/*cursor: pointer;*/
+/*position: absolute;*/
+/*width: 25px;*/
+/*height: 25px;*/
+/*top: 0;*/
+/*left: 0;*/
+/*background: #eee;*/
+/*border:1px solid #ddd;*/
+/*}*/
+/*.checkboxFive label:after {*/
+/*opacity: 0.2;*/
+/*content: '';*/
+/*position: absolute;*/
+/*width: 9px;*/
+/*height: 5px;*/
+/*background: transparent;*/
+/*top: 6px;*/
+/*left: 7px;*/
+/*border: 3px solid #333;*/
+/*border-top: none;*/
+/*border-right: none;*/
+/** Create the hover event of the tick*/
+/**!*/
+/*.checkboxFive label:hover::after {*/
+/*opacity: 0.5;*/
+/*}*/
+
+/**
+ * Create the checkbox state for the tick
+ */
+/*.checkboxFive input[type=checkbox]:checked + label:after {*/
+/*opacity: 1;*/
+/*}*/
+
+.grid-item {
+    padding: .2em;
+    /*background: #E3B4BA;*/
+    /*border-radius: 5px;*/
+    /*border: 1px solid #fff;*/
+}
+
+#check-nav {
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+
+/*pre {*/
+/*margin: 0;*/
+/*padding: 0  1em 0.5em 0;*/
+/*}*/

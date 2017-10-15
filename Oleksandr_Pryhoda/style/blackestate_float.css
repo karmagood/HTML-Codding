@@ -1,0 +1,223 @@
+body {
+    margin: 65px auto;
+    width: 1200px;
+}
+
+header {
+    margin: auto;
+    width: 1100px;
+    height: 550px;
+}
+
+a, p, h1, h2, h3, h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 25px;
+}
+a, p {
+    font-size: 20px;
+}
+
+
+.head-class-1{
+    width: 190px;
+    float: left;
+}
+
+.head-class-2 {
+    width: 230px;
+    float: left;
+    margin-left: 40px;
+}
+
+.head-class-3 {
+    width: 150px;
+    float:right;
+    margin-right: 10px;
+}
+
+.head-class-4 {
+    width: 190px;
+    float: right;
+}
+
+.nav-bar-class {
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.nav-bar-class a, ul {
+    width: 230px;
+    height: 150px;
+}
+
+.nav-bar-class p {
+    width: 230px;
+    height: 150px;
+}
+
+
+.each-elem {
+    float: left;
+}
+
+.inner-list {
+    float: left;
+}
+
+.inner-list a, li {
+    height: 20px;
+    margin-left: 30px;
+    list-style: none;
+}
+
+.last-elem {
+    text-align: center;
+    float: right;
+}
+
+.right-elem {
+    margin-left: 90px;
+}
+.image-section {
+    clear: both;
+}
+
+.image-section img {
+    padding-bottom: 80px;
+    width: 710px;
+    height: 525px;
+}
+
+.img-1 {
+    position: absolute;
+    margin-left: 500px;
+    z-index: 2;
+}
+
+.img-2 {
+    margin-top: 250px;
+}
+
+.img-3 {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 200px;
+    z-index: 2;
+}
+
+.img-4 {
+    width: 270px;
+    height: 800px;
+    margin-left: 180px;
+}
+
+.view-more {
+    float: right;
+    margin-top: 150px;
+}
+
+.text-section {
+    clear: both;
+    padding-top: 50px;
+    height: 400px;
+}
+
+.text-section img, p {
+    float: right;
+}
+
+.text-section p {
+    padding-right: 150px;
+    width: 280px;
+}
+
+.text-image-section {
+    clear: both;
+}
+
+.text-image-section div {
+    float: left;
+    margin-left: 120px;
+}
+
+.text-image-section img {
+    float: right;
+}
+
+
+.text-image-section p, h5 {
+}
+
+.room-section {
+    clear: both;
+    padding-top: 120px;
+    height: 400px;
+}
+
+.room-section p, ul{
+    width: 220px;
+    float: right;
+}
+
+.room-section h1 {
+    text-align: center;
+    width: 100%;
+}
+
+
+.menu-section {
+    float: left;
+}
+
+.menu-section-1 h1, div{
+    clear: right;
+    float: left;
+}
+
+
+.block-sec {
+    margin-top: 200px;
+    margin-left: 40px;
+    width: 300px;
+    height: 400px;
+}
+
+.article-section article{
+    margin-top: 30px;
+    margin-left: 40px;
+    float: right;
+    width: 300px;
+    height: 400px;
+}
+
+.article-section-nav {
+    margin-left: 40px;
+    float: right;
+    width: 300px;
+    height: 400px;
+}
+
+.article-section h1, p {
+    width: 280px;
+    text-align: left;
+}
+
+.clear-right {
+    clear: right;
+    float: right;
+}
+
+.footer-section section{
+    height: 100px;
+    float: left;
+}
+
+.footer-section p {
+    height: 100px;
+    float: left;
+}
+
