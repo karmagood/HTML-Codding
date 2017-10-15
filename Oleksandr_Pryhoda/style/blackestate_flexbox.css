@@ -1,0 +1,60 @@
+header {
+    margin: auto;
+    width: 1100px;
+    height: 550px;
+}
+
+body {
+    margin: 65px auto;
+    width: 1200px;
+}
+
+a, p, h1, h2, h3, h4, h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 25px;
+}
+a, p {
+    font-size: 20px;
+}
+
+header h1,p, h4 {
+    display: flex;
+    flex-direction: row;
+}
+
+.head-class-1{
+    width: 190px;
+}
+
+.head-class-2 {
+    width: 230px;
+    margin-left: 40px;
+}
+
+.head-class-3 {
+    width: 150px;
+    margin-right: 10px;
+}
+
+.head-class-4 {
+    width: 190px;
+}
+
+.nav-bar-class {
+    clear: both;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.nav-bar-class a, ul {
+    width: 230px;
+    height: 150px;
+}
+
+.nav-bar-class p {
+    width: 230px;
+    height: 150px;
+}
