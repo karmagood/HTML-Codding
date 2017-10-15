@@ -1,0 +1,124 @@
+body{
+    margin: 100px;
+}
+.grid-container-1 {
+    display: grid;
+    grid-template-columns: 250px 300px 300px 220px 220px;
+    grid-template-rows: auto;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 250px 300px 300px 220px 220px;
+    grid-template-rows: auto;
+}
+.grid-container-3{
+    display: grid;
+    margin-top: 50px;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: auto;
+}
+.imgFirst{
+    margin-top: 300px;
+}
+
+.grid-container-4{
+    display: grid;
+    margin-top: 50px;
+    margin-left: 500px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+}
+
+.grid-container-5{
+    display: grid;
+    margin-top: 100px;
+    margin-left: 200px;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+}
+
+.grid-container-6{
+    display: grid;
+    margin-left: 500px;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 200px 200px;
+}
+.grid-container-7{
+    display: grid;
+
+    grid-template-columns: 600px 600px;
+    grid-template-rows: auto;
+}
+.secondImg{
+    margin-top: 300px;
+}
+
+.tast-inf1{
+    grid-area: 2/1;
+}
+.tast-inf2{
+grid-area: 2/2;
+}
+
+.tast-inf3{
+    grid-area: 2/3;
+}
+
+.grid-container-8{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 400px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+}
+.article3{
+    grid-area: 2/2;
+}
+
+.article4{
+    grid-area: 2/3;
+}
+
+.article5{
+     grid-area: 3/2;
+ }
+
+.article6{
+    grid-area: 3/3;
+}
+
+.article7{
+    grid-area: 4/2;
+}
+
+.article8{
+    grid-area: 4/3;
+}
+.grid-container-9{
+    margin-left: 700px;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows:  200px 200px;
+}
+.comment{
+    grid-area: 1/1;
+}
+.store{
+    grid-area: 1/2;
+}
+.grid-container-10{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 130px 200px 200px;
+}
+.SignUpForOurNewsLetter{
+    grid-area: 1/1;
+}
+.Contact{
+    grid-area: 2/2;
+}
+.social{
+    grid-area: 2/3;
+}
+
