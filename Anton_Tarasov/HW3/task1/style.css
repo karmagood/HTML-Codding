@@ -1,0 +1,48 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    position: absolute;
+    width: 80%;
+    height: 50px;
+    margin-bottom: 0;
+    background-color: darkviolet;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 50px;
+    background-color: orange;
+}
+
+#left_column {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: absolute;
+    margin-left: 10%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 60%;
+    overflow: auto;
+    background-color: red;
+}
+
+#right_column {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 20%;
+    overflow: auto;
+    background-color: limegreen;
+}
