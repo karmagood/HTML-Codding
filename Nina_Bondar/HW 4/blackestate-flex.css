@@ -337,3 +337,44 @@ h3#tasting {
     margin-top: 160px;
     margin-left: -30px;
 }
+
+.additional-options{
+    margin-top: 300px;
+}
+
+#additional {
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 40px;
+}
+
+#additional li {
+    margin-bottom: 10px;
+}
+
+#footer-options {
+    width: 64%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    font-size: 13px;
+    justify-content: space-between;
+    line-height: 26px;
+    flex-wrap: wrap;
+}
+
+#moved {
+    margin-left: 100px;
+}
+
+.copyright{
+    font-size: 13px;
+    margin-left: 550px;
+    line-height: 26px;
+}
+
+.lower-background{
+    height: 1000px;
+    width: 300px;
+    display: block;
+}
