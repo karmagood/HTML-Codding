@@ -1,0 +1,13 @@
+:root {
+    --color-primary: red;
+}
+
+
+#centred{
+    width: 30%;
+    background-color: var(--color-primary);
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 35%;
+}
