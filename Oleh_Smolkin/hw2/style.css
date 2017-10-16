@@ -1,0 +1,250 @@
+html, body{
+    height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #F8F8F8;
+}
+
+body>header{
+    background-color: #ffffff;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    z-index: 50;
+}
+
+#logo{
+    height: 18px;
+    margin: 19px;
+}
+
+#search{
+    vertical-align: top;
+    height: 24px;
+    margin: 16px;
+    margin-left: 60px;
+    width: 500px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+
+#left{
+    float: left;
+    margin-right: -500px;
+}
+
+#right{
+    float: right;
+}
+
+#user_icon{
+    border-radius: 50%;
+    height: 30px;
+    margin: 13px;
+}
+
+header .icon{
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 19px 10px;
+}
+
+#hamburger{
+    background-image: url("https://cdn3.iconfinder.com/data/icons/gray-toolbar/512/menu-512.png");
+}
+
+#upload{
+    background-image: url("https://image.flaticon.com/icons/png/128/60/60723.png");
+}
+
+#apps{
+    background-image: url("http://www.myiconfinder.com/uploads/iconsets/256-256-255dcbc5f25c5a617cd0f7fb5c8c906d-grid.png");
+}
+
+#notifications{
+    background-image: url("http://www.download3k.com/article_images/0/384/thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png");
+}
+
+main{
+    height: 100%;
+    padding-top: 56px;
+    box-sizing: border-box;
+}
+
+aside{
+    background-color: #F0F0F0;
+    width: 240px;
+    height: calc(100% - 56px);
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 5;
+    display: inline-block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+aside footer{
+    font-size: 13px;
+    color: #989898;
+}
+main>section{
+    padding-left: 270px;
+    display: inline-block;
+    vertical-align: top;
+    width:calc(100% - 300px);
+}
+
+aside nav{
+    padding-top: 20px;
+}
+
+aside nav a{
+    display: block;
+    padding: 0 24px;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+aside nav h3{
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+    color: #989898;
+    padding: 0 24px;
+}
+
+aside nav section{
+    padding: 4px 0;
+    border-bottom: 1px #E8E8E8 solid;
+    margin-bottom: 10px;
+}
+
+.video{
+    width: 210px;
+    display: inline-block;
+}
+
+aside footer section{
+    padding: 0 24px;
+}
+
+aside footer a{
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+#guide_primary{
+    padding-top: 15px;
+}
+
+#guide_secondary{
+    padding-top: 15px;
+}
+
+#copyright{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+aside .icon{
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.chanel{
+    border-bottom: 1px #E8E8E8 ridge;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.chanel header{
+    padding-bottom: 20px;
+}
+
+.chanel header img{
+    border-radius: 50%;
+    height: 32px;
+}
+
+.chanel h3{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 8px;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.chanel small{
+    vertical-align: top;
+    padding-top: 8px;
+    padding-left: 5px;
+    display: inline-block;
+    color: #989898;
+}
+
+.chanel .list{
+    width: 200%;
+}
+.video section{
+    width: 160px;
+}
+
+.video h4{
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.video p{
+    margin: 0;
+    color: #BEBEBE;
+    font-size: 12px;
+}
+
+.subscript{
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+    color: white;
+    background-color: #FF0000;
+    padding: 10px;
+    font-size: 14px;
+}
+.close_icon{
+    float: right;
+    height: 25px !important;
+    width: 25px;
+    padding: 5px 15px;
+}
+
+#subscriptions a .icon{
+    background-color: #FF0000;
+    padding: 3px;
+    border-radius: 50%;
+    opacity: 1.0;
+}

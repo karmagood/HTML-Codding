@@ -1,0 +1,434 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+
+p {
+    margin: 1em 0;
+    display: block;
+}
+
+header.global {
+    padding-top: 75px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header.global section.nav-section {
+    float: left;
+}
+
+header.global section.nav-section h1 {
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px 0 45px;
+}
+
+header.global section.nav-section h2 {
+    width: 230px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 325px 0 45px;
+}
+
+header.global section.nav-section h1, header.global section.nav-section h2 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+header.global section.tasting-room h1 {
+    width: 150px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px 0 0;
+    font-size: 100%;
+    line-height: inherit;
+    font-weight: normal;
+}
+
+header.global section.tasting-room {
+    width: 350px;
+    float: left;
+    display: inline;
+    padding: 0;
+    line-height: 1.2;
+    margin: 0 5px;
+    font-size: 20px;
+}
+
+.underline-a {
+    border: 2px solid #000;
+    border-width: 0 0 2px;
+}
+
+header.global section.tasting-room p {
+    margin-left: 160px;
+    margin-bottom: 1.3em;
+    margin-top: 0;
+}
+
+header.global nav {
+    clear: both;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    height: 200px;
+}
+
+header.global nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header.global nav li {
+    position: relative;
+}
+
+#firstItem {
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px 0 45px;
+}
+
+#secondItem {
+    width: 310px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px 0 45px;
+}
+
+#thirdItem {
+    width: 390px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px;
+}
+
+#forthItem {
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px;
+}
+
+.spanLL {
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    margin-top: 25px
+}
+
+.sub-under-a {
+    font-size: 16px;
+    color: #1b1b1b;
+    text-decoration: none;
+    border: 2px solid #000;
+    border-width: 0 0 2px;
+}
+
+.main-content {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 1.4;
+}
+
+.images-mid {
+    padding: 0 5px;
+    clear: both;
+    position: relative;
+}
+
+.images-mid img {
+    display: block;
+    position: relative;
+    width: 710px;
+    height: 525px;
+    overflow: hidden;
+}
+
+.firstImage {
+    z-index: 100;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.secondImage {
+    z-index: 101;
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: -340px;
+}
+
+.firstImage:hover {
+    z-index: 102;
+}
+
+.main-paragraph {
+    width: 910px;
+    float: left;
+    display: inline;
+    margin: 0 5px 0 285px;
+    padding: 60px 0 160px;
+    clear: both;
+    position: relative;
+}
+
+.main-paragraph p {
+    width: 270px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px 1.3em 0;
+    clear: left;
+    font-size: 19px;
+}
+
+.main-paragraph img {
+    width: 470px;
+    display: inline;
+    float: right;
+}
+
+.second-p p{
+    width: 270px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 85px;
+    position: relative;
+    font-size: 19px;
+}
+
+.second-p img {
+    width: 750px;
+    display: inline;
+    padding: 0;
+    margin: 0 5px;
+    position: relative;
+    height: 560px;
+    float: right;
+}
+
+.tasting-menu {
+    position: relative;
+    font-size: 19px;
+}
+
+.tasting-menu h1 {
+    clear: both;
+    width: 150px;
+    margin-left: 445px;
+    font-size: 36px;
+    line-height: 1.1;
+    padding-top: 50px;
+    margin-bottom: 0;
+}
+
+.inside-tasting-menu {
+    width: 230px;
+    margin-left: 450px;
+    margin-right: 45px;
+    font-size: 19px;
+    line-height: 1.1;
+    padding-top: 20px;
+    margin-bottom: 0;
+    float: left;
+    display: inline;
+}
+
+.menu {
+    width: 230px;
+    float: left;
+    display: inline;
+    margin: 0 45px 0 5px;
+    padding: 20px 0 0;
+}
+
+.sub-menu {
+    width: 190px;
+    float: left;
+    display: inline;
+    margin: 0 -75px 0 5px;
+    padding: 20px 0 0;
+}
+
+.images-bot {
+    padding: 0 5px;
+    clear: both;
+    position: relative;
+}
+
+.images-mid img {
+    display: block;
+    position: relative;
+    width: 710px;
+    height: 525px;
+    overflow: hidden;
+}
+
+.firstImg {
+    z-index: 200;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    width: 710px;
+    height: 525px;
+    overflow: hidden;
+}
+
+.secondImg {
+    z-index: 201;
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: -340px;
+    display: block;
+    position: relative;
+    width: 710px;
+    height: 525px;
+    overflow: hidden;
+}
+
+.firstImg:hover {
+    z-index: 202;
+}
+
+.view-more-button {
+    position: absolute;
+    right: 10px;
+    top: 130px;
+    border: none;
+    background: transparent;
+    font-size: 19px;
+    text-align: left;
+}
+
+.arrow-span {
+    padding-left: 45px;
+}
+
+.main-releases {
+    padding-top: 50px;
+    position: relative;
+}
+
+.bottle-photo {
+    width: 270px;
+    float: left;
+    display: inline;
+    padding: 0;
+    height: 800px;
+    margin: -140px 45px 0 165px;
+}
+
+.aside-info {
+    width: 270px;
+    float: right;
+    display: inline;
+    margin-right: 100px;
+    font-size: 19px;
+}
+
+.current-releases {
+    clear: right;
+    position: relative;
+    padding-top: 80px;
+    padding-left: 480px;
+}
+
+.current-releases h1 {
+    width: 270px;
+    float: left;
+    display: inline;
+    margin: 0 45px 15px 5px;
+    position: absolute;
+    bottom: 100%;
+    left: 480px;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.sub-releases {
+    float: left;
+    width: 640px;
+}
+
+.articles {
+    width: 270px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 45px 50px 5px;
+    font-size: 19px;
+}
+
+footer {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 75px;
+    font-size: 13px;
+    position: relative;
+    line-height: 2;
+    padding-bottom: 2000px;
+}
+
+footer section {
+    width: 1150px;
+    float: left;
+    padding: 0;
+    margin: 0 5px 0 45px;
+    font-size: 20px;
+}
+
+footer nav {
+    width: 1150px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 5px 0 45px;
+}
+
+.first-footer-a {
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 45px 0 0;
+}
+
+.second-footer-a {
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 45px 0 380px;
+}
+
+.third-footer-a {
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0;
+    margin: 0 45px 0 0;
+}
+

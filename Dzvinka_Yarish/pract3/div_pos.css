@@ -1,0 +1,55 @@
+body {
+    margin:0;
+    font-family: "PT Seriff", sans-serif;
+
+}
+.violet {
+    background-color: #8e44ad;
+    position: absolute;
+    right:30%;
+    left:30%;
+    height:10%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+
+}
+.red {
+    background-color: #e74c3c;
+    position: absolute;
+    right:45%;
+    left:30%;
+    top:10%;
+    height:85%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+
+.green {
+    background-color: #2ecc71;
+    position: absolute;
+    right: 30%;
+    left: 55%;
+    top: 10%;
+    height: 85%;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+.orange {
+    background-color: #e67e22;
+    position: absolute;
+    right:30%;
+    left:30%;
+    bottom:0;
+    height:5%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+
+}
+
+
+

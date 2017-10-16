@@ -1,0 +1,28 @@
+.float-grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.float-grid.col-n-5 .col {
+  width: 20%; }
+
+.float-grid.col-n-5 .col-l-1 {
+  margin-left: 20%; }
+
+.float-grid.col-n-5 .col-r-1 {
+  margin-right: 20%; }
+
+.float-grid.col-n-5 .col-2 {
+  width: 40%; }
+
+.float-grid .col {
+  float: left;
+  width: 33.3%;
+  padding: 0 15px;
+  box-sizing: border-box; }
+
+.float-grid .col-2 {
+  width: 66.6%; }
+
+.t-center {
+  text-align: center; }

@@ -1,0 +1,79 @@
+.aside-block{
+    display: flex;
+    flex-direction: column;
+}
+.aside_block{
+    padding: 12px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+.aside_menu{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    padding: 0 24px;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+}
+.aside_icon{
+    margin-right: 27px;
+    color: #858385;
+}
+.aside_icon-2{
+    margin-right: 24px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    color: #858385;
+}
+.aside_icon-3{
+    color: #dedcde;
+}
+.aside-text.home{
+    font-weight: 600;
+}
+.hidden_text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+}
+.aside_headers{
+    vertical-align: middle;
+    width: 240px;
+    height: 33px;
+    margin: 0;
+    font-family:sans-serif;
+    font-size: 14px;
+    color: rgba(17,17,17,0.6);
+    font-weight: 600;
+    letter-spacing: .007px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+}
+.aside_footer{
+    padding: 24px 27px 0;
+    display: block;
+    color: rgba(17, 17, 17, 0.6);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+}
+.aside_footer a{
+    text-decoration: none;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+.aside_footer.middle{
+    padding: 12px 27px 0;
+}
+.aside_footer.end{
+    padding: 24px 27px;
+    margin-top: 16px;
+}
