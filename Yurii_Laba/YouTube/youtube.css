@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+header{
+    background-color: #ffffff;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+
+}
+
+#youtube_logo{
+    height: 50px;
+    width: 100px;
+    vertical-align: middle;
+    margin-left: 20px;
+    /*Выравнивает элемент по вертикали относительно своего родителя, окружающего текста или ячейки таблицы.*/
+
+
+}
+#hamburger{
+    margin-left: 30px;
+}
+
+#main_search{
+    vertical-align: middle;
+    height: 25px;
+    width: 500px;
+    margin-left: 50px;
+
+}
+.icon{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+aside{
+    overflow: auto;
+    position: fixed;
+    top: 50px;
+    width: 240px;
+    height: 92vh;
+    background-color: #f7f7f7;
+
+}
+aside nav{
+    padding: 20px;
+}
+.circle_image{
+    border-radius: 50%;
+}
+
+aside img {
+    vertical-align: bottom;
+    width: 21px;
+    height: 21px;
+    margin-right: 20px;
+    opacity: 0.5;
+
+}
+
+aside nav a {
+    display: block;
+    text-decoration: none;
+    padding-bottom: 30px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+
+
+}
+aside nav h3{
+    font-family: sans-serif;
+    font-size: 14px;
+    opacity: 0.5
+}
+
+
+aside img #subscriber{
+    border-radius:50%;
+}
+
+
+
