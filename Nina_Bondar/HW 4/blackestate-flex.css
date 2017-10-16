@@ -230,9 +230,8 @@ h3#tasting {
     margin-top: 270px;
     margin-left: 0px;
     margin-right: 40px;
+    margin-bottom: -85px;
 }
-
-
 
 #field1 {
     margin-right:-380px;
@@ -252,3 +251,88 @@ h3#tasting {
     z-index: 1;
 }
 
+#bottle-img {
+    height: 800px;
+    width: 270px;
+    margin-left: 200px;
+}
+
+.current-releases-wrap{
+    display: flex;
+    flex-direction: row;
+    margin-left: 520px;
+    margin-top: -670px;
+    flex-wrap: wrap;
+}
+
+#current-releases:before, #current-releases:after{
+    content: "";
+    display: table;
+}
+
+#current-releases h4 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 300px;
+}
+
+#releases-note p{
+    font-size: 19px;
+    margin-left: 100px;
+    width: 270px;
+    line-height: 26px;
+}
+
+.wine-name {
+    font-size: 19px;
+    text-align: left;
+}
+
+#header-wine-1 {
+    margin-left: -55px;
+}
+
+.price {
+    font-size: 19px;
+    text-align: left;
+}
+
+#wine-2, #wine-4 ,#wine-6 {
+    margin-left: 50px;
+}
+.wine-descr {
+    width: 270px;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+#header-wine-2,#header-wine-3, #header-wine-4, #header-wine-6{
+    margin-left: 0px;
+}
+
+#wine-3, #wine-4 ,#wine-5{
+    margin-top: 20px;
+}
+
+#header-wine-5 {
+    margin-left: -22px;
+}
+
+#wine-6{
+    margin-top: 20px;
+}
+
+#quote-1{
+    margin-top: 260px;
+}
+
+#quotes {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#wine-store {
+    font-size: 32px;
+    margin-top: 160px;
+    margin-left: -30px;
+}
