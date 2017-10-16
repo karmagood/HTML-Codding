@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Didact Gothic' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="main-header">
+    <nav class="header-nav">
+        <aside class="header-left-side">
+            <i class="menu-item material-icons">menu</i>
+            <img id="yt-logo" src="http://cdn.mos.cms.futurecdn.net/SytNGv3ZxAVCkvcspmbbvh-320-80.jpg">
+            <sup>UA</sup>
+        </aside>
+        <section class="search-section">
+            <form action class="search-form">
+                <input type="text" value="Search">
+                <button>
+                    <i class="material-icons search-cursor">search</i>
+                </button>
+            </form>
+        </section>
+        <aside class="header-right-aside">
+            <i class="material-icons">file_upload</i>
+            <i class="material-icons">apps</i>
+            <i class="material-icons">more_vert</i>
+            <a href="#" class="sign-in-link">SIGN IN</a>
+        </aside>
+    </nav>
+</header>
+<aside class="left-aside-content">
+    <nav class="aside-nav">
+        <a href="#">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+        </a>
+        <a href="#">
+            <i class="material-icons">whatshot</i>
+            <span>Trending</span>
+        </a>
+        <a href="#">
+            <i class="material-icons">history</i>
+            <span>History</span>
+        </a>
+    </nav>
+    <section class="second-aside-section">
+        <h1>BEST OF YOUTUBE</h1>
+        <nav class="aside-nav-2">
+            <a href="#">
+                <img class="icons" src="https://i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg" alt="">
+                <span>Music</span>
+            </a>
+            <a href="#">
+                <img class="icons" src="https://i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg" alt="">
+                <span>Sports</span>
+            </a>
+            <a href="#">
+                <img class="icons" src="https://i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg" alt="">
+                <span>Gaming</span>
+            </a>
+            <a href="#">
+                <img class="icons" src="https://i.ytimg.com/i/lgRkhTL3_hImCAmdLfDE4g/1.jpg" alt="">
+                <span>Movies</span>
+            </a>
+            <a href="#">
+                <img class="icons" src="https://i.ytimg.com/i/YfdidRxbB8Qhf0Nx7ioOYw/1.jpg" alt="">
+                <span>News</span>
+            </a>
+            <a href="#">
+                <img class="icons" src="https://i.ytimg.com/i/4R8DWoMoI7CAwX8_LjQHig/1.jpg" alt="">
+                <span>Live</span>
+            </a>
+        </nav>
+    </section>
+    <nav class="aside-nav-3">
+        <a href="#">
+            <img class="icons" src="https://s.ytimg.com/yts/img/innertube/guide/add_channel_guide-vflSJDanE.png" alt="">
+            <span>Browse channels</span>
+        </a>
+    </nav>
+    <section class="aside-sigh-in-block">
+        <p>Sign in now to see your<br>channels and<br>recommendations!</p>
+        <a href="#" class="sign-in-link-2">SIGN IN</a>
+    </section>
+    <section class="aside-about">
+        <section class="first-links">
+            <a href="#">About</a>
+            <a href="#">Press</a>
+            <a href="#">Copyright</a>
+            <a href="#">Creators</a>
+            <a href="#">Advertise</a>
+            <a href="#">Developers</a>
+            <a href="#">+YouTube</a>
+        </section>
+        <section class="second-links">
+            <a href="#">Terms</a>
+            <a href="#">Privacy</a>
+            <a href="#">Policy & Safety</a>
+            <a href="#">Test new features</a>
+        </section>
+        <section class="copyright">
+            <p>
+                © 2017 YouTube, LLC
+            </p>
+        </section>
+    </section>
+</aside>
+<main>
+    <section class="content">
+        <section class="trends">
+            {{#trending}}
+            <section class="section-name">
+                <span>{{chapter-title}}</span>
+            </section>
+            <section class="video-place">
+                {{#video-list}}
+                <section class="video" onclick="window.location='{{video-link}}';">
+                    <section class="photo-container">
+                        <img src="{{video-image}}">
+                        <section class="time-of-video">
+                            <span class="time-span">{{video-duration}}</span>
+                        </section>
+                    </section>
+                    <section class="video-details">
+                        <p>
+                            {{title}}
+                        </p>
+                        <section class="channel-info">
+                            <span class="chanIn hoverChan">{{channel-name}}</span>
+                        </section>
+                        <section class="videoDescr chanIn">
+                            <span class="viewers">
+                                {{view-count}}
+                            </span>
+                            <time datetime="2017-10-14">{{date}}</time>
+                        </section>
+                    </section>
+                </section>
+                {{/video-list}}
+            </section>
+
+            {{/trending}}
+        </section>
+    </section>
+
+
+
+</main>
+</body>
+</html>

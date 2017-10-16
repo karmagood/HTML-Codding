@@ -1,0 +1,388 @@
+header#main-header {
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    height: 42px;
+    display: flex;
+    flex-basis: 1000px;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+}
+
+#profile button{
+    background-color: #4267b2;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    padding: 5px;
+}
+
+#profile button:hover{
+    background-color: #29487d;
+}
+
+#hr1 { width:100%;
+    height: 0.2px;
+    box-shadow: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+#search {
+    padding-left: 5px;
+    font-size: 14px;
+}
+
+#fb_search button {
+    vertical-align: middle;
+}
+
+#profile li {
+    padding:3px;
+}
+
+#additional li {
+   padding: 5px;
+}
+#profile img {
+    width:25px;
+    height:25px;
+    border-radius: 15px;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+/*-----------header-*/
+header a:link {
+    color: white;
+    text-decoration: none;
+}
+
+header a:visited{
+    color: white;
+}
+
+header a:hover{
+    color:grey;
+}
+
+header a:active{
+    color: white;
+}
+
+/*--end of--header-*/
+
+/*search section------------------*/
+.search {
+    margin-left: -120px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+.search img {
+    margin-left: 33px;
+    margin-right: 6px;
+}
+
+.search input {
+    width: 440px;
+    border-radius: 3px;
+    border: none;
+    height:22px;
+    margin-right: -49px;
+    padding-left: 9px;
+}
+
+.search button {
+    width: 47px;
+    height: 24px;
+    top:30px;
+    border: none;
+    border-radius: 1px;
+    z-index: 1;
+    background-color: #f7f7f7;
+}
+
+/*end of search section------------*/
+
+#profile{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.aside-left{
+    position: fixed;
+    left: 2px;
+    top: 60px;
+    max-width: 126px;
+    font-size: 14px;
+}
+
+.aside-left ul {
+    list-style-type: none;
+}
+
+.aside-left ul li {
+    margin-top:5px;
+}
+
+
+.left-footer ul{
+    padding: 0px;
+    left: 2px;
+
+}
+.left-footer {
+    padding-left: 40px;
+}
+
+.aside-left footer ul li {margin: 2px;}
+
+/*----------------------------------- container rules*/
+.container{
+    display: flex;
+    flex-direction: row;
+}
+/*---------------------------------------------------*/
+
+body {
+    background-color: #f7f7f7;
+    direction: ltr;
+    font-family:Helvetica;
+
+}
+
+body ul {
+    list-style-type: none;
+}
+
+#create-post-head {
+    display: flex;
+    flex-direction: row;
+}
+
+#create-post  {
+    display: flex;
+    flex-direction: column;
+}
+
+#create-post input {
+    background-color: white;
+    height: 71px;
+}
+ article { font-size: 14px;}
+
+#post-input {
+    width: 470px;
+    background-color: white;
+    border-top: 1px;
+    margin-left: 8px;
+    padding-left: 10px;
+}
+#create-post-foot {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+#create-post-foot button {
+    padding: 6px;
+    margin: 3px;
+    border-radius: 20px;
+    border: none;
+    height: 30px;
+    background-color: #f7f7f7;
+}
+
+ #2b {
+     width: 138.688px;  }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    margin-left: 220px;
+}
+
+article {
+    background-color: white;
+    margin:7px;
+    padding: 6px;
+    width: 459.5px;
+    border: 2px;
+    border-radius: 3px;
+}
+
+.emoticons img{
+    vertical-align: middle;
+}
+
+.secondary-content {
+    position: fixed;
+    top: 40px;
+    right: 250px;
+    width: 284px;
+    font-size: 13px;
+    z-index: -1;
+}
+
+.secondary-content h4{
+    color: #365899;
+}
+
+.secondary-content section {
+    background-color: white;
+}
+
+.secondary-content section.Ads {
+    border: 1px solid lightgray;
+}
+
+.secondary-content section.languages {
+    border: 1px solid lightgray;
+    margin-top: 13px;
+}
+
+.secondary-content img{
+    border:none;
+}
+
+section.Ads {
+    background-color: white;
+    border: 1px solid lightgray;
+    padding: 5px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+#notification-block a:link {
+    color: #29487d;
+}
+
+#notification-block a:visited {
+    color: #29487d;
+}
+
+#notification-block a:hover {
+    color: #29487d;
+}
+
+
+#notification-block a:active {
+    color: #29487d;
+}
+
+#notification-block {
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 13px;
+    background-color: white;
+    border: 1px solid lightgray;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.secondary-content a:link {
+    color: darkgray;
+}
+
+.secondary-content a:visited {
+     color: darkgray;
+ }
+
+.secondary-content a:hover {
+    color: gray;
+}
+
+.secondary-content a:active {
+    color: darkgray;
+}
+
+
+.ads {
+    display: flex;
+}
+
+.languages ul{
+    display: flex;
+    list-style-type: none;
+}
+.right-aside {
+    position: fixed;
+    right: 11px;
+    height: 100%;
+    width: 200px;
+    top:40px;
+    font-size: 12px;
+    border-left:solid 1px lightgray;
+    z-index: -1;
+
+}
+.right-aside ul {
+    list-style-type: none;
+    padding-left: 8px;
+}
+
+.datetime{
+    color: #90949c;
+    font-size:12px;
+}
+
+.like-button {
+    margin-left: 7px;
+}
+
+.like-button, .share-button, .comment-button {
+    border: none;
+    font-size: 13px;
+    color: #616770;
+    height: 30px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.like-button:hover, .share-button:hover, .comment-button:hover{
+    text-decoration: underline;
+}
+
+.right-aside ul li img{
+    border-radius: 15px;
+    vertical-align: middle;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-right: 7px;
+}
+
+#search-chat input{
+    border:none;
+    width: 100%;
+    padding: 5px;
+
+}

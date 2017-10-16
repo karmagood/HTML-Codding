@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5.2</title>
+</head>
+<body>
+<header>
+
+    <h1>HTML 5.2</h1>
+    <p>W3C Candidate Recommendation,8 August 2017</p>
+    <a href="https://www.w3.org/">
+        <img alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" width="72"></a>
+
+</header>
+
+<dl>
+    <dt>This version:</dt>
+    <dd><a href="https://www.w3.org/TR/2017/CR-html52-20170808/">
+        https://www.w3.org/TR/2017/CR-html52-20170808/</a></dd>
+
+    <dt>Latest published version:</dt>
+    <dd><a href="https://www.w3.org/TR/html52/">https://www.w3.org/TR/html52/</a></dd>
+
+    <dt>Latest version of HTML:</dt>
+    <dd><a href="https://www.w3.org/TR/html/">https://www.w3.org/TR/html/</a></dd>
+
+    <dt>Editor's Draft:</dt>
+    <dd><a href="https://w3c.github.io/html/"></a> https://w3c.github.io/html/</dd>
+
+    <dt>Previous Versions:</dt>
+    <dd><a href="https://www.w3.org/TR/2017/WD-html52-20170718/">
+        https://www.w3.org/TR/2017/WD-html52-20170718/</a></dd>
+
+    <dt>Editors:</dt>
+    <dd><a href="mailto:sfaulkner@paciellogroup.com">Steve Faulkner</a> (The Paciello Group)</dd>
+    <dd><a href="mailto:arronei@microsoft.com">Arron Eicholz</a> (Microsoft)</dd>
+    <dd><a href="mailto:travil@microsoft.com">Travis Leithead</a> (Microsoft)</dd>
+    <dd><a href="mailto:adanilo@google.com">Alex Danilo</a> (Google)</dd>
+    <dd><a href="mailto:sangwhan@iki.fi">Sangwhan Moon</a> (Invited Expert)</dd>
+
+    <dt>Former Editors:</dt>
+    <dd><a href="mailto:Erika.Doyle@microsoft.com">Erika Doyle Navara</a> (Microsoft)</dd>
+    <dd><a href="mailto:hober@apple.com">Theresa O'Connor</a> (Apple Inc.)</dd>
+    <dd><a href="http://berjon.com/">Robin Berjon</a> (<abbr title="World Wide Web Consortium">W3C</abbr>)</dd>
+
+    <dt>Default Ref Status:</dt>
+    <dd>snapshot</dd>
+
+    <dt>Participate:</dt>
+    <dd><a href="https://github.com/w3c/html/issues/new">File an issue</a>
+        (<a href="https://github.com/w3c/html/issues">open issues</a>)
+    </dd>
+
+    <dt>Others:</dt>
+    <dd><a href="https://www.w3.org/TR/html52/single-page.html">Single page version</a></dd>
+
+</dl>
+<footer>
+    <small>
+        <a href="#">Copyright</a> &copy; 2017 <a href="#">W3C</a><sup>®</sup>
+        (<a href="#">MIT</a>, <a href="#">ERCIM</a>,
+        <a href="#">Keio</a>, <a href="#">Beihang</a>).
+        W3C <a href="#">liability</a>, <a href="#">trademark</a>
+        and <a href="#">permissive document license</a> rules apply.
+    </small>
+</footer>
+
+<hr/>
+<main>
+    <section>
+        <h2>Abstract</h2>
+        <p>This specification defines the 5th major version,
+            second minor revision of the core language of the World Wide Web:
+            the Hypertext Markup Language (<abbr title="Hypertext Markup Language">HTML</abbr>).
+            In this version, new features continue
+            to be introduced to help Web application authors, new elements continue to be
+            introduced based on research into prevailing authoring practices, and special
+            attention continues to be given to defining clear conformance criteria for user agents
+            in an effort to improve interoperability.</p>
+    </section>
+
+    <section>
+        <h2>Status of this document</h2>
+        <p>This section describes the status of this document at the time of its publication.
+            Other documents may supersede this document.
+            A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the latest revision of
+            this
+            technical report can be found in the <abbr title="World Wide Web Consortium">W3C</abbr> technical
+            reports index at https://www.w3.org/TR/.</p>
+
+        <p>This document was published by the Web Platform Working Group as a
+            Candidate Recommendation for <abbr title="Hypertext Marckup Language">HTML</abbr> 5.2, reflecting the
+            "leading
+            edge"
+            of what is interoperably deployed as <abbr title="Hypertext Marckup Language">HTML</abbr>. This document is
+            intended
+            to become a <abbr title="World Wide Web Consortium">W3C</abbr> Recommendation.</p>
+        <p>Features which are shown not to have implementation may
+            be removed from this specification.</p>
+
+        <p>The following features are explicitly "at risk"
+            and unless testing during Candidate Recommendation demonstrates
+            interoperable implementation of each feature it will be removed,
+            per <abbr title="World Wide Web Consortium">W3C</abbr> Process - 6.4 Candidate Recommendation:</p>
+        <ul>
+            <li>The <a href="#">input/inputmode</a> attribute for <a href="#">&lt;input&gt;</a> elements</li>
+            <li>The <a href="#">&lt;menu&gt;</a> and <a href="#">&lt;menuitem&gt;</a> elements</li>
+            <li>The allow-presentation sanboxing flag for the <a href="#">sandbox</a> attribute of an
+                <a href="#">&lt;iframe&gt;</a></li>
+            <li>The <a href="#">&lt;dialog&gt;</a> element</li>
+            <li>The datetime state for the <a href="#">&lt;input&gt;</a> element</li>
+            <li>The plugin API</li>
+        </ul>
+
+        <p>If you wish to make comments regarding this document,
+            please send them to this specification's <a href="#">GitHub repository</a> or public mailing
+            list <a href="#">public-html@w3.org</a>
+            (<a href="#">archived</a>, see <a href="#">instructions</a>).
+            When sending e-mail,
+            please put the text “html” in the subject, preferably
+            like this: “[html] <em>…summary of comment…</em>“.
+            All comments are welcome.</p>
+
+        <p>The Working Group expects to demonstrate 2 implementations of the
+            features listed in this specification by the end of the Candidate Recommendation phase.
+            An <a href="#">implementation report</a> will be produced for this version to demonstrate that in
+            almost every case changes are matched by interoperable implementation.</p>
+
+        <p><abbr title="World Wide Web Consortium">W3C</abbr> publishes a Candidate Recommendation to indicate that the
+            document is believed
+            to be stable and to encourage implementation by the developer community.
+            This Candidate Recommendation is expected to advance to Proposed Recommendation
+            no earlier than 5 September 2017.
+        </p>
+
+        <p>Publication as a Candidate Recommendation does not imply endorsement by the
+            <abbr title="World Wide Web Consortium">W3C</abbr> Membership.
+            This is a draft document and may be updated, replaced or obsoleted by other
+            documents at any time. It is inappropriate to cite this document as other than
+            work in progress.</p>
+
+        <p>This document was produced by a group operating under the <a href="#">5 February 2004
+            W3C Patent Policy</a>. <abbr title="World Wide Web Consortium">W3C</abbr> maintains a
+            <a href="#">public list of any patent disclosures</a>
+            made in connection with the deliverables of the group; that page also includes
+            instructions for disclosing a patent. An individual who has actual knowledge of a
+            patent which the individual believes contains <a href="#">Essential Claim(s)</a> must
+            disclose the information in accordance with
+            <a href="#">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.</p>
+
+        <p>This document is governed by the <a href="#">1 March 2017 W3C Process Document</a>.</p>
+
+    </section>
+</main>
+<aside>
+    <nav>
+        <h2>Table of contents</h2>
+        <ol>
+            <li><a href="#">Intoduction</a>
+                <ol>
+                    <li>
+                        <a href="#">Background</a>
+                    </li>
+                    <li>
+                        <a href="#">Audience</a>
+                    </li>
+                    <li>
+                        <a href="#">Scope</a>
+                    </li>
+                    <li>
+                        <a href="#">History</a>
+                    </li>
+                    <li>
+                        <a href="#">Design notes</a>
+                        <ol>
+                            <li>
+                                <a href="#">Serializability of script execution</a>
+                            </li>
+                            <li>
+                                <a href="#">Compliance with other specifications</a>
+                            </li>
+                            <li>
+                                <a href="#">Extensibility</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><a href="#">
+                        HTML vs XML Syntax
+                    </a></li>
+                    <li><a href="#">Structure of this specification</a>
+                        <ol>
+                            <li><a href="#">How to read this specification</a></li>
+                            <li><a href="#">Typographic conventions</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Privacy concerns</a></li>
+                    <li><a href="#">A quick introduction to HTML</a>
+                        <ol>
+                            <li><a href="#">Writing secure applications with HTML</a></li>
+                            <li><a href="#">Common pitfalls to avoid when using the scripting APIs</a></li>
+                            <li><a href="#">How to catch mistakes when writing HTML: validators and conformance
+                                checkers</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Conformance requirements for authors</a>
+                        <ol>
+                            <li><a href="#">Presentational markup</a></li>
+                            <li><a href="#">Syntax errors</a></li>
+                            <li><a href="#">Restrictions on content models and on attribute values</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Suggested reading</a></li>
+
+                </ol>
+            </li>
+
+            <li><a href="#">Common infrastructure</a>
+                <ol>
+                    <li><a href="#">Terminology</a>
+                        <ol>
+                            <li><a href="#">Resources</a></li>
+                            <li><a href="#">XML compatibility</a></li>
+                            <li><a href="#">DOM tree</a></li>
+                            <li><a href="#">Scripting</a></li>
+                            <li><a href="#">Plugins</a></li>
+                            <li><a href="#">Character encodings</a></li>
+                        </ol>
+                    </li>
+
+                    <li><a href="#">Conformance requirements</a>
+                        <ol>
+                            <li><a href="#">Conformance classes</a></li>
+                            <li><a href="#">Dependencies</a></li>
+                            <li><a href="#">Extensibility</a></li>
+                            <li><a href="#">Interactions with XPath and XSLT</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Case-sensitivity and string comparison</a></li>
+                    <li><a href="#">Common microsyntaxes</a>
+                        <ol>
+                            <li><a href="#">Common parser idioms</a></li>
+                            <li><a href="#">Boolean attributes</a></li>
+                            <li><a href="#">Keywords and enumerated attributes</a></li>
+                            <li><a href="#">Numbers</a>
+                                <ol>
+                                    <li><a href="#">Signed integers</a></li>
+                                    <li><a href="#">Non-negative integers</a></li>
+                                    <li><a href="#">Floating-point numbers</a></li>
+                                    <li><a href="#">Percentages and lengths</a></li>
+                                    <li><a href="#">Non-zero percentages and lengths</a></li>
+                                    <li><a href="#">Lists of floating-point numbers</a></li>
+                                    <li><a href="#">Lists of dimensions</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">Dates and times</a>
+                                <ol>
+                                    <li><a href="#">Months</a></li>
+                                    <li><a href="#">Dates</a></li>
+                                    <li><a href="#">Yearless dates</a></li>
+                                    <li><a href="#">Times</a></li>
+                                    <li><a href="#">Floating dates and times</a></li>
+                                    <li><a href="#">Time zones</a></li>
+                                    <li><a href="#">Global dates and times</a></li>
+                                    <li><a href="#">Weeks</a></li>
+                                    <li><a href="#">Durations</a></li>
+                                    <li><a href="#">Vaguer moments in time</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">Colors</a></li>
+                            <li><a href="#">Space-separated tokens</a></li>
+                            <li><a href="#">Comma-separated tokens</a></li>
+                            <li><a href="#">References</a></li>
+                            <li><a href="#">Media queries</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#">URLs</a>
+                        <ol>
+                            <li><a href="#">Terminology</a></li>
+                            <li><a href="#">Parsing URLs</a></li>
+                            <li><a href="#">Dynamic changes to base URLs</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Fetching resources</a>
+                        <ol>
+                            <li><a href="#">Terminology</a></li>
+                            <li><a href="#">Processing model</a></li>
+                            <li><a href="#">Encrypted HTTP and related security concerns</a></li>
+                            <li><a href="#">Determining the type of a resource</a></li>
+                            <li><a href="#">Extracting character encodings from meta elements</a></li>
+                            <li><a href="#">CORS settings attributes</a></li>
+                            <li><a href="#">Referrer policy attributes</a></li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Common DOM interfaces</a>
+                        <ol>
+                            <li><a href="#">Reflecting content attributes in IDL attributes</a></li>
+                            <li><a href="#">Collections</a>
+                                <ol>
+                                    <li><a href="#">The HTMLAllCollection interface</a></li>
+                                    <li><a href="#">The HTMLFormControlsCollection interface</a></li>
+                                    <li><a href="#">The HTMLOptionsCollection interface</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#"></a>The DOMStringList interface</li>
+                            <li><a href="#"></a>Garbage collection</li>
+                        </ol>
+                    </li>
+                    <li><a href="#">Namespaces</a></li>
+                    <li><a href="#">Safe passing of structured data</a>
+                        <ol>
+                            <li><a href="#">Serializable objects</a></li>
+                            <li><a href="#">Transferable objects</a></li>
+                            <li><a href="#">StructuredSerializeInternal ( value, forStorage [ , memory ] )</a></li>
+                            <li><a href="#">StructuredSerialize ( value )</a></li>
+                            <li><a href="#">StructuredSerializeForStorage ( value )</a></li>
+                            <li><a href="#">StructuredDeserialize ( serialized, targetRealm [ , memory ] )</a></li>
+                            <li><a href="#">StructuredSerializeWithTransfer ( value, transferList )</a></li>
+                            <li><a href="#">StructuredDeserializeWithTransfer ( serializeWithTransferResult, targetRealm
+                                )</a></li>
+                            <li><a href="#">Performing serialization and transferring from other specifications</a></li>
+                            <li><a href="#">Monkey patch for Blob and FileList objects</a></li>
+                        </ol>
+                    </li>
+
+
+                </ol>
+            </li>
+            <li><a href="#">Semantics, structure, and APIsof HTML documents</a></li>
+            <li><a href="#">The elements of HTML</a></li>
+            <li><a href="#">User interaction</a></li>
+            <li><a href="#">Loading Web pages</a></li>
+            <li><a href="#">Web application APIs</a></li>
+            <li><a href="#">The HTML syntax</a></li>
+            <li><a href="#">The XML syntax</a></li>
+            <li><a href="#">Rendering</a></li>
+            <li><a href="#">Obsolete features</a></li>
+            <li><a href="#">IANA considerations</a></li>
+
+        </ol>
+        <dl>
+            <dt></dt>
+            <dd><a href="#"><strong>Index</strong></a></dd>
+            <dd><a href="#">Terms defined by this specification</a></dd>
+            <dd><a href="#">Terms defined by reference</a></dd>
+            <dd><a href="#">Elements</a></dd>
+            <dd><a href="#">Element content categories</a></dd>
+            <dd><a href="#">Attributes</a></dd>
+            <dd><a href="#">Element Interfaces</a></dd>
+            <dd><a href="#">Events</a></dd>
+
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd><a href="#"><strong>Property Index</strong></a></dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd><a href="#"><strong>IDL Index</strong></a></dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd><a href="#"><strong>References</strong></a></dd>
+            <dd><a href="#">Normative References</a></dd>
+            <dd><a href="#">Informative References</a></dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd><a href="#"><strong>Changes</strong></a></dd>
+            <dd><a href="#">Changes between Working Draft 8 and Working Draft 7</a></dd>
+            <dd><a href="#">Changes between Working Draft 7 and Working Draft 6</a></dd>
+            <dd><a href="#">Changes between Working Draft 6 and Working Draft 5</a></dd>
+            <dd><a href="#">Changes between Working Draft 5 and Working Draft 4</a></dd>
+            <dd><a href="#">Changes between Working Draft 4 and Working Draft 3</a></dd>
+            <dd><a href="#">Changes between Working Draft 3 and Working Draft 2</a></dd>
+            <dd><a href="#">Changes between Working Draft 2 and the First Public Working Draft</a></dd>
+            <dd><a href="#">Changes since HTML 5.1 - Note that these may change if the HTML 5.1 specification is
+                updated.</a></dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd><a href="#"><strong>Acknowledgements</strong></a></dd>
+            <dd><a href="#">People who have contributed to this version of HTML</a></dd>
+            <dd><a href="#">People who have contributed to previous revisions of HTML 5.x</a></dd>
+        </dl>
+
+    </nav>
+</aside>
+</body>
+</html>

@@ -1,0 +1,725 @@
+body {
+    background-color: #E9EBEE;
+    margin: 0;
+}
+
+header {
+    top: 0;
+    height: 43px;
+    background-color: #365899;
+    z-index: 1;
+    left: 0;
+}
+
+header * {
+    position: absolute;
+    width: 1200px;
+    left: 90px;
+}
+
+#fblogo {
+    top: 10px;
+    border-radius: 1px/1px;
+    left: 73px;
+    height: 24px;
+    width: 24px;
+}
+
+#searchField {
+    left: 103px;
+    height: 22px;
+    width: 442px;
+    margin: 10px 0 0 0;
+    border-radius: 2px/2px;
+    border: transparent;
+}
+
+#searchlogo{
+    top: 12px;
+    left: 430px;
+    height: 20px;
+    width: 20px;
+}
+
+button {
+    background-color: transparent;
+    border:0;
+}
+
+#myProfilePic{
+    top: 12px;
+    border-radius: 10px/10px;
+    left: 690px;
+    height: 22px;
+    width: 22px;
+}
+
+#userName{
+    top: 15px;
+    left: 720px;
+    font-size: 14px;
+    color: white;
+}
+
+.vl {
+    background-color: darkslateblue;
+    position:absolute;
+    top: 12px;
+    bottom:0;
+    left: 850px;
+    width: 1px;
+    height: 20px;
+}
+
+#homeButton {
+    top: 15px;
+    left: 862px;
+    font-size: 14px;
+    color: white;
+}
+
+#friendRequests{
+    top: 8px;
+    left: 825px;
+    height: 30px;
+    width: 45px;
+}
+
+#messagesArea{
+    top: 12px;
+    left: 870px;
+    height: 22px;
+    width: 22px;
+}
+
+#notifArea{
+    left: 895px;
+    height: 45px;
+    width: 45px;
+}
+
+.vl2{
+    background-color: darkslateblue;
+    position:absolute;
+    top: 12px;
+    bottom:0;
+    left: 1035px;
+    width: 1px;
+    height: 20px;
+}
+
+#quickHelpArea{
+    top: 11px;
+    left: 960px;
+    height: 23px;
+    width: 23px;
+}
+
+#settingsArea{
+    top: 16px;
+    left: 990px;
+    height: 15px;
+    width: 15px;
+}
+
+
+.sectArea{
+    top: 30px;
+    left: 100px;
+    position: absolute;
+    width: 200px;
+    height: 740px;
+}
+
+#ProfPic{
+    top: 30px;
+    border-radius: 10px/10px;
+    height: 20px;
+    width: 20px;
+}
+
+#side1{
+    top: 30px;
+    left: 65px;
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+}
+
+#side1:hover{
+    background: lightgray;
+}
+
+#newsFeed{
+    top: 65px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#newsFeed:hover{
+    background: lightgray;
+}
+
+#msgR{
+    top: 90px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#msgR:hover{
+    background: lightgray;
+}
+
+#shortCuts{
+    top: 110px;
+    left: 65px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#codeSolution{
+    top: 145px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#codeSolution:hover{
+    background: lightgray;
+}
+
+#unityClub{
+    top: 170px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#unityClub:hover{
+    background: lightgray;
+}
+
+#exploreArea{
+    top: 190px;
+    left: 65px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#eventsArea{
+    top: 225px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#eventsArea:hover{
+    background: lightgray;
+}
+
+#pagesArea{
+    top: 250px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#pages:hover{
+    background: lightgray;
+}
+
+#groupsArea{
+    top: 275px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#groupsArea:hover{
+    background: lightgray;
+}
+
+#friendsArea{
+    top: 300px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#friendsArea:hover{
+    background: lightgray;
+}
+
+#pokesArea{
+    top: 325px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#pokesArea:hover{
+    background: lightgray;
+}
+
+#gamesArea{
+    top: 350px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#gamesArea:hover{
+    background: lightgray;
+}
+
+#liveVideoArea{
+    top: 375px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#liveVideoArea:hover{
+    background: lightgray;
+}
+
+#onThisDay{
+    top: 400px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#onThisDay:hover{
+    background: lightgray;
+}
+
+#sugEditArea{
+    top: 425px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#sugEditArea:hover{
+    background: lightgray;
+}
+
+#gamesFeedArea{
+    top: 450px;
+    left: 90px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#gamesFeedArea:hover{
+    background: lightgray;
+}
+
+#seeMoreTab{
+    top: 475px;
+    left: 70px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#img1{
+    height: 15px;
+    width: 15px;
+}
+
+#createArea{
+    top: 495px;
+    left: 65px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#linksTab{
+    top: 530px;
+    left: 65px;
+    font-size: 14px;
+}
+
+.posts{
+    position: absolute;
+    left: 370px;
+    top: 50px;
+    width: 480px;
+    margin: 10px;
+
+}
+
+#postArea{
+    left: 300px;
+    top: 60px;
+}
+
+#postMaker{
+    left: 300px;
+    padding-top: 7px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    height: 156px;
+    border: solid 1px lightgray;
+}
+
+.vl3{
+    background-color: gray;
+    position:absolute;
+    top: 5px;
+    bottom:0;
+    left: 100px;
+    width: 1px;
+    height: 20px;
+}
+
+.vl4{
+    background-color: gray;
+    position:absolute;
+    top: 5px;
+    bottom:0;
+    left: 253px;
+    width: 1px;
+    height: 20px;
+}
+
+#line1{
+    width: 477px;
+    border-color: ghostwhite;
+}
+
+#ProfPic2{
+    position: static;
+    top: 50px;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+#line2{
+    width: 477px;
+    border-color: ghostwhite;
+    margin-top: 15px;
+}
+
+#addPhoto{
+    top: 125px;
+    position: absolute;
+    left: 30px;
+    padding: 10px;
+}
+
+#addPhoto:hover{
+    background-color: #DDDFE2;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#addFeeling{
+    top: 125px;
+    position: absolute;
+    left: 145px;
+    padding: 10px;
+}
+
+#addFeeling:hover{
+    background-color: #DDDFE2;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#mainPostArea{
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    height: 520px;
+    width: 478px;
+    border: solid 1px lightgray;
+    top: 180px;
+}
+
+#userPic{
+    position: absolute;
+    top: 5px;
+    border-radius: 30px;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    left: 9px;
+}
+
+#postDate{
+    position: absolute;
+    top: 35px;
+    font-size: 12px;
+    left: 60px;
+}
+
+#nameName{
+    position: absolute;
+    left: 60px;
+    top: 10px;
+}
+
+#postText{
+    position: absolute;
+    top: 62px;
+    font-size: 16px;
+    left: 14px;
+}
+
+#postPic{
+    position: absolute;
+    width: 450px;
+    top: 85px;
+    left: 13px;
+}
+
+#line3{
+    position: absolute;
+    top: 430px;
+    left: 8px;
+    width: 457px;
+    border-color: ghostwhite;
+    margin-top: 15px;
+}
+
+#watcheD{
+    position: absolute;
+    top: 453px;
+    left: 50px;
+}
+
+#commentShare{
+    position: absolute;
+    top: 453px;
+    left: 316px;
+}
+
+#line4{
+    position: absolute;
+    top: 460px;
+    left: 8px;
+    width: 457px;
+    border-color: ghostwhite;
+    margin-top: 15px;
+}
+
+#likeButton{
+    position: absolute;
+    top: 490px;
+    left: 35px;
+}
+
+#commentButton{
+    position: absolute;
+    top: 490px;
+    left: 110px;
+}
+
+#shareButton{
+    position: absolute;
+    top: 490px;
+    left: 220px;
+}
+
+#calEventArea{
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    height: 40px;
+    width: 300px;
+    border: solid 1px lightgray;
+    top: 0;
+    left: 490px;
+}
+
+#eventsPos{
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    font-size: 14px;
+}
+
+#friendsReqArea{
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    height: 90px;
+    width: 300px;
+    border: solid 1px lightgray;
+    top: 55px;
+    left: 490px;
+}
+
+#frReqText{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+#userPic1{
+    position: absolute;
+    top: 25px;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    left: 5px;
+}
+
+#nameOfUSer{
+    position: absolute;
+    left: 65px;
+    top: 30px;
+}
+
+#mutualFriends{
+    position: absolute;
+    top: 47px;
+    font-size: 14px;
+    left: 65px;
+}
+
+#confirmButton{
+    position: absolute;
+    top: 65px;
+    font-size: 14px;
+    left: 65px;
+    background-color: lightgray;
+    border: black 1px solid;
+}
+
+#confirmButton:hover{
+    position: absolute;
+    top: 65px;
+    font-size: 14px;
+    left: 65px;
+    background-color: darkgray;
+}
+
+#seeMoreTab2{
+    top: 5px;
+    left: 250px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#pYMK{
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    height: 90px;
+    width: 300px;
+    border: solid 1px lightgray;
+    top: 160px;
+    left: 490px;
+}
+
+#peYouMayKnow{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+#userPic2{
+    position: absolute;
+    top: 25px;
+    border-radius: 30px;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    left: 5px;
+}
+
+#nameOfUSer2{
+    position: absolute;
+    left: 65px;
+    top: 28px;
+}
+
+#mutualFriends2{
+    position: absolute;
+    top: 47px;
+    font-size: 14px;
+    left: 65px;
+}
+
+#addButton{
+    position: absolute;
+    top: 65px;
+    font-size: 14px;
+    left: 65px;
+    background-color: lightgray;
+    border: black 1px solid;
+}
+
+#addButton:hover{
+    position: absolute;
+    top: 65px;
+    font-size: 14px;
+    left: 65px;
+    background-color: darkgray;
+}
+
+#seeMoreTab3{
+    top: 5px;
+    left: 250px;
+    width: 180px;
+    height: 20px;
+    font-size: 14px;
+}
+
+#langTab{
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    height: 60px;
+    width: 300px;
+    border: solid 1px lightgray;
+    top: 265px;
+    left: 490px;
+}
+
+#firstLangs{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+#lastLangs{
+    position: absolute;
+    top: 27px;
+    left: 5px;
+}
+
+#footerArea{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}

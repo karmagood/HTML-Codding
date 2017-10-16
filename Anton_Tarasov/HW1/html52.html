@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5.2</title>
+</head>
+<body>
+<h1>HTML 5.2</h1>
+<h2>W3C Candidate Recommendation, 8 August 2017</h2>
+<figure>
+    <a href="https://www.w3.org/">
+        <img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" height="48" width="72">
+    </a>
+</figure>
+<nav>
+    <h2>TABLE OF CONTENTS</h2>
+    <ol>
+        <ol>
+            <li>1 <a href="https://www.w3.org/TR/html52/introduction.html#introduction">Introduction</a></li>
+            <li>1.1 <a href="https://www.w3.org/TR/html52/introduction.html#background">Background</a></li>
+            <li>1.2 <a href="https://www.w3.org/TR/html52/introduction.html#audience">Audience</a></li>
+            <li>1.3 <a href="https://www.w3.org/TR/html52/introduction.html#scope">Scope</a></li>
+            <li>1.4 <a href="https://www.w3.org/TR/html52/introduction.html#introduction-history">History</a></li>
+            <li>1.5 <a href="https://www.w3.org/TR/html52/introduction.html#design-notes">Design notes</a></li>
+            <li>1.5.1 <a href="https://www.w3.org/TR/html52/introduction.html#serializability-of-script-execution">Serialzability of script execution</a></li>
+            <li>1.5.2 <a href="https://www.w3.org/TR/html52/introduction.html#compliance-with-other-specifications">Compliance with other specifications</a></li>
+            <li>1.5.3 <a href="https://www.w3.org/TR/html52/introduction.html#design-notes-extensibility">Extensibility</a></li>
+            <li>1.6 <a href="https://www.w3.org/TR/html52/introduction.html#html-vs-xhtml">HTML vs XML Syntax</a></li>
+            <li>1.7 <a href="https://www.w3.org/TR/html52/introduction.html#structure-of-this-specification">Structure of this specification</a></li>
+            <li>1.7.1 <a href="https://www.w3.org/TR/html52/introduction.html#how-to-read-this-specification">How to read this specification</a></li>
+            <li>1.7.2 <a href="https://www.w3.org/TR/html52/introduction.html#typographic-conventions">Typographic conventions</a></li>
+            <li>1.8 <a href="https://www.w3.org/TR/html52/introduction.html#fingerprint">Privacy concerns</a> </li>
+            <li>1.9 <a href="https://www.w3.org/TR/html52/introduction.html#a-quick-introduction-to-html">A quick introduction to HTML</a> </li>
+            <li>1.9.1 <a href="https://www.w3.org/TR/html52/introduction.html#writing-secure-applications-with-html">Writing secure applications with HTML</a> </li>
+            <li>1.9.2 <a href="https://www.w3.org/TR/html52/introduction.html#common-pitfalls-to-avoid-when-using-the-scripting-apis">Common pitfalls to avoid when using the scripting APIs</a> </li>
+            <li>1.9.3 <a href="https://www.w3.org/TR/html52/introduction.html#how-to-catch-mistakes-when-writing-html-validators-and-conformance-checkers">How to catch mistakes when writing HTML: validators and conformance checkers</a></li>
+            <li>1.10 <a href="https://www.w3.org/TR/html52/introduction.html#conformance-requirements-for-authors">Conformance requirements for authors</a> </li>
+            <li>1.10.1 <a href="https://www.w3.org/TR/html52/introduction.html#presentational-markup">Presentational markup</a> </li>
+            <li>1.10.2 <a href="https://www.w3.org/TR/html52/introduction.html#syntax-errors">Syntax errors</a> </li>
+            <li>1.10.3 <a href="https://www.w3.org/TR/html52/introduction.html#restrictions-on-content-models-and-on-attribute-values">Restrictions on content models and on attribute values</a> </li>
+            <li>1.11 <a href="https://www.w3.org/TR/html52/introduction.html#suggested-reading">Suggested reading</a> </li>
+        </ol>
+    </ol>
+</nav>
+<main>
+    <section>
+<dl>
+    <dt>This version:</dt>
+    <dd><a href="https://www.w3.org/TR/2017/CR-html52-20170808/"></a></dd>
+    <dt>Latest published version:</dt>
+    <dd><a href="https://www.w3.org/TR/html52/"></a></dd>
+    <dt>Latest version of HTML:</dt>
+    <dd><a href="https://www.w3.org/TR/html/"></a></dd>
+    <dt>Editor's Draft:</dt>
+    <dd><a href="https://w3c.github.io/html/"></a></dd>
+    <dt>Previous Versions:</dt>
+    <dd><a href="https://www.w3.org/TR/2017/WD-html52-20170718/"></a></dd>
+    <dt>Editors:</dt>
+    <dd><a href="sfaulkner@paciellogroup.com">Steve Faulkner</a> (The Paciello Group)</dd>
+    <dd><a href="arronei@microsoft.com">Arron Eicholz</a> (Microsoft)</dd>
+    <dd><a href="travil@microsoft.com">Travis Leithead</a> (Microsoft)</dd>
+    <dd><a href="adanilo@google.com">Alex Danilo</a> (Google)</dd>
+    <dd><a href="sangwhan@iki.fi">Sangwhan Moon</a> (Invited Expert)</dd>
+    <dt>Former Editors:</dt>
+    <dd><a href="Erika.Doyle@microsoft.com">Erika Doyle Navara</a> (Microsoft)</dd>
+    <dd><a href="hober@apple.com">Theresa O'Connor</a> (Apple Inc.)</dd>
+    <dd><a href="http://berjon.com/">Robin Berjon</a> (W3C)</dd>
+    <dt>Default Ref Status:</dt>
+    <dd>snapshot</dd>
+    <dt>Participate:</dt>
+    <dd><a href="https://github.com/w3c/html/issues/new">File an issue</a><a href="https://github.com/w3c/html/issues">(open issues)</a></dd>
+    <dt>Others:</dt>
+    <dd><a href="https://www.w3.org/TR/html52/single-page.html">Single page version</a></dd>
+    </dl>
+    <footer><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2017 <a href="http://www.w3.org/">W3C</a>® (<a href="http://www.csail.mit.edu/">MIT</a>, <a href="http://www.ercim.eu/">ERCIM</a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>). W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.</footer>
+    <hr title="Separator for header">
+    </section>
+    <section>
+    <h2>Abstract</h2>
+    <p>This specification defines the 5th major version, second minor revision of the core language of the World Wide Web: the Hypertext Markup Language (HTML). In this version, new features continue to be introduced to help Web application authors, new elements continue to be introduced based on research into prevailing authoring practices, and special attention continues to be given to defining clear conformance criteria for user agents in an effort to improve interoperabili<h2>Status of this documentStatus of this documentStatus of this document</h2>ty.</p>
+    </section>
+    <section>
+    <h2>Status of this document</h2>
+    <p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current <abbr title="World Wide Web Consortium">W3C</abbr> publications and the latest revision of this technical report can be found in the <a href="https://www.w3.org/TR/"><abbr title="World Wide Web Consortium">W3C</abbr> technical reports index</a> at https://www.w3.org/TR/.</em></p>
+    <p>This document was published by the <a href="https://www.w3.org/WebPlatform/WG/">Web Platform Working Group</a> as a Candidate Recommendation for HTML 5.2, reflecting the "leading edge" of what is interoperably deployed as HTML. This document is intended to become a W3C Recommendation.</p>
+    <p>Features which are shown not to have implementation may be removed from this specification.</p>
+    <p>The following features are explicitly "at risk" and unless testing during Candidate Recommendation demonstrates interoperable implementation of each feature it will be removed, per <a href="https://www.w3.org/2017/Process-20170301/#candidate-rec">W3C Process - 6.4 Candidate Recommendation:</a></p>
+    <ul>
+        <li>The <a href="https://www.w3.org/TR/html52/sec-forms.html#input-modalities-the-inputmode-attribute">input/inputmode</a> attribute for <a href="https://www.w3.org/TR/html52/sec-forms.html#elementdef-input">input</a> elements</li>
+        <li>The <a href="https://www.w3.org/TR/html52/interactive-elements.html#elementdef-menu">menu</a> and <a href="https://www.w3.org/TR/html52/interactive-elements.html#elementdef-menuitem">menuitem</a> elements</li>
+        <li>The <code>allow-presentation</code> sanboxing flag for the <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#element-attrdef-iframe-sandbox">sandbox</a> attribute of an <a href="https://www.w3.org/TR/html52/semantics-embedded-content.html#elementdef-iframe">iframe</a></li>
+        <li>The <a href="https://www.w3.org/TR/html52/interactive-elements.html#elementdef-dialog">dialog</a> element</li>
+        <li>The <code>datetime</code> state for the <a href="https://www.w3.org/TR/html52/sec-forms.html#elementdef-input">input</a> element</li>
+        <li>The plugin API</li>
+    </ul>
+    <p>If you wish to make comments regarding this document, please send them to this specification's <a href="https://github.com/w3c/html">GitHub repository</a> or public mailing list <a href="public-html@w3.org">public-html@w3.org</a> (<a href="http://lists.w3.org/Archives/Public/public-html/">archived</a>, see <a href="http://www.w3.org/Mail/Request">instructions</a>). When sending e-mail, please put the text “html” in the subject, preferably like this: “[html] <em>…summary of comment…</em>“. All comments are welcome.</p>
+    <p>The Working Group expects to demonstrate 2 implementations of the features listed in this specification by the end of the Candidate Recommendation phase. An <a href="https://w3c.github.io/test-results/html52/implementation-report.html">implementation report</a> will be produced for this version to demonstrate that in almost every case changes are matched by interoperable implementation.W3C publishes a Candidate Recommendation to indicate that the document is believed to be stable and to encourage implementation by the developer community. This Candidate Recommendation is expected to advance to Proposed Recommendation no earlier than 5 September 2017.W3C publishes a Candidate Recommendation to indicate that the document is believed to be stable and to encourage implementation by the developer community. This Candidate Recommendation is expected to advance to Proposed Recommendation no earlier than 5 September 2017.</p>
+    <p>W3C publishes a Candidate Recommendation to indicate that the document is believed to be stable and to encourage implementation by the developer community. This Candidate Recommendation is expected to advance to Proposed Recommendation no earlier than 5 September 2017.</p>
+    <p>Publication as a Candidate Recommendation does not imply endorsement by the <abbr title="World Wide Web Consortium">W3C</abbr> Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than work in progress.</p>
+    <p>This document was produced by a group operating under the <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004 <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy.</a> <abbr title="World Wide Web Consortium">W3C</abbr> maintains a <a href="https://www.w3.org/2004/01/pp-impl/83482/status">public list of any patent disclosures</a> made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential Claim(s)</a> must disclose the information in accordance with <a href="https://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy.</a></p>
+    <p>This document is governed by the <a href="https://www.w3.org/2017/Process-20170301/">1 March 2017 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document.</a></p>
+    </section>
+</main>
+</body>
+</html>

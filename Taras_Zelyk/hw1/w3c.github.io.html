@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 5.2</title>
+</head>
+<body>
+<header>
+    <img alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C">
+    <h1>HTML 5.2</h1>
+    <h2>Editor’s Draft, 15 September 2017</h2>
+</header>
+
+<nav>
+    <h2>Table of Contents</h2>
+    <ol>
+        <li>Introduction</li>
+        <ol>
+            <li><a href="#">Background</a></li>
+            <li><a href="#">Audience</a></li>
+            <li><a href="#">Scope</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Design notes</a></li>
+
+            <ol>
+                <li><a href="#">Serializability of script execution</a></li>
+                <li><a href="#">Compliance with other specifications</a></li>
+                <li><a href="#">Extensibility</a></li>
+            </ol>
+            <li><a href="#">HTML vs XML Syntax</a></li>
+            <li><a href="#">Structure of this specification</a></li>
+            <ol>
+                <li><a href="#">How to read this specification</a></li>
+                <li><a href="#">Typographic conventions</a></li>
+            </ol>
+            <li><a href="#">Privacy concerns</a></li>
+            <li><a href="#">A quick introduction to HTML</a></li>
+            <ol>
+                <li><a href="#">Writing secure applications with HTML</a></li>
+                <li><a href="#">Common pitfalls to avoid when using the scripting APIs</a></li>
+                <li><a href="#">How to catch mistakes when writing HTML: validators and conformance checkers</a>
+                </li>
+            </ol>
+            <li><a href="#">Conformance requirements for authors</a></li>
+            <ol>
+                <li><a href="#">Presentational markup</a></li>
+                <li><a href="#">Syntax errors</a></li>
+                <li><a href="#">Restrictions on content models and on attribute values</a></li>
+            </ol>
+            <li><a href="#">Suggested reading</a></li>
+        </ol>
+        <li><a href="#">Common infrastructure</a></li>
+        <ol>
+            <li><a href="#">erminology</a></li>
+            <ol>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">XML compatibility</li>
+                <li><a href="#">DOM trees</a></li>
+                <li><a href="#">Scripting</a></li>
+                <li><a href="#">Plugins</a></li>
+                <li><a href="#">Character encodings</a></li>
+            </ol>
+
+            <li><a href="#">Conformance requirements</a></li>
+            <ol>
+                <li><a href="#">Conformance classes</a></li>
+                <li><a href="#">Dependencies</a></li>
+                <li><a href="#">Extensibility</a></li>
+                <li><a href="#">Interactions with XPath and XSLT</a></li>
+            </ol>
+            <li><a href="#">Case-sensitivity and string comparison</a></li>
+            <li><a href="#">Common microsyntaxes</a></li>
+
+        </ol>
+    </ol>
+
+</nav>
+<section>
+    <h2>Table of Contents</h2>
+    <dl>
+        <dt><b>This version:</b></dt>
+        <dd><a href="#">https://w3c.github.io/html/</a></dd>
+        <dt><b>Latest published version:</b></dt>
+        <dd><a href="#">https://www.w3.org/TR/html52/</a></dd>
+        <dt><b>Editors:</b></dt>
+        <dd><a href="#">Steve Faulkner</a>(The Paciello Group)</dd>
+        <dd><a href="#">Arron Eicholz</a>(Microsoft)</dd>
+        <dd><a href="#">Travis Leithead</a>(Microsoft)</dd>
+        <dd><a href="#">Alex Danilo</a>(Google)</dd>
+        <dd><a href="#">Sangwhan Moon </a>(Invited Expert)</dd>
+        <dt><b>Former Editors:</b></dt>
+        <dd><a href="#">Erika Doyle Navara</a>(Microsoft)</dd>
+        <dd><a href="#">Theresa O'Connor</a>(Apple Inc.)</dd>
+        <dd><a href="#">Robin Berjon</a> (W3C)</dd>
+        <dt><b>Default Ref Status:</b></dt>
+        <dd>snapshot</dd>
+        <dt><b>Participate:</b></dt>
+        <dd><a href="#">File an issue (open issues)</a></dd>
+        <dt><b>Others:</b></dt>
+        <dd><a href="#">Single page version</a></dd>
+    </dl>
+    <footer>
+        <a href="#">Copyright</a> © 2017 <a href="#">W3C</a><sup>®</sup> (<a href="#">MIT</a>, <a href="#">ERCIM</a>,
+        <a href="#">Keio</a>, <a href="#">Beihang</a>). W3C <a href="#">liability</a>,
+        <a href="#">trademark </a>and <a href="#">permissive document license</a> rules apply.
+    </footer>
+</section>
+<hr>
+<section>
+    <h2>Abstract</h2>
+
+    <p>This specification defines the 5th major version, second minor revision of the core language of the World Wide
+        Web: the Hypertext Markup Language (HTML). In this version, new features continue to be introduced to help Web
+        application authors, new elements continue to be introduced based on research into prevailing authoring
+        practices, and special attention continues to be given to defining clear conformance criteria for user agents in
+        an effort to improve interoperability.</p>
+</section>
+<section>
+    <h2>Status of this document</h2>
+
+    <p><em>This section describes the status of this document at the time of its publication. Other documents may
+        supersede this document. A list of current
+        <abbr title="World Wide Web Consortium"> W3C</abbr> publications and the latest revision of this technical
+        report can be found in the <a href="#">W3C technical reports index</a> at http://www.w3.org/TR/.</em></p>
+
+    <p>This document was published by the <a href="#">Web Platform Working Group</a> as a Editors Draft. This document
+        is intended to become a W3C Recommendation. Feedback and comments on this specification are welcome. Please use
+        <a href="#">Github issues</a>. Historical discussions can be found in the <a href="#">public-html@w3.org
+            archives</a>.</p>
+
+    <p>Publication as a Editors Draft does not imply endorsement by the <abbr title="World Wide Web Consortium">
+        W3C</abbr> Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at
+        any time. It is inappropriate to cite this document as other than work in progress.</p>
+
+    <p>This document was produced by a group operating under the <a href="#">5 February 2004 <abbr
+            title="World Wide Web Consortium"> W3C</abbr>Patent Policy</a>. <abbr title="World Wide Web Consortium">
+        W3C</abbr> maintains a
+        <a href="#">public list of any patent disclosures</a> made in connection with the deliverables of the group;
+        that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent
+        which the individual believes contains <a href="#">Essential Claim(s)</a> must disclose the information in
+        accordance with <a href="#">section 6 of the W3C Patent Policy</a>.</p>
+
+    <p>This document is governed by the <a href="#">1 March 2017 <abbr title="World Wide Web Consortium"> W3C</abbr>
+        Process Document.</a></p>
+</section>
+</body>
+</html>

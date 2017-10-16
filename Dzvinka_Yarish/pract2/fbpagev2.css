@@ -1,0 +1,132 @@
+body {
+    margin:0;
+    background-color: #e9ebee;
+    font-family: Helvetica, Arial, sans-serif;
+
+     }
+
+header {
+    position:fixed;
+    background-color: #4267B2;
+    width:100%;
+    height:50px;
+    text-underline-color: #034f84;
+}
+
+header span {
+    text-decoration:  none;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    white-space: nowrap;
+    color: #ffffff;
+}
+
+#h_icon_user {
+    margin-left: 300px;
+}
+.top-profile-info {
+     background-color: #77ffff;
+     margin-left: 48px;
+     width: 55%;
+     height: 400px;
+
+}
+
+.search-in-posts {
+    background-color: #00ffff;
+    vertical-align:top;
+    display: inline-block;
+    margin-left: 48px;
+    margin-top: 15px;
+    width: 22%;
+    height: 40px;
+}
+.make-new-post {
+    display: inline-block;
+    background-color: #111111;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 31.5%;
+    height: 100px;
+}
+
+.about-me {
+    display: inline-block;
+    background-color: #ff7f50;
+    margin-left: 48px;
+    margin-top: 15px;
+    width: 22%;
+    height: 400px;
+
+}
+
+.my-photos {
+    display: inline-block;
+    background-color: #7fff00;
+    margin-left: 48px;
+    margin-top: 15px;
+    width: 22%;
+    height: 400px;
+}
+
+.post {
+    display: inline-block;
+    vertical-align:top;
+    background-color: #006400;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 31.5%;
+    height: 300px;
+}
+.contacts-list
+{
+    position: fixed;
+    background-color: #dc143c;
+    top:50px;
+    left:80%;
+    width: 20%;
+    height: 100vh;
+}
+header .fa-facebook-official{
+    display: inline-block;
+    margin-top: 10px;
+    font-size:30px;
+    color: white;
+    margin-left:10%;
+}
+
+header img {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+#search-header{
+    display: inline-block;
+    padding-bottom: 0;
+    margin-left: 10px;
+    width:20%;
+}
+.background-photo {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.background-photo h1 {
+    top: 290px;
+    left: 250px;
+    position: absolute;
+    color: #fff;
+    text-rendering: optimizelegibility;
+    text-shadow: 0 0 3px rgba(0,0,0,.8);
+}
+.main-photo {
+    position: absolute;
+    top: 200px;
+    left:70px;
+    border: 4px solid #fff;
+}
+
+
+

@@ -1,0 +1,206 @@
+* {
+    font-family: "Segoe UI", Tahoma;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.main_navigation{position: fixed;
+    top: 0; z-index: 1; width: 100%;}
+.main_navigation ul {
+    padding-left: 25px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #3b5998;
+    font-weight: bold;
+    font-size: 13px;
+    margin: 0 !important;
+}
+
+.main_navigation li, .language_section li {
+    text-align: center;
+    display: inline-block;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.main_navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+}
+
+.fa:hover {
+    color: black !important;
+}
+
+input[type="submit"] {
+    font-family: FontAwesome, sans-serif;
+}
+
+.separator {
+    width: 15vw;
+}
+
+body {
+    background-color: #d8dfea !important;
+    margin: 0 !important;
+}
+
+.main-container {
+    position: absolute;
+    width: 1014px;
+    top: 50px;
+    left: calc(43% - 507px);
+}
+
+
+.nav_block {
+    position: fixed;
+    top: 50px;
+    width: 184px;
+    margin-right: 10px;
+}
+
+.main_feed_block {
+    margin-right: 10px;
+    position: absolute;
+    left: 194px;
+    top: 0;
+    width: 500px;
+}
+
+.main_quick_block {
+    position: absolute;
+    left: 704px;
+    top: 0;
+    width: 308px;
+}
+
+.main_actions_block {
+   position: fixed;
+    overflow-y: scroll;
+    height: 100%;    top:50px;
+    right:0;
+    bottom: 0;
+    width:200px;
+}
+
+@media screen and (max-width: 1220px){
+    .main_actions_block{display: none}
+}
+
+@media screen and (max-width: 1220px) {
+    .main-container{
+        left: calc(50% - 507px);
+    }
+}
+    .main_navigation img {
+    border-radius: 30px;
+}
+
+.image-div {
+    align-items: center;
+}
+
+.nav_block ul, .nav_block aside, .main_quick_block ul {
+    padding-left: 20px;
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_block li:hover {
+    background-color: #e9ebee;
+}
+
+.nav_block aside a {
+    display: inline-block;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.this_week_section li:hover {
+    background-color: #e9ebee;
+}
+
+.language_section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-around;
+}
+
+.post-item h2{
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.three-section{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.three-section button{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+.post-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 12px;
+    border-radius: 7px;
+}
+
+
+.close-classic {
+    color: dimgrey;
+    font-size: 15px;
+    position: absolute;
+    right: 1px;
+    text-decoration: none;
+    top: 1px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.close-classic:after {
+    content: 'X'; }
+
+
+
+.dialog {
+    float: left;
+    position: relative;
+}
+
+.games-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacts section{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contacts section img{
+    margin-right: 5px;
+}

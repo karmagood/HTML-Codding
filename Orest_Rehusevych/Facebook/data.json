@@ -1,0 +1,153 @@
+{
+  "chapters": [
+    {
+      "chapter-title" :  "header",
+      "header-items": [
+        {
+          "search-placeholder": "Орест Регусевич",
+          "face-image-header": "images/myface.jpg",
+          "name": "Орест",
+          "main-page-button": "Головна",
+          "find-friends-button": "Знайти друзів",
+          "new-posts": "20",
+          "friends-request-icon": "images/friend requests.png",
+          "new-messages-icon": "images/messages.png",
+          "notifications-icon": "images/notification.png",
+          "questions-icon": "images/question.png",
+          "menu-dropdown-arrow": "images/menu-dropdown-arrow.png"
+        }
+      ]
+    },
+    {
+      "chapter-title" :  "Fixed sidebar",
+      "fixed-sidebar-items": [
+        {
+          "your-games": "ВАШІ ІГРИ",
+          "more": "ЩЕ",
+          "game1": "images/game1.png",
+          "game2": "images/game2.png",
+          "game3": "images/game3.png",
+          "recommended-games": "РЕКОМЕНДОВАНІ ІГРИ",
+          "recommended-game1": "images/game4.png",
+          "recommended-game2": "images/game5.png",
+          "recommended-game3": "images/game6.png",
+          "friend1": {
+            "first": "Олесь",
+            "last": "Добосевич",
+            "photo": "images/side-friend1.jpg"
+          },
+          "friend2": {
+            "first": "Мар'яна",
+            "last": "Мисак",
+            "photo": "images/side-friend2.jpg"
+          },
+          "friend3": {
+            "first": "Матвій",
+            "last": " Ковтун",
+            "photo": "images/side-friend3.jpg"
+          },
+          "friend4": {
+            "first": "Антон",
+            "last": "Тарасов",
+            "photo": "images/side-friend4.jpg"
+          },
+          "friend5": {
+            "first": "Оленка",
+            "last": "Скібінська",
+            "photo": "images/side-friend5.jpg"
+          },
+          "friend6": {
+            "first": "Марта",
+            "last": "Дацюк",
+            "photo": "images/side-friend6.jpg"
+          },
+          "friend7": {
+            "first": "Ліда",
+            "last": "Гук",
+            "photo": "images/side-friend7.jpg"
+          },
+          "friend8": {
+            "first": "Оленка",
+            "last": "Клюка",
+            "photo": "images/side-friend8.jpg"
+          },
+          "friend9": {
+            "first": "Оля",
+            "last": "Бакай",
+            "photo": "images/side-friend9.jpg"
+          },
+          "friend10": {
+            "first": "Соломія",
+            "last": "Хомечко",
+            "photo": "images/side-friend10.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "chapter-title" :  "Center-main",
+      "center-main-items": [
+        {
+          "background-image": "images/background.jpg",
+          "your-image-center": "images/myface.jpg",
+          "name": {
+            "first": "Орест",
+            "last": "Регусевич"
+            },
+          "number-of-friends": "186"
+          }
+      ]
+    },
+    {
+      "chapter-title" :  "left-block1",
+      "left-block1-items": [
+        {
+          "study-place": "Український католицький університет UCuniversity",
+          "living-place": "Lviv, Ukraine",
+          "from": "Lviv, Ukraine",
+          "time": "З вересня 2015 р."
+        }
+      ]
+    },
+    {
+      "chapter-title" :  "left-block2",
+      "left-block2-items": [
+        {
+          "your-images": {
+            "image1": "images/image1.jpg",
+            "image2": "images/image2.jpg",
+            "image3": "images/image3.jpg",
+            "image4": "images/image4.jpg",
+            "image5": "images/image5.jpg",
+            "image6": "images/image6.jpg",
+            "image7": "images/image7.jpg",
+            "image8": "images/image8.jpg",
+            "image9": "images/image9.jpg"
+          }
+        }
+      ]
+    },
+    {
+      "chapter-title" :  "left-block3",
+      "left-block3-items": [
+        {
+          "number-of-friends": "186",
+          "friend-images": {
+            "friend1": "images/friend1.jpg",
+            "friend2": "images/friend2.jpg",
+            "friend3": "images/friend3.jpg",
+            "friend4": "images/friend4.jpg",
+            "friend5": "images/friend5.jpg",
+            "friend6": "images/friend6.jpg",
+            "friend7": "images/friend7.jpg",
+            "friend8": "images/friend8.jpg",
+            "friend9": "images/friend9.jpg"
+          }
+        }
+      ]
+    }
+
+  ]
+}
+
+

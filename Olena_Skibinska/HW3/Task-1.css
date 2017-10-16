@@ -1,0 +1,70 @@
+body{
+    margin-top: 0 ;
+    margin-left: 25%;
+    margin-right: 25%;
+    /*width: 50%;*/
+    /*height: 100%;*/
+}
+header{
+    background-color: blueviolet;
+    padding: 12px 10px;
+    /*position: absolute;*/
+    /*left: 50%;*/
+}
+header h1{
+    margin: 0;
+
+}
+/*main{*/
+
+    /*!*clear: both;*!*/
+    /*display: inline-block;*/
+/*}*/
+main{
+    display: inline-block;
+    /*position: absolute;*/
+    width: 600px;
+}
+.section-1{
+    background-color: red;
+    padding: 20px 12px;
+    /*float: left;*/
+    /*width: 60%;*/
+    /*display: inline-block;*/
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    /*left: 0;*/
+    width: 404px;
+    /*left: 50%*/
+}
+.section-1 p{
+    padding-bottom: 10px;
+}
+.section-2{
+    background-color: green;
+    padding: 20px 12px;
+    /*float: left;*/
+    /*width: 32.5%;*/
+    bottom: 0;
+    /*right: 0;*/
+    /*top: 70px;*/
+    /*height: 100%;*/
+    display: inline-block;
+    position: absolute;
+    right: 325px;
+    top: 60px;
+    width: 200px;
+    /*left:25%;*/
+}
+footer{
+    background-color: orange;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 631px;
+}
+footer p, main p, aside p{
+    margin: 0;
+}

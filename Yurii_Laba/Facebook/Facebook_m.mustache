@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Facebook.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header>
+
+    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+
+    <form id="searchForm">
+        <input type="text" placeholder="Yurii Laba" size="30">
+        <button class="searchButton" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+
+    <a id = "navPhoto" href="https://www.facebook.com/photo.php?fbid=1140212246124572&set=a.111144599031347.22815.100004074229411&type=3&theater">
+
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/18664143_1140212246124572_6073999332882978418_n.jpg?oh=cb8bed0a804005a837ee33ee51dd0f17&oe=5A43FD25" style="width:30px;height:30px;"></a>
+
+    <ul class="navTextList" style="font-family: monospace; color: white">
+        <li><a href="https://www.facebook.com/jura.laba" style="font-size:15px;color: white">Yurii</a></li>
+        <li>Головна |</li>
+        <li>Знайти друзів</li>
+    </ul>
+
+    <ul class="navImgList" style="font-size:26px;color: white">
+        <li><i class="fa fa-users"></i> </li>
+        <li><i class="fa fa-comment"></i></li>
+        <li><i class="fa fa-globe"></i></li>
+        <li>|</li>
+        <li><i class="fa fa-question-circle"></i></li>
+        <li><i class="fa fa-caret-down"></i></li>
+    </ul>
+
+
+
+</header>
+
+
+
+
+<section class="mainBar">
+
+    <div class="coverPhoto">
+
+    </div>
+
+    <div class="photo">
+        <img style="height: 100px" src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/18664143_1140212246124572_6073999332882978418_n.jpg?oh=cf9f7c43f424787b4daa632957b388e5&oe=5A6B8A25">
+    </div>
+
+
+    <nav>
+        <ul id="navBarOnMainBlock">
+            <li>Життєпис</li>
+            <li>Про себе</li>
+            <li>Друзі</li>
+            <li>Світлини</li>
+            <li>Більше</li>
+
+        </ul>
+    </nav>
+
+</section>
+<br>
+
+<section class="searchPosts">
+    <input type="text" placeholder="Шукати серед posts Yurii Laba" size="38" style="height: 40px">
+</section>
+
+<section class="createPost">
+    <nav>
+        <a><i class="fa fa-pencil" aria-hidden="true"></i> Допис</a> |
+        <a><i class="fa fa-camera" aria-hidden="true"></i> Світлина/Відео</a> |
+        <a><i class="fa fa-video-camera" aria-hidden="true"></i> Відео наживо</a> |
+        <a><i class="fa fa-flag" aria-hidden="true"></i> Життєва подія</a>
+    </nav>
+
+    <form>
+        <input type="text" placeholder="Що у вас на думці?" style="height: 60px;width: 456px">
+    </form>
+
+    <form id="peoplePostButton" style="margin-left: 300px">
+        <label>
+            <select name="Більше">
+                <option value="друзі">Друзі</option>
+                <option value="публічно">Публічно</option>
+            </select>
+        </label>
+        <button type="button" id="postButton">Post</button>
+    </form>
+</section>
+
+<section class="Chat">
+{{#dataFacebook}}
+        {{#friends}}
+            <ul class="contact-List">
+            <li>
+                <img class="img-circle" src="{{profile-src}}" alt="Smiley face" width="42" height="42" > {{name}}
+            </li>
+            </ul>
+
+        {{/friends}}
+{{/dataFacebook}}
+
+
+    <h3 style="margin-left:10px; color: gray">Більше контактів(3)</h3>
+    <ul class="contact-List">
+
+        <li>
+            <img class="img-circle" src="http://78.media.tumblr.com/56901d7c587c0ca5649e2e40c4fd9546/tumblr_nci08mYmXj1qaujy6o1_500.jpg" alt="Smiley face" width="42" height="42" > Sam Carter
+        </li>
+
+        <li>
+            <img class="img-circle" src="http://78.media.tumblr.com/56901d7c587c0ca5649e2e40c4fd9546/tumblr_nci08mYmXj1qaujy6o1_500.jpg" alt="Smiley face" width="42" height="42" > Sam Carter
+        </li>
+
+        <li>
+            <img class="img-circle" src="http://78.media.tumblr.com/56901d7c587c0ca5649e2e40c4fd9546/tumblr_nci08mYmXj1qaujy6o1_500.jpg" alt="Smiley face" width="42" height="42" > Sam Carter
+        </li>
+
+    </ul>
+
+</section>
+
+
+
+
+
+<br>
+<section class="aboutMe">
+    <h3 style="margin-left: 20px;"><i style="color: dodgerblue" class="fa fa-globe"></i> Про себе</h3>
+    <form>
+        <input type="text" placeholder="+Що робить вас щасливим?" style="height:40px;width: 250px; margin-left: 20px">
+    </form>
+    <ul class="contact-List" >
+        <li><p><i class="fa fa-graduation-cap" aria-hidden="true"></i> Вивчає Computer science у<a href="https://www.facebook.com/UkrainianCatholicUniversity/?pnref=lhc" style="font-size:15px"> Український католицький університет UCuniversity</a></p></li>
+        <li><p><i class="fa fa-home"></i> Живе у<a href="https://www.facebook.com/places/Cim-zajnatisa-v-Lviv-Ukraine/114232468588881/" style="font-size:15px"> Lviv, Ukraine</a></p></li>
+        <li><p><i class="fa fa-map-marker"></i> Із<a href="https://www.facebook.com/places/Cim-zajnatisa-v-Lviv-Ukraine/114232468588881/" style="font-size:15px"> Lviv, Ukraine</a></p></li>
+        <li><p><i class="fa fa-picture-o"></i><a href="=https://www.facebook.com/jura.laba?lst=100004074229411%3A100004074229411%3A1506181318"> Додайте обрані світлини</a></p></li>
+    </ul>
+
+    <button type="button"><a href="https://www.facebook.com/jura.laba/about?section=contact-info&info_surface=intro_card&pnref=lhc#profile_about_links" > +Додати Instagram, веб-сайти, інші писилання</a></button>
+
+
+
+
+</section>
+<br>
+<section class="Pictures">
+    <h3 style="margin-left: 20px"><a  href="https://www.facebook.com/jura.laba"><i class="fa fa-picture-o" style="color: green"></i> Світлини</a></h3>
+    <a href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+</section>
+
+<br>
+<section class="Friends">
+    <h3 style="margin-left: 20px"><a  href="https://www.facebook.com/jura.laba"><i class="fa fa-users" style="color: pink" aria-hidden="true"></i>Друзі 130</a></h3>
+
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <br>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <br>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+    <a class="img-left" href="https://www.facebook.com/jura.laba/photos?pnref=lhc" >
+        <img src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/19875558_1182884998523963_3156823863327777567_n.jpg?oh=0d9222857a067c561b645cd7af891c36&oe=5A451D50"  style="width:80px;height:100px;margin-left: 3px">
+    </a>
+</section>
+
+</body>
+</html>
