@@ -1,0 +1,35 @@
+.float-grid{
+  &:after{
+    content: "";
+    display: table; // table - to prevent margin collapsing between two stacked, clear-fixed containers.
+    clear: both;
+  }
+
+  &.col-n-5{
+    .col{
+      width: 20%;
+    }
+    .col-l-1{
+      margin-left: 20%;
+    }
+    .col-r-1{
+      margin-right: 20%;
+    }
+
+    .col-2{
+      width: 40%;
+    }
+  }
+
+  .col{
+    float: left;
+    width: 33.3%;
+    padding:0 $pad;
+    box-sizing: border-box;
+  }
+
+  .col-2{
+    width: 66.6%;
+  }
+
+}

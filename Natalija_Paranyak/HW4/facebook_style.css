@@ -18,6 +18,7 @@ ul {
     font-weight: bold;
     font-size: 13px;
     margin: 0 !important;
+    justify-content: center;
 }
 
 .main_navigation li, .language_section li {
@@ -42,7 +43,7 @@ input[type="submit"] {
 }
 
 .separator {
-    width: 15vw;
+    width: 60px;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
     margin: 0 !important;
 }
 
-.flex-container {
+.main-container {
     position: absolute;
     width: 1014px;
     top: 50px;
@@ -58,14 +59,14 @@ body {
 }
 
 
-.flex1 {
+.nav_block {
     position: fixed;
     top: 50px;
     width: 184px;
     margin-right: 10px;
 }
 
-.flex2 {
+.main_feed_block {
     margin-right: 10px;
     position: absolute;
     left: 194px;
@@ -73,14 +74,14 @@ body {
     width: 500px;
 }
 
-.flex3 {
+.main_quick_block {
     position: absolute;
     left: 704px;
     top: 0;
     width: 308px;
 }
 
-.flex4 {
+.main_actions_block {
    position: fixed;
     overflow-y: scroll;
     height: 100%;    top:50px;
@@ -90,11 +91,11 @@ body {
 }
 
 @media screen and (max-width: 1220px){
-    .flex4{display: none}
+    .main_actions_block{display: none}
 }
 
 @media screen and (max-width: 1220px) {
-    .flex-container{
+    .main-container{
         left: calc(50% - 507px);
     }
 }
@@ -106,7 +107,7 @@ body {
     align-items: center;
 }
 
-.flex1 ul, .flex1 aside, .flex3 ul {
+.nav_block ul, .nav_block aside, .main_quick_block ul {
     padding-left: 20px;
     overflow: hidden;
     font-weight: 100;
@@ -119,11 +120,11 @@ a {
     text-decoration: none;
 }
 
-.flex1 li:hover {
+.nav_block li:hover {
     background-color: #e9ebee;
 }
 
-.flex1 aside a {
+.nav_block aside a {
     display: inline-block;
     color: darkblue;
     text-decoration: none;
@@ -202,3 +203,4 @@ a {
 .contacts section img{
     margin-right: 5px;
 }
+

@@ -308,10 +308,9 @@ a:visited {
 }
 
 .author-userpic {
-    border-radius: 100%;
+    border-radius: 50%;
     float: left;
     width: 40px;
-    padding-right: 10px;
 }
 
 .sys-info{

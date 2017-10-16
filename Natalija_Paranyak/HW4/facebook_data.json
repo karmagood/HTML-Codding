@@ -180,7 +180,35 @@
           "friend-image-src": "../images/slide02.jpg",
           "friend-name": "Mister Igor"
         }
+      ],
+      "menu-items": [
+        {
+          "menu-src": "#",
+          "img-src": "../images/home-image-1.jpg",
+          "name-item": "Магазин Віктор"
+        },
+        {
+          "menu-src": "#",
+          "img-src": "../images/headerimg9.jpg",
+          "name-item": "Магазин Віктор"
+        },
+        {
+          "menu-src": "#",
+          "img-src": "../images/home-image-4.jpg",
+          "name-item": " Дитячий довідник"
+        },
+        {
+          "menu-src": "#",
+          "img-src": "../images/home-team-3.jpg",
+          "name-item": "Кафе Вікторія"
+        },
+        {
+          "menu-src": "#",
+          "img-src": "../images/home-team-21.jpg",
+          "name-item": "Вареники ТУТ"
+        }
       ]
     }
   ]
 }
+

@@ -64,12 +64,10 @@
             </li>
         {{/shortcuts}}
         <li class="lsb-header">Explore</li>
-        <li class="lsb-item"><img class="user-pic lsb-icon" src="img/profile_pic.jpg">Events
-        </li>
-        <li class="lsb-item"><img class="user-pic lsb-icon" src="img/profile_pic.jpg">Groups
-        </li>
-        <li class="lsb-item"><img class="user-pic lsb-icon" src="img/profile_pic.jpg">Friend lists
-        </li>
+        {{#explore}}
+            <li class="lsb-item"><img class="user-pic lsb-icon" src="{{img_link}}">{{link_name}}
+            </li>
+        {{/explore}}
         <li class="lsb-header">Create</li>
         <div>
             <a>Ad</a> · <a>Page</a> · <a>Group</a> · <a>Event</a>
@@ -110,16 +108,18 @@
         {{#posts}}
         <article class="post block">
             <div class="block-body">
-                <img class="author-userpic" src="img/rodionov.jpg">
+                <img class="author-userpic" src="{{author_userpic}}">
                 <header class="post-header">
                         <a href="#"> <b>{{p_author}}</b></a>
                         {{p_action}} {{p_event}}.<br/>
                         <span class="post_header_date">{{p_date}}</span>
                 </header>
                 <article>
-                    {{{p_content}}}
+                    {{#p_content}}
+                        {{{p_content}}}
+                    {{/p_content}}
                     {{#p_image}}
-                    <img class="post-image" src="{{p_image}}">
+                        <img class="post-image" src="{{p_image}}">
                     {{/p_image}}
                 </article>
             </div>
@@ -164,8 +164,9 @@
         <div class="suggested-inf">
             <span class="suggested-title"><a>{{page_name}}</a></span><br/>
             {{page_type}} · {{likes_num}} likes<br/>
-            <a>Nazar</a>
-            and <a>4 other friends</a> liked this.
+            {{#friends_liked}}
+            {{{friends_liked}}} liked this.
+            {{/friends_liked}}
         </div>
     </section>
     {{/suggested_page}}

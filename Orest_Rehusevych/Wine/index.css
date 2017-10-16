@@ -1,0 +1,249 @@
+html, body {
+    height: 100%;
+}
+body {
+    color: #1b1b1b ;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+#head-part {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    color: #1b1b1b !important;
+    border-bottom: 1px solid red;
+}
+.head-item {
+    width:20%;
+}
+.head-item a {
+    color: #1b1b1b !important;
+}
+.head-item a h2 {
+    font-size: 30px;
+    line-height: 1.2;
+}
+.head-item a p {
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 0;
+}
+.head-item a p:hover {
+    text-decoration: none !important;
+}
+.head-item1 {
+    width: 28.3%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 6.7%;
+    height: 505px;
+}
+.head-item2 {
+    margin-top: 3.4%;
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 5px;
+}
+.head-item2 h2 {
+    line-height: 1.2;
+}
+.head-item2 h5 {
+    font-size: 16px;
+}
+.head-item3 {
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.head-item3 a p.smaller {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.head-item3-inner {
+    padding-top: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.head-item4 {
+    margin-top: 6%;
+    height: 80%;
+}
+.head-item4 p {
+    line-height: 26px;
+    margin-left: 10%;
+    font-size: 20px;
+}
+.head-item5 {
+    padding-right: 3%;
+    margin-top: 5.5%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.head-item5 p {
+    line-height: 26px;
+    font-size: 20px;
+}
+.head-item5 p a{
+    text-decoration: underline;
+}
+#page-content {
+    margin-left: 43px;
+    margin-right: 43px;
+    position: relative;
+    width: 1200px;
+
+    height: 4000px;
+}
+#image-box {
+    height: 710px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid slateblue;
+
+}
+#image-box img {
+    width: 710px;
+    height: 525px;
+    overflow: hidden;
+}
+#big-image1 {
+    position: absolute;
+    z-index: 101;
+    align-self: flex-end;
+}
+#big-image2 {
+    margin-left: 40%;
+    z-index: 100;
+    position: relative;
+}
+#big-image2:hover {
+    z-index: 102;
+}
+#text-with-logo {
+    margin-top: 50px;
+    width: 910px;
+    height: 428px;
+    margin-left: 285px;
+    margin-right: 5px;
+    font-size: 19px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid salmon;
+}
+#text-with-logo p {
+    font-size: 19px;
+    line-height: 1.37;
+}
+#text-with-logo img {
+    width: 470px;
+    height: 176px;
+}
+#side-note-photo {
+    display: flex;
+    border-bottom: 1px solid fuchsia;
+    justify-content: space-between;
+}
+#side-note-photo aside {
+    margin-left: 8%;
+    margin-top: 1%;
+}
+#side-note-photo img {
+    width: 750px;
+    height: 560px;
+}
+#side-note-photo p {
+    user-select: none;
+    font-size: 19px;
+    line-height: 1.37
+}
+#tasting-room-text {
+    margin-left: 38%;
+    width: 740px;
+    height: 497px;
+    border-bottom: 1px solid navy;
+    display: flex;
+}
+#tasting-room-text p {
+    font-size: 19px;
+    line-height: 1.37;
+}
+#tasting-room-text a {
+    color: #1b1b1b;
+}
+#tasting-room-text h3 {
+    margin-bottom: 10%;
+    font-size: 36px;
+}
+#tasting-room-text .lunch-menu {
+    margin-bottom: 20%;
+}
+.tasting-inner1 {
+    width: 35%;
+    height: 90%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.tasting-inner2 {
+    width: 40%;
+    height: 40%;
+    margin-top: 24.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tasting-inner3 {
+    width: 25%;
+    height: 82.5%;
+    margin-top: 3.4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.throw-party {
+    margin-top: 10%;
+    margin-bottom: 12%;
+}
+.gift-vouchers{
+    margin-bottom: -0.5%;
+}
+#image-box2 {
+    height: 710px;
+    width: 1200px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid slateblue;
+}
+#image-box2 img {
+    width: 710px;
+    height: 525px;
+    overflow: hidden;
+}
+#new-big-image1 {
+    z-index: 100;
+    position: relative;
+}
+#new-big-image2 {
+    margin-left: 40%;
+    position: absolute;
+    z-index: 101;
+    align-self: flex-end;
+}
+#new-big-image1:hover {
+    z-index: 102;
+}
