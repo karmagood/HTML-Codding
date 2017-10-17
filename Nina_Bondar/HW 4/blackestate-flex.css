@@ -3,31 +3,30 @@ body {
     color: #1b1b1b;
 }
 
-body a:link {
+.main-wrapper a:link {
     text-decoration: none;
     border-bottom: 2px solid #000000;
     color: black;
 }
 
 
-body a:hover{
+.main-wrapper a:hover{
     text-decoration: none;
     border-bottom: 2px solid white;
     color: black;
 }
 
-body a:visited {
+.main-wrapper a:visited {
     text-decoration: none;
     border-bottom: 2px solid black;
     color: black;
 }
 
-body a:active{
+.main-wrapper a:active{
     text-decoration: none;
     border-bottom: 2px solid black;
     color: black;
 }
-
 
 h1 a:link{
     text-decoration: none;
@@ -377,4 +376,28 @@ h3#tasting {
     height: 1000px;
     width: 300px;
     display: block;
+}
+
+.footer-wrapper a:link {
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b;
+    color: #1b1b1b;
+ }
+
+.footer-wrapper a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    color: #1b1b1b;
+}
+
+.footer-wrapper a:active {
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b;
+    color: #1b1b1b;
+}
+
+.footer-wrapper a:visited {
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b;
+    color: #1b1b1b;;
 }
