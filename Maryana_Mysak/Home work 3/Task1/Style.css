@@ -1,0 +1,56 @@
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p, header h1, h4 {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background-color: #9b59b6;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+section {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  background-color: #e74c3c;
+  width: 70%;
+  height: calc(100vh - 67px - 38px);
+  padding: 10px;
+}
+
+aside {
+  background-color: #70cd72;
+  width: 30%;
+  padding: 10px;
+  height: calc(100vh - 67px - 38px);
+}
+
+footer {
+  width: 100%;
+  background-color: #f29c2e;
+  margin: auto;
+  padding: 10px;
+}
+
+.move-down {
+  margin-top: 20px;
+}

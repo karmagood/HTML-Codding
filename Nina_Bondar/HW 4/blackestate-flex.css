@@ -3,31 +3,30 @@ body {
     color: #1b1b1b;
 }
 
-body a:link {
+.main-wrapper a:link {
     text-decoration: none;
     border-bottom: 2px solid #000000;
     color: black;
 }
 
 
-body a:hover{
+.main-wrapper a:hover{
     text-decoration: none;
     border-bottom: 2px solid white;
     color: black;
 }
 
-body a:visited {
+.main-wrapper a:visited {
     text-decoration: none;
     border-bottom: 2px solid black;
     color: black;
 }
 
-body a:active{
+.main-wrapper a:active{
     text-decoration: none;
     border-bottom: 2px solid black;
     color: black;
 }
-
 
 h1 a:link{
     text-decoration: none;
@@ -230,9 +229,8 @@ h3#tasting {
     margin-top: 270px;
     margin-left: 0px;
     margin-right: 40px;
+    margin-bottom: -85px;
 }
-
-
 
 #field1 {
     margin-right:-380px;
@@ -252,3 +250,154 @@ h3#tasting {
     z-index: 1;
 }
 
+#bottle-img {
+    height: 800px;
+    width: 270px;
+    margin-left: 200px;
+}
+
+.current-releases-wrap{
+    display: flex;
+    flex-direction: row;
+    margin-left: 520px;
+    margin-top: -670px;
+    flex-wrap: wrap;
+}
+
+#current-releases:before, #current-releases:after{
+    content: "";
+    display: table;
+}
+
+#current-releases h4 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-top: 300px;
+}
+
+#releases-note p{
+    font-size: 19px;
+    margin-left: 100px;
+    width: 270px;
+    line-height: 26px;
+}
+
+.wine-name {
+    font-size: 19px;
+    text-align: left;
+}
+
+#header-wine-1 {
+    margin-left: -55px;
+}
+
+.price {
+    font-size: 19px;
+    text-align: left;
+}
+
+#wine-2, #wine-4 ,#wine-6 {
+    margin-left: 50px;
+}
+.wine-descr {
+    width: 270px;
+    font-size: 19px;
+    line-height: 26px;
+}
+
+#header-wine-2,#header-wine-3, #header-wine-4, #header-wine-6{
+    margin-left: 0px;
+}
+
+
+#wine-3, #wine-4 ,#wine-5{
+    margin-top: 20px;
+}
+
+#header-wine-5 {
+    margin-left: -22px;
+}
+
+#wine-6{
+    margin-top: 20px;
+}
+
+#quote-1{
+    margin-top: 260px;
+}
+
+#quotes {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#wine-store {
+    font-size: 32px;
+    margin-top: 160px;
+    margin-left: -30px;
+}
+
+.additional-options{
+    margin-top: 300px;
+}
+
+#additional {
+    font-size: 20px;
+    line-height: 26px;
+    margin-left: 40px;
+}
+
+#additional li {
+    margin-bottom: 10px;
+}
+
+#footer-options {
+    width: 64%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    font-size: 13px;
+    justify-content: space-between;
+    line-height: 26px;
+    flex-wrap: wrap;
+}
+
+#moved {
+    margin-left: 100px;
+}
+
+.copyright{
+    font-size: 13px;
+    margin-left: 550px;
+    line-height: 26px;
+}
+
+.lower-background{
+    height: 1000px;
+    width: 300px;
+    display: block;
+}
+
+.footer-wrapper a:link {
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b;
+    color: #1b1b1b;
+ }
+
+.footer-wrapper a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+    color: #1b1b1b;
+}
+
+.footer-wrapper a:active {
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b;
+    color: #1b1b1b;
+}
+
+.footer-wrapper a:visited {
+    text-decoration: none;
+    border-bottom: 1px solid #1b1b1b;
+    color: #1b1b1b;;
+}

@@ -5,7 +5,6 @@ body{
 body>header {
     margin: 0;
     background-color: #f1f1f1;
-    padding: 10px;
     height: 60px;
     min-height: 40px;
     position: fixed;
@@ -35,35 +34,49 @@ body>header {
 }
 
 #google_apps {
-    display: inline;
-    margin: 5px;
+    background-size: 92px 2731px;
+    background-image: url('imgs/sprites.png');
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-position: -35px -276px;
  }
 
-#google_apps img {
-    height: 25px;
-}
+
 
 #gmail_user {
-    display: inline;
-    margin: 5px;
+    display: inline-block;
+    background-image: url("https://lh3.googleusercontent.com/-7JFCBci0Taw/AAAAAAAAAAI/AAAAAAAAAAA/ACnBePaX8fb2Sw9xGPcQxF9RJZsf1eCCrQ/s64-c-mo/photo.jpg");
+    border-radius: 50%;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    margin-right: 10px;
 }
 
-#gmail_user img {
-    border-radius: 50%;
-    height: 40px;
-    width: auto;
-}
 
 #google_notifications {
-    display: inline;
-    margin: 10px;
+    background-size: 92px 2731px;
+    background-image: url('imgs/sprites.png');
+    display: inline-block;
+    box-sizing: border-box;
+    background-position: -70px -2010px;
+    background-color: rgba(0,0,0,.55);
+    color: #fff;
+    margin: 5px;
+    padding: 0 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 12px;
 }
 
 #google_notifications img {
     height: 28px;
 }
 
-#right_header_box {
+#google_navigation {
     position: fixed;
     right: 1%;
     top: 15px;
@@ -71,8 +84,8 @@ body>header {
 
 #mail_panel {
     position: fixed;
-    margin-top: 80px;
-    height: 15px;
+    margin-top: 60px;
+    height: 35px;
     width: 100%;
     background-color: white;
     border-top: solid;
@@ -91,7 +104,7 @@ body>header {
 #left_panel {
     position: fixed;
     padding-top: 0;
-    margin-top: 142px;
+    margin-top: 102px;
     width: 200px;
     background-color: white;
     height: 100%;
@@ -99,7 +112,7 @@ body>header {
 
 #content_panel {
     position: fixed;
-    margin-top: 142px;
+    margin-top: 102px;
     margin-left: 200px;
     background-color: white;
     height: 100%;
@@ -173,7 +186,6 @@ body>header {
 #mails li {
     width: 100%;
     background-color: white;
-    border-top: solid;
     border-bottom: solid;
     border-bottom-color: silver;
     border-top-color: silver;

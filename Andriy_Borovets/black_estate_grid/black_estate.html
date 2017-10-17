@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* Setting up our grid */
+        .container {
+            width: 1300px; /*Set the width of the entire website here */
+            margin-right: auto;
+            margin-left: auto; /* Margin-left and right are set to auto to center the container */
+        }
+        .seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child {
+            margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
+        }
+        .eleven {
+            width: 91.5%;
+            float: left;
+            margin-left: 2%;
+        }
+        .ten {
+            width: 83%;
+            float: left;
+            margin-left: 2%;
+        }
+        .nine {
+            width: 74.5%;
+            float: left;
+            margin-left: 2%;
+        }
+        .eight {
+            width: 66%;
+            float: left;
+            margin-left: 2%;
+        }
+        .seven {
+            width: 57.5%;
+            float: left;
+            margin-left: 2%;
+        }
+        .six {
+            width: 49%; /* This div spans six columns (the entire row)*/
+            float: left;
+            margin-left: 2%;
+        }
+        .five {
+            width: 40.5%; /* This div spans five columns */
+            margin-left: 2%;
+            float:left;
+        }
+        .four {
+            width: 32%;
+            float:left;
+            margin-left: 2%;
+        }
+        .three {
+            width: 23.5%;
+            float:left;
+            margin-left: 2%;
+        }
+        .two {
+            width: 15%;
+            float:left;
+            margin-left: 2%;
+
+        }
+        .one {
+            width: 6.5%;
+            float:left;
+            margin-left: 2%;
+        }
+        .row {
+            width: 100%;
+            clear: both; /* Clear creates new styles for the next row */
+            padding: 0px;
+
+        }
+        div[id*='box']{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-weight: normal;
+            line-height: 1.2;
+            font-size: 30px;
+        }
+        .invisible{
+            background-color: transparent;
+            font-size: 0px;
+        }
+        #row1{
+            margin: 60px;
+        }
+        div[id*='text']{
+            font-size: 20px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        #row2{
+            margin-top: 20px;
+        }
+
+        #photo_content {
+            position:relative;
+        }
+        #photo1{
+            position: absolute;
+            left: 500px;
+            top: -150px;
+        }
+        #photo2{
+            float: left;
+            margin-left: 80px;
+
+        }
+        #bigText{
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 40px;
+        }
+        div[id*='small']{
+            font-size: 14px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row" id="row1">
+        <div class="one" >
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="box1">
+                Black
+                Estate is a
+                remarkable
+                place
+                for wine.
+        </div><!--end of div class two-->
+        <div class="two" id="box2">
+                3 organic hillside vineyards on clay limestone soils in the Waipara, N. Canterbury.
+        </div><!--end of div class two-->
+        <div class="two" >
+            <span class="invisible"> space</span>
+        </div><!--empty two space-->
+        <div class="two" id="text1">
+            Tasting Room
+            & Restaurant
+        </div>
+        <div class="two" id="text2">
+            614 Omihi Road
+            Waipara Valley
+            New Zealand
+            +64 3 314 6085
+            or <u>email</u>
+
+            10am - 5pm 7 days
+            <u>map</u>
+        </div>
+        <div class="one" >
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+    </div><!--end of div class row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row" id="row2">
+        <div class="one" >
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="one" id="text3">
+            <u>the club</u>
+        </div><!--end of class two-->
+        <div class="one" >
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="one" id="text4">
+            <u>shop and
+                wine archive</u>
+        </div>
+        <div class="one" >
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="one" id="text5">
+            <u>our
+            vineyards</u>
+        </div>
+        <div class="three" >
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text6">
+            <u>
+                distributors
+            </u>
+        </div><!--end of class two and end of this row-->
+    </div><!-- end of second row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text7">
+            <u>accommodation</u>
+        </div>
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+    </div><!-- end of 3 row-->
+
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div id="photo_content">
+        <img src="living_room.jpg" id="photo1">
+        <img src="field.jpg" id="photo2">
+    </div>
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="four">
+            <span class="invisible"> space</span>
+        </div><!-- space row-->
+        <div class="eleven">
+            <img src="black_estate.png">
+        </div>
+    </div><!-- end of 4 row-->
+    <div class="row">
+        <div class="four">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="bigText">
+            Tasting Room & Restaurant
+        </div>
+    </div><!-- end of 5 row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="four">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text8">
+            <u>Lunch Menu</u>
+        </div>
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text9">
+            We're Winery Restuarant
+            of the Year and now have
+            two hats with
+            <u>Cuisine Good Food Awards</u>.
+            How about that?
+        </div>
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="one" id="text10">
+            <u>For Hire</u>
+        </div>
+    </div><!-- end of 6 row-->
+    <div class="row">
+        <div class="four">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text11">
+            12pm - 5pm
+        </div>
+        <div class="four">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text12">
+            Throw your party in our tasting room.
+        </div>
+    </div><!-- end of 7 row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="four">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text13">
+            7 days
+        </div>
+        <div class="four">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text14">
+            <u>email</u>
+        </div>
+    </div><!-- end of 8 row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="text15">
+            <u>Join the Club</u>
+        </div>
+    </div><!-- end of 9 row -->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="three" id="text16">
+            <u>Sign up for our newsletter</u>
+        </div>
+    </div><!-- end of 10 row -->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="three" id="small">
+            <u>Media + Marketing Resources</u>
+        </div>
+        <div class="one">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="one" id="small1">
+            <u>Contact</u>
+        </div>
+        <div class="two">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="two" id="small2">
+            <u>Instagram, yeah</u>
+        </div>
+        <div class="row">
+            <span class="invisible"> space</span>
+        </div><!-- space row-->
+        <div class="row">
+            <div class="eight">
+                <span class="invisible"> space</span>
+            </div><!--empty one space-->
+        </div>
+        <div class="two">
+            <u>Facebook, yeah</u>
+        </div>
+    </div><!-- end of 11 row -->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <div class="five">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="three" id="small4">
+            License no: 047/OFF/90/2011
+        </div>
+    </div>
+    <div class="row">
+        <div class="five">
+            <span class="invisible"> space</span>
+        </div><!--empty one space-->
+        <div class="five" id="small5">
+            Expiry Date: 02/09/2015. A copy of our license can be viewed here.
+        </div>
+    </div>
+
+
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+    <div class="row">
+        <span class="invisible"> space</span>
+    </div><!-- space row-->
+</div><!-- end of div class container-->
+
+
+</body>
+</html>

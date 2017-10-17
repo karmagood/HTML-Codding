@@ -9,14 +9,12 @@
 <body>
 
 
-<section class="main_navigation">
-    <nav>
-        <form name="search" method="post" action="#">
+<header class="main_navigation">
             <ul>
                 <li><a href="https://www.facebook.com/"><img src="../images/facebook_logo.png" height="25"
                                                              alt="Facebook logo"/></a>
                 </li>
-                <li><input type="text" placeholder="Пошук" size="50"><input type="submit" value="&#xf002"></li>
+                <li><input type="text" placeholder="Пошук" style="width: 350px;"><input type="submit" value="&#xf002"></li>
 
                 <li>
                     <div class="separator"></div>
@@ -52,11 +50,9 @@
                 </a>
                 </li>
             </ul>
-        </form>
-    </nav>
-</section>
-<section class="flex-container">
-    <section class="flex-item flex1">
+</header>
+<section class="main-container">
+    <section class="flex-item nav_block">
         <nav>
             <ul>
                 <li><a href="#">
@@ -85,33 +81,19 @@
                 </li>
                 <li><h2 style="font-size: 13px; font-weight: bold">Швидкий доступ</h2>
                 </li>
+                {{#dataFacebook}}
+                    {{#menu-items}}
                 <li>
                     <section>
-                        <a href="#">
-                            <img src="../images/home-image-1.jpg" alt="Page 1" height="24"
+                        <a href="{{menu-src}}">
+                            <img src="{{img-src}}" alt="Page 1" height="24" width="30"
                                  style="float: left; margin-right: 5px; border-radius: 7px;">
-                            <p>Магазин</p></a>
+                            <p>{{name-item}}</p></a>
 
                     </section>
                 </li>
-                <li>
-                    <section>
-                        <a href="#">
-                            <img src="../images/headerimg9.jpg" alt="Page 1" height="24" width="30"
-                                 style="float: left; margin-right: 5px; border-radius: 7px;">
-                            <p>Кафе "Віктор"</p></a>
-
-                    </section>
-                </li>
-                <li>
-                    <section>
-                        <a href="#">
-                            <img src="../images/home-image-4.jpg" alt="Page 1" height="24"
-                                 style="float: left; margin-right: 5px; border-radius: 7px;">
-                            <p>Ательє</p></a>
-
-                    </section>
-                </li>
+                    {{/menu-items}}
+                {{/dataFacebook}}
                 <li><h2 style="font-size: 13px; font-weight: bold">Огляд</h2>
                 <li>
                     <section>
@@ -151,7 +133,7 @@
             </aside>
         </nav>
     </section>
-    <section class="flex-item flex2">
+    <section class="flex-item main_feed_block">
         <div class="main_creation_block" style="display: none;">
             <div class="tabs">
                 <button class="tablinks">Make Post</button>
@@ -222,7 +204,7 @@
         </div>
     </section>
 
-    <section class="flex-item flex3">
+    <section class="flex-item main_quick_block">
         <div class="quick_block_right">
             <section class="this_week_section" style="background-color: white; border-radius: 5px;">
                 <ul>
@@ -305,7 +287,7 @@
 </section>
 <hr width="1" size="1000" style="margin: 0">
 
-<section class="flex-item flex4">
+<section class="flex-item main_actions_block">
 
     <div>
         <section class="games">
