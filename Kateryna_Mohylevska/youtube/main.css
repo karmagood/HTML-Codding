@@ -15,20 +15,25 @@ button{
     cursor: pointer;
 }
 .main-header{
-    margin: 0;
-    box-shadow: 3px 3px 2px rgba(17, 17, 17, 0.06);
-    width: 100%;
-    position: fixed;
-    background: #fffeff;
-}
-.main-nav{
     height:56px;
+
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
     padding: 0 16px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background: #fffeff;
+    box-shadow: 3px 3px 2px rgba(17, 17, 17, 0.06);
+    z-index: 100;
+
+
 }
-.main-nav .material-icons{
+.main-header-el>.material-icons{
     padding: 0 8px;}
 
 .left-aside sup{
@@ -38,6 +43,7 @@ button{
 
 .left-aside{
     display: flex;
+    cursor: pointer;
 }
 .left-aside img{
     align-self: center;
@@ -68,7 +74,7 @@ button{
     align-items: center;
 }
 .form-search input{
-    width: 88%;
+    width: 90%;
     height:26px;
     font-size: 16px;
     color: #8b898b;
@@ -86,27 +92,28 @@ button{
     color: #2b2b2b;
 }
 
-.form-search button{
-    background: #f2f2f2;
-    width: 65px;
+.button-search{
+    background: #f6f4f6;
+    width: 10%;
     height: inherit;
     border-left: 1px solid #d3d1d3;
+    cursor: pointer;
 }
-.form-search button:hover{
+.button-search:hover{
     background: #eae8ea;
 }
-.form-search button i{
+.button-search i{
     font-size: 20px;
+
 }
 
 .left-menu{
     background: #f6f4f6;
     width: 240px;
     font-size: 14px;
-    float: left;
-    margin-top: 56px;
     position: fixed;
-    height: calc(100% - 56px);
+    top:56px;
+    bottom: 0;
 }
 .left-menu:hover{
     overflow-y: auto;
@@ -145,6 +152,7 @@ button{
     border-bottom: 1px solid #efedef;
     padding: 8px 0;
 }
+
 .left-menu-el{
     font-family: "Roboto", sans-serif;
     color: rgb(17,17,17);
@@ -154,74 +162,140 @@ button{
 }
 .left-menu-el:hover{
     background-color: #eceaec;
+    padding: 8px 0 8px 24px;
 }
 
-.red-icons{
-    width: 24px;
+.left-menu-el::before{
+    margin-right: 24px;
+}
+.left-menu-el{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+.home-img::before{
+    content: url("images/icons/home.svg");
+    opacity: 0.45;
+}
+.popular-img::before{
+    content: url("images/icons/popular.svg");
+    opacity: 0.45;
+}
+.history-img::before{
+    content: url("images/icons/history.svg");
+    opacity: 0.45;
+}
+.help-img::before{
+    content: url("images/icons/help.svg");
+    opacity: 0.45;
+}
+.response-img::before{
+    content: url("images/icons/response.svg");
+    opacity: 0.45;
+}
+.settings-img::before{
+    content: url("images/icons/settings.svg");
+    opacity: 0.45;
+}
+.see-chanel>a::before{
+    content: url("images/icons/see-channels.svg");
+    opacity: 0.45;
+}
+
+
+.red-icons::before{
     border-radius: 50%;
+    background-size: 100%;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content:"";
 }
-.hover-red:hover{
-    color: red;
+.music-img::before{
+    background-image: url("//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg");
 }
-.left-menu-el i,
-.left-menu-el img{
-    margin-right: 26px;
+.sport-img::before{
+    background-image: url("//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg");
+}
+.film-img::before{
+    background-image: url("//i.ytimg.com/i/lgRkhTL3_hImCAmdLfDE4g/1.jpg");
+}
+.game-img::before{
+    background-image: url("//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg");
+}
+.news-img::before{
+    background-image: url("//i.ytimg.com/i/YfdidRxbB8Qhf0Nx7ioOYw/1.jpg");
+}
+.spherical-video-img::before{
+    background-image: url("//i.ytimg.com/i/zuqhhs6NWbgTzMuM09WKDQ/1.jpg");
+}
+.live-streaming-img::before{
+    background-image: url("//i.ytimg.com/i/4R8DWoMoI7CAwX8_LjQHig/1.jpg");
 }
 
-
-.youtube-best p{
+.youtube-best h4{
     font-size: 14px;
     padding-left: 24px;
     color: #8b898b;
     text-transform: uppercase;
+    margin: 10px 0;
 }
+
 .signin-for-chanel{
     padding: 2px 32px 16px 32px;
     border-bottom: 1px solid #efedef;
     color: rgb(17,17,17);
-    font-weight: bold;
+
 }
 .signin-for-chanel a{
     color: red;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
-.left-menu footer{
+.app-model{
     padding: 12px 27px;
     color: #8b898b;
     font-size: 13px;
 }
 
-.left-menu footer a{
+.app-model a{
     margin-right: 8px;
     color: #8b898b;
+}
+.app-model a:nth-child(8){
+    display: inline-block;
+    margin-top: 20px;
 }
 
 main{
     background: #fbf9fb;
-    width: calc(100% - 240px);
-    float: right;
     margin-top: 56px;
+    margin-left: 240px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .recommended{
     padding-bottom: 20px;
     border-bottom: 1px solid #efedef;
+    width: 864px;
 }
 .recommended-content,
 .channel-content{
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
 }
 .recommended header{
-    padding-left: 11%;
 }
 
 .channel header{
     display: flex;
-    padding: 15px 11%;
+    padding: 15px 0;
     justify-content: space-between;
     align-items: center;
 
@@ -241,7 +315,6 @@ main{
     text-transform: uppercase;
     font-size: 14px;
     padding: 10px;
-    margin-right: 10px;
     font-weight: bold;
 
 }
@@ -252,26 +325,31 @@ main{
 .channel{
     padding: 20px 0;
     border-bottom: 1px solid #efedef;
+    width: 864px;
 }
-.recommended footer{
+.see-more{
     font-size: 13px;
     color: #8b898b;
     text-transform: uppercase;
     cursor: pointer;
     padding-left: 11%;
+    background-color: inherit;
 }
 .video{
     cursor: pointer;
     margin-right: 4px;
     margin-bottom: 24px;
+    display: inline-block;
+}
+.video:nth-child(4n+4){
+    margin-right: 0;
 }
 .video-details{
     display: flex;
     flex-direction: column;
 }
 
-.video-details p{
-    font-weight: bold;
+.video-name{
     font-size: 14px;
 }
 
