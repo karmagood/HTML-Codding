@@ -9,79 +9,46 @@
 </head>
 <body>
 <header class="main-header">
-    <nav class="main-nav">
-        <aside class="main-nav-el left-aside">
-            <i class=" details material-icons">menu</i>
-            <img src="youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
-            <sup>UA</sup>
-        </aside>
-        <form action="" class="main-nav-el form-search">
-            <input type="text" value="Пошук">
-            <i class="material-icons keyboard">keyboard</i>
-            <button>
-                <i class="material-icons">search</i>
-            </button>
-        </form>
-        <aside class="main-nav-el right-aside">
-            <i class="material-icons">file_upload</i>
-            <i class="material-icons">apps</i>
-            <i class="material-icons">more_vert</i>
-            <a href="/" class="signin">УВІЙТИ</a>
-        </aside>
-    </nav>
+    <aside class="main-header-el left-aside">
+        <i class="details material-icons">menu</i>
+        <img src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
+        <sup>UA</sup>
+    </aside>
+    <form action="" class="main-header-el form-search">
+        <input type="text" value="Пошук">
+        <i class="material-icons keyboard">keyboard</i>
+        <button class="button-search">
+            <i class="material-icons">search</i>
+        </button>
+    </form>
+    <aside class="main-header-el right-aside">
+        <i class="material-icons">file_upload</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">more_vert</i>
+        <a href="/" class="signin">УВІЙТИ</a>
+    </aside>
 </header>
 
 
-<div class="left-menu">
+<aside class="left-menu">
     <nav>
-        <a href="/" class="left-menu-el">
-            <i class="material-icons hover-red">home</i>
-            <span>Головна</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <i class="material-icons">whatshot</i>
-            <span>Популярне</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <i class="material-icons">history</i>
-            <span>Історія</span>
-        </a>
+        {{#data-model}}
+            <a href="/" class="left-menu-el {{class-name}}">
+                {{name}}
+            </a>
+        {{/data-model}}
     </nav>
     <section class="youtube-best">
-        <p>Найкраще на youtube</p>
-        <a href="/" class="left-menu-el">
-            <img class="red-icons" src="//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg" alt="music icon">
-            <span>Музика</span>
+        <h4>Найкраще на youtube</h4>
+        {{#best-on-youtube}}
+        <a href="/" class="left-menu-el red-icons {{class-name}}">
+            {{name}}
         </a>
-        <a href="/" class="left-menu-el">
-            <img class="red-icons" src="//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg" alt="sport icon">
-            <span>Спорт</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <img class="red-icons" src="//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg" alt="game icon">
-            <span>Комп'ютерні ігри</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <img class="red-icons" src="//i.ytimg.com/i/lgRkhTL3_hImCAmdLfDE4g/1.jpg" alt="cinema icon">
-            <span>Фільми</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <img class="red-icons" src="//i.ytimg.com/i/YfdidRxbB8Qhf0Nx7ioOYw/1.jpg" alt="news icon">
-            <span>Новини</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <img class="red-icons" src="//i.ytimg.com/i/4R8DWoMoI7CAwX8_LjQHig/1.jpg" alt="live video icon">
-            <span>У прямому ефірі</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <img class="red-icons" src="//i.ytimg.com/i/zuqhhs6NWbgTzMuM09WKDQ/1.jpg" alt="spherical video">
-            <span>Сферичне відео</span>
-        </a>
+        {{/best-on-youtube}}
     </section>
     <div class="see-chanel">
         <a href="/" class="left-menu-el">
-            <i class="material-icons">add_circle</i>
-            <span>Переглянути кан...</span>
+            Переглянути канали
         </a>
     </div>
     <div class="signin-for-chanel">
@@ -89,60 +56,70 @@
         <a href="/">Увійти</a>
     </div>
     <nav class="settings">
-        <a href="/" class="left-menu-el">
-            <i class="material-icons">settings</i>
-            <span>Налаштування</span>
+        {{#settings-model}}
+        <a href="/" class="left-menu-el {{class-name}}">
+            {{name}}
         </a>
-        <a href="/" class="left-menu-el">
-            <i class="material-icons">help</i>
-            <span>Довідка</span>
-        </a>
-        <a href="/" class="left-menu-el">
-            <i class="material-icons">sms_failed</i>
-            <span>Надіслати відгук</span>
-        </a>
+        {{/settings-model}}
     </nav>
 
-    <footer>
-        <a href="/">Інфо</a>
-        <a href="/">Преса</a>
-        <a href="/">Авторські права</a>
-        <a href="/">Творці</a>
-        <a href="/">Реклама</a>
-        <a href="/">Розробники</a>
-        <a href="/">+YouTube</a>
-        <br><br>
-        <a href="/">Умови</a>
-        <a href="/">Конфіденційність</a>
-        <a href="/">Політика та безпека</a>
-        <a href="/">Спробувати нові функції</a>
+    <footer class="app-model">
+        {{#application-model}}
+        <a href="/">{{name}}</a>
+        {{/application-model}}
         <br><br>
         <p>© 2017 YouTube, LLC</p>
     </footer>
-</div>
+</aside>
 
 <main>
     <section class="recommended">
         <header>
             <h4>Рекомендовано</h4>
         </header>
-        <div>
+        <div class="recommended-content">
             {{#recommended}}
-            <section class="video">
-                <img src="{{url}}" alt="video" width="210px">
-                <div class="video-details">
-                    <p>{{video-name}}</p>
-                    <a href="/">{{channel-name}}</a>
-                    <span class="views">{{views}} переглядів</span>
-                    <time datetime="{{datetime}}">{{time}}</time>
-                </div>
-            </section>
+                <article class="video">
+                    <img src="{{url}}" alt="video" width="210px">
+                    <h3 class="video-name">{{video-name}}</h3>
+                    <aside class="video-details">
+                        <a href="/">{{channel-name}}</a>
+                        <span class="views">{{views}} переглядів</span>
+                        <time datetime="{{datetime}}">{{time}}</time>
+                    </aside>
+                </article>
             {{/recommended}}
         </div>
-        <footer>
+        <button class="see-more">
             Показати більше
-        </footer>
+        </button>
     </section>
+    {{#channels}}
+        <section class="channel">
+            <header>
+                <div>
+                    <img height="32" width="32"
+                         src="https://yt3.ggpht.com/-62eFsC66a_s/AAAAAAAAAAI/AAAAAAAAAAA/S1aw6wY6HsM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                    <h4>{{channel-name}}</h4>
+                    <p>Рекомендований канал</p>
+                </div>
+                <a href="/">Підписатися {{channel-followers}}</a>
+            </header>
+            <div class="channel-content">
+                {{#channel-content}}
+                    <section class="video">
+                        <img src="{{url}}" alt="video" width="210px">
+                        <div class="video-details">
+                            <p>{{video-name}}</p>
+                            <a href="/">{{channel-name}}</a>
+                            <span class="views">{{views}} переглядів</span>
+                            <time datetime="{{datetime}}">{{time}}</time>
+                        </div>
+                    </section>
+                {{/channel-content}}
+            </div>
+        </section>
+    {{/channels}}
 </main>
 
 

@@ -1,0 +1,252 @@
+body {
+    margin:0;
+    background-color: #e9ebee;
+    font-family: Helvetica, Arial, sans-serif;
+
+     }
+
+header {
+    position:fixed;
+    background-color: #4267B2;
+    width:100%;
+    height:50px;
+    text-underline-color: #034f84;
+    padding-left:50px;
+    padding-right:50px;
+}
+header button{
+    display:inline-block;
+    width:20px;
+    height:30px;
+    margin-left: auto;
+}
+
+
+header > div {
+    display: inline-block;
+    width:40%;
+}
+
+header span {
+    display: inline-block;
+    text-decoration:  none;
+    vertical-align: bottom;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 28px;
+    white-space: nowrap;
+    color: #ffffff;
+    margin-right:30px
+}
+header input {
+    display: inline-block;
+    vertical-align:bottom;
+    /*border:2px;*/
+    height: 20px;
+    width: 1000px;
+}
+header .fa-facebook-official{
+    display: inline-block;
+    margin-top: 10px;
+    font-size:30px;
+    color: white;
+    /*margin-left:10%;*/
+}
+
+header img {
+    display: inline-block;
+    max-height: 20px;
+    max-width: 20px;
+    border-radius: 50%;
+
+}
+
+#h_icon_user {
+    margin-left: 50px;
+}
+
+.header-right {
+    margin-left:100px;
+}
+
+.header-right > img{
+    margin-left: 6px;
+    margin-right:10px;
+
+}
+#h_icon_help {
+    margin-left:20px;
+}
+
+
+
+.top-profile-info {
+     background-color: #ffffff;
+     margin-left: 48px;
+     width: 65%;
+     height: 400px;
+
+}
+
+.profile-sections {
+    display:inline-block;
+    width:80px;
+    border-right: 1px solid #e9eaed;
+    color:#365899;
+    /*float: left;*/
+    font-size: 14px;
+    font-weight: bold;
+    height: 43px;
+    line-height: 3.05;
+    padding: 0 17px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#profile-sections-1 {
+    margin-left:190px;
+    color:#4B4F56;
+}
+
+
+
+.search-in-posts {
+    background-color: #ffffff;
+    vertical-align:top;
+    display: inline-block;
+    margin-left: 48px;
+    margin-top: 15px;
+    width: 22%;
+    height: 40px;
+}
+.make-new-post {
+    display: inline-block;
+    background-color: #111111;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 41.5%;
+    height: 100px;
+}
+
+.about-me {
+    display: inline-block;
+    background-color: #ff7f50;
+    margin-left: 48px;
+    margin-top: 15px;
+    width: 22%;
+    height: 400px;
+
+}
+
+.my-photos {
+    display: inline-block;
+    background-color: #7fff00;
+    margin-left: 48px;
+    margin-top: 15px;
+    width: 22%;
+    height: 400px;
+}
+
+.post {
+    display: inline-block;
+    vertical-align:top;
+    background-color: #006400;
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 41.5%;
+    height: 300px;
+}
+.contacts-list
+{
+    position: fixed;
+    background-color: #E9EBEE;
+    top:50px;
+    left:82%;
+    width: 18%;
+    height: 100vh;
+    border: 2px solid #90949c;
+}
+
+
+#search-header{
+    display: inline-block;
+    padding-bottom: 0;
+    margin-left: 10px;
+    width:20%;
+}
+.background-photo {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+}
+
+.background-photo h1 {
+    top: 290px;
+    left: 250px;
+    position: absolute;
+    color: #fff;
+    text-rendering: optimizelegibility;
+    text-shadow: 0 0 3px rgba(0,0,0,.8);
+}
+.main-photo {
+    position: absolute;
+    top: 200px;
+    left:70px;
+    border: 2px solid #B2B2B2;
+    /*width: 160px;*/
+    height: 168px;
+
+
+}
+
+.main-photo img {
+    border: 4px solid #fff;
+    border-radius: 2px;
+}
+
+.contacts-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contacts-list li{
+    font-size: 12px;
+    margin-top:10px;
+    margin-bottom: 10px;
+
+}
+.contacts-list ul :nth-child(1) {
+    color: #4c4c4c;
+    font-size: 11px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+
+.contacts-list span {
+    display:inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.contacts-list img {
+    #float:left;
+    display:inline-block;
+    width:34px;
+    height:34px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.contacts-list .is-online {
+    margin-right:0;
+    margin-left:90px;
+    width:12px;
+    height:12px;
+}
+
+
+
+
+

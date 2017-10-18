@@ -1,0 +1,34 @@
+header {
+    background-color: #A05BB0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 60px;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.left_side {
+    background-color: #F44744;
+    width: 500px;
+    height: 800px;
+    float: left;
+}
+.right_side {
+    background-color: #00CB79;
+    width: 200px;
+    height: 800px;
+    float: left;
+}
+
+footer {
+    clear: both;
+    background-color: #FE9739;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    height: 40px;
+}

@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    font-family: arial,sans-serif;
+}
+body>header {
+    margin: 0;
+    background-color: #f1f1f1;
+    height: 60px;
+    min-height: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+#domain_logo {
+    margin: 0;
+    position: fixed;
+}
+
+#domain_logo img {
+    margin: 0;
+    height: 60px;
+    margin-left: 4%;
+}
+
+#search {
+    position: fixed;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+
+#search input[type="text"]{
+    width: 500px;
+    height: 30px;
+}
+
+#google_apps {
+    background-size: 92px 2731px;
+    background-image: url('imgs/sprites.png');
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-position: -35px -276px;
+ }
+
+
+
+#gmail_user {
+    display: inline-block;
+    background-image: url("https://lh3.googleusercontent.com/-7JFCBci0Taw/AAAAAAAAAAI/AAAAAAAAAAA/ACnBePaX8fb2Sw9xGPcQxF9RJZsf1eCCrQ/s64-c-mo/photo.jpg");
+    border-radius: 50%;
+    background-size: 32px 32px;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+
+#google_notifications {
+    background-size: 92px 2731px;
+    background-image: url('imgs/sprites.png');
+    display: inline-block;
+    box-sizing: border-box;
+    background-position: -70px -2010px;
+    background-color: rgba(0,0,0,.55);
+    color: #fff;
+    margin: 5px;
+    padding: 0 2px;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+#google_notifications img {
+    height: 28px;
+}
+
+#google_navigation {
+    position: fixed;
+    right: 1%;
+    top: 15px;
+}
+
+#mail_panel {
+    position: fixed;
+    margin-top: 60px;
+    height: 35px;
+    width: 100%;
+    background-color: white;
+    border-top: solid;
+    border-bottom: solid;
+    border-bottom-color: silver;
+    border-top-color: silver;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+#mail_panel * {
+    display: inline;
+    height: 20px;
+}
+
+#left_panel {
+    position: fixed;
+    padding-top: 0;
+    margin-top: 102px;
+    width: 200px;
+    background-color: white;
+    height: 100%;
+}
+
+#content_panel {
+    position: fixed;
+    margin-top: 102px;
+    margin-left: 200px;
+    background-color: white;
+    height: 100%;
+    right: 0;
+    left: 0;
+    overflow: auto;
+}
+
+#mail_categories * {
+    display: block;
+    margin-left: 20px;
+
+}
+
+#mail_categories a:not(#write):not(#inbox){
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 80%;
+    margin-top: 5px;
+}
+
+#write {
+    color: white;
+    background-color: #d14836;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 25px;
+    text-align: center;
+    padding-top: 2px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 17px;
+    margin-left: 30px;
+}
+
+#inbox {
+    color: #dd4b39;
+    margin-left: 30px;
+    text-decoration: none;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+#mails li {
+    display: block;
+}
+
+#mails li * {
+    display: inline;
+}
+
+#mails li a {
+    text-decoration: none;
+}
+
+#hangouts_options {
+    margin: 20px;
+}
+
+#hangouts_options *{
+    display: inline;
+    margin: 0;
+}
+
+#mails {
+    margin: 0;
+}
+
+#mails li {
+    width: 100%;
+    background-color: white;
+    border-bottom: solid;
+    border-bottom-color: silver;
+    border-top-color: silver;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.mail_sender, .mail_theme, .mail_date {
+    color: black;
+}
+
+.mail_sender {
+    margin-left: 2%;
+    width: 20%;
+}
+.mail_body {
+    color: silver;
+    margin-left: 2%;
+}
+
+.mail_theme {
+    margin-left: 5%;
+}
+
+.mail_date {
+    right: 20px;
+    position: absolute;
+}
+
+#left_footer_part {
+    display: inline;
+}
+
+#center_footer_part {
+    display: inline;
+}
+
+#right_footer_part {
+    display: inline;
+}
+
+footer {
+    height: 200px;
+}
+
+#contact_face * {
+    display: inline;
+    margin: 0;
+}
+
+#contact_face a {
+
+}
+
+#contact_face_img {
+    margin-left: 30px;
+    border-radius: 50%;
+}
+
+#contact_add_pict {
+    height: 40px;
+}

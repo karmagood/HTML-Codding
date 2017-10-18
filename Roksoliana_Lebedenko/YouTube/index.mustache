@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/header_search.css">
+    <link rel="stylesheet" href="styles/header_logo.css">
+    <link rel="stylesheet" href="styles/header_settings.css">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+</head>
+<body>
+<header class="wrap_header">
+    <div class="main_header">
+        <div class="header_logo_wrap">
+            <a href=""><i class="icons fa fa-bars fa-lg"></i></a>
+            <a href=""><img src="https://png.icons8.com/play-button/color/24" title="Play Button" height="24"></a>
+            <a class="logo_text" href="">YouTube<sup class="logo_country">UA</sup></a>
+
+        </div>
+        <form action="">
+            <div class="search-keyboard "><input class="search-input" title="search" type="text" placeholder="Пошук">
+                <button class="search-button"><i class="icons fa fa-search"></i></button>
+            </div>
+        </form>
+        <div class="header_additional_options_wrap">
+            <div class="header_settings">
+                <button class="header_additional_option"><i class="icons fa fa-upload fa-lg" aria-hidden="true"></i>
+                </button>
+                <button class="header_additional_option"><i class="icons fa fa-th fa-lg"></i></button>
+                <button class="header_additional_option"><i class="icons fa fa-bell fa-lg" aria-hidden="true"></i>
+                </button>
+                <button class="header_additional_option"><img class="header_additional_option-img"
+                                                              src="https://yt3.ggpht.com/-7a06iItlnVc/AAAAAAAAAAI/AAAAAAAAAAA/KfKn20_ZfWI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                                                              alt="" width="32px" height="32px"></button>
+            </div>
+        </div>
+    </div>
+
+</header>
+<main class="wrap_main">
+    <div class="main_content">
+        {{#chapters}}
+        <article class="main">
+            <header class="article_header">
+                <div class="article_header-logo">
+                    <a href="">
+                        <img src="https://yt3.ggpht.com/tjt5PzE-7BcPS7jLMfPuTinVAmIk3dzMwwnUDrltyaGhY0zmfCokxGMuwq_GH-TCyz2UuWwOw-s5Ge8y=s88-nd-c-c0xffffffff-rj-k-no"
+                             alt="">
+                        <span class="article_header-name">Голос – тема</span>
+                    </a>
+                    <small>Рекомендований канал</small>
+                </div>
+                <div class="article_header-button">
+                    <button>
+                        <span>Підписатися</span>
+                        <span>24 тис.</span>
+                    </button>
+                    <a href=""><i class="icons fa fa-close fa-lg" style="color: #a4a2a5"></i></a>
+                </div>
+            </header>
+            <div class="main_article">
+                {{#video-list}}
+                <div class="main_article-videos">
+                    <img src="{{cover-image-url}}"
+                         alt="">
+                    <div class="article_videos-description">
+                        <h3><a href="">{{title}}</a></h3>
+                        <a href="">
+                            <span>{{subtitle}}</span>
+                            <span>{{view-count}} млн перегляди
+                            <span>•</span>
+                        </span>
+
+                            <span>{{publication-date}}</span>
+                        </a>
+                    </div>
+                </div>
+                {{/video-list}}
+            </div>
+        </article>
+        {{/chapters}}
+    </div>
+</main>
+<aside class="wrap_aside">
+    <div class="aside_content">
+        <div class="aside_block home">
+            <a class="aside_menu" href="">
+                <i class="fa fa-home fa-lg aside_icon home"></i>
+                <span class="aside_text home">Головна</span>
+            </a>
+            <a class="aside_menu" href="">
+                <i class="fa fa-fire fa-lg aside_icon"></i>
+                <span class="aside_text">Популярне</span>
+            </a>
+            <a class="aside_menu" href="">
+                <i class="fa fa-caret-square-o-right fa-lg aside_icon" aria-hidden="true"></i>
+                <span class="aside_text">Підписки</span>
+            </a>
+        </div>
+        <div class="aside_block">
+            <h3 class="aside_headers">Бібліотека</h3>
+            <a class="aside_menu" href="">
+                <i class="fa fa-history fa-lg aside_icon" aria-hidden="true"></i>
+                <span class="aside_text">Історія</span>
+            </a>
+            <a class="aside_menu" href="">
+                <i class="fa fa-clock-o fa-lg aside_icon" aria-hidden="true"></i>
+                <span class=" hidden_text">Переглянути пізніше</span>
+            </a>
+        </div>
+        <div class="aside_block">
+            <h3 class="aside_headers">Підписки</h3>
+            <a class="aside_menu" href="">
+                <img class="aside_icon-2" src="//i.ytimg.com/i/esO4-UStBz-iTTgkY645yw/1.jpg" alt="" height="24"
+                     width="24">
+                <span class="aside_text hidden_text">Популярні на YouTube</span>
+            </a>
+            <a class="aside_menu" href="">
+                <img class="aside_icon-2" src="//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg" alt="" height="24"
+                     width="24">
+                <span class="aside_text">Музика</span>
+            </a>
+            <a class="aside_menu" href="">
+                <img class="aside_icon-2" src="//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg" alt="" height="24"
+                     width="24">
+                <span class="aside_text">Спорт</span>
+            </a>
+            <a class="aside_menu" href="">
+                <img class="aside_icon-2" src="//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg" alt="" height="24"
+                     width="24">
+                <span class="aside_text">Комп'ютерні ігри</span>
+            </a>
+        </div>
+        <div class="aside_block">
+            <a class="aside_menu" href="">
+                <img class="aside_icon-2" src="//s.ytimg.com/yts/img/innertube/guide/add_channel_guide-vflSJDanE.png"
+                     alt="">
+                <span class="hidden_text">Переглянути канали</span>
+            </a>
+        </div>
+        <div class="aside_block">
+            <a class="aside_menu" href="">
+                <i class="fa fa-film fa-lg aside_icon" aria-hidden="true"></i>
+                <span>Фільми YouTube</span>
+            </a>
+        </div>
+        <div class="aside_block">
+            <a class="aside_menu" href="">
+                <i class="fa fa-cog fa-2x aside_icon" aria-hidden="true"></i>
+                <span>Налаштування</span>
+            </a>
+            <a class="aside_menu" href="">
+                <i class="fa fa-question-circle fa-2x aside_icon" aria-hidden="true"></i>
+                <span>Довідка</span>
+            </a>
+            <a class="aside_menu" href="">
+                <i class="fa fa-exclamation-circle fa-2x aside_icon" aria-hidden="true"></i>
+                <span>Надіслати відгук</span>
+            </a>
+        </div>
+        <div>
+            <div class="aside_footer start">
+                <a href="">Інфо</a>
+                <a href="">Преса</a>
+                <a href="">Авторські права</a>
+                <a href="">Творці</a>
+                <a href="">Реклама</a>
+                <a href="">Розробники</a>
+                <a href="">+YouTube</a>
+            </div>
+            <div class="aside_footer middle">
+                <a href="">Умови</a>
+                <a href="">Конфіденційність</a>
+                <a href="">Політика та безпека</a>
+                <a href="">Спробувати нові функції</a>
+            </div>
+            <div class="aside_footer end">© 2017 YouTube, LLC</div>
+        </div>
+    </div>
+</aside>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--CUSTOM CSS-->
+<link rel="stylesheet" href="index.css">
+<!--Font awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+ <body> <!--ДОПИСАТИ НАМЕ ВСІМ -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="top-menu" style="height: 42px">
+    <div class="container-fluid">
+        <a class="navbar-brand" id="navbar-left" href="#"><i class="fa fa-facebook-official" style="font-size:28px"></i></a>
+      <form class="navbar-form navbar-left">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Орест Регусевич">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+              <i class="glyphicon glyphicon-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+      <p class="navbar-right">
+          <a href="#"><img src="images/myface.jpg" class="img-circle"></a>
+          <a href="#" class="menu-item menu-text" name="my-name" title="Профіль">Орест</a>
+          <a href="#" class="menu-item menu-text" name="main-page">Головна<small>20+</small></a>
+          <a href="#" class="menu-item menu-text" name="find-friends">Знайти друзів</a>
+          <a href="#" title="Запити на дружбу" name="friend-requests"><img src="images/friend%20requests.png"></a>
+          <a href="#" class="menu-img" title="Повідомлення" name="messages"><img src="images/messages.png"></a>
+          <a href="#" title="Сповіщення" name="notifications"><img src="images/notification.png"></a>
+          <a href="#" title="Швидка допомога" name="questions"><img src="images/question.png"></a>
+          <a href="#" name="menu-dropdown"><img src="images/menu-dropdown-arrow.png"></a>
+    </p>
+    </div>
+  </nav>
+  <main class="page-content">
+    <section class="wrapper">
+  <div class="row">
+    <!-- sidebar -->
+    <aside class="column" id="sidebar">
+      <section class="your-games-all">
+          <section class="your-games-top">
+            <div class="position-left">
+              <span class="your-games-text">ВАШІ ІГРИ</span>
+            </div>
+            <div class="position-right">
+              <span class="your-games-sche"><a href="#">ЩЕ</a></span>
+            </div>
+            </section>
+              <section class="your-games-bottom">
+                  <a href="#"><img src="images/game1.png"></a>
+                  <a href="#"><img src="images/game2.png" class="center-game"></a>
+                  <a href="#"><img src="images/game3.png"></a>
+              </section>
+            </section>
+            <section class="your-games-all">
+                <section class="your-games-top">
+                  <div class="position-left">
+                    <span class="your-games-text">РЕКОМЕНДОВАНІ ІГРИ</span>
+                  </div>
+                  <div class="position-right">
+                    <span class="your-games-sche"><a href="#">ЩЕ</a></span>
+                  </div>
+                  </section>
+                    <section class="your-games-bottom">
+                        <a href="#"><img src="images/game4.png"></a>
+                        <a href="#"><img src="images/game5.png" class="center-game"></a>
+                        <a href="#"><img src="images/game6.png"></a>
+                    </section>
+                  </section>
+                  <div class="space">
+                  </div>
+                  <section class="friends-sidebar">
+                    <figure class="side-friend-block">
+                      <img src="images/side-friend1.jpg">
+                      <p class="side-friend-name">Олесь Добосевич</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 22%; width: 6px;"></span>
+                    </figure>
+                    <figure class="side-friend-block">
+                      <img src="images/side-friend2.jpg">
+                      <p class="side-friend-name">Мар'яна Мисак</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 29.5%; width: 6px;"></span>
+                    </figure>
+                    <figure class="side-friend-block">
+                      <img src="images/side-friend3.jpg">
+                      <p class="side-friend-name">Матвій Ковтун</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 31.5%; width: 6px;"></span>
+                    </figure>
+                    <figure class="side-friend-block">
+                      <img src="images/side-friend4.jpg">
+                      <p class="side-friend-name">Антон Тарасов</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 29.5%; width: 6px;"></span>
+                    </figure>
+                      <figure class="side-friend-block">
+                      <img src="images/side-friend5.jpg">
+                      <p class="side-friend-name">Оленка Скібінська</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 19%; width: 6px;"></span>
+                    </figure>
+                      <figure class="side-friend-block">
+                      <img src="images/side-friend6.jpg">
+                      <p class="side-friend-name">Марта Дацюк</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 33%; width: 6px;"></span>
+                    </figure>
+                      <figure class="side-friend-block">
+                      <img src="images/side-friend7.jpg">
+                      <p class="side-friend-name">Ліда Гук</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 48.5%; width: 6px;"></span>
+                    </figure>
+                      <figure class="side-friend-block">
+                      <img src="images/side-friend8.jpg">
+                      <p class="side-friend-name">Оленка Клюка</p>
+                      <span style="background: rgb(66, 183, 42);
+                      border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 30.5%; width: 6px;"></span>
+                    </figure>
+                    <figure class="side-friend-block">
+                    <img src="images/side-friend9.jpg">
+                    <p class="side-friend-name">Оля Бакай</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 41%; width: 6px;"></span>
+                  </figure>
+                  <article class="more-contacts">
+                      <p>БІЛЬШЕ КОНТАКТІВ (9)</p>
+                  </article>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <figure class="side-friend-block">
+                    <img src="images/side-friend10.jpg">
+                    <p class="side-friend-name">Соломія Хомечко</p>
+                    <span style="background: rgb(66, 183, 42);
+                    border-radius: 50%; display: inline-block; height: 6px;margin-top:7.1%; margin-left: 21.5%; width: 6px;"></span>
+                  </figure>
+                  <section id="sidebar-search">
+                      <div class="sidebar-search-block">
+                        <input placeholder="Пошук">
+                      </div>
+                      <img class="sidebar-search-icons" src="images/settings-sidebar.png">
+                      <img class="sidebar-search-icons" src="images/new-post-sidebar.png">
+                      <img class="sidebar-search-icons" src="images/create-new-group-sidebar.png">
+                  </section>
+      </section>
+    </aside>
+
+    <section class="column" id="main">
+      <section class="first-center-block">
+      <div class="background-with-tabs" align="center">
+        <a href="#" class="change-back-photo">
+          <span class="glyphicon glyphicon-camera"></span>
+        </a>
+        <a href="#"><img class="background-cover" src="images/background.jpg" height="312" width="851"></a>
+        <button class="but but1">Редагувати профіль</button>
+        <figure>
+        <img src="images/pencil.png" id="pencil-icon">
+          </figure>
+        <button class="but but2" title="Перегляньте свою активність на Facebook">Журнал активності</button>
+                   <figure>
+        <img src="images/3-bullets2.png" id="three-bullets2">
+                   </figure>
+        <figure>
+        <a href="#" name="my-face-back"><img class="my-face-back" align="left" src="images/myface.jpg" height="168" width="168"></a>
+        </figure>
+
+        <h2>Орест Регусевич</h2>
+        <nav>
+        <ul class="nav nav-tabs center-menu">
+          <li class="active"><a href="#">Життєпис</a></li>
+          <li class="border-r"><a href="#">Про себе</a></li>
+          <li class="border-r"><a href="#">Друзі<small>186</small></a></li>
+          <li class="border-r"><a href="#">Світлини</a></li>
+          <li class="dropdown border-r">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Більше
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Submenu 1-1</a></li>
+              <li><a href="#">Submenu 1-2</a></li>
+              <li><a href="#">Submenu 1-3</a></li>
+            </ul>
+          </li>
+        </ul>
+          </nav>
+      </div>
+    </section>
+
+    <div id="left-blocks">
+        <div class="left-block1">
+          <figure>
+          <img src="images/pro-sebe.png">
+          </figure>
+          <h3 class="about-myself">Про себе</h3>
+          <div class="question-left">
+            <a href="#" id="what-makes">
+            <p>+  Що робить вас щасливим?</p>
+          </a>
+          </div>
+          <hr class="left-hr1">
+        <ul>
+          <li>
+          <img src="images/studied.png">
+          <p>Вивчав Computer Science в <a href="#">Український<br> католицький університет UCuniversity</a></p>
+        </li>
+          <li>
+          <img id="house-icon" src="images/house.png">
+          <p>Живе у <a href="#">Lviv, Ukraine</a></p></li>
+          <li>
+            <img src="images/place-home.png">
+            <p>Із <a href="#">Lviv, Ukraine</a></p></li>
+          <li>
+            <img id="clock-icon" src="images/time-from.png">
+            <p>З вересня 2015 р.</p></li>
+          <li>
+            <a href="#">
+            <img src="images/add-photo-icon.png">
+            <p>Додайте обрані світлини</p>
+          </a>
+        </li>
+        </ul>
+        <button type="submit"><b>+</b> Додати Instagram, веб-сайти, інші посилання</button>
+        </div>
+        <section class="left-block2">
+          <img src="images/images.png">
+          <a href="#">
+          <h3 class="about-myself">Світлини</h3>
+        </a>
+        <a href="#">
+          <img src="images/dropdown-arrow-left.png" id="dropdown-arrow-left">
+        </a>
+          <figure class="block2-images-1">
+            <a href="#"><img src="images/image1.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/image2.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/image3.jpg" width="101" height="101"></a>
+          </figure>
+          <figure class="block2-images-2">
+            <a href="#"><img src="images/image4.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/image5.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/image6.jpg" width="101" height="101"></a>
+          </figure>
+          <figure class="block2-images-3">
+            <a href="#"><img src="images/image7.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/image8.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/image9.jpg" width="101" height="101"></a>
+          </figure>
+        </section>
+        <section class="left-block3">
+
+          <img src="images/my-friends.png">
+
+          <a href="#">
+          <h3 class="about-myself">Друзі <small>187</small></h3>
+        </a>
+        <a href="#">
+          <img src="images/dropdown-arrow-left.png" id="dropdown-arrow-left">
+        </a>
+          <figure class="block2-images-1">
+            <a href="#"><img src="images/friend1.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/friend2.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/friend3.jpg" width="101" height="101"></a>
+          </figure>
+          <figure class="block2-images-2">
+            <a href="#"><img src="images/friend4.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/friend5.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/friend6.jpg" width="101" height="101"></a>
+          </figure>
+          <figure class="block2-images-3">
+            <a href="#"><img src="images/friend7.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/friend8.jpg" width="101" height="101"></a>
+            <a href="#"><img src="images/friend9.jpg" width="101" height="101"></a>
+          </figure>
+          <img src="images/common-photos.png">
+          <p>See what you have in <br>common with your friends.</p>
+          <button class="btn">Переглянути</button>
+        </section>
+        <section class="left-block4">
+          <img src="images/featured-albums.png">
+          <a href="#">
+          <h3 class="about-myself">Featured Albums</h3>
+        </a>
+        </section>
+        <section class="left-block5">
+          <h5 id="grey-h5">Українська</h5>
+          <p> · </p>
+          <a href="#"><h5>English (US)</h5></a>
+          <p> · </p>
+          <a href="#"><h5>Русский</h5></a>
+          <p> · </p>
+          <a href="#"><h5>Español</h5></a>
+          <p id="last-bullet"> · </p>
+          <button class="btn btn-sm">+</button>
+          <a href="#"><h5 id="portug">Português (Brasil)</h5></a>
+        </section>
+        <section class="left-block6-footer">
+          Конфіденційність · Умови користування · Розміщення реклами
+           · Типи реклами· Реп'яшки · Ще <br> Facebook © 2017
+        </section>
+    </div>
+    <div id="right-blocks">
+
+      <div class="right-block1">
+
+      <div class="block1-right1-inner">
+        <ul class="nav nav-tabs">
+          <li>
+            <img src="images/center-nav1.png" id="first-image-menu">
+            <a id="dopys"href="#">Допис</a></li>
+          <li>
+            <img src="images/center-nav2.png" id="second-image-menu">
+            <a href="#">Світлини/Відео</a></li>
+          <li>
+            <img src="images/center-nav3.png" id="third-image-menu">
+            <a href="#">Відео наживо</a></li>
+          <li>
+            <img src="images/center-nav4.png" id="fourth-image-menu">
+            <a href="#">Життєва подія</a></li>
+        </ul>
+      </div>
+      <div class="block1-right2-inner">
+          <img src="images/myface.jpg" width="40" height="40" class="myface-center">
+          <input placeholder="Що у Вас на думці?" class="input-center">
+      </div>
+      <div class="block1-right3-inner">
+        <button class="menu-but2" disabled="disabled">Опублікувати</button>
+          <button class="menu-but1">Публічно</button>
+          <span id="publichno"></span>
+          <span id="public-dropdown"></span>
+        </div>
+      </div>
+      <div class="right-block2">
+          <div class="block2-right1-inner">
+            <a href="#">
+              <img src="images/post-person1.png">
+            </a>
+            <a href="#">
+              <img src="images/3-bullets.png" id="three-bullets">
+            </a>
+            <a href="#"><b>Ostap Kharysh</b></a>
+              разом з <a href="#">Olena Skibinska</a> та
+              <a href="#">4 іншими особами.</a>
+              <br>
+              <small>10 вересня</small>
+          </div>
+          <div class="block2-right2-inner">
+            <a href="#">
+              <img class="post-photo" src="images/post-photo1.png">
+            </a>
+            <a href="#">
+              <img src="images/like.png" id="first-post-image1">
+              <p><b>Подобається</b></p>
+            </a>
+            <a href="#">
+              <img src="images/comment.png" id="first-post-image2">
+              <p><b>Коментувати</b></p>
+            </a>
+            <a href="#">
+              <img src="images/share.png" id="first-post-image3">
+              <p><b>Поширити</b></p>
+            </a>
+          </div>
+          <div class="block2-right3-inner">
+              <img src="images/like-white.png">
+              <a href="#">Olena Skibinska, Olya Bakay i 118 інших осіб</a>
+              <hr class="post-hr">
+              <img src="images/comment-face.jpg" id="comment-face">
+              <input type="text" name="" placeholder="Прокоментуйте..."/>
+          </div>
+      </div>
+      <div class="right-block2">
+          <div class="block2-right1-inner">
+            <a href="#">
+              <img src="images/post-person1.png">
+            </a>
+            <a href="#">
+              <img src="images/3-bullets.png" id="three-bullets">
+            </a>
+            <a href="#"><b>Ostap Kharysh</b></a>
+              разом з <a href="#">Olena Skibinska</a> та
+              <a href="#">4 іншими особами.</a>
+              <br>
+              <small>10 вересня</small>
+          </div>
+          <div class="block2-right2-inner">
+            <a href="#">
+              <img class="post-photo" src="images/post-photo1.png">
+            </a>
+            <a href="#">
+              <img src="images/like.png" id="first-post-image1">
+              <p><b>Подобається</b></p>
+            </a>
+            <a href="#">
+              <img src="images/comment.png" id="first-post-image2">
+              <p><b>Коментувати</b></p>
+            </a>
+            <a href="#">
+              <img src="images/share.png" id="first-post-image3">
+              <p><b>Поширити</b></p>
+            </a>
+          </div>
+          <div class="block2-right3-inner">
+              <img src="images/like-white.png">
+              <a href="#">Olena Skibinska, Olya Bakay i 118 інших осіб</a>
+              <hr class="post-hr">
+              <img src="images/comment-face.jpg" id="comment-face">
+            <input type="text" name="" placeholder="Прокоментуйте..."/>
+          </div>
+      </div>
+      <div class="right-block2">
+          <div class="block2-right1-inner">
+            <a href="#">
+              <img src="images/post-person1.png">
+            </a>
+            <a href="#">
+              <img src="images/3-bullets.png" id="three-bullets">
+            </a>
+            <a href="#"><b>Ostap Kharysh</b></a>
+              разом з <a href="#">Olena Skibinska</a> та
+              <a href="#">4 іншими особами.</a>
+              <br>
+              <small>10 вересня</small>
+          </div>
+          <div class="block2-right2-inner">
+            <a href="#">
+              <img class="post-photo" src="images/post-photo1.png">
+            </a>
+            <a href="#">
+              <img src="images/like.png" id="first-post-image1">
+              <p><b>Подобається</b></p>
+            </a>
+            <a href="#">
+              <img src="images/comment.png" id="first-post-image2">
+              <p><b>Коментувати</b></p>
+            </a>
+            <a href="#">
+              <img src="images/share.png" id="first-post-image3">
+              <p><b>Поширити</b></p>
+            </a>
+          </div>
+          <div class="block2-right3-inner">
+              <img src="images/like-white.png">
+              <a href="#">Olena Skibinska, Olya Bakay i 118 інших осіб</a>
+              <hr class="post-hr">
+              <img src="images/comment-face.jpg" id="comment-face">
+            <input type="text" name="" placeholder="Прокоментуйте..."/>
+          </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+  </section>
+  </main>
+</body>
+</html>

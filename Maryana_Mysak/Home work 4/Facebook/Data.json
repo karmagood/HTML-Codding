@@ -1,0 +1,198 @@
+{
+  "fbLogoSrc": "fblogotry.png",
+  "search": "Пошук",
+  "userMainPicture": "me.jpg",
+  "userName": "Maryana",
+  "mainPage": "Головна",
+  "backgroundImg": "background.jpg",
+  "userSurname": "Mysak",
+  "editProfileButton": "Редагувати профіль",
+  "journalOfActiveButton": "Журнал активності",
+  "threeDots": "...",
+  "showRelationships": "Переглянути відносини",
+  "pinch": "Штурхнути",
+  "videCall": "Відеовиклик",
+  "complain": "Поскаржитись",
+  "block": "Заблокувати",
+  "lifeFeed": "Життєпис",
+  "aboutUser": "Про себе",
+  "userFriends": "Друзі",
+  "userPictures": "Світлини",
+  "moreButton": "Більше",
+  "aboutPicSrc": "about.png",
+  "goTo": "Went to",
+  "userSchool": "School 93",
+  "liveIn": "Живе у",
+  "userHometown": "Lviv, Ukraine",
+  "from": "Із",
+  "picturesPicSrc": "pictures.png",
+  "userPics": [{
+    "src": "pic3.jpg"
+  }, {
+    "src": "pic4.jpg"
+  }, {
+    "src": "pic3.jpg"
+  }, {
+      "src": "pic4.jpg"
+  }, {
+    "src": "pic3.jpg"
+  }, {
+    "src": "pic4.jpg"
+  }, {
+      "src": "pic3.jpg"
+  }, {
+      "src": "pic4.jpg"
+  }, {
+      "src": "pic3.jpg"
+  }],
+  "friendsPicSRC": "friends.png",
+  "userFrnd": [{
+    "src": "max.jpg",
+    "name": "Maks Charuk"
+  }, {
+    "src": "mykhailo.jpg",
+    "name": "Mykhailo Ivankiv"
+  }, {
+    "src": "iryna.jpg",
+    "name": "Iryna Stepaniak"
+  }, {
+      "src": "maxym.jpg",
+      "name": "Max Cipher"
+  },{
+    "src": "max.jpg",
+    "name": "Maks Charuk"
+  }, {
+    "src": "mykhailo.jpg",
+    "name": "Mykhailo Ivankiv"
+  }, {
+    "src": "iryna.jpg",
+    "name": "Iryna Stepaniak"
+  }, {
+      "src": "maxym.jpg",
+      "name": "Max Cipher"
+  },{
+    "src": "max.jpg",
+    "name": "Maks Charuk"
+  }],
+  "userAlbumsPicSrc": "Featured albums.png",
+  "userAlbums": "Featured Albums",
+  "firstLanguage": "Українська",
+  "langauges": [{
+    "name": "English (US)"
+  },{
+    "name": "Русский"
+  },{
+    "name": "Español"
+  }, {
+    "name": "Português (Brasil)"
+    }],
+  "footerFirstLink": "Конфіденційність",
+  "footerLinks": [{
+    "link": "Умови використання"
+  },{
+    "link": "Розміщення реклами"
+  },{
+    "link": "Типи реклами"
+  },{
+    "link": "Репяшки"
+  },{
+    "link": "Ще"
+  }],
+  "facebook": "Facebook © 2017",
+  "userPost": "Допис",
+  "liveVideo": "Відео наживо",
+  "lifeEvent": "Життєва подія",
+  "textareaPlaceholder": "Що у Вас на думці?",
+  "public": "Публічно",
+  "publish": "Опублікувати",
+  "aleksZinevychPicSrc": "aleks.jpg",
+  "aleksZinevych": "Aleks Zinevych",
+  "isAttending": "is attending",
+  "postText": "Screamo-концерт у покинутому скейт-парку",
+  "with": "with",
+  "friendNamePost": "Павло Березін",
+  "and": "and",
+  "postDate1": "17 вересня о 19:56",
+  "postPlace1": "Lviv, Lviv Oblast",
+  "postPic1Src": "wall.jpg",
+  "like": "Подобається",
+  "comment": "Коментувати",
+  "share": "Поширити",
+  "commnetPlaceholder": "Прокоментуйте...",
+  "commentPics": [{
+    "src": "smile.png"
+  },{
+    "src": "photo.png"
+  },{
+    "src": "gif.png"
+  },{
+    "src": "stickers.png"
+  }],
+  "updateBack": "оновила обкладинку.",
+  "postDate2": "11 вересня о 23:24",
+  "asideFriends": [{
+    "src": "aleks.jpg",
+    "name": "Aleks Zinevych"
+  },{
+    "src": "iryna.jpg",
+    "name": "Iryna Stepaniak"
+
+  },{
+    "src": "max.jpg",
+    "name": "Maks Charuk"
+  },{
+    "src": "maxym.jpg",
+    "name": "Max Cipher"
+  },{
+    "src": "mykhailo.jpg",
+    "name": "Mykhailo Ivankiv"
+  },{
+    "src": "aleks.jpg",
+    "name": "Aleks Zinevych"
+  },{
+    "src": "iryna.jpg",
+    "name": "Iryna Stepaniak"
+
+  },{
+    "src": "max.jpg",
+    "name": "Maks Charuk"
+  },{
+    "src": "maxym.jpg",
+    "name": "Max Cipher"
+  },{
+    "src": "mykhailo.jpg",
+    "name": "Mykhailo Ivankiv"
+  },{
+    "src": "aleks.jpg",
+    "name": "Aleks Zinevych"
+  },{
+    "src": "iryna.jpg",
+    "name": "Iryna Stepaniak"
+
+  },{
+    "src": "max.jpg",
+    "name": "Maks Charuk"
+  },{
+    "src": "maxym.jpg",
+    "name": "Max Cipher"
+  },{
+    "src": "mykhailo.jpg",
+    "name": "Mykhailo Ivankiv"
+  },{
+    "src": "aleks.jpg",
+    "name": "Aleks Zinevych"
+  },{
+    "src": "iryna.jpg",
+    "name": "Iryna Stepaniak"
+
+  },{
+    "src": "max.jpg",
+    "name": "Maks Charuk"
+  },{
+    "src": "maxym.jpg",
+    "name": "Max Cipher"
+  },{
+    "src": "mykhailo.jpg",
+    "name": "Mykhailo Ivankiv"
+  }]
+}

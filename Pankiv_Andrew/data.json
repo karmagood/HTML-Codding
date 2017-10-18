@@ -1,0 +1,130 @@
+{
+  "NavBar": [
+    {
+      "navbar-images": [
+        {
+          "source":"../Images/friends.png",
+          "source":"../Images/messages.png",
+          "source":"../Images/fb_planet.png",
+          "source":"../Images/question_mark.png"
+        }
+      ],
+      "navbar-dropdown": [
+        {
+          "value": "",
+          "value": "Створити сторінку",
+          "value": "Створити спільноту",
+          "value": "Нові групи",
+          "value": "Створити рекламу",
+          "value": "Реклама на Facebook",
+          "value": "Журнал активності",
+          "value": "Налаштування стрічки новин",
+          "value": "Налаштування",
+          "value": "Вийти"
+        }
+      ]
+    }
+  ],
+  "Header": [
+    {
+      "Activity-dropdown": [
+        {
+          "value": "...",
+          "value": "Переглянути як ...",
+          "value": "Налаштування життєпису"
+        }
+      ],
+      "More-dropdown": [
+        {
+          "value": "Більше",
+          "value": "Відео",
+          "value": "Відмітки",
+          "value": "Спорт",
+          "value": "Музика",
+          "value": "Фільми",
+          "value": "Телепередачі",
+          "value": "Книжки",
+          "value": "Додатки та ігри",
+          "value": "Вподобання",
+          "value": "Події",
+          "value": "Огляди",
+          "value": "Групи",
+          "value": "Нотатки"
+        }
+      ]
+    }
+  ],
+  "posts": [
+    {
+      "AddNewEvent":[
+        {
+          "values":"Допис",
+          "values":"Світини",
+          "values":"Відео наживо",
+          "values":"Життєва подія"
+        }
+      ],
+      "share-dropdown": [
+        {
+          "value": "Друзі",
+          "value": "Публічно",
+          "value": "Друзі, крім...",
+          "value": "Конкретні друзі",
+          "value": "Лише я",
+          "value": "Власний"
+        }
+      ],
+      "first-post": [
+        {
+          "WhoCanSee":[
+            {
+             "value":"",
+              "value":"У вашому життєписі",
+              "value":"Позначити або прибрати позначку.."
+            }
+          ],
+          "img":[
+            {
+              "source":"../Images/Rest1.jpg",
+              "source":"../Images/Rest2.jpg",
+              "source":"../Images/Rest3.jpg"
+            }
+          ],
+          "UnderPostButtons":[
+            {
+              "value":"Подобається",
+              "value":"Коментувати",
+              "value":"Поширити"
+            }
+          ],
+          "add-smth":[
+            {
+              "source":"../Images/smile_fb.png",
+              "source":"../Images/camera_fb.png",
+              "source":"../Images/Gif_fb.png",
+              "source":"../Images/Sticers_fb.png"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "right-aside-bar":[
+    {
+      "inside-aside-bar1":[
+        {
+          "source":"../Images/Ahar.io.png",
+          "source":"../Images/Lego_shit.png",
+          "source":"../Images/WalkingDead(no).png"
+        }
+      ],
+      "inside-aside-bar2":[
+        {
+          "source":"../Images/Helicopter.png",
+          "source":"../Images/Artilery.png",
+          "source":"../Images/JetpackRunner.png"
+        }
+      ]
+    }
+  ]
+} 

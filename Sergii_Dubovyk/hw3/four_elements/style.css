@@ -1,0 +1,48 @@
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header {
+    position: absolute;
+    width: 60%;
+    height: 50px;
+    margin-bottom: 0;
+    background-color: darkviolet;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 60%;
+    height: 50px;
+    background-color: orange;
+}
+
+.col_left {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: absolute;
+    margin-left: 20%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width: 30%;
+    overflow: auto;
+    background-color: #f1acfc;
+}
+
+.col_right {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 30%;
+    overflow: auto;
+    background-color: rgb(200, 150, 50);
+}
