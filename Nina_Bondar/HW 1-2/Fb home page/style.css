@@ -59,7 +59,7 @@ header nav ul {
 }
 
 #additional li {
-   padding: 5px;
+    padding: 5px;
 }
 #profile img {
     width:25px;
@@ -85,48 +85,6 @@ header a:hover{
 header a:active{
     color: white;
 }
-
-/*--end of--header-*/
-
-/*search section------------------*/
-.search {
-    margin-left: -120px;
-}
-
-.search {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    margin-bottom: 3px;
-    margin-top: 3px;
-}
-
-.search img {
-    margin-left: 33px;
-    margin-right: 6px;
-}
-
-.search input {
-    width: 440px;
-    border-radius: 3px;
-    border: none;
-    height:22px;
-    margin-right: -49px;
-    padding-left: 9px;
-}
-
-.search button {
-    width: 47px;
-    height: 24px;
-    top:30px;
-    border: none;
-    border-radius: 1px;
-    z-index: 1;
-    background-color: #f7f7f7;
-}
-
-/*end of search section------------*/
 
 #profile{
     display: flex;
@@ -170,7 +128,7 @@ header a:active{
 /*---------------------------------------------------*/
 
 body {
-    background-color: #f7f7f7;
+    background-color:#dfe3ee;
     direction: ltr;
     font-family:Helvetica;
 
@@ -181,11 +139,15 @@ body ul {
 }
 
 #create-post-head {
+    margin-top: 45px;
     display: flex;
     flex-direction: row;
+    height: 40px;
+
+    background-color:#f7f7f7;
 }
 
-#create-post  {
+#create-post {
     display: flex;
     flex-direction: column;
 }
@@ -194,7 +156,7 @@ body ul {
     background-color: white;
     height: 71px;
 }
- article { font-size: 14px;}
+
 
 #post-input {
     width: 470px;
@@ -218,34 +180,42 @@ body ul {
     background-color: #f7f7f7;
 }
 
- #2b {
-     width: 138.688px;  }
+#2b {
+    width: 138.688px;  }
 
 .main {
     display: flex;
     flex-direction: column;
-    width: 440px;
+    width: 476px;
+    top: 250px;
     margin-left: 220px;
 }
 
 article {
     background-color: white;
     margin:7px;
-    padding: 6px;
     width: 459.5px;
     border: 2px;
     border-radius: 3px;
+    font-size: 14px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-bottom: 0px;
+    padding-top: 12px;
 }
 
 .emoticons img{
     vertical-align: middle;
+    height: 17px;
+    width: 17px;
+    padding-right: 2px;
 }
 
 .secondary-content {
     position: fixed;
-    top: 40px;
+    top: 57px;
     right: 250px;
-    width: 284px;
+    width: 308px;
     font-size: 13px;
     z-index: -1;
 }
@@ -260,6 +230,7 @@ article {
 
 .secondary-content section.Ads {
     border: 1px solid lightgray;
+    padding: 12px;
 }
 
 .secondary-content section.languages {
@@ -269,6 +240,10 @@ article {
 
 .secondary-content img{
     border:none;
+}
+
+.ad-head-wrapper p{
+
 }
 
 section.Ads {
@@ -298,14 +273,16 @@ section.Ads {
 }
 
 #notification-block {
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-bottom: 13px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 3px;
+    margin-bottom: 12px;
     background-color: white;
     border: 1px solid lightgray;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    color: #90949c;
 }
 
 .secondary-content a:link {
@@ -313,8 +290,8 @@ section.Ads {
 }
 
 .secondary-content a:visited {
-     color: darkgray;
- }
+    color: darkgray;
+}
 
 .secondary-content a:hover {
     color: gray;
@@ -324,9 +301,18 @@ section.Ads {
     color: darkgray;
 }
 
-
 .ads {
     display: flex;
+}
+
+.ads-wrapper{
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 12px;
+}
+
+.ads-img-wrapper img {
+    width: 100%;
 }
 
 .languages ul{
@@ -337,9 +323,10 @@ section.Ads {
     position: fixed;
     right: 11px;
     height: 100%;
-    width: 200px;
+    width: 205px;
     top:40px;
     font-size: 12px;
+    color: rgb(51, 51, 51);
     border-left:solid 1px lightgray;
     z-index: -1;
 
