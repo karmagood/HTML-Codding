@@ -43,26 +43,27 @@
                 <!--checkbox with dropmenu starts-->
                 <div id="margin-nav" class="nav-button-style">
 
-                    <input type="checkbox" value="1" name=""/>
+                    <a href="/"><img class="logo" src="img/check.svg"></a>
                     <span>🢓</span>
 
                 </div>
 
-                <div id="nav-group-left" class="nav-button-style"><p id="center"><a href="/">⭮</a></p>
-                </div>
-                <div id="nav-group-middle" class="nav-button-style">
-                </div>
-                <div id="nav-group-right" class="nav-button-style">
-                </div>
-                <!---->
                 <div id="nav-group-left" class="nav-button-style">
+                    <a href="/"><img class="logo" src="img/archive.svg"></a>
+                </div>
+                <div id="nav-group-middle" class="nav-button-style"><a href="/"><img class="logo" src="img/archive.svg"></a>
+                </div>
+                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo" src="img/bin.svg"></a>
+                </div>
+                <!---->
+                <div id="nav-group-left" class="nav-button-style"><a href="/"><img class="logo" src="img/file.svg"></a>
                     <span>🢓</span>
                 </div>
-                <div id="nav-group-right" class="nav-button-style">
+                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo" src="img/tap.svg"></a>
                     <span>🢓</span>
                 </div>
                 <!---->
-                <div class="nav-button-style">
+                <div class="nav-button-style"><a href="/"><img class="logo" src="img/sm.svg"></a>
                     <span>🢓</span>
                 </div>
 
@@ -72,72 +73,112 @@
             </div>
         </div>
 
-        <hr>
-
+        <!--<hr>-->
+        <!---->
     </section>
 </nav>
 <!--second nav bar ends-->
 <!--main content starts-->
 <section>
     <div id="grid-nav-3">
-    <!--left navigation starts-->
-    <div class="grid-item">
-        <button id="aside-red-button">COMPOSE</button>
-        <ul>
-            <li>Inbox</li>
-            <li>Starred</li>
-            <li>Send Main</li>
-            <li>Drafts</li>
-            <li>More<span>🢓</span></li>
-        </ul>
-        <hr>
-        <div id="logo-inline">
-
-            <!--<figure>-->
-            <img id="circle-photo" src="img/oksana-photo.jpg" height="32" width="32"/>
-            <p>Oksana</p>
-
-            <span>🢓</span>
-            <button>+</button>
-            <!--</figure>-->
-        </div>
-        <hr>
-    </div>
-
-    <!--left navifation ends-->
-    <!--letters list starts-->
-    <div class="grid-item">
-        <section>
-
-            <div class="inline-flex-container">
-                <div id="left"></div>
-                <div id="medium"><h4>Unity</h4></div>
-                <div id="right"><p><time>12:43</time></p></div>
+        <!--left navigation starts-->
+        <div class="grid-item">
+            <div>
+                <button id="aside-red-button">COMPOSE</button>
+                <ul class="nav-ul">
+                    <li>Inbox</li>
+                    <li>Starred</li>
+                    <li>Send Main</li>
+                    <li>Drafts</li>
+                    <li>More<span>🢓</span></li>
+                </ul>
             </div>
-            <div class="inline-flex-container">
-                <div id="left"><input type="checkbox" value="1" name=""></input></div>
-                <div id="medium"><p>A new Asset Store experience</p></div>
-                <div id="right"><p>☆</p></div>
-            </div>
-
-            <div class="inline-flex-container">
-                <div id="left"></div>
-                <div id="medium"><small>Coming soon to a browser near..</small></div>
-                <div id="right"></div>
-            </div>
-
-
             <hr>
+            <div class="inline-flex-container">
 
-        </section>
+                <div id="margin-item"><p><img id="circle-photo" src="img/oksana-photo.jpg" height="25" width="25"/></p>
+                </div>
+                <div id="margin-item"><p>Oksana</p></div>
+                <div id="margin-item"><span>🢓</span></div>
+                <div id="margin-item">
+                    <button>+</button>
+                </div>
+                <!--<hr></hr>-->
+                <!--</figure>-->
+            </div>
+            <hr>
+            <div>
+                <img src="img/quaote.svg" height="176" width="176"></img>
+                <p id="center-text">
+                    <small>No recent chats</small>
+                </p>
+                <p id="blue-text"><a href="/">Start a new one</a></p>
+
+            </div>
+            <hr>
+                    <footer>
+                        <div class="inline-flex-container">
+                            <ul>
+                                <li><div class="logo"><img src="img/person.svg"></img></div></li>
+
+
+                                <li><div class="logo"><img src="img/chat.svg"></img></div></li>
+
+                                <li><div class="logo"><img src="img/phone.svg"></img></div></li>
+                            </ul>
+                        </div>
+                    </footer>
+
+
+        </div>
+
+
+        <!--left navifation ends-->
+        <!--letters list starts-->
+        <div class="grid-item">
+            <section>
+
+                <div class="inline-flex-container">
+                    <div id="left"></div>
+                    <div id="medium"><h4>Unity</h4></div>
+                    <div id="right">
+                        <p>
+                            <time>12:43</time>
+                        </p>
+                    </div>
+                </div>
+                <div class="inline-flex-container">
+                    <div id="left"><input type="checkbox" value="1" name=""></input></div>
+                    <div id="medium"><p>A new Asset Store experience</p></div>
+                    <div id="right"><p>☆</p></div>
+                </div>
+
+                <div class="inline-flex-container">
+                    <div id="left"></div>
+                    <div id="medium">
+                        <small>Coming soon to a browser near..</small>
+                    </div>
+                    <div id="right"></div>
+                </div>
+
+
+                <hr>
+
+            </section>
+        </div>
+        <!--letter list ends-->
+        <!--open letter starts-->
+        <div class="grid-item">
+            <div class="big-margin">
+            <p id="center-text">No conversation selected</p>
+            <p id="center-text"><small>Using 0.55 GB<br>
+                <ins>Manage</ins></small></p></div>
+        </div>
+        <!--open letter ends-->
+
+
+        <!--main content ends-->
     </div>
-    <!--letter list ends-->
-    <!--open letter starts-->
-    <div class="grid-item">open mail prop</div>
-    <!--open letter ends-->
-
-
-    <!--main content ends-->
 </section>
 </body>
 </html>

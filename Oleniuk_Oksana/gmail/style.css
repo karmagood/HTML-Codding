@@ -27,8 +27,6 @@ body{
 }
 
 #nav-search-input{
-    /*display: inline-flex;*/
-    /*margin:0;*/
     width: 600px;
     height: 30px;
     border: 1px solid #cecaca;
@@ -38,7 +36,6 @@ body{
 }
 
 #nav-submit-input{
-    /*margin: 0;*/
     padding: 0;
     width: 60px;
     height: 30px;
@@ -123,7 +120,7 @@ ul > li {
     list-style: none;
 }
 
-ul > li:before {
+.nav-ul li:before {
     color: red;
     content: "|";
 }
@@ -134,17 +131,19 @@ hr {
     border-top: 1px solid #cecaca;
 }
 
-#center{
-    text-align: center;
-    margin: auto;
-    margin-top: 4%;
-}
 
 .grid-item{
-    border: dotted;
-    /*background-color: #cecaca;*/
-    padding: .2em;
+    /*border: solid black;*/
 
+    /*border-radius: 10px;*/
+    /*background-color: lightpink;*/
+    /*padding: .2em;*/
+    /*margin:10px 10px 10px 10px;*/
+    border-top: 0.7px solid #cecaca;
+    /*border-bottom: 1px solid #cecaca;*/
+
+
+    /*padding: 10px;*/
 }
 
 #check-nav {
@@ -154,15 +153,16 @@ hr {
 .inline-flex-container {
     display: -webkit-flex;
     display: flex;
+    /*margin-right:10px;*/
 
-    background-color: lightgrey;
+    /*background-color: lightgrey;*/
 }
-.inline-flex-container div{
-    background-color: cornflowerblue;
+/*.inline-flex-container div{*/
+    /*!*background-color: cornflowerblue;*!*/
 
-    /*width: 20px;*/
+    /*!*width: 20px;*!*/
 
-}
+/*}*/
 #left{
     width: 10%;
     margin: 0;
@@ -172,14 +172,12 @@ hr {
 }
 #right{
     text-align: right;
-    width: 10%;
+    width: 9%;
 }
 h4{
     /*line-height: 0.1;*/
 }
-div{
-    /*margin: 0;*/
-}
+
 p{
 margin: 0;
     text-decoration: none;
@@ -203,4 +201,36 @@ small{
 
 }
 
+.inline-flex-container div{
+    /*background-color: #D64937;*/
+    /*display: inline-flex;*/
+    /*border: solid black;*/
+    /*margin:5px;*/
+}
+.logo{
+height: 31px;
+    width: 31px;
+margin-left: 15px;
+ /*aling:right;*/
+}
+#margin-item{
+    margin-left:10px;
+    margin-right:5px;
 
+}
+#center-text{
+    text-align: center;
+}
+#blue-text{
+    text-align: center;
+    color: #4485F4;
+}
+p a{
+    text-decoration: none;
+}
+.inline-flex-container li{
+    float: right;
+}
+.big-margin p{
+    margin-top:60px;
+}
