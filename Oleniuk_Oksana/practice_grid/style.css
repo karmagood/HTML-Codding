@@ -87,8 +87,6 @@ p {
 .header {
     grid-area: header;
 }
-/**/
-
 
 
 .a {
@@ -109,30 +107,23 @@ p {
 
 
 
-#grid-nav-1, #grid-nav-2, #grid-nav-3, #grid-nav-4, #grid-nav-5, #grid-nav-6 , #grid-nav-7{
-    display: grid;
-}
 
 #grid-nav-7{
     grid-template-columns: 400px 400px 400px;
 
 }
-/*.wrapper {*/
-    /*display: grid;*/
-    /*grid-gap: 10px;*/
-    /*grid-template-columns: 100px 100px 100px;*/
-    /*background-color: #fff;*/
-    /*color: #444;*/
-/*}*/
-
-/*.box {*/
-    /*background-color: #444;*/
-    /*color: #fff;*/
-    /*border-radius: 5px;*/
-    /*padding: 20px;*/
-    /*font-size: 150%;*/
-
-/*}*/
+footer{
+    height:1000px;
+}
+#footer-nav{
+    grid-template-columns: 400px 400px 200px 200px;
+}
+#footer-end{
+    grid-template-columns: 800px 400px;
+}
+#grid-nav-1, #grid-nav-2, #grid-nav-3, #grid-nav-4, #grid-nav-5, #grid-nav-6 , #grid-nav-7, #footer-nav, #footer-end{
+    display: grid;
+}
 
 .title {
     grid-column: 2;
@@ -165,3 +156,4 @@ p {
     grid-column: 2 ;
     grid-row: 3 ;
 }
+

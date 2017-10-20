@@ -47,7 +47,7 @@ p {
 .flex-item-end{
     align-items: flex-end;
 }
-.footer{
+footer{
     height:1000px;
 }
 .footer a{
