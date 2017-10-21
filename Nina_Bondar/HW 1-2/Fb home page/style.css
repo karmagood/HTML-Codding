@@ -143,8 +143,12 @@ body ul {
     display: flex;
     flex-direction: row;
     height: 40px;
-
     background-color:#f7f7f7;
+
+}
+
+#create-post-head span a {
+    color:#767375;
 }
 
 #create-post {
@@ -202,6 +206,45 @@ article {
     padding-left: 12px;
     padding-bottom: 0px;
     padding-top: 12px;
+}
+
+.aside-left h1, .aside-left h2 {
+    color: gray;
+}
+
+article header {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+article header img {
+    margin-right: 10px;
+    order:1;
+    -ms-flex-order: 1;
+}
+
+.post-author {
+    order:2;
+    color:#365899;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-right: -102px;
+
+}
+
+.post-more{
+    order:4;
+    height: 20px;
+    border: none;
+    background-color: white;
+    margin-left: 96%;
+    margin-top: -9%;
+}
+
+.post-time {
+    order: 3;
+    margin-top: 20px;
+    margin-bottom: -5px;
 }
 
 .emoticons img{
@@ -371,4 +414,5 @@ section.Ads {
     border:none;
     width: 100%;
     padding: 5px;
+
 }

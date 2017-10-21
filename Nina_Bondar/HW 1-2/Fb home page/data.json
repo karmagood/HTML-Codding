@@ -13,27 +13,33 @@
       "shortcut-name": "Mountain Trip"}
   ],
   "article":[
-    {"another-user-name": "Oleg Farenyuk",
+    {"post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Oleg Farenyuk",
       "post-time": "7 mins",
       "post-content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
       "likes-num":"843"},
-    {"another-user-name": "Anya Frolyak",
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Anya Frolyak",
       "post-time": "13 mins",
       "post-content": "Omnis iste natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
       "likes-num":"52"},
-    {"another-user-name": "Li Si Yung",
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Li Si Yung",
       "post-time": "2 hrs",
       "post-content": "Iste natus antium, totam rem aperiam, et hitecto explicabo. Voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
       "likes-num":"87"},
-    {"another-user-name": "Aiko Kishimoto",
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Aiko Kishimoto",
       "post-time": "3 hrs",
       "post-content": "Omnis iste natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
       "likes-num":"5"},
-    {"another-user-name": "Lia Kim",
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Lia Kim",
       "post-time": "6hrs",
       "post-content": "Natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
       "likes-num":"548"},
-    {"another-user-name": "Anya Frolyak",
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Anya Frolyak",
       "post-time": "7 hrs",
       "post-content": "En natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
       "likes-num":"26"}
@@ -93,3 +99,4 @@
       "dialogue":"Name Surnmea"}
   ]
 }
+
