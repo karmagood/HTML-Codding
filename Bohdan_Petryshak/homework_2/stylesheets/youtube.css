@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:nowrap;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    box-shadow: 0 1px 5px lightgrey;
+
+}
+
+.main-nav {
+    width: 200px;
+    height: 95%;
+    margin: 50px 0 0 0;
+    position: fixed;
+    background-color: #F5F5F5;
+    opacity: 0.2;
+}
+
+main {
+    position: inherit;
+    height:100%;
+    background-color: black;
+}
+
+.logo-main-menu {
+    display: flex;
+    height: 70%;
+    margin-left: 2%;
+    justify-content: center;
+    align-items: center;
+}
+.logo-main-menu >sup {
+    color:darkgray;
+    align-self: flex-start;
+}
+.mat-icons {
+    cursor: pointer;
+    color: darkgray;
+}
+.header-search {
+    width: 40%;
+}
+
+.form-search{
+    margin-right: 15%;
+    height: 30px;
+    width: 50%;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    border-right-style:none;
+
+}
+.form-search > input{
+    width: 100%;
+    height: 95%;
+    color: lightgray;
+    border: none;
+    padding-left: 2%;
+}
+.downloads-my-profile {
+    display: flex;
+    width: 150px;
+    justify-content: space-around;
+    align-items: center;
+}
+.downloads-my-profile > img {
+
+    border-radius: 50%;
+}
+
