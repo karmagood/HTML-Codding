@@ -54,6 +54,10 @@ header nav ul {
     vertical-align: middle;
 }
 
+#profile {
+    margin-right:10px;
+}
+
 #profile li {
     padding:3px;
 }
@@ -66,24 +70,39 @@ header nav ul {
     height:25px;
     border-radius: 15px;
     vertical-align: middle;
-    padding-right: 5px;
+    margin-right: 0px;
 }
 /*-----------header-*/
-header a:link {
+#profile a:link {
     color: white;
     text-decoration: none;
 }
 
-header a:visited{
+#profile a:visited{
     color: white;
 }
 
-header a:hover{
+#profile a:hover{
     color:grey;
 }
 
-header a:active{
+#profile a:active{
     color: white;
+}
+
+header a:link{
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+header a:visited{
+    text-decoration: none;
+}
+
+header a:active{
+    text-decoration: none;
 }
 
 #profile{
@@ -100,8 +119,37 @@ header a:active{
     font-size: 14px;
 }
 
+.aside-left ul a:active{
+    color: black;
+    text-decoration: none;
+}
+
+.aside-left ul a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.aside-left ul a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+.aside-left ul a:link{
+    color: black;
+    text-decoration: none;
+}
+
+
 .aside-left ul {
     list-style-type: none;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#aside-left-header-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
 }
 
 .aside-left ul li {
@@ -112,8 +160,14 @@ header a:active{
 .left-footer ul{
     padding: 0px;
     left: 2px;
+}
+
+.left-footer ul li{
+    display: flex;
+    flex-direction: row;
 
 }
+
 .left-footer {
     padding-left: 40px;
 }
@@ -128,7 +182,7 @@ header a:active{
 /*---------------------------------------------------*/
 
 body {
-    background-color:#dfe3ee;
+    background-color: rgba(228,230,235,0.95); /*#dfe3ee;*/
     direction: ltr;
     font-family:Helvetica;
 
@@ -139,17 +193,35 @@ body ul {
 }
 
 #create-post-head {
-    margin-top: 45px;
+    margin-top: 49px;
     display: flex;
-    flex-direction: row;
-    height: 40px;
-
+    flex-direction:row;
+    height: 30px;
     background-color:#f7f7f7;
+    border-radius: 3px;
+    margin-left: 8px;
+    width: 100.8%;
+    border-bottom: solid 1px rgb(221, 223, 226);
+    border-top: solid 1px rgb(221, 223, 226);
+}
+#create-post-head span{
+    margin-right: 20px;
+    font-size: 13px;
+    border-right: solid 1px rgb(221, 223, 226);
+    padding-right: 8px;
+    text-align: center;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+#create-post-head span a {
+    color:#365899;  /*#767375;*/
 }
 
 #create-post {
     display: flex;
     flex-direction: column;
+    margin-bottom: 7px;
 }
 
 #create-post input {
@@ -165,20 +237,30 @@ body ul {
     margin-left: 8px;
     padding-left: 10px;
 }
+#post-input img {
+    margin-top: 12px;
+}
+
+
 #create-post-foot {
     display: flex;
     flex-direction: row;
     background-color: white;
+    width: 97%;
+    border-top: 1px solid rgb(233, 235, 238);
 }
 
 #create-post-foot button {
     padding: 6px;
+    color: #4b4f56;
     margin: 3px;
     border-radius: 20px;
     border: none;
     height: 30px;
     background-color: #f7f7f7;
 }
+
+
 
 #2b {
     width: 138.688px;  }
@@ -202,6 +284,54 @@ article {
     padding-left: 12px;
     padding-bottom: 0px;
     padding-top: 12px;
+}
+
+.aside-left header {
+    margin-left: 37px;
+    font-size: 13px;
+}
+
+.aside-left h1, .aside-left h2 {
+    color: #90949c;
+    font-size: 13px;
+}
+
+article header {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+article header img {
+    margin-right: 10px;
+    order:1;
+    -ms-flex-order: 1;
+}
+
+.post-author {
+    order:2;
+    color:#365899;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-right: -102px;
+}
+
+.post-more{
+    order:4;
+    height: 20px;
+    border: none;
+    background-color: white;
+    margin-left: 96%;
+    margin-top: -9%;
+}
+
+.post-time {
+    order: 3;
+    margin-top: 20px;
+    margin-bottom: -5px;
+}
+
+#buggy-time {
+    margin-left: 6px;
 }
 
 .emoticons img{
@@ -242,8 +372,7 @@ article {
     border:none;
 }
 
-.ad-head-wrapper p{
-
+.ad-head-wrapper p a{
 }
 
 section.Ads {
@@ -278,10 +407,10 @@ section.Ads {
     padding-top: 3px;
     margin-bottom: 12px;
     background-color: white;
-    border: 1px solid lightgray;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    border: 1px solid rgb(221, 223, 226);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
     color: #90949c;
 }
 
@@ -372,3 +501,4 @@ section.Ads {
     width: 100%;
     padding: 5px;
 }
+
