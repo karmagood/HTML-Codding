@@ -23,6 +23,7 @@ header {
     width: 100%;
     left: 870px;
     justify-content: flex-end;
+
 }
 
 #youtube_logo {
@@ -150,6 +151,10 @@ main {
 .channel_header {
     display: flex;
     height: 50px;
+    width:100%;
+    justify-content: center;
+
+
 
 }
 
@@ -157,15 +162,20 @@ main {
 
     align-items: center;
     display: flex;
-    width: 50%;
-    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    margin-right: 30%;
 }
 
 #right_part_of_channel_header {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
+
     justify-content: center;
-    width: 50%;
+
+
 
 }
 
@@ -193,6 +203,7 @@ main p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
 
 }
 
