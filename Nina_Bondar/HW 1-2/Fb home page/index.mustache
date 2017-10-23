@@ -6,7 +6,7 @@
     <link rel='stylesheet' type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style_search.css">
     <title>Facebook</title>
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
 <header id="main-header">
@@ -46,10 +46,9 @@
 
 <div class="container">  <!--convenient for css-->
     <aside class="aside-left">
-        <header id="aside-left">
-            <a href="https://www.facebook.com/nina.bondar.355"><img src='{{user-avatar}}' alt="ava"
-                                                                    style='border-radius: 10px;'
-                                                                    width="20" height="20" >
+        <header >
+            <a href="https://www.facebook.com/nina.bondar.355"><img id="aside-left-header-img"
+                                                                    src='{{user-avatar}}' alt="ava">
                 {{user}}</a>
         </header>
         <ul id="upper options">
@@ -88,9 +87,9 @@
         <main id="create-post">
             <header id="create-post-head">
 
-                <span><a href="">Make Post</a></span>
-                <span><a href="">Photo/Video Album</a></span>
-                <span><a href="">Live Video</a></span>
+                <span><a href=""  style="color: #767375;"><b>Make Post</b></a></span>
+                <span><a href=""><b>Photo/Video Album</b></a></span>
+                <span><a href=""><b>Live Video</b></a></span>
             </header>
             <div id="post-input">
                 <span><img src="img/ninka.jpg" style="border-radius: 25px; vertical-align: middle;
@@ -100,9 +99,9 @@
         border: none;">
                 <footer id="create-post-foot">
                     <br>
-                    <button id="1b" type="button">Photo/Video</button>
-                    <button id='2b' type="button">Feeling/Activity</button>
-                    <button id='3b' type="button">•••</button>
+                    <button id="1b" type="button"><b>Photo/Video</b></button>
+                    <button id='2b' type="button"><b>Feeling/Activity</b></button>
+                    <button id='3b' type="button" style="color: #767375">•••</button>
                 </footer>
             </div>
         </main>
@@ -143,7 +142,7 @@
             <header id="Ads">
                 <div class="ad-head-wrapper">
                     <h4 style="color:#90949c;">Sponsored</h4>
-                    <p><a href="#">Create Ad</a></p>
+                    <p><a href="#" style="color: #4267b2;">Create Ad</a></p>
                 </div>
             </header>
             <div class="ads-wrapper">
