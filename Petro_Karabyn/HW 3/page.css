@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: mediumpurple;
+    position: absolute;
+    margin: auto;
+    left: 25%;
+    height: 5%;
+    width: 50%;
+    padding-left: 1%;
+}
+
+main {
+    margin: 0;
+}
+
+.leftSide {
+    background-color: darkred;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    height: 90%;
+    width: 35%;
+    padding: 1%;
+}
+
+.rightSide {
+    background-color: mediumseagreen;
+    position: absolute;
+    top: 5%;
+    right: 25%;
+    height: 90%;
+    width: 15%;
+    padding: 1%;
+}
+
+
+footer {
+    background-color: orange;
+    position: absolute;
+    top: 95%;
+    left: 25%;
+    height: 5%;
+    width: 50%;
+    padding-left: 1%;
+}

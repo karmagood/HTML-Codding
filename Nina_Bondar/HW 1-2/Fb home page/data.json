@@ -1,0 +1,103 @@
+{
+  "user-avatar": "img/ninka.jpg",
+  "username": "Nina",
+  "user": "Nina Bondar",
+  "shortcuts":[
+    {"shortcut-url": "#",
+      "shortcut-name": "CS@UCU"},
+
+    {"shortcut-url": "/",
+      "shortcut-name": "Code Solutions"},
+
+    {"shortcut-url": "#",
+      "shortcut-name": "Mountain Trip"}
+  ],
+  "article":[
+    {"post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Oleg Farenyuk",
+      "post-time": "7 mins",
+      "post-content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius moditempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+      "likes-num":"843"},
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Anya Frolyak",
+      "post-time": "13 mins",
+      "post-content": "Omnis iste natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "likes-num":"52"},
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Li Si Yung",
+      "post-time": "2 hrs",
+      "post-content": "Iste natus antium, totam rem aperiam, et hitecto explicabo. Voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "likes-num":"87"},
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Aiko Kishimoto",
+      "post-time": "3 hrs",
+      "post-content": "Omnis iste natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "likes-num":"5"},
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Lia Kim",
+      "post-time": "6hrs",
+      "post-content": "Natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "likes-num":"548"},
+    { "post-avatar":"img/panoleg.jpg",
+      "another-user-name": "Anya Frolyak",
+      "post-time": "7 hrs",
+      "post-content": "En natus antium, totam rem aperiam, inventore veritatis et hitecto beatae vitae dicta sunt explicabo. Sam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+      "likes-num":"26"}
+  ],
+  "notification": [
+    {"event-url":"/",
+      "event-name":"Masha Li",
+      "event-descr":"'s birthday is today"},
+    {"event-url":"/",
+      "event-name":"Some Event",
+      "event-descr":"is on Saturday"}
+  ],
+  "ad":[
+    {"ad-url":"img/add_hr.png",
+      "ad-header": "Wanna be a designer?",
+      "ad-descr":"Lorem ipsum dolor sit amet"},
+    {"ad-url":"img/ad_photo.png",
+      "ad-header": "Win a Nikon D500 DSLR or Canon 5D MK III",
+      "ad-descr":"Lorem ipsum dolor sit amet"}
+  ],
+  "languages": [
+    {"lang-url":"/",
+      "language":"English(US)"},
+    {"lang-url":"/",
+      "language":"Ukrainian"},
+    {"lang-url":"/",
+      "language":"Russian"},
+    {"lang-url":"/",
+      "language":"Spanish"}
+  ],
+  "dialogues":[
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Oleg Farenyuk"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Lia Kim"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Name Suname"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Oleg Matviev"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Nina Bondar"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Stepan Surname"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Name Surname"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Alina Matvienko"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Blabla Blalaukalalalalala"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Name Surnme"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Alice Ostrova"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Li Si Jung"},
+    {"dialogue-url":"img/panoleg.jpg",
+      "dialogue":"Name Surnmea"}
+  ]
+}
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100%, initial-scale=1">
+    <link rel='stylesheet' type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_search.css">
+    <title>Facebook</title>
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+<header id="main-header">
+    <!--<div class="head-container">-->
+    <section class="search">
+        <img src="img/fb_left.png" alt="fb logo" width="26" height="25">
+        <!--form starts here-->
+
+        <form id="fb_search">
+            <input id="search" placeholder="Search" type="text">
+        </form>
+        <button><img src=""/></button>
+
+    </section><!-- search -->
+
+    <nav>
+
+        <ul id="profile">
+            <li><img src="{{user-avatar}}" alt="Profile"/></li>
+            <li><button><b>{{username}}</b></button></li><hr id="hr1"/>
+            <li><button><b>Home</b></button></li>
+        </ul>
+        <ul id="navbar">
+            <li><a href=""><img src="img/f_requests.png" alt="friend requests" width="25" height="25"/></a></li>
+            <li><a href=""><img src="img/messenger.png" alt="Messenger" width="25" height="25"/></a></li>
+            <li><a href=""><img src="img/notific.png" alt="Notifications" width="35" height="35"/></a></li>
+            <img src="img/bar.png" height="35" width="25"/>
+        </ul>
+
+        <ul id="additional">
+            <li><a href=""><img src="img/quickhelp.png" alt="Quick help" width="20" height="20" /></a></li>
+            <li><img src="img/downarrow.png" width="10" height="10" alt="down arrow"></li>
+        </ul>
+    </nav>
+    <!-- </div> -->
+</header> <!--end of page main header-->
+
+<div class="container">  <!--convenient for css-->
+    <aside class="aside-left">
+        <header >
+            <a href="https://www.facebook.com/nina.bondar.355"><img id="aside-left-header-img"
+                                                                    src='{{user-avatar}}' alt="ava">
+                {{user}}</a>
+        </header>
+        <ul id="upper options">
+            <li><a>New's Feed</a></li>
+            <li><a>Messenger</a></li>
+        </ul>
+        <ul id="shortcuts">
+            <h1>Shortcuts</h1>
+            {{#shortcuts}}
+                <li><a href="{{shortcut-url}}">{{shortcut-name}}</a></li>
+            {{/shortcuts}}
+        </ul>
+        <ul>
+            <h2>Explore</h2>
+            <li><a href="">On This Day</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Pages</a></li>
+            <li><a href="">Groups</a></li>
+            <li><a href="">Friend Lists</a></li>
+            <li><a href="">Live Video</a></li>
+            <li><a href="">Pokers</a></li>
+            <li><a href="">See More...</a></li>
+        </ul>
+        <footer class="left-footer">
+            <h2>Create</h2>
+            <ul>
+                <li><a href="">Ad</a></li>
+                <li><a href="">Page</a></li>
+                <li><a href="">Group</a></li>
+                <li><a href="">Event</a></li>
+            </ul>
+        </footer>
+    </aside>  <!--end of left aside -->
+
+    <section class="main">
+        <main id="create-post">
+            <header id="create-post-head">
+
+                <span><a href=""  style="color: #767375;"><b>Make Post</b></a></span>
+                <span><a href=""><b>Photo/Video Album</b></a></span>
+                <span><a href=""><b>Live Video</b></a></span>
+            </header>
+            <div id="post-input">
+                <span><img src="img/ninka.jpg" style="border-radius: 25px; vertical-align: middle;
+                width: 40px;height: 40px; "></span>
+
+                <input type="text" placeholder="What's on your mind, {{username}}?" style="width: 95%; font-size: 14px;
+        border: none;">
+                <footer id="create-post-foot">
+                    <br>
+                    <button id="1b" type="button"><b>Photo/Video</b></button>
+                    <button id='2b' type="button"><b>Feeling/Activity</b></button>
+                    <button id='3b' type="button" style="color: #767375">•••</button>
+                </footer>
+            </div>
+        </main>
+
+        {{#article}}
+            <article>
+                <header>
+                    <img src="{{post-avatar}}" alt="avatar" style="width:40px; height: 40px;
+                border-radius: 25px;"/>
+                    <p class="post-author"><b>{{another-user-name}}</b></p>
+                    <button type="button" class="post-more" style="color: #767375">•••</button>
+                    <p class="datetime post-time"><time>{{post-time}}</time></p>
+                </header>
+                <p>{{post-content}}
+                </p>
+                <section class="emoticons">
+                    <img src="img/like.png" alt="like"><small>{{likes-num}}</small>
+                </section>
+                <section>
+                    <button class="like-button"><b>Like</b></button>
+                    <button class="comment-button"><b>Comment</b></button>
+                    <button class="share-button"><b>Share</b></button>
+                </section>
+
+            </article>
+        {{/article}}
+
+    </section><!--end of main column-->
+
+    <section class="secondary-content">  <!-- column for notif-s, ads  and footer info of Fb -->
+        <header id="notification-block">
+            {{#notification}}
+                <p><span><img src="img/birthday.png"  alt="bd" style="vertical-align: middle"></span>
+                    <a href="{{event-url}}"><b>{{event-name}}</b></a>{{event-descr}}</p>
+            {{/notification}}
+        </header>
+        <section class="Ads">  <!-- here are stuffed ads only -->
+            <header id="Ads">
+                <div class="ad-head-wrapper">
+                    <h4 style="color:#90949c;">Sponsored</h4>
+                    <p><a href="#" style="color: #4267b2;">Create Ad</a></p>
+                </div>
+            </header>
+            <div class="ads-wrapper">
+            <section>
+                {{#ad}}
+                    <div class='ads-img-wrapper'>
+                        <img src="{{ad-url}}" alt="ads" />
+                    </div>
+                    <figcaption>
+                        <h4 style="margin-bottom: 3px">{{ad-header}}</h4>
+                        <p style="color:#90949c; margin-top: 0px">{{ad-descr}}</p>
+                    </figcaption>
+                </section>
+                {{/ad}}
+            </div>
+        </section>
+
+        <section class="languages">
+            <ul>
+                {{#languages}}
+                    <li><a href="{{lang-url}}">{{language}}</a></li>
+                {{/languages}}
+            </ul>
+            <button type="button" class="languages">+</button>
+        </section>
+        <footer>
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Ad Choices</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">More</a></li>
+            </ul>
+            <br>
+            <section class="copyr">
+                <p id="copyright">Facebook © 2017</p>
+            </section>
+        </footer>
+    </section>
+
+
+    <aside class="right-aside">
+        <ul>
+            {{#dialogues}}
+                <li><img src="{{dialogue-url}}" alt="avatar"/>{{dialogue}}</li>
+            {{/dialogues}}
+            <li style="color:#767375;"><b>MORE CONTACTS(19)</b></li>
+        </ul>
+        <footer id="search-chat" style="background-color: #dfe3ee">
+            <input type="text" placeholder="Search" />
+        </footer>
+    </aside>
+</div>
+</body>
+</html>
