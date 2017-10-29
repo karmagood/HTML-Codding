@@ -1,0 +1,93 @@
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.3; }
+
+.body-link {
+  color: #1b1b1b;
+  border-bottom: 2px solid #1b1b1b;
+  text-decoration: none; }
+  .body-link:link {
+    color: #1b1b1b;
+    border-bottom: 2px solid #1b1b1b; }
+  .body-link:hover {
+    color: #1b1b1b;
+    border-bottom: none; }
+  .body-link:active {
+    color: #1b1b1b;
+    border-bottom: 2px solid #1b1b1b; }
+  .body-link:visited {
+    color: #1b1b1b;
+    border-bottom: 2px solid #1b1b1b; }
+
+header {
+  margin-left: 8%;
+  margin-top: 4.1%;
+  display: grid;
+  grid-template-columns: 18% 45% 12% 15%;
+  grid-template-rows: 18% 40% 10% 30%;
+  grid-column-gap: 2%;
+  grid-row-gap: 2%;
+  wrap-option: nowrap; }
+
+.header__description-h1__link {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 30px; }
+  .header__description-h1__link:link {
+    color: #1b1b1b;
+    text-decoration: none; }
+  .header__description-h1__link:hover {
+    color: #1b1b1b;
+    text-decoration: none; }
+  .header__description-h1__link:active {
+    color: #1b1b1b;
+    text-decoration: none; }
+  .header__description-h1__link:visited {
+    color: #1b1b1b;
+    text-decoration: none; }
+
+.header__description-h2 {
+  font-size: 30px;
+  font-weight: normal; }
+
+.tasting-room-descr__header, .tasting-room-descr__address {
+  font-size: 20px; }
+
+.site-navigation-block {
+  list-style-type: none;
+  margin-left: 8%;
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 18% 25% 32% 15%;
+  /*5 addit %*/
+  grid-template-rows: 18% 40% 10% 30%;
+  grid-column-gap: 2%;
+  grid-row-gap: 4%; }
+
+.site-navigation-left, .navig-center-list, .site-navigation-block {
+  font-size: 20px; }
+
+.navig-center-list__ship-intern-note {
+  font-size: 16px;
+  margin-top: 20px; }
+
+.header-nav-2 {
+  padding: 0;
+  margin: 0; }
+
+header-nav-2__distributors {
+  padding: 0;
+  margin: 0; }
+
+.header-nav-2__options {
+  margin-top: 30px; }
+
+.restaurant-photos {
+  margin-top: 40px;
+  display: grid; }
+
+.restaurant-photos__pic1 {
+  margin-bottom: -20%; }
+
+/*# sourceMappingURL=style.css.map */
