@@ -223,7 +223,7 @@ h3#tasting {
     width: 190px;
 }
 
-.main-images {
+.field-images {
     display: flex;
     flex-direction: row;
     margin-top: 270px;

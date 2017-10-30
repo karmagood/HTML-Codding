@@ -125,7 +125,9 @@ header-nav-2__distributors {
   grid-template-columns: 30% 28% 20%;
   grid-template-rows: 30% 30%;
   grid-column-gap: 5%;
-  margin-left: 38.5%; }
+  margin-left: 38.5%;
+  margin-bottom: 1%;
+  margin-top: 0.8%; }
 
 .header-and-lunch-menu__header {
   line-height: 1.1;
@@ -159,5 +161,53 @@ header-nav-2__distributors {
   grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4; }
+
+.field-images {
+  margin-left: 5%; }
+
+.field-images__field1 {
+  margin-bottom: -27%;
+  margin-right: -10%; }
+  .field-images__field1:hover {
+    z-index: 1; }
+
+.field-images__field2 {
+  margin-left: 38%;
+  z-index: 1; }
+
+.bottle-img {
+  margin-left: 17%;
+  margin-top: -7%;
+  z-index: -1;
+  margin-bottom: -50%; }
+
+.current-releases {
+  display: grid;
+  grid-template-columns: 40% 36%;
+  grid-template-rows: 35% 35% 35% 35%;
+  grid-column-gap: 4%;
+  grid-row-gap: 20%;
+  margin-left: 40%;
+  font-size: 19px;
+  line-height: 1.37; }
+
+.current-releases__header {
+  font-weight: normal;
+  font-size: 26px;
+  align-self: end; }
+
+.current-releases__note {
+  font-weight: normal;
+  font-size: 19px;
+  align-self: start; }
+
+.current-releases__wine_wine-name {
+  margin-left: 0;
+  width: 100%;
+  display: inline-block;
+  align-self: center; }
+
+.price {
+  margin-bottom: 8%; }
 
 /*# sourceMappingURL=style.css.map */
