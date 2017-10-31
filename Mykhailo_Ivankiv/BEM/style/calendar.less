@@ -9,11 +9,12 @@
     clear: both;
 
     &_three-day-week {
-        width: 100px;
+        width: (@day_size  + (@day_margin * 2)) * 3;
         margin: 10px auto;
     }
 
     &__day {
+        color: #34495e;
         border-radius: @day_margin;
         margin: @day_margin;
         height: @day_size;
