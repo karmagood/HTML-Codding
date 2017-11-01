@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="styles/group_page.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Group page</title>
+</head>
+<body>
+<header>
+    <a id="logo" href="#">
+        <i class="fa fa-facebook-f" style="color: white;"></i>
+    </a>
+    <form action="#">
+        <input type="search" placeholder="Search"/>
+    </form>
+    <a href="#">
+        <i class="fa fa-search"></i>
+    </a>
+    <nav>
+        <a id="user-name" class="user-profile" href="#" title="Profile">
+            <img class="userpic"
+                 src="images/user_avatar.jpeg"/>
+            <span>Olya</span>
+        </a>
+        <a id="home" href="#">Home</a>
+        <a id="friend-req" class="h-icon" href="#" title="Friends Requests">
+            <i class="fa fa-user-o"></i>
+        </a>
+        <a id="messages" class="h-icon" href="#" title="Messages">
+            <i class="fa fa-envelope-o"></i>
+        </a>
+        <a id="notifications" class="h-icon" href="#" title="Notifications">
+            <i class="fa fa-globe"></i>
+        </a>
+        <a id="help" class="h-icon" href="#" title="Quick Help">
+            <i class="fa fa-question-circle-o"></i>
+        </a>
+        <a id="other-info" class="h-icon" href="#">
+            <i class="fa fa-caret-down"></i>
+        </a>
+    </nav>
+</header>
+<nav class="tool-bar">
+    <h1>CS@UCU</h1>
+    <h4>Closed group</h4>
+    <section id="tool-bar__group-nav">
+        <ul>
+            <li>
+                <a class="tool-bar__group-nav_active" href="#">Discussion</a>
+            </li>
+            <li>
+                <a href="#">Members</a>
+            </li>
+            <li>
+                <a href="#">Events</a>
+            </li>
+            <li>
+                <a href="#">Videos</a>
+            </li>
+            <li>
+                <a href="#">Photos</a>
+            </li>
+            <li>
+                <a href="#">Files</a>
+            </li>
+        </ul>
+    </section>
+    <h4>Shortcuts</h4>
+    <section>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="fa fa-lightbulb-o" style="color: #FDE01F;"></i>
+                    CS@UCU
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-star-o" style="color: #fde01f"></i>
+                    Волонтери
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-bus" style="color: #34495E"></i>
+                    Мандрівки
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-hand-rock-o" style="color: #A96930;"></i>
+                    ТРЕНІНГ в УКУ
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-book" style="color: #990099;"></i>
+                    Educational Project Show
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-home" style="color: #ff9999;"></i>
+                    Збірка на УКУ
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
+<main id="main-section">
+    <section id="main-section__header">
+        <a href="#">
+            <div id="header__cover-photo"></div>
+        </a>
+        <div id="header__some-settings">
+            <a href="#">Joined</a>
+            <a href="#">Notifications</a>
+            <a href="#">Share</a>
+            <a href="#">...</a>
+        </div>
+    </section>
+    <section id="main-section__news-feed">
+        <div id="news-feed__make-post">
+            <a class="active" href="#" style="padding: 3px; color: #4b4f56;">
+                <i class="fa fa-pencil-square-o"></i>
+                Write Post
+            </a>
+            <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+                <i class="fa fa-file-photo-o"></i>
+                Add Photo/Video
+            </a>
+            <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+                <i class="fa fa-video-camera"></i>
+                Live Video
+            </a>
+            <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+                More
+            </a>
+        </div>
+        <div id="news-feed__post-content">
+            <form>
+                <a class="user-profile" href="https://www.facebook.com/korabliovaolya" style="text-decoration: none">
+                    <img class="userpic" height="45px"
+                         src="images/user_avatar.jpeg"/>
+                </a>
+                <textarea placeholder="What's on your mind, Olya?"></textarea>
+            </form>
+            <div id="post-content__add-content">
+                <a href="#">
+                    <i class="fa fa-photo" style="color: #8ABF4C;"></i>
+                    Photo/Video
+                </a>
+                <a href="#">
+                    <i class="fa fa-bar-chart" style="color: #8ABF4C;"></i>
+                    Poll
+                </a>
+                <a href="#">
+                    <i class="fa fa-smile-o" style="color: #FFD62C;"></i>
+                    Feeling/Activity
+                </a>
+                <a href="#">...</a>
+            </div>
+            <!--<div id="post-content__allowed-access">-->
+            <!--<select>-->
+            <!--<option value="friedns">Friends</option>-->
+            <!--<option value="public">Public</option>-->
+            <!--<option value="friends-except">Friends except...</option>-->
+            <!--<option value="only-me">Only me</option>-->
+            <!--</select>-->
+            <!--<form action="#">-->
+            <!--<button type="submit">Post</button>-->
+            <!--</form>-->
+            <!--</div>-->
+        </div>
+        <section id="group-post">
+            <h5>RECENT ACTIVITY</h5>
+            <div>
+                <a class="user-profile" href="#">
+                    <img class="userpic"
+                         src="images/user_avatar.jpeg"/>
+                    Olya Korabliova
+                </a>
+                <br>
+                <a href="#">
+                    <time datetime="dd.mm.yyyy">21.10.2017</time>
+                </a>
+                <p>
+                    Fall is here @ Rosewood Winery
+                </p>
+                <img src="images/recent_group_photo_1.jpg"/>
+                <br>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-thumbs-o-up"> Like</i>
+                </a>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-comment-o"> Comment</i>
+                </a>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-send-o"> Share</i>
+                </a>
+                <br>
+                <a class="who-liked" href="#">
+                    <i class="fa fa-thumbs-up"> 45 likes</i>
+                </a>
+                <div class="user-post__comments">
+                    <img src="images/user_avatar.jpeg"/>
+                    <form action="#">
+                        <input type="text" placeholder="Write a comment..."/>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <a class="user-profile" href="#">
+                    <img class="userpic"
+                         src="images/user_avatar.jpeg"/>
+                    Olya Korabliova
+                </a>
+                <br>
+                <a href="#">
+                    <time datetime="dd.mm.yyyy">01.10.2017</time>
+                </a>
+                <p>
+                    Fall is here @ Rosewood Winery
+                </p>
+                <img src="images/recent_group_photo_2.jpg"/>
+                <br>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-thumbs-o-up"> Like</i>
+                </a>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-comment-o"> Comment</i>
+                </a>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-send-o"> Share</i>
+                </a>
+                <br>
+                <a class="who-liked" href="#">
+                    <i class="fa fa-thumbs-up"> 10 likes</i>
+                </a>
+            </div>
+            <div>
+                <a class="user-profile" href="#">
+                    <img class="userpic"
+                         src="images/user_avatar.jpeg"/>
+                    Olya Korabliova
+                </a>
+                <br>
+                <a href="#">
+                    <time datetime="dd.mm.yyyy">01.10.2017</time>
+                </a>
+                <p>
+                    Fall is here @ Rosewood Winery
+                </p>
+                <img src="images/recent_group_photo_3.jpg"/>
+                <br>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-thumbs-o-up"> Like</i>
+                </a>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-comment-o"> Comment</i>
+                </a>
+                <a class="like-com-share" href="#">
+                    <i class="fa fa-send-o"> Share</i>
+                </a>
+                <br>
+                <a class="who-liked" href="#">
+                    <i class="fa fa-thumbs-up"> 10 likes</i>
+                </a>
+            </div>
+        </section>
+    </section>
+    <section id="main-section__ads-block">
+        <div class="ads-block__block">
+            <h5>ADD MEMBERS</h5>
+            <form action="#">
+                <input type="search" placeholder="+ Enter name or email address..."/>
+            </form>
+            <h5>MEMBERS
+                <a href="#" class="see-more">121 members</a>
+            </h5>
+            <div id="block__member-list">
+                <img class="userpic" src="images/featured_photo.jpg"/>
+                <img class="userpic" src="images/featured_photo.jpg"/>
+                <img class="userpic" src="images/featured_photo.jpg"/>
+                <img class="userpic" src="images/featured_photo.jpg"/>
+                <img class="userpic" src="images/featured_photo.jpg"/>
+            </div>
+            <h5>DESCRIPTION
+                <a href="#" class="see-more">Add a Description</a>
+            </h5>
+            <p>Tell people what this group is about.</p>
+        </div>
+        <div class="ads-block__block">
+            <h5>CREATE NEW GROUPS</h5>
+            <p>Groups make it easier than ever to share with friends, family and teammates.</p>
+            <a href="#">
+                <span id="block__button-type">Create Group</span>
+            </a>
+        </div>
+        <div class="ads-block__block">
+            <h5>RECENT GROUP PHOTOS
+                <a href="#" class="see-more">See All</a>
+            </h5>
+            <div id="block__recent-photos">
+                <img src="images/recent_group_photo_1.jpg"/>
+                <img src="images/recent_group_photo_2.jpg"/>
+                <img src="images/recent_group_photo_3.jpg"/>
+            </div>
+        </div>
+        <div class="ads-block__block">
+            <h5>Suggested Groups <a href="#" class="see-more">See All</a></h5>
+            <div class="block__group-ads">
+                <a href="#">
+                    <div class="block__group-ads_cover"></div>
+                </a>
+                <div class="block__group-ads_short-group-info">
+                    <a href="#"><h6>MMMMM</h6></a>
+                    <p>35 members</p>
+                    <form action="#">
+                        <button type="button">+ Join</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+</main>
+<!--</section>-->
+
+<aside class="friends-and-games">
+    <section id="games">
+        <div id="your-games">
+            <h6>YOUR GAMES
+                <a href="#" class="see-more">MORE</a>
+            </h6>
+            <a href="#">
+                <img src="images/agario_game.jpg"/>
+            </a>
+            <a href="#">
+                <img src="images/jetpack_game.jpg"/>
+            </a>
+        </div>
+        <div id="recommended-games">
+            <h6>RECOMMENDED GAMES
+                <a href="#" class="see-more">MORE</a>
+            </h6>
+            <a href="#"><i class="material-icons" style="color: black">keyboard_arrow_left</i></a>
+            <a href="#">
+                <img src="images/pool_game.jpg"/>
+            </a>
+            <a href="#">
+                <img src="images/pool_game.jpg"/>
+            </a>
+            <a href="#">
+                <img src="images/pool_game.jpg"/>
+            </a>
+            <a href="#"><i class="material-icons" style="color: black">keyboard_arrow_right</i></a>
+        </div>
+    </section>
+    <section id="online-friends">
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/bogdan_avatar.png"/>
+                <small>Bogdan Bogdan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/kira_avatar.png"/>
+                <small>Kira Kira</small>
+                <span></span>
+            </p>
+        </a>
+    </section>
+    <section id="more-contacts">
+        <h5 style="color: black;">MORE CONTACTS</h5>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--girl-->
+                <img src="images/maria_avatar.png"/>
+                <small>Maria Maria</small>
+                <span></span>
+            </p>
+        </a>
+        <a href="#">
+            <p>
+                <!--boy-->
+                <img src="images/ivan_avatar.jpg"/>
+                <small>Ivan Ivan</small>
+                <span></span>
+            </p>
+        </a>
+    </section>
+    <footer>
+        <form action="#">
+            <input type="search" placeholder="Search">
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </footer>
+</aside>
+
+
+</body>
+</html>
