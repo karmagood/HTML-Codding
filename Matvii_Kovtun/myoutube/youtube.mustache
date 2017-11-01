@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/youtube.css">
+    <title>Title</title>
+</head>
+<body>
+
+
+<header class="top-nav">
+    <form class="google-profile" action="#">
+
+        <button class="upload">Upload video</button>
+
+
+        <button class="youtube-apps">Open youtube applications</button>
+
+        <button class="settings">Open account settings</button>
+
+
+        <button class="sign-in">Sign in</button>
+    </form>
+
+    <button class="hamburger-menu">
+        Toogle menu
+    </button>
+
+    <img class="logo" src="youtube-logo.jpg">
+
+    <form class="search-wrapper">
+        <label>
+            <input type="search">
+        </label>
+
+        <button>Search</button>
+    </form>
+
+
+</header>
+
+<aside class="side-nav">
+
+    <nav class="channel-nav">
+
+        <a href="#">Головна</a>
+
+        <a href="#">В тренді</a>
+
+        <a href="#">Підписки</a>
+
+    </nav>
+
+    <nav class="channel-nav">
+        <h3>Бібліотека</h3>
+        <a href="#">Історія</a>
+
+        <a href="#">Дивитись пізніше</a>
+
+        <a href="#">Вподобані</a>
+    </nav>
+    <nav class="subscriptions">
+        <h3>Підписки</h3>
+        <a href="#">Subscription1</a>
+        <a href="#">Subscription2</a>
+        <a href="#">Subscription3</a>
+
+    </nav>
+</aside>
+<section class="main-page">
+    {{#channels}}
+        <section class="main-recommended">
+            <h2>Рекомендовані</h2>
+            {{#video}}
+                <article class="video">
+                    <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                         alt="video">
+                    <h3>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</h3>
+                    <aside>
+                        <address>
+                            <a href="/">Drop G</a>
+                        </address>
+                        <span class="views">1.5M views</span>
+                        <time>3 months ago</time>
+                    </aside>
+
+                </article>
+            {{/video}}
+        </section>
+    {{/channels}}
+
+
+    <section class="main-watch-again">
+        <h2>Подивитись ще раз</h2>
+        <div class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <div class="video-details">
+                <p>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</p>
+                <a href="/">Drop G</a><br>
+                <span class="views">1.5M views</span><br>
+                <span>3 months ago</span>
+            </div>
+        </div>
+        <div class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <div class="video-details">
+                <p>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</p>
+                <a href="/">Drop G</a><br>
+                <span class="views">1.5M views</span><br>
+                <span>3 months ago</span>
+            </div>
+        </div>
+        <div class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <div class="video-details">
+                <p>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</p>
+                <a href="/">Drop G</a><br>
+                <span class="views">1.5M views</span><br>
+                <span>3 months ago</span>
+            </div>
+        </div>
+        <div class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <div class="video-details">
+                <p>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</p>
+                <a href="/">Drop G</a><br>
+                <span class="views">1.5M views</span><br>
+                <span>3 months ago</span>
+            </div>
+        </div>
+        <div class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <div class="video-details">
+                <p>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</p>
+                <a href="/">Drop G</a><br>
+                <span class="views">1.5M views</span><br>
+                <span>3 months ago</span>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+</body>
+</html>
