@@ -1,0 +1,13 @@
+.aside-guide-content{
+    position: fixed;
+    top: 56px;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    background: #f6f4f6;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.aside-guide-content:hover{
+    overflow-y: auto;
+}

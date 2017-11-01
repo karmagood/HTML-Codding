@@ -1,0 +1,21 @@
+.aside-guide-content__footer{
+    padding: 24px 27px 0;
+    display: block;
+    color: rgba(17, 17, 17, 0.6);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 21px;
+}
+.aside-guide-content__footer a{
+    text-decoration: none;
+    margin-right: 8px;
+    white-space: nowrap;
+}
+.aside-guide-content__footer.aside-guide-content__footer_conditions{
+    padding: 12px 27px 0;
+}
+.aside-guide-content__footer.aside-guide-content__footer_ownership{
+    padding: 24px 27px;
+    margin-top: 16px;
+}
