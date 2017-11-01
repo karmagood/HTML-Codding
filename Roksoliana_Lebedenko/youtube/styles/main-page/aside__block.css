@@ -1,0 +1,58 @@
+.aside-guide-content__block{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 0;
+    border-bottom: 1px solid #E6E6E6;
+}
+.menu-block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    padding: 0 24px;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 14px;
+}
+.menu-block__icon{
+    margin-right: 10px;
+    background: url("../../images/hamburger_menu.svg") no-repeat;
+    height: 24px;
+    width: 40px;
+}
+.menu-block__img{
+    margin-right: 24px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    color: #858385;
+}
+.aside_icon-3{
+    color: #dedcde;
+}
+.menu-block__text.aside-guide-content__block_home{
+    font-weight: 600;
+}
+.menu-block__text_hidden{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 120px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+}
+.aside-guide-content__block_title{
+    vertical-align: middle;
+    width: 240px;
+    height: 33px;
+    margin: 0;
+    font-family:sans-serif;
+    font-size: 14px;
+    color: rgba(17,17,17,0.6);
+    font-weight: 600;
+    letter-spacing: .007px;
+    padding: 8px 24px;
+    text-transform: uppercase;
+}

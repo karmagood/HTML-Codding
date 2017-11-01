@@ -1,0 +1,25 @@
+{
+  "name": "HTML-Codding",
+  "version": "1.0.0",
+  "description": "Всі свої завдання заливайте в папку з вашим ім’ям та прізвищем в латинській транслітерації. В якості роздільного символу використовуйте нижнє підкреслення.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebDevCourse2017/HTML-Codding.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WebDevCourse2017/HTML-Codding/issues"
+  },
+  "homepage": "https://github.com/WebDevCourse2017/HTML-Codding#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "less": "^2.7.3",
+    "mustache": "^2.3.0"
+  }
+}

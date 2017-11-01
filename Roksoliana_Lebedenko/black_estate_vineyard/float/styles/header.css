@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+.header_wrap{
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    right: 8%;
+    bottom: 15%;
+}
+.header{
+    float: left;
+}
+.header_titles{
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+}
+.header>h1:nth-child(1){
+    float: left;
+}
+.header>h1:nth-child(2){
+    float: left;
+    margin-left: 45px;
+    margin-right: 325px;
+}
+.tasting{
+    float: left;
+    display: inline;
+}
+.tasting >h1{
+    float: left;
+    display: inline;
+    width: 150px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+}
+.tasting > p{
+    margin-left: 160px;
+    font-size: 20px;
+}
+.tasting > p:nth-of-type(2){
+    margin-top: 30px;
+}
+.header_nav_wrap{
+    height: 100%;
+    clear: both;
+    padding-top: 20px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 20px;
+    line-height: 26px;
+    list-style-type: none;
+}
+nav>ul>li:nth-child(1){
+    width: 190px;
+    float: left;
+    display: inline;
+    padding: 0;
+}
+nav>ul>li:nth-child(2){
+    width: 310px;
+    float: left;
+    display: inline;
+    padding: 0;
+}
+nav>ul>li:nth-child(3) {
+    width: 390px;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+nav>ul>li:nth-child(4) {
+    width: 190px;
+    float: left;
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.ship {
+    position: absolute;
+    display: block;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.header_nav_wrap a{
+    color: #1b1b1b;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+}
