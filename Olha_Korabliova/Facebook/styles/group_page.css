@@ -141,14 +141,6 @@ h4, #main-section h5 {
 
 /*===================================================*/
 
-/*#main-section {*/
-    /*position: absolute;*/
-    /*top: 35px;*/
-    /*width: 550px;*/
-    /*margin: 10px;*/
-    /*left: calc(25% - 60px);*/
-/*}*/
-
 #main-section__header {
     position: absolute;
     top: 35px;
@@ -283,8 +275,40 @@ div.ads-block__block p {
     font-size: 13px;
 }
 
-#block__recent-photos {
+#block__recent-photos, div.block__group-ads_short-group-info h6 {
     margin: 5px;
+}
+
+div.block__group-ads_short-group-info p {
+    font-size: 12px;
+    color: #90949C;
+}
+
+div.block__group-ads_short-group-info form {
+    position: relative;
+    top: -50px;
+    float: right;
+    padding: 10px;
+}
+
+div.block__friend-suggestion .user-profile img {
+    position: absolute;
+    left: 10px;
+    margin: 3px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+div.block__friend-suggestion {
+    margin: 5px;
+}
+
+div.block__friend-suggestion p {
+    position: relative;
+    left: 65px;
+    top: 5px;
+    font-size: 13px;
 }
 
 #block__recent-photos img{
@@ -292,21 +316,22 @@ div.ads-block__block p {
 }
 
 div.block__group-ads {
-    /*border: #DDDFE2 solid 1px;*/
-    /*border-radius: 3px;*/
-    margin: 5px;
+    margin: 10px 5px 10px 5px;
+    border: #DDDFE2 solid 1px;
+    border-radius: 3px;
 }
 
 div.block__group-ads_cover {
-    border: #DDDFE2 solid 1px;
     padding: 0;
-    border-radius: 3px;
     background-image: url("../images/cover_photo.jpg");
     background-size: cover;
-
-    /*width: 270px;*/
     height: 100px;
 }
+
+/*div.block__group-ads_short-group-info {*/
+    /*border: 1px solid #DDDFE2;*/
+    /*border-radius: 3px;*/
+/*}*/
 
 /*===================================================*/
 /*===================================================*/
