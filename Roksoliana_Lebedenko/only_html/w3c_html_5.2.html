@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>W3C HTML 5.2.html</title>
+</head>
+<body>
+<header>
+    <p><a href="">↑ Jump to Table of Contents→ Pop Out Sidebar</a></p>
+    <p><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="" height="48" width="72"></p>
+    <h1>HTML 5.2</h1>
+    <h2>Editor’s Draft, 20 September 2017</h2>
+</header>
+<div>
+    <div>
+    <dl>
+        <dt>This version:</dt>
+        <dd><a href="">https://w3c.github.io/html/</a></dd>
+        <dt>Latest published version:</dt>
+        <dd><a href="">https://www.w3.org/TR/html52/</a></dd>
+        <dt>Editors:</dt>
+        <dd><a href="">Steve Faulkner</a> (The Paciello Group)</dd>
+        <dd><a href="">Arron Eicholz</a> (Microsoft)</dd>
+        <dd><a href="">Travis Leithead</a> (Microsoft)</dd>
+        <dd><a href="">Alex Danilo</a> (Google)</dd>
+        <dd><a href="">Sangwhan Moon</a> (Invited Expert)</dd>
+        <dt>Former Editors:</dt>
+        <dd><a href="">Erika Doyle Navara</a> (Microsoft)</dd>
+        <dd><a href="">Theresa O'Connor</a> (Apple Inc.)</dd>
+        <dd><a href="">Robin Berjon</a> (W3C)</dd>
+        <dt>Default Ref Status:</dt>
+        <dd>snapshot</dd>
+        <dt>Participate:</dt>
+        <dd><a href="">File an issue</a> (<a href="">open issues</a>)</dd>
+        <dt>Others:</dt>
+        <dd><a href="">Single page version</a></dd>
+    </dl>
+        <p>
+            <a href="">Copyright</a> © 2017
+            <a href="">W3C</a>
+            <sup>®</sup>
+            (<a href="">MIT</a>, <a href="">ERCIM</a>, <a href="">Keio</a>, <a href="">Beihang</a>).
+            W3C <a href="">liability</a>, <a href="">trademark</a> and <a href="">permissive</a>
+            <a href="">document license</a> rules apply.</p>
+    </div>
+    <hr>
+    <article>
+        <header><h2>Abstract</h2></header>
+        <p>This specification defines the 5th major version, second minor revision of the core language of the World Wide Web: the Hypertext Markup Language (HTML). In this version, new features continue to be introduced to help Web application authors, new elements continue to be introduced based on research into prevailing authoring practices, and special attention continues to be given to defining clear conformance criteria for user agents in an effort to improve interoperability.</p>
+    </article>
+    <article>
+        <header><h2>Status of this document</h2></header>
+        <p><em>This section describes the status of this document at the time of its publication. Other documents may supersede this document. A list of current W3C publications and the latest revision of this technical report can be found in the <a href="">W3C technical reports index</a> at http://www.w3.org/TR/.</em></p>
+        <p>This document was published by the <a href="">Web Platform Working Group</a> as a Editors Draft. This document is intended to become a W3C Recommendation. Feedback and comments on this specification are welcome. Please use Github issues. Historical discussions can be found in the <a href="">public-html@w3.org archives</a>.</p>
+        <p>Publication as a Editors Draft does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than work in progress.</p>
+        <p>This document was produced by a group operating under the <a href="">5 February 2004 W3C Patent Policy</a>. W3C maintains a <a href="">public list of any patent disclosures</a> made in connection with the deliverables of the group; that page also includes instructions for disclosing a patent. An individual who has actual knowledge of a patent which the individual believes contains Essential Claim(s) must disclose the information in accordance with <a href="">section 6 of the W3C Patent Policy</a>.</p>
+        <p>This document is governed by the <a href="">1 March 2017 W3C Process Document</a>.</p>
+    </article>
+</div>
+<aside>
+<h2>Table of Contents</h2>
+    <ol>
+        <li><a href="">1 Introduction</a>
+            <ol>
+                <li><a href="">1.1 Background</a></li>
+                <li><a href="">1.2 Audience</a></li>
+                <li><a href="">1.3 Scope</a></li>
+                <li><a href="">1.4 History</a></li>
+                <li>
+                    <a href="">1.5 Design notes</a>
+                    <ol>
+                        <li><a href="">1.5.1 Serializability of script execution</a></li>
+                        <li><a href="">1.5.2 Compliance with other specifications</a></li>
+                        <li><a href="">1.5.3 Extensibility</a></li>
+                    </ol>
+                </li>
+                <li><a href="">1.6 HTML vs XML Syntax</a></li>
+                <li>
+                    <a href="">1.7 Structure of this specification</a>
+                    <ol>
+                        <li><a href="">1.7.1 How to read this specification</a></li>
+                        <li><a href="">1.7.2 Typographic conventions</a></li>
+                    </ol>
+                </li>
+                <li><a href="">1.8 Privacy concerns</a></li>
+                <li>
+                    <a href="">1.9 A quick introduction to HTML</a>
+                    <ol>
+                        <li><a href="">1.9.1 Writing secure applications with HTML</a></li>
+                        <li><a href="">1.9.2 Common pitfalls to avoid when using the scripting APIs</a></li>
+                        <li><a href="">1.9.3 How to catch mistakes when writing HTML: validators and conformance checkers</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">1.10 Conformance requirements for authors</a>
+                    <ol>
+                        <li><a href="">1.10.1 Presentational markup</a></li>
+                        <li><a href="">1.10.2 Syntax errors</a></li>
+                        <li><a href="">1.10.3 Restrictions on content models and on attribute values</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <a href="">2 Common infrastructure</a>
+            <ol>
+                <li><a href="">1.1 Background</a></li>
+                <li><a href="">1.2 Audience</a></li>
+                <li><a href="">1.3 Scope</a></li>
+                <li><a href="">1.4 History</a></li>
+                <li>
+                    <a href="">1.5 Design notes</a>
+                    <ol>
+                        <li><a href="">1.5.1 Serializability of script execution</a></li>
+                        <li><a href="">1.5.2 Compliance with other specifications</a></li>
+                        <li><a href="">1.5.3 Extensibility</a></li>
+                    </ol>
+                </li>
+                <li><a href="">1.6 HTML vs XML Syntax</a></li>
+                <li>
+                    <a href="">1.7 Structure of this specification</a>
+                    <ol>
+                        <li><a href="">1.7.1 How to read this specification</a></li>
+                        <li><a href="">1.7.2 Typographic conventions</a></li>
+                    </ol>
+                </li>
+                <li><a href="">1.8 Privacy concerns</a></li>
+                <li>
+                    <a href="">1.9 A quick introduction to HTML</a>
+                    <ol>
+                        <li><a href="">1.9.1 Writing secure applications with HTML</a></li>
+                        <li><a href="">1.9.2 Common pitfalls to avoid when using the scripting APIs</a></li>
+                        <li><a href="">1.9.3 How to catch mistakes when writing HTML: validators and conformance checkers</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="">1.10 Conformance requirements for authors</a>
+                    <ol>
+                        <li><a href="">1.10.1 Presentational markup</a></li>
+                        <li><a href="">1.10.2 Syntax errors</a></li>
+                        <li><a href="">1.10.3 Restrictions on content models and on attribute values</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+    </ol>
+</aside>
+</body>
+</html>
