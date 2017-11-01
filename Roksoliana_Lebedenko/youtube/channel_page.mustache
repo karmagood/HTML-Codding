@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>YouTube</title>
+    <title>Title</title>
     <link rel="stylesheet" href="styles/common.less">
     <link rel="stylesheet" href="styles/main-page/header.css">
     <link rel="stylesheet" href="styles/main-page/header_search.css">
     <link rel="stylesheet" href="styles/main-page/header_logo.css">
     <link rel="stylesheet" href="styles/main-page/header_settings.css">
-    <link rel="stylesheet" href="styles/main-page/main.css">
-    <link rel="stylesheet" href="styles/main-page/main__header.css">
-    <link rel="stylesheet" href="styles/main-page/main__articles.css">
+    <link rel="stylesheet" href="styles/channel-page/main.css">
+    <link rel="stylesheet" href="styles/channel-page/main__header.css">
     <link rel="stylesheet" href="styles/main-page/aside-guide-content__block.css">
     <link rel="stylesheet" href="styles/main-page/aside__block.css">
     <link rel="stylesheet" href="styles/main-page/aside__footer.css">
-
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,7 +23,7 @@
     <div class="header__logo">
         <button class="header__logo_hamburger-menu"></button>
         <a class="header__logo_img" href=""><img src="images/youtube_icon.png" alt=""></a>
-        <a class="header__logo_text" href="">YouTube<sup class="header__logo_country-code">UA</sup></a>
+        <a class="header__logo_text" href="index">YouTube<sup class="header__logo_country-code">UA</sup></a>
 
     </div>
     <div class="header__search">
@@ -42,51 +40,16 @@
     </div>
 </header>
 <main class="main">
-    <div class="main__content">
-        {{#chapters}}
-            <article class="article">
-                <header class="article__header">
-                    <div class="article__header_logo">
-                        <a href="channel_page">
-                            <img src="https://yt3.ggpht.com/tjt5PzE-7BcPS7jLMfPuTinVAmIk3dzMwwnUDrltyaGhY0zmfCokxGMuwq_GH-TCyz2UuWwOw-s5Ge8y=s88-nd-c-c0xffffffff-rj-k-no"
-                                 alt="">
-                            <span class="article__header_title">Голос – тема</span>
-                        </a>
-                        <small>Рекомендований канал</small>
-                    </div>
-                    <div class="article__header_button">
-                        <button>
-                            <span>Підписатися</span>
-                            <span>24 тис.</span>
-                        </button>
-                        <button class="header__logo_hamburger-menu"></button>
-                    </div>
-                </header>
-                <div class="article__main-content">
-                    {{#video-list}}
-                        <div class="article__main-content_video">
-                            <img src="{{cover-image-url}}"
-                                 alt="">
-                            <div class="article__main-content_description">
-                                <h3><a href="video_page">{{title}}</a></h3>
-                                <a href="">
-                                    <span>{{subtitle}}</span>
-                                    <span>{{view-count}} млн перегляди
-                            <span>•</span>
-                        </span>
-                                    <span>{{publication-date}}</span>
-                                </a>
-                            </div>
-                        </div>
-                    {{/video-list}}
-                </div>
-            </article>
-        {{/chapters}}
-    </div>
+    <header class="main__header">
+        <img src="https://yt3.ggpht.com/njLcfrobcky9s9mJ-BpfWzzzFPiMcoGkvcZ7Gt26I-iJ2a1XKCLdgdn_IxelT2dxMYQvaN4DOJY=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no"
+             alt="">
+    </header>
+    <main class="main__main"></main>
+    <aside class="main__aside"></aside>
 </main>
 <aside class="aside-guide-content">
     <div class="aside-guide-content__block aside-guide-content__block_home">
-        <a class="menu-block" href="">
+        <a class="menu-block" href="index">
             <span class="menu-block__icon"></span>
             <span class="menu-block__text menu-block__text_home">Головна</span>
         </a>
