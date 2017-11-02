@@ -1,6 +1,7 @@
 {
     "u_name": "Sergey",
     "u_full_name": "Sergey Dubovyk",
+    "u_prof_pic": "/img/dubovyk.jpg",
     "shortcuts":[
         {"target": "", "img_link": "img/bulb.png", "link_name": "CS@UCU Rulezz"},
         {"target": "", "img_link": "img/bulb.png", "link_name": "CS@UCU Sucks"}
@@ -20,9 +21,9 @@
         {"p_author": "Andrey Rodionov", "author_userpic": "img/rodionov.jpg", "p_action": "feels", "p_event": "happy", "p_date": "September 21 at 10:12am", "p_image": "img/lohika.jpg",
         "p_content": "Це мій третій пакуночок від Lohika, перші два були від <a>Taras Matyashovsky</a> з <a>#uadevclub</a> та <a>Morning@Lohika</a> З задоволенням користуюсь їх вмістом ;)"},
         {"p_author": "Dima Maleev", "author_userpic": "img/maleev.jpg", "p_action": "", "p_event": "", "p_date": "October 14 at 10:11pm", "p_image": "img/maleev_post.png",
-        "p_content": false}
+        "p_content": null}
     ],
-    "stories": true,
+    "stories": false,
     "suggested_page": {
         "img_src": "img/infosec_page.png",
         "page_name": "Berezha Security",
