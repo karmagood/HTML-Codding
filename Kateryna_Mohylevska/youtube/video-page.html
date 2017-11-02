@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Маленький милый котёнок</title>
+    <title>YouTube</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-header.css">
+    <link rel="stylesheet" href="styles/video-page.css">
 </head>
 <body>
 <header class="main-header">
@@ -29,5 +30,45 @@
         <a href="/" class="main-header_right-aside__signin">УВІЙТИ</a>
     </aside>
 </header>
+
+<main class="main">
+    <section class="video-content">
+        <video width="854px" controls autoplay>
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+        <h1 class="video-content__name">Купили прикольного котенка, веселун еще тот :-))</h1>
+        <div class="video-content__info">
+            <p class="video-content__info__views">24 882 перегляди</p>
+            <aside class="video-content__info__menu">
+                <button class="video-content__info__menu__element">
+                    <i class="material-icons">thumb_up</i>
+                    272
+                </button>
+                <button class="video-content__info__menu__element">
+                    <i class="material-icons">thumb_down</i>
+                    10
+                </button>
+                <button class="video-content__info__menu__element">
+                    <i class="material-icons">share</i>
+                    Поділитися
+                </button>
+                <button class="video-content__info__menu__element">
+                    <i class="material-icons">playlist_add</i>
+                </button>
+                <button class="video-content__info__menu__more">
+                    <i class="material-icons">more_horiz</i>
+                </button>
+
+            </aside>
+        </div>
+        <section class="video-content__channel">
+
+        </section>
+    </section>
+    <aside class="recommended-videos">
+
+    </aside>
+</main>
+
 </body>
 </html>
