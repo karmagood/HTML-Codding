@@ -5,182 +5,185 @@
     <title>YouTube</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-header.css">
+    <link rel="stylesheet" href="styles/guide.css">
+    <link rel="stylesheet" href="styles/content.css">
+    <link rel="stylesheet" href="styles/guide__images.css">
 </head>
 <body>
 <header class="main-header">
-    <aside class="main-header-el left-aside">
-        <i class="details material-icons">menu</i>
-        <img src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
-
-        <sup>UA</sup>
+    <aside class="main-header_left-aside">
+        <i class="main-header__details material-icons">menu</i>
+        <img class="main-header_left-aside__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
+        <sup class="main-header_left-aside__ua">UA</sup>
     </aside>
-    <form action="" class="main-header-el form-search">
-        <input type="text" value="Пошук">
-        <i class="material-icons keyboard">keyboard</i>
-        <button class="button-search">
+    <form action="" class="search">
+        <input class="search__write" type="text" value="Пошук">
+        <i class="material-icons search__keyboard">keyboard</i>
+        <button class="search__button">
             <i class="material-icons">search</i>
         </button>
     </form>
-    <aside class="main-header-el right-aside">
+    <aside class="main-header_right-aside">
         <i class="material-icons">file_upload</i>
         <i class="material-icons">apps</i>
         <i class="material-icons">more_vert</i>
-        <a href="/" class="signin">УВІЙТИ</a>
+        <a href="/" class="main-header_right-aside__signin">УВІЙТИ</a>
     </aside>
 </header>
 
 
-<aside class="left-menu">
-    <nav>
-            <a href="/" class="left-menu-el home-img">
+<aside class="guide">
+    <nav class="data-model">
+            <a href="/" class="guide__chapter home-img">
                 Головна
             </a>
-            <a href="/" class="left-menu-el popular-img">
+            <a href="/" class="guide__chapter popular-img">
                 Популярне
             </a>
-            <a href="/" class="left-menu-el history-img">
+            <a href="/" class="guide__chapter history-img">
                 Історія
             </a>
     </nav>
-    <section class="youtube-best">
-        <h4>Найкраще на youtube</h4>
-        <a href="/" class="left-menu-el red-icons music-img">
+    <section class="best-on-youtube">
+        <h4 class="best-on-youtube__title">Найкраще на youtube</h4>
+        <a href="/" class="guide__chapter best-on-youtube__icon music-img">
             Музика
         </a>
-        <a href="/" class="left-menu-el red-icons sport-img">
+        <a href="/" class="guide__chapter best-on-youtube__icon sport-img">
             Спорт
         </a>
-        <a href="/" class="left-menu-el red-icons game-img">
+        <a href="/" class="guide__chapter best-on-youtube__icon game-img">
             Комп&#39;ютерні ігри
         </a>
-        <a href="/" class="left-menu-el red-icons film-img">
+        <a href="/" class="guide__chapter best-on-youtube__icon film-img">
             Фільми
         </a>
-        <a href="/" class="left-menu-el red-icons news-img">
+        <a href="/" class="guide__chapter best-on-youtube__icon news-img">
             Новини
         </a>
-        <a href="/" class="left-menu-el red-icons live-streaming-img">
+        <a href="/" class="guide__chapter best-on-youtube__icon live-streaming-img">
             У прямому ефірі
         </a>
-        <a href="/" class="left-menu-el red-icons spherical-video-img">
+        <a href="/" class="guide__chapter best-on-youtube__icon spherical-video-img">
             Сферичне відео
         </a>
     </section>
     <div class="see-chanel">
-        <a href="/" class="left-menu-el">
+        <a href="/" class="guide__chapter see-chanel__link">
             Переглянути канали
         </a>
     </div>
     <div class="signin-for-chanel">
         <p>Увійдіть, щоб переглянути свої канали та рекомендації</p>
-        <a href="/">Увійти</a>
+        <a href="/" class="signin-for-chanel__link">Увійти</a>
     </div>
     <nav class="settings">
-        <a href="/" class="left-menu-el settings-img">
+        <a href="/" class="guide__chapter settings-img">
             Налаштування
         </a>
-        <a href="/" class="left-menu-el help-img">
+        <a href="/" class="guide__chapter help-img">
             Довідка
         </a>
-        <a href="/" class="left-menu-el response-img">
+        <a href="/" class="guide__chapter response-img">
             Надіслати відгук
         </a>
     </nav>
 
     <footer class="app-model">
-        <a href="/">Інфо</a>
-        <a href="/">Преса</a>
-        <a href="/">Авторські права</a>
-        <a href="/">Творці</a>
-        <a href="/">Реклама</a>
-        <a href="/">Розробники</a>
-        <a href="/">+YouTube</a>
-        <a href="/">Умови</a>
-        <a href="/">Конфіденційність</a>
-        <a href="/">Політика та безпека</a>
-        <a href="/">Спробувати нові функції</a>
+        <a href="/" class="app-model__link">Інфо</a>
+        <a href="/" class="app-model__link">Преса</a>
+        <a href="/" class="app-model__link">Авторські права</a>
+        <a href="/" class="app-model__link">Творці</a>
+        <a href="/" class="app-model__link">Реклама</a>
+        <a href="/" class="app-model__link">Розробники</a>
+        <a href="/" class="app-model__link">+YouTube</a>
+        <a href="/" class="app-model__link">Умови</a>
+        <a href="/" class="app-model__link">Конфіденційність</a>
+        <a href="/" class="app-model__link">Політика та безпека</a>
+        <a href="/" class="app-model__link">Спробувати нові функції</a>
         <br><br>
         <p>© 2017 YouTube, LLC</p>
     </footer>
 </aside>
 
-<main>
+<main class="content">
     <section class="recommended">
         <header>
-            <h4>Рекомендовано</h4>
+            <h2 class="recommended__name">Рекомендовано</h2>
         </header>
-        <div class="recommended-content">
+        <div>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
                 <article class="video">
                     <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                    <h3 class="video-name">Маленький милый котёнок</h3>
-                    <aside class="video-details">
-                        <a href="/">Funny Cats</a>
-                        <span class="views">9 760  переглядів</span>
-                        <time datetime="2015-02-14">2 роки тому</time>
+                    <h3 class="video__name">Маленький милый котёнок</h3>
+                    <aside class="video__details">
+                        <a  class="video__details__channel-name" href="/">Funny Cats</a>
+                        <span class="video__details__views">9 760  переглядів</span>
+                        <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
                     </aside>
                 </article>
         </div>
@@ -189,100 +192,100 @@
         </button>
     </section>
         <section class="channel">
-            <header>
-                <div>
+            <header class="channel__title">
+                <div class="channel__title_left">
                     <img height="32" width="32"
                          src="https://yt3.ggpht.com/-62eFsC66a_s/AAAAAAAAAAI/AAAAAAAAAAA/S1aw6wY6HsM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
-                    <h4>serial</h4>
-                    <p>Рекомендований канал</p>
+                    <h2 class="channel__title__name">serial</h2>
+                    <p class="channel__title_left__recommended">Рекомендований канал</p>
                 </div>
-                <a href="/">Підписатися 1.1 млн</a>
+                <a href="/" class="channel__title__follow">Підписатися 1.1 млн</a>
             </header>
             <div class="channel-content">
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
             </div>
         </section>
         <section class="channel">
-            <header>
-                <div>
+            <header class="channel__title">
+                <div class="channel__title_left">
                     <img height="32" width="32"
                          src="https://yt3.ggpht.com/-62eFsC66a_s/AAAAAAAAAAI/AAAAAAAAAAA/S1aw6wY6HsM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
-                    <h4>serial</h4>
-                    <p>Рекомендований канал</p>
+                    <h2 class="channel__title__name">serial</h2>
+                    <p class="channel__title_left__recommended">Рекомендований канал</p>
                 </div>
-                <a href="/">Підписатися 1.1 млн</a>
+                <a href="/" class="channel__title__follow">Підписатися 1.1 млн</a>
             </header>
             <div class="channel-content">
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
                     <section class="video">
                         <img src="http:&#x2F;&#x2F;www.readersdigest.ca&#x2F;wp-content&#x2F;uploads&#x2F;2011&#x2F;01&#x2F;4-ways-cheer-up-depressed-cat.jpg" alt="video" width="210px">
-                        <div class="video-details">
-                            <p>Маленький милый котёнок</p>
-                            <a href="/">Funny Cats</a>
-                            <span class="views">9 760  переглядів</span>
-                            <time datetime="2015-02-14">2 роки тому</time>
-                        </div>
+                        <h3 class="video__name">Маленький милый котёнок</h3>
+                        <aside class="video__details">
+                            <a href="/" class="video__details__channel-name">Funny Cats</a>
+                            <span class="video__details__views">9 760  переглядів</span>
+                            <time class="video__details__time" datetime="2015-02-14">2 роки тому</time>
+                        </aside>
                     </section>
             </div>
         </section>

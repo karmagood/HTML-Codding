@@ -1,0 +1,17 @@
+body{
+    margin:0;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+button{
+    border: none;
+}
+
+.material-icons{
+    color: #8b898b;
+    cursor: pointer;
+}
+

@@ -1,0 +1,239 @@
+{
+  "data-model": [
+    {
+      "name": "Головна",
+      "class-name": "home-img"
+    },
+    {
+      "name": "Популярне",
+      "class-name": "popular-img"
+    },
+    {
+      "name": "Історія",
+      "class-name": "history-img"
+    }
+  ],
+  "best-on-youtube": [
+    {
+      "name": "Музика",
+      "class-name": "music-img"
+    },
+    {
+      "name": "Спорт",
+      "class-name": "sport-img"
+    },
+    {
+      "name": "Комп'ютерні ігри",
+      "class-name": "game-img"
+    },
+    {
+      "name": "Фільми",
+      "class-name": "film-img"
+    },
+    {
+      "name": "Новини",
+      "class-name": "news-img"
+    },
+    {
+      "name": "У прямому ефірі",
+      "class-name": "live-streaming-img"
+    },
+    {
+      "name": "Сферичне відео",
+      "class-name": "spherical-video-img"
+    }
+  ],
+  "settings-model": [
+    {
+      "name": "Налаштування",
+      "class-name": "settings-img"
+    },
+    {
+      "name": "Довідка",
+      "class-name": "help-img"
+    },
+    {
+      "name": "Надіслати відгук",
+      "class-name": "response-img"
+    }
+  ],
+  "application-model":[
+    {
+      "name": "Інфо"
+    },
+    {
+      "name": "Преса"
+    },
+    {
+      "name": "Авторські права"
+    },
+    {
+      "name": "Творці"
+    },
+    {
+      "name": "Реклама"
+    },
+    {
+      "name": "Розробники"
+    },
+    {
+      "name": "+YouTube"
+    },
+    {
+      "name": "Умови"
+    },
+    {
+      "name": "Конфіденційність"
+    },
+    {
+      "name": "Політика та безпека"
+    },
+    {
+      "name": "Спробувати нові функції"
+    }
+  ],
+  "recommended": [
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 ",
+      "datetime": "2015-02-14",
+      "time": "2 роки тому"
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 ",
+      "datetime": "2015-02-14",
+      "time": "2 роки тому"
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 ",
+      "datetime": "2015-02-14",
+      "time": "2 роки тому"
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "datetime": "2015-02-14",
+      "views": "9 760 ",
+      "time": "2 роки тому"
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "datetime": "2015-02-14",
+      "views": "9 760 ",
+      "time": "2 роки тому"
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "datetime": "2015-02-14",
+      "views": "9 760 ",
+      "time": "2 роки тому"
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "datetime": "2015-02-14",
+      "views": "9 760 ",
+      "time": "2 роки тому"
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "datetime": "2015-02-14",
+      "views": "9 760 ",
+      "time": "2 роки тому"
+    }
+  ],
+  "channels": [
+    {
+      "channel-name": "serial",
+      "channel-followers": "1.1 млн",
+      "channel-content": [
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        }
+      ]
+    },
+    {
+      "channel-name": "serial",
+      "channel-followers": "1.1 млн",
+      "channel-content": [
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+          "video-name": "Маленький милый котёнок",
+          "channel-name": "Funny Cats",
+          "datetime": "2015-02-14",
+          "views": "9 760 ",
+          "time": "2 роки тому"
+        }
+      ]
+    }
+  ]
+}
