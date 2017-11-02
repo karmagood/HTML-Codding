@@ -111,8 +111,10 @@
 .sideBar {
     position: fixed;
     top: 120px;
+    left: 0px;
     height: 100%;
-    width: 20%;
+    width: 190px;
+    background-color: white;
 }
 
 #Compose{
@@ -132,6 +134,7 @@ ul {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 #menu {
@@ -149,7 +152,31 @@ a {
 
 main {
     position: absolute;
-    top: 150px;
+    top: 120px;
     left: 200px;
     z-index: -1;
+    width: 85%;
 }
+
+.tableHead {
+    background-color: whitesmoke;
+    height: 30px;
+}
+
+.tableHead th{
+    width: 150px;
+    border: lightgrey solid 1px;
+    font-weight: normal;
+}
+
+.emails {
+    background-color: whitesmoke;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.emails tr {
+    border-top: 1px solid lightgrey;
+    height: 35px;
+}
+
