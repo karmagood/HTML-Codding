@@ -179,7 +179,7 @@
                 </a>
             </div>
             <form>
-                <a class="user-profile" href="https://www.facebook.com/korabliovaolya" style="text-decoration: none">
+                <a class="user-profile" href="user_page" style="text-decoration: none">
                     <img class="userpic" height="45px"
                          src="images/user_avatar.jpeg"/>
                 </a>
@@ -198,25 +198,27 @@
             </div>
         </section>
         <section id="facebook-post">
+            {{#posts}}
             <div>
                 <b>
                     <a class="user-profile" href="#">
                         <img class="userpic"
-                             src="images/friend_photo_main_page.jpg"/>
-                        Eugene Eugene
+                             src="{{image-src}}"/>
+                        {{name}}
                     </a>
                 </b>
+                <span>is in <a class="add-info" href="#">{{additional-info}}</a></span>
                 <small>
                     <p>
                         <a href="#">
-                            <time datetime="dd.mm.yyyy">01.10.2017</time>
+                            <time datetime="dd.mm.yyyy">{{post-time}}</time>
                         </a>
                     </p>
                 </small>
                 <p>
-                    Fall is here @ Rosewood Winery
+                    {{description}}
                 </p>
-                <img src="images/eugene_post_pic.jpg"/>
+                <img src="{{file}}"/>
                 <br>
                 <a class="like-com-share" href="#">
                     <i class="fa fa-thumbs-o-up"> Like</i>
@@ -229,120 +231,14 @@
                 </a>
                 <br>
                 <a class="who-liked" href="#">
-                    <i class="fa fa-thumbs-up"> 10 likes</i>
-                </a>
-            </div>
-            <div>
-                <b>
-                    <a class="user-profile" href="#">
-                        <img class="userpic"
-                             src="images/friend_photo_main_page.jpg"/>
-                        Юльця Юльця
-                    </a>
-                </b>
-                <span>is in <a class="add-info" href="#">Przemysl, Poland</a></span>
-                <small>
-                    <p>
-                        <a href="#">
-                            <time datetime="dd.mm.yyyy">01.10.2017</time>
-                        </a>
-                    </p>
-                </small>
-                <br>
-                <img src="images/yultsa_post_pic.jpg"/>
-                <br>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-thumbs-o-up"> Like</i>
-                </a>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-comment-o"> Comment</i>
-                </a>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-send-o"> Share</i>
-                </a>
-                <br>
-                <a class="who-liked" href="#">
-                    <i class="fa fa-thumbs-up"> Kate Kate, Sofiya Sofiya and 24 others</i>
-                </a>
-            </div>
-            <div>
-                <b>
-                    <a class="user-profile" href="#">
-                        <img class="userpic"
-                             src="images/friend_photo_main_page.jpg"/>
-                        Tamila Tamila
-                    </a>
-                </b>
-                <span>with</span>
-                <a class="add-info" href="#">Роман Роман</a>
-                <small>
-                    <p>
-                        <a href="#">
-                            <time datetime="dd.mm.yyyy">01.10.2017</time>
-                        </a>
-                    </p>
-                </small>
-                <p>
-                    Бажаємо всім продуктивного дня!
-                </p>
-                <img src="images/tamila_post_pic.jpg"/>
-                <br>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-thumbs-o-up"> Like</i>
-                </a>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-comment-o"> Comment</i>
-                </a>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-send-o"> Share</i>
-                </a>
-                <br>
-                <a class="who-liked" href="#">
-                    <i class="fa fa-thumbs-up"> Olya Olya and 55 others</i>
-                </a>
-            </div>
-            <div>
-                <b>
-                    <a class="user-profile" href="#">
-                        <img class="userpic"
-                             src="images/friend_photo_main_page.jpg"/>
-                        Oles Oles
-                    </a>
-                </b>
-                <small>
-                    <p>
-                        <a href="#">
-                            <time datetime="dd.mm.yyyy">01.10.2017</time>
-                        </a>
-                    </p>
-                </small>
-                <p>
-                    Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017
-                    Пожертва: 150Є+200грн + внесок Taize 40Євро
-                    Для детальнішої інформації звертайтеся:
-                    Олесь - 0987850314; ca-manch@ua.fm
-                    Наталя (Тернопіль) - 0988458672...
-                    <a class="see-more" href="#">See More</a>
-                </p>
-                <img src="images/oles_post_pic.jpg"/>
-                <br>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-thumbs-o-up"> Like</i>
-                </a>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-comment-o"> Comment</i>
-                </a>
-                <a class="like-com-share" href="#">
-                    <i class="fa fa-send-o"> Share</i>
-                </a>
-                <br>
-                <a class="who-liked" href="#">
-                    <i class="fa fa-thumbs-up"> Катя Катя and 13 others</i>
+                    <i class="fa fa-thumbs-up"> {{who-liked}}</i>
                 </a>
                 <a class="who-liked" href="#">
-                    <i class="fa fa-send"> 7 Shares</i>
+                    <i class="fa fa-send"> {{who-shared}}</i>
                 </a>
             </div>
+            {{/posts}}
+
         </section>
     </main>
     <aside class="ad-feed">
@@ -364,18 +260,20 @@
         <section id="unread-notif">
             <small>
                 <ul>
+                    {{#unread-notifications}}
                     <li>
-                        <a href="#">
-                            <i class="fa fa-question" style="color: #F1C40F;"></i>
-                            1 request from Anna Anna
+                        <a href="{{link}}">
+                            <i class="{{icon-class}}" style="{{icon-style}}"></i>
+                            {{event}}
                         </a>
+                        <time datatype="#">{{event-time}}</time>
                     </li>
+                    {{/unread-notifications}}
                     <li>
                         <a href="#">
                             <i class="fa fa-calendar" style="color: #D14357;"></i>
                             Екслюзивні семінари...
                         </a>
-                        <time datatype="#">on Monday</time>
                     </li>
                     <li>
                         <a href="#">

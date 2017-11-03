@@ -208,7 +208,10 @@
                     <i class="fa fa-thumbs-up"> 45 likes</i>
                 </a>
                 <div class="user-post__comments">
-                    <img src="images/user_avatar.jpeg"/>
+                    <a class="user-profile" href="#">
+                        <img class="userpic"
+                             src="images/user_avatar.jpeg"/>
+                    </a>
                     <form action="#">
                         <input type="text" placeholder="Write a comment..."/>
                     </form>
@@ -242,6 +245,15 @@
                 <a class="who-liked" href="#">
                     <i class="fa fa-thumbs-up"> 10 likes</i>
                 </a>
+                <div class="user-post__comments">
+                    <a class="user-profile" href="#">
+                        <img class="userpic"
+                             src="images/user_avatar.jpeg"/>
+                    </a>
+                    <form action="#">
+                        <input type="text" placeholder="Write a comment..."/>
+                    </form>
+                </div>
             </div>
             <div>
                 <a class="user-profile" href="#">
@@ -271,6 +283,15 @@
                 <a class="who-liked" href="#">
                     <i class="fa fa-thumbs-up"> 10 likes</i>
                 </a>
+                <div class="user-post__comments">
+                    <a class="user-profile" href="#">
+                        <img class="userpic"
+                             src="images/user_avatar.jpeg"/>
+                    </a>
+                    <form action="#">
+                        <input type="text" placeholder="Write a comment..."/>
+                    </form>
+                </div>
             </div>
         </section>
     </section>
@@ -299,7 +320,7 @@
             <h5>CREATE NEW GROUPS</h5>
             <p>Groups make it easier than ever to share with friends, family and teammates.</p>
             <a href="#">
-                <span id="block__button-type">Create Group</span>
+                <span id="block__new-group_button-type">Create Group</span>
             </a>
         </div>
         <div class="ads-block__block">
@@ -313,7 +334,9 @@
             </div>
         </div>
         <div class="ads-block__block">
-            <h5>Suggested Groups <a href="#" class="see-more">See All</a></h5>
+            <h5>Suggested Groups
+                <a href="#" class="see-more">See All</a>
+            </h5>
             <div class="block__group-ads">
                 <a href="#">
                     <div class="block__group-ads_cover"></div>
@@ -367,67 +390,93 @@
             </div>
         </div>
         <div class="ads-block__block">
-            <h5>People You May Know
-                <a href="#" class="see-more">See All</a>
-            </h5>
+            <h5>People You May Know <a href="#" class="see-more">See All</a></h5>
             <div class="block__friend-suggestion">
                 <a class="user-profile" href="#">
                     <img class="userpic"
                          src="images/friend_suggestion_avatar.png"/>
                 </a>
-                <p>
-                    <a class="user-name" href="#">Violetta Violetta</a><br>
-                    <a class="mutual-frs" href="#">Max Max is a mutual friend.</a><br>
-                    <button>
-                        <i class="fa fa-user-plus"></i>
-                        Add Friend
-                    </button>
-                </p>
+                <div>
+                    <p>
+                        <a class="user-name" href="#">Violetta Violetta</a><br>
+                        <a class="mutual-frs" href="#">Max Max is a mutual friend.</a><br>
+                    <form action="#">
+                        <button type="button">
+                            <i class="fa fa-user-plus"></i>
+                            Add Friend
+                        </button>
+                    </form>
+                    </p>
+                </div>
             </div>
             <div class="block__friend-suggestion">
                 <a class="user-profile" href="#">
                     <img class="userpic"
                          src="images/friend_suggestion_avatar.png"/>
                 </a>
-                <p>
-                    <a class="user-name" href="#">Vira Vira</a><br>
-                    <a class="mutual-frs" href="#">Oleg Oleg is a mutual friend.</a><br>
-                    <button>
-                        <i class="fa fa-user-plus"></i>
-                        Add Friend
-                    </button>
-                </p>
+                <div>
+                    <p>
+                        <a class="user-name" href="#">Vira Vira</a><br>
+                        <a class="mutual-frs" href="#">Oleg Oleg is a mutual friend.</a><br>
+                    <form action="#">
+                        <button type="button">
+                            <i class="fa fa-user-plus"></i>
+                            Add Friend
+                        </button>
+                    </form>
+                    </p>
+                </div>
             </div>
             <div class="block__friend-suggestion">
                 <a class="user-profile" href="#">
                     <img class="userpic"
                          src="images/friend_suggestion_avatar.png"/>
                 </a>
-                <p>
-                    <a class="user-name" href="#">Roman Roman</a><br>
-                    <a class="mutual-frs" href="#">5 mutual friends.</a><br>
-                    <button>
-                        <i class="fa fa-user-plus"></i>
-                        Add Friend
-                    </button>
-                </p>
+                <div>
+                    <p>
+                        <a class="user-name" href="#">Roman Roman</a><br>
+                        <a class="mutual-frs" href="#">5 mutual friends.</a><br>
+                    <form action="#">
+                        <button type="button">
+                            <i class="fa fa-user-plus"></i>
+                            Add Friend
+                        </button>
+                    </form>
+                    </p>
+                </div>
             </div>
             <div class="block__friend-suggestion">
                 <a class="user-profile" href="#">
                     <img class="userpic"
                          src="images/friend_suggestion_avatar.png"/>
                 </a>
-                <p>
-                    <a class="user-name" href="#">Mama Tato</a><br>
-                    <a class="mutual-frs" href="#">50 mutual friends.</a><br>
-                    <button>
-                        <i class="fa fa-user-plus"></i>
-                        Add Friend
-                    </button>
-                </p>
+                <div>
+                    <p>
+                        <a class="user-name" href="#">Mama Tato</a><br>
+                        <a class="mutual-frs" href="#">50 mutual friends.</a><br>
+                    <form action="#">
+                        <button type="button">
+                            <i class="fa fa-user-plus"></i>
+                            Add Friend
+                        </button>
+                    </form>
+                    </p>
+                </div>
             </div>
         </div>
-
+        <div class="ads-block__block">
+            <div class="block__pages-ads">
+                <h5>Suggested Pages <a href="#" class="see-more">See All</a></h5>
+                <a href="#">
+                    <div class="block__pages-ads_cover"></div>
+                </a>
+                <a href="#"><h6>PPPPPPP</h6></a>
+                <p>Game Publisher · 1 like</p>
+                <form action="#">
+                    <button type="button">Like Page</button>
+                </form>
+            </div>
+        </div>
     </section>
 </main>
 
