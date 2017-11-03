@@ -138,7 +138,6 @@ h4, #main-section h5 {
     padding: 5px;
 }
 
-
 /*===================================================*/
 
 #main-section__header {
@@ -163,7 +162,7 @@ h4, #main-section h5 {
     border: #dddfe2 solid 1px;
 }
 
-#header__some-settings a{
+#header__some-settings a {
     font-size: 13px;
     font-weight: bold;
     text-align: center;
@@ -241,6 +240,24 @@ h4, #main-section h5 {
     max-height: 100%;
 }
 
+#group-post div.user-post__comments {
+    border: #DDDFE2 solid 1px;
+    border-radius: 3px;
+    padding: 20px 0 20px 0;
+
+}
+
+div.user-post__comments img {
+    /*float: left;*/
+    /*margin: 5px;*/
+}
+
+div.user-post__comments form {
+    position: relative;
+    left: 10px;
+    /*margin-left: 10px;*/
+}
+
 /*===================================================*/
 
 #main-section__ads-block {
@@ -267,7 +284,7 @@ div.ads-block__block p {
     margin: 5px;
 }
 
-#block__button-type {
+#block__new-group_button-type {
     background-color: #365899;
     border-radius: 3px;
     padding: 2px 8px 2px 8px;
@@ -275,11 +292,13 @@ div.ads-block__block p {
     font-size: 13px;
 }
 
-#block__recent-photos, div.block__group-ads_short-group-info h6 {
+/*---------------------------------------------------*/
+
+#block__recent-photos, .ads-block__block h6 {
     margin: 5px;
 }
 
-div.block__group-ads_short-group-info p {
+div.block__group-ads_short-group-info p, div.block__pages-ads p {
     font-size: 12px;
     color: #90949C;
 }
@@ -291,27 +310,7 @@ div.block__group-ads_short-group-info form {
     padding: 10px;
 }
 
-div.block__friend-suggestion .user-profile img {
-    position: absolute;
-    left: 10px;
-    margin: 3px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-
-div.block__friend-suggestion {
-    margin: 5px;
-}
-
-div.block__friend-suggestion p {
-    position: relative;
-    left: 65px;
-    top: 5px;
-    font-size: 13px;
-}
-
-#block__recent-photos img{
+#block__recent-photos img {
     width: 80px;
 }
 
@@ -328,10 +327,47 @@ div.block__group-ads_cover {
     height: 100px;
 }
 
-/*div.block__group-ads_short-group-info {*/
-    /*border: 1px solid #DDDFE2;*/
-    /*border-radius: 3px;*/
-/*}*/
+/*---------------------------------------------------*/
+
+div.block__friend-suggestion {
+    margin: 15px 5px 15px 5px;
+    padding: 0 2px 0 2px;
+}
+
+div.block__friend-suggestion img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin: 5px 10px auto auto;
+}
+
+div.block__friend-suggestion a.user-name {
+    font-size: 14px;
+    color: #365899;
+    font-weight: bold;
+}
+
+div.block__friend-suggestion a.mutual-frs {
+    font-size: 12px;
+    color: #90949c;
+}
+
+div.block__friend-suggestion div * {
+    margin: 0;
+}
+
+/*---------------------------------------------------*/
+
+div.block__pages-ads_cover {
+    background-image: url("../images/suggested_page_cover.jpg");
+    background-size: cover;
+    height: 150px;
+}
+
+div.block__pages-ads {
+    margin: 5px;
+}
 
 /*===================================================*/
 /*===================================================*/
@@ -426,10 +462,6 @@ div.block__group-ads_cover {
 
 /*===================================================*/
 
-
-
-
-
 img.userpic {
     border-radius: 50%;
 }
@@ -441,6 +473,7 @@ ul {
 
 #post-field__group-post .userpic, #block__member-list img {
     height: 50px;
+    width: 50px;
 }
 
 ::-webkit-scrollbar {

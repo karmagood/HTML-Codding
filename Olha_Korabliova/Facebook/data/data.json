@@ -1,0 +1,391 @@
+{
+  "posts": [
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Eugene Eugene",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/eugene_post_pic.jpg",
+      "who-liked": "10 likes",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Юльця Юльця",
+      "additional-info": "is in Przemysl, Poland",
+      "post-time": "01.10.2017",
+      "description": null,
+      "file": "images/yultsa_post_pic.jpg",
+      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Tamila Tamila",
+      "additional-info": "with Роман Роман",
+      "post-time": "01.10.2017",
+      "description": "Бажаємо всім продуктивного дня!",
+      "file": "images/tamila_post_pic.jpg",
+      "who-liked": "Olya Olya and 55 others",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Oles Oles",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
+      "file": "images/oles_post_pic.jpg",
+      "who-liked": "Катя Катя and 13 others",
+      "who-shared": "7 Shares"
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Eugene Eugene",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/eugene_post_pic.jpg",
+      "who-liked": "10 likes",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Юльця Юльця",
+      "additional-info": "is in Przemysl, Poland",
+      "post-time": "01.10.2017",
+      "description": null,
+      "file": "images/yultsa_post_pic.jpg",
+      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Tamila Tamila",
+      "additional-info": "with Роман Роман",
+      "post-time": "01.10.2017",
+      "description": "Бажаємо всім продуктивного дня!",
+      "file": "images/tamila_post_pic.jpg",
+      "who-liked": "Olya Olya and 55 others",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Oles Oles",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
+      "file": "images/oles_post_pic.jpg",
+      "who-liked": "Катя Катя and 13 others",
+      "who-shared": "7 Shares"
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Eugene Eugene",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/eugene_post_pic.jpg",
+      "who-liked": "10 likes",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Юльця Юльця",
+      "additional-info": "is in Przemysl, Poland",
+      "post-time": "01.10.2017",
+      "description": null,
+      "file": "images/yultsa_post_pic.jpg",
+      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Tamila Tamila",
+      "additional-info": "with Роман Роман",
+      "post-time": "01.10.2017",
+      "description": "Бажаємо всім продуктивного дня!",
+      "file": "images/tamila_post_pic.jpg",
+      "who-liked": "Olya Olya and 55 others",
+      "who-shared": null
+    },
+    {
+      "image-src": "/images/friend_photo_main_page",
+      "name": "Oles Oles",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
+      "file": "images/oles_post_pic.jpg",
+      "who-liked": "Катя Катя and 13 others",
+      "who-shared": "7 Shares"
+    }
+  ],
+  "friends-suggestions":[
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Violetta Violetta",
+      "user-link": "#",
+      "mutual-friends": "Max Max is a mutual friend."
+    },
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Vira Vira",
+      "user-link": "#",
+      "mutual-friends": "Oleg Oleg is a mutual friend."
+    },
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Roman Roman",
+      "user-link": "#",
+      "mutual-friends": "5 mutual friends."
+    },
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Mama Tato",
+      "user-link": "#",
+      "mutual-friends": "50 mutual friends."
+    }
+  ],
+  "unread-notifications": [
+    {
+      "event": "1 request from Anna Anna",
+      "link": "#",
+      "event-time": null,
+      "icon-class": "fa fa-question",
+      "icon-style": "color: #F1C40F;"
+    },
+    {
+      "event": "Екслюзивні семінари...",
+      "link": "#",
+      "event-time": "on Monday",
+      "icon-class": "fa fa-calendar",
+      "icon-style": "color: #D14357;"
+    },
+    {
+      "event": "Anna Anna's birthday",
+      "link": "#",
+      "event-time": "is today",
+      "icon-class": "fa fa-gift",
+      "icon-style": "color: #D14357;"
+    }
+  ],
+  "shortcuts": [
+    {
+      "link": "#",
+      "icon-class": "fa fa-lightbulb-o",
+      "icon-style": "color: #FDE01F;",
+      "name": "CS@UCU"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-star-o",
+      "icon-style": "color: #fde01f;",
+      "name": "Волонтери"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-bus",
+      "icon-style": "color: #34495E;",
+      "name": "Мандрівки"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-hand-rock-o",
+      "icon-style": "color: #A96930;",
+      "name": "ТРЕНІНГ в УКУ"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-book",
+      "icon-style": "color: #990099;",
+      "name": "Educational Project Show"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-home",
+      "icon-style": "color: #ff9999;",
+      "name": "Збірка на УКУ"
+    }
+  ],
+  "explore": [
+    {
+      "link": "#",
+      "icon-class": "fa fa-calendar",
+      "icon-style": "color: #D14357;",
+      "name": "CS@UCUEvents"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-bookmark",
+      "icon-style": "color: #D14357;",
+      "name": "Pages"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-group",
+      "icon-style": "color: #5D92FF;",
+      "name": "Groups"
+    },
+    {
+      "link": "#",
+      "icon-class": "fa fa-archive",
+      "icon-style": "color: #A96930;",
+      "name": "Saved"
+    }
+  ],
+  "user-games": [
+    {
+      "game-link": "#",
+      "img-src": "images/agario_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/jetpack_game.jpg"
+    }
+  ],
+  "games-suggestions": [
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    }
+  ],
+  "online-friends":[
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria"
+    }
+  ],
+  "more-friends": [
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan"
+    },{
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan"
+    },{
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan"
+    },{
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan"
+    },{
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan"
+    }
+  ]
+}
