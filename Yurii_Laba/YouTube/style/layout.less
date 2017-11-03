@@ -1,28 +1,34 @@
-.layout{
+.layout {
   margin: 0;
-}
+  background: #ccc;
 
-.layout__header{
-  background-color: red;
-  height: 30px;
-  position: fixed;
-  width: 100%;
-  top:0;
-}
+  &_debug-mode {
+    background: blueviolet;
 
-.layout__sidebar{
-  position: fixed;
-  width: 150px;
-  top: 30px;
-  bottom: 0;
-  overflow: auto;
+    .layout__header { background-color: red; }
+    .layout__sidebar { background-color: #1A2947; }
+    .layout__main { background-color: green; }
+  }
 
-  background-color: #1A2947;
-}
+  &__header {
+    height: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
 
-.layout__main{
-  margin-top: 30px;
-  margin-left: 150px;
-  background-color: green;
+  &__sidebar {
+    position: fixed;
+    width: 150px;
+    top: 30px;
+    bottom: 0;
+    overflow: auto;
+  }
+
+  &__main {
+    margin-top: 30px;
+    margin-left: 150px;
+  }
+
 }
 
