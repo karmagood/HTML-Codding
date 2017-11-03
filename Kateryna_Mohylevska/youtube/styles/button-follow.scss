@@ -1,0 +1,15 @@
+.button-follow{
+  float: right;
+  padding: 10px 16px;
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  border-radius: 2px;
+
+  &_darker{
+    color: rgba(255, 255, 255, 0.8);
+  }
+}

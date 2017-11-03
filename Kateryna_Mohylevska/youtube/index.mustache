@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/guide.css">
     <link rel="stylesheet" href="styles/content.css">
     <link rel="stylesheet" href="styles/guide__images.css">
+    <link rel="stylesheet" href="styles/button-follow.css">
 </head>
 <body>
 <header class="main-header">
@@ -85,7 +86,7 @@
             {{#recommended}}
                 <article class="video">
                     <img src="{{url}}" alt="video" width="210px">
-                    <h3 class="video__name">{{video-name}}</h3>
+                    <h3 class="video__name"><a class="video__name_link" href="video-page">{{video-name}}</a></h3>
                     <aside class="video__details">
                         <a  class="video__details__channel-name" href="/">{{channel-name}}</a>
                         <span class="video__details__views">{{views}} переглядів</span>
@@ -107,7 +108,7 @@
                     <h2 class="channel__title__name">{{channel-name}}</h2>
                     <p class="channel__title_left__recommended">Рекомендований канал</p>
                 </div>
-                <a href="/" class="channel__title__follow">Підписатися {{channel-followers}}</a>
+                <button class="button-follow">Підписатися <span class="button-follow_darker">{{channel-followers}}</span> </button>
             </header>
             <div class="channel-content">
                 {{#channel-content}}
@@ -125,7 +126,5 @@
         </section>
     {{/channels}}
 </main>
-
-
 </body>
 </html>
