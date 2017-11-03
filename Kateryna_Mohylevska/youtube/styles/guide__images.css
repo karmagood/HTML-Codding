@@ -1,0 +1,59 @@
+
+.home-img::before {
+    content: url("../images/icons/home.svg");
+    opacity: 0.45;
+}
+
+.popular-img::before {
+    content: url("../images/icons/popular.svg");
+    opacity: 0.45;
+}
+
+.history-img::before {
+    content: url("../images/icons/history.svg");
+    opacity: 0.45;
+}
+
+.help-img::before {
+    content: url("../images/icons/help.svg");
+    opacity: 0.45;
+}
+
+.response-img::before {
+    content: url("../images/icons/response.svg");
+    opacity: 0.45;
+}
+
+.settings-img::before {
+    content: url("../images/icons/settings.svg");
+    opacity: 0.45;
+}
+
+.music-img::before {
+    background-image: url("//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg");
+}
+
+.sport-img::before {
+    background-image: url("//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg");
+}
+
+.film-img::before {
+    background-image: url("//i.ytimg.com/i/lgRkhTL3_hImCAmdLfDE4g/1.jpg");
+}
+
+.game-img::before {
+    background-image: url("//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg");
+}
+
+.news-img::before {
+    background-image: url("//i.ytimg.com/i/YfdidRxbB8Qhf0Nx7ioOYw/1.jpg");
+}
+
+.spherical-video-img::before {
+    background-image: url("//i.ytimg.com/i/zuqhhs6NWbgTzMuM09WKDQ/1.jpg");
+}
+
+.live-streaming-img::before {
+    background-image: url("//i.ytimg.com/i/4R8DWoMoI7CAwX8_LjQHig/1.jpg");
+}
+

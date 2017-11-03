@@ -1,31 +1,21 @@
-const {swap, getRandomArray, getRandomNumber} = require("./utility");
+const {getRandomArray} = require("./utility");
+const {inc, compose, defaultTo} = require("ramda");
 
+const incrementArrayByIndex = (arr, index) => {
+    arr[index] = compose (inc, defaultTo(0))   (arr[index]) ;
+    return arr;
+};
 
-const countingSort = (arr) => {
-    var sortedArray = arr.slice();
-    var mx = arr[0];
-    for (let i = 0; i < sortedArray.length; ++i) mx = Math.max(mx, sortedArray[i]);
+const extractArray = (accum, el, index) => { //TODO: rename function;
+    accum = el > 0 ? accum.concat( new Array( el ).fill(index)) : accum;
+    return accum;
+};
 
-    var countingArray = [];
-    for (let i = 0; i <= mx; ++i) countingArray.push(0);
+const countingSort = (arr) => arr
+    .reduce( incrementArrayByIndex, [])
+    .reduce ( extractArray, []);
 
+let q = getRandomArray(10, 0, 4);
 
-    for (let i = 0; i < sortedArray.length; ++i) countingArray[sortedArray[i]]++;
-
-    var innerIndex = 0;
-    for (let i = 0; i < countingArray.length; ++i) {
-        while (countingArray[i]) {
-            sortedArray[innerIndex] = i;
-            countingArray[i]--;
-            innerIndex++;
-        }
-
-    }
-    return sortedArray;
-
-}
-
-
-var q = getRandomArray(5);
 console.log(q);
-console.log(countingSort(q));
+console.log(countingSort(q));;

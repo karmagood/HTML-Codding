@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    font-family: "Roboto", sans-serif;
+}
+a{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(17,17,17);
+}
+button{
+    border: none;
+}
+
+.material-icons{
+    color: #8b898b;
+    cursor: pointer;
+}
+
+.main{
+    margin: 0 auto;
+    width: 1280px;
+    margin-top: 80px;
+}
