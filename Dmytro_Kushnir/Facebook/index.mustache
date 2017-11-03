@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
 
-    <link href="landing_facebook.css" rel="stylesheet">
+    <link href="styles/landing_facebook.css" rel="stylesheet">
+
     <title>facebook</title>
 </head>
 <body>
@@ -14,8 +15,7 @@
 
 -->
 <header class="fb-header">
-
-
+    <article class="blah"></article>
     <form class="search_pannel">
         <input type="search" placeholder="Пошук">
     </form>
@@ -67,38 +67,44 @@
 
 
             {{#posts}}
-                <article class="some_post pannel">
-
-                        <p>{{publication_author_data.author_name}}</p>
-
+                {{#isCommercial}}
+                <article class="commercial pannel">
+                        {{test_name}}
+                    {{#father}}
+                        <p>{{son1}}</p>
+                        <p>{{son2}}</p>
+                    {{/father}}
                 </article>
+                {{/isCommercial}}
+
+                {{#isRegularPost}}
+                    <article class="some_post pannel">
+                        {{test_name}}
+                    </article>
+                {{/isRegularPost}}
             {{/posts}}
+<!-- TODO 1) post 2) post+shared 3)Commercial 4) Advise +++ UserPublication \ PublicPagePublication-->
 
-
-            <! --
-
-            <article class="some_post pannel">
-                <small class="some_post_publication_source">
+            <article class="feed-post pannel">
+                <small class="feed-post__publication_source">
                     <!-- TODO  place info block, can be customised-->
-
                     Рекомендуемая публикация
                 </small>
 
-                <header class="post_head_metainfo">
+                <header class="feed-post__header-metainfo">
 
+                    <img src=""
+                    class="feed-post__header-metainfo__author_avatar" alt="author photo">
 
-                    <img src="https://scontent.flwo1-1.fna.fbcdn.net/v/t1.0-1/p80x80/15873207_10154844319504286_1108420984561784312_n.png?oh=000561bf6fa4c9aca6370bdec5f0cbb7&amp;oe=5A3FA42C"
-                    class="author_avatar" alt="author photo">
-
-                    <a href="#" class="some_post_author_name">
+                    <a href="#" class="feed-post__header-metainfo__author_name">
                         (AUTHOR NAME)
                         Fiverr
                     </a>
-                    <a href="#" class="publication_source" role="small">Реклама</a>
+                    <a href="#" class="feed-post__header-metainfo__publication_source" role="small">Реклама</a>
                     <!-- TODO add small icons-->
-                    <img class="icon_of_access" src="" alt="">
+                    <img class="feed-post__header-metainfo__icon_of_access" src="" alt="">
 
-                    <button class="like_page"> *THUMBUP* Нравится Страница </button>
+                    <button class="feed-post__header-metainfo__like_page"> *THUMBUP* Нравится Страница </button>
 
                         <details>
                             <summary> ... </summary>
@@ -109,17 +115,11 @@
                 </header>
 
 
-                <article class="subpublication">
+                <article class="feed-post content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolor, fugit illum inventore labore omnis qui suscipit velit veritatis?
+                    Assumenda, impedit.
                 </article>
-
-
-                Warm ways to show cold facts
-                Показать перевод
-
-                Dress up your data with infographic
-                Join millions who use Fiverr to get things done for their business!
-                Заказать
-                FIVERR.COM
 
 
                 <footer class="some_post_statistics">
@@ -168,6 +168,7 @@
                 </section>
 
             </article>
+
 
         </section>
 
