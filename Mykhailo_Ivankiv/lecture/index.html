@@ -21,37 +21,40 @@
             margin: 10px;
             padding: 10px;
             background-color: #e74c3c;
-
             float: left;
-            width: 300px;
-
+            width: 200px;
         }
 
-        img  {
+        #myEl {
+            height: 100px;
+            width: 300px;
+            background: blue;
+            display: block;
+        }
 
+        #myEl,
+        img {
+            max-width: 100%;
+            width: 400px;
             display: block;
-            /*margin: auto;*/
             float: left;
-            margin: 10px;
-            display: block;
-            max-width: 100px;
+            margin:10px ;
+        }
+
+        img:nth-child(2) {
+            /*clear: both;*/
         }
 
     </style>
 </head>
 <body>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam asperiores aspernatur at autem corporis
-        <img src="../my-photo.jpg" alt="">
-        <!--<img src="../../my-second-photo.jpg" alt="">-->
-        deleniti dolorum fuga labore maxime minima, nemo, reprehenderit suscipit,
-    </p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    <span id="myEl"></span>
+    Aspernatur autem dignissimos et fugit inventore molestiae
+    molestias mollitia natus nesciunt velit. Assumenda beatae eligendi impedit itaque voluptatem? Consequuntur id magnam
+    omnis?</p>
 
-    <p>
-        veniam? Adipisci, aliquid assumenda atque deserunt dicta doloremque eveniet expedita necessitatibus odit provident recusandae sequi sint veritatis. Ducimus eos, esse laborum nam officia provident. Aliquid doloribus, ducimus earum minima quia quos. Atque ducimus excepturi nisi sed sint veritatis! Cum cumque dolor hic ipsam, quas quidem reprehenderit soluta voluptas. Deleniti eligendi numquam quasi tenetur. Ad autem cumque facilis inventore laudantium nihil omnis quia ratione. Debitis delectus dolorem, itaque labore molestiae necessitatibus quas quasi repellendus rerum sapiente sit, voluptatem.
-    </p>
-    <p>
-        veniam? Adipisci, aliquid assumenda atque deserunt dicta doloremque eveniet expedita necessitatibus odit provident recusandae sequi sint veritatis. Ducimus eos, esse laborum nam officia provident. Aliquid doloribus, ducimus earum minima quia quos. Atque ducimus excepturi nisi sed sint veritatis! Cum cumque dolor hic ipsam, quas quidem reprehenderit soluta voluptas. Deleniti eligendi numquam quasi tenetur. Ad autem cumque facilis inventore laudantium nihil omnis quia ratione. Debitis delectus dolorem, itaque labore molestiae necessitatibus quas quasi repellendus rerum sapiente sit, voluptatem.
-    </p>
+<p>Blanditiis deleniti dolore expedita !</p>
+<p>Aliquam consectetur illo numquam quos ut? </p>
 </body>
 </html>

@@ -1,0 +1,254 @@
+@import "mixins";
+
+$palegray:#1b1b1b;
+$link_border: 2px solid $palegray;
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: $palegray;
+    line-height: 1.3;
+}
+
+.body-link {
+      color: $palegray;
+      border-bottom: $link_border;
+      text-decoration: none;
+  &:link {
+      color: $palegray;
+      border-bottom: $link_border;}
+  &:hover {
+       color: $palegray;
+       border-bottom:none;}
+  &:active {
+       color: $palegray;
+       border-bottom: $link_border;}
+  &:visited {
+      color: $palegray;
+      border-bottom: $link_border;}
+}
+
+header{
+   margin-left: 8%;
+   margin-top: 4.1%;
+   display: grid;
+   grid-template-columns: 18% 45% 12% 15%;
+   grid-template-rows: 18% 40% 10% 30%;
+   grid-column-gap: 2%;
+   grid-row-gap: 2%;
+   wrap-option: nowrap;
+}
+
+.header__description-h1__link {
+   color: $palegray;
+   text-decoration: none;
+   font-weight: normal;
+   font-size: 30px;
+   &:link {
+       color: $palegray;
+       text-decoration: none;
+   }
+   &:hover {
+        @include style_of_head_link(none);
+   }
+   &:active {
+        @include style_of_head_link(none);
+   }
+   &:visited {
+        @include style_of_head_link(none);
+   }
+}
+
+.header__description-h2 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.tasting-room-descr__header, .tasting-room-descr__address {
+  font-size: 20px;
+}
+
+.site-navigation-block {
+  list-style-type: none;
+  margin-left: 8%;
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 18% 25% 32% 15%;  /*5 addit %*/
+  grid-template-rows: 18% 40% 10% 30%;
+  grid-column-gap: 2%;
+  grid-row-gap: 4%;
+  margin-bottom: 40px;
+}
+
+.site-navigation-left, .navig-center-list, .site-navigation-block {
+    font-size: 20px;
+}
+
+
+
+.navig-center-list__ship-intern-note {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.header-nav-2 {
+  padding: 0;
+  margin: 0;
+}
+
+header-nav-2__distributors{
+    padding: 0;
+    margin:  0;
+}
+
+.header-nav-2__options{
+    margin-top: 30px;
+}
+
+.restaurant-photos{
+    margin-bottom: 3%;
+}
+
+.restaurant-photos__pic1{
+  margin-bottom: -25%;
+  margin-top: 3%;
+  margin-left: 42%;
+  &:hover{
+    z-index: 1;
+  }
+}
+
+.restaurant-photos__pic2{
+  margin-left: 5%;
+}
+
+.story-and-logo {
+  display: grid;
+  grid-template-columns: 39% 40%;
+  grid-column-gap: 4%;
+  margin-left: 27%;
+  margin-bottom: 10%;
+}
+
+.story-and-logo__story {
+  font-size: 19px;
+  line-height: 1.37;
+}
+
+.how-wine-is-made{
+  display: grid;
+  grid-template-columns: 25% 50%;
+  grid-column-gap: 5%;
+  margin-left: 12%;
+}
+
+.how-wine-is-made__note{
+  font-size: 19px;
+  line-height: 1.37;
+  margin-top: 2%;
+}
+.tasting-room {
+  display: grid;
+  grid-template-columns: 30% 28% 20%;
+  grid-template-rows: 30% 30%;
+  grid-column-gap: 5%;
+  margin-left: 38.5%;
+  margin-bottom: 1%;
+  margin-top: 0.8%;
+}
+
+.header-and-lunch-menu__header {
+    line-height: 1.1;
+    font-weight: normal;
+    font-size: 36px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.header-and-lunch-menu__lunch-menu {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  font-size: 19px;
+  line-height: 1.37;
+}
+
+.aside-note{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  font-size: 19px;
+  line-height: 1.37;
+}
+
+.for-hire {
+  font-size: 19px;
+  line-height: 1.37;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.field-images{
+    margin-left: 5%;
+}
+
+.field-images__field1{
+    margin-bottom: -27%;
+    margin-right: -10%;
+    &:hover{
+      z-index: 1;
+    }
+}
+
+.field-images__field2 {
+    margin-left: 38%;
+    z-index: 1;
+
+}
+
+.bottle-img {
+    margin-left: 17%;
+    margin-top: -7%;
+    z-index: -1;
+    margin-bottom: -50%;
+}
+
+.current-releases {
+    display: grid;
+    grid-template-columns: 40% 36%;
+    grid-template-rows: 35% 35% 35% 35%;
+    grid-column-gap: 4%;
+    grid-row-gap: 20%;
+    margin-left: 40%;
+    font-size: 19px;
+  line-height: 1.37;
+}
+
+.current-releases__header{
+    font-weight: normal;
+    font-size: 26px;
+    align-self: end;
+}
+
+.current-releases__note{
+  font-weight: normal;
+  font-size: 19px;
+  align-self: start;
+}
+
+.current-releases__wine_wine-name {
+  margin-left: 0;
+  width: 100%;
+  display: inline-block;
+  align-self: center;
+}
+
+
+.price {
+  margin-bottom: 8%;
+}

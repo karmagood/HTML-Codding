@@ -3,125 +3,125 @@
 <head>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="style/youtube.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/user-menu.css">
+    <link rel="stylesheet" href="style/main-page.css">
+    <link rel="stylesheet" href="style/video-section.css">
+
+
     <title>Title</title>
 </head>
 <body>
 
 
-<section class="top-nav">
-    <nav>
-        <ul>
-            <li>
-                <button class="style-scope ytd-masthead">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li><img src="http://i1.wp.com/shoryuken.com/wp-content/uploads/2015/05/youtube-logo-622-crop.png"
-                     width="140">
-            </li>
-            <li>
-                <form class="search-wrapper"><label>
-                    <input type="text" size="90">
-                </label>
+<header class="header-nav">
+    <form class="google-profile" action="#">
+        <button class="upload">Upload video</button>
+        <button class="youtube-apps">Open youtube applications</button>
+        <button class="settings">Open account settings</button>
+        <button class="sign-in">Sign in</button>
+    </form>
 
-                    <button>
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                </form>
-            </li>
-            <li>
-                <button class="natasha-pisya">
-                    <i class="fa fa-upload" aria-hidden="true"></i>
-                </button>
-            </li>
+    <button class="hamburger-menu">
+        Toogle menu
+    </button>
 
-            <li>
-                <button class="tool-button">
-                    <i class="fa fa-btc" aria-hidden="true"></i>
-                </button>
-            </li>
-            <li>
-                <button class="tool-button">
-                    <i class="fa fa-bell" aria-hidden="true"></i>
-                </button>
-            </li>
+    <img class="header-logo" src="youtube-logo.jpg">
+
+    <form class="search-wrapper">
+        <label>
+            <input type="search">
+        </label>
+
+        <button>Search</button>
+    </form>
 
 
-            <li>
-                <button class="tool-button">
-                    <i class="fa fa-circle" aria-hidden="true"></i>
-                </button>
-            </li>
-        </ul>
+</header>
+
+<aside class="user-nav-menu">
+    <nav class="channel-nav">
+        <a href="#">Головна</a>
+        <a href="#">В тренді</a>
+        <a href="#">Підписки</a>
     </nav>
-</section>
 
-<section class="side-nav">
-    <nav>
-        <section>
-            <div>
-                <i class="fa fa-home" aria-hidden="true"></i>
-                <a href="#">Головна</a>
-            </div>
-            <div>
-                <i class="fa fa-fire" aria-hidden="true"></i>
-                <a href="#">В тренді</a>
-            </div>
-            <div>
-                <i class="fa fa-play" aria-hidden="true"></i>
-                <a href="#">Підписки</a>
-            </div>
-        </section>
+    <nav class="channel-nav">
         <h3>Бібліотека</h3>
-        <section>
-            <div>
-                <i class="fa fa-history" aria-hidden="true"></i>
-                <a href="#">Історія</a>
-            </div>
+        <a href="#">Історія</a>
 
-            <div>
-                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                <a href="#">Дивитись пізніше</a>
-            </div>
+        <a href="#">Дивитись пізніше</a>
 
-            <div>
-                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                <a href="#">Вподобані</a>
-            </div>
-        </section>
-        <section>
-            <h3>Підписки</h3>
-            <ul>
-                <li><a href="#">Subscription1</a></li>
-                <li><a href="#">Subscription2</a></li>
-                <li><a href="#">Subscription3</a></li>
-            </ul>
-
-        </section>
-
+        <a href="#">Вподобані</a>
+    </nav>
+    <nav class="subscriptions">
+        <h3>Підписки</h3>
+        <a href="#">Subscription1</a>
+        <a href="#">Subscription2</a>
+        <a href="#">Subscription3</a>
 
     </nav>
-</section>
-<section class="main-page">
-    <h3>Рекомендовані</h3>
-    <section class="main-recommended">
-        <div class="video">
-            <iframe width="260" height="175" src="https://www.youtube.com/embed/R7-2f-utx_0" frameborder="0"
-                    allowfullscreen></iframe>
-        </div>
+</aside>
+<main class="main-page">
 
+    <section class="video-section">
+        <h2>Рекомендовані</h2>
+        <article class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <h3>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</h3>
+            <aside>
+                <address>
+                    <a href="/">Drop G</a>
+                </address>
+                <span class="views">1.5M views</span>
+                <time>3 months ago</time>
+            </aside>
+        </article>
+
+        <article class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <h3>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</h3>
+            <aside>
+                <address>
+                    <a href="/">Drop G</a>
+                </address>
+                <span class="views">1.5M views</span>
+                <time>3 months ago</time>
+            </aside>
+        </article>
+
+        <article class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <h3>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</h3>
+            <aside>
+                <address>
+                    <a href="/">Drop G</a>
+                </address>
+                <span class="views">1.5M views</span>
+                <time>3 months ago</time>
+            </aside>
+        </article>
+
+        <article class="video">
+            <img src="https://img.youtube.com/vi/1eTj_TGJMvw/0.jpg"
+                 alt="video">
+            <h3>Summer Special Amazing Mix 2017 - Best Of Deep House Sessions Music 2017</h3>
+            <aside>
+                <address>
+                    <a href="/">Drop G</a>
+                </address>
+                <span class="views">1.5M views</span>
+                <time>3 months ago</time>
+            </aside>
+        </article>
     </section>
 
-    <h3>Подивитись ще раз</h3>
-    <section class="main-watch-again">
-        <div class="video">
-            <iframe width="260" height=175" src="https://www.youtube.com/embed/1eTj_TGJMvw" frameborder="0"
-                    allowfullscreen></iframe>
-        </div>
 
-    </section>
-</section>
+</main>
 
 
 </body>

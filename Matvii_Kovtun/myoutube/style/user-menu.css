@@ -1,0 +1,38 @@
+
+
+
+.user-nav-menu .fa {
+    color: red;
+    margin-left: 5px;
+}
+
+
+.user-nav-menu {
+    overflow: auto;
+    width: 225px;
+    background-color: #f1f1f1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+}
+
+
+.channel-nav a:hover {
+    background-color: grey;
+}
+
+.channel-nav a {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.subscriptions a {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>YouTube</title>
-    <link rel="stylesheet" href="youtube.css">
+    <link rel="stylesheet" href="style/youtube.css">
 </head>
 <body>
 
@@ -157,73 +157,42 @@
 
 <main>
 
+    {{#channel_h}}
+        <section class="channel_header">
 
-    <section class="channel_header">
-            <section style="margin-left: 110px" id="left_part_of_channel_header">
+            <section id="left_part_of_channel_header">
                 <img class="channel_image"
-                     src="http://www.allthingsloud.com/wp-content/uploads/2017/09/enter_shikari_the_spark.jpg">
-                <span>Enter Shikari</span>
+                     src={{channel_img}}>
+                <span>{{channel_name}}</span>
                 <p style="margin-left:10px">Рекомендований канал</p>
             </section>
 
             <section id="right_part_of_channel_header">
-                <button>Підписатися 145тис.</button>
+                <button>Підписатися {{number_of_subscribers}}</button>
+                <img style="margin-left: 20px" class="icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/52944-200.png">
             </section>
-    </section>
+        </section>
 
 
-    <section class="channel">
-        {{#content}}
-            <article class="video">
-                <img class="content_video"
-                     src="{{video_url}}">
-                <section>
-                    <h4>{{video_name}}</h4>
-                    <p>{{channel_name}}</p>
-                    <p>{{views}}</p>
-                    <p>{{data_of_published}}</p>
-                </section>
-            </article>
-        {{/content}}
+        <section class="channel">
+            {{#content}}
+                <article class="video">
+                    <img class="content_video"
+                         src="{{video_url}}">
+                    <section>
+                        <h4>{{video_name}}</h4>
+                        <p>{{channel_name}}</p>
+                        <p>{{views}}</p>
+                        <p>{{data_of_published}}</p>
+                    </section>
+                </article>
+
+            {{/content}}
+
+        </section>
 
 
-
-    </section>
-
-    <section class="channel_header">
-
-            <section style="margin-left: 110px" id="left_part_of_channel_header">
-                <img class="channel_image"
-                     src="http://www.allthingsloud.com/wp-content/uploads/2017/09/enter_shikari_the_spark.jpg">
-                <span>Enter Shikari</span>
-                <p style="margin-left:10px">Рекомендований канал</p>
-            </section>
-
-            <section id="right_part_of_channel_header">
-                <button>Підписатися 145тис.</button>
-            </section>
-
-    </section>
-
-
-    <section class="channel">
-        {{#content}}
-            <article class="video">
-                <img class="content_video"
-                     src="{{video_url}}">
-                <section>
-                    <h4>{{video_name}}</h4>
-                    <p>{{channel_name}}</p>
-                    <p>{{views}}</p>
-                    <p>{{data_of_published}}</p>
-                </section>
-            </article>
-        {{/content}}
-
-
-
-    </section>
-
+    {{/channel_h}}
 
 </main>
 

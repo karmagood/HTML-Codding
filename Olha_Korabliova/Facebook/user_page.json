@@ -1,0 +1,114 @@
+{
+  "posts": [
+    {
+      "user-link": "#",
+      "user-avatar": "images/user_avatar.jpeg",
+      "user-name": "Olya Korabliova",
+      "post-time": "21.10.2017",
+      "post-file": "images/view_village.jpg",
+      "post-description": "Fall is here @ Rosewood Winery",
+      "additional-post-info": null,
+      "likes": "45 likes",
+      "shares": "2 shares",
+      "comments": null
+    },
+    {
+      "user-link": "#",
+      "user-avatar": "images/user_avatar.jpeg",
+      "user-name": "Olya Korabliova",
+      "post-time": "1.10.2017",
+      "post-file": "images/view_village.jpg",
+      "post-description": "Fall is here @ Rosewood Winery",
+      "additional-post-info": null,
+      "likes": "10 likes",
+      "shares": null,
+      "comments": null
+    }
+  ],
+  "friends-block": [
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    },
+    {
+      "friend-link": "#",
+      "friend-avatar": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Mike Mike"
+    }
+  ],
+  "user-photos-block": [
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "photo": "images/featured_photo.jpg"
+    }
+
+  ]
+}

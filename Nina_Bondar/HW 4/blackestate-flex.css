@@ -9,16 +9,9 @@ body {
     color: black;
 }
 
-
 .main-wrapper a:hover{
     text-decoration: none;
     border-bottom: 2px solid white;
-    color: black;
-}
-
-.main-wrapper a:visited {
-    text-decoration: none;
-    border-bottom: 2px solid black;
     color: black;
 }
 
@@ -28,29 +21,36 @@ body {
     color: black;
 }
 
-h1 a:link{
+.main-wrapper a:visited {
     text-decoration: none;
-    border-bottom:solid white;
+    border-bottom: 2px solid black;
     color: black;
 }
 
-h1 a:hover{
+#h1_link:link{
     text-decoration: none;
-    border-bottom:solid white;
+    border-bottom: 1px solid white;
     color: black;
 }
 
-h1 a:visited{
+#h1_link:hover{
     text-decoration: none;
-    border-bottom:solid white;
+    border-bottom: 1px solid white;
     color: black;
 }
 
-h1 a:active {
+#h1_link:active {
     text-decoration: none;
-    border-bottom: solid white;
+    border-bottom: 1px solid white;
     color: black;
 }
+
+#h1_link:visited{
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    color: black;
+}
+
 
 h1, h2{
     font-size: 30px;
@@ -223,7 +223,7 @@ h3#tasting {
     width: 190px;
 }
 
-.main-images {
+.field-images {
     display: flex;
     flex-direction: row;
     margin-top: 270px;
