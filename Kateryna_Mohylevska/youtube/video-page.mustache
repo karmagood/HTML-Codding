@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-header.css">
+    <link rel="stylesheet" href="styles/button-follow.css">
     <link rel="stylesheet" href="styles/video-page.css">
 </head>
 <body>
 <header class="main-header">
     <aside class="main-header_left-aside">
         <i class="main-header__details material-icons">menu</i>
-        <img class="main-header_left-aside__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
+        <img class="main-header_left-aside__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px"
+             height="18px">
         <sup class="main-header_left-aside__ua">UA</sup>
     </aside>
     <form action="" class="search">
@@ -33,9 +35,13 @@
 
 <main class="main">
     <section class="video-content">
+        <!--
         <video width="854px" controls autoplay>
             <source src="video/video.mp4" type="video/mp4">
-        </video>
+        </video>-->
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/HJ18yc6Pt_E" frameborder="0" gesture="media"
+                allowfullscreen></iframe>
+
         <h1 class="video-content__name">Купили прикольного котенка, веселун еще тот :-))</h1>
         <div class="video-content__info">
             <p class="video-content__info__views">24 882 перегляди</p>
@@ -58,11 +64,30 @@
                 <button class="video-content__info__menu__more">
                     <i class="material-icons">more_horiz</i>
                 </button>
-
             </aside>
         </div>
         <section class="video-content__channel">
+            <img class="video-content__channel__img"
+                 src="https://yt3.ggpht.com/-lZMg8_XGfU8/AAAAAAAAAAI/AAAAAAAAAAA/I0f9XbYFTnA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                 width="48">
+            <section class="video-content__channel__info">
+                <h3 class="video-content__channel__info__name">ShelAmir S</h3>
+                <p class="video-content__channel__info__published">Опубліковано 26 трав. 2015 р.</p>
+                <p class="video-content__channel__info__comment">В доме сразу стало веселее)))</p>
+                <div class="video-content__channel__info__data">
+                    <h4 class="video-content__channel__info__data__name">Категорія</h4>
+                    <a class="video-content__channel__info__data__link"  href="">Люди та блоги</a>
+                </div>
+                <div class="video-content__channel__info__data">
+                    <h4 class="video-content__channel__info__data__name">Ліцензія</h4>
+                    <a class="video-content__channel__info__data__link" href="">Стандартна ліцензія YouTube</a>
+                </div>
+            </section>
 
+            <section class="comments">
+
+            </section>
+            <button class="button-follow">Підписатися <span class="button-follow_darker">2,3 тис.</span></button>
         </section>
     </section>
     <aside class="recommended-videos">

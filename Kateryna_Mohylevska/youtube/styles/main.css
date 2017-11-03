@@ -5,6 +5,7 @@ body{
 a{
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    color: rgb(17,17,17);
 }
 button{
     border: none;
