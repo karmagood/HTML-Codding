@@ -18,78 +18,20 @@
 
         <h3 class="video-section__title">Enter Shikari</h3>
         <div class="video-section__feed">
-            <div class="video-section__video">
-                <article class="video">
-                    <img class="video__cover"
-                         src="http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg">
-                    <h2 class="video__title">Live Outside</h2>
-                    <aside>
-                        <h6 class="video__channel-name">Enter Shikari</h6>
-                        <p class="video__view-count">1000000000000000000000000000 </p>
-                        <time class="video__upload-time">1 секунду тому</time>
-                    </aside>
-                </article>
-            </div>
-            <div class="video-section__video">
-                <article class="video">
-                    <img class="video__cover"
-                         src="http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg">
-                    <h2 class="video__title">Live Outside</h2>
-                    <aside>
-                        <h6 class="video__channel-name">Enter Shikari</h6>
-                        <p class="video__view-count">1000000000000000000000000000 </p>
-                        <time class="video__upload-time">1 секунду тому</time>
-                    </aside>
-                </article>
-            </div>
-            <div class="video-section__video">
-                <article class="video">
-                    <img class="video__cover"
-                         src="http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg">
-                    <h2 class="video__title">Live Outside</h2>
-                    <aside>
-                        <h6 class="video__channel-name">Enter Shikari</h6>
-                        <p class="video__view-count">1000000000000000000000000000 </p>
-                        <time class="video__upload-time">1 секунду тому</time>
-                    </aside>
-                </article>
-            </div>
-            <div class="video-section__video">
-                <article class="video">
-                    <img class="video__cover"
-                         src="http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg">
-                    <h2 class="video__title">Live Outside</h2>
-                    <aside>
-                        <h6 class="video__channel-name">Enter Shikari</h6>
-                        <p class="video__view-count">1000000000000000000000000000 </p>
-                        <time class="video__upload-time">1 секунду тому</time>
-                    </aside>
-                </article>
-            </div>
-            <div class="video-section__video">
-                <article class="video">
-                    <img class="video__cover"
-                         src="http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg">
-                    <h2 class="video__title">Live Outside</h2>
-                    <aside>
-                        <h6 class="video__channel-name">Enter Shikari</h6>
-                        <p class="video__view-count">1000000000000000000000000000 </p>
-                        <time class="video__upload-time">1 секунду тому</time>
-                    </aside>
-                </article>
-            </div>
-            <div class="video-section__video">
-                <article class="video">
-                    <img class="video__cover"
-                         src="http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg">
-                    <h2 class="video__title">Live Outside</h2>
-                    <aside>
-                        <h6 class="video__channel-name">Enter Shikari</h6>
-                        <p class="video__view-count">1000000000000000000000000000 </p>
-                        <time class="video__upload-time">1 секунду тому</time>
-                    </aside>
-                </article>
-            </div>
+
+            {{#channel.0.videos}}
+                <div class="video-section__video">
+                    <article class="video">
+                        <img class="video__cover" src="{{video_url}}">
+                        <h2 class="video__title">{{video_name}}</h2>
+                        <aside>
+                            <h6 class="video__channel-name">{{channel_name}}</h6>
+                            <p class="video__view-count">{{views}} </p>
+                            <time class="video__upload-time">{{data_of_published}}</time>
+                        </aside>
+                    </article>
+                </div>
+            {{/channel.0.videos}}
         </div>
 
     </section>
