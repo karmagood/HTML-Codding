@@ -1,0 +1,45 @@
+@button-width:40px;
+@button-height: 40px;
+@logo-width: 80px;
+
+.Top-navigation {
+  &__menu {
+    width: @button-width;
+    height: @button-height;
+    overflow: hidden;
+    margin-left: 20px;
+  }
+  &__logo {
+    width: @logo-width;
+    height: @button-width;
+    margin-left: 20px;
+  }
+  &__searchfield, &__searchbutton {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__menu, &__logo, &__searchbar {
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 10px;
+  }
+  &__activity-buttons button {
+    display: inline-block;
+    width: @button-width;
+    height: @button-height;
+    overflow: hidden;
+    font-size: 1px;
+  }
+
+  &__activity-buttons {
+    float: right;
+    margin-top: 0px;
+    margin-right: 100px;
+  }
+  &__searchbar {
+    margin-left: 70px;
+  }
+}
+
+
+
