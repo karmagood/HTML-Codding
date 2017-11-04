@@ -5,9 +5,11 @@
         <title>Facebook</title>
         <link rel="stylesheet" href="style/common.css">
         <link rel="stylesheet" href="style/Layout.css">
-        <link rel="stylesheet" href="style/article.css">
-        <link rel="stylesheet" href="style/header.css">
+        <link rel="stylesheet" href="style/Article.css">
+        <link rel="stylesheet" href="style/Header.css">
+        <link rel="stylesheet" href="style/Navigation.css">
         <link rel="stylesheet" href="style/Icon.css">
+        <link rel="stylesheet" href="style/Additional-info.css">
     </head>
     <body class="Layout">
     <header class="Layout__header">
@@ -31,44 +33,52 @@
     </header>
     <section class="Layout__payload">
         <aside class="Layout__navigation">
-            <div class="Layout__user-navigation">
-                <a class="user-navigation__item user-navigation__item_icon_news" href="#">
-                    <span class="Icon Icon_news"></span>
-                    Новини
+            <nav class="Navigation">
+                <a href="" class="Navigation__item">Yaroslav Rukavets</a>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_news"></span>Новини
                 </a>
-                <a class="user-navigation__item user-navigation__item_icon_messenger" href="#">
-                    <span class="Icon Icon_messenger"></span>
-                    Messenger
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_messenger"></span>Messenger
                 </a>
-                <h3 class="user-navigation__title">Quick access</h3>
-                <a class="user-navigation__item user-navigation__item_icon_sales" href="#">
-                    Барахолка
-                    <span class="user-navigation__item-counter">20+</span>
+            </nav>
+            <nav class="Navigation">
+                <h5 class="Navigation__title">Quick access</h5>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_sales"></span>Барахолка
                 </a>
-                <a class="user-navigation__item user-navigation__item_icon_people" href="#">
-                    <span class="Icon Icon_people"></span>
-                    Людоньки, порадьте
-                    <span class="user-navigation__item-counter">20+</span>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_people"></span>Людоньки, порадьте
                 </a>
-                <a class="user-navigation__item user-navigation__item_icon_outdoor" href="#">
-                    Туризм і походи
-                    <span class="user-navigation__item-counter">10+</span>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_outdoor"></span>Туризм і походи
+                    <span class="Navigation__item-counter">10+</span>
                 </a>
-                <a class="user-navigation__item user-navigation__item_icon_bukovel" href="#">
-                    Буковель
-                    <span class="user-navigation__item-counter">6</span>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_bukovel"></span>Буковель
                 </a>
-                <a class="user-navigation__item user-navigation__item_icon_understand-group" href="#">И так поймут</a>
-                <h3 class="user-navigation__title">Interesting</h3>
-                <a class="user-navigation__item user-navigation__item_icon_group" href="#">Групи</a>
-                <a class="user-navigation__item user-navigation__item_icon_events" href="#">Події</a>
-                <a class="user-navigation__item user-navigation__item_icon_fun-club" href="#">Фан-клуби</a>
-                <a class="user-navigation__item user-navigation__item_icon_stream-peages" href="#">
-                    Потік сторінок
-                    <span class="user-navigation__item-counter">20+</span>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_understand-group"></span>И так поймут
                 </a>
-                <a class="user-navigation__item user-navigation__item_icon_this-day" href="#">Цього дня</a>
-            </div>
+            </nav>
+            <nav class="Navigation">
+                <h5 class="Navigation__title">Interesting</h5>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_stream-of-pages"></span>Потік сторінок
+                </a>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_group"></span>Групи
+                </a>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_events"></span>Події
+                </a>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_fan-club"></span>Фан-клуби
+                </a>
+                <a href="" class="Navigation__item">
+                    <span class="Icon Icon_this-day"></span>Цього дня
+                </a>
+            </nav>
         </aside>
         <main class="Layout__news-line">
             <article class="Article">
@@ -116,7 +126,29 @@
                 </footer>
             </article>
         </main>
-        <aside class="Layout__additional-info">Lorem ipsum dolor sit amet.</aside>
+        <aside class="Layout__additional-info">
+            <div class="Additional-info">
+                <h4 class="Additional-info_title">Реклама</h4>
+                <a href="" class="Additional-info_link-title">Створити рекламу</a>
+                <img class="Additional-info_picture" src="https://scontent.flwo1-1.fna.fbcdn.net/v/t45.1600-4/c0.0.284.149/p284x149/21901559_6072788667034_1554309099183669248_n.png?oh=2621cd14b1473130654ae9544503cfee&oe=5A6EDC92"
+                     width="275px">
+                <a href="">Курси Java.</a>
+            </div>
+            <div class="Additional-info">
+                <h4 class="Additional-info_title">Реклама</h4>
+                <a href="" class="Additional-info_link-title">Створити рекламу</a>
+                <img class="Additional-info_picture" src="https://scontent.flwo1-1.fna.fbcdn.net/v/t45.1600-4/c0.0.284.149/p284x149/21901559_6072788667034_1554309099183669248_n.png?oh=2621cd14b1473130654ae9544503cfee&oe=5A6EDC92"
+                     width="275px">
+                <a href="">Курси Java.</a>
+            </div>
+            <section class="Language">
+                <a href="">Українська</a>
+                <a href="">Русский</a>
+                <a href="">English (US)</a>
+                <a href="">Espanol</a>
+                <a href="">Portugues (Brasil)</a>
+            </section>
+        </aside>
     </section>
     <aside class="Layout__chat">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit.

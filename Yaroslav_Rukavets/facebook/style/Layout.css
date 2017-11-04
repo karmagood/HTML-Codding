@@ -1,5 +1,6 @@
 .Layout {
   background-color: #e9ebee;
+  padding-right: 205px;
 }
 a {
   text-decoration: none;
@@ -27,7 +28,7 @@ a {
   width: 500px;
 }
 .Layout__additional-info {
-  background-color: pink;
+  background-color: white;
   float: left;
   width: 281px;
 }
