@@ -1,0 +1,29 @@
+@header-color: #2ecc71;
+@main-color:#9b59b6;
+@aside-color: rgba(85, 204, 81, 0.8);
+@font-color: #ecf0f1;
+
+.Layout{
+  color: @font-color;
+  margin:0;
+  min-width:900px;
+  &__header{
+    height:60px;
+    position: relative;
+    background-color: @header-color;
+  }
+
+  &__aside{
+    float: left;
+    width:15%;
+    background-color: @aside-color;
+    overflow: auto;
+  }
+  &__main{
+    float:left;
+    width:85%;
+    background-color: @main-color ;
+    top:60px;
+    overflow: auto;
+  }
+}

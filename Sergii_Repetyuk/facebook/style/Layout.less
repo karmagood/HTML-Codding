@@ -1,4 +1,5 @@
 .Layout {
+  margin-right: 205px;
 }
 
 .Layout__header {
@@ -9,11 +10,14 @@
   top: 0;
 }
 
-.Layout__header-wrapper{
+.Layout__header-wrapper {
   background: darkgray;
   width: 961px;
   margin-left: auto;
   margin-right: auto;
+
+  position: relative;
+  left: calc(~"-205px / 2");
 }
 
 .Layout__navigation {
@@ -48,7 +52,9 @@
   background: deeppink;
   margin-top: 41px;
   width: 961px;
+
   margin-left: auto;
   margin-right: auto;
+
   overflow: hidden;
 }

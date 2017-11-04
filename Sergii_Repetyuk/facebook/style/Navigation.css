@@ -1,5 +1,5 @@
 .Navigation {
-  background: aqua;
+  background: darkgrey;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
@@ -14,6 +14,58 @@
   padding: 3px;
   margin-left: 300px;
 }
-.Navigation_fast {
+.Icon {
+  height: 20px;
+  width: 20px;
   display: block;
+  background-image: url("../images/icons-sprite.png");
+  background-size: 32.4px 1686.6px;
+}
+.Icon_news {
+  background-position: 0px -2565px;
+}
+.Icon_messenger {
+  background-position: 0px -2188px;
+}
+.Icon_psy {
+  background-position: 0  2594.6px;
+}
+.Icon_psy-in-lvov {
+  background-position: 0  2594.6px;
+}
+.Icon_psy-SNPT {
+  background-position: 0  2594.6px;
+}
+.Icon_psy-study-help {
+  background-position: 0 2159.6px;
+}
+.Icon_near-event {
+  background-position: 0 2733.6px;
+}
+.Icon_xiaomi-zahid {
+  background-position: 0 1940.6px;
+}
+.Icon_lvivmotion {
+  background-position: 0  2594.6px;
+}
+.Icon_events {
+  background-position: 0 2733.6px;
+}
+.Icon_groups {
+  background-position: 0 1940.6px;
+}
+.Icon_friends {
+  background-position: 0  2594.6px;
+}
+.Icon_fan_club {
+  background-position: 0  2594.6px;
+}
+.Icon_friend-list {
+  background-position: 0  2594.6px;
+}
+.Icon_saved {
+  background-position: 0 1940.6px;
+}
+.Icon_direct-translation {
+  background-position: 0  2594.6px;
 }
