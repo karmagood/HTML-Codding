@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>JS algofun</title>
+      <!--<link rel="stylesheet" href="/stylesheets/reset.css">-->
+      <link rel="stylesheet" href="/stylesheets/common.css">
+      <link rel="stylesheet" href="/stylesheets/page-header.css">
+      <link rel="stylesheet" href="/stylesheets/row.css">
+      <link rel="stylesheet" href="/stylesheets/card.css">
+      <link rel="stylesheet" href="/stylesheets/input-form.css">
+
+      <script src="/javascripts/jquery.min.js"></script>
+      <script src="/javascripts/ui_manager.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <header class="page-header">
+      <h1 class="page-header__title"><a href="/">{{title}}</a></h1>
+      <img class="page-header__header-img" src="/images/header_3.jpeg">
+      <a class="page-header__down-arrow" id="{{autoscroll_target}}">&#8595;</a>
+  </header>
+  <body>
+  {{{body}}}
+  <audio controls autoplay loop style="visibility: hidden; height: 0;">
+      <source src="/audio/a_great_machine.mp3" type="audio/ogg">
+  </audio>
+  <footer style="padding-top: 40px;" class="row row_full-screen-height row_align-top">
+      <p>&copy; 2017 Sergey Dubovyk</p>
+  </footer>
+
+  </body>
+  <link rel="stylesheet"
+        href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</html>
