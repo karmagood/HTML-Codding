@@ -1,0 +1,49 @@
+.aside {
+  position: relative;
+  width: 28%;
+  float: left;
+  height: 500px;
+  top: 45px;
+  margin: 5px 5px 0 0;
+}
+.aside__profile-search-button {
+  position: absolute;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  color: transparent;
+  background: #fff url(https://www.facebook.com/rsrc.php/v3/yJ/r/_EBRfn7mmHm.png) no-repeat center;
+  z-index: 100;
+  border: none;
+  margin: 3px;
+}
+.aside__profile-search-button input[type="text"] {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+}
+.aside__profile-info {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+}
+.aside__friends {
+  background-color: #ffffff;
+}
+.aside__friends-list {
+  list-style: none;
+  padding: 0;
+}
+.aside__friends-list-link {
+  display: inline-block;
+  position: relative;
+  width: 99px;
+  height: 99px;
+  float: left;
+  margin: 1px;
+  font-size: 12px;
+  background-image: url(https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?oh=22b991412792e281a3f4bfdea0d60577&oe=5AA83649);
+  background-size: 100px 100px;
+}
