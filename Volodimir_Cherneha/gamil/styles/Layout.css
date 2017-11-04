@@ -1,17 +1,23 @@
 .Layout {
   color: #ecf0f1;
   margin: 0;
+  min-width: 900px;
 }
 .Layout__header {
   height: 60px;
+  position: relative;
   background-color: #2ecc71;
 }
 .Layout__aside {
   float: left;
-  background-color: #e74c3c;
+  width: 15%;
+  background-color: rgba(85, 204, 81, 0.8);
+  overflow: auto;
 }
 .Layout__main {
   float: left;
+  width: 85%;
   background-color: #9b59b6;
-
+  top: 60px;
+  overflow: auto;
 }
