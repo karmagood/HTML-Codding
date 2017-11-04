@@ -1,0 +1,154 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Gmail</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/search-form.css">
+    <link rel="stylesheet" href="styles/mail-list.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/mail-settings.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/mail-tab.css">
+</head>
+
+<body>
+    <header class="header">
+
+        <img class="header__logo"
+             src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1000px-Google_2015_logo.svg.png"/>
+        <form action="search" class="header__search-form">
+            <input type="search">
+            <button class="header__search-button">Search</button>
+        </form>
+        <a class="header__google-apps" href="">Google apps</a>
+        <a class="header__notification" href="">Сповіщення</a>
+        <a class="header__profile" href="">Профіль</a>
+        <section class="header__mail-settings">
+
+            <button class="mail-settings__gmail-button">Gmail</button>
+            <select  class="mail-settings__select-messages">
+                <option>Всі</option>
+                <option>Ні одного</option>
+                <option>Виділені</option>
+            </select>
+            <button class="mail-settings__button-refresh">Refresh</button>
+            <button class="mail-settings__button-previous">Попереднє</button>
+            <button class="mail-settings__button-next">Наступне</button>
+            <button class="mail-settings__button-setting">Настройки</button>
+        </section>
+    </header>
+
+    <aside class="aside">
+        <button class="aside__button-new-message">НАПИСАТИ</button>
+        <nav class="navigation">
+            <a class="navigation__link" href="">Вхідні</a>
+            <a class="navigation__link" href="">Із зірочкою</a>
+            <a class="navigation__link" href="">Надіслані</a>
+            <a class="navigation__link" href="">Чернетки</a>
+        </nav>
+        <section class="aside__chat">
+            <header>
+                <img class="chat__profile-picture" src="https://ssl.gstatic.com/images/branding/product/1x/avatar_circle_blue_512dp.png">
+                <p class="chat__user">Volodimir</p>
+            </header>
+            <img class="chat__logo" src="https://cdn0.iconfinder.com/data/icons/seo-smart-pack/128/grey_new_seo-17-512.png">
+            <footer class="chat__footer">
+                <button class="chat__button chat__button-contact-img">Контакти</button>
+                <button class="chat__button chat__button-chat-img">Бесіди</button>
+                <button class="chat__button chat__button-calls-img">Телефонні дзвінки</button>
+            </footer>
+        </section>
+    </aside>
+    <main class="main">
+        <section class="main__mail-tabs">
+            <a class="main__mail-tabs-link" href="#">Вхідні</a>
+            <a class="main__mail-tabs-link" href="#">Соцмережі</a>
+            <a class="main__mail-tabs-link" href="#">Реклама</a>
+        </section><!---
+     -->
+        <section class="main__mail-list">
+            <article class="main__mail-list-item">
+                <form action="#" class="mail__mail-list-item-form">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                </form><!--
+             --><header class="main__mail-list-item-sender">
+                    GitHub
+                </header><!--
+                --><p class="main__mail-list-item-paragraph" > Please verify your email address.- Hi @chvolodymyr!
+                Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets you
+                access all of GitHub's features. </p><!--
+              --><time class="main__mail-list-item-time">
+                    28 окт. (5 дн. назад)
+                </time>
+            </article>
+            <article class="main__mail-list-item">
+                <form action="#" class="main__mail-list-item-form">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                </form><!--
+             --><header class="main__mail-list-item-sender">
+                    Команда Gmail
+                </header><!--
+                         --><p>У Gmail все по поличках</p><!--
+
+              --><time> 28 окт. (5 дн. назад)</time>
+            </article>
+            <article class="main__mail-list-item">
+                <form action="#" class="main__mail-list-item-form">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                </form><!--
+             --><header class="main__mail-list-item-sender">
+                    Команда Gmail
+                </header><!--
+                         --><p>Все преимущества Gmail доступны с любого устройства -Здравствуйте, volodimir!
+                Установите официальное приложение Gmail
+                Все преимущества мобильной почты доступны только в официальном приложении Gmail. Скачайте приложение или
+                откройте gmail.com на компьютере или мобильном устройстве.</p><!--
+
+             --><time>13 жовт.</time>
+            </article>
+            <article class="main__mail-list-item">
+                <form action="#" class="main__mail-list-item-form">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                    <input class="main__mail-list-item-checkbox" type="checkbox">
+                </form><!--
+             --><header class="main__mail-list-item-sender">
+                    Команда Gmail
+                </header><!--
+                        --><p>Три совета по использованию Gmail -Здравствуйте, volodimir!
+                Советы по использованию Gmail
+                Контакты
+                Перенесите контакты и старые письма в Gmail
+                Для безболезненного перехода на Gmail вы можете перенести в новый ящик контакты и письма из старого
+                почтового клиента. Подробнее…
+                Поиск
+                Быстрый поиск
+                Мощный инструмент Google Поиска с подсказками учитывает содержание ваших писем, прошлые запросы и контакты и
+                позволяет быстро найти нужные сообщения.
+                Поиск
+                Больше, чем просто почта
+                В Gmail можно общаться в чате и устраивать видеовстречи при помощи Hangouts. Чтобы пользоваться этим
+                сервисом на мобильном устройстве, скачайте приложение Hangouts для Android или Apple.</p><!--
+
+               --><time>13 жовт.</time>
+            </article>
+
+        </section>
+
+        <footer class="footer">
+            <a class="footer-link" href="">Умови</a>
+            <a class="footer-link" href="">Конфіденційність</a>
+        </footer>
+    </main>
+</body>
+
+</html>
