@@ -1,0 +1,8 @@
+.Layout__searchfield,
+.Layout__searchbutton {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Layout__searchbar {
+  margin-left: 70px;
+}

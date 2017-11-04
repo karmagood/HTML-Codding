@@ -31,7 +31,13 @@
   background-color: #FAFAFA;
 }
 .Layout__header-menu-button,
-.Layout__youtube-logo {
+.Layout__youtube-logo,
+.Layout__searchbar {
   display: inline-block;
   vertical-align: middle;
+}
+.Layout__header-activity-buttons {
+  float: right;
+  margin-top: 0px;
+  margin-right: 100px;
 }
