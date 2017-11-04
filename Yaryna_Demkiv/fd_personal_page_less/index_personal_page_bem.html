@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8">
    <!-- <link rel="stylesheet" media="screen" href="style.css">-->
-    <link rel="stylesheet" media="screen" href="facebook_header.css">
-    <link rel="stylesheet" media="screen" href="personal_page_header.css">
-    <link rel="stylesheet" media="screen" href="page_top_navigation.css">
-    <link rel="stylesheet" media="screen" href="common.css">
-    <link rel="stylesheet" media="screen" href="personal_page_aside.css">
+    <link rel="stylesheet" media="screen" href="styles/facebook_header.css">
+    <link rel="stylesheet" media="screen" href="styles/personal_page_header.css">
+    <link rel="stylesheet" media="screen" href="styles/page_top_navigation.css">
+    <link rel="stylesheet" media="screen" href="styles/common.css">
+    <link rel="stylesheet" media="screen" href="styles/personal_page_aside.css">
     <title id="pageTitle"> Facebook </title>
 </head>
 <body>
@@ -97,19 +97,21 @@
             <a class="user-shortcuts__featured-albums" href="https://www.facebook.com/jaryna.demkiv/photos_albums?pnref=lhc">Featured Albums</a>
         </aside>
         <main class="main-user-info">
-            <form action="#" class="infobox">
+            <form action="#" class="Create-post">
                 <fieldset>
-                    <header id="add-post">
-                        <label for="post">Створити допис</label>
-                        <label for="album">Світлини/відео</label>
-                        <label for="video">Відео наживо</label>
-                        <label for="event">Життєва подія</label>
+                    <header class="Create-post__add-post">
+                        <button>Створити допис</button>
+                        <button>Світлини/відео</button>
+                        <button>Відео наживо</button>
+                        <button>Життєва подія</button>
                     </header>
-                    <textarea rows="2" cols="56" name="text" id="post"></textarea>
-                    <input type="file" size="60" id="album"/>
-                    <input type="file" size="60" id="video"/>
-                    <button type="button" id="event"> Життєва подія </button>
-                    <button type="button"> Опублікувати </button>
+                    <textarea rows="2" cols="56" name="text" class="Create-post__post"></textarea>
+                    <button>Світлини/відео</button>
+                    <button>Почуття або дії</button>
+                    <button>Почуття або дії</button>
+                    <input type="file" size="60" class="Create-post__video"/>
+                    <button type="button" class="Create-post__event"> Життєва подія </button>
+                    <button type="button" class="Create-post__publish"> Опублікувати </button>
                 </fieldset>
             </form>
             <article>
