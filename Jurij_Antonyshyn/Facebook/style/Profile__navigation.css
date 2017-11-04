@@ -1,0 +1,56 @@
+.Profile__navigation {
+  height: 249px;
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  background: #FFFFFF;
+  position: relative;
+  font-family: Arial;
+}
+.Profile__navigation-cover {
+  height: 205px;
+  width: 100%;
+}
+.Profile__navigation-user {
+  height: 167px;
+  display: inline-block;
+  position: absolute;
+  top: 27px;
+  left: 16px;
+}
+h1 {
+  color: white;
+  position: absolute;
+  left: 200px;
+  top: 150px;
+  font-family: Arial;
+}
+.Profile__navigation-refresh {
+  position: absolute;
+  float: right;
+  right: 16px;
+  top: 140px;
+}
+.Profile__navigation-activity {
+  position: absolute;
+  float: right;
+  right: 16px;
+  top: 165px;
+}
+.Profile__navigation-timeline,
+.Profile__navigation-about,
+.Profile__navigation-friends,
+.Profile__navigation-photos,
+.Profile__navigation-more {
+  display: inline-block;
+  position: relative;
+  float: right;
+  right: 148px;
+  color: #365899;
+  font-family: Arial;
+  background-color: #FFFFFF;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
