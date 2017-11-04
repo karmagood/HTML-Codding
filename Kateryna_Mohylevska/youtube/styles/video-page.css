@@ -21,7 +21,6 @@
       .video-content__info__menu__element {
         cursor: pointer;
         color: rgba(17, 17, 17, 0.6);
-        background-color: inherit;
         display: flex;
         flex-direction: row;
         align-items: center; }
@@ -31,16 +30,17 @@
           .video-content__info__menu__element .material-icons:hover {
             color: #111111; }
       .video-content__info__menu__more {
-        cursor: pointer;
-        background-color: inherit; }
+        cursor: pointer; }
         .video-content__info__menu__more .material-icons {
           padding: 0 8px; }
   .video-content__channel {
-    margin-top: 16px; }
-    .video-content__channel__img {
-      border-radius: 50%;
-      float: left;
-      margin-right: 16px; }
+    margin-top: 16px;
+    height: 150px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #efedef; }
+    .video-content__channel .profile-img {
+      float: left; }
     .video-content__channel__info {
       float: left; }
       .video-content__channel__info__name {
