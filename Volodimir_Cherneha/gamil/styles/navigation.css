@@ -3,20 +3,18 @@
   display: block;
   text-decoration: none;
   font-family: "pt sans", "heletica", sans-serif;
-  position: relative;
-  left: 30px;
+  left: 10px;
   top: 15px;
   height: 18px;
   font-size: 15px;
-  width: 160px;
-  overflow-y: auto;
+  overflow-x: hidden;
 }
 .navigation__link:hover,
 .navigation__link:focus {
   color: #d74336;
   background-color: #f3f3f3;
 }
-.button__new-message {
+.button__new_message {
   position: relative;
   height: 30px;
   width: 120px;
