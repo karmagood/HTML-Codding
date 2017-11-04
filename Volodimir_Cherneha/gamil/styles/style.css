@@ -2,17 +2,3 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
-aside,
-main {
-    border-top: 1px solid #e5e5e5;
-}
-main {
-    left: 200px;
-    padding: 0;
-    position: fixed;
-    top: 110px;
-    overflow: auto;
-    bottom: 0;
-    right: 0;
-    background: #f1f1f1;
-}
