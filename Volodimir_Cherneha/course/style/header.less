@@ -1,0 +1,83 @@
+.header {
+    &__logo, &__search-form,
+    &__navigation {
+        display: inline-block;
+    }
+    &__logo {
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        overflow: hidden;
+    }
+    &__logo-img{
+        top: 5px;
+        color: transparent;
+        -webkit-background-size: auto;
+        background-size: auto;
+        background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -113px;
+    }
+    &__input-search {
+        position: relative;
+        width: 450px;
+        height: 24px;
+        border: none;
+        border-radius: 3px;
+        cursor: default;
+    }
+    &__search-button {
+        position: relative;
+        width: 46px;
+        height: 24px;
+        border: none;
+        border-radius: 3px;
+        color: transparent;
+        left: -35px;
+        &-img{
+            background: url(https://www.facebook.com/rsrc.php/v3/yY/r/6eKP4pJUq7C.png) no-repeat 0 0;
+            background-size: auto;
+        }
+    }
+    &__navigation {
+        a{
+        position: relative;
+        font-size: 14px;
+        color: #fff;
+        margin: 5px;
+        left: 100px;
+        }
+        &-link:hover {
+        background-color: #364a88;
+    }
+        &-link:nth-child(n+4) {
+            display: inline-block;
+            height: 27px;
+            width: 27px;
+            overflow: hidden;
+            top: 5px;
+            color: transparent;
+            vertical-align: bottom;
+        }
+        &-link:nth-child(4) {
+            background-size: auto;
+            background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -138px;
+        }
+        &-link:nth-child(5) {
+            background-size: auto;
+            background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -388px;
+        }
+        &-link:nth-child(6) {
+            background-size: auto;
+            background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -288px;
+        }
+        &-link:nth-child(7) {
+            top: 0;
+            height: 20px;
+            background-size: auto;
+            background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -750px;
+        }
+
+    }
+
+
+}

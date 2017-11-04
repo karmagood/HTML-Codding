@@ -1,0 +1,54 @@
+.Google-header {
+  height: 40px;
+  overflow: hidden;
+  margin-top: 0px;
+  margin-left: 25px;
+  margin-bottom: 0px;
+  padding-top: 15px;
+}
+.Google-header__google-logo {
+  width: 92px;
+  height: 33px;
+}
+.Google-header__google-logo,
+.Google-header__searchbar {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+.Google-header__searchfield,
+.Google-header __searchbutton {
+  display: inline-block;
+  vertical-align: middle;
+}
+.Google-header__searchbar {
+  margin-left: 80px;
+  vertical-align: middle;
+}
+.Google-header__searchbutton {
+  width: 60px;
+  height: 30px;
+  overflow: hidden;
+  margin-left: -10px;
+}
+.Google-header__searchfield {
+  height: 28px;
+  border: none;
+  box-shadow: #ced0d4;
+  margin-right: 0;
+}
+.Google-header__google-personal-navigaion {
+  float: right;
+  margin-left: auto;
+  margin-right: 30px;
+}
+.Google-header__google-adds,
+.Google-header__notifications,
+.Google-header__google-profile {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+}
