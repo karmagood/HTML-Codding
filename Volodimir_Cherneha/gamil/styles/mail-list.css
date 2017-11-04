@@ -1,0 +1,27 @@
+.main__mail-list-item > * {
+  vertical-align: bottom;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 40px;
+}
+.main__mail-list-item {
+  background-color: #fff;
+}
+.main__mail-list-item .select-marker {
+  width: 70px;
+}
+.main__mail-list-item-sender {
+  width: 30%;
+  overflow: hidden;
+}
+.main__mail-list-item time {
+  width: 35px;
+  text-align: right;
+}
+.main__mail-list-item p {
+  padding: 0;
+  margin: 0;
+  width: 60%;
+}

@@ -1,0 +1,63 @@
+@body-color: #111111;
+@font-size: 14px;
+@border-width: 1px;
+@border-style: solid;
+@border-color: lightgray;
+@margin-left: 50px;
+@a-height: 20px;
+
+.Leftside-layout {
+  &__navigation {
+    border-bottom: @border-width @border-style @border-color;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  &__navigation a {
+    display: block;
+    color: @body-color;
+    font-size: @font-size;
+    text-decoration: none;
+    margin-left: @margin-left;
+    padding-top: 20px;
+  }
+  &__library-header,
+  &__subscriptions-header {
+    color: gray;
+    font-size: @font-size;
+    font-weight: 600;
+    letter-spacing: .007px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+  &__library,
+  &__subscriptions,
+  &__channels,
+  &__films {
+    border-bottom: @border-width @border-style @border-color;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+  }
+
+  &__library a,
+  &__subscriptions a,
+  &__channels a,
+  &__films a {
+    display: block;
+    color: @body-color;
+    font-size: @font-size;
+    text-decoration: none;
+    margin-left: @margin-left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: @a-height;
+    white-space: nowrap;
+  }
+
+
+}
+

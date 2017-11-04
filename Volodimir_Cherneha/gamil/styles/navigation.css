@@ -1,0 +1,41 @@
+.aside {
+  top: 110px;
+  left: 0;
+  position: fixed;
+  width: 200px;
+  bottom: 0;
+  overflow: auto;
+}
+.aside__button-new-message {
+  position: relative;
+  height: 30px;
+  width: 120px;
+  color: white;
+  background-color: #d74336;
+  font-family: "pt sans", "heletica", sans-serif;
+  font-size: 13px;
+  padding: 3px;
+  border-radius: 3px;
+  border: 1px solid #d74337;
+  left: 40px;
+  top: 5px;
+  outline: none;
+}
+.navigation__link {
+  padding: 5px;
+  display: block;
+  text-decoration: none;
+  font-family: "pt sans", "heletica", sans-serif;
+  position: relative;
+  left: 30px;
+  top: 15px;
+  height: 18px;
+  font-size: 15px;
+  width: 160px;
+  overflow-y: auto;
+}
+.navigation__link:hover,
+.navigation__link:focus {
+  color: #d74336;
+  background-color: #f3f3f3;
+}
