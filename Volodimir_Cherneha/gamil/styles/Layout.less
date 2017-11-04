@@ -1,0 +1,27 @@
+@header-color: #2ecc71;
+@main-color:#9b59b6;
+@aside-color:#e74c3c;
+@font-color: #ecf0f1;
+
+.Layout{
+  color: @font-color;
+  margin:0;
+  &__header{
+    height:60px;
+    background-color: @header-color;
+
+  }
+
+  &__aside{
+    width: 200px;
+    float:left;
+    background-color: @aside-color;
+  }
+  &__main{
+
+    float:left;
+    background-color: @main-color ;
+    position: relative;
+    bottom:0;
+  }
+}

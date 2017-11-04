@@ -1,35 +1,40 @@
-.header__search-button{
-  border: 1px solid transparent;
-  height: 28.4px;
-  margin: 0;
-  left:-5px;
-  outline: none;
-  color: transparent;
-  width: 29px;
-  overflow: hidden;
-  box-shadow: none;
-  background-size: 29px 28.4px;
-  background-image: url(https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/search-128.png) ;
-  background-color: #4189ff;
-  background-position: center;
-  background-repeat: no-repeat;
+@search_button_color: #6DB1ED;
+
+.search{
+  &__button{
+    border: 1px solid transparent;
+    height: 30px;
+    margin: 0;
+    left:-10px;
+    outline: none;
+    color: transparent;
+    border-radius: 2px;
+    width: 40px;
+    overflow: hidden;
+    box-shadow: none;
+    background-size: 30px 30px;
+    background-image: url(https://ssl.gstatic.com/gb/images/v1_aad35c85.png) ;
+    background-color: @search_button_color;
+    background-position: 0 -479px;
+    background-repeat: no-repeat;
+  }
+  &__input{
+    top: 20px;
+    width: 590px;
+    height: 29px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #BDBDBD;
+    &:focus {
+      top: 20px;
+      width: 590px;
+      height: 28px;
+      outline: none;
+      border: 1px solid #727272;
+    }
+  }
+
 }
 
-input[type="search"] {
-  top: 20px;
-  width: 590px;
-  height: 29px;
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
-  background-color: white;
-  border: 1px solid #BDBDBD;
-}
-
-input[type=search]:focus {
-  top: 20px;
-  width: 590px;
-  height: 28px;
-  outline: none;
-  border: 1px solid #727272;
-}

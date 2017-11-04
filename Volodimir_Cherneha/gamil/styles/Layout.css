@@ -1,0 +1,17 @@
+.Layout {
+  color: #ecf0f1;
+  margin: 0;
+}
+.Layout__header {
+  height: 60px;
+  background-color: #2ecc71;
+}
+.Layout__aside {
+  float: left;
+  background-color: #e74c3c;
+}
+.Layout__main {
+  float: left;
+  background-color: #9b59b6;
+
+}
