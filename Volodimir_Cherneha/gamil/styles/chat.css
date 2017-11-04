@@ -1,0 +1,44 @@
+.chat__profile-picture {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  top: 50px;
+  left: 20px;
+}
+.chat__user {
+  margin-top: 20px;
+  margin-left: 60px;
+  left: 30px;
+  font-size: 13px;
+}
+.chat__logo {
+  position: relative;
+  top: 70px;
+  left: 50px;
+  height: 100px;
+  width: 100px;
+}
+.chat__footer {
+  position: fixed;
+  bottom: 0;
+}
+.chat__button {
+  position: relative;
+  bottom: 0;
+  left: 60px;
+  height: 26px;
+  width: 26px;
+  color: transparent;
+}
+.chat__button__calls-img {
+  background-size: 24px 24px;
+  background: url(http://icons.veryicon.com/png/System/Icons8%20Metro%20Style/Contact%20Methods%20Phone.png) no-repeat center;
+}
+.chat__button__contact-img {
+  background-size: 24px 24px;
+  background: url(http://www.free-icons-download.net/images/people-icons-80620.png) no-repeat center;
+}
+.chat__button__chat-img {
+  background-size: 24px 24px;
+  background: url(http://simpleicon.com/wp-content/uploads/chat-2.png) no-repeat center;
+}
