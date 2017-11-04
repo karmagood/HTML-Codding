@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   height: 42px;
+  font-size: 15px;
   position: relative;
   right: 105px;
 }
@@ -16,6 +17,32 @@
 .Layout__search-form {
   width: 400px;
 }
+.Layout__main-navigation {
+  float: right;
+}
 .Layout__main-navigation a {
   color: white;
+}
+.Icon2 {
+  margin: 3px;
+  height: 23px;
+  width: 25px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.Icon2_friends-requests {
+  background-position: 0 -50px;
+  background-image: url("../image/icon-sprite2.png");
+}
+.Icon2_message {
+  background-position: 0 -137px;
+  background-image: url("../image/icon-sprite3.png");
+}
+.Icon2_notification {
+  background-position: 0 -99px;
+  background-image: url("../image/icon-sprite2.png");
+}
+.Icon2_quick-help {
+  background-position: 0 204px;
+  background-image: url("../image/icon-sprite3.png");
 }
