@@ -1,0 +1,31 @@
+.Letters__select-marker,
+.Letters__sender,
+.Letters__text,
+.Letters__time {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 5.20ex;
+  font-size: 90%;
+  vertical-align: bottom;
+}
+.Letters__select-marker {
+  width: 70px;
+}
+.Letters__select-marker input {
+  border: none;
+}
+.Letters__sender {
+  width: 30%;
+  overflow: hidden;
+}
+.Letters__time {
+  width: 60px;
+  text-align: left;
+}
+.Letters__text {
+  padding: 0;
+  margin: 0;
+  width: calc(70% - 130px);
+}

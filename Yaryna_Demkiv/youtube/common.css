@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  color: #111111;
+  max-height: 100%;
+}
+aside {
+  left: 0;
+  width: 240px;
+  top: 56px;
+  bottom: 0;
+  position: fixed;
+  overflow: auto;
+  max-height: 100%;
+  background-color: #F1F1F1;
+}
+main {
+  position: fixed;
+  top: 56px;
+  right: 0px;
+  bottom: 0px;
+  left: 240px;
+  font-size: 80%;
+  max-height: 100%;
+  overflow-y: scroll;
+  background-color: #FAFAFA;
+}
+header {
+  height: 56px;
+  background-color: #FFFFFF;
+}
