@@ -1,0 +1,32 @@
+.layout__user-menu {
+    overflow: auto;
+    width: 225px;
+    background-color: #f1f1f1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+}
+
+
+.user-nav-menu .fa {
+    color: red;
+    margin-left: 5px;
+}
+
+
+.user-menu__section-element:hover {
+    background-color: grey;
+}
+
+.user-menu__section-element {
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.user-menu__section-title {
+    padding-left: 10px;
+}
+
