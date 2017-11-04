@@ -1,3 +1,8 @@
+.search {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 40px;
+}
 .search__button {
   border: 1px solid transparent;
   height: 30px;
