@@ -10,11 +10,11 @@ const swap = (arr, i, j) => {
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 
-const getRandomArray = (size) => {
+const getRandomArray = (size, min=0, max=500) => {
     let array = [];
 
     for (let i = 0; i < size; ++i) {
-        array.push(getRandomNumber(0, 500));
+        array.push(getRandomNumber(min, max));
     }
     return array;
 }

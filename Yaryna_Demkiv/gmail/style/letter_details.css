@@ -1,0 +1,153 @@
+.Letter-details {
+    background-color: white;
+}
+
+.Letter-details__priority-buttons button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 17.75px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Letter-details__print-open-buttons button {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 21px;
+    height: 21px;
+    overflow: hidden;
+}
+
+.Letter-details__letter-subject,
+.Letter-details__priority-buttons {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Letter-details__print-open-buttons {
+    float: right;
+}
+
+.Letter-details__letter-subject {
+    font-family: arial, sans-serif;
+    color: #222;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.Letter-details__header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: white;
+}
+
+.Letter-details__sendto, .Letter-details__smallarrow {
+    display: inline;
+    vertical-align: middle;
+}
+
+.Letter-details__smallarrow {
+    height: 13px;
+    width: 12px;
+    overflow: hidden;
+    font-size: 1px;
+}
+
+.Letter-details__letter-time,
+.Letter-details__answer,
+.Letter-details__more-actions {
+    display: inline;
+}
+
+.Letter-details__answer {
+    width:49px;
+    height: 28px;
+    overflow: hidden;
+}
+
+.Letter-details__more-actions {
+    width:22px;
+    height: 28px;
+    overflow: hidden;
+    margin-left: -5px;
+}
+
+.Letter-details__letter-content {
+    width:100%;
+}
+
+.Letter-details__letter-text-wrapper {
+    width: 100%;
+    margin-left: 40px;
+}
+
+.Letter-details__time-action-buttons {
+    float: right;
+}
+
+
+.Letter-details__letter-text {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 0.7px solid lightgray;
+}
+
+.Letter-details__sender-photo,
+.Letter-details__letter-sender {
+    display: inline-block;
+}
+
+.Letter-details__big-break {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.Letter-details__small-break {
+    margin-bottom: 5px;
+}
+
+.Letter-details__bottom-actions-block {
+    width: 100%;
+    background-color: white;
+}
+
+.Letter-details__footer-text {
+    height: 72px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 90%;
+    color: #999;
+}
+
+.Letter-details__footer-text button {
+    display: inline-block;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    color: #999;
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Letter-details__press-here, .Letter-details__footer-buttons{
+    display: inline;
+    vertical-align: middle;
+}
+.Letter-details__footer-text,
+.Letter-details__my-photo {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+}
+
+.Letter-details__my-photo {
+    margin-top: 20px;
+}

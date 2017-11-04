@@ -1,0 +1,150 @@
+body{
+    font-size: 30px;
+}
+
+
+header{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+
+
+    padding-left: calc( (100% - 200px)/2 - 450px );
+    padding-right: calc( (100% )/2 - 400px );
+    padding-top: auto;
+    padding-bottom: auto;
+
+    height: 42px;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+
+    background-image: url("https://cdn.worldvectorlogo.com/logos/facebook-icon-white.svg" );
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: calc( (100% - 200px)/2 - 490px );;
+
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+
+}
+
+.a, .b, .c, .d, .d1, .d2{
+    width: 42px;
+    background-color: chocolate;
+    border: 1px solid crimson;
+}
+.profile_btn, .main_page_btn{
+    width: 80px;
+}
+
+.d{
+    width: auto;
+    display: flex;
+    margin-left: 10px;
+    border-left: solid;
+    padding-left: 3px;
+}
+
+.facebook_navigation{
+    display: flex;
+}
+
+
+body{
+    margin: 0;
+    background: #ECEFF5;
+}
+
+.column{
+    padding: 10px;
+}
+
+
+.payload{
+    background-color: aqua;
+    font-size: 0;
+    position: absolute;
+    left: calc(50% - 618px);
+    top: 42px;
+}
+
+.tool-bar,
+.feed,
+.advertise{
+    font-size: 30px;
+    position: absolute;
+
+}
+
+.tool-bar{
+    position: fixed;
+    background-color: green;
+    width: 162px;
+    top:43px;
+    z-index: 10;
+}
+
+.feed{
+    background-color: blueviolet;
+    width: 518px;
+    top: 0;
+    left: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.some_post{
+
+}
+
+.some_post_publication_source{
+    border-bottom: solid;
+}
+
+.post_head_metainfo{
+    display: flex;
+    align-content: space-between;
+}
+
+
+.pannel{
+    background-color: #ffffff;
+    padding: 20px;
+    align-content: center;
+    border: solid ;
+    margin-bottom: 15px;
+
+}
+
+.advertise{
+    margin-top: 25px;
+    background-color: red;
+    width: 300px;
+    top:0;
+    bottom: 0;
+    left: calc(50% + 100px);
+    z-index: 1;
+    position: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: auto;
+}
+
+.advertise-content{
+
+}
+
+.friends-list{
+    position: fixed;
+    background-color: chocolate;
+    width: 200px;
+    top: 35px;
+    padding-top: 20px;
+    bottom: 0;
+    left: calc(100% - 200px);
+
+}

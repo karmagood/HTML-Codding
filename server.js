@@ -45,6 +45,7 @@ app
             const html = Mustache.render(template, data);
             res.send(html);
         } catch (e) {
+            console.log(e);
             res.sendFile(SOURCE_DIR + "/" + req.params.page + ".html");
         }
 

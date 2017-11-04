@@ -1,0 +1,20 @@
+.user-info {
+  position: relative;
+  display: inline-block;
+  top: 44px;
+  font-weight: 600;
+  width: 850px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+.user-info__navigation {
+  padding: 10px;
+}
+.user-info__navigation-link {
+  display: inline-block;
+  margin-left: 10px;
+  color: #365899;
+  width: 77px;
+  height: 45px;
+}
