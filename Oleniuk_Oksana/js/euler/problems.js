@@ -26,6 +26,26 @@ const getSum = (arr) => {
     }
     return sum;
 };
+const GenerateFibonacciNumber=(max)=>{
+    var first = 1;
+    var second = 1;
+    var valueF = 0;
+    var  arr = [];
+    while (valueF < max) {
+        valueF = first + second;
+        if (valueF % 2 == 0){
+            arr.push(valueF);}
+        first = second;
+        second = valueF;
+    }
+    return arr;
+};
+const  second = () =>{
+    return getSum(GenerateFibonacciNumber(4000000));
+}
+// console.log(second());
+
+
 
 
 
