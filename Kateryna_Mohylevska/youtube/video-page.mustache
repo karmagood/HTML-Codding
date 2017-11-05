@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-header.css">
     <link rel="stylesheet" href="styles/button-follow.css">
-    <link rel="stylesheet" href="styles/video-page.css">
+    <link rel="stylesheet" href="styles/video-page__content.css">
     <link rel="stylesheet" href="styles/comments.css">
+    <link rel="stylesheet" href="styles/recommended-videos.css">
 </head>
 <body>
 <header class="main-header">
@@ -119,7 +120,24 @@
         </section>
     </section>
     <aside class="recommended-videos">
+        <p class="recommended-videos__next">Наступне</p>
+        <button class="recommended-videos__autoplay">
+        </button>
+        <p class="recommended-videos__autoplay-text">АВТОМАТИЧНЕ ВІДТВОРЕННЯ</p>
+        {{#next-videos}}
+        <article class="recommended-videos__next-video">
+            <img src="{{url}}" alt="video" width="168px" height="94px">
+            <aside class="recommended-videos__next-video__details">
+                <h3 class="recommended-videos__next-video__details__name">{{video-name}}</h3>
 
+                <a class="recommended-videos__next-video__details__channel-name" href="/">{{channel-name}}</a>
+                <p class="recommended-videos__next-video__details__views">{{views}}  переглядів</p>
+            </aside>
+        </article>
+        {{/next-videos}}
+        <button class="recommended-videos__see-more">
+            Показати більше
+        </button>
     </aside>
 </main>
 
