@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/common.css">
+    <link rel="stylesheet" type="text/css" href="style/Article.css">
+
+</head>
+<body>
+{{#article}}
+    <article class="Article">
+        <header class="Article__news-title">
+            <img class="Article__author-photo" src="{{author.picture}}">
+
+            <h2 class="Article__title-text">
+                {{#author.name}} {{.}}.{{/author.name}}
+                {{title}}
+            </h2>
+        </header>
+        {{{description}}}
+
+        <img class="Article__main-image" src="{{cover}}">
+
+        <footer class="Article__user-choice">
+            <button class="Article__like">Подобається</button>
+            <button class="Article__comment">Коментувати</button>
+            <button class="Article__share">Поширити</button>
+        </footer>
+    </article>
+{{/article}}
+</body>
+</html>
