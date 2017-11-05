@@ -11,9 +11,6 @@ function divisibilityCondition(from , to, number) {
     return rez;
 }
 
-function divided(number, divisor) {
-
-}
 
 function smallestPositiveEvenlyDivisible(from, to) {
     var accum = 1;
