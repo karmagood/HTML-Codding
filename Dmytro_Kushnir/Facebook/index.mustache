@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
 
+    <link href="styles/facebook__layout.css" rel="stylesheet">
     <link href="styles/landing_facebook.css" rel="stylesheet">
 
     <title>facebook</title>
 </head>
 <body>
 
-<!-- for thimbnail!
+<!-- for thumbnail!
 <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Facebook_f_logo_2013.png" height="20px"
      alt="facebook_logo">
 
@@ -85,10 +86,57 @@
             {{/posts}}
 <!-- TODO 1) post 2) post+shared 3)Commercial 4) Advise +++ UserPublication \ PublicPagePublication-->
 
+
+
+
+
+<!-- TODO make 1 usrPost, 1 channel post, 1 Commercial post, 1 REPOST -->
+
+            <article class=" pannel
+                            feed-post
+                            feed-post__from_commercial">
+
+                <header>HEADER</header>
+                <section class="feed-post__main_content commercial">
+
+                </section>
+                <footer>FOOTER</footer>
+
+            </article>
+
+            <article class="pannel
+                            feed-post
+                            feed-post__from_user-post">
+
+                <section class="feed-post__authorinfo user-post">
+                    <img class="feed-post__gallery-img"
+                         height="200" width="400"
+                         alt="{{user-post__alt-img-name}}">
+                </section>
+
+
+                <section class="feed-post__main_content user-post">
+
+                    Зроби мені штучний інтелект 😂
+                    From buzzwords to reality
+                    Про маніпуляції сакральними AI, DS, ML, NN, etc.
+                    <img class="feed-post__gallery-img"
+                         src="/KD_local_images/fbPost_makeMeAI.jpg"
+                         height="200" width="400"
+                         alt="{{USER_NAME_POST_IMG}}">
+                    <!-- TODO solve img-box sizing-->
+
+                </section>
+
+                <footer>FOOTER</footer>
+            </article>
+
+
+            <!-- example from https://www.facebook.com/photo.php?fbid=1619785034751703&set=a.599029916827225.1073741826.100001606676862&type=3 -->
+
             <article class="feed-post pannel">
                 <small class="feed-post__publication_source">
-                    <!-- TODO  place info block, can be customised-->
-                    Рекомендуемая публикация
+                    EMPTY HERE
                 </small>
 
                 <header class="feed-post__header-metainfo">
@@ -100,6 +148,7 @@
                         (AUTHOR NAME)
                         Fiverr
                     </a>
+
                     <a href="#" class="feed-post__header-metainfo__publication_source" role="small">Реклама</a>
                     <!-- TODO add small icons-->
                     <img class="feed-post__header-metainfo__icon_of_access" src="" alt="">
@@ -110,67 +159,68 @@
                             <summary> ... </summary>
                             Nothing here
                         </details>
-
-
                 </header>
 
 
-                <article class="feed-post content">
+                <article class="feed-post__content">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Dolor, fugit illum inventore labore omnis qui suscipit velit veritatis?
                     Assumenda, impedit.
                 </article>
 
 
-                <footer class="some_post_statistics">
-                    <section class="comments_number">
+                <footer class="feed-post__reactions">
+
+                    <section class="feed-post__reactions__comments_number">
                         Комментарии: 1
                     </section>
-                    <section class="reposts_number">
+                    <section class="feed-post__reactions__reposts_number">
                         Перепосты: 2
                     </section>
-                    <section class="reactions_statistics">
-                    <section class="likes_number reaction">
-                        30
-                    </section>
-                        <section class="likes_number reaction">
-                            30
-                        </section>
-                        <section class="loves_number reaction">
-                            30
-                        </section>
-                        <section class="lol_number reaction">
-                            30
-                        </section>
-                        <section class="wow_number reaction">
-                            30
-                        </section>
-                        <section class="sad_number reaction">
-                            30
-                        </section>
-                        <section class="angry_number reaction">
-                            30
-                        </section>
-                    </section>
 
+                    <section class="feed-post__reactions__reactions_statistics">
+
+                        <section class="feed-post__reactions__likes-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__loves-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__lol-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__wow-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__sad-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__angry-number reaction">
+                            30
+                        </section>
+
+                    </section>
 
                 </footer>
-                <section class="some_post_interact_menu">
 
-                    <button class="like_btn post_interact_button">
-                        Нравится
-                    </button>
+
+                <section class="feed-post__actions-menu">
+
+                    <button class="like_btn post_interact_button">Нравится</button>
                     <button class="comment_post post_interact_button">Комментарий</button>
                     <button class="share_post post_interact_button"> Поделиться</button>
                     <details class="more_reactions_field">
                         <summary>Еще реакции </summary>
                     </details>
+
                 </section>
 
             </article>
 
 
         </section>
+
+
 
 
 
