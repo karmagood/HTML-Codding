@@ -1,0 +1,16 @@
+.Navigation__title {
+  margin-bottom: 1px;
+}
+.Navigation__item {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #000;
+}
+.Navigation__item-counter {
+  float: right;
+  vertical-align: middle;
+  font-size: 11px;
+}
