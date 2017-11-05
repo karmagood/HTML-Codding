@@ -1,0 +1,10 @@
+.Layout__aside-footer-terms {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+.Layout__aside-footer-terms a {
+  color: gray;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+}

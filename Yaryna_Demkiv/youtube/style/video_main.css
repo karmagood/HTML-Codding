@@ -1,0 +1,12 @@
+.Layout__video {
+  width: 210px;
+}
+.Layout__video-description-black {
+  color: #111111;
+  font-weight: bold;
+  padding-top: 10px;
+}
+.Layout__video-description-grey {
+  color: gray;
+  padding-top: 10px;
+}
