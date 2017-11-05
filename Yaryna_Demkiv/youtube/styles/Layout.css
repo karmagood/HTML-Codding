@@ -31,7 +31,31 @@
   background-color: #FAFAFA;
 }
 .Layout__header-menu-button,
-.Layout__youtube-logo {
+.Layout__youtube-logo,
+.Layout__searchbar {
   display: inline-block;
   vertical-align: middle;
+}
+.Layout__header-activity-buttons {
+  float: right;
+  margin-top: 0px;
+  margin-right: 100px;
+}
+.Layout__uploads-header,
+.Layout__popular-header,
+.Layout__recommended-header {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.Layout__video-lists-recommended,
+.Layout__video-lists-popular,
+.Layout__video-lists-uploads {
+  margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.Layout__video {
+  display: inline-block;
+  vertical-align: top;
 }

@@ -27,7 +27,6 @@
       &__element {
         cursor: pointer;
         color: rgba(17, 17, 17, 0.6);
-        background-color: inherit;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -43,7 +42,6 @@
       }
       &__more {
         cursor: pointer;
-        background-color: inherit;
         .material-icons {
           padding: 0 8px;
         }
@@ -52,13 +50,12 @@
   }
   &__channel {
     margin-top: 16px;
-    //height: inherit;
-    //margin-bottom:24px;
-    //border-bottom: 1px solid #efedef;
-    &__img{
-      border-radius: 50%;
+    height:150px;
+    padding-bottom: 16px;
+    margin-bottom:24px;
+    border-bottom: 1px solid #efedef;
+    .profile-img{
       float: left;
-      margin-right: 16px;
     }
     &__info{
       float: left;
