@@ -9,10 +9,18 @@
     <link rel="stylesheet" media="screen" href="styles/video_lists.css"> -->
     <title>Youtube</title>
     <link rel="stylesheet" media="screen" href="styles/Layout.css">
-    <link rel="stylesheet" href="styles/Header_menu_button.css">
-    <link rel="stylesheet" href="styles/Youtube_logo.css">
+    <link rel="stylesheet" href="styles/header_menu_button.css">
+    <link rel="stylesheet" href="styles/youtube_logo.css">
     <link rel="stylesheet" href="styles/searchbar.css">
     <link rel="stylesheet" href="styles/header_activity_buttons.css">
+    <link rel="stylesheet" href="styles/aside_navigation.css">
+    <link rel="stylesheet" href="styles/aside_headers.css">
+    <link rel="stylesheet" href="styles/aside_library.css">
+    <link rel="stylesheet" href="styles/aside_footer_help.css">
+    <link rel="stylesheet" href="styles/aside_footer_copyright.css">
+    <link rel="stylesheet" href="styles/aside_footer_terms.css">
+    <link rel="stylesheet" href="styles/aside_footer_copyright_line.css">
+    <link rel="stylesheet" href="styles/video_main.css">
 </head>
     <body class="Layout">
         <header class="Layout__top-navigation">
@@ -23,44 +31,44 @@
                 <button type="submit" class="Layout__searchbutton">Пошук</button>
             </form>
             <div class="Layout__header-activity-buttons">
-                <button type="button">Завантаження</button>
-                <button type="button">Додатки YouTube</button>
-                <button type="button">Сповіщення</button>
-                <button type="button">Мій профіль</button>
+                <button class="Layout__activity-button" type="button">Завантаження</button>
+                <button class="Layout__activity-button" type="button">Додатки YouTube</button>
+                <button class="Layout__activity-button" type="button">Сповіщення</button>
+                <button class="Layout__activity-button" type="button">Мій профіль</button>
             </div>
         </header>
         <aside class="Layout__aside">
-            <nav class="Leftside-layout__navigation">
+            <nav class="Layout__aside-navigation">
                 <a href="https://www.youtube.com/">Головна</a>
                 <a href="https://www.youtube.com/feed/trending">Популярне</a>
                 <a href="https://www.youtube.com/feed/subscriptions">Підписки</a>
             </nav>
-            <nav class="Leftside-layout__library">
-                <h5 class="Leftside-layout__library-header">БІБЛІОТЕКА</h5>
+            <nav class="Layout__aside-library">
+                <h5 class="Layout__library-header">БІБЛІОТЕКА</h5>
                 <a href="www.youtube.com/feed/history">Історія</a>
                 <a href="https://www.youtube.com/playlist?list=WL">Переглянути пізніше</a>
                 <a href="https://www.youtube.com/playlist?list=LLmEm9tungaVn0-X4m-NFPsQ">Відео, які сподобались</a>
             </nav>
-            <nav class="Leftside-layout__subscriptions">
-                <h5 class="Leftside-layout__subscriptions-header">ПІДПИСКИ</h5>
+            <nav class="Layout__aside-subscriptions">
+                <h5 class="Layout__subscriptions-header">ПІДПИСКИ</h5>
                 <a href="https://www.youtube.com/channel/UCesO4-UStBz-iTTgkY645yw">Популярні на YouTube - Україна</a>
                 <a href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ">Музика</a>
                 <a href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw">Спорт</a>
                 <a href="https://www.youtube.com/channel/UCOpNcN46UbXVtpKMrmU4Abg">Комп'ютерні ігри</a>
             </nav>
-            <nav class="Leftside-layout__channels">
+            <nav class="Layout__aside-channels">
                 <a href="https://www.youtube.com/channels">Переглянути канали</a>
             </nav>
-            <nav class="Leftside-layout__films">
+            <nav class="Layout__aside-films">
                 <a href="https://www.youtube.com/channel/UClgRkhTL3_hImCAmdLfDE4g">Фільми YouTube</a>
             </nav>
-            <footer class="Leftside-footer">
-                <section class="Leftside-footer__help">
-                    <a href="https://www.youtube.com/account">Налаштування</a>
-                    <button type="button" class="Leftside-footer__reference">Довідка</button>
-                    <button type="button" class="Leftside-footer__feedback">Написати відгук</button>
+            <footer class="Layout__aside-footer">
+                <section class="Layout__aside-footer-help">
+                    <a class="Layout__aside-footer-settings" href="https://www.youtube.com/account">Налаштування</a>
+                    <button type="button" class="Layout__aside-footer-reference">Довідка</button>
+                    <button type="button" class="Layout__aside-footer-feedback">Написати відгук</button>
                 </section>
-                <section class="Leftside-footer__copyright">
+                <section class="Layout__aside-footer-copyright">
                     <a href="https://www.youtube.com/intl/uk/yt/about/">Інфо</a>
                     <a href="https://www.youtube.com/intl/uk/yt/about/press/">Преса</a>
                     <a href="https://www.youtube.com/intl/uk/yt/about/copyright/#support-and-troubleshooting">Авторські права</a>
@@ -69,163 +77,143 @@
                     <a href="https://www.youtube.com/yt/dev/uk/">Розробники</a>
                     <a href="https://plus.google.com/+youtube">YouTube+</a>
                 </section>
-                <section class="Leftside-footer__terms">
+                <section class="Layout__aside-footer-terms">
                     <a href="https://www.youtube.com/t/terms">Умови</a>
                     <a href="https://www.google.com/intl/uk/policies/privacy/">Конфіденційність</a>
                     <a href="https://www.youtube.com/yt/policyandsafety/uk/">Політка безпеки</a>
                     <a href="https://www.youtube.com/testtube">Спробувати нові функції</a>
                 </section>
-                <p class="Leftside-footer__copyright-line">© 2017 YouTube, LLC</p>
+                <p class="Layout__aside-footer-copyright-line">© 2017 YouTube, LLC</p>
             </footer>
         </aside>
         <main class="Layout__video-lists">
-            <section class="Video-lists__recommended">
-                <h6 class="Video-lists__recommended-header">Рекомендовано</h6>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+            <section class="Layout__video-lists-recommended">
+                <h6 class="Layout__recommended-header">Рекомендовано</h6>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
-                </article>
-            </section>
-            <section class="Video-lists__popular">
-                <h6 class="Video-lists__popular-header">Популярне</h6>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
-                </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
-                </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
-                </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
-                </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
-                </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
-                </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
-                </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
             </section>
-            <section class="Video-lists__uploads">
-                <h6 class="Video-lists__uploads-header">Нещодавні завантаження</h6>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+            <section class="Layout__video-lists-popular">
+                <h6 class="Layout__popular-header">Популярне</h6>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
-                    <p class="Video-lists__description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
-                    <p class="Video-lists__description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
-                    <p class="Video-lists__description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+            </section>
+            <section class="Layout__video-lists-uploads">
+                <h6 class="Layout__uploads-header">Нещодавні завантаження</h6>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
                 </article>
-                <article class="Video-lists__video">
-                    <img class="Video-lists__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
-                    <p class="Video-lists__description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
-                    <p class="Video-lists__description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                </article>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                </article>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw"/>
+                    <p class="Layout__video-description-black">Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song</p>
+                    <p class="Layout__video-description-grey">Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому</p>
+                </article>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ"/>
+                    <p class="Layout__video-description-black">Animal Crayons: Cute crayons won't flake, can be erased</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
+                </article>
+                <article class="Layout__video">
+                    <img class="Layout__video-screen" src="https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA"/>
+                    <p class="Layout__video-description-black">Reusable "Plastic" Cups and "Paper" Plates</p>
+                    <p class="Layout__video-description-grey">Vat19<br>8,8 млн перегляди<br>5 років тому</p>
                 </article>
             </section>
         </main>
