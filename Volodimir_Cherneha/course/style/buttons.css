@@ -1,13 +1,13 @@
-.add-news__button-send,
-.add-news__button-clear {
+.add__button_send,
+.add__button_clear {
   cursor: pointer;
   font-size: 15px;
   background: #F3EFEF;
   border: 0.5px solid #EDE6E6;
   border-radius: 12px;
 }
-.news__article-button-like,
-.news__article-button-coment {
+.news__article-button_like,
+.news__article-button_coment {
   cursor: pointer;
   font-size: 15px;
   height: 25px;
