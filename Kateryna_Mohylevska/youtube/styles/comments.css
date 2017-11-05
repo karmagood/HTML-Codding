@@ -1,0 +1,54 @@
+.comments {
+  padding-bottom: 100px; }
+  .comments__views {
+    float: left;
+    margin: 0;
+    line-height: 24px;
+    vertical-align: middle;
+    font-weight: normal;
+    margin-right: 32px; }
+  .comments__sorts {
+    color: rgba(17, 17, 17, 0.6);
+    font-weight: bolder;
+    font-size: 14px;
+    display: flex;
+    align-items: center; }
+    .comments__sorts .material-icons {
+      margin-right: 8px; }
+  .comments__add {
+    margin-top: 24px;
+    display: flex;
+    margin-bottom: 32px; }
+    .comments__add__typing {
+      color: rgba(17, 17, 17, 0.6);
+      width: 100%;
+      border: none;
+      font-size: 14px;
+      border-bottom: 1px solid #efedef;
+      height: 21px; }
+  .comments__one {
+    display: flex; }
+    .comments__one__content__name {
+      margin: 0;
+      float: left;
+      margin-right: 8px; }
+    .comments__one__content__time {
+      font-size: 13px;
+      color: rgba(17, 17, 17, 0.6); }
+    .comments__one__content__comment {
+      margin: 0;
+      font-size: 14px; }
+    .comments__one__content__respond__answer {
+      color: rgba(17, 17, 17, 0.6);
+      font-size: 14px;
+      text-transform: uppercase;
+      padding: 0;
+      cursor: pointer;
+      margin-right: 16px; }
+    .comments__one__content__respond__answer:hover {
+      color: #111111; }
+    .comments__one__content__respond__number {
+      color: rgba(17, 17, 17, 0.6);
+      font-size: 14px; }
+
+/*# sourceMappingURL=comments.css.map */

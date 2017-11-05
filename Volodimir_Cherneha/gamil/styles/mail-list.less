@@ -1,6 +1,5 @@
 
-.main{
-  &__mail-list-item> * {
+.mail-list__item> * {
     vertical-align: bottom;
     display: inline-block;
     overflow: hidden;
@@ -8,29 +7,27 @@
     white-space: nowrap;
     line-height: 40px;
   }
-  &__mail-list-item{
+  &__item{
     background-color: #fff;
   }
-  &__mail-list-item .select-marker {
+  &__item .select-marker {
     width: 70px;
   }
-  &__mail-list-item{
+  &__item{
 
     &-sender {
       width: 30%;
       overflow: hidden;
     }
-
   }
-}
 
-.main__mail-list-item time {
+.mail-list__item time {
   width: 35px;
   text-align: right;
 }
 
-.main__mail-list-item p {
+.mail-list__item p {
   padding: 0;
   margin: 0;
-  width: 60%;
+  width: 80%;
 }

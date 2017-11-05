@@ -1,1 +1,10 @@
-.layout {}
+.layout {
+}
+
+.layout__payload {
+
+    overflow: hidden;
+    margin-top: 46px;
+    margin-left: 225px;
+
+}
