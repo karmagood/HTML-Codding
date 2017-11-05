@@ -28,11 +28,12 @@ a {
   width: 500px;
 }
 .Layout__additional-info {
-  background-color: white;
+  background-color: pink;
   float: left;
   width: 281px;
 }
 .Layout__chat {
+  background-color: goldenrod;
   position: fixed;
   width: 205px;
   right: 0;
