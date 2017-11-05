@@ -1,0 +1,37 @@
+@body-color: #111111;
+@font-size: 14px;
+@border-width: 1px;
+@border-style: solid;
+@border-color: lightgray;
+@margin-left: 50px;
+@a-height: 20px;
+
+.Layout {
+  &__aside-library,
+  &__aside-subscriptions,
+  &__aside-channels,
+  &__aside-films {
+    border-bottom: @border-width @border-style @border-color;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+  }
+
+  &__aside-library a,
+  &__aside-subscriptions a,
+  &__aside-channels a,
+  &__aside-films a {
+    display: block;
+    color: @body-color;
+    font-size: @font-size;
+    text-decoration: none;
+    margin-left: @margin-left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: @a-height;
+    white-space: nowrap;
+  }
+
+}

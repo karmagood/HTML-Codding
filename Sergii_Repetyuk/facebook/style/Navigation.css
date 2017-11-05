@@ -1,0 +1,23 @@
+.Navigation {
+  background: darkgrey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+.Navigation__item {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+.Navigation__item-counter {
+  top: 6px;
+  line-height: 12px;
+  position: absolute;
+  right: 3px;
+  padding: 3px;
+  font-size: 10px;
+  height: 12px;
+  color: gray;
+}

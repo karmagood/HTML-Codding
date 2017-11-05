@@ -1,0 +1,13 @@
+.Layout__aside-navigation {
+  border-bottom: 1px solid lightgray;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.Layout__aside-navigation a {
+  display: block;
+  color: #111111;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 50px;
+  padding-top: 20px;
+}
