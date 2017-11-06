@@ -4,9 +4,9 @@
 
 
 function largestPrimeFactor(number) {
-    var iter = 2;
-    var upperBorder = Math.ceil(Math.sqrt(number));
-    var maxSimpleDivisor=false;
+    let iter = 2;
+    const upperBorder = Math.ceil(Math.sqrt(number));
+    let maxSimpleDivisor = false;
     while (iter < upperBorder){
         if (number % iter === 0){
             maxSimpleDivisor = iter;
