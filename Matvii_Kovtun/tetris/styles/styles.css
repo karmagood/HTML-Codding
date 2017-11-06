@@ -1,0 +1,30 @@
+.World {
+    margin: auto;
+    width:  240px;
+}
+
+.World__row {
+    overflow: hidden;
+}
+
+.World__cell {
+    margin: 2px;
+    height: 20px;
+    width: 20px;
+    background: #bdc3c7;
+    font-size: 8px;
+    text-align: center;
+    vertical-align: 10px;
+
+    float: left;
+    cursor: pointer;
+}
+
+.World__cell_block {
+    background: #e67e22;
+}
+
+
+.World__cell_frozen {
+    background: #A5F2F3;
+}
