@@ -45,19 +45,16 @@ const taskString = "73167176531330624919225119674426574742355349194934" +
     "05886116467109405077541002256983155200055935729725" +
     "71636269561882670428252483600823257530420752963450";
 
+const foldAdvanced = (
+      foldReduce = () => {},
+      entityToFold = [],
+      entityReducer = () => {},
+      accum,
+      stopCondition = () => {},
 
-
-
-const foldAdvanced = ( foldReduce,
-                       entityToFold,
-                       entityReducer,
-                       accum,
-                       stopCondition,
-                       terminate) => {
-    if (stopCondition(entityToFold))
-        return terminate(accum);
-    else{
-        return foldAdvanced(
+      terminate = (a) => a
+    ) => stopCondition(entityToFold) ?  terminate(accum)
+        : foldAdvanced(
             foldReduce,
             entityReducer(entityToFold),
             entityReducer,
@@ -65,32 +62,16 @@ const foldAdvanced = ( foldReduce,
             stopCondition,
             terminate
         )
-    }
-};
+;
 
-
-
-const sumOfNumberDigits = (numberString) =>{
-    return foldAdvanced(
-        (acc, entity) => {return acc + parseInt(entity[entity.length - 1]);},
-        numberString ,
-        (entity) => { return entity.slice(0, entity.length-1);} ,
-        0,
-        (entity) => { return entity.length === 0;},
-        (entity) => {return entity}
-    );
-};
-
-const prodOfNumberDigits = (numberString) => {
-    return foldAdvanced(
-        (acc, entity) => {return acc * parseInt(entity[entity.length - 1]);},
-        numberString ,
-        (entity) => { return entity.slice(0, entity.length-1);} ,
-        1,
-        (entity) => { return entity.length === 0;},
-        (entity) => {return entity}
-    );
-};
+const prodOfNumberDigits = (numberString) => foldAdvanced (
+    (acc, entity) => acc * parseInt(entity[entity.length - 1]),
+    numberString,
+    entity => entity.slice(0, entity.length - 1),
+    1,
+    entity => entity.length === 0 ,
+    entity => entity
+);
 
 const maxProductOfNAdjecent = (numberAsString, adjLength) => {
 
@@ -100,12 +81,9 @@ const maxProductOfNAdjecent = (numberAsString, adjLength) => {
     let maxSlice;
     let maxStringSum = 0;
 
-
-    for (let left = 0;
-         left < numberAsString.length - adjLength;
-         left++ ){
-        slicedString = numberAsString.slice( left , left + adjLength );
-        if (maxStringSum < prodOfNumberDigits(slicedString)){
+    for (let left = 0; left < numberAsString.length - adjLength; left++) {
+        slicedString = numberAsString.slice(left, left + adjLength);
+        if (maxStringSum < prodOfNumberDigits(slicedString)) {
             maxStringSum = prodOfNumberDigits(slicedString);
             maxSlice = slicedString;
         }
@@ -113,31 +91,26 @@ const maxProductOfNAdjecent = (numberAsString, adjLength) => {
     return prodOfNumberDigits(maxSlice);
 };
 
-
 const maxProductOfNAdjecent2 = (numberAsString, adjLength) => {
 
     if (numberAsString.length < adjLength)
         return 0;
     else
         return foldAdvanced(
-            (accum, numberString) => { return (
-                prodOfNumberDigits(accum) > prodOfNumberDigits(numberString.slice(0, adjLength)) ?
-                    accum :
-                    numberString.slice(0, adjLength) )
-                ;}, // foldReduce,
-            numberAsString, // entityToFold,
-            (numberString) => {return numberString.slice(1, numberString.length);}, // entityReducer,
-            "", // accum,
-            (numberString) => {return numberString.length < adjLength;},// stopCondition
-            (entity) => {return prodOfNumberDigits(entity)} //return action
+            (accum, numberString) =>
+                prodOfNumberDigits(accum) > prodOfNumberDigits(numberString.slice(0, adjLength))
+                    ? accum
+                    : numberString.slice(0, adjLength),
+            numberAsString,
+            numberString => numberString.slice(1, numberString.length),
+            "",
+            numberString => numberString.length < adjLength,
+            entity => prodOfNumberDigits(entity)
         );
-
 };
 
-
-
- console.log(maxProductOfNAdjecent(taskString, 4));
+console.log(maxProductOfNAdjecent(taskString, 4));
 console.log(maxProductOfNAdjecent2(taskString, 4));
 
- console.log(maxProductOfNAdjecent(taskString, 13));
+console.log(maxProductOfNAdjecent(taskString, 13));
 console.log(maxProductOfNAdjecent2(taskString, 13));
