@@ -45,51 +45,61 @@ const taskString = "73167176531330624919225119674426574742355349194934" +
     "05886116467109405077541002256983155200055935729725" +
     "71636269561882670428252483600823257530420752963450";
 
-// TODO try to do it as FoldRight or FoldLeft and pass the lambda
 
 
 
-function prodOfTwo(first, second){
-    return first * second;
-}
-
-
-
-function fold( foldReduce,entityToFold, accum){
-    if (entityToFold.length === 0)
-        return accum;
+function foldAdvanced( foldReduce,
+                       entityToFold,
+                       entityReducer,
+                       accum,
+                       stopCondition,
+                       terminate){
+    if (stopCondition(entityToFold))
+        return terminate(accum);
     else{
-        return fold(
+        return foldAdvanced(
             foldReduce,
-            entityToFold.slice(0, entityToFold.length - 1),
-            foldReduce(accum, parseInt(entityToFold[entityToFold.length -1]))
+            entityReducer(entityToFold),
+            entityReducer,
+            foldReduce(accum, entityToFold),
+            stopCondition,
+            terminate
         )
     }
 }
 
+
+
 function sumOfNumberDigits (numberString){
-    var acc = 0;
-    for (i = 0; i < numberString.length; i++){
-        acc += parseInt(numberString[i]);
-    }
-    return acc;
+    return foldAdvanced(
+        (acc, entity) => {return acc + parseInt(entity[entity.length - 1]);},
+        numberString ,
+        (entity) => { return entity.slice(0, entity.length-1);} ,
+        0,
+        (entity) => { return entity.length === 0;},
+        (entity) => {return entity}
+    );
 }
 
 function prodOfNumberDigits (numberString){
-    var acc = 1;
-    for (i = 0; i < numberString.length; i++){
-        acc *= parseInt(numberString[i]);
-    }
-    return acc;
+    return foldAdvanced(
+        (acc, entity) => {return acc * parseInt(entity[entity.length - 1]);},
+        numberString ,
+        (entity) => { return entity.slice(0, entity.length-1);} ,
+        1,
+        (entity) => { return entity.length === 0;},
+        (entity) => {return entity}
+    );
 }
 
-
 function maxProductOfNAdjecent(numberAsString, adjLength){
+
     if (adjLength > numberAsString.length)
         return 0;
     var slicedString;
     var maxSlice;
     var maxStringSum = 0;
+
 
     for (var left = 0;
          left < numberAsString.length - adjLength;
@@ -103,27 +113,29 @@ function maxProductOfNAdjecent(numberAsString, adjLength){
     return prodOfNumberDigits(maxSlice);
 }
 
+function maxProductOfNAdjecent2(numberAsString, adjLength){
 
-//console.log(sumOfTwo(1, 2));
+    if (numberAsString.length < adjLength)
+        return 0;
+    else
+        return foldAdvanced(
+            (accum, numberString) => { return (
+                prodOfNumberDigits(accum) > prodOfNumberDigits(numberString.slice(0, adjLength)) ?
+                    accum :
+                    numberString.slice(0, adjLength) )
+                ;}, // foldReduce,
+            numberAsString, // entityToFold,
+            (numberString) => {return numberString.slice(1, numberString.length);}, // entityReducer,
+            "", // accum,
+            (numberString) => {return numberString.length < adjLength;},// stopCondition
+            (entity) => {return prodOfNumberDigits(entity)} //return action
+        );
+
+}
 
 
-
-
-console.log(prodOfTwo(1, 2));
-
-console.log(fold( (a,b) => {return a + b;} , "1234", 0) );
-
-console.log(fold( (a,b) => {return a * b;} , "1234", 1) );
-
-
-//
-// console.log(sumOfNumberDigits("81"));
-// console.log(prodOfNumberDigits("81"));
-//
  console.log(maxProductOfNAdjecent(taskString, 4));
-//
+console.log(maxProductOfNAdjecent2(taskString, 4));
+
  console.log(maxProductOfNAdjecent(taskString, 13));
-
- var a = '123';
-
-console.log(a.slice(0, a.length - 1));
+console.log(maxProductOfNAdjecent2(taskString, 13));
