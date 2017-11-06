@@ -1,0 +1,54 @@
+.mail-settings__gmail_button {
+  color: #DF4B39;
+  font-size: 22px;
+  border: none;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.mail-settings__select_messages {
+  margin-top: 10px;
+  margin-left: 90px;
+  height: 26px;
+  width: 72px;
+}
+.mail-settings__button_refresh {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  overflow: hidden;
+  color: transparent;
+  border: none;
+  background-image: url(https://www.materialui.co/materialIcons/navigation/refresh_grey_192x192.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px 30px;
+}
+.mail-settings__button_previous {
+  color: transparent;
+  height: 25px;
+  width: 25px;
+  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-left-01-128.png);
+  background-size: 25px 25px;
+  background-color: #f3f3f3;
+  border: none;
+}
+.mail-settings__button_next {
+  color: transparent;
+  height: 25px;
+  width: 25px;
+  background-image: url(https://cdn3.iconfinder.com/data/icons/faticons/32/arrow-right-01-512.png);
+  background-size: 25px 25px;
+  background-color: #f3f3f3;
+  border: none;
+}
+.mail-settings__button_setting {
+  color: transparent;
+  height: 28px;
+  width: 50px;
+  background-image: url(https://cdn3.iconfinder.com/data/icons/fez/512/FEZ-04-512.png);
+  background-size: 24px 24px;
+  background-color: #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
