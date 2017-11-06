@@ -18,31 +18,14 @@ World[1][2] = BARRICADE;
 World[1][3] = FOOD;
 
 const renderWorldCell = (cell) => {
-    if (cell === EMPTY ) {
-        return `<div class="World__cell"></div>`
-    } else if (cell === BARRICADE) {
-        return `<div class="World__cell World__cell_barricade"></div>`
-    } else if ( cell === SNAKE) {
-        return `<div class="World__cell World__cell_snake"></div>`
-    } else if (cell === FOOD) {
-        return `<div class="World__cell World__cell_food"></div>`
-    } else {
-        return `<div class="World__cell World__cell_wtf">A!</div>`
+    switch  (cell) {
+        case EMPTY : return `<div class="World__cell"></div>`
+        case BARRICADE: return `<div class="World__cell World__cell_barricade"></div>`
+        case SNAKE: return `<div class="World__cell World__cell_snake"></div>`
+        case FOOD: return `<div class="World__cell World__cell_food"></div>`
+        default : return `<div class="World__cell World__cell_wtf">A!</div>`
     }
 };
-
-const renderWorld = (World) => `
-    <div class="World">
-        ${World.map( row =>  `
-            <div class="World__row">
-                ${row
-                    .map((cell) => renderWorldCell(cell))
-                    .join("")
-                }
-            </div>    
-        `).join("")}
-    </div>
-`;
 
 let Snake = [
     [0, 0],
@@ -51,29 +34,20 @@ let Snake = [
     [0, 3],
 ];
 
-const addSnakeToWorld = (snake, world) => {
-    snake.forEach( ([x, y]) => world[x][y] = SNAKE);
-};
-
-const clearSnake = (snake, world) => {
-    snake.forEach( ([x, y]) => world[x][y] = EMPTY);
-};
+const addObjectToWorld = (coordinates, world, type) => coordinates.forEach( ([x, y]) => world[x][y] = type);
 
 const clone = (arr) => arr.slice();
 
 const increment = (max) => (val) => (val + 1) % max;
 const decrement =  (max) => (val) => val - 1 < 0 ? max : val - 1;
 
-
 const moveSnake = (direction, snake, restrictions) => {
     let head = clone(snake[snake.length - 1]);
-    console.log(restrictions[0], head[1]);
 
     if (direction === "right") head[1] = increment(restrictions[0])(head[1]);
     else if (direction === "left") head[1] = decrement (restrictions[0]-1 )(head[1]);
     else if (direction === "top") head[0] = decrement( restrictions[1]-1 )(head[0]);
     else if (direction === "bottom") head[0] = increment(restrictions[1])(head[0]);
-
 
     snake.push(head);
 
@@ -81,31 +55,68 @@ const moveSnake = (direction, snake, restrictions) => {
     return snake;
 };
 
-let direction = "right";
 
-const handleKeys = (ev)=> {
-    console.log(ev);
-    if (ev.keyCode === 39)  { //right
-        direction = "right";
-    } else if (ev.keyCode === 37) {
-        direction = "left";
-    } else if (ev.keyCode === 38) {
-        direction = "top";
-    } else if (ev.keyCode === 40) {
-        direction = "bottom";
+
+const getElementIndex = (el) => Array
+    .prototype.slice.call ( el.parentNode.childNodes )
+    .filter ( node => node.nodeType === 1)
+    .indexOf ( el );
+
+const addFoodHandler = (ev) => {
+    const el = ev.target;
+
+    if (el.classList.contains("World__cell")) {
+        const row = el.parentNode;
+        const y = getElementIndex(el);
+        const x = getElementIndex(row);
+
+        World[x][y] = FOOD;
     }
 };
 
-document.body
-    .addEventListener("keydown", handleKeys, false);
+let direction = "right";
 
-setInterval(
-    () => {
-        clearSnake(Snake, World);
-        Snake = moveSnake(direction, Snake, [WORLD_HEIGHT, WORLD_WIDTH]);
-        addSnakeToWorld(Snake, World);
-        document.body.innerHTML = renderWorld(World);
-    },
-    300
-);
+const handleKeys = (ev)=> {
+    switch (ev.keyCode) {
+        case 39: return direction = "right";
+        case 37: return direction = "left";
+        case 38: return direction = "top";
+        case 40: return direction = "bottom";
+        default: return
+    }
+};
+
+class Game {
+    constructor (root) {
+        root.addEventListener("keydown", handleKeys, false);
+        root.addEventListener("click", addFoodHandler, false);
+
+        setInterval(
+            () => {
+                addObjectToWorld(Snake, World, EMPTY);
+                Snake = moveSnake(direction, Snake, [WORLD_HEIGHT, WORLD_WIDTH]);
+                addObjectToWorld(Snake, World, SNAKE);
+                root.innerHTML = this.render(World);
+            },
+            300
+        );
+    }
+
+    render (World) {
+        return `
+            <div class="World">
+                ${World.map(row => `
+                    <div class="World__row">
+                        ${row
+                            .map((cell) => renderWorldCell(cell))
+                            .join("")
+                        }
+                    </div>
+                `).join("")}
+            </div>
+        `
+    };
+}
+
+new Game(document.body);
 

@@ -11,12 +11,13 @@
     margin: 2px;
     height: 10px;
     width: 10px;
-    background: gold;
+    background: #efefef;
     font-size: 8px;
     text-align: center;
     vertical-align: 10px;
 
     float: left;
+    cursor: pointer;
 }
 
 .World__cell_snake {
