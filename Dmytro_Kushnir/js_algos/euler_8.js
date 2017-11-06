@@ -48,12 +48,12 @@ const taskString = "73167176531330624919225119674426574742355349194934" +
 
 
 
-function foldAdvanced( foldReduce,
+const foldAdvanced = ( foldReduce,
                        entityToFold,
                        entityReducer,
                        accum,
                        stopCondition,
-                       terminate){
+                       terminate) => {
     if (stopCondition(entityToFold))
         return terminate(accum);
     else{
@@ -66,11 +66,11 @@ function foldAdvanced( foldReduce,
             terminate
         )
     }
-}
+};
 
 
 
-function sumOfNumberDigits (numberString){
+const sumOfNumberDigits = (numberString) =>{
     return foldAdvanced(
         (acc, entity) => {return acc + parseInt(entity[entity.length - 1]);},
         numberString ,
@@ -79,9 +79,9 @@ function sumOfNumberDigits (numberString){
         (entity) => { return entity.length === 0;},
         (entity) => {return entity}
     );
-}
+};
 
-function prodOfNumberDigits (numberString){
+const prodOfNumberDigits = (numberString) => {
     return foldAdvanced(
         (acc, entity) => {return acc * parseInt(entity[entity.length - 1]);},
         numberString ,
@@ -90,18 +90,18 @@ function prodOfNumberDigits (numberString){
         (entity) => { return entity.length === 0;},
         (entity) => {return entity}
     );
-}
+};
 
-function maxProductOfNAdjecent(numberAsString, adjLength){
+const maxProductOfNAdjecent = (numberAsString, adjLength) => {
 
     if (adjLength > numberAsString.length)
         return 0;
-    var slicedString;
-    var maxSlice;
-    var maxStringSum = 0;
+    let slicedString;
+    let maxSlice;
+    let maxStringSum = 0;
 
 
-    for (var left = 0;
+    for (let left = 0;
          left < numberAsString.length - adjLength;
          left++ ){
         slicedString = numberAsString.slice( left , left + adjLength );
@@ -111,10 +111,10 @@ function maxProductOfNAdjecent(numberAsString, adjLength){
         }
     }
     return prodOfNumberDigits(maxSlice);
-}
+};
 
 
-function maxProductOfNAdjecent2(numberAsString, adjLength){
+const maxProductOfNAdjecent2 = (numberAsString, adjLength) => {
 
     if (numberAsString.length < adjLength)
         return 0;
@@ -132,7 +132,7 @@ function maxProductOfNAdjecent2(numberAsString, adjLength){
             (entity) => {return prodOfNumberDigits(entity)} //return action
         );
 
-}
+};
 
 
 

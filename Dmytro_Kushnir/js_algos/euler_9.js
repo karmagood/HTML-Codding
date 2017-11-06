@@ -6,11 +6,11 @@
 // There exists exactly one Pythagorean triplet for which a + b + c = 1000.
 // Find the product abc.
 
-function pyhtagoreanTripletWithSum(sumOfTriplet) {
-    for (maxEl = Math.ceil(sumOfTriplet / 3); maxEl <= sumOfTriplet - 3; maxEl++){
+const pyhtagoreanTripletWithSum = (sumOfTriplet) => {
+    for (let maxEl = Math.ceil(sumOfTriplet / 3); maxEl <= sumOfTriplet - 3; maxEl++){
         //rest1 = sumOfTriplet - maxEl;
-        for (midEl = maxEl - 1; midEl >= 2; midEl-- ){
-            minEl = sumOfTriplet - midEl - maxEl;
+        for (let midEl = maxEl - 1; midEl >= 2; midEl-- ){
+            let minEl = sumOfTriplet - midEl - maxEl;
             // console.log([minEl, midEl, maxEl]);
 
             if (midEl*midEl + minEl*minEl === maxEl*maxEl){
@@ -21,7 +21,7 @@ function pyhtagoreanTripletWithSum(sumOfTriplet) {
         }
     }
     return null;
-}
+};
 
 const triplet = pyhtagoreanTripletWithSum(1000);
 console.log(triplet);
