@@ -1,0 +1,29 @@
+@import "scss/mixins";
+
+$palegray:#1b1b1b;
+$link_border: 2px solid $palegray;
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: $palegray;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.plain-link {
+  color: $palegray;
+  border-bottom: $link_border;
+  text-decoration: none;
+  &:link {
+    @include link_with_bottom_border($palegray, $link_border);
+    &:hover {
+      @include link_with_bottom_border($palegray, none);
+    }
+    &:active {
+      @include link_with_bottom_border($palegray, $link_border);
+    }
+    &:visited {
+      @include link_with_bottom_border($palegray, $link_border);
+    }
+  }
+}

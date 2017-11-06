@@ -1,0 +1,14 @@
+@mixin style_of_head_link($txtdeco){
+  color: #1b1b1b;
+  text-decoration: $txtdeco;
+}
+
+@mixin link_with_bottom_border($color, $bottom-border){
+  color: $color;
+  border-bottom: $bottom-border;
+}
+
+@mixin default_link{
+  color: $palegray;
+  border-bottom:none;
+}
