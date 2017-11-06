@@ -8,21 +8,21 @@
 //
 // Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
-function sumOfSquares(from, to){
-    var acc = 0;
-    for (var i = from; i <= to; i++){
+const sumOfSquares = (from, to) => {
+    let acc = 0;
+    for (let i = from; i <= to; i++){
         acc += i*i;
     }
     return acc;
-}
+};
 
-function squareOfSum(from, to){
-    var acc = 0;
-    for (var i = from; i <= to; i++){
+const squareOfSum = (from, to) => {
+    let acc = 0;
+    for (let i = from; i <= to; i++){
         acc += i;
     }
     return acc * acc;
-}
+};
 
 
 console.log(squareOfSum(1, 10) - sumOfSquares(1, 10))

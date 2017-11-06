@@ -48,7 +48,7 @@ const GRID =
     "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48";
 
 
-function simpleFold(fun, acc, work, workReducer,  isTerminate) {
+const simpleFold = (fun, acc, work, workReducer,  isTerminate) => {
     if (isTerminate(work))
         return acc;
     return simpleFold(
@@ -57,9 +57,9 @@ function simpleFold(fun, acc, work, workReducer,  isTerminate) {
         workReducer(work),
         workReducer,
         isTerminate);
-}
+};
 
-function listSum(listName) {
+const listSum = (listName) => {
     return simpleFold(
         (a,b) => {return a+ b[0];},
         0,
@@ -67,9 +67,9 @@ function listSum(listName) {
         (work) => {return work.slice(1,work.length);},
         (work) => {return work.length === 0;}
     );
-}
+};
 
-function listProduct(listName) {
+const listProduct = (listName) => {
     return simpleFold(
         (a,b) => {return a * b[0];},
         1,
@@ -77,40 +77,42 @@ function listProduct(listName) {
         (work) => {return work.slice(1,work.length);},
         (work) => {return work.length === 0;}
     );
-}
+};
 
-function buildGrid(h, l, stVals){
+const buildGrid = (h, l, stVals) => {
     const arr = stVals.split(" ");
     console.log(arr.length);
     //console.log(arr);
-    var D2grid = [];
-    var cntr = 0;
-    for (i = 0; i < h; i++){
+    let D2grid = [];
+    let cnt = 0;
+    for (let i = 0; i < h; i++){
         D2grid.push([]);
-        for (j = 0; j < l; j++){
-            D2grid[i].push(arr[cntr]);
-            cntr++;
+        for (let j = 0; j < l; j++){
+            D2grid[i].push(arr[cnt]);
+            cnt++;
         }
     }
     return D2grid;
-}
+};
 
 d2grid = buildGrid(20,20, GRID);
 // console.log(d2grid);
 
 
-function getSeries(grid,Xoffset, Yoffset, seriesSize){
-    var serieses = [];
-    for (var i = 0; i < grid.length; i++){
-        for (var j = 0; j < grid[0].length ; j++){
-            var thisSeries = [];
+const getSeries = (grid,Xoffset, Yoffset, seriesSize) => {
+    let serieses = [];
+    for (let i = 0; i < grid.length; i++){
+        for (let j = 0; j < grid[0].length ; j++){
+            let thisSeries = [];
             //console.log([i,j]);
-            for (var k = 0;
+            for (let  k = 0;
+
                  k < seriesSize &&
                  (0 <= j+ k*Xoffset) &&
                  (j+ k*Xoffset < grid[0].length) &&
                  (0 <= i+ k*Yoffset) &&
                  ( i+ k*Yoffset< grid.length) ;
+
                  k++){
                 thisSeries.push(grid[i+ k*Yoffset][j+ k*Xoffset])
             }
@@ -119,7 +121,7 @@ function getSeries(grid,Xoffset, Yoffset, seriesSize){
         }
     }
     return serieses;
-}
+};
 
 
 
@@ -128,15 +130,15 @@ const vert_series = getSeries(d2grid, 0, 1, 4);
 const rise_diag_series = getSeries(d2grid, 1, 1, 4);
 const fall_diag_series = getSeries(d2grid, 1, -1, 4);
 
-function listOfStringsToListOfInts(listOfStrings){
-    var listOfInts = [];
+const listOfStringsToListOfInts = (listOfStrings) => {
+    let listOfInts = [];
     for (let i = 0; i < listOfStrings.length; i++){
         listOfInts.push(parseInt(listOfStrings[i]));
     }
     return listOfInts;
-}
+};
 
-function maxProductOfList(thisSeries){
+const maxProductOfList = (thisSeries) => {
     return simpleFold(
         (acc, value) => {
             return Math.max(acc, listProduct( listOfStringsToListOfInts(value[0])) );
