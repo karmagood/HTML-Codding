@@ -61,13 +61,18 @@ const clearSnake = (snake, world) => {
 
 const clone = (arr) => arr.slice();
 
-const moveSnake = (direction, snake) => {
-    let head = clone(snake[snake.length - 1]);
+const increment = (max) => (val) => (val + 1) % max;
+const decrement =  (max) => (val) => val - 1 < 0 ? max : val - 1;
 
-    if (direction === "right") head[1]++;
-    else if (direction === "left") head[1]--;
-    else if (direction === "top") head[0]--;
-    else if (direction === "bottom") head[0]++;
+
+const moveSnake = (direction, snake, restrictions) => {
+    let head = clone(snake[snake.length - 1]);
+    console.log(restrictions[0], head[1]);
+
+    if (direction === "right") head[1] = increment(restrictions[0])(head[1]);
+    else if (direction === "left") head[1] = decrement (restrictions[0]-1 )(head[1]);
+    else if (direction === "top") head[0] = decrement( restrictions[1]-1 )(head[0]);
+    else if (direction === "bottom") head[0] = increment(restrictions[1])(head[0]);
 
 
     snake.push(head);
@@ -80,7 +85,6 @@ let direction = "right";
 
 const handleKeys = (ev)=> {
     console.log(ev);
-
     if (ev.keyCode === 39)  { //right
         direction = "right";
     } else if (ev.keyCode === 37) {
@@ -98,10 +102,10 @@ document.body
 setInterval(
     () => {
         clearSnake(Snake, World);
-        Snake = moveSnake(direction, Snake);
+        Snake = moveSnake(direction, Snake, [WORLD_HEIGHT, WORLD_WIDTH]);
         addSnakeToWorld(Snake, World);
         document.body.innerHTML = renderWorld(World);
     },
-    500
+    300
 );
 
