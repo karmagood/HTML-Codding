@@ -113,6 +113,7 @@ function maxProductOfNAdjecent(numberAsString, adjLength){
     return prodOfNumberDigits(maxSlice);
 }
 
+
 function maxProductOfNAdjecent2(numberAsString, adjLength){
 
     if (numberAsString.length < adjLength)
@@ -132,6 +133,7 @@ function maxProductOfNAdjecent2(numberAsString, adjLength){
         );
 
 }
+
 
 
  console.log(maxProductOfNAdjecent(taskString, 4));
