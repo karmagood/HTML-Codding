@@ -10,9 +10,10 @@ function nextFibo(prePrev, prev) {
 }
 
 function someDivisorFiboSum(divisor, Limit){
-    var aFiboElement = 1, bFiboElement = 1;
-    var buf;
-    var accum = 0;
+    "use strict";
+    let aFiboElement = 1, bFiboElement = 1;
+    let buf;
+    let accum = 0;
     while (bFiboElement < Limit){
         if (bFiboElement % divisor === 0){
             accum += bFiboElement;
