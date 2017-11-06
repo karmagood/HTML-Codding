@@ -1,7 +1,7 @@
 // The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 //
 // Find the sum of all the primes below two million.
-
+'use strict'
 const isMutuallySimple = (value, primesToCompareList) => {
     let isMutSimple = true;
     for (let i = 0; i < primesToCompareList.length && isMutSimple; i++) {
@@ -18,7 +18,7 @@ const getPrimesLessThen = (number) => {
     while (simpleCandidate <= number){
         if (isMutuallySimple(simpleCandidate, primesList)){
             primesList.push(simpleCandidate);
-            console.log(primesList.length);
+         //   console.log(primesList.length);
         }
         simpleCandidate++;
     }
@@ -59,16 +59,20 @@ const listSumIterative = (listName) => {
 
 
 
-primes = getPrimesLessThen(10);
-console.log(primes);
-
-foldRez = listSum(primes);
-
+const primes = getPrimesLessThen(1000000);
+console.log(primes.length);
+const foldRez = listSum(primes);
 console.log(foldRez);
-console.log(listSumIterative(primes));
+//console.log(primes);
 
-twoMlnPrimes =getPrimesLessThen(2000000);
-
-console.log(twoMlnPrimes.length);
-
-console.log(listSumIterative(twoMlnPrimes));
+// foldRez = listSum(primes);
+//
+// console.log(foldRez);
+//
+// console.log(listSumIterative(primes));
+//
+// twoMlnPrimes =getPrimesLessThen(2000000);
+//
+// console.log(twoMlnPrimes.length);
+//
+// console.log(listSumIterative(twoMlnPrimes));
