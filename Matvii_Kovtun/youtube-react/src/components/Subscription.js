@@ -1,14 +1,16 @@
 import React from 'react';
-import '../style/LayoutUserMenu.css';
+
 import "../style/Subscription.css";
+import Icon from "./Icon";
 
 
-const Subscription = ({channelLink, picture, name}) => (
-    <div class="user-menu__subscription">
-        <img src={picture}></img>
-        <a class="user-menu__section-element" href={channelLink}>{name}</a>
-    </div>
-
+const Subscription = ({channelLink, img, name, icon}) => (
+    <a class="subscription" href={channelLink}>
+        {icon && <Icon {...icon}/>}
+        {img && <span class="subscription__image"
+                      style={{backgroundImage: "url(" + img + ")"}}></span>}
+        <span class="subscription__text">{name}</span>
+    </a>
 );
 
 
