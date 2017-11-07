@@ -2,26 +2,14 @@ import {WORLD_HEIGHT, WORLD_WIDTH, EMPTY, BLOCK, FROZEN } from './config.js'
 
 import Piece from "./Piece"
 
-const handleKeys = (ev) => {
-    // console.log(ev);
-    switch (ev.keyCode) {
-        case 39:
-            return direction = "right";
-        case 37:
-            return direction = "left";
-        case 38:
-            return direction = "top";
-        case 40:
-            return direction = "bottom";
-        default:
-            return
-    }
-};
+
 
 
 class Board {
     constructor(width, height) {
-        document.body.addEventListener("keydown", handleKeys, false);
+        this.direction = "bottom";
+
+        document.body.addEventListener("keydown", this.handleKeys, false);
         this.activePiece = undefined;
         this.width = width;
         this.height = height;
@@ -32,6 +20,16 @@ class Board {
         this.score = 0;
     }
 
+    handleKeys (ev) {
+        // console.log(ev);
+        switch (ev.keyCode) {
+            case 39: return this.direction = "right";
+            case 37: return this.direction = "left";
+            case 38: return this.direction = "top";
+            case 40: return this.direction = "bottom";
+            default: return
+        }
+    };
 
     renderWorldCell(cell) {
         switch (cell) {
@@ -52,8 +50,7 @@ class Board {
             <div class="World">
                 ${this.world.map(row => `
                     <div class="World__row">
-                        ${row.map((cell) =>
-            this.renderWorldCell(cell)).join("")}
+                        ${row.map((cell) =>  this.renderWorldCell(cell)).join("")}
                     </div>`).join("")}
             </div>
         `

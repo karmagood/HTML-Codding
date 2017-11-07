@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -68,33 +68,42 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+const WORLD_HEIGHT = 32;
+/* harmony export (immutable) */ __webpack_exports__["d"] = WORLD_HEIGHT;
+
+const WORLD_WIDTH = 10;
+/* harmony export (immutable) */ __webpack_exports__["e"] = WORLD_WIDTH;
+
+const EMPTY = 0;
+/* harmony export (immutable) */ __webpack_exports__["b"] = EMPTY;
+
+const BLOCK = 1;
+/* harmony export (immutable) */ __webpack_exports__["a"] = BLOCK;
+
+const FROZEN = 2;
+/* harmony export (immutable) */ __webpack_exports__["c"] = FROZEN;
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_js__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Piece__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Piece__ = __webpack_require__(2);
 
 
 
 
-const handleKeys = (ev) => {
-    // console.log(ev);
-    switch (ev.keyCode) {
-        case 39:
-            return direction = "right";
-        case 37:
-            return direction = "left";
-        case 38:
-            return direction = "top";
-        case 40:
-            return direction = "bottom";
-        default:
-            return
-    }
-};
+
 
 
 class Board {
     constructor(width, height) {
-        document.body.addEventListener("keydown", handleKeys, false);
+        this.direction = "bottom";
+
+        document.body.addEventListener("keydown", this.handleKeys, false);
         this.activePiece = undefined;
         this.width = width;
         this.height = height;
@@ -105,6 +114,16 @@ class Board {
         this.score = 0;
     }
 
+    handleKeys (ev) {
+        // console.log(ev);
+        switch (ev.keyCode) {
+            case 39: return this.direction = "right";
+            case 37: return this.direction = "left";
+            case 38: return this.direction = "top";
+            case 40: return this.direction = "bottom";
+            default: return
+        }
+    };
 
     renderWorldCell(cell) {
         switch (cell) {
@@ -125,8 +144,7 @@ class Board {
             <div class="World">
                 ${this.world.map(row => `
                     <div class="World__row">
-                        ${row.map((cell) =>
-            this.renderWorldCell(cell)).join("")}
+                        ${row.map((cell) =>  this.renderWorldCell(cell)).join("")}
                     </div>`).join("")}
             </div>
         `
@@ -241,28 +259,31 @@ mainFunc();
 
 
 /***/ }),
-/* 1 */
+/* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const WORLD_HEIGHT = 32;
-/* harmony export (immutable) */ __webpack_exports__["d"] = WORLD_HEIGHT;
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BasicPiece__ = __webpack_require__(3);
 
-const WORLD_WIDTH = 10;
-/* harmony export (immutable) */ __webpack_exports__["e"] = WORLD_WIDTH;
 
-const EMPTY = 0;
-/* harmony export (immutable) */ __webpack_exports__["b"] = EMPTY;
 
-const BLOCK = 1;
-/* harmony export (immutable) */ __webpack_exports__["a"] = BLOCK;
+class Piece extends __WEBPACK_IMPORTED_MODULE_1__BasicPiece__["a" /* default */] {
+    constructor() {
+        super();
+        let y = this.getRandom(0, __WEBPACK_IMPORTED_MODULE_0__config__["e" /* WORLD_WIDTH */]);
+        let root = [1, y];
 
-const FROZEN = 2;
-/* harmony export (immutable) */ __webpack_exports__["c"] = FROZEN;
+        this.coordinates = [[root[0] - 1, root[1]], root, [root[0] + 1, root[1]]];
+        this.color = this.getRandomColor();
+    };
+}
 
+
+/* harmony default export */ __webpack_exports__["a"] = (Piece);
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -286,30 +307,6 @@ class BasicPiece {
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (BasicPiece);
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__BasicPiece__ = __webpack_require__(2);
-
-
-
-class Piece extends __WEBPACK_IMPORTED_MODULE_1__BasicPiece__["a" /* default */] {
-    constructor() {
-        super();
-        let y = this.getRandom(0, __WEBPACK_IMPORTED_MODULE_0__config__["e" /* WORLD_WIDTH */]);
-        let root = [1, y];
-
-        this.coordinates = [[root[0] - 1, root[1]], root, [root[0] + 1, root[1]]];
-        this.color = this.getRandomColor();
-    };
-}
-
-
-/* harmony default export */ __webpack_exports__["a"] = (Piece);
 
 /***/ })
 /******/ ]);
