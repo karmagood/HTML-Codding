@@ -1,41 +1,6 @@
-class BasicPiece {
-    getRandom(from, to) {
-        return from + Math.floor(Math.random() * to);
-    }
+import {WORLD_HEIGHT, WORLD_WIDTH, EMPTY, BLOCK, FROZEN } from './config.js'
 
-    getRandomColor() {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[this.getRandom(0, 16)];
-        }
-        return color;
-    };
-
-
-}
-
-
-class Piece extends BasicPiece {
-    // noinspection JSAnnotator
-    constructor() {
-        super();
-        let y = this.getRandom(0, WORLD_WIDTH);
-        let root = [1, y];
-        this.coordinates = [[root[0] - 1, root[1]], root, [root[0] + 1, root[1]]];
-        this.color = this.getRandomColor();
-    };
-
-
-}
-
-
-const WORLD_HEIGHT = 32;
-const WORLD_WIDTH = 10;
-const EMPTY = 0;
-const BLOCK = 1;
-const FROZEN = 2;
-
+import Piece from "./Piece"
 
 const handleKeys = (ev) => {
     // console.log(ev);
@@ -179,13 +144,11 @@ class Board {
 
 
 const mainFunc = () => {
-    b = new Board(WORLD_WIDTH, WORLD_HEIGHT);
-    p = new Piece();
-    //
+    let b = new Board(WORLD_WIDTH, WORLD_HEIGHT);
+    let p = new Piece();
+
     b.setActivePiece(p);
 
-    
-    
     setInterval(
         () => {
 
@@ -198,9 +161,6 @@ const mainFunc = () => {
 
 
 mainFunc();
-
-// let items = b.renderWorld();
-// console.log(items);
 
 
 

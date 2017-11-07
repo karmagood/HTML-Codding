@@ -1,19 +1,16 @@
-const BasicPiece = require('./BasicPiece');
-
+import {WORLD_WIDTH} from "./config"
+import BasicPiece from "./BasicPiece";
 
 class Piece extends BasicPiece {
-    // noinspection JSAnnotator
     constructor() {
         super();
-        let root = [2, 5];
+        let y = this.getRandom(0, WORLD_WIDTH);
+        let root = [1, y];
+
         this.coordinates = [[root[0] - 1, root[1]], root, [root[0] + 1, root[1]]];
         this.color = this.getRandomColor();
     };
-
-
 }
 
-module.exports = Piece;
 
-
-export default class Piece{};
+export default Piece;
