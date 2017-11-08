@@ -11,29 +11,34 @@
         <link rel="stylesheet" href="style/Icon.css">
         <link rel="stylesheet" href="style/Additional-info.css">
         <link rel="stylesheet" href="style/Chat.css">
+        <link rel="stylesheet" href="style/Search.css">
+        <link rel="stylesheet" href="style/Main-navigation.css">
+        <link rel="stylesheet" href="style/Icon2.css">
     </head>
     <body class="Layout">
     <header class="Layout__header">
         <div class="Header">
             <span class="Header__logo"></span>
-            <form class="Header__search-block" action="#">
-                <input class="Header__search-form" type="search" name="q" placeholder="Пошук">
-                <button class="Header__search-button">Знайти</button>
+            <form class="Search">
+                <input class="Search__input" type="search" name="search" placeholder="Пошук">
+                <button class="Search__activate-button" type="button" >
+                    Search
+                </button>
             </form>
-            <nav class="Header__main-navigation">
-                <a href="https://www.facebook.com/yaroslav.rukavets">Yaroslav</a>
-                <a href="https://www.facebook.com/">Головна</a>
-                <a href="https://www.facebook.com/find-friends/browser/">Знайти друзів</a>
-                <a href="https://www.facebook.com/friends/requests/?fcref=jwl">
+            <nav class="Main-navigation">
+                <a class="Main-navigation__item" href="https://www.facebook.com/yaroslav.rukavets">Yaroslav</a>
+                <a class="Main-navigation__item" href="https://www.facebook.com/">Головна</a>
+                <a class="Main-navigation__item" href="https://www.facebook.com/find-friends/browser/">Знайти друзів</a>
+                <a class="Main-navigation__item_icon" href="https://www.facebook.com/friends/requests/?fcref=jwl">
                     <span class="Icon2 Icon2_friends-requests"></span>
                 </a>
-                <a href="https://www.facebook.com/messages/t/100005288926145">
+                <a class="Main-navigation__item_icon" href="https://www.facebook.com/messages/t/100005288926145">
                     <span class="Icon2 Icon2_message"></span>
                 </a>
-                <a href="https://www.facebook.com/notifications">
+                <a class="Main-navigation__item_icon" href="https://www.facebook.com/notifications">
                     <span class="Icon2 Icon2_notification"></span>
                 </a>
-                <a href="https://www.facebook.com/help/?ref=contextual">
+                <a class="Main-navigation__item_icon" href="https://www.facebook.com/help/?ref=contextual">
                     <span class="Icon2 Icon2_quick-help"></span>
                 </a>
             </nav>
