@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-header.css">
     <link rel="stylesheet" href="styles/button-follow.css">
-    <link rel="stylesheet" href="styles/video-page.css">
+    <link rel="stylesheet" href="styles/video-page__content.css">
     <link rel="stylesheet" href="styles/comments.css">
+    <link rel="stylesheet" href="styles/recommended-videos.css">
 </head>
 <body>
 <header class="main-header">
@@ -95,27 +96,48 @@
 
             <form class="comments__add">
                 <img class="profile-img" alt="Фотографія профілю за умовчанням" src="//s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" width="40" height="40">
-                <input class="comments__add__typing" type="text" value="Додайте коментар для всіх...">
+                <input class="comments__typing" type="text" value="Додайте коментар для всіх...">
             </form>
-
+            {{#comments}}
             <section class="comments__one">
-                <img class="profile-img" src="https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg" width="40" height="40">
+                <img class="profile-img" src="{{profile-img}}" width="40" height="40">
                 <article class="comments__one__content">
-                    <h5 class="comments__one__content__name"> Denis Sensey</h5>
-                    <time class="comments__one__content__time">2 роки тому</time>
-                    <p class="comments__one__content__comment">Маленькие они все прикольные и хорошие:)﻿</p>
+                    <h5 class="comments__one__content__name">{{name}}</h5>
+                    <time class="comments__one__content__time">{{time}}</time>
+                    <p class="comments__one__content__comment">{{comment-text}}﻿</p>
                     <aside class="comments__one__content__respond">
                         <button class="comments__one__content__respond__answer">відповісти</button>
-                        <span class="comments__one__content__respond__number">15</span>
-                        <button class="comments__one__content__respond__like"><i class="material-icons">thumb_up</i></button>
-                        <button class="comments__one__content__respond__diislike"><i class="material-icons">thumb_down</i></button>
+                        <span class="comments__one__content__respond__number">{{number}}</span>
+                        <i class="material-icons">thumb_up</i>
+                        <i class="material-icons">thumb_down</i>
                     </aside>
+                    <button class="comments__one__content__see-comments">
+                        Переглянути відповідь
+                    </button>
                 </article>
             </section>
+            {{/comments}}
         </section>
     </section>
     <aside class="recommended-videos">
+        <p class="recommended-videos__next">Наступне</p>
+        <button class="recommended-videos__autoplay">
+        </button>
+        <p class="recommended-videos__autoplay-text">АВТОМАТИЧНЕ ВІДТВОРЕННЯ</p>
+        {{#next-videos}}
+        <article class="recommended-videos__next-video">
+            <img src="{{url}}" alt="video" width="168px" height="94px">
+            <aside class="recommended-videos__next-video__details">
+                <h3 class="recommended-videos__next-video__details__name">{{video-name}}</h3>
 
+                <a class="recommended-videos__next-video__details__channel-name" href="/">{{channel-name}}</a>
+                <p class="recommended-videos__next-video__details__views">{{views}}  переглядів</p>
+            </aside>
+        </article>
+        {{/next-videos}}
+        <button class="recommended-videos__see-more">
+            Показати більше
+        </button>
     </aside>
 </main>
 
