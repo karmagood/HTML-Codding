@@ -1,0 +1,12 @@
+header{
+    text-align: center;
+    font-family: Arial;
+    font-size: 18px;
+    border-bottom: darkgray solid 3px;
+}
+body{
+    font-family: Arial;
+    font-size: 18px;
+    margin: 20px;
+    width: 100%;
+}

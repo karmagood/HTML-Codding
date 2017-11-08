@@ -2,9 +2,9 @@
 
 // Find the sum of all the multiples of 3 or 5 below 1000.
 
-function countSumOfNaturalMultiplesLessThen(first, second, Limit) {
-    var iter = 1;
-    var accum = 0;
+const countSumOfNaturalMultiplesLessThen = (first, second, Limit) => {
+    let iter = 1;
+    let accum = 0;
     while (iter < Limit){
         if ( ( iter%first === 0) || ( iter%second === 0) ) {
             accum += iter;
@@ -12,7 +12,7 @@ function countSumOfNaturalMultiplesLessThen(first, second, Limit) {
         iter++;
     }
     return accum;
-}
+};
 
 console.log(countSumOfNaturalMultiplesLessThen(3,5,10));
 

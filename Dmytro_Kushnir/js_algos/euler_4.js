@@ -2,33 +2,36 @@
 //
 // Find the largest palindrome made from the product of two 3-digit numbers.
 
-
-function isPalindrome(number) {
-    var numbersList = [];
-    var lastDigit;
+const parseDigitsOfNumber = (number) =>{
+    let numbersList = [];
+    let lastDigit;
     while (number > 0){
         lastDigit = number%10;
         numbersList.push(lastDigit);
         number = (number - lastDigit) / 10
     }
-    var i = numbersList.length - 1;
-    var j = 0;
+    return numbersList;
+};
 
-    var res = true;
+const isPalindrome = (number) => {
+    let numbersList = parseDigitsOfNumber(number);
+    let left = numbersList.length - 1;
+    let right = 0;
+    let res = true;
 
-    while ( (i>j) && res ){
-        res = (numbersList[i] === numbersList[j]);
-        i--;
-        j++;
+    while ( (left>right) && res ){
+        res = (numbersList[left] === numbersList[right]);
+        left--;
+        right++;
     }
     return res;
-}
+};
 
 function biggestPalindromProductOf2Numbers(firstFrom, firstTo, secondFrom, secondTo) {
-    var maxRez = 0;
-    var buf;
-    for ( var i = firstFrom; i < firstTo; i++) {
-        for (var j = secondFrom; j < secondTo; j++) {
+    let maxRez = 0;
+    let buf;
+    for ( let i = firstFrom; i < firstTo; i++) {
+        for (let j = secondFrom; j < secondTo; j++) {
             buf = i*j;
             if (isPalindrome(buf)){
                 maxRez = (maxRez < buf ? buf : maxRez)

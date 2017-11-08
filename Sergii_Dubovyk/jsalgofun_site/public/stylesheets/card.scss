@@ -1,0 +1,102 @@
+@import "mixins";
+
+$red: #FF0000;
+
+.card{
+  align-self: stretch;
+  justify-self: stretch;
+  padding: 20px;
+  //border-radius: 4px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+  background-color: whitesmoke;//rgba(91,136,164,0.45);
+
+}
+
+.card-content{
+  width: 100%;
+  height: 100%;
+  margin-right: 50px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  &__preview-image{
+    margin: 20px auto 20px auto;
+    display: block;
+
+    height: 200px;
+    width: 200px;
+
+    @media screen and (max-width: 800px){
+      height: 100px;
+      width: 100px;
+      &_big{
+        height: 80%;
+        width: 80%;
+      }
+    }
+
+    &_rounded{
+      border-radius: 100%;
+    }
+
+    &_shadowed{
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.45);
+    }
+
+  }
+
+  &__title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    @media screen and (max-width: 800px){
+      font-size: 1.6rem;
+    }
+  }
+
+  &__description_text{
+    text-align: left;
+    font-size: 15px;
+    &_big{
+      font-size: 1.2rem;
+      @media screen and (max-width: 800px){
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &__btn{
+    padding: 10px;
+    margin-top: auto;
+    &:hover, &:link, &:active, &:visited{
+      @include no_text_deco_link();
+    }
+    font-weight:bold;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+
+    &:hover{
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.22);
+    }
+
+    &_blue{
+      background-color: #34495e;
+    }
+
+    &_red{
+      background-color: $red;
+    }
+  }
+
+
+  &__code{
+    margin: 0;
+    overflow-x: auto;
+    max-width: 100%;
+  }
+}
