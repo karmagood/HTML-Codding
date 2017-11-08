@@ -1,0 +1,36 @@
+@import "mixins";
+
+.input-form{
+  display: grid;
+  align-content: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+  grid-row-gap: 20px;
+  grid-template-columns: 100%;
+
+  &__submit-btn{
+    &:hover, &:link, &:active, &:visited{
+      @include no_text_deco_link();
+    }
+    font-weight:bold;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    background-color: blueviolet;
+    padding: 10px;
+
+
+    &:hover{
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.22);
+    }
+
+    &__result-text{
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+
+}

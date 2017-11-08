@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="styles/facebook__layout.css" rel="stylesheet">
+    <link href="styles/landing_facebook.css" rel="stylesheet">
+
+    <title>facebook</title>
+</head>
+<body>
+
+<!-- for thumbnail!
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Facebook_f_logo_2013.png" height="20px"
+     alt="facebook_logo">
+
+-->
+<header class="fb-header">
+    <article class="blah"></article>
+    <form class="search_pannel">
+        <input type="search" placeholder="Пошук">
+    </form>
+    <nav class="facebook_navigation">
+        <button class="profile_btn"></button>
+        <button class="main_page_btn"></button>
+
+
+        <div class="a"> </div>
+        <div class="b"> </div>
+        <div class="c"></div>
+        <div class="d">
+            <div class="d1"></div>
+            <div class="d2"></div>
+        </div>
+    </nav>
+
+</header>
+
+
+
+
+<section class="payload">
+
+    <aside class = "tool-bar column">
+
+        <button class="profile_button"></button>
+        <button class="news_feed_button"></button>
+        <button class="messanger_button"></button>
+        <section class="fast_references"></section>
+        <section class="interesting"></section>
+        <footer class="create_something_fast"> </footer>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur est harum libero modi molestiae nostrum quo reprehenderit repudiandae sed similique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, qui.</p>
+    </aside>
+
+    <main class="feed column">
+
+        <section class="create_publication pannel"></section>
+
+        <ar class="news_line">
+            <img src="https://scontent.flwo1-1.fna.fbcdn.net/v/t1.0-1/p80x80/15873207_10154844319504286_1108420984561784312_n.png?oh=000561bf6fa4c9aca6370bdec5f0cbb7&oe=5A3FA42C">
+
+
+
+
+
+
+
+            {{#posts}}
+                {{#isCommercial}}
+                <article class="commercial pannel">
+                        {{test_name}}
+                    {{#father}}
+                        <p>{{son1}}</p>
+                        <p>{{son2}}</p>
+                    {{/father}}
+                </article>
+                {{/isCommercial}}
+
+                {{#isRegularPost}}
+                    <article class="some_post pannel">
+                        {{test_name}}
+                    </article>
+                {{/isRegularPost}}
+            {{/posts}}
+<!-- TODO 1) post 2) post+shared 3)Commercial 4) Advise +++ UserPublication \ PublicPagePublication-->
+
+
+
+
+
+<!-- TODO make 1 usrPost, 1 channel post, 1 Commercial post, 1 REPOST -->
+
+            <article class=" pannel
+                            feed-post
+                            feed-post__from_commercial">
+
+                <header>HEADER</header>
+                <section class="feed-post__main_content commercial">
+
+                </section>
+                <footer>FOOTER</footer>
+
+            </article>
+
+            <article class="pannel
+                            feed-post
+                            feed-post__from_user-post">
+
+                <section class="feed-post__authorinfo user-post">
+                    <img class="feed-post__gallery-img"
+                         height="200" width="400"
+                         alt="{{user-post__alt-img-name}}">
+                </section>
+
+
+                <section class="feed-post__main_content user-post">
+
+                    Зроби мені штучний інтелект 😂
+                    From buzzwords to reality
+                    Про маніпуляції сакральними AI, DS, ML, NN, etc.
+                    <img class="feed-post__gallery-img"
+                         src="/images/fbPost_makeMeAI.jpg"
+                         height="200" width="400"
+                         alt="{{USER_NAME_POST_IMG}}">
+                    <!-- TODO solve img-box sizing-->
+
+                </section>
+
+                <footer>FOOTER</footer>
+            </article>
+
+
+            <!-- example from https://www.facebook.com/photo.php?fbid=1619785034751703&set=a.599029916827225.1073741826.100001606676862&type=3 -->
+
+            <article class="feed-post pannel">
+                <small class="feed-post__publication_source">
+                    EMPTY HERE
+                </small>
+
+                <header class="feed-post__header-metainfo">
+
+                    <img src=""
+                    class="feed-post__header-metainfo__author_avatar" alt="author photo">
+
+                    <a href="#" class="feed-post__header-metainfo__author_name">
+                        (AUTHOR NAME)
+                        Fiverr
+                    </a>
+
+                    <a href="#" class="feed-post__header-metainfo__publication_source" role="small">Реклама</a>
+                    <!-- TODO add small icons-->
+                    <img class="feed-post__header-metainfo__icon_of_access" src="" alt="">
+
+                    <button class="feed-post__header-metainfo__like_page"> *THUMBUP* Нравится Страница </button>
+
+                        <details>
+                            <summary> ... </summary>
+                            Nothing here
+                        </details>
+                </header>
+
+
+                <article class="feed-post__content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolor, fugit illum inventore labore omnis qui suscipit velit veritatis?
+                    Assumenda, impedit.
+                </article>
+
+
+                <footer class="feed-post__reactions">
+
+                    <section class="feed-post__reactions__comments_number">
+                        Комментарии: 1
+                    </section>
+                    <section class="feed-post__reactions__reposts_number">
+                        Перепосты: 2
+                    </section>
+
+                    <section class="feed-post__reactions__reactions_statistics">
+
+                        <section class="feed-post__reactions__likes-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__loves-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__lol-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__wow-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__sad-number reaction">
+                            30
+                        </section>
+                        <section class="feed-post__reactions__angry-number reaction">
+                            30
+                        </section>
+
+                    </section>
+
+                </footer>
+
+
+                <section class="feed-post__actions-menu">
+
+                    <button class="like_btn post_interact_button">Нравится</button>
+                    <button class="comment_post post_interact_button">Комментарий</button>
+                    <button class="share_post post_interact_button"> Поделиться</button>
+                    <details class="more_reactions_field">
+                        <summary>Еще реакции </summary>
+                    </details>
+
+                </section>
+
+            </article>
+
+
+        </section>
+
+
+
+
+
+
+
+    </main>
+
+    <aside class="advertise column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, qui.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Dolore illum laborum nemo quaerat, quia vel. Ab atque
+            cumque eaque esse facilis illum ipsa labore laborum magni
+            modi molestia!</p>
+        <section class="stories pannel"></section>
+        <section class="important_notifications pannel"></section>
+        <section class="friends_request pannel"></section>
+        <section class="friends-advise pannel"></section>
+        <section class="language pannel"></section>
+        <footer class="footer"></footer>
+
+    </aside>
+
+</section>
+
+
+
+<section class="friends-list">
+
+    <section class="friends_activity"></section>
+    <section class="favs"></section>
+    <section class="nearby"></section>
+    <section class="more_ppl"></section>
+    <nav class="friends_search_bar"></nav>
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium d
+    oloribus dolorum harum, itaque libero nostrum possimus ullam? Blanditiis, cumque, voluptatem.
+</section>
+
+
+
+
+</body>
+</html>
