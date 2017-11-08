@@ -8,6 +8,7 @@
   left: -35px;
 }
 .search__button_img {
+  top: 5px;
   background: url(https://www.facebook.com/rsrc.php/v3/yY/r/6eKP4pJUq7C.png) no-repeat 0 0;
   background-size: auto;
 }

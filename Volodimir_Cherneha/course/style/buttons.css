@@ -7,7 +7,7 @@
   border-radius: 12px;
 }
 .news__article-button_like,
-.news__article-button_coment {
+.news__article-button_comment {
   cursor: pointer;
   font-size: 15px;
   height: 25px;
