@@ -134,20 +134,6 @@ class Board {
     }
 
 
-    renderWorldCell(cell) {
-        switch (cell) {
-            case __WEBPACK_IMPORTED_MODULE_0__config__["b" /* EMPTY */] :
-                return `<div class="piece__cell"></div>`
-            case __WEBPACK_IMPORTED_MODULE_0__config__["a" /* BLOCK */]:
-                return `<div class="piece__cell piece__cell_block"></div>`
-            case __WEBPACK_IMPORTED_MODULE_0__config__["c" /* FROZEN */]:
-                return `<div class="piece__cell piece__cell_frozen"></div>`
-            default :
-                return `<div class="piece__cell World__cell_wtf">A!</div>`
-        }
-    };
-
-
     render() {
         // console.log(this.fragments);
         return `<div class="World">
@@ -221,13 +207,55 @@ const moveLeft = (board) => {
 };
 
 
+const deleteRaws = (x, fragment) => {
+    let xCoords = fragment.coordinates[0];
+    let yCoords = fragment.coordinates[1];
+    let delRaw = x - xCoords;
+
+    if (delRaw <= fragment.piece.shape.length) {
+        fragment.piece.shape = [
+            ...fragment.piece.shape.slice(0, delRaw),
+            ...fragment.piece.shape.slice(delRaw + 1)
+        ];
+    }
+
+    if (xCoords < x ){
+        fragment.setCoordinates(++xCoords, yCoords);
+    }
+
+
+
+
+}
+
+
+const findRawToDelete = (board) => {
+    let allCoordinates = board.fragments.map(el => el.getCoordinates()).reduce((accum, el) => {
+        accum.push(...el);
+        return accum
+    }, []);
+
+
+    let emptyBoard = Array(__WEBPACK_IMPORTED_MODULE_0__config__["d" /* WORLD_HEIGHT */]).fill().map(() => Array(__WEBPACK_IMPORTED_MODULE_0__config__["e" /* WORLD_WIDTH */]).fill(false));
+    allCoordinates.forEach(([x, y]) => emptyBoard[x][y] = true);
+
+    return emptyBoard.reduce((accum, el, i) => {
+        if (el.indexOf(false) == -1) {
+            accum.push(i);
+        }
+        return accum;
+    }, []);
+
+    // console.log(emptyBoard.map(el => el.join(",")).join("\n"));
+
+};
+
+
 const isOverlapping = (a, b) => a[0] == b[0] && a[1] == b[1];
 
 
 const isFragmentCollision = (board, predictionFn) => {
         let active = board.getActiveFragment().getCoordinates().map(predictionFn);
-
-
         for (let i = 0; i < board.fragments.length - 1; ++i) {
             let fragmentCoordinates = board.fragments[i].getCoordinates();
             for (let j = 0; j < active.length; ++j) {
@@ -265,6 +293,10 @@ const mainFunc = () => {
         () => {
             if (stopMoving(b)) {
                 b.addFragment(new __WEBPACK_IMPORTED_MODULE_2__Fragment__["a" /* default */](new __WEBPACK_IMPORTED_MODULE_1__Piece__["a" /* default */]()));
+                let rawsToDelete = findRawToDelete(b);
+                if (rawsToDelete.length) {
+                    b.fragments.forEach(fragment => rawsToDelete.map((x) => deleteRaws(x, fragment)));
+                }
             } else {
                 let active = b.getActiveFragment();
                 let coords = active.coordinates;

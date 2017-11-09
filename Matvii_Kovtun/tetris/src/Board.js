@@ -1,7 +1,7 @@
 import {WORLD_HEIGHT, WORLD_WIDTH, EMPTY, BLOCK, FROZEN} from "./config";
 import Piece from './Piece';
 import Fragment from './Fragment';
-import {intersection} from 'ramda';
+import {intersection, reduce} from 'ramda';
 
 
 const higherHandleKeys = (board) => (ev) => {
@@ -34,20 +34,6 @@ class Board {
 
         this.score = 0;
     }
-
-
-    renderWorldCell(cell) {
-        switch (cell) {
-            case EMPTY :
-                return `<div class="piece__cell"></div>`
-            case BLOCK:
-                return `<div class="piece__cell piece__cell_block"></div>`
-            case FROZEN:
-                return `<div class="piece__cell piece__cell_frozen"></div>`
-            default :
-                return `<div class="piece__cell World__cell_wtf">A!</div>`
-        }
-    };
 
 
     render() {
@@ -123,13 +109,55 @@ const moveLeft = (board) => {
 };
 
 
+const deleteRaws = (x, fragment) => {
+    let xCoords = fragment.coordinates[0];
+    let yCoords = fragment.coordinates[1];
+    let delRaw = x - xCoords;
+
+    if (delRaw <= fragment.piece.shape.length) {
+        fragment.piece.shape = [
+            ...fragment.piece.shape.slice(0, delRaw),
+            ...fragment.piece.shape.slice(delRaw + 1)
+        ];
+    }
+
+    if (xCoords < x ){
+        fragment.setCoordinates(++xCoords, yCoords);
+    }
+
+
+
+
+}
+
+
+const findRawToDelete = (board) => {
+    let allCoordinates = board.fragments.map(el => el.getCoordinates()).reduce((accum, el) => {
+        accum.push(...el);
+        return accum
+    }, []);
+
+
+    let emptyBoard = Array(WORLD_HEIGHT).fill().map(() => Array(WORLD_WIDTH).fill(false));
+    allCoordinates.forEach(([x, y]) => emptyBoard[x][y] = true);
+
+    return emptyBoard.reduce((accum, el, i) => {
+        if (el.indexOf(false) == -1) {
+            accum.push(i);
+        }
+        return accum;
+    }, []);
+
+    // console.log(emptyBoard.map(el => el.join(",")).join("\n"));
+
+};
+
+
 const isOverlapping = (a, b) => a[0] == b[0] && a[1] == b[1];
 
 
 const isFragmentCollision = (board, predictionFn) => {
         let active = board.getActiveFragment().getCoordinates().map(predictionFn);
-
-
         for (let i = 0; i < board.fragments.length - 1; ++i) {
             let fragmentCoordinates = board.fragments[i].getCoordinates();
             for (let j = 0; j < active.length; ++j) {
@@ -167,6 +195,10 @@ const mainFunc = () => {
         () => {
             if (stopMoving(b)) {
                 b.addFragment(new Fragment(new Piece()));
+                let rawsToDelete = findRawToDelete(b);
+                if (rawsToDelete.length) {
+                    b.fragments.forEach(fragment => rawsToDelete.map((x) => deleteRaws(x, fragment)));
+                }
             } else {
                 let active = b.getActiveFragment();
                 let coords = active.coordinates;
