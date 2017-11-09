@@ -1,7 +1,8 @@
 {
-  "posts": [
+  "main-page-posts": [
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Eugene Eugene",
       "additional-info": null,
       "post-time": "01.10.2017",
@@ -11,7 +12,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Юльця Юльця",
       "additional-info": "is in Przemysl, Poland",
       "post-time": "01.10.2017",
@@ -21,7 +23,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Tamila Tamila",
       "additional-info": "with Роман Роман",
       "post-time": "01.10.2017",
@@ -31,7 +34,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Oles Oles",
       "additional-info": null,
       "post-time": "01.10.2017",
@@ -41,7 +45,8 @@
       "who-shared": "7 Shares"
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Eugene Eugene",
       "additional-info": null,
       "post-time": "01.10.2017",
@@ -51,7 +56,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Юльця Юльця",
       "additional-info": "is in Przemysl, Poland",
       "post-time": "01.10.2017",
@@ -61,7 +67,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Tamila Tamila",
       "additional-info": "with Роман Роман",
       "post-time": "01.10.2017",
@@ -71,7 +78,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Oles Oles",
       "additional-info": null,
       "post-time": "01.10.2017",
@@ -81,7 +89,8 @@
       "who-shared": "7 Shares"
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Eugene Eugene",
       "additional-info": null,
       "post-time": "01.10.2017",
@@ -91,7 +100,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Юльця Юльця",
       "additional-info": "is in Przemysl, Poland",
       "post-time": "01.10.2017",
@@ -101,7 +111,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Tamila Tamila",
       "additional-info": "with Роман Роман",
       "post-time": "01.10.2017",
@@ -111,7 +122,8 @@
       "who-shared": null
     },
     {
-      "image-src": "/images/friend_photo_main_page",
+      "user-link": "#",
+      "image-src": "images/friend_photo_main_page.jpg",
       "name": "Oles Oles",
       "additional-info": null,
       "post-time": "01.10.2017",
@@ -119,6 +131,52 @@
       "file": "images/oles_post_pic.jpg",
       "who-liked": "Катя Катя and 13 others",
       "who-shared": "7 Shares"
+    }
+  ],
+  "user-page-post": [
+    {
+      "user-link": "user_page",
+      "image-src": "images/user_avatar.jpg",
+      "name": "Olya Korabliova",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "image-src": "images/user_avatar.jpg",
+      "name": "Olya Korabliova",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "image-src": "images/user_avatar.jpg",
+      "name": "Olya Korabliova",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "image-src": "images/user_avatar.jpg",
+      "name": "Olya Korabliova",
+      "additional-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": "3 Shares"
     }
   ],
   "friends-suggestions":[
@@ -147,7 +205,7 @@
       "mutual-friends": "50 mutual friends."
     }
   ],
-  "unread-notifications": [
+  "events": [
     {
       "event": "1 request from Anna Anna",
       "link": "#",
@@ -213,7 +271,7 @@
       "link": "#",
       "icon-class": "fa fa-calendar",
       "icon-style": "color: #D14357;",
-      "name": "CS@UCUEvents"
+      "name": "CS@UCU Events"
     },
     {
       "link": "#",
@@ -386,6 +444,136 @@
       "user-link": "#",
       "user-pic": "images/ivan_avatar.jpg",
       "user-name": "Ivan Ivan"
+    }
+  ],
+  "friends-block-items": [
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    }
+  ],
+  "user-photos": [
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    }
+  ],
+  "featured-photos": [
+    {
+      "photo-link": "#",
+      "image-class": "bigger-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "bigger-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "image-src": "images/featured_photo.jpg"
     }
   ]
 }

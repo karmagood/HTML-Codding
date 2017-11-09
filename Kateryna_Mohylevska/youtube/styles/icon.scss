@@ -1,0 +1,70 @@
+.icon {
+  &__see-chanel::before {
+    content: url("../images/icons/see-channels.svg");
+    opacity: 0.45;
+    width: 10px;
+  }
+  &__home-img::before {
+    content: url("../images/icons/home.svg");
+    opacity: 0.45;
+  }
+
+  &__popular-img::before {
+    content: url("../images/icons/popular.svg");
+    opacity: 0.45;
+  }
+
+  &__history-img::before {
+    content: url("../images/icons/history.svg");
+    opacity: 0.45;
+  }
+
+  &__help-img::before {
+    content: url("../images/icons/help.svg");
+    opacity: 0.45;
+  }
+
+  &__response-img::before {
+    content: url("../images/icons/response.svg");
+    opacity: 0.45;
+  }
+  &__settings-img::before {
+    content: url("../images/icons/settings.svg");
+    opacity: 0.45;
+  }
+
+  &__music-img::before {
+    background-image: url("//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg");
+  }
+
+  &__sport-img::before {
+    background-image: url("//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg");
+  }
+
+  &__film-img::before {
+    background-image: url("//i.ytimg.com/i/lgRkhTL3_hImCAmdLfDE4g/1.jpg");
+  }
+
+  &__game-img::before {
+    background-image: url("//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg");
+  }
+
+  &__news-img::before {
+    background-image: url("//i.ytimg.com/i/YfdidRxbB8Qhf0Nx7ioOYw/1.jpg");
+  }
+
+  &__spherical-video-img::before {
+    background-image: url("//i.ytimg.com/i/zuqhhs6NWbgTzMuM09WKDQ/1.jpg");
+  }
+
+  &__live-streaming-img::before {
+    background-image: url("//i.ytimg.com/i/4R8DWoMoI7CAwX8_LjQHig/1.jpg");
+  }
+
+  &__sort::before{
+    content: url("../images/icons/sort.svg");
+    opacity: 0.4;
+    margin-right: 8px;
+    height: 24px;
+  }
+}
