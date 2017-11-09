@@ -9,42 +9,41 @@
     margin: 0;
     padding-top: 20px;
   }
+  &__views {
+    margin: 10px 0;
+  }
   &__info {
     display: flex;
     justify-content: space-between;
     color: rgba(17, 17, 17, 0.6);
     border-bottom: 1px solid #efedef;
+  }
 
-    &__views {
-      margin: 10px 0;
-    }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    &__menu {
+    &__element {
+      cursor: pointer;
+      color: rgba(17, 17, 17, 0.6);
       display: flex;
       flex-direction: row;
       align-items: center;
-
-      &__element {
-        cursor: pointer;
-        color: rgba(17, 17, 17, 0.6);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        .material-icons {
-          font-size: 20px;
-          padding: 0 8px;
-          &:hover {
-            //???????????????????
-            color: rgb(17, 17, 17);
-          }
+      .material-icons {
+        font-size: 20px;
+        padding: 0 8px;
+        &:hover {
+          //???????????????????
+          color: rgb(17, 17, 17);
         }
-
       }
-      &__more {
-        cursor: pointer;
-        .material-icons {
-          padding: 0 8px;
-        }
+
+    }
+    &__more {
+      cursor: pointer;
+      .material-icons {
+        padding: 0 8px;
       }
     }
   }
