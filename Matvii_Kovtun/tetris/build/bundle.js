@@ -68,7 +68,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-const WORLD_HEIGHT = 32;
+const WORLD_HEIGHT = 40;
 /* harmony export (immutable) */ __webpack_exports__["d"] = WORLD_HEIGHT;
 
 const WORLD_WIDTH = 10;
@@ -95,6 +95,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Piece__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__Fragment__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ramda__ = __webpack_require__(123);
+
 
 
 
@@ -148,7 +150,7 @@ class Board {
 
 
     render() {
-        console.log(this.fragments);
+        // console.log(this.fragments);
         return `<div class="World">
                 ${this.fragments.map(fragment => fragment.render()).join("")} </div>`
     };
@@ -157,33 +159,71 @@ class Board {
         this.fragments.push(fragment);
     }
 
+    getActiveFragment() {
+        return this.fragments[this.fragments.length - 1];
+    }
 
 
 }
+
+
+const stopMoving = (board) => {
+    let active = board.getActiveFragment();
+    let newX = active.coordinates[0] + 1;
+    if (newX > __WEBPACK_IMPORTED_MODULE_0__config__["d" /* WORLD_HEIGHT */] - active.piece.shape.length) {
+        return true;
+    }
+
+
+    return isBottomColision(board);
+
+};
+
+
+const isBottomColision = (board) => {
+    let active = board.getActiveFragment().getXs().map(el => el + 1);
+    let activeXs = Object(__WEBPACK_IMPORTED_MODULE_3_ramda__["b" /* intersection */])(active);
+    for (let i = 0; i < board.fragments.length-1; ++i) {
+        if (activeXs(board.fragments[i].getXs()).length){
+            return true;
+        }
+    }
+    return false;
+
+
+};
 
 
 const mainFunc = () => {
 
     let b = new Board(__WEBPACK_IMPORTED_MODULE_0__config__["e" /* WORLD_WIDTH */], __WEBPACK_IMPORTED_MODULE_0__config__["d" /* WORLD_HEIGHT */]);
     let p1 = new __WEBPACK_IMPORTED_MODULE_1__Piece__["a" /* default */]();
-    let p2 = new __WEBPACK_IMPORTED_MODULE_1__Piece__["a" /* default */]();
+
 
     let fr1 = new __WEBPACK_IMPORTED_MODULE_2__Fragment__["a" /* default */](p1);
-    let fr2 = new __WEBPACK_IMPORTED_MODULE_2__Fragment__["a" /* default */](p2);
-
 
 
     b.addFragment(fr1);
-    b.addFragment(fr2);
+
     document.body.innerHTML = b.render();
 
-    // setInterval(
-    //     () => {
-    //
-    //         document.body.innerHTML = b.render();
-    //     },
-    //     300
-    // );
+    setInterval(
+        () => {
+            if (stopMoving(b)) {
+                b.addFragment(new __WEBPACK_IMPORTED_MODULE_2__Fragment__["a" /* default */](new __WEBPACK_IMPORTED_MODULE_1__Piece__["a" /* default */]()));
+            } else {
+                let active = b.getActiveFragment();
+                let coords = active.coordinates;
+                active.setCoordinates(++coords[0], coords[1]);
+            }
+
+
+
+            document.body.innerHTML = b.render();
+
+        },
+        300
+    );
 };
 
 
@@ -237,7 +277,7 @@ class BasicPiece {
 
 
     rotate() {
-        this.shape = Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["c" /* transpose */])(this.shape).map(el => Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["b" /* reverse */])(el));
+        this.shape = Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["d" /* transpose */])(this.shape).map(el => Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["c" /* reverse */])(el));
 
     };
 
@@ -5176,7 +5216,7 @@ var where = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry2__["
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__insertAll__ = __webpack_require__(211);
 /* unused harmony reexport insertAll */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__intersection__ = __webpack_require__(212);
-/* unused harmony reexport intersection */
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_90__intersection__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__intersperse__ = __webpack_require__(214);
 /* unused harmony reexport intersperse */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__into__ = __webpack_require__(215);
@@ -5366,7 +5406,7 @@ var where = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry2__["
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_184__replace__ = __webpack_require__(275);
 /* unused harmony reexport replace */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_185__reverse__ = __webpack_require__(40);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_185__reverse__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_185__reverse__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_186__scan__ = __webpack_require__(276);
 /* unused harmony reexport scan */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_187__sequence__ = __webpack_require__(120);
@@ -5428,7 +5468,7 @@ var where = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry2__["
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_215__transduce__ = __webpack_require__(300);
 /* unused harmony reexport transduce */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_216__transpose__ = __webpack_require__(301);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_216__transpose__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_216__transpose__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_217__traverse__ = __webpack_require__(302);
 /* unused harmony reexport traverse */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_218__trim__ = __webpack_require__(303);
@@ -9219,7 +9259,7 @@ var intersection = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1__internal_cur
   }
   return Object(__WEBPACK_IMPORTED_MODULE_4__uniq__["a" /* default */])(Object(__WEBPACK_IMPORTED_MODULE_2__internal_filter__["a" /* default */])(Object(__WEBPACK_IMPORTED_MODULE_3__flip__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0__internal_contains__["a" /* default */])(lookupList), filteredList));
 });
-/* unused harmony default export */ var _unused_webpack_default_export = (intersection);
+/* harmony default export */ __webpack_exports__["a"] = (intersection);
 
 /***/ }),
 /* 213 */
@@ -13709,16 +13749,34 @@ class Fragment {
 
     }
 
+    getXs () {
+        let xs = [];
+        for (let i = 0 ; i < this.piece.shape.length; ++i){
+            for (let j = 0; j < this.piece.shape[i].length; ++j){
+                if (this.piece.shape[i][j]){
+                    xs.push(this.coordinates[0] + i);
+                }
+            }
+        }
+        return xs;
+    }
+
     render() {
         return `
             <div 
-                style="top: ${this.coordinates[0] * 22}px; 
-                       left: ${this.coordinates[1] * 22}px;
+                style="top: ${this.coordinates[0] * 20}px; 
+                       left: ${this.coordinates[1] * 20}px;
                        "
                 class="fragment" 
             >
                 ${this.piece.render()}
             </div>`;
+    }
+
+    setCoordinates(x, y){
+        this.coordinates[0] = x;
+        this.coordinates[1] = y;
+        return this;
     }
 
 }

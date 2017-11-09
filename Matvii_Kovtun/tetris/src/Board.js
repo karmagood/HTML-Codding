@@ -1,6 +1,7 @@
 import {WORLD_HEIGHT, WORLD_WIDTH, EMPTY, BLOCK, FROZEN} from "./config";
 import Piece from './Piece';
 import Fragment from './Fragment';
+import {intersection} from 'ramda';
 
 
 const higherHandleKeys = (board) => (ev) => {
@@ -51,7 +52,7 @@ class Board {
 
 
     render() {
-        console.log(this.fragments);
+        // console.log(this.fragments);
         return `<div class="World">
                 ${this.fragments.map(fragment => fragment.render()).join("")} </div>`
     };
@@ -60,33 +61,71 @@ class Board {
         this.fragments.push(fragment);
     }
 
+    getActiveFragment() {
+        return this.fragments[this.fragments.length - 1];
+    }
 
 
 }
+
+
+const stopMoving = (board) => {
+    let active = board.getActiveFragment();
+    let newX = active.coordinates[0] + 1;
+    if (newX > WORLD_HEIGHT - active.piece.shape.length) {
+        return true;
+    }
+
+
+    return isBottomColision(board);
+
+};
+
+
+const isBottomColision = (board) => {
+    let active = board.getActiveFragment().getXs().map(el => el + 1);
+    let activeXs = intersection(active);
+    for (let i = 0; i < board.fragments.length-1; ++i) {
+        if (activeXs(board.fragments[i].getXs()).length){
+            return true;
+        }
+    }
+    return false;
+
+
+};
 
 
 const mainFunc = () => {
 
     let b = new Board(WORLD_WIDTH, WORLD_HEIGHT);
     let p1 = new Piece();
-    let p2 = new Piece();
+
 
     let fr1 = new Fragment(p1);
-    let fr2 = new Fragment(p2);
-
 
 
     b.addFragment(fr1);
-    b.addFragment(fr2);
+
     document.body.innerHTML = b.render();
 
-    // setInterval(
-    //     () => {
-    //
-    //         document.body.innerHTML = b.render();
-    //     },
-    //     300
-    // );
+    setInterval(
+        () => {
+            if (stopMoving(b)) {
+                b.addFragment(new Fragment(new Piece()));
+            } else {
+                let active = b.getActiveFragment();
+                let coords = active.coordinates;
+                active.setCoordinates(++coords[0], coords[1]);
+            }
+
+
+
+            document.body.innerHTML = b.render();
+
+        },
+        300
+    );
 };
 
 
