@@ -8,11 +8,11 @@ const higherHandleKeys = (board) => (ev) => {
     console.log(ev);
     switch (ev.keyCode) {
         case 32:
-            return board.activePiece.rotate(board);
+            return board.getActiveFragment().piece.rotate();
         case 39:
-            return board.shiftThePiece("right");
+            return moveRight(board);
         case 37:
-            return board.shiftThePiece("left");
+            return moveLeft(board);
         case 38:
             return direction = "top";
         case 40:
@@ -25,7 +25,6 @@ const higherHandleKeys = (board) => (ev) => {
 
 class Board {
     constructor(width, height) {
-        document.body.addEventListener("keydown", higherHandleKeys(this), false);
         this.fragments = [];
         this.width = width;
         this.height = height;
@@ -77,41 +76,76 @@ const stopMoving = (board) => {
     }
 
 
-    return isBottomCollision(board);
+    return isFragmentCollision(board, el => [el[0] + 1, el[1]]);
 
 };
+
+const leftCollision = (board) => {
+    let active = board.getActiveFragment();
+    let newY = active.coordinates[1] - 1;
+    if (newY < 0) {
+        return true;
+    }
+
+
+    return isFragmentCollision(board, el => [el[0], el[1] - 1]);
+
+};
+
+const rightCollision = (board) => {
+    let active = board.getActiveFragment();
+    let newY = active.coordinates[1] - 1;
+    if (newY > WORLD_WIDTH - active.piece.shape[0].length) {
+        return true;
+    }
+
+
+    return isFragmentCollision(board, el => [el[0], el[1] + 1]);
+
+};
+
+
+const moveRight = (board) => {
+    if (rightCollision(board)) return;
+    let active = board.getActiveFragment();
+    let coords = active.coordinates;
+    active.setCoordinates(coords[0], ++coords[1]);
+
+}
+
+
+const moveLeft = (board) => {
+    if (leftCollision(board)) return;
+    let active = board.getActiveFragment();
+    let coords = active.coordinates;
+    active.setCoordinates(coords[0], --coords[1]);
+
+};
+
 
 const isOverlapping = (a, b) => a[0] == b[0] && a[1] == b[1];
 
 
-const isBottomCollision = (board) => {
-    let active = board.getActiveFragment().getCoordinates().map(el => {
-        el[0] = el[0] + 1;
-        return el
-    });
-    // let activeXs = intersection(active);
-    // console.log(board.fragments[0].getCoordinates());
-    // console.log(active);
+const isFragmentCollision = (board, predictionFn) => {
+        let active = board.getActiveFragment().getCoordinates().map(predictionFn);
 
 
-    for (let i = 0; i < board.fragments.length - 1; ++i) {
-        let fragmentCoordinates = board.fragments[i].getCoordinates();
-        for (let j = 0; j < active.length; ++j) {
-            for (let k = 0; k < fragmentCoordinates.length; ++k) {
-                if (isOverlapping(fragmentCoordinates[k], active[j])) {
-                    return true;
+        for (let i = 0; i < board.fragments.length - 1; ++i) {
+            let fragmentCoordinates = board.fragments[i].getCoordinates();
+            for (let j = 0; j < active.length; ++j) {
+                for (let k = 0; k < fragmentCoordinates.length; ++k) {
+                    if (isOverlapping(fragmentCoordinates[k], active[j])) {
+                        return true;
+                    }
                 }
+
             }
-
         }
-        // if (activeXs(board.fragments[i].getCoordinates()).length) {
-        //     return true;
-        // }
+        return false;
+
+
     }
-    return false;
-
-
-};
+;
 
 
 const mainFunc = () => {
@@ -126,6 +160,8 @@ const mainFunc = () => {
     b.addFragment(fr1);
 
     document.body.innerHTML = b.render();
+    document.body.addEventListener("keydown", higherHandleKeys(b), false);
+
 
     setInterval(
         () => {
@@ -137,11 +173,10 @@ const mainFunc = () => {
                 active.setCoordinates(++coords[0], coords[1]);
             }
 
-
             document.body.innerHTML = b.render();
 
         },
-        70
+        170
     );
 };
 

@@ -19,7 +19,7 @@ class BasicPiece {
 
         switch (cell) {
             case EMPTY :
-                className = "piece__cell";
+                className = "piece__cell piece__cell_empty";
                 break;
             case BLOCK:
                 className = "piece__cell piece__cell_block";
@@ -31,7 +31,7 @@ class BasicPiece {
                 return `<div class="${className} piece__cell_wtf">A!</div>`
         }
 
-        return `<div class="${className}" style="background-color: ${getRandomColor()}"></div>`
+        return `<div class="${className}" style="background-color: ${this.color}"></div>`  // getRandomColor()
     };
 
     render() {
@@ -50,7 +50,8 @@ class BasicPiece {
 BasicPiece.shapes = [[[1],
     [1],
     [1],
-    [1]], [[1, 1], [1, 1]]];
+    [1]], [[1, 1], [1, 1]],
+    [[1, 0], [1, 1], [1, 0]]];
 
 export default BasicPiece;
 
