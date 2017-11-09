@@ -222,7 +222,7 @@ h4, #main-section h5 {
     background-color: #DDDFE2;
 }
 
-#group-post div {
+#main-section__group-post div {
     background-color: white;
     margin: 10px auto 10px auto;
     padding: 10px;
@@ -230,17 +230,17 @@ h4, #main-section h5 {
     border-radius: 3px;
 }
 
-#group-post img.userpic {
+#main-section__group-post img.userpic {
     height: 45px;
     width: 45px;
 }
 
-#group-post img {
+#main-section__group-post img {
     max-width: 100%;
     max-height: 100%;
 }
 
-#group-post div.user-post__comments {
+#main-section__group-post div.user-post__comments {
     border: #DDDFE2 solid 1px;
     border-radius: 3px;
     padding: 20px 0 20px 0;
@@ -369,7 +369,20 @@ div.block__pages-ads {
     margin: 5px;
 }
 
-/*===================================================*/
+/*---------------------------------------------------*/
+
+#block__language, #main-section__ads-block footer {
+    font-size: small;
+    margin: 5px;
+}
+
+#main-section__ads-block footer {
+    position: relative;
+    width: 285px;
+    left: 5px;
+    padding-left: 10px;
+}
+
 /*===================================================*/
 /*===================================================*/
 
