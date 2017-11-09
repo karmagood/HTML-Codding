@@ -40,18 +40,18 @@
       margin-top: 30px;
       margin-bottom: 16px;
       padding-bottom: 16px; }
-    .recommended-videos__next-video__details {
-      padding-right: 24px;
-      margin-left: 8px; }
-      .recommended-videos__next-video__details__name {
-        font-size: 14px;
-        margin: 0;
-        margin-bottom: 4px; }
-      .recommended-videos__next-video__details__channel-name, .recommended-videos__next-video__details__views {
-        color: rgba(17, 17, 17, 0.6);
-        font-size: 13px;
-        line-height: 18px;
-        margin: 0; }
+  .recommended-videos__details {
+    padding-right: 24px;
+    margin-left: 8px; }
+  .recommended-videos__name {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 4px; }
+  .recommended-videos__channel-name, .recommended-videos__views {
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0; }
   .recommended-videos__see-more {
     text-transform: uppercase;
     width: 100%;
