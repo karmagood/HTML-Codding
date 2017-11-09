@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="styles/search.css">
     <link rel="stylesheet" href="styles/icon.css">
     <link rel="stylesheet" href="styles/comments-element.css">
+    <link rel="stylesheet" href="styles/channel-info.css">
+
+
 </head>
 <body>
 <header class="main-header">
@@ -70,21 +73,21 @@
                 </button>
             </aside>
         </div>
-        <section class="video-content__channel">
+        <section class="channel-info">
             <img class="profile-img"
                  src="https://yt3.ggpht.com/-lZMg8_XGfU8/AAAAAAAAAAI/AAAAAAAAAAA/I0f9XbYFTnA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
                  width="48">
-            <section class="video-content__channel__info">
-                <h3 class="video-content__channel__info__name">ShelAmir S</h3>
-                <p class="video-content__channel__info__published">Опубліковано 26 трав. 2015 р.</p>
-                <p class="video-content__channel__info__comment">В доме сразу стало веселее)))</p>
-                <div class="video-content__channel__info__data">
-                    <h4 class="video-content__channel__info__data__name">Категорія</h4>
-                    <a class="video-content__channel__info__data__link" href="">Люди та блоги</a>
+            <section class="channel-info__details">
+                <h3 class="channel-info__name">ShelAmir S</h3>
+                <p class="channel-info__published">Опубліковано 26 трав. 2015 р.</p>
+                <p class="channel-info__comment">В доме сразу стало веселее)))</p>
+                <div class="channel-info__data">
+                    <h4 class="channel-info__data-name">Категорія</h4>
+                    <a class="channel-info__link" href="">Люди та блоги</a>
                 </div>
-                <div class="video-content__channel__info__data">
-                    <h4 class="video-content__channel__info__data__name">Ліцензія</h4>
-                    <a class="video-content__channel__info__data__link" href="">Стандартна ліцензія YouTube</a>
+                <div class="channel-info__data">
+                    <h4 class="channel-info__data-name">Ліцензія</h4>
+                    <a class="channel-info__link" href="">Стандартна ліцензія YouTube</a>
                 </div>
             </section>
             <button class="button-follow">Підписатися <span class="button-follow_darker">2,3 тис.</span></button>
@@ -109,8 +112,8 @@
                     <aside class="comments-element__respond">
                         <button class="comments-element__answer">відповісти</button>
                         <span class="comments-element__respond-number">{{number}}</span>
-                        <i class="material-icons">thumb_up</i>
-                        <i class="material-icons">thumb_down</i>
+                        <i class="material-icons comments-element__like">thumb_up</i>
+                        <i class="material-icons comments-element__dislike">thumb_down</i>
                     </aside>
                     <button class="comments-element__see-comments">
                         Переглянути відповідь
@@ -128,11 +131,11 @@
         {{#next-videos}}
         <article class="recommended-videos__next-video">
             <img src="{{url}}" alt="video" width="168px" height="94px">
-            <aside class="recommended-videos__next-video__details">
-                <h3 class="recommended-videos__next-video__details__name">{{video-name}}</h3>
+            <aside class="recommended-videos__details">
+                <h3 class="recommended-videos__name">{{video-name}}</h3>
 
-                <a class="recommended-videos__next-video__details__channel-name" href="/">{{channel-name}}</a>
-                <p class="recommended-videos__next-video__details__views">{{views}}  переглядів</p>
+                <a class="recommended-videos__channel-name" href="/">{{channel-name}}</a>
+                <p class="recommended-videos__views">{{views}}  переглядів</p>
             </aside>
         </article>
         {{/next-videos}}

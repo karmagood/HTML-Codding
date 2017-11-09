@@ -21,7 +21,6 @@
     display: flex;
     align-items: center;
   }
-
   &__answer {
     color: rgba(17, 17, 17, 0.6);
     font-size: 14px;
@@ -38,12 +37,13 @@
     font-size: 14px;
     margin-right: 16px;
   }
-  .material-icons {
+  &__like,
+  &__dislike{
     font-size: 16px;
     margin: 0 8px;
-  }
-  .material-icons:hover {
-    color: rgb(17, 17, 17);
+    &:hover{
+      color: rgb(17, 17, 17);
+    }
   }
 
   &__see-comments {
