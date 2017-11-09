@@ -33,7 +33,7 @@
         grid-column-gap: 5%;
         grid-row-gap: 30px;
         grid-template-columns: 20% 20% 20%;
-        grid-template-rows: 30% 30%; } }
+        grid-template-rows: 50% 50%; } }
   .row__euler-grid {
     align-items: start; }
     @media screen and (max-width: 800px) {

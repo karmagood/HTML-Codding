@@ -11,6 +11,7 @@ var sassMiddleware = require('node-sass-middleware');
 var index = require('./routes/index');
 var algo = require('./routes/algorithm');
 var euler = require('./routes/euler');
+var api = require('./routes/api');
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/algo', algo);
 app.use('/euler', euler);
+app.use('/api_sort', api);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
