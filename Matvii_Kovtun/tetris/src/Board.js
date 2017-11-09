@@ -77,18 +77,36 @@ const stopMoving = (board) => {
     }
 
 
-    return isBottomColision(board);
+    return isBottomCollision(board);
 
 };
 
+const isOverlapping = (a, b) => a[0] == b[0] && a[1] == b[1];
 
-const isBottomColision = (board) => {
-    let active = board.getActiveFragment().getXs().map(el => el + 1);
-    let activeXs = intersection(active);
-    for (let i = 0; i < board.fragments.length-1; ++i) {
-        if (activeXs(board.fragments[i].getXs()).length){
-            return true;
+
+const isBottomCollision = (board) => {
+    let active = board.getActiveFragment().getCoordinates().map(el => {
+        el[0] = el[0] + 1;
+        return el
+    });
+    // let activeXs = intersection(active);
+    // console.log(board.fragments[0].getCoordinates());
+    // console.log(active);
+
+
+    for (let i = 0; i < board.fragments.length - 1; ++i) {
+        let fragmentCoordinates = board.fragments[i].getCoordinates();
+        for (let j = 0; j < active.length; ++j) {
+            for (let k = 0; k < fragmentCoordinates.length; ++k) {
+                if (isOverlapping(fragmentCoordinates[k], active[j])) {
+                    return true;
+                }
+            }
+
         }
+        // if (activeXs(board.fragments[i].getCoordinates()).length) {
+        //     return true;
+        // }
     }
     return false;
 
@@ -120,11 +138,10 @@ const mainFunc = () => {
             }
 
 
-
             document.body.innerHTML = b.render();
 
         },
-        300
+        70
     );
 };
 

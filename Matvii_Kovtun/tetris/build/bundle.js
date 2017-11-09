@@ -175,18 +175,36 @@ const stopMoving = (board) => {
     }
 
 
-    return isBottomColision(board);
+    return isBottomCollision(board);
 
 };
 
+const isOverlapping = (a, b) => a[0] == b[0] && a[1] == b[1];
 
-const isBottomColision = (board) => {
-    let active = board.getActiveFragment().getXs().map(el => el + 1);
-    let activeXs = Object(__WEBPACK_IMPORTED_MODULE_3_ramda__["b" /* intersection */])(active);
-    for (let i = 0; i < board.fragments.length-1; ++i) {
-        if (activeXs(board.fragments[i].getXs()).length){
-            return true;
+
+const isBottomCollision = (board) => {
+    let active = board.getActiveFragment().getCoordinates().map(el => {
+        el[0] = el[0] + 1;
+        return el
+    });
+    // let activeXs = intersection(active);
+    // console.log(board.fragments[0].getCoordinates());
+    // console.log(active);
+
+
+    for (let i = 0; i < board.fragments.length - 1; ++i) {
+        let fragmentCoordinates = board.fragments[i].getCoordinates();
+        for (let j = 0; j < active.length; ++j) {
+            for (let k = 0; k < fragmentCoordinates.length; ++k) {
+                if (isOverlapping(fragmentCoordinates[k], active[j])) {
+                    return true;
+                }
+            }
+
         }
+        // if (activeXs(board.fragments[i].getCoordinates()).length) {
+        //     return true;
+        // }
     }
     return false;
 
@@ -218,11 +236,10 @@ const mainFunc = () => {
             }
 
 
-
             document.body.innerHTML = b.render();
 
         },
-        300
+        70
     );
 };
 
@@ -277,7 +294,7 @@ class BasicPiece {
 
 
     rotate() {
-        this.shape = Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["d" /* transpose */])(this.shape).map(el => Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["c" /* reverse */])(el));
+        this.shape = Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["c" /* transpose */])(this.shape).map(el => Object(__WEBPACK_IMPORTED_MODULE_0_ramda__["b" /* reverse */])(el));
 
     };
 
@@ -5216,7 +5233,7 @@ var where = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry2__["
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__insertAll__ = __webpack_require__(211);
 /* unused harmony reexport insertAll */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__intersection__ = __webpack_require__(212);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_90__intersection__["a"]; });
+/* unused harmony reexport intersection */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__intersperse__ = __webpack_require__(214);
 /* unused harmony reexport intersperse */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__into__ = __webpack_require__(215);
@@ -5406,7 +5423,7 @@ var where = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry2__["
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_184__replace__ = __webpack_require__(275);
 /* unused harmony reexport replace */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_185__reverse__ = __webpack_require__(40);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_185__reverse__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_185__reverse__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_186__scan__ = __webpack_require__(276);
 /* unused harmony reexport scan */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_187__sequence__ = __webpack_require__(120);
@@ -5468,7 +5485,7 @@ var where = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_0__internal_curry2__["
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_215__transduce__ = __webpack_require__(300);
 /* unused harmony reexport transduce */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_216__transpose__ = __webpack_require__(301);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return __WEBPACK_IMPORTED_MODULE_216__transpose__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return __WEBPACK_IMPORTED_MODULE_216__transpose__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_217__traverse__ = __webpack_require__(302);
 /* unused harmony reexport traverse */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_218__trim__ = __webpack_require__(303);
@@ -9259,7 +9276,7 @@ var intersection = /*#__PURE__*/Object(__WEBPACK_IMPORTED_MODULE_1__internal_cur
   }
   return Object(__WEBPACK_IMPORTED_MODULE_4__uniq__["a" /* default */])(Object(__WEBPACK_IMPORTED_MODULE_2__internal_filter__["a" /* default */])(Object(__WEBPACK_IMPORTED_MODULE_3__flip__["a" /* default */])(__WEBPACK_IMPORTED_MODULE_0__internal_contains__["a" /* default */])(lookupList), filteredList));
 });
-/* harmony default export */ __webpack_exports__["a"] = (intersection);
+/* unused harmony default export */ var _unused_webpack_default_export = (intersection);
 
 /***/ }),
 /* 213 */
@@ -13749,17 +13766,18 @@ class Fragment {
 
     }
 
-    getXs () {
-        let xs = [];
+    getCoordinates () {
+        let coords = [];
         for (let i = 0 ; i < this.piece.shape.length; ++i){
             for (let j = 0; j < this.piece.shape[i].length; ++j){
                 if (this.piece.shape[i][j]){
-                    xs.push(this.coordinates[0] + i);
+                    coords.push([this.coordinates[0] + i, this.coordinates[1] + j]);
                 }
             }
         }
-        return xs;
+        return coords;
     }
+
 
     render() {
         return `
