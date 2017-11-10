@@ -27,61 +27,23 @@
     padding: 8px 0 8px 24px; }
   .guide__chapter::before {
     margin-right: 24px; }
-
-.settings,
-.data-model,
-.best-on-youtube {
-  display: flex;
-  flex-direction: column; }
-
-.settings,
-.data-model {
-  padding-top: 10px;
-  border-bottom: 1px solid #efedef; }
-
-.best-on-youtube,
-.see-chanel,
-.settings {
-  border-bottom: 1px solid #efedef;
-  padding: 8px 0; }
-
-.best-on-youtube__icon::before {
-  border-radius: 50%;
-  background-size: 100%;
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  content: ""; }
-.best-on-youtube__title {
-  font-size: 14px;
-  padding-left: 24px;
-  color: #8b898b;
-  text-transform: uppercase;
-  margin: 10px 0; }
-
-.signin-for-chanel {
-  padding: 2px 32px 16px 32px;
-  border-bottom: 1px solid #efedef;
-  color: #111111; }
-  .signin-for-chanel__link {
+  .guide__see-chanel {
+    border-bottom: 1px solid #efedef;
+    padding: 8px 0; }
+  .guide__data-model {
+    margin-top: 6px; }
+  .guide__settings, .guide__data-model {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0;
+    border-bottom: 1px solid #efedef; }
+  .guide__signin-for-chanel {
+    padding: 2px 32px 16px 32px;
+    border-bottom: 1px solid #efedef;
+    color: #111111; }
+  .guide__signin-link {
     color: red;
     text-transform: uppercase;
     font-weight: bold; }
-
-.see-chanel__link::before {
-  content: url("../images/icons/see-channels.svg");
-  opacity: 0.45;
-  width: 10px; }
-
-.app-model {
-  padding: 12px 27px;
-  color: #8b898b;
-  font-size: 13px; }
-  .app-model__link {
-    margin-right: 8px;
-    color: #8b898b; }
-  .app-model__link:nth-child(8) {
-    display: inline-block;
-    margin-top: 20px; }
 
 /*# sourceMappingURL=guide.css.map */

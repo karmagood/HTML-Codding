@@ -10,12 +10,12 @@ Each assignment has its own folder (e.g. first assignment can be found in hw1 su
 
 At this moment there`re such assignments in this directory:
 
-* hw1 -- simple semantic html for html5doctor, GMail and Facebook
-* hw2 -- css-styles for the Facebook feed-page
+* facebook -- Facebook clone using node.js, handlebars
+* black_estate_winery -- weird winery site
+* jsalogfun_site -- Live version can be found at -- http://13.57.64.110. A site with solutions for some of the Project euler tasks and several sorting algorithm. Also uses node.js.
 * hw3 -- two pages:
   * center_element -- a paragraph centered on the page
   * four_elements -- 4 sections, which are formed into header, footer and two columns w/o flexbox
-* hw4 -- a Python application, which renders a Mustache template of the Facebook feed-page from the hw2. Data for the page is stored in data.json. To run the app, just install requirements from the requirements.txt (also you`ll need Python 3) and run main.py. Html-template is stored in 'templates' directory and styles with images can be found in 'static' subfolder. 
 
 ## Author
 

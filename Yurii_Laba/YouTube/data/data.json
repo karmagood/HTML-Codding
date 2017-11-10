@@ -1,11 +1,87 @@
 {
+  "application": {
+    "main-navigation": {
+      "title":"Library",
+      "items": [
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "trending",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "subscriptions",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        }
+      ]
+    },
+    "user-preferences": {
+      "items": [
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "news",
+          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        }
+      ]
+    }
+  },
 
-  "channel_h": [
+  "channel": [
     {
       "channel_img":"http://www.allthingsloud.com/wp-content/uploads/2017/09/enter_shikari_the_spark.jpg",
       "channel_name": "Enter Shikari",
       "number_of_subscribers": "147тис.",
-      "content": [
+      "videos": [
         {
           "video_url": "http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg",
           "video_name": "Live Outside",

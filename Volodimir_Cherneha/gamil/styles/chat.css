@@ -1,0 +1,19 @@
+.chat__profile_img {
+  position: relative;
+  height: 35px;
+  width: 35px;
+  top: 50px;
+  left: 20px;
+}
+.chat__footer {
+  position: fixed;
+  bottom: 0;
+}
+.chat__button {
+  position: relative;
+  bottom: 0;
+  left: 60px;
+  height: 26px;
+  width: 26px;
+  color: transparent;
+}

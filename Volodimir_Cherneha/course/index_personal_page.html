@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uk" id="facebook">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" media="screen" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/personal-page-user-header.css">
+    <link rel="stylesheet" href="style/friend-section.css">
+    <link rel="stylesheet" href="style/buttons.css">
+    <link rel="stylesheet" href="style/personal-page-user-info.css">
+    <link rel="stylesheet" href="style/personal-page-aside.css">
+    <link rel="stylesheet" href="style/personal-page-news.css">
+
+    <link rel="stylesheet" href="style/logo.css">
+    <link rel="stylesheet" href="style/search.css">
+
+
+    <title id="pageTitle"> Facebook </title>
+</head>
+<body>
+
+<header class="header">
+    <div class="header-wrapper">
+        <a href="" class="header__logo header__logo_img">Facebook</a>
+        <form action="search" class="header__search-form">
+            <input type="text" placeholder="Шукайте людей, спільноти, місця"  class="header__input-search">
+            <button class="header__search-button header__search-button-img">Пошук</button>
+        </form>
+        <nav class="header__navigation">
+            <a class="header__navigation-link" href="index_personal_page.html">Моя сторінка</a>
+            <a class="header__navigation-link" href="index.html">Головна</a>
+            <a class="header__navigation-link" href="">Знайти друзів</a>
+            <a class="header__navigation-link" title="Запит на дружбу" href="">Запит на дружбу</a>
+            <a class="header__navigation-link" title="Повідомлення" href="">Messenger</a>
+            <a class="header__navigation-link" title="Сповіщення" href="">Сповіщення</a>
+            <a class="header__navigation-link" title="Швидка допомога" href="">Допомога</a>
+        </nav>
+    </div>
+</header>
+<div class="wrapper">
+    <section class="user-header">
+        <img class="user-header__profile-picture"
+             src="https://scontent-yyz1-1.xx.fbcdn.net/v/t1.0-1/c47.0.160.160/p160x160/10354686_10150004552801856_220367501106153455_n.jpg?oh=22b991412792e281a3f4bfdea0d60577&oe=5AA83649"
+             alt="Ваша основна світлина">
+        <a href="" class="user-header__profile-picture-select">Додати світлину</a>
+        <h1 class="user-header__profile-name">Володимир Чернега</h1>
+    </section>
+    <section class="user-info">
+        <nav class="user-info__navigation">
+            <a class="user-info__navigation-link" href="">Життєпис</a>
+            <a class="user-info__navigation-link" href="">Про себе</a>
+            <a class="user-info__navigation-link" href="">Друзі</a>
+            <a class="user-info__navigation-link" href="">Світлини</a>
+            <a class="user-info__navigation-link" href="">Більше</a>
+        </nav>
+    </section>
+    <section class="aside">
+        <form action="" class="aside__profile-search">
+            <button class="aside__profile-search-button">Пошук</button>
+            <input type="text" placeholder="Search Володимир's profile">
+        </form>
+        <section class="aside__profile-info">
+            <h3>Про себе</h3>
+        </section>
+        <section class="aside__friends">
+            <h3>Друзі</h3>
+            <ul class="aside__friends-list">
+                <li>
+                    <a class="aside__friends-list-link" href="">Віталій Потапенко</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Alex Daniyk</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Mihail Onischenko</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Оксана Чернега</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Любов Павлюк</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Olia Cherneha</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Марічка Духнич</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Наталя Ільків</a>
+                </li>
+                <li>
+                    <a class="aside__friends-list-link" href="">Modna Dtuna</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    <main class="main">
+            <form class="main__add-news">
+                <textarea name="add-news"></textarea>
+                <button class="main__add-news-button-send">Відправити</button>
+                <button class="main__add-news-button-clear">Очистити</button>
+                <input id="photo" type="file" name="photo" multiple accept="image/*,image/jpeg">
+            </form>
+        <article class="main__article">
+            <aside class="main__article-background-img"></aside>
+            <h3>Допис від 1998</h3>
+        </article>
+    </main>
+    <section class="friend">
+        <a class="friend__link" href="">Olha Matviichyshak</a>
+        <a class="friend__link" href="">Назар Ковальчук</a>
+        <a class="friend__link" href="">Olya Cherneha</a>
+        <a class="friend__link" href="">Віталій Потапенко</a>
+        <a class="friend__link" href="">Ania Pavliuk</a>
+        <a class="friend__link" href="">Taras Shynkaruk</a>
+        <a class="friend__link" href="">Andrii Pavliv</a>
+        <a class="friend__link" href="">Марічка Духнич</a>
+        <a class="friend__link" href="">Alex Danyuk</a>
+        <a class="friend__link" href="">Тарас Цысь</a>
+        <a class="friend__link" href="">Nata Kondrat</a>
+        <a class="friend__link" href="">Nazar Gavruluk</a>
+        <a class="friend__link" href="">Юрій Сельський</a>
+        <a class="friend__link" href="">Андрій Павлів</a>
+    </section>
+</div>
+
+
+
+</body>
+</html>
+
+    

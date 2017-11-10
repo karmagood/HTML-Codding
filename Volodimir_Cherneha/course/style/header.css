@@ -1,0 +1,49 @@
+.header__search-form,
+.header__navigation {
+  display: inline-block;
+}
+.header__search_input {
+  position: relative;
+  width: 450px;
+  height: 24px;
+  border: none;
+  border-radius: 3px;
+  cursor: default;
+}
+__navigation a {
+  position: relative;
+  font-size: 14px;
+  color: #fff;
+  margin: 5px;
+  left: 100px;
+}
+__navigation_link:hover {
+  background-color: #364a88;
+}
+__navigation_link:nth-child(n+4) {
+  display: inline-block;
+  height: 27px;
+  width: 27px;
+  overflow: hidden;
+  top: 5px;
+  color: transparent;
+  vertical-align: bottom;
+}
+__navigation_link:nth-child(4) {
+  background-size: auto;
+  background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -138px;
+}
+__navigation_link:nth-child(5) {
+  background-size: auto;
+  background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -388px;
+}
+__navigation_link:nth-child(6) {
+  background-size: auto;
+  background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -288px;
+}
+__navigation_link:nth-child(7) {
+  top: 0;
+  height: 20px;
+  background-size: auto;
+  background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -750px;
+}

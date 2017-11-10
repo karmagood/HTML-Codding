@@ -1,0 +1,21 @@
+.layout {
+}
+
+.layout__payload {
+
+    overflow: hidden;
+    margin-top: 46px;
+    margin-left: 225px;
+
+}
+
+
+.layout__user-menu {
+    overflow: auto;
+    width: 225px;
+    background-color: #f1f1f1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+}

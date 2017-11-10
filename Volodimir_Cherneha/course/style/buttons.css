@@ -1,0 +1,20 @@
+.add__button_send,
+.add__button_clear {
+  cursor: pointer;
+  font-size: 15px;
+  background: #F3EFEF;
+  border: 0.5px solid #EDE6E6;
+  border-radius: 12px;
+}
+.news__article-button_like,
+.news__article-button_coment {
+  cursor: pointer;
+  font-size: 15px;
+  height: 25px;
+  border: none;
+  border-radius: 12px;
+  margin: 5px;
+  background-color: #fff;
+  color: #616770;
+  font-weight: 700;
+}

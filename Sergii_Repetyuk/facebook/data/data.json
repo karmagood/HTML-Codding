@@ -1,0 +1,21 @@
+{
+  "article": [
+    {
+      "title": "Страдающее средневековье",
+      "description": "<p>Вот <i>по настоящему</i> тяжелое детство.</p>",
+      "cover": "http://www.abc.net.au/news/image/8601612-3x2-940x627.jpg",
+      "author": {
+        "picture": "http://i2.cdn.cnn.com/cnnnext/dam/assets/160909165300-north-korea-nuclear-power-ripley-live-00010121-super-tease.jpg"
+      }
+    },
+    {
+      "title": "Страдающее средневековье",
+      "description": "<p>По ходу, така рубка між відомствами зараз буде</p>",
+      "cover": "https://external.flwo1-1.fna.fbcdn.net/safe_image.php?d=AQDATcQZ7Q5MP8S_&w=476&h=249&url=https%3A%2F%2Fimagecdn1.luxnet.ua%2Fzaxid%2Fresources%2Fphotos%2Fnews%2F600x315_DIR%2F201711%2F1440754.jpg&cfs=1&upscale=1&sx=0&sy=0&sw=600&sh=314&_nc_hash=AQDbkRdk1EzmF40z",
+      "author": {
+        "name": "Oleksandra Kushchenko",
+        "picture": "https://scontent.flwo1-1.fna.fbcdn.net/v/t1.0-1/c0.0.100.100/p100x100/20294083_1393136744126716_4991698039196452173_n.jpg?oh=ac1860ef9212e869b866cb73bfd68e91&oe=5A727AD3"
+      }
+    }
+  ]
+}
