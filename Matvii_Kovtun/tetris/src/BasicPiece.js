@@ -53,5 +53,6 @@ BasicPiece.shapes = [[[1],
     [1]], [[1, 1], [1, 1]],
     [[1, 0], [1, 1], [1, 0]]];
 
+// BasicPiece.shapes = [[[1],[1],[1],[1],[1],[1],[1],[1],[1],[1]]];
 export default BasicPiece;
 

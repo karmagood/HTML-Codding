@@ -71,7 +71,7 @@
 const WORLD_HEIGHT = 40;
 /* harmony export (immutable) */ __webpack_exports__["d"] = WORLD_HEIGHT;
 
-const WORLD_WIDTH = 10;
+const WORLD_WIDTH = 12;
 /* harmony export (immutable) */ __webpack_exports__["e"] = WORLD_WIDTH;
 
 const EMPTY = 0;
@@ -82,7 +82,6 @@ const BLOCK = 1;
 
 const FROZEN = 2;
 /* harmony export (immutable) */ __webpack_exports__["c"] = FROZEN;
-
 
 
 
@@ -149,6 +148,8 @@ class Board {
     }
 
 
+
+
 }
 
 
@@ -178,7 +179,7 @@ const leftCollision = (board) => {
 
 const rightCollision = (board) => {
     let active = board.getActiveFragment();
-    let newY = active.coordinates[1] - 1;
+    let newY = active.coordinates[1] + 1;
     if (newY > __WEBPACK_IMPORTED_MODULE_0__config__["e" /* WORLD_WIDTH */] - active.piece.shape[0].length) {
         return true;
     }
@@ -219,11 +220,9 @@ const deleteRaws = (x, fragment) => {
         ];
     }
 
-    if (xCoords < x ){
+    if (xCoords < x) {
         fragment.setCoordinates(++xCoords, yCoords);
     }
-
-
 
 
 }
@@ -239,7 +238,8 @@ const findRawToDelete = (board) => {
     let emptyBoard = Array(__WEBPACK_IMPORTED_MODULE_0__config__["d" /* WORLD_HEIGHT */]).fill().map(() => Array(__WEBPACK_IMPORTED_MODULE_0__config__["e" /* WORLD_WIDTH */]).fill(false));
     allCoordinates.forEach(([x, y]) => emptyBoard[x][y] = true);
 
-    return emptyBoard.reduce((accum, el, i) => {
+
+   return emptyBoard.reduce((accum, el, i) => {
         if (el.indexOf(false) == -1) {
             accum.push(i);
         }
@@ -247,6 +247,7 @@ const findRawToDelete = (board) => {
     }, []);
 
     // console.log(emptyBoard.map(el => el.join(",")).join("\n"));
+    // return q;
 
 };
 
@@ -270,8 +271,7 @@ const isFragmentCollision = (board, predictionFn) => {
         return false;
 
 
-    }
-;
+    };
 
 
 const mainFunc = () => {
@@ -404,6 +404,7 @@ BasicPiece.shapes = [[[1],
     [1]], [[1, 1], [1, 1]],
     [[1, 0], [1, 1], [1, 0]]];
 
+// BasicPiece.shapes = [[[1],[1],[1],[1],[1],[1],[1],[1],[1],[1]]];
 /* harmony default export */ __webpack_exports__["a"] = (BasicPiece);
 
 
