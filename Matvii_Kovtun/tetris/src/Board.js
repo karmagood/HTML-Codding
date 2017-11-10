@@ -51,6 +51,8 @@ class Board {
     }
 
 
+
+
 }
 
 
@@ -80,7 +82,7 @@ const leftCollision = (board) => {
 
 const rightCollision = (board) => {
     let active = board.getActiveFragment();
-    let newY = active.coordinates[1] - 1;
+    let newY = active.coordinates[1] + 1;
     if (newY > WORLD_WIDTH - active.piece.shape[0].length) {
         return true;
     }
@@ -121,11 +123,9 @@ const deleteRaws = (x, fragment) => {
         ];
     }
 
-    if (xCoords < x ){
+    if (xCoords < x) {
         fragment.setCoordinates(++xCoords, yCoords);
     }
-
-
 
 
 }
@@ -141,7 +141,8 @@ const findRawToDelete = (board) => {
     let emptyBoard = Array(WORLD_HEIGHT).fill().map(() => Array(WORLD_WIDTH).fill(false));
     allCoordinates.forEach(([x, y]) => emptyBoard[x][y] = true);
 
-    return emptyBoard.reduce((accum, el, i) => {
+
+   return emptyBoard.reduce((accum, el, i) => {
         if (el.indexOf(false) == -1) {
             accum.push(i);
         }
@@ -149,6 +150,7 @@ const findRawToDelete = (board) => {
     }, []);
 
     // console.log(emptyBoard.map(el => el.join(",")).join("\n"));
+    // return q;
 
 };
 
@@ -172,8 +174,7 @@ const isFragmentCollision = (board, predictionFn) => {
         return false;
 
 
-    }
-;
+    };
 
 
 const mainFunc = () => {
