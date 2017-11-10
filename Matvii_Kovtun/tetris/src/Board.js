@@ -1,16 +1,31 @@
-import {WORLD_HEIGHT, WORLD_WIDTH, EMPTY, BLOCK, FROZEN } from './config.js'
+import {WORLD_HEIGHT, WORLD_WIDTH, EMPTY, BLOCK, FROZEN} from "./config";
+import Piece from './Piece';
+import Fragment from './Fragment';
+import {intersection, reduce} from 'ramda';
 
-import Piece from "./Piece"
 
-
+const higherHandleKeys = (board) => (ev) => {
+    console.log(ev);
+    switch (ev.keyCode) {
+        case 32:
+            return board.getActiveFragment().piece.rotate();
+        case 39:
+            return moveRight(board);
+        case 37:
+            return moveLeft(board);
+        case 38:
+            return direction = "top";
+        case 40:
+            return direction = "bottom";
+        default:
+            return
+    }
+};
 
 
 class Board {
     constructor(width, height) {
-        this.direction = "bottom";
-
-        document.body.addEventListener("keydown", this.handleKeys, false);
-        this.activePiece = undefined;
+        this.fragments = [];
         this.width = width;
         this.height = height;
         this.world = Array(this.height)
@@ -20,144 +35,189 @@ class Board {
         this.score = 0;
     }
 
-    handleKeys (ev) {
-        // console.log(ev);
-        switch (ev.keyCode) {
-            case 39: return this.direction = "right";
-            case 37: return this.direction = "left";
-            case 38: return this.direction = "top";
-            case 40: return this.direction = "bottom";
-            default: return
-        }
+
+    render() {
+        // console.log(this.fragments);
+        return `<div class="World">
+                ${this.fragments.map(fragment => fragment.render()).join("")} </div>`
     };
 
-    renderWorldCell(cell) {
-        switch (cell) {
-            case EMPTY :
-                return `<div class="World__cell"></div>`
-            case BLOCK:
-                return `<div class="World__cell World__cell_block"></div>`
-            case FROZEN:
-                return `<div class="World__cell World__cell_frozen"></div>`
-            default :
-                return `<div class="World__cell World__cell_wtf">A!</div>`
-        }
-    };
-
-
-    renderWorld() {
-        return `
-            <div class="World">
-                ${this.world.map(row => `
-                    <div class="World__row">
-                        ${row.map((cell) =>  this.renderWorldCell(cell)).join("")}
-                    </div>`).join("")}
-            </div>
-        `
-    };
-
-    setActivePiece(piece) {
-        this.activePiece = piece;
+    addFragment(fragment) {
+        this.fragments.push(fragment);
     }
 
-    renderPiece(piece, type) {
-        piece.coordinates.forEach(([x, y]) => this.world[x][y] = type);
+    getActiveFragment() {
+        return this.fragments[this.fragments.length - 1];
     }
 
-    destroyLayers() {
-        let rowsToDestroy = [];
-        for (let i = this.height - 1; i >= 0; --i){
-            let emptyRow = true;
-            let frozenRow = true;
-            for (let j = 0; j < this.width; ++j){
-                if (this.world[i][j] !== 0) emptyRow = false;
-                if (this.world[i][j] !== 2) frozenRow = false;
 
-            }
-            if (frozenRow) rowsToDestroy.push(i);
-            if (emptyRow) break;
+
+
+}
+
+
+const stopMoving = (board) => {
+    let active = board.getActiveFragment();
+    let newX = active.coordinates[0] + 1;
+    if (newX > WORLD_HEIGHT - active.piece.shape.length) {
+        return true;
+    }
+
+
+    return isFragmentCollision(board, el => [el[0] + 1, el[1]]);
+
+};
+
+const leftCollision = (board) => {
+    let active = board.getActiveFragment();
+    let newY = active.coordinates[1] - 1;
+    if (newY < 0) {
+        return true;
+    }
+
+
+    return isFragmentCollision(board, el => [el[0], el[1] - 1]);
+
+};
+
+const rightCollision = (board) => {
+    let active = board.getActiveFragment();
+    let newY = active.coordinates[1] + 1;
+    if (newY > WORLD_WIDTH - active.piece.shape[0].length) {
+        return true;
+    }
+
+
+    return isFragmentCollision(board, el => [el[0], el[1] + 1]);
+
+};
+
+
+const moveRight = (board) => {
+    if (rightCollision(board)) return;
+    let active = board.getActiveFragment();
+    let coords = active.coordinates;
+    active.setCoordinates(coords[0], ++coords[1]);
+
+}
+
+
+const moveLeft = (board) => {
+    if (leftCollision(board)) return;
+    let active = board.getActiveFragment();
+    let coords = active.coordinates;
+    active.setCoordinates(coords[0], --coords[1]);
+
+};
+
+
+const deleteRaws = (x, fragment) => {
+    let xCoords = fragment.coordinates[0];
+    let yCoords = fragment.coordinates[1];
+    let delRaw = x - xCoords;
+
+    if (delRaw <= fragment.piece.shape.length) {
+        fragment.piece.shape = [
+            ...fragment.piece.shape.slice(0, delRaw),
+            ...fragment.piece.shape.slice(delRaw + 1)
+        ];
+    }
+
+    if (xCoords < x) {
+        fragment.setCoordinates(++xCoords, yCoords);
+    }
+
+
+}
+
+
+const findRawToDelete = (board) => {
+    let allCoordinates = board.fragments.map(el => el.getCoordinates()).reduce((accum, el) => {
+        accum.push(...el);
+        return accum
+    }, []);
+
+
+    let emptyBoard = Array(WORLD_HEIGHT).fill().map(() => Array(WORLD_WIDTH).fill(false));
+    allCoordinates.forEach(([x, y]) => emptyBoard[x][y] = true);
+
+
+   return emptyBoard.reduce((accum, el, i) => {
+        if (el.indexOf(false) == -1) {
+            accum.push(i);
         }
+        return accum;
+    }, []);
 
-        if (rowsToDestroy.length === 0) return 0;
-        console.log(rowsToDestroy);
-        
-        
+    // console.log(emptyBoard.map(el => el.join(",")).join("\n"));
+    // return q;
 
-        for (let i = 0 ; i < rowsToDestroy.length; ++i)
-            for (let j = 0; j < this.width; ++j) this.world[rowsToDestroy[i]][j] = 0;
-    
-        let lastDestroyed = rowsToDestroy[rowsToDestroy.length - 1];
-        for (let i = lastDestroyed; i >= 0; --i){
-            for (let j = 0 ; j < this.width; ++j){
-                if (this.world[i][j] === 2){
-                    this.world[i][j] = 0;
-                    this.world[i + rowsToDestroy.length][j] = 2;
+};
+
+
+const isOverlapping = (a, b) => a[0] == b[0] && a[1] == b[1];
+
+
+const isFragmentCollision = (board, predictionFn) => {
+        let active = board.getActiveFragment().getCoordinates().map(predictionFn);
+        for (let i = 0; i < board.fragments.length - 1; ++i) {
+            let fragmentCoordinates = board.fragments[i].getCoordinates();
+            for (let j = 0; j < active.length; ++j) {
+                for (let k = 0; k < fragmentCoordinates.length; ++k) {
+                    if (isOverlapping(fragmentCoordinates[k], active[j])) {
+                        return true;
+                    }
                 }
 
             }
         }
-        
-    }
-
-    getNewPos(piece) {
-        let new_coords = [];
-        for (let i = 0; i < piece.coordinates.length; ++i){
-            let new_x = piece.coordinates[i][0] + 1;
-            let new_y = piece.coordinates[i][1];
-            // console.log(new_x, new_y);
-            
-            
-            if (new_x >= WORLD_HEIGHT) return false;
-            if (this.world[new_x][new_y] === 2) return false;
-            new_coords.push([new_x, new_y]);
-        }
-        return new_coords;
-    }
-
-    dropThePiece() {
+        return false;
 
 
-        let new_coords = this.getNewPos(this.activePiece);
-        // console.log(new_coords);
-        
-        
-        if (new_coords !== false) {
-            this.renderPiece(this.activePiece, EMPTY);
-            this.activePiece.coordinates = new_coords;
-            this.renderPiece(this.activePiece, BLOCK);
-        }else{
-            this.renderPiece(this.activePiece, FROZEN);
-            this.destroyLayers();
-            this.activePiece = new Piece();
-        }
-
-
-
-
-    }
-
-
-}
+    };
 
 
 const mainFunc = () => {
-    let b = new Board(WORLD_WIDTH, WORLD_HEIGHT);
-    let p = new Piece();
 
-    b.setActivePiece(p);
+    let b = new Board(WORLD_WIDTH, WORLD_HEIGHT);
+    let p1 = new Piece();
+
+
+    let fr1 = new Fragment(p1);
+
+
+    b.addFragment(fr1);
+
+    document.body.innerHTML = b.render();
+    document.body.addEventListener("keydown", higherHandleKeys(b), false);
+
 
     setInterval(
         () => {
+            if (stopMoving(b)) {
+                b.addFragment(new Fragment(new Piece()));
+                let rawsToDelete = findRawToDelete(b);
+                if (rawsToDelete.length) {
+                    b.fragments.forEach(fragment => rawsToDelete.map((x) => deleteRaws(x, fragment)));
+                }
+            } else {
+                let active = b.getActiveFragment();
+                let coords = active.coordinates;
+                active.setCoordinates(++coords[0], coords[1]);
+            }
 
-            b.dropThePiece();
-            document.body.innerHTML = b.renderWorld();
+            document.body.innerHTML = b.render();
+
         },
-        10
+        170
     );
-}
+};
 
 
 mainFunc();
+
+// let items = b.render();
+// console.log(items);
 
 
 

@@ -7,32 +7,32 @@
     color: #111111;
     margin: 0;
     padding-top: 20px; }
+  .video-content__views {
+    margin: 10px 0; }
   .video-content__info {
     display: flex;
     justify-content: space-between;
     color: rgba(17, 17, 17, 0.6);
     border-bottom: 1px solid #efedef; }
-    .video-content__info__views {
-      margin: 10px 0; }
-    .video-content__info__menu {
+  .video-content__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .video-content__menu__element {
+      cursor: pointer;
+      color: rgba(17, 17, 17, 0.6);
       display: flex;
       flex-direction: row;
       align-items: center; }
-      .video-content__info__menu__element {
-        cursor: pointer;
-        color: rgba(17, 17, 17, 0.6);
-        display: flex;
-        flex-direction: row;
-        align-items: center; }
-        .video-content__info__menu__element .material-icons {
-          font-size: 20px;
-          padding: 0 8px; }
-          .video-content__info__menu__element .material-icons:hover {
-            color: #111111; }
-      .video-content__info__menu__more {
-        cursor: pointer; }
-        .video-content__info__menu__more .material-icons {
-          padding: 0 8px; }
+      .video-content__menu__element .material-icons {
+        font-size: 20px;
+        padding: 0 8px; }
+        .video-content__menu__element .material-icons:hover {
+          color: #111111; }
+    .video-content__menu__more {
+      cursor: pointer; }
+      .video-content__menu__more .material-icons {
+        padding: 0 8px; }
   .video-content__channel {
     margin-top: 16px;
     height: 150px;
@@ -68,4 +68,4 @@
     .video-content__channel .button-follow {
       float: right; }
 
-/*# sourceMappingURL=video-page__content.css.mapt.css.map */
+/*# sourceMappingURL=video-content.css.map */

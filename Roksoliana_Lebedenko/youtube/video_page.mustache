@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles/common.less">
-    <link rel="stylesheet" href="styles/main-page/header.css">
-    <link rel="stylesheet" href="styles/main-page/header_search.css">
-    <link rel="stylesheet" href="styles/main-page/header_logo.css">
-    <link rel="stylesheet" href="styles/main-page/header_settings.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/main-page/header-layout.css">
+    <link rel="stylesheet" href="styles/main-page/header-layout__google-options.css">
+    <link rel="stylesheet" href="styles/main-page/header-layout__logo.css">
+    <link rel="stylesheet" href="styles/main-page/header-layout__search.css">
     <link rel="stylesheet" href="styles/video-page/main_video.css">
     <link rel="stylesheet" href="styles/video-page/aside_video.css">
 
@@ -16,24 +16,24 @@
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-    <div class="header__logo">
-        <button class="header__logo_hamburger-menu"></button>
-        <a class="header__logo_img" href=""><img src="images/youtube_icon.png" alt=""></a>
-        <a class="header__logo_text" href="index">YouTube<sup class="header__logo_country-code">UA</sup></a>
+<header class="header-layout">
+    <button class="hamburger-menu"></button>
+    <div class="header-layout__logo">
+        <a class="header-layout__logo header-layout__logo_img" href="index"><img src="images/youtube_icon.png" alt=""></a>
+        <a class="header-layout__logo_text" href="index">YouTube<sup class="header-layout__logo_country-code">UA</sup></a>
 
     </div>
-    <div class="header__search">
+    <div class="header-layout__search">
         <form action="#">
-            <input class="header_search_input" title="search" type="text" placeholder="Пошук">
-            <button class="header__search_button"><i class="icons fa fa-search"></i></button>  <!--delete i-->
+            <input class="header-layout__search_input" title="search" type="text" placeholder="Пошук">
+            <button class="header-layout__search_button"><i class="icons fa fa-search"></i></button>  <!--delete i-->
         </form>
     </div>
-    <div class="header__google-options">
-        <button class="header__google-options_icon"></button>
-        <button class="header__google-options_icon"></button>
-        <button class="header__google-options_icon"></button>
-        <button class="header__google-options_img"></button>
+    <div class="header-layout__google-options">
+        <button class="header-layout__google-options_icon"></button>
+        <button class="header-layout__google-options_icon"></button>
+        <button class="header-layout__google-options_icon"></button>
+        <button class="header-layout__google-options_img"></button>
     </div>
 </header>
 <main class="main">
