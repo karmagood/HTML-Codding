@@ -1,4 +1,17 @@
 {
+  "action-button":
+   [
+      {
+        "icon": "https://image.flaticon.com/icons/png/128/60/60723.png"
+      },
+      {
+        "icon": "http://www.myiconfinder.com/uploads/iconsets/256-256-255dcbc5f25c5a617cd0f7fb5c8c906d-grid.png"
+      },
+      {
+        "icon": "http://www.download3k.com/article_images/0/384/thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png"
+      }
+    ],
+
   "video": [
     {
       "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
