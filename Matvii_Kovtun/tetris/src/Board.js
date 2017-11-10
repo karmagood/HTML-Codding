@@ -24,6 +24,9 @@ const higherHandleKeys = (board) => (ev) => {
 
 
 class Board {
+    // TODO: Remove fragmemts[], support binary matrix instead of rebuilding it
+    // TODO: render binary matrix + active fragment
+
     constructor(width, height) {
         this.fragments = [];
         this.width = width;
