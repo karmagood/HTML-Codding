@@ -29,26 +29,53 @@
       }
     ]
   },
-  "library": {
-    "section-name":"Бібліотека",
-    "item": [
-      {
-        "url": "https://www.youtube.com//feed/history",
-        "icon": "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png",
-        "title": "Історія"
-      },
-      {
-        "url": "https://www.youtube.com/playlist?list=WL",
-        "icon": "https://www.materialui.co/materialIcons/action/watch_later_black_192x192.png",
-        "title": "Переглянути пізніше"
-      },
-      {
-        "url": "https://www.youtube.com/playlist?list=LLmEm9tungaVn0-X4m-NFPsQ",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Thumb_up_icon_2.svg/512px-Thumb_up_icon_2.svg.png",
-        "title": "Відео, що сподобались"
-      }
-    ]
-  },
+  "library": [
+    {
+      "section-name":"Бібліотека",
+      "item": [
+        {
+          "url": "https://www.youtube.com//feed/history",
+          "icon": "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png",
+          "title": "Історія"
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=WL",
+          "icon": "https://www.materialui.co/materialIcons/action/watch_later_black_192x192.png",
+          "title": "Переглянути пізніше"
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=LLmEm9tungaVn0-X4m-NFPsQ",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Thumb_up_icon_2.svg/512px-Thumb_up_icon_2.svg.png",
+          "title": "Відео, що сподобались"
+        }
+      ]
+    },
+    {
+      "section-name":"Підписки",
+      "item": [
+        {
+          "url": "https://www.youtube.com/channel/UCesO4-UStBz-iTTgkY645yw",
+          "icon": "http://i.ytimg.com/i/esO4-UStBz-iTTgkY645yw/1.jpg",
+          "title": "Популярні на YouTube - Україна"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+          "icon": "http://i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg",
+          "title": "Музика"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw",
+          "icon": "http://i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg",
+          "title": "Спорт"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCOpNcN46UbXVtpKMrmU4Abg",
+          "icon": "http://i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg",
+          "title": "Комп'ютерні ігри"
+        }
+      ]
+    }
+  ],
 
 
   "video": [
