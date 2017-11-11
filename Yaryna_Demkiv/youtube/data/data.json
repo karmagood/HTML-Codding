@@ -1,16 +1,55 @@
 {
-  "action-button":
-   [
+  "action-button": [
+    {
+      "icon": "https://image.flaticon.com/icons/png/128/60/60723.png"
+    },
+    {
+      "icon": "http://www.myiconfinder.com/uploads/iconsets/256-256-255dcbc5f25c5a617cd0f7fb5c8c906d-grid.png"
+    },
+    {
+      "icon": "http://www.download3k.com/article_images/0/384/thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png"
+    }
+  ],
+  "aside-navigation": {
+    "main-navigation": [
       {
-        "icon": "https://image.flaticon.com/icons/png/128/60/60723.png"
+        "url": "https://www.youtube.com",
+        "icon": "https://d30y9cdsu7xlg0.cloudfront.net/png/77002-200.png",
+        "title": "Головна"
       },
       {
-        "icon": "http://www.myiconfinder.com/uploads/iconsets/256-256-255dcbc5f25c5a617cd0f7fb5c8c906d-grid.png"
+        "url": "https://www.youtube.com/feed/trending",
+        "icon": "https://d30y9cdsu7xlg0.cloudfront.net/png/68987-200.png",
+        "title": "Популярне"
       },
       {
-        "icon": "http://www.download3k.com/article_images/0/384/thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png"
+        "url": "https://www.youtube.com/feed/subscriptions",
+        "icon": "https://www.materialui.co/materialIcons/av/subscriptions_black_192x192.png",
+        "title": "Підписки"
       }
-    ],
+    ]
+  },
+  "library": {
+    "section-name":"Бібліотека",
+    "item": [
+      {
+        "url": "https://www.youtube.com//feed/history",
+        "icon": "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png",
+        "title": "Історія"
+      },
+      {
+        "url": "https://www.youtube.com/playlist?list=WL",
+        "icon": "https://www.materialui.co/materialIcons/action/watch_later_black_192x192.png",
+        "title": "Переглянути пізніше"
+      },
+      {
+        "url": "https://www.youtube.com/playlist?list=LLmEm9tungaVn0-X4m-NFPsQ",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Thumb_up_icon_2.svg/512px-Thumb_up_icon_2.svg.png",
+        "title": "Відео, що сподобались"
+      }
+    ]
+  },
+
 
   "video": [
     {
@@ -30,3 +69,4 @@
     }
   ]
 }
+
