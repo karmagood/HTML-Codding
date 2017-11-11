@@ -1,0 +1,14 @@
+.app-model {
+  padding: 12px 27px;
+  color: #8b898b;
+  font-size: 13px;
+  &__link {
+    margin-right: 8px;
+    color: #8b898b;
+  }
+
+  &__link:nth-child(8) {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
