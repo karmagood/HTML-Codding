@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="style/main-page-news.css">
     <link rel="stylesheet" href="style/logo.css">
     <link rel="stylesheet" href="style/search.css">
+    <link rel="stylesheet" href="style/Navigation.css">
+    <link rel="stylesheet" href="style/icons.css">
 
     <title>Facebook</title>
 </head>
@@ -23,40 +25,60 @@
         <form action="" class="header__search-form">
             <input type="text" placeholder="Шукайте людей, спільноти, місця" class="header__input-search ">
             <button class="header__search-button  header__search-button-img">Пошук</button>
-        </form>
+
+            {{#navigation}}
         <nav class="header__navigation">
-            <a class="header__navigation-link" href="index_personal_page.html">Моя сторінка</a>
-            <a class="header__navigation-link" href="index.mustache">Головна</a>
-            <a class="header__navigation-link" href="">Знайти друзів</a>
-            <a class="header__navigation-link" title="Запит на дружбу" href="">Запит на дружбу</a>
-            <a class="header__navigation-link" title="Повідомлення" href="">Messenger</a>
-            <a class="header__navigation-link" title="Сповіщення" href="">Сповіщення</a>
-            <a class="header__navigation-link" title="Швидка допомога" href="">Допомога</a>
+            <a class="header__navigation-link" href="">{{name}}</a>
+
         </nav>
+         {{/navigation}}
     </div>
 </header>
 <div class="wrapper">
     <section class="navigation">
-        <nav>
-            <a class="navigation__link" href="">Володимир Чернега</a>
-            <a class="navigation__link" href="">Новини</a>
-            <a class="navigation__link" href="">Messenger</a>
-        </nav>
-        <h3>Швидкий доступ</h3>
-        <nav>
-            <a class="navigation__link" href="group-page.html">HTML Academy</a>
-        </nav>
-        <h3>Цікаве</h3>
-        <nav>
-            <a class="navigation__link" href="">Знайти друзів</a>
-            <a class="navigation__link" href="">Події</a>
-            <a class="navigation__link" href="">Групи</a>
-            <a class="navigation__link" href="">Фан-клуби</a>
-            <a class="navigation__link" href="">Списки друзів</a>
-            <a class="navigation__link" href="">Цього дня</a>
-            <a class="navigation__link" href="">Штурханці</a>
-            <a class="navigation__link" href="">Пропозиції</a>
-            <a class="navigation__link" href="">Списки друзів</a>
+        <nav class="Navigation">
+            <a href="" class="Navigation__item">Volodimir Cherneha</a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_news"></span>Новини
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_messenger"></span>Messenger
+            </a>
+
+            <h5 class="Navigtion__title">Quick access</h5>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_sales"></span>Барахолка
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_people"></span>Людоньки, порадьте
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_outdoor"></span>Туризм і походи
+                <span class="Navigation__item-counter">10+</span>
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_bukovel"></span>Буковель
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_understand-group"></span>И так поймут
+            </a>
+
+            <h5 class="Navigation__title">Interesting</h5>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_stream-of-pages"></span>Потік сторінок
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_group"></span>Групи
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_events"></span>Події
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_fan-club"></span>Фан-клуби
+            </a>
+            <a href="" class="Navigation__item">
+                <span class="Icon Icon_this-day"></span>Цього дня
+            </a>
         </nav>
     </section>
     <main class="main">
