@@ -9,34 +9,39 @@
     <link rel="stylesheet" href="styles/main-header.css">
     <link rel="stylesheet" href="styles/guide.css">
     <link rel="stylesheet" href="styles/content.css">
-    <link rel="stylesheet" href="styles/guide__images.css">
     <link rel="stylesheet" href="styles/button-follow.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/app-model.css">
+    <link rel="stylesheet" href="styles/icon.css">
+    <link rel="stylesheet" href="styles/best_on_youtube.css">
+    <link rel="stylesheet" href="styles/videos.css">
+    <link rel="stylesheet" href="styles/channel-video.css">
 </head>
 <body>
 <header class="main-header">
     <aside class="main-header_left-aside">
         <i class="main-header__details material-icons">menu</i>
-        <img class="main-header_left-aside__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
-        <sup class="main-header_left-aside__ua">UA</sup>
+        <img class="main-header__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
+        <sup class="main-header__ua">UA</sup>
     </aside>
     <form action="" class="search">
         <input class="search__write" type="text" value="Пошук">
         <i class="material-icons search__keyboard">keyboard</i>
         <button class="search__button">
-            <i class="material-icons">search</i>
+            <i class="material-icons search__img-search">search</i>
         </button>
     </form>
     <aside class="main-header_right-aside">
-        <i class="material-icons">file_upload</i>
-        <i class="material-icons">apps</i>
-        <i class="material-icons">more_vert</i>
-        <a href="/" class="main-header_right-aside__signin">УВІЙТИ</a>
+        <i class="material-icons main-header_right-icon">file_upload</i>
+        <i class="material-icons main-header_right-icon">apps</i>
+        <i class="material-icons main-header_right-icon">more_vert</i>
+        <a href="/" class="main-header__signin">УВІЙТИ</a>
     </aside>
 </header>
 
 
 <aside class="guide">
-    <nav class="data-model">
+    <nav class="guide__data-model">
         {{#data-model}}
             <a href="/" class="guide__chapter {{class-name}}">
                 {{name}}
@@ -51,16 +56,16 @@
         </a>
         {{/best-on-youtube}}
     </section>
-    <div class="see-chanel">
-        <a href="/" class="guide__chapter see-chanel__link">
+    <div class="guide__see-chanel">
+        <a href="/" class="guide__chapter icon__see-chanel">
             Переглянути канали
         </a>
     </div>
-    <div class="signin-for-chanel">
+    <div class="guide__signin-for-chanel">
         <p>Увійдіть, щоб переглянути свої канали та рекомендації</p>
-        <a href="/" class="signin-for-chanel__link">Увійти</a>
+        <a href="/" class="guide__signin-link">Увійти</a>
     </div>
-    <nav class="settings">
+    <nav class="guide__settings">
         {{#settings-model}}
         <a href="/" class="guide__chapter {{class-name}}">
             {{name}}
@@ -78,51 +83,49 @@
 </aside>
 
 <main class="content">
-    <section class="recommended">
+    <section class="content__recommended">
         <header>
-            <h2 class="recommended__name">Рекомендовано</h2>
+            <h2 class="content__recommended-name">Рекомендовано</h2>
         </header>
         <div>
             {{#recommended}}
-                <article class="video">
+                <article class="videos">
                     <img src="{{url}}" alt="video" width="210px">
-                    <h3 class="video__name"><a class="video__name_link" href="video-page">{{video-name}}</a></h3>
-                    <aside class="video__details">
-                        <a  class="video__details__channel-name" href="/">{{channel-name}}</a>
-                        <span class="video__details__views">{{views}} переглядів</span>
-                        <time class="video__details__time" datetime="{{datetime}}">{{time}}</time>
+                    <h3 class="videos__name"><a class="video__name_link" href="video-page">{{video-name}}</a></h3>
+                    <aside class="videos__details">
+                        <a  class="videos__channel-name" href="/">{{channel-name}}</a>
+                        <span class="videos__views">{{views}} переглядів</span>
+                        <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
                     </aside>
                 </article>
             {{/recommended}}
         </div>
-        <button class="see-more">
+        <button class="content__see-more">
             Показати більше
         </button>
     </section>
     {{#channels}}
-        <section class="channel">
-            <header class="channel__title">
-                <div class="channel__title_left">
+        <section class="channel-video">
+            <header class="channel-video__title">
+                <div class="channel-video_left">
                     <img height="32" width="32"
                          src="https://yt3.ggpht.com/-62eFsC66a_s/AAAAAAAAAAI/AAAAAAAAAAA/S1aw6wY6HsM/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
-                    <h2 class="channel__title__name">{{channel-name}}</h2>
-                    <p class="channel__title_left__recommended">Рекомендований канал</p>
+                    <h2 class="channel-video__name">{{channel-name}}</h2>
+                    <p class="channel-video__recommended">Рекомендований канал</p>
                 </div>
                 <button class="button-follow">Підписатися <span class="button-follow_darker">{{channel-followers}}</span> </button>
             </header>
-            <div class="channel-content">
                 {{#channel-content}}
-                    <section class="video">
+                    <section class="videos">
                         <img src="{{url}}" alt="video" width="210px">
-                        <h3 class="video__name">{{video-name}}</h3>
-                        <aside class="video__details">
-                            <a href="/" class="video__details__channel-name">{{channel-name}}</a>
-                            <span class="video__details__views">{{views}} переглядів</span>
-                            <time class="video__details__time" datetime="{{datetime}}">{{time}}</time>
+                        <h3 class="videos__name">{{video-name}}</h3>
+                        <aside class="videos__details">
+                            <a href="/" class="videos__channel-name">{{channel-name}}</a>
+                            <span class="videos__views">{{views}} переглядів</span>
+                            <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
                         </aside>
                     </section>
                 {{/channel-content}}
-            </div>
         </section>
     {{/channels}}
 </main>
