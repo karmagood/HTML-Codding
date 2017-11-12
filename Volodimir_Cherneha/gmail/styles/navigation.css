@@ -14,18 +14,3 @@
   color: #d74336;
   background-color: #f3f3f3;
 }
-.button__new-message {
-  position: relative;
-  height: 30px;
-  width: 120px;
-  color: white;
-  background-color: #d74336;
-  font-family: "pt sans", "heletica", sans-serif;
-  font-size: 13px;
-  padding: 3px;
-  border-radius: 3px;
-  border: 1px solid #d74337;
-  left: 40px;
-  top: 5px;
-  outline: none;
-}
