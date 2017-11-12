@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style/cHeader.css">
     <link rel="stylesheet" href="style/bAside__navigation.css">
     <link rel="stylesheet" href="style/bAside__footer.css">
+    <link rel="stylesheet" href="style/bcVideo_lists.css">
 </head>
 <body class="Layout">
     <header class="Header">
@@ -72,6 +73,19 @@
             <p class="Aside__footer-copyright-line">© 2017 YouTube, LLC</p>
         </footer>
     </aside>
-
+    <main class="Video-lists">
+        {{#video}}
+            <section class="Video-lists__section">
+                <h6 class="Video-lists__header">{{section-name}}</h6>
+                {{#item}}
+                    <article class="Video-lists__video">
+                        <img class="Video-lists__video-screen" src="{{image}}"/>
+                        <p class="Video-lists__description-black">{{description}}</p>
+                        <p class="Video-lists__description-grey">{{{footer}}}</p>
+                    </article>
+                {{/item}}
+            </section>
+        {{/video}}
+    </main>
 </body>
 </html>
