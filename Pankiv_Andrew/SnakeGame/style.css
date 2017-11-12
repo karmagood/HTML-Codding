@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    background-color: black;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+}
+
+table {
+    float: left;
+}
+
+.right-side {
+    width: 185%;
+
+}
+
+.right-side p {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50%;
+}
+
+#score {
+    color: white;
+    float: left;
+    margin-left: 25%;
+    margin-top: 25%;
+    font-size: 300px;
+}
+
+.blank {
+    background-color: white;
+}
+
+.snake {
+    background-color: darkgreen;
+}
+
+.wall {
+    background-color: orange;
+}
+
+.fruit {
+    background-color: red;
+}
+

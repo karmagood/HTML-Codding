@@ -1,0 +1,91 @@
+{
+  "mails":[
+    {
+      "sender":"GitHub",
+      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time":"28 окт. (5 дн. назад)"
+    },
+    {
+      "sender":"GitHub",
+      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time":"28 окт. (5 дн. назад)"
+    },
+    {
+      "sender":"GitHub",
+      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time":"28 окт. (5 дн. назад)"
+    },    {
+      "sender":"GitHub",
+      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time":"28 окт. (5 дн. назад)"
+    },
+    {
+      "sender":"GitHub",
+      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time":"28 окт. (5 дн. назад)"
+    },
+    {
+      "sender":"GitHub",
+      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time":"28 окт. (5 дн. назад)"
+    }
+  ],
+  "tabs":[
+    {
+      "title":"Вхідні"
+    },
+    {
+      "title":"Соцмережі"
+    },
+    {
+      "title":"Реклама"
+    }
+  ],
+  "aside":[
+    {
+      "title":"Inbox"
+    },
+    {
+      "title":"Drafts"
+    },
+    {
+      "title":"With star"
+    },
+    {
+      "title":"Sent"
+    }
+  ],
+  "apps":[
+    {
+      "attribute":"apps",
+      "title":"Google apps"
+    },
+    {
+      "attribute":"notification",
+      "title":"Notification"
+    },
+    {
+      "attribute":"profile",
+      "title":"Profile"
+    }
+  ],
+  "buttons":[
+    {
+      "attribute":"refresh",
+      "title":"Refresh"
+    },
+    {
+      "attribute":"previous",
+      "title":"Попереднє"
+    },
+    {
+      "attribute":"next",
+      "title":"Наступне"
+    },
+    {
+      "attribute":"setting",
+      "title":"Настройки"
+   }
+  ]
+
+}

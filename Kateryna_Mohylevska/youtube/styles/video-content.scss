@@ -1,0 +1,96 @@
+.video-content {
+  height: 300px;
+  float: left;
+  width: 854px;
+
+  &__name {
+    font-size: 18px;
+    color: rgb(17, 17, 17);
+    margin: 0;
+    padding-top: 20px;
+  }
+  &__views {
+    margin: 10px 0;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(17, 17, 17, 0.6);
+    border-bottom: 1px solid #efedef;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__element {
+      cursor: pointer;
+      color: rgba(17, 17, 17, 0.6);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .material-icons {
+        font-size: 20px;
+        padding: 0 8px;
+        &:hover {
+          //???????????????????
+          color: rgb(17, 17, 17);
+        }
+      }
+
+    }
+    &__more {
+      cursor: pointer;
+      .material-icons {
+        padding: 0 8px;
+      }
+    }
+  }
+  &__channel {
+    margin-top: 16px;
+    height:150px;
+    padding-bottom: 16px;
+    margin-bottom:24px;
+    border-bottom: 1px solid #efedef;
+    .profile-img{
+      float: left;
+    }
+    &__info{
+      float: left;
+      &__name{
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+      &__published{
+        color: rgba(17, 17, 17, 0.6);
+        margin-top: 0;
+        font-size: 13px;
+      }
+      &__comment{
+        font-size: 14px;
+      }
+      &__data{
+        margin: 8px 0;
+        &__name{
+          margin: 0;
+          display: inline-block;
+          font-weight: normal;
+          color: rgb(136, 136, 136);
+          width: 110px;
+          margin-right: 16px;
+          font-size:14px ;
+        }
+        &__link{
+          font-weight: 600;
+          font-size:14px;
+        }
+      }
+    }
+    .button-follow {
+      float: right;
+    }
+  }
+}
+
+

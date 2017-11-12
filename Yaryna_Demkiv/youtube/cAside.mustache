@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/bAside__navigation.css">
+    <link rel="stylesheet" href="style/bAside__footer.css">
+    <link rel="stylesheet" href="style/Layout.css">
+</head>
+<body>
+    <aside class="Aside">
+        {{#aside-navigation}}
+            {{#main-navigation}}
+                <nav class="Aside__main-navigation">
+                    <a class="Aside__main-navigation-item" href="{{url}}"><img class="Aside__main-navigation-icon" src="{{icon}}"/> <span class="Aside__main-navigation-title">{{title}}</span></a>
+                </nav>
+            {{/main-navigation}}
+            {{#aside-section}}
+                <nav class="Aside__section">
+                    <h6 class="Aside__section-header">{{section-name}}</h6>
+                    {{#item}}
+                        <a class="Aside__section-item" href="{{url}}"><img class="Aside__section-icon" src="{{icon}}"> <span class="Aside__section-title">{{title}}</span></a>
+                    {{/item}}
+                </nav>
+            {{/aside-section}}
+        {{/aside-navigation}}
+        <footer class="Aside__footer">
+            <section class="Aside__footer-help">
+                <a class="Aside__footer-settings" href="https://www.youtube.com/account">Налаштування</a>
+                <button type="button" class="Aside__footer-reference">Довідка</button>
+                <button type="button" class="Aside__footer-feedback">Написати відгук</button>
+            </section>
+            {{#aside-footer}}
+                <section class="Aside__footer-copyright">
+                    {{#copyright}}
+                        <a class="Aside__footer-copyright-item" href="{{url}}">{{title}}</a>
+                    {{/copyright}}
+                </section>
+                <section class="Aside__footer-terms">
+                    {{#terms}}
+                        <a class="Aside__footer-terms-item" href="{{url}}">{{title}}</a>
+                    {{/terms}}
+                </section>
+            {{/aside-footer}}
+            <p class="Aside__footer-copyright-line">© 2017 YouTube, LLC</p>
+        </footer>
+    </aside>
+</body>
+</html>

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Gmail</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/search-form.css">
+    <link rel="stylesheet" href="styles/mail-list.css">
+    <link rel="stylesheet" href="styles/Layout.css">
+    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/mail-settings.css">
+    <link rel="stylesheet" href="styles/chat.css">
+    <link rel="stylesheet" href="styles/mail-tab.css">
+    <link rel="stylesheet" href="styles/logo.css">
+    <link rel="stylesheet" href="styles/search-form.css">
+    <link rel="stylesheet" href="styles/gmail-apps.css">
+</head>
+
+<body class="Layout">
+<header class="Layout__header">
+
+    <img class="logo"
+         src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1000px-Google_2015_logo.svg.png"/>
+    <form action="" class="search">
+        <input class="search__input" type="text">
+        <button class="search__button">Пошук</button>
+    </form>
+    <section class="google-apps">
+        {{#apps}}
+            <a class="google-apps__link google-apps__link_{{attribute}}" href="">{{title}}</a>
+        {{/apps}}
+    </section>
+
+    <section class="header__mail-settings">
+
+        <button class="mail-settings__gmail_button">Gmail</button>
+        <select class="mail-settings__select_messages">
+            <option>Всі</option>
+            <option>Ні одного</option>
+            <option>Виділені</option>
+        </select>
+        {{#buttons}}
+            <button class="mail-settings__button_{{attribute}}">{{title}}</button>
+        {{/buttons}}
+    </section>
+</header>
+
+<aside class="Layout__aside">
+    <button class="button__new_message">WRITE</button>
+    <nav class="navigation">
+        {{#aside}}
+            <a class="navigation__link" href="">{{title}}</a>
+        {{/aside}}
+    </nav>
+    <section class="chat">
+        <img class="chat__profile_img" src="" alt="">
+        <p class="chat__profile_name">Volodimir</p>
+        <footer class="chat__footer">
+            <button>Contacts</button>
+            <button>Chats</button>
+            <button>Calls</button>
+        </footer>
+    </section>
+
+</aside>
+<main class="Layout__main">
+    <section class="mail-tabs">
+        {{#tabs}}
+            <a class="mail-tabs__link" href="#">{{title}}</a>
+        {{/tabs}}
+    </section><!--
+     -->
+    <section class="mail-list">
+        {{#mails}}
+        <section class="mail-list">
+            <article class="mail-list__item">
+                <form action="#" class="mail-list__item-form">
+                    <input class="mail-list__item-checkbox" type="checkbox">
+                    <input class="mail-list__item-checkbox" type="checkbox">
+                    <input class="mail-list__item-checkbox" type="checkbox">
+                </form><!--
+             -->
+                <header class="mail-list__item-sender">
+                        {{sender}}
+                </header><!--
+                --><p class="mail-list__item-paragraph"> {{content}} </p><!--
+              -->
+                <time class="mail-list__item-time">
+                    {{time}}
+                </time>
+            </article>
+        {{/mails}}
+    </section>
+
+        <footer class="footer">
+            <a class="footer-link" href="">Умови</a>
+            <a class="footer-link" href="">Конфіденційність</a>
+        </footer>
+</main>
+</body>
+
+</html>

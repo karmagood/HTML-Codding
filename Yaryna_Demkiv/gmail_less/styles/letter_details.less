@@ -1,0 +1,155 @@
+@background-color: white;
+@font-family: arial, sans-serif;
+@color: #222;
+@font-weight-normal: 400;
+@footer-text-color: #999;
+
+.Letter-details {
+  background-color: @background-color;
+
+  &__priority-buttons button {
+    display: inline-block;
+    vertical-align: middle;
+    width: 40px;
+    height: 17.75px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  &__print-open-buttons button {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 21px;
+    height: 21px;
+    overflow: hidden;
+  }
+
+  &__letter-subject,
+  &__priority-buttons {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__print-open-buttons {
+    float: right;
+  }
+
+  &__letter-subject {
+    font-family: @font-family;
+    color: @color;
+    font-weight: @font-weight-normal;
+    margin-right: 10px;
+  }
+
+  &_header {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: @background-color;
+  }
+
+  &__sendto, &__smallarrow {
+    display: inline;
+    vertical-align: middle;
+  }
+
+  &__smallarrow {
+    height: 13px;
+    width: 12px;
+    overflow: hidden;
+    font-size: 1px;
+  }
+
+  &__letter-time, &__answer, &__more-actions {
+    display: inline;
+  }
+
+  &__answer {
+    width:49px;
+    height: 28px;
+    overflow: hidden;
+  }
+
+  &__more-actions {
+    width:22px;
+    height: 28px;
+    overflow: hidden;
+    margin-left: -5px;
+  }
+
+  &__letter-content {
+    width:100%;
+  }
+
+  &__letter-text-wrapper {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  &__time-action-buttons {
+    float: right;
+  }
+
+  &__letter-text {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-bottom: 0.7px solid lightgray;
+  }
+
+  &_sender-photo, &__letter-sender {
+    display: inline-block;
+  }
+
+  &__big-break {
+    margin-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  &__small-break {
+    margin-bottom: 5px;
+  }
+
+  &__bottom-actions-block {
+    width: 100%;
+    background-color: @background-color;
+  }
+
+  &__footer-text {
+    height: 72px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 90%;
+    color: @footer-text-color;
+  }
+
+  &__footer-text button {
+    display: inline-block;
+    font-size: 13px;
+    font-family: arial,sans-serif;
+    color: #999;
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  &__press-here, &__footer-buttons{
+    display: inline;
+    vertical-align: middle;
+  }
+
+  &__footer-text, &__my-photo {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+  }
+
+  &__my-photo {
+    margin-top: 20px;
+  }
+}
