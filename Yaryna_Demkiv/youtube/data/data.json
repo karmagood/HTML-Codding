@@ -29,23 +29,119 @@
       }
     ]
   },
-  "library": {
-    "section-name":"Бібліотека",
-    "item": [
+  "aside-section": [
+    {
+      "section-name":"Бібліотека",
+      "item": [
+        {
+          "url": "https://www.youtube.com//feed/history",
+          "icon": "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png",
+          "title": "Історія"
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=WL",
+          "icon": "https://www.materialui.co/materialIcons/action/watch_later_black_192x192.png",
+          "title": "Переглянути пізніше"
+        },
+        {
+          "url": "https://www.youtube.com/playlist?list=LLmEm9tungaVn0-X4m-NFPsQ",
+          "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Thumb_up_icon_2.svg/512px-Thumb_up_icon_2.svg.png",
+          "title": "Відео, що сподобались"
+        }
+      ]
+    },
+    {
+      "section-name":"Підписки",
+      "item": [
+        {
+          "url": "https://www.youtube.com/channel/UCesO4-UStBz-iTTgkY645yw",
+          "icon": "http://i.ytimg.com/i/esO4-UStBz-iTTgkY645yw/1.jpg",
+          "title": "Популярні на YouTube - Україна"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+          "icon": "http://i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg",
+          "title": "Музика"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw",
+          "icon": "http://i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg",
+          "title": "Спорт"
+        },
+        {
+          "url": "https://www.youtube.com/channel/UCOpNcN46UbXVtpKMrmU4Abg",
+          "icon": "http://i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg",
+          "title": "Комп'ютерні ігри"
+        }
+      ]
+    },
+    {
+      "section-name": null,
+      "item":
+        {
+          "url": "https://www.youtube.com/channels",
+          "icon": "http://s.ytimg.com/yts/img/innertube/guide/add_channel_guide-vflSJDanE.png",
+          "title": "Переглянути канали"
+        }
+    },
+    {
+      "section-name": null,
+      "item":
       {
-        "url": "https://www.youtube.com//feed/history",
-        "icon": "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png",
-        "title": "Історія"
+        "url": "https://www.youtube.com/channel/UClgRkhTL3_hImCAmdLfDE4g",
+        "icon": "https://s.ytimg.com/yts/img/tvfilm/movies_profile-vflUDE4X7.png",
+        "title": "Фільми"
+      }
+    }
+  ],
+
+  "aside-footer": {
+    "copyright": [
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Інфо"
       },
       {
-        "url": "https://www.youtube.com/playlist?list=WL",
-        "icon": "https://www.materialui.co/materialIcons/action/watch_later_black_192x192.png",
-        "title": "Переглянути пізніше"
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Преса"
       },
       {
-        "url": "https://www.youtube.com/playlist?list=LLmEm9tungaVn0-X4m-NFPsQ",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Thumb_up_icon_2.svg/512px-Thumb_up_icon_2.svg.png",
-        "title": "Відео, що сподобались"
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Авторські права"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Творці"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Реклама"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Розробники"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "YouTube+"
+      }
+    ],
+    "terms": [
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Умови"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Конфіденційність"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Політика безпеки"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Спробувати нові функції"
       }
     ]
   },
@@ -53,20 +149,114 @@
 
   "video": [
     {
-      "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
-      "description": "Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song",
-      "footer": "Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому"
+      "section-name":"Рекомендоване",
+      "item": [
+        {
+          "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
+          "description": "Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song",
+          "footer": "Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ",
+          "description": "Animal Crayons: Cute crayons won't flake, can be erased",
+          "footer": "Vat19<br>8,8 млн перегляди<br>5 років тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA",
+          "description": "Reusable Plastic Cups and Paper Plates",
+          "footer": "Vat19<br>6,3 млн перегляди<br>3 роки тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
+          "description": "Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song",
+          "footer": "Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ",
+          "description": "Animal Crayons: Cute crayons won't flake, can be erased",
+          "footer": "Vat19<br>8,8 млн перегляди<br>5 років тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA",
+          "description": "Reusable Plastic Cups and Paper Plates",
+          "footer": "Vat19<br>6,3 млн перегляди<br>3 роки тому"
+        }
+      ]
     },
     {
-      "image": "https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ",
-      "description": "Animal Crayons: Cute crayons won't flake, can be erased",
-      "footer": "Vat19<br>8,8 млн перегляди<br>5 років тому"
+      "section-name":"Популярне",
+      "item": [
+        {
+          "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
+          "description": "Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song",
+          "footer": "Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ",
+          "description": "Animal Crayons: Cute crayons won't flake, can be erased",
+          "footer": "Vat19<br>8,8 млн перегляди<br>5 років тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA",
+          "description": "Reusable Plastic Cups and Paper Plates",
+          "footer": "Vat19<br>6,3 млн перегляди<br>3 роки тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
+          "description": "Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song",
+          "footer": "Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ",
+          "description": "Animal Crayons: Cute crayons won't flake, can be erased",
+          "footer": "Vat19<br>8,8 млн перегляди<br>5 років тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA",
+          "description": "Reusable Plastic Cups and Paper Plates",
+          "footer": "Vat19<br>6,3 млн перегляди<br>3 роки тому"
+        }
+      ]
     },
     {
-      "image": "https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA",
-      "description": "Reusable Plastic Cups and Paper Plates",
-      "footer": "Vat19<br>6,3 млн перегляди<br>3 роки тому"
+      "section-name":"Нещодавні завантаження",
+      "item": [
+        {
+          "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
+          "description": "Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song",
+          "footer": "Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ",
+          "description": "Animal Crayons: Cute crayons won't flake, can be erased",
+          "footer": "Vat19<br>8,8 млн перегляди<br>5 років тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA",
+          "description": "Reusable Plastic Cups and Paper Plates",
+          "footer": "Vat19<br>6,3 млн перегляди<br>3 роки тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/VTmmoaO2M_U/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB_3pIFwELxy030RRvU0FJeT8E9Pw",
+          "description": "Five Little Monkeys Jumping On The Bed | Nursery Rhymes For Kids | Children Song",
+          "footer": "Farmees - Nursery Rhymes And Kids Songs<br>13 млн перегляди<br>1 рік тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/Ox7zEl1ztZU/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBp0BpHKOKq9NQ8y6csv9IZ8DvECQ",
+          "description": "Animal Crayons: Cute crayons won't flake, can be erased",
+          "footer": "Vat19<br>8,8 млн перегляди<br>5 років тому"
+        },
+        {
+          "image": "https://i.ytimg.com/vi/0Epezl9FHds/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDB34ov6I9Q6Fj6bm2OjI3p51Q9xA",
+          "description": "Reusable Plastic Cups and Paper Plates",
+          "footer": "Vat19<br>6,3 млн перегляди<br>3 роки тому"
+        }
+      ]
     }
   ]
+
+
+
+
 }
 
