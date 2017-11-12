@@ -6,9 +6,9 @@ ul {
     list-style-type: none;
 }
 
-.main_navigation{position: fixed;
+.main-navigation{position: fixed;
     top: 0; z-index: 1; width: 100%;}
-.main_navigation ul {
+.main-navigation ul {
     padding-left: 25px;
     padding-right: 10px;
     display: flex;
@@ -20,14 +20,14 @@ ul {
     margin: 0 !important;
 }
 
-.main_navigation li, .language_section li {
+.main-navigation li, .main-container__quick__item__language li {
     text-align: center;
     display: inline-block;
     margin-right: 8px;
     margin-left: 8px;
 }
 
-.main_navigation li a {
+.main-navigation li a {
     display: block;
     color: white;
     text-align: center;
@@ -58,14 +58,14 @@ body {
 }
 
 
-.nav_block {
+.main-container__nav {
     position: fixed;
     top: 50px;
     width: 184px;
     margin-right: 10px;
 }
 
-.main_feed_block {
+.main-container__feeds {
     margin-right: 10px;
     position: absolute;
     left: 194px;
@@ -73,14 +73,14 @@ body {
     width: 500px;
 }
 
-.main_quick_block {
+.main-container__quick {
     position: absolute;
     left: 704px;
     top: 0;
     width: 308px;
 }
 
-.main_actions_block {
+.main-container__actions {
    position: fixed;
     overflow-y: scroll;
     height: 100%;    top:50px;
@@ -90,7 +90,7 @@ body {
 }
 
 @media screen and (max-width: 1220px){
-    .main_actions_block{display: none}
+    .main-container__actions{display: none}
 }
 
 @media screen and (max-width: 1220px) {
@@ -98,7 +98,7 @@ body {
         left: calc(50% - 507px);
     }
 }
-    .main_navigation img {
+    .main-navigation img {
     border-radius: 30px;
 }
 
@@ -106,7 +106,7 @@ body {
     align-items: center;
 }
 
-.nav_block ul, .nav_block aside, .main_quick_block ul {
+.main-container__nav ul, .main-container__nav aside, .main-container__quick ul {
     padding-left: 20px;
     overflow: hidden;
     font-weight: 100;
@@ -119,21 +119,21 @@ a {
     text-decoration: none;
 }
 
-.nav_block li:hover {
+.main-container__nav li:hover {
     background-color: #e9ebee;
 }
 
-.nav_block aside a {
+.main-container__nav aside a {
     display: inline-block;
     color: darkblue;
     text-decoration: none;
 }
 
-.this_week_section li:hover {
+.main-container__quick__item__this__week li:hover {
     background-color: #e9ebee;
 }
 
-.language_section {
+.main-container__quick__item__language {
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -141,25 +141,25 @@ a {
     justify-content: space-around;
 }
 
-.post-item h2{
+.main-container__feeds__item__post h2{
     margin-top: 5px;
     margin-bottom: 0;
     margin-left: 5px;
 }
 
-.three-section{
+.main-container__feeds__item__post__actions{
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
 }
 
-.three-section button{
+.main-container__feeds__item__post__actions button{
     background-color: transparent;
     border: none;
     cursor:pointer;
     overflow: hidden;
 }
-.post-item{
+.main-container__feeds__item__post{
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: white;
@@ -168,7 +168,7 @@ a {
 }
 
 
-.close-classic {
+.main-container__actions__item--close {
     color: dimgrey;
     font-size: 15px;
     position: absolute;
@@ -178,17 +178,17 @@ a {
     text-shadow: 1px 1px 1px #fff;
 }
 
-.close-classic:after {
+.main-container__actions__item--close:after {
     content: 'X'; }
 
 
 
-.dialog {
+.main-container__actions__item__dialog {
     float: left;
     position: relative;
 }
 
-.games-icon {
+.main-container__actions__item {
     margin-top: 10px;
     display: flex;
     justify-content: space-around;
