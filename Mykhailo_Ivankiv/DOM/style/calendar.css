@@ -1,0 +1,30 @@
+.calendar {
+  width: 322px;
+  margin: 10px auto;
+  clear: both;
+}
+.calendar_three-day-week {
+  width: 138px;
+  margin: 10px auto;
+}
+.calendar__day {
+  color: #34495e;
+  border-radius: 3px;
+  margin: 3px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  float: left;
+  background: #ccc;
+  text-align: center;
+}
+.calendar__day_active {
+  background: #ff0000;
+}
+.calendar__day_busy {
+  background: #00CB79;
+}
+.calendar__day_disabled {
+  opacity: 0.5;
+}

@@ -1,0 +1,58 @@
+header{
+    height: 20px;
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+}
+
+body{
+    margin: 0;
+}
+
+.payload{
+    background-color: aqua;
+    font-size: 0;
+    width: 606px;
+    position: absolute;
+    left: calc(50% - 303px);
+    top: 20px;
+}
+
+.tool-bar,
+.feed,
+.advertise{
+    font-size: 20px;
+    position: absolute;
+
+}
+
+.tool-bar{
+    position: fixed;
+    background-color: green;
+    width: 100px;
+    top:0;
+}
+
+.feed{
+    background-color: blueviolet;
+    width: 400px;
+    top: 0;
+    left: 100px;
+}
+
+.advertise{
+    background-color: red;
+    width: 100px;
+    top:0;
+    left: 500px;
+}
+.friends-list{
+    position: fixed;
+    background-color: chocolate;
+    width: 100px;
+    top: 20px;
+    bottom: 0;
+left: calc(100% - 100px);
+}

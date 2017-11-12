@@ -16,11 +16,11 @@ header {
 
 .main-nav {
     width: 250px;
-    height: 95%;
+    height: 100%;
     margin: 70px 0 0 0;
     position: fixed;
     background-color: #F5F5F5;
-    opacity: 0.2;
+    overflow: auto;
 }
 .logo-main-menu {
     display: flex;
@@ -35,7 +35,7 @@ header {
 }
 .mat-icons {
     cursor: pointer;
-    color: darkgray;
+    color: grey;
 }
 .header-search {
     width: 40%;
@@ -64,12 +64,10 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-.downloads-my-profile > img {
-    border-radius: 50%;
-}
 .guide-section {
     display: flex;
     flex-direction:column;
+    font-family: "Roboto", sans-serif;
 
 
 }
@@ -89,3 +87,60 @@ header {
     border-radius: 50%;
 }
 
+.guide-section > a >  i {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.guide-section > a >  img{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+.guide-section > a:hover {
+    background-color: #EBEBEB;
+}
+.guide-section > h3 {
+    margin-left: 12%;
+    color: grey;
+
+}
+.main-nav > hr {
+    height: 1px;
+    margin: 0;
+    border: 0;
+    box-shadow: 0 5px 5px -5px lightgray inset;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #ccc;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+.main-content {
+    position:absolute;
+    left: 300px;
+    top: 80px;
+    background-color: black;
+}
+
+.video-feed {
+
+}
+.feed-item {
+
+}

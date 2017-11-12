@@ -1,27 +1,24 @@
-const {swap, getRandomArray, getRandomNumber} = require("./utility");
-
+const {swap, getRandomArray} = require("./utility");
 
 const bubbleSort = (arr) => {
-    var sortedArray = arr.slice();
-    var swapped = true;
-    while (swapped) {
-        swapped = false;
-        for (let i = 0; i < sortedArray.length; ++i) {
-            if (i < sortedArray.length - 1) {
-                if (sortedArray[i] > sortedArray[i + 1]) {
-                    swapped = true;
-                    sortedArray = swap(arr, i, i + 1);
+    let sortedArray = arr.slice();
 
-                }
+    for (let j = 0; j < sortedArray.length - 1; j++) {
+        let isSorted = true;
+        for (let i = 0; i < sortedArray.length - 1 - j; i++) {
+            if (sortedArray[i] > sortedArray[i + 1]) {
+                isSorted = false;
+                sortedArray = swap(arr, i, i + 1);
             }
+        }
+        if (isSorted) {
+            return sortedArray
         }
     }
     return sortedArray;
+};
 
 
-}
-
-var q = getRandomArray(10000);
-console.time("Sorting");
-bubbleSort(q);
-console.timeEnd("Sorting")
+let q = getRandomArray(10, 0, 4);
+console.log(q);
+console.log(bubbleSort(q));

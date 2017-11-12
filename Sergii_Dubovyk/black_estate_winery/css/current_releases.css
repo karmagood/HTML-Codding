@@ -1,0 +1,24 @@
+.current-releases {
+  display: grid;
+  grid-template-columns: 40% 36%;
+  grid-template-rows: 35% 35% 35% 35%;
+  grid-column-gap: 4%;
+  grid-row-gap: 20%;
+  margin-left: 40%;
+  font-size: 19px;
+  line-height: 1.37; }
+  .current-releases__header {
+    font-weight: normal;
+    font-size: 26px;
+    align-self: end; }
+  .current-releases__note {
+    font-weight: normal;
+    font-size: 19px;
+    align-self: start; }
+  .current-releases__wine_wine-name {
+    margin-left: 0;
+    width: 100%;
+    display: inline-block;
+    align-self: center; }
+
+/*# sourceMappingURL=current_releases.css.map */

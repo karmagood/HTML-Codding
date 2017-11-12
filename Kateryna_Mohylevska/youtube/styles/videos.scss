@@ -1,0 +1,31 @@
+.videos{
+  cursor: pointer;
+  margin-right: 4px;
+  margin-bottom: 24px;
+  display: inline-block;
+  &:nth-child(4n+4){
+    margin-right: 0;
+  }
+  &__details{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__channel-name,
+  &__time,
+  &__views{
+    color: #8b898b;
+    font-size: 13px;
+  }
+  &__views:after{
+    content: "•";
+    margin: 0 4px;
+  }
+  &__channel-name:hover{
+    color: #2b2b2b;
+  }
+
+  &__name{
+    font-size: 14px;
+  }
+}

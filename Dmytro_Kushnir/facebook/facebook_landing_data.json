@@ -1,0 +1,84 @@
+{
+  "posts": [
+    {
+      "publication_author_data":{
+        "author_name": "test_name1",
+        "author_avatar_url": "https://scontent.flwo1-1.fna.fbcdn.net/v/t1.0-1/p80x80/15873207_10154844319504286_1108420984561784312_n.png?oh=000561bf6fa4c9aca6370bdec5f0cbb7&oe=5A3FA42C"
+      },
+      "action": {
+        "action_name": "shared(test)",
+        "action_subject": "event_kind",
+        "event_organiser": "test_organiser",
+        "action_time": "time"
+      },
+      "post": {
+        "post_text": "text",
+        "post_adds": [
+          {
+            "photo_1_URL": "blah-blah.com"
+          }
+        ]
+      },
+      "reactions": {
+        "persons_liked": [
+          {
+            "person_name": "Ivanov Ivan",
+            "person_url": "some_url"
+          },
+          {
+            "person_name": "Petrov Petro",
+            "person_url": "some_url"
+          }
+        ],
+        "loved": [],
+        "lol": [],
+        "wow": [],
+        "sad": [],
+        "andgry": []
+      },
+      "comments": "23",
+      "reposts": "2"
+    },
+
+    {
+      "publication_author_data": {
+        "author_name": "test_name2",
+        "author_avatar_url": "https://scontent.flwo1-1.fna.fbcdn.net/v/t1.0-1/p80x80/15873207_10154844319504286_1108420984561784312_n.png?oh=000561bf6fa4c9aca6370bdec5f0cbb7&amp;oe=5A3FA42C"
+
+      },
+      "action": {
+        "action_name": "shared(test)",
+        "action_subject": "event_kind",
+        "event_organiser": "test_organiser",
+        "action_time": "time"
+      },
+      "post": {
+        "post_text": "text",
+        "post_adds": [
+          {
+            "photo_1_URL": "blah-blah.com"
+          }
+        ]
+      },
+      "reactions": {
+        "persons_liked": [
+          {
+            "person_name": "Ivanov Ivan",
+            "person_url": "some_url"
+          },
+          {
+            "person_name": "Petrov Petro",
+            "person_url": "some_url"
+          }
+        ],
+        "loved": [],
+        "lol": [],
+        "wow": [],
+        "sad": [],
+        "andgry": []
+      },
+      "comments": "23",
+      "reposts": "2"
+    }
+  ]
+}

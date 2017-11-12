@@ -36,75 +36,29 @@
   &__chapter::before {
     margin-right: 24px;
   }
-}
 
-.settings,
-.data-model,
-.best-on-youtube {
-  display: flex;
-  flex-direction: column;
-}
-
-.settings,
-.data-model {
-  padding-top: 10px;
-  border-bottom: 1px solid #efedef;
-}
-
-.best-on-youtube,
-.see-chanel,
-.settings {
-  border-bottom: 1px solid #efedef;
-  padding: 8px 0;
-}
-
-.best-on-youtube {
-  &__icon::before {
-    border-radius: 50%;
-    background-size: 100%;
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    content: "";
+  &__see-chanel {
+    border-bottom: 1px solid #efedef;
+    padding: 8px 0;
   }
-  &__title {
-    font-size: 14px;
-    padding-left: 24px;
-    color: #8b898b;
-    text-transform: uppercase;
-    margin: 10px 0;
+  &__data-model{
+    margin-top: 6px;
   }
-
-}
-
-.signin-for-chanel {
-  padding: 2px 32px 16px 32px;
-  border-bottom: 1px solid #efedef;
-  color: rgb(17, 17, 17);
-  &__link {
+  &__settings,
+  &__data-model{
+    display: flex;
+    flex-direction: column;
+    padding: 7px 0;
+    border-bottom: 1px solid #efedef;
+  }
+  &__signin-for-chanel {
+    padding: 2px 32px 16px 32px;
+    border-bottom: 1px solid #efedef;
+    color: rgb(17, 17, 17);
+  }
+  &__signin-link {
     color: red;
     text-transform: uppercase;
     font-weight: bold;
-  }
-}
-
-.see-chanel__link::before {
-  content: url("../images/icons/see-channels.svg");
-  opacity: 0.45;
-  width: 10px;
-}
-
-.app-model {
-  padding: 12px 27px;
-  color: #8b898b;
-  font-size: 13px;
-  &__link {
-    margin-right: 8px;
-    color: #8b898b;
-  }
-
-  &__link:nth-child(8) {
-    display: inline-block;
-    margin-top: 20px;
   }
 }
