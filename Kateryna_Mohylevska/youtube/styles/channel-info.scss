@@ -1,0 +1,44 @@
+.channel-info {
+  margin-top: 16px;
+  height:150px;
+  padding-bottom: 16px;
+  margin-bottom:24px;
+  border-bottom: 1px solid #efedef;
+  &__name{
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  &__published{
+    color: rgba(17, 17, 17, 0.6);
+    margin-top: 0;
+    font-size: 13px;
+  }
+  &__comment{
+    font-size: 14px;
+  }
+  &__details{
+    float: left;
+  }
+  &__data{
+    margin: 8px 0;
+  }
+  &__link{
+    font-weight: 600;
+    font-size:14px;
+  }
+  &__data-name{
+    margin: 0;
+    display: inline-block;
+    font-weight: normal;
+    color: rgb(136, 136, 136);
+    width: 110px;
+    margin-right: 16px;
+    font-size:14px ;
+  }
+  .profile-img{
+    float: left;
+  }
+  .button-follow {
+    float: right;
+  }
+}

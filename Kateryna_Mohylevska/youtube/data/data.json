@@ -3,15 +3,15 @@
   "data-model": [
     {
       "name": "Головна",
-      "class-name": "home-img"
+      "class-name": "icon__home-img"
     },
     {
       "name": "Популярне",
-      "class-name": "popular-img"
+      "class-name": "icon__popular-img"
     },
     {
       "name": "Історія",
-      "class-name": "history-img"
+      "class-name": "icon__history-img"
     }
   ],
 
@@ -19,31 +19,31 @@
   "best-on-youtube": [
     {
       "name": "Музика",
-      "class-name": "music-img"
+      "class-name": "icon__music-img"
     },
     {
       "name": "Спорт",
-      "class-name": "sport-img"
+      "class-name": "icon__sport-img"
     },
     {
       "name": "Комп'ютерні ігри",
-      "class-name": "game-img"
+      "class-name": "icon__game-img"
     },
     {
       "name": "Фільми",
-      "class-name": "film-img"
+      "class-name": "icon__film-img"
     },
     {
       "name": "Новини",
-      "class-name": "news-img"
+      "class-name": "icon__news-img"
     },
     {
       "name": "У прямому ефірі",
-      "class-name": "live-streaming-img"
+      "class-name": "icon__live-streaming-img"
     },
     {
       "name": "Сферичне відео",
-      "class-name": "spherical-video-img"
+      "class-name": "icon__spherical-video-img"
     }
   ],
 
@@ -51,15 +51,15 @@
   "settings-model": [
     {
       "name": "Налаштування",
-      "class-name": "settings-img"
+      "class-name": "icon__settings-img"
     },
     {
       "name": "Довідка",
-      "class-name": "help-img"
+      "class-name": "icon__help-img"
     },
     {
       "name": "Надіслати відгук",
-      "class-name": "response-img"
+      "class-name": "icon__response-img"
     }
   ],
 

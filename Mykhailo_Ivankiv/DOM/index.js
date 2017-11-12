@@ -15,21 +15,21 @@ disabledDays
 const today = (new Date()).getDate();
 daysArray[today-1].classList.add("calendar__day_busy");
 
-const getRamdom = (from, to) => from + Math.floor(Math.random() * to);
+const getRandom = (from, to) => from + Math.floor(Math.random() * to);
 
 const getRandomColor = () => {
     const letters = '0123456789ABCDEF';
     let color = '#';
     for (let i = 0; i < 6; i++) {
-        color += letters[getRamdom(0, 16)];
+        color += letters[getRandom(0, 16)];
     }
     return color;
 };
 
 const paint = (el) => el.style.backgroundColor = getRandomColor()
 
-const delegateClick = (className) => (ev) => {
+const delegate = (className) => (ev) => {
     if (ev.target.classList.contains(className)) { paint(ev.target); }
 };
 
-calendar.addEventListener("click", delegateClick("calendar__day"));
+calendar.addEventListener("click", delegate("calendar__day"));

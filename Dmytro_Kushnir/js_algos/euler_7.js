@@ -3,29 +3,29 @@
 // What is the 10 001st prime number?\
 
 
-function isMutuallySimple(value, primesToCompareList){
-    var isMutSimple = true;
-    for (var i = 0; i < primesToCompareList.length && isMutSimple; i++) {
+const areMutuallySimple = (value, primesToCompareList) => {
+    let isMutSimple = true;
+    for (let i = 0; i < primesToCompareList.length && isMutSimple; i++) {
         isMutSimple = value % primesToCompareList[i] !== 0; // there is no divisors in compareList
     }
     return isMutSimple;
-}
+};
 
-function getNthPrime(number) {
-    var primesList = [];
+const getNthPrime = (number) => {
+    let primesList = [];
 
 //here used assumption that if condition can be expressed thrue mutual simplicity with previous found simple numbers
-    var k = 0;
-    var simpleCandidate = 2;
+    let k = 0;
+    let simpleCandidate = 2;
     while (k < number){
-        if (isMutuallySimple(simpleCandidate, primesList)){
+        if (areMutuallySimple(simpleCandidate, primesList)){
                 primesList.push(simpleCandidate);
                 k++;
         }
         simpleCandidate++;
     }
     return primesList[number-1];
-}
+};
 
 console.log(getNthPrime(6));
 console.log(getNthPrime(10001));

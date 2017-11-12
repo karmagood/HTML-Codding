@@ -4,5 +4,9 @@
   border: 1px solid ;
   padding: 5px 20px;
 }
-.button_active { background: #ff0000; }
-.button_disabled { color: #ccc; }
+.button_active {
+  background: #ff0000;
+}
+.button_disabled {
+  color: #ccc;
+}
