@@ -28,7 +28,6 @@ function Init() {
     CreateSnake();
     CreateFruit();
 }
-
 function CreateMap() {
     document.write("<table name='table'>");
     for (let y = 0; y < Height; y++) {
