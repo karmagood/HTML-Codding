@@ -75,8 +75,76 @@
         }
       ]
     },
-    
+    {
+      "section-name": null,
+      "item":
+        {
+          "url": "https://www.youtube.com/channels",
+          "icon": "http://s.ytimg.com/yts/img/innertube/guide/add_channel_guide-vflSJDanE.png",
+          "title": "Переглянути канали"
+        }
+    },
+    {
+      "section-name": null,
+      "item":
+      {
+        "url": "https://www.youtube.com/channel/UClgRkhTL3_hImCAmdLfDE4g",
+        "icon": "https://s.ytimg.com/yts/img/tvfilm/movies_profile-vflUDE4X7.png",
+        "title": "Фільми"
+      }
+    }
   ],
+
+  "aside-footer": {
+    "copyright": [
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Інфо"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Преса"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Авторські права"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Творці"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Реклама"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Розробники"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "YouTube+"
+      }
+    ],
+    "terms": [
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Умови"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Конфіденційність"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Політика безпеки"
+      },
+      {
+        "url": "https://www.youtube.com/intl/uk/yt/about/",
+        "title": "Спробувати нові функції"
+      }
+    ]
+  },
 
 
   "video": [
