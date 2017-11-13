@@ -13,6 +13,7 @@ let FruitX;
 let FruitY;
 let Running = false;
 let GameOver = false;
+let WallKill = false;
 let direction = 2;// up = 8 , down = 2, right = 6, left = 4
 let inter;
 let Score = 0;
@@ -23,6 +24,24 @@ function Run() {
 
 }
 
+function Reset(){
+    DeleteSnake();
+    clearInterval(inter);
+    RebuildMap();
+    Score = 0;
+    document.getElementById("score").innerHTML = '' + Score;
+    length = 0;
+    SnakeX = 2;
+    SnakeY = 2;
+    TailX = [SnakeX];
+    TailY = [SnakeY];
+    GameOver = false;
+    WallKill = false;
+    Running = false;
+    CreateSnake();
+    inter = setInterval(GameLoop, interval);
+
+}
 function Init() {
     CreateMap();
     CreateSnake();
@@ -45,8 +64,22 @@ function CreateMap() {
     document.write("</table>");
 }
 
+function RebuildMap() {
+    if(WallKill){
+        Set(SnakeX,SnakeY,"wall");
+    }
+
+}
+
 function CreateSnake() {
     Set(SnakeX, SnakeY, "snake");
+}
+
+function DeleteSnake() {
+    for (let i = 0; i < length; i++){
+        Set(TailX[i],TailY[i],"blank");
+    }
+    Set(SnakeX,SnakeY,"blank");
 }
 
 function Get(x, y) {
@@ -81,7 +114,6 @@ function CreateFruit() {
 
 window.addEventListener("keypress", function key() {
    let key = event.keyCode;
-   console.log(key);
    if(!Running){
        Running = true;
    }
@@ -104,6 +136,9 @@ window.addEventListener("keypress", function key() {
            break;
        case 32:
            Running = false;
+           break;
+       case 13:
+           Reset();
            break;
    }
 });
@@ -136,8 +171,10 @@ function Update() {
             break;
     }
     if (GetType(SnakeX, SnakeY) === "wall"){
+        WallKill = true;
         GameOver = true;
     }
+
     Set(SnakeX,SnakeY,"snake");
     if (SnakeX === FruitX && SnakeY === FruitY){
         CreateFruit();
@@ -145,7 +182,6 @@ function Update() {
         Score++;
         document.getElementById("score").innerHTML = '' + Score;
     }
-
     for (let i = 0; i < length ; i++){
         if (SnakeX === TailX[i] && SnakeY === TailY[i]){
             GameOver = true;

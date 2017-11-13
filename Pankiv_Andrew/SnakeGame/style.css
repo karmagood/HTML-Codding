@@ -26,14 +26,19 @@ table {
 .right-side p {
     text-align: center;
     vertical-align: middle;
-    line-height: 50%;
 }
 
+.info{
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    width: 25%;
+    margin-left: 20%;
+    color: white;
+}
 #score {
     color: white;
     float: left;
-    margin-left: 25%;
-    margin-top: 25%;
     font-size: 300px;
 }
 
