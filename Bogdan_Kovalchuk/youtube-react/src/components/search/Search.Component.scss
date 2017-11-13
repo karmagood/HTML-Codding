@@ -1,0 +1,72 @@
+$color-grey: rgba(17, 17, 17, 0.4);
+$button-font-size: 20px;
+//$color-border: rgb(238, 238, 238);
+$border-color: rgb(204, 204, 204);
+$button-background-color: rgb(248, 248, 248);
+$input-font-size: 16px;
+
+.Search{
+  flex-grow: 1;
+  margin: 0 40px;
+
+  &__form{
+    height: 30px;
+    max-width: 656px;
+    display: flex;
+  }
+
+  &__input-container{
+    height: 24px;
+    max-width: 632px;
+    padding: 2px 6px;
+    border: 1px solid $border-color;
+    border-right: none;
+    flex-grow: 1;
+    display: flex;
+    &--active{
+      outline-color: rgb(77, 144, 254); // #4D90FE
+      outline-offset: -2px;
+      outline-style: auto;
+      outline-width: 5px;
+    }
+  }
+
+  &__input{
+    border: none;
+    width: 100%;
+    height: 24px;
+    //border-width: 1px;
+    //border-right-width:0;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-size: $input-font-size;
+    //border-right:none;
+    flex-grow: 1;
+
+  }
+
+  &__button{
+    font-size: $button-font-size;
+    color: $color-grey;
+  }
+
+  &__icon--small{
+    font-size: 20px;
+  }
+
+  &__search-button{
+    width: 68px;
+    height: inherit;
+    border: 1px solid $border-color;
+    background-color: $button-background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__keyboard-button{
+    border: none;
+    background-color: transparent;
+  }
+}
