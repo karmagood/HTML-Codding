@@ -5,7 +5,6 @@ let Height = 30;
 let Width = 30;
 let interval = 100;
 
-
 //game variables
 let length = 0;
 let TailX = [SnakeX];
