@@ -1,0 +1,65 @@
+$color-grey: rgba(17, 17, 17, 0.4);
+$button-font-size: 24px;
+
+.Header {
+  height: 56px;
+  width: 100%;
+  padding: 0 16px;
+  position: fixed;
+  top: 0;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px lighten($color-grey, 50%);
+  &__container {
+    height: inherit;
+    display: flex;
+    align-items: center;
+  }
+
+  &__buttons_container {
+    //height: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: end;
+  }
+  &__button {
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    font-size: $button-font-size;
+    color: $color-grey;
+    padding: 8px;
+    margin-right: 8px;
+  }
+  &__menu-button {
+    margin-right: 16px;
+  }
+  &__profile-button {
+    height: 48px;
+    //padding: 1px 6px;
+    border-top: 1px solid transparent;
+    margin: 0 8px;
+    //margin-left: 20px;
+    //padding: 0;
+    background-color: red;
+  }
+  &__logo-container {
+    height: 24px;
+  }
+  &__logo {
+    width: 80px;
+    height: 24px;
+  }
+  &__language-label {
+    color: $color-grey;
+    font-size: 10px;
+    font-family: Roboto, Arial, sans-serif;
+    margin-left: 2px;
+    position: relative;
+    top: -14px;
+  }
+  &__profile-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+  }
+}
