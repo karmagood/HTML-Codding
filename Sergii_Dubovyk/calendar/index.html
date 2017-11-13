@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/scss/style.css" >
+    <link href="css/scss/day.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png">
+    <title>Calendar for 2018</title>
+</head>
+<body>
+    <header class="calendar-page-header">
+        <section id="month-name" class="calendar-page-header__month">January</section><br>
+        <section id="year-num" class="calendar-page-header__year">2017</section>
+    </header>
+    <nav class="navig-left">
+        <img id="decrMonth" class='navig-left__img' src="img/left.svg" alt="prev" onerror="alert('that is all for his year');">
+    </nav>
+    <header class="calendar-page">
+        <section class="calendar-page__week-day">Monday</section>
+        <section class="calendar-page__week-day">Tuesday</section>
+        <section class="calendar-page__week-day">Wednesday</section>
+        <section class="calendar-page__week-day">Thursday</section>
+        <section class="calendar-page__week-day">Friday</section>
+        <section class="calendar-page__week-day">Saturday</section>
+        <section class="calendar-page__week-day">Sunday</section>
+    </header>
+    <main id="calendar-grid" class="calendar-page"></main>
+    <nav class="navig-right">
+        <img id="incrMonth" src="img/right.svg" alt="next" onerror="alert('that is all for this year');">
+    </nav>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
