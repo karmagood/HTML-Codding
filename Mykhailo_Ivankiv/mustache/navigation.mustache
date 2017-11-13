@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/Navigation.css">
+    <link rel="stylesheet" href="style/Icon.css">
+</head>
+<body>
+    {{#navigation}}
+        <nav class="Navigation">
+            {{#title}}<h3 class="Navigation__title">{{.}}</h3>{{/title}}
+            {{#links}}
+                <a class="Navigation__item" href={{{url}}}>
+                    <span class="Icon Icon_{{icon}}"></span>
+                    <span class="Navigation__item-text"}>{{title}}</span>
+                    <span class="Navigation__item-counter">{{count}}</span>
+                </a>
+            {{/links}}
+        </nav>
+    {{/navigation}}
+</body>
+</html>

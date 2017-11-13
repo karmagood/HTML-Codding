@@ -1,0 +1,178 @@
+@import "mixins";
+
+$palegray:#1b1b1b;
+$link_border: 2px solid $palegray;
+
+.plain-link {
+  color: $palegray;
+  border-bottom: $link_border;
+  text-decoration: none;
+  &:link {
+    @include link_with_bottom_border($palegray, $link_border);
+  &:hover {
+    @include link_with_bottom_border($palegray, none);
+  }
+  &:active {
+    @include link_with_bottom_border($palegray, $link_border);
+  }
+  &:visited {
+    @include link_with_bottom_border($palegray, $link_border);
+  }
+  }
+}
+
+
+.site-navigation-block {
+  list-style-type: none;
+  margin-left: 8%;
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 18% 25% 32% 15%;  /*5 addit %*/
+  grid-template-rows: 18% 40% 10% 30%;
+  grid-column-gap: 2%;
+  grid-row-gap: 4%;
+  margin-bottom: 40px;
+}
+
+.site-navigation-left, .navig-center-list, .site-navigation-block {
+    font-size: 20px;
+}
+
+.navig-center-list__ship-intern-note {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.header-nav-2 {
+  padding: 0;
+  margin: 0;
+}
+
+.header-nav-2__distributors{
+    padding: 0;
+    margin:  0;
+}
+
+.header-nav-2__options{
+    margin-top: 30px;
+}
+
+.restaurant-photos{
+  margin-bottom: 3%;
+
+  &__pic{
+    &_p1{
+      margin-bottom: -25%;
+      margin-top: 3%;
+      margin-left: 42%;
+      &:hover{
+        z-index: 1;
+      }
+    }
+
+    &_p2{
+      margin-left: 5%;
+    }
+  }
+}
+
+.story-and-logo {
+  display: grid;
+  grid-template-columns: 39% 40%;
+  grid-column-gap: 4%;
+  margin-left: 27%;
+  margin-bottom: 10%;
+}
+
+.story-and-logo__story {
+  font-size: 19px;
+  line-height: 1.37;
+}
+
+.how-wine-is-made{
+  display: grid;
+  grid-template-columns: 25% 50%;
+  grid-column-gap: 5%;
+  margin-left: 12%;
+}
+
+.how-wine-is-made__note{
+  font-size: 19px;
+  line-height: 1.37;
+  margin-top: 2%;
+}
+.tasting-room {
+  display: grid;
+  grid-template-columns: 30% 28% 20%;
+  grid-template-rows: 30% 30%;
+  grid-column-gap: 5%;
+  margin-left: 38.5%;
+  margin-bottom: 1%;
+  margin-top: 0.8%;
+}
+
+.header-and-lunch-menu__header {
+    line-height: 1.1;
+    font-weight: normal;
+    font-size: 36px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.header-and-lunch-menu__lunch-menu {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  font-size: 19px;
+  line-height: 1.37;
+}
+
+.aside-note{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  font-size: 19px;
+  line-height: 1.37;
+}
+
+.for-hire {
+  font-size: 19px;
+  line-height: 1.37;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.field-images{
+    margin-left: 5%;
+}
+
+.field-images__field1{
+    margin-bottom: -27%;
+    margin-right: -10%;
+    &:hover{
+      z-index: 1;
+    }
+}
+
+.field-images__field2 {
+    margin-left: 38%;
+    z-index: 1;
+
+}
+
+.bottle-img {
+    margin-left: 17%;
+    margin-top: -7%;
+    z-index: -1;
+    margin-bottom: -50%;
+}
+
+.price {
+  margin-bottom: 8%;
+}

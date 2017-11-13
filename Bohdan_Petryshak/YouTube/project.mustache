@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/video-section.css">
+    <link rel="stylesheet" href="style/video.css">
+    <link rel="stylesheet" href="style/layout.css">
+    <title>Document</title>
+</head>
+<body class="layout">
+<header class="layout__header">Lorem ipsum dolor.</header>
+<aside class="layout__sidebar">Lorem ipsum dolor.</aside>
+<main class="layout__main">
+    <section class="video-section">
+
+        <h3 class="video-section__title">Enter Shikari</h3>
+        <div class="video-section__feed">
+
+            {{#channel.0.videos}}
+                <div class="video-section__video">
+                    <article class="video">
+                        <img class="video__cover" src="{{video_url}}">
+                        <h2 class="video__title">{{video_name}}</h2>
+                        <aside>
+                            <h6 class="video__channel-name">{{channel_name}}</h6>
+                            <p class="video__view-count">{{views}} </p>
+                            <time class="video__upload-time">{{data_of_published}}</time>
+                        </aside>
+                    </article>
+                </div>
+            {{/channel.0.videos}}
+        </div>
+
+    </section>
+</main>
+
+
+</body>
+</html>

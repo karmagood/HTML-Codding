@@ -8,28 +8,35 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-header.css">
     <link rel="stylesheet" href="styles/button-follow.css">
-    <link rel="stylesheet" href="styles/video-page.css">
+    <link rel="stylesheet" href="styles/video-content.css">
+    <link rel="stylesheet" href="styles/comments.css">
+    <link rel="stylesheet" href="styles/recommended-videos.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/icon.css">
+    <link rel="stylesheet" href="styles/comments-element.css">
+    <link rel="stylesheet" href="styles/channel-info.css">
+
+
 </head>
 <body>
 <header class="main-header">
     <aside class="main-header_left-aside">
         <i class="main-header__details material-icons">menu</i>
-        <img class="main-header_left-aside__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px"
-             height="18px">
-        <sup class="main-header_left-aside__ua">UA</sup>
+        <img class="main-header__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
+        <sup class="main-header__ua">UA</sup>
     </aside>
     <form action="" class="search">
         <input class="search__write" type="text" value="Пошук">
         <i class="material-icons search__keyboard">keyboard</i>
         <button class="search__button">
-            <i class="material-icons">search</i>
+            <i class="material-icons search__img-search">search</i>
         </button>
     </form>
     <aside class="main-header_right-aside">
-        <i class="material-icons">file_upload</i>
-        <i class="material-icons">apps</i>
-        <i class="material-icons">more_vert</i>
-        <a href="/" class="main-header_right-aside__signin">УВІЙТИ</a>
+        <i class="material-icons main-header_right-icon">file_upload</i>
+        <i class="material-icons main-header_right-icon">apps</i>
+        <i class="material-icons main-header_right-icon">more_vert</i>
+        <a href="/" class="main-header__signin">УВІЙТИ</a>
     </aside>
 </header>
 
@@ -44,54 +51,97 @@
 
         <h1 class="video-content__name">Купили прикольного котенка, веселун еще тот :-))</h1>
         <div class="video-content__info">
-            <p class="video-content__info__views">24 882 перегляди</p>
-            <aside class="video-content__info__menu">
-                <button class="video-content__info__menu__element">
+            <p class="video-content__views">24 882 перегляди</p>
+            <aside class="video-content__menu">
+                <button class="video-content__menu__element">
                     <i class="material-icons">thumb_up</i>
                     272
                 </button>
-                <button class="video-content__info__menu__element">
+                <button class="video-content__menu__element">
                     <i class="material-icons">thumb_down</i>
                     10
                 </button>
-                <button class="video-content__info__menu__element">
+                <button class="video-content__menu__element">
                     <i class="material-icons">share</i>
                     Поділитися
                 </button>
-                <button class="video-content__info__menu__element">
+                <button class="video-content__menu__element">
                     <i class="material-icons">playlist_add</i>
                 </button>
-                <button class="video-content__info__menu__more">
+                <button class="video-content__menu__more">
                     <i class="material-icons">more_horiz</i>
                 </button>
             </aside>
         </div>
-        <section class="video-content__channel">
-            <img class="video-content__channel__img"
+        <section class="channel-info">
+            <img class="profile-img"
                  src="https://yt3.ggpht.com/-lZMg8_XGfU8/AAAAAAAAAAI/AAAAAAAAAAA/I0f9XbYFTnA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
                  width="48">
-            <section class="video-content__channel__info">
-                <h3 class="video-content__channel__info__name">ShelAmir S</h3>
-                <p class="video-content__channel__info__published">Опубліковано 26 трав. 2015 р.</p>
-                <p class="video-content__channel__info__comment">В доме сразу стало веселее)))</p>
-                <div class="video-content__channel__info__data">
-                    <h4 class="video-content__channel__info__data__name">Категорія</h4>
-                    <a class="video-content__channel__info__data__link"  href="">Люди та блоги</a>
+            <section class="channel-info__details">
+                <h3 class="channel-info__name">ShelAmir S</h3>
+                <p class="channel-info__published">Опубліковано 26 трав. 2015 р.</p>
+                <p class="channel-info__comment">В доме сразу стало веселее)))</p>
+                <div class="channel-info__data">
+                    <h4 class="channel-info__data-name">Категорія</h4>
+                    <a class="channel-info__link" href="">Люди та блоги</a>
                 </div>
-                <div class="video-content__channel__info__data">
-                    <h4 class="video-content__channel__info__data__name">Ліцензія</h4>
-                    <a class="video-content__channel__info__data__link" href="">Стандартна ліцензія YouTube</a>
+                <div class="channel-info__data">
+                    <h4 class="channel-info__data-name">Ліцензія</h4>
+                    <a class="channel-info__link" href="">Стандартна ліцензія YouTube</a>
                 </div>
-            </section>
-
-            <section class="comments">
-
             </section>
             <button class="button-follow">Підписатися <span class="button-follow_darker">2,3 тис.</span></button>
         </section>
+        <section class="comments">
+            <h4 class="comments__views">36 коментарів</h4>
+            <button class="comments__sorts icon__sort">
+                <span>ПОРЯДОК СОРТУВАННЯ</span>
+            </button>
+
+            <form class="comments__add">
+                <img class="profile-img" alt="Фотографія профілю за умовчанням" src="//s.ytimg.com/yts/img/avatar_48-vfllY0UTT.png" width="40" height="40">
+                <input class="comments__typing" type="text" value="Додайте коментар для всіх...">
+            </form>
+            {{#comments}}
+            <section class="comments-element">
+                <img class="profile-img" src="{{profile-img}}" width="40" height="40">
+                <article class="comments-element__content">
+                    <h5 class="comments-element__name">{{name}}</h5>
+                    <time class="comments-element__time">{{time}}</time>
+                    <p class="comments-element__text">{{comment-text}}﻿</p>
+                    <aside class="comments-element__respond">
+                        <button class="comments-element__answer">відповісти</button>
+                        <span class="comments-element__respond-number">{{number}}</span>
+                        <i class="material-icons comments-element__like">thumb_up</i>
+                        <i class="material-icons comments-element__dislike">thumb_down</i>
+                    </aside>
+                    <button class="comments-element__see-comments">
+                        Переглянути відповідь
+                    </button>
+                </article>
+            </section>
+            {{/comments}}
+        </section>
     </section>
     <aside class="recommended-videos">
+        <p class="recommended-videos__next">Наступне</p>
+        <button class="recommended-videos__autoplay">
+        </button>
+        <p class="recommended-videos__autoplay-text">АВТОМАТИЧНЕ ВІДТВОРЕННЯ</p>
+        {{#next-videos}}
+        <article class="recommended-videos__next-video">
+            <img src="{{url}}" alt="video" width="168px" height="94px">
+            <aside class="recommended-videos__details">
+                <h3 class="recommended-videos__name">{{video-name}}</h3>
 
+                <a class="recommended-videos__channel-name" href="/">{{channel-name}}</a>
+                <p class="recommended-videos__views">{{views}}  переглядів</p>
+            </aside>
+        </article>
+        {{/next-videos}}
+        <button class="recommended-videos__see-more">
+            Показати більше
+        </button>
     </aside>
 </main>
 

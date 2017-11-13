@@ -1,21 +1,6 @@
-.header__logo,
 .header__search-form,
 .header__navigation {
   display: inline-block;
-}
-.header__logo {
-  display: inline-block;
-  position: relative;
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-}
-.header__logo-img {
-  top: 5px;
-  color: transparent;
-  -webkit-background-size: auto;
-  background-size: auto;
-  background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -113px;
 }
 .header__input-search {
   position: relative;
@@ -24,19 +9,6 @@
   border: none;
   border-radius: 3px;
   cursor: default;
-}
-.header__search-button {
-  position: relative;
-  width: 46px;
-  height: 24px;
-  border: none;
-  border-radius: 3px;
-  color: transparent;
-  left: -35px;
-}
-.header__search-button-img {
-  background: url(https://www.facebook.com/rsrc.php/v3/yY/r/6eKP4pJUq7C.png) no-repeat 0 0;
-  background-size: auto;
 }
 .header__navigation a {
   position: relative;

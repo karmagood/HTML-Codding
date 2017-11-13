@@ -1,62 +1,69 @@
 {
+
   "data-model": [
     {
       "name": "Головна",
-      "class-name": "home-img"
+      "class-name": "icon__home-img"
     },
     {
       "name": "Популярне",
-      "class-name": "popular-img"
+      "class-name": "icon__popular-img"
     },
     {
       "name": "Історія",
-      "class-name": "history-img"
+      "class-name": "icon__history-img"
     }
   ],
+
+
   "best-on-youtube": [
     {
       "name": "Музика",
-      "class-name": "music-img"
+      "class-name": "icon__music-img"
     },
     {
       "name": "Спорт",
-      "class-name": "sport-img"
+      "class-name": "icon__sport-img"
     },
     {
       "name": "Комп'ютерні ігри",
-      "class-name": "game-img"
+      "class-name": "icon__game-img"
     },
     {
       "name": "Фільми",
-      "class-name": "film-img"
+      "class-name": "icon__film-img"
     },
     {
       "name": "Новини",
-      "class-name": "news-img"
+      "class-name": "icon__news-img"
     },
     {
       "name": "У прямому ефірі",
-      "class-name": "live-streaming-img"
+      "class-name": "icon__live-streaming-img"
     },
     {
       "name": "Сферичне відео",
-      "class-name": "spherical-video-img"
+      "class-name": "icon__spherical-video-img"
     }
   ],
+
+
   "settings-model": [
     {
       "name": "Налаштування",
-      "class-name": "settings-img"
+      "class-name": "icon__settings-img"
     },
     {
       "name": "Довідка",
-      "class-name": "help-img"
+      "class-name": "icon__help-img"
     },
     {
       "name": "Надіслати відгук",
-      "class-name": "response-img"
+      "class-name": "icon__response-img"
     }
   ],
+
+
   "application-model":[
     {
       "name": "Інфо"
@@ -92,6 +99,8 @@
       "name": "Спробувати нові функції"
     }
   ],
+
+
   "recommended": [
     {
       "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
@@ -158,6 +167,7 @@
       "time": "2 роки тому"
     }
   ],
+
   "channels": [
     {
       "channel-name": "serial",
@@ -234,6 +244,119 @@
           "time": "2 роки тому"
         }
       ]
+    }
+  ],
+  "comments":[
+    {
+      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "name": "Denis Sensey",
+      "time": "2 роки тому",
+      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "number": "15"
+    },
+    {
+      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "name": "Denis Sensey",
+      "time": "2 роки тому",
+      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "number": "15"
+    },
+    {
+      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "name": "Denis Sensey",
+      "time": "2 роки тому",
+      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "number": "15"
+    },
+    {
+      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "name": "Denis Sensey",
+      "time": "2 роки тому",
+      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "number": "15"
+    },
+    {
+      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "name": "Denis Sensey",
+      "time": "2 роки тому",
+      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "number": "15"
+    },
+    {
+      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "name": "Denis Sensey",
+      "time": "2 роки тому",
+      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "number": "15"
+    },
+    {
+      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "name": "Denis Sensey",
+      "time": "2 роки тому",
+      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "number": "15"
+    }
+  ],
+  "next-videos":[
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
+    },
+    {
+      "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
+      "video-name": "Маленький милый котёнок",
+      "channel-name": "Funny Cats",
+      "views": "9 760 "
     }
   ]
 }

@@ -1,0 +1,29 @@
+<main id="main" class="row row_align-top row_full-screen-height row_single-item">
+    <div class="card">
+        <h1 class="card-content__title">{{title}}</h1>
+        <div class="card-content">
+            <p class="card-content__description_text">{{{description}}}</p>
+
+            {{#if image}}
+                <figure>
+                    <img class="card-content__preview-image card-content__preview-image_big" src="{{image}}"/>
+                    <figcaption>{{image_desc}}</figcaption>
+                </figure>
+            {{/if}}
+
+            <p class="card-content__description_text">So, we can implement this algorithm in following way:</p>
+            <pre class="card-content__code" style="text-align: left;"><code class="javascript">{{source_code}}</code></pre>
+
+            {{#if input_form}}
+            <p class="card-content__description_text">Also, you can test the algorithm in the form below:</p>
+
+            <div class="input-form" method="post">
+                <input name="sort_data" type="text" placeholder="Enter several unordered numbers">
+                <button id="send-request" class="input-form__submit-btn">Send</button>
+                <!--<p id="sort-result" class="input-form__result-text">Sorted data is: sorted_array.<br>It took comparison_num comparisons to sort it</p>-->
+                <p id="sort-result" class="input-form__result-text"></p>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</main>
