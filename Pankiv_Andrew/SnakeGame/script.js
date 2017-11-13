@@ -24,7 +24,7 @@ function Run() {
 
 }
 
-function Reset(){
+function Reset() {
     DeleteSnake();
     clearInterval(inter);
     RebuildMap();
@@ -42,11 +42,13 @@ function Reset(){
     inter = setInterval(GameLoop, interval);
 
 }
+
 function Init() {
     CreateMap();
     CreateSnake();
     CreateFruit();
 }
+
 function CreateMap() {
     document.write("<table name='table'>");
     for (let y = 0; y < Height; y++) {
@@ -65,8 +67,8 @@ function CreateMap() {
 }
 
 function RebuildMap() {
-    if(WallKill){
-        Set(SnakeX,SnakeY,"wall");
+    if (WallKill) {
+        Set(SnakeX, SnakeY, "wall");
     }
 
 }
@@ -76,10 +78,10 @@ function CreateSnake() {
 }
 
 function DeleteSnake() {
-    for (let i = 0; i < length; i++){
-        Set(TailX[i],TailY[i],"blank");
+    for (let i = 0; i < length; i++) {
+        Set(TailX[i], TailY[i], "blank");
     }
-    Set(SnakeX,SnakeY,"blank");
+    Set(SnakeX, SnakeY, "blank");
 }
 
 function Get(x, y) {
@@ -105,7 +107,7 @@ function CreateFruit() {
         FruitX = Math.floor((Math.random() * (Width - 1)) + 1);
         FruitY = Math.floor((Math.random() * (Height - 1)) + 1);
         if (GetType(FruitX, FruitY) === "blank") {
-            Set(FruitX,FruitY,"fruit");
+            Set(FruitX, FruitY, "fruit");
             break;
         }
 
@@ -113,41 +115,41 @@ function CreateFruit() {
 }
 
 window.addEventListener("keypress", function key() {
-   let key = event.keyCode;
-   if(!Running){
-       Running = true;
-   }
-   switch (key){
-       case 65:
-       case 97:
-           direction = 4;
+    let key = event.keyCode;
+    if (!Running) {
+        Running = true;
+    }
+    switch (key) {
+        case 65:
+        case 97:
+            direction = 4;
             break;
-       case 87:
-       case 119:
-           direction = 8;
-           break;
-       case 68:
-       case 100:
-           direction = 6;
-           break;
-       case 83:
-       case 115:
-           direction = 2;
-           break;
-       case 32:
-           Running = false;
-           break;
-       case 13:
-           Reset();
-           break;
-   }
+        case 87:
+        case 119:
+            direction = 8;
+            break;
+        case 68:
+        case 100:
+            direction = 6;
+            break;
+        case 83:
+        case 115:
+            direction = 2;
+            break;
+        case 32:
+            Running = false;
+            break;
+        case 13:
+            Reset();
+            break;
+    }
 });
 
 function GameLoop() {
-    if (Running && !GameOver){
+    if (Running && !GameOver) {
         Update();
     }
-    else if (GameOver){
+    else if (GameOver) {
         clearInterval(inter);
     }
 }
@@ -155,8 +157,8 @@ function GameLoop() {
 function Update() {
     Set(FruitX, FruitY, "fruit");
     UpdateTail();
-    Set(TailX[length],TailY[length],"blank");
-    switch (direction){
+    Set(TailX[length], TailY[length], "blank");
+    switch (direction) {
         case 4:
             SnakeX--;
             break;
@@ -170,20 +172,20 @@ function Update() {
             SnakeY++;
             break;
     }
-    if (GetType(SnakeX, SnakeY) === "wall"){
+    if (GetType(SnakeX, SnakeY) === "wall") {
         WallKill = true;
         GameOver = true;
     }
 
-    Set(SnakeX,SnakeY,"snake");
-    if (SnakeX === FruitX && SnakeY === FruitY){
+    Set(SnakeX, SnakeY, "snake");
+    if (SnakeX === FruitX && SnakeY === FruitY) {
         CreateFruit();
         length += 4;
         Score++;
         document.getElementById("score").innerHTML = '' + Score;
     }
-    for (let i = 0; i < length ; i++){
-        if (SnakeX === TailX[i] && SnakeY === TailY[i]){
+    for (let i = 0; i < length; i++) {
+        if (SnakeX === TailX[i] && SnakeY === TailY[i]) {
             GameOver = true;
             break;
         }
@@ -192,7 +194,7 @@ function Update() {
 }
 
 function UpdateTail() {
-    for (let i = length; i > 0; i--){
+    for (let i = length; i > 0; i--) {
         TailX[i] = TailX[i - 1];
         TailY[i] = TailY[i - 1];
     }
