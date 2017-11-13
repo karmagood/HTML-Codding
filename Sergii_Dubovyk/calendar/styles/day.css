@@ -1,11 +1,11 @@
 /*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
 @font-face {
   font-family: "Master Works - Demo";
-  src: url("../../fonts/mw_demo.ttf"); }
+  src: url("../fonts/mw_demo.ttf"); }
 /*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
 @font-face {
   font-family: "Master Works - Demo";
-  src: url("../../fonts/mw_demo.ttf"); }
+  src: url("../fonts/mw_demo.ttf"); }
 .calendar-page__day {
   background-color: white;
   border: 1px solid white;
