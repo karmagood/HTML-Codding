@@ -1,7 +1,7 @@
 $(window).on('load', function (){
     $('#send-request').click(function () {
        const request = new XMLHttpRequest();
-       var body = 'algo=' + encodeURIComponent('bubble') + '&data=' + encodeURIComponent("1, 5, 2");
+       var body = 'algo=' + encodeURIComponent('bubble') + '&data=' + encodeURIComponent(document.getEl);
        request.open('POST', '/api_sort', true);
        request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 
