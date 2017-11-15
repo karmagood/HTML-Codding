@@ -38,16 +38,11 @@ const union_without_repetiotions = (first_list, sec_list) => {
             result_list.push(sec_list[j++]);
     }
 
-
-    if (i < first_list.length ) {
-        for (;i< first_list.length; i++){
-            result_list.push(first_list[i])
-        }
+    while (i < first_list.length ) {
+            result_list.push(first_list[i++])
     }
-    if (j < sec_list.length ){
-        for (;j< sec_list.length; j++){
-            result_list.push(sec_list[j])
-        }
+    while (j < sec_list.length ){
+            result_list.push(sec_list[j++])
     }
     return result_list
 };
@@ -79,8 +74,9 @@ const countSumOfNaturalMultiplesLessThen3 = (first, second, Limit) => {
     while (iter1 < Limit && iter2 < Limit){
         if (iter1 <= iter2){
             accum+=iter1;
-            if (iter1 === iter2)
+            if (iter1 === iter2){
                 iter2 += second;
+            }
             iter1 += first;
         }
         else{
@@ -90,12 +86,12 @@ const countSumOfNaturalMultiplesLessThen3 = (first, second, Limit) => {
     }
 
     while (iter1 < Limit){
-        iter1+=first;
         accum += iter1;
+        iter1+=first;
     }
     while (iter2 < Limit){
-        iter2+=second;
         accum += iter2;
+        iter2+=second;
     }
 
     return accum;
