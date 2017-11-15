@@ -1,4 +1,4 @@
-.header__search-form,
+.header__search_form,
 .header__navigation {
   display: inline-block;
 }
@@ -17,10 +17,10 @@
   margin: 5px;
   left: 100px;
 }
-.header__navigation-link:hover {
+.header__navigation_link:hover {
   background-color: #364a88;
 }
-.header__navigation-link:nth-child(n+4) {
+.header__navigation_link:nth-child(n+4) {
   display: inline-block;
   height: 27px;
   width: 27px;
@@ -29,19 +29,19 @@
   color: transparent;
   vertical-align: bottom;
 }
-.header__navigation-link:nth-child(4) {
+.header__navigation_link:nth-child(4) {
   background-size: auto;
   background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -138px;
 }
-.header__navigation-link:nth-child(5) {
+.header__navigation_link:nth-child(5) {
   background-size: auto;
   background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -388px;
 }
-.header__navigation-link:nth-child(6) {
+.header__navigation_link:nth-child(6) {
   background-size: auto;
   background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -288px;
 }
-.header__navigation-link:nth-child(7) {
+.header__navigation_link:nth-child(7) {
   top: 0;
   height: 20px;
   background-size: auto;

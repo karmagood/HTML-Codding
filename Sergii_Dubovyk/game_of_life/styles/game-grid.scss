@@ -1,0 +1,25 @@
+.game-grid{
+  display: grid;
+  margin-right: auto;
+  margin-left: auto;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  //width: 200px;
+  //grid-auto-columns: 40px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  //  grid-auto-flow: column;
+  grid-template-columns: repeat(15, 40px);
+
+  &__cell{
+    background-color: #bcb9bf;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+
+    &_alive{
+      background-color: #5ebf4b;
+    }
+  }
+}

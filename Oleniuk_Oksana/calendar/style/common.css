@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  /*background-image: url("../images/pattern.svg");*/
+  background-color: #ffffff;
+  color: #d0eceb;
+  font-family: "PT Serif", sans-serif;
+  font-size: 14px;
+}
