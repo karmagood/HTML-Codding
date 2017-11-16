@@ -17,27 +17,27 @@
 // What is the value of the first triangle number to have over five hundred divisors?
 
 const findDivisorsNum = (number) => {
-	let divisorsNum = 0;
+    let divisorsNum = 0;
 
-	let rootOfNumber = Math.sqrt(number);
-	for(let i=1; i<rootOfNumber; i++){
-		if(number%i == 0)
-			divisorsNum += 2
-	}
-	if(rootOfNumber*rootOfNumber == number)
-		divisorsNum++;
+    let rootOfNumber = Math.sqrt(number);
+    for (let i = 1; i < rootOfNumber; i++) {
+        if (number % i == 0)
+            divisorsNum += 2
+    }
+    if (rootOfNumber * rootOfNumber == number)
+        divisorsNum++;
 
-	return divisorsNum;
-}
+    return divisorsNum;
+};
 
-function findFirstTriangleNumberWithNDivisors(divisorsNum){
-	var triangleNumber = 1;
-	var triangleValue = 1;
-	while(findDivisorsNum(triangleValue) <= divisorsNum){
-		triangleNumber++;
-		triangleValue += triangleNumber;
-	}
-	return triangleValue;
+function findFirstTriangleNumberWithNDivisors(divisorsNum) {
+    let triangleNumber = 1;
+    let triangleValue = 1;
+    while (findDivisorsNum(triangleValue) <= divisorsNum) {
+        triangleNumber++;
+        triangleValue += triangleNumber;
+    }
+    return triangleValue;
 }
 
 // Test case

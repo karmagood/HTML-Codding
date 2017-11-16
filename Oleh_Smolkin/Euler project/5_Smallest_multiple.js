@@ -6,12 +6,12 @@ const getGratesDivider = (firstNumber, secondNumber) =>
     secondNumber === 0 ? firstNumber : getGratesDivider(secondNumber, firstNumber % secondNumber);
 
 const getSmallestMultiple = (number) => {
-	let smallestMultiple = 1;
-	for(let i=2; i<=number; i++){
-        smallestMultiple *= i/getGratesDivider(smallestMultiple, i);
-	}
-	return smallestMultiple;
-}
+    let smallestMultiple = 1;
+    for (let i = 2; i <= number; i++) {
+        smallestMultiple *= i / getGratesDivider(smallestMultiple, i);
+    }
+    return smallestMultiple;
+};
 
 // Test case
 // Answer: 2520

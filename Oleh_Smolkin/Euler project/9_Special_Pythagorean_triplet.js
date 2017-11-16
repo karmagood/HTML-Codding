@@ -6,23 +6,23 @@
 // Find the product abc.
 
 const findPythagoreanTriplet = (number) => {
-	for(let aLength=1; aLength<number; aLength++){
-		for(let bLength=aLength+1; bLength<number; bLength++){
-			let cLength = number - aLength - bLength;
-			if(cLength < bLength)
-				break;
-			
-			if(aLength*aLength + bLength*bLength == cLength*cLength)
-				return aLength*bLength*cLength;
-		}
-	}
-	return -1;
-}
+    for (let aLength = 1; aLength < number; aLength++) {
+        for (let bLength = aLength + 1; bLength < number; bLength++) {
+            let cLength = number - aLength - bLength;
+            if (cLength < bLength)
+                break;
+
+            if (aLength * aLength + bLength * bLength == cLength * cLength)
+                return aLength * bLength * cLength;
+        }
+    }
+    return -1;
+};
 
 // Test case
 // Answer: 60
-console.log(findPythagoreanTriplet(12))
+console.log(findPythagoreanTriplet(12));
 
 // Task
 // Answer: 31875000
-console.log(findPythagoreanTriplet(1000))
+console.log(findPythagoreanTriplet(1000));

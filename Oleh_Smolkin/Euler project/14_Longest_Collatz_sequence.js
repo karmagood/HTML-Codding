@@ -11,28 +11,25 @@
 
 const findFirstNumOfLongestCollatzSequence = (topBoundary) => {
     const findLengthOfSequence = (firstNumber) => {
-        if(firstNumber < cacheSize && lengthOfCollatzSequence[firstNumber] != -1){
+        if (lengthOfCollatzSequence[firstNumber] != null) {
             return lengthOfCollatzSequence[firstNumber];
         }
-        if(firstNumber % 2 == 0)
+        if (firstNumber % 2 === 0)
             lengthOfCollatzSequence[firstNumber] = findLengthOfSequence(firstNumber / 2) + 1;
         else
-            lengthOfCollatzSequence[firstNumber] = findLengthOfSequence(3*firstNumber + 1) + 1;
+            lengthOfCollatzSequence[firstNumber] = findLengthOfSequence(3 * firstNumber + 1) + 1;
 
         return lengthOfCollatzSequence[firstNumber];
-    }
-    let lengthOfCollatzSequence = [-1, 1];
-    let cacheSize = 3*topBoundary + 1;
-    for(let i=2; i<cacheSize; i++){
-        lengthOfCollatzSequence.push(-1);
-    }
-
+    };
+    let lengthOfCollatzSequence = [];
+    lengthOfCollatzSequence[1] = 1;
     let largestCollatzSequenceLength = 1;
     let largestCollatzSequenceFirstNum = 1;
 
     for (let i = 2; i < topBoundary; i++) {
-        if(findLengthOfSequence(i) > largestCollatzSequenceLength) {
-            largestCollatzSequenceLength = lengthOfCollatzSequence[i];
+        let len = findLengthOfSequence(i);
+        if (len > largestCollatzSequenceLength) {
+            largestCollatzSequenceLength = len;
             largestCollatzSequenceFirstNum = i;
         }
     }

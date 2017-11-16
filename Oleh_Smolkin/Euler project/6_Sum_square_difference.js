@@ -9,15 +9,15 @@
 // hundred natural numbers and the square of the sum.
 
 const sumSquareDiff = (number) => {
-    let sum = number*(number + 1)/2;
-    let sum_of_square = (2*number + 1)*(number + 1)*number/6;
+    let sum = number * (number + 1) / 2;
+    let sum_of_square = (2 * number + 1) * (number + 1) * number / 6;
     return sum * sum - sum_of_square;
-}
+};
 
 // test case
 // Answer: 2640
-console.log(sumSquareDiff(10))
+console.log(sumSquareDiff(10));
 
 // task
 // Answer: 25164150
-console.log(sumSquareDiff(100))
+console.log(sumSquareDiff(100));
