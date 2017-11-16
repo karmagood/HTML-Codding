@@ -31,7 +31,7 @@ const getNthPrime_BasicSolution = (prime_order) => {
     return primesList[prime_order-1];
 };
 
-
+//TODO refactor this @hit!
 const getNthPrime_Improved = (number) => {
     let primesList = [];
 
@@ -64,17 +64,3 @@ console.timeEnd('1');
 console.time('1');
 console.log(getNthPrime_BasicSolution(10001));
 console.timeEnd('1');
-console.time('2');
-console.log(getNthPrime_Improved(10001));
-console.timeEnd('2');
-console.time('2');
-console.log(getNthPrime_Improved(10001));
-console.timeEnd('2');
-console.time('2');
-console.log(getNthPrime_Improved(10001));
-console.timeEnd('2');
-console.time('2');
-console.log(getNthPrime_Improved(10001));
-console.timeEnd('2');
-
-
