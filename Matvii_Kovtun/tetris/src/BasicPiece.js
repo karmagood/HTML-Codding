@@ -14,6 +14,11 @@ class BasicPiece {
 
     };
 
+    rotatePhantom() {
+        return transpose(this.shape).map(el => reverse(el));
+
+    };
+
     renderPiece(cell) {
         let className;
 
@@ -47,11 +52,32 @@ class BasicPiece {
     }
 }
 
-BasicPiece.shapes = [[[1],
+BasicPiece.shapes = [[
     [1],
     [1],
-    [1]], [[1, 1], [1, 1]],
-    [[1, 0], [1, 1], [1, 0]]];
+    [1],
+    [1]],
+
+    [[1, 1],
+     [1, 1]],
+
+    [[1, 0],
+     [1, 1],
+     [1, 0]],
+
+    [[1, 0],
+     [1, 0],
+     [1, 1]],
+
+    [[0, 1],
+     [0, 1],
+     [1, 1]],
+
+    [[1, 0],
+     [1, 1],
+     [0, 1]]
+
+];
 
 // BasicPiece.shapes = [[[1],[1],[1],[1],[1],[1],[1],[1],[1],[1]]];
 export default BasicPiece;

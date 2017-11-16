@@ -5,7 +5,7 @@ import {WORLD_WIDTH, WORLD_HEIGHT} from "./config";
 class Fragment {
     constructor(piece) {
         this.piece = piece;
-        this.coordinates = [0, getRandom(0, WORLD_WIDTH)];
+        this.coordinates = [0, getRandom(0, WORLD_WIDTH - 1)];
 
     }
 
