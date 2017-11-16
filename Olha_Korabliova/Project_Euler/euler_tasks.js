@@ -193,10 +193,11 @@ function largestProduct() {     // 11
         [20,73,35,29,78,31,90,1,74,31,49,71,48,86,81,16,23,57,5,54],
         [1,70,54,71,83,51,54,69,16,92,33,48,61,43,52,1,89,19,67,48]
     ];
-    let largest = [0, 0, 0, 0];     // 0 - row
-                                    // 1 - column
-                                    // 2 - right diagonal
-                                    // 3 - left diagonal
+    let largest = [0, 0, 0, 0];     // indexes:
+                                    //      0 - row
+                                    //      1 - column
+                                    //      2 - right diagonal
+                                    //      3 - left diagonal
 
     // row adjacent - product_h;
     // column adjacent - product_v;
@@ -274,4 +275,34 @@ function largestProduct() {     // 11
 // }
 //
 // highDivTriangularNumber();
+
+
+// function collatzSeq(n) {    // 13
+//     // let n1 = n;
+//     // while (n > 1) {
+//     //     if (n % 2 === 0) {
+//     //         n /= 2;
+//     //     }
+//     //     else {
+//     //         n = 3 * n + 1;
+//     //     }
+//     // }
+//     // return n;
+//     if (n === 1) return 1;
+//     else if (n % 2 === 0) return collatzSeq(Math.floor(n / 2)) + 1;
+//     else return collatzSeq(3 * n + 1) + 1;
+// }
+//
+// function longestCollatzSeq() {
+//     let n = 1000000;
+//     for (let i = 1000000; i > 0; i--) {
+//         if (collatzSeq(i) === 1) {
+//             n = i;
+//             break;
+//         }
+//     }
+// }
+//
+// longestCollatzSeq();
+
 
