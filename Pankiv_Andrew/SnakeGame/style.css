@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    background-color: black;
+}
+
+td {
+    width: 20px;
+    height: 20px;
+}
+
+table {
+    float: left;
+}
+
+.right-side {
+    width: 185%;
+
+}
+
+.right-side p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+    width: 25%;
+    margin-left: 20%;
+    color: white;
+    font-size: 18px;
+}
+
+#score {
+    color: white;
+    float: left;
+    font-size: 300px;
+}
+
+.blank {
+    background-color: white;
+}
+
+.snake {
+    background-color: darkgreen;
+}
+
+.wall {
+    background-color: orange;
+}
+
+.fruit {
+    background-color: red;
+}
+
+
