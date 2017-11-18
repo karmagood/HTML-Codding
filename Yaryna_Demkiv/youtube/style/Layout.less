@@ -12,37 +12,41 @@
   font-family: @font-family;
   color: @body-color;
   max-height: 100%;
+
+  &__header {
+    height: @header-height;
+    background-color: @header-background-color;
+    padding-top: 10px;
+  };
+
+  &__aside {
+    left: 0;
+    width: @aside-width;
+    top: @header-height;
+    bottom: 0;
+    position: fixed;
+    overflow: auto;
+    max-height: 100%;
+    background-color: @aside-background-color;
+    padding-left: 20px;
+  }
+
+  &__main {
+    position: fixed;
+    top: @header-height;
+    right: 0;
+    bottom: 0;
+    left: @aside-width;
+    font-size: 80%;
+    max-height: 100%;
+    overflow-y: scroll;
+    background-color: @main-backgroung-color;
+  }
 }
 
-.Header {
-  height: @header-height;
-  background-color: @header-background-color;
-  padding-top: 10px;
-}
 
-.Aside {
-  left: 0;
-  width: @aside-width;
-  top: @header-height;
-  bottom: 0;
-  position: fixed;
-  overflow: auto;
-  max-height: 100%;
-  background-color: @aside-background-color;
-  padding-left: 20px;
-}
 
-.Video-lists {
-  position: fixed;
-  top: @header-height;
-  right: 0px;
-  bottom: 0px;
-  left: @aside-width;
-  font-size: 80%;
-  max-height: 100%;
-  overflow-y: scroll;
-  background-color: @main-backgroung-color;
-}
+
 
 
 
