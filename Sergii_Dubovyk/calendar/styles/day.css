@@ -1,0 +1,36 @@
+/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+@font-face {
+  font-family: "Master Works - Demo";
+  src: url("../fonts/mw_demo.ttf"); }
+/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+@font-face {
+  font-family: "Master Works - Demo";
+  src: url("../fonts/mw_demo.ttf"); }
+.calendar-page__day {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: #393939;
+  width: 90%;
+  height: 60%;
+  margin: 3%;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 3px; }
+
+.calendar-page__day:active {
+  background-color: white; }
+
+.calendar-page__day:hover {
+  background-color: #FFF776;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-weight: bold; }
+
+.calendar-page__day:link {
+  background-color: white; }
+
+.calendar-page__day:visited {
+  background-color: white; }
+
+/*# sourceMappingURL=day.css.map */
