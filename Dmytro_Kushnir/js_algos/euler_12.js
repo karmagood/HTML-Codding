@@ -22,33 +22,77 @@ const nextTriangleNumber = (previousTriangleNumber, indexOfPreviousTriangleNumbe
     return previousTriangleNumber + indexOfPreviousTriangleNumber + 1;
 };
 
-const numberOfDivisors = (arg) => {
-    let acc = 0;
+
+const listOfSimpleDivisorsWithRepeatings = (arg) => {
+    if (arg === 1) return [];
     let divisor = 2;
+    let simpleDivisors = []; //init values as this divisors been skipped
     while (arg > 1){
         if (arg % divisor === 0) {
             arg = arg / divisor;
-            acc++;
+            simpleDivisors.push(divisor);
         }
         else{
             divisor++;
         }
     }
-    return acc + 1; //because of divisor "1" is not natural number and we have to exclude it from algorithm
+    return simpleDivisors; //because of divisor "1" is not natural number and we have to exclude it from algorithm
 };
 
-const getFirstTriangleNumberWithNumberOfDivisordGreaterThen = (maxDivisorsNumber) => {
+
+
+
+const lengthesOfConsecutiveSerieses = (sortedValuesList) => {
+    let numberOfDifferentValues = [];
+    let thisValuesAmount = 1;
+    let previousValue;
+    for (let el = 0; el < sortedValuesList.length; el ++){
+        if (sortedValuesList[el] === previousValue) thisValuesAmount++;
+        else{
+            if (previousValue !== undefined) numberOfDifferentValues.push(thisValuesAmount);
+            thisValuesAmount = 1;
+            previousValue = sortedValuesList[el];
+        }
+    }
+    numberOfDifferentValues.push(thisValuesAmount); //last element is out of cycle
+    return numberOfDifferentValues;
+};
+
+// TODO functionalise
+const reduceMultiplyListElems = (numbersList) => {
+    let acc = 1;
+    for (let el = 0; el < numbersList.length; el++){
+        acc *= numbersList[el];
+    }
+    return acc;
+};
+
+const getFirstTriangleNlumberWithNumberOfDivisorsGreaterThen = (maxDivisorsNumber) => {
+    // here using 2 step approach ->
+    // 1)  from reusing algorithm vith getting list of all simple divisors (it is pretty short and algo runs fast)
+
+    // 2) therefore in deconmposition onto simple divisors we have some amount of different numbers
+    // 3) all divisors wll be all combinations of all those numbers (we need only amount of simple divisors of different kind, not their precise values)
+
     let currentTriangleNumber = 1;
     let orderOfCurrentTriangleNumber = 1;
-    while (numberOfDivisors(currentTriangleNumber) < maxDivisorsNumber) {
-        // TODO fix for appropriate number
-        currentTriangleNumber = nextTriangleNumber(currentTriangleNumber, orderOfCurrentTriangleNumber++);
-    }
+    let numberOfAllDivisors;
+    let numbersOfDifferentValueList;
+    do{
+        simpleDivisorsList = listOfSimpleDivisorsWithRepeatings(currentTriangleNumber);
+        numbersOfDifferentValueList = lengthesOfConsecutiveSerieses(simpleDivisorsList);
+
+        for (let el = 0; el < numbersOfDifferentValueList.length; el++)
+            numbersOfDifferentValueList[el] ++ ;
+
+        numberOfAllDivisors = reduceMultiplyListElems(numbersOfDifferentValueList);
+        if (numberOfAllDivisors < maxDivisorsNumber) currentTriangleNumber = nextTriangleNumber(currentTriangleNumber, orderOfCurrentTriangleNumber++);
+        else break;
+    }while (true);
+
     return currentTriangleNumber;
 };
 
-console.log(numberOfDivisors(6));
+console.log(getFirstTriangleNlumberWithNumberOfDivisorsGreaterThen(5));
 
-console.log(nextTriangleNumber(3,2));
-
-console.log(getFirstTriangleNumberWithNumberOfDivisordGreaterThen(5));
+console.log(getFirstTriangleNlumberWithNumberOfDivisorsGreaterThen(500));
