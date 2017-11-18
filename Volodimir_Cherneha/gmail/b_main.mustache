@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/Layout.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mail-list.css">
+    
+    <title>Document</title>
+</head>
+<body>
+  <main class="Layout__main">
+      <section class="mail-tabs">
+          <a class="mail-tabs__link" href="#">Вхідні</a>
+          <a class="mail-tabs__link" href="#">Соцмережі</a>
+          <a class="mail-tabs__link" href="#">Реклама</a>
+      </section><!---
+     -->{{#mails}}
+      <section class="mail-list">
+          <article class="mail-list__item">
+              <form action="#" class="mail-list__item-form">
+                  <input class="mail-list__item-checkbox" type="checkbox">
+                  <input class="mail-list__item-checkbox" type="checkbox">
+                  <input class="mail-list__item-checkbox" type="checkbox">
+              </form><!--
+             --><header class="mail-list__item-sender">
+              {{sender}}
+          </header><!--
+                --><p class="mail-list__item-paragraph" > {{content}} </p><!--
+              --><time class="mail-list__item-time">
+            {{time}}
+          </time>
+          </article>
+          {{/mails}}
+
+      </section>
+
+      <footer class="footer">
+          <a class="footer-link" href="">Умови</a>
+          <a class="footer-link" href="">Конфіденційність</a>
+      </footer>
+  </main>
+</body>
+</html>

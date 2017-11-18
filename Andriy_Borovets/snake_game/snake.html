@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style/snake.css">
+</head>
+<body>
+<canvas id="gc" class="snake" width="600" height="600"></canvas>
+<div class="info">
+    <p><h3>Score: <span class="score"></span></h3></p>
+    <br><h3>last score: <span id="last_score"></span></h3>
+</div>
+
+
+<div id="overlay">
+    <button id="fast" onclick="toggle(this)">fast</button>
+    <button id="medium" onclick="toggle(this)">medium</button>
+    <button id="slow" onclick="toggle(this)">slow</button>
+    <br>
+    <br>
+    <h1>choose speed!</h1>
+</div>
+
+<script src="snake.js">
+</script>
+</body>
+</html>

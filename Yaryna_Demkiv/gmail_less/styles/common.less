@@ -1,0 +1,35 @@
+@gray-backgroung: #F5F5F5;
+@font-color: #222;
+@aside-width: 202px;
+@aside-height: 100%;
+@spacing-from-top: 120px;
+@main-height: 100%;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: arial,sans-serif;
+  color: @font-color;
+  background-color: @gray-backgroung;
+}
+
+aside {
+  left: 0;
+  width: @aside-width;
+  top: @spacing-from-top;
+  bottom: 0;
+  position: fixed;
+  max-height: @aside-height;
+}
+
+main {
+  position: fixed;
+  overflow: auto;
+  top: @spacing-from-top;
+  right:0px;
+  bottom: 0px;
+  left: @aside-width;
+  font-size: 80%;
+  overflow-y: scroll;
+  max-height: @main-height;
+}

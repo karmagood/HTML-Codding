@@ -1,0 +1,10 @@
+.logo {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.logo_img {
+  top: 5px;
+  background: url(https://www.facebook.com/rsrc.php/v3/yP/r/6sSddBTgUaD.png) no-repeat 0 -113px;
+}

@@ -1,0 +1,44 @@
+.mail-tabs__link {
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 10px;
+  height: 35px;
+  font-size: 13px;
+  color: #000;
+  background-color: #f2f2f2;
+  padding-right: 170px;
+  margin-top: 10px;
+  margin-left: -4px;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.mail-tabs__link:first-child {
+  margin-left: 0;
+  background-color: #fff;
+  border-top: 3px solid #737373;
+  border-left: 1px solid #ccc;
+}
+.mail-tabs__link:hover {
+  background-color: #fff;
+}
+.link__icon_main {
+  float: left;
+  width: 35px;
+  height: 25px;
+  background-image: url("../images/tabicons.png");
+  background-position: 0 0;
+}
+.link__icon_social {
+  float: left;
+  width: 35px;
+  height: 25px;
+  background-image: url("../images/tabicons.png");
+  background-position: -32px 0;
+}
+.link__icon_ads {
+  float: left;
+  width: 35px;
+  height: 25px;
+  background-image: url("../images/tabicons.png");
+  background-position: -69px 0;
+}
