@@ -1,19 +1,161 @@
-.chat__profile_img {
+.Layout {
+  color: #000;
+  margin: 0;
+  min-width: 900px;
+}
+.Layout__header {
+  height: 60px;
   position: relative;
+  background-color: #f3f3f3;
+  border-bottom: 1px solid #e5e5e5;
+}
+.Layout__mail-settings {
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 10px;
+}
+.Layout__aside {
+  position: fixed;
+  width: 200px;
+  bottom: 0;
+  top: 112px;
+  overflow-x: hidden;
+  overflow-y: auto ;
+  background-color: #fff;
+}
+.Layout__main {
+  left: 200px;
+  padding: 0;
+  position: fixed;
+  top: 112px;
+  overflow: auto;
+  bottom: 0;
+  right: 0;
+  background-color: #fff;
+}
+.header__mail-settings {
+  background-color: #fff;
+}
+.mail-settings__gmail_button {
+  display: inline-block;
+  margin-left: 23px;
+  color: #DF4B39;
+  border: none;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  background-image: url("../images/arrow_down_red.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.mail-settings__more {
+  display: inline-block;
+  height: 29px;
+  background: #f5f5f5 url("../images/arrow_down_gray.png") no-repeat 59px;
+  width: 72px;
+  border: 1px solid #C2C2C2;
+  opacity: .75;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 900;
+}
+.mail-settings__more:hover {
+  opacity: .99;
+}
+.mail-settings__button_previous {
+  display: inline-block;
+  color: transparent;
+  height: 29px;
+  width: 36px;
+  background: #f5f5f5 url("../images/black-gmail-sprite.png") no-repeat 7px -19px;
+  border: 1px solid #C2C2C2;
+  border-radius: 3px 0 0 3px;
+  opacity: .55;
+}
+.mail-settings__button_previous:hover {
+  opacity: .99;
+}
+.mail-settings__button_next {
+  display: inline-block;
+  color: transparent;
+  height: 29px;
+  width: 36px;
+  margin-left: -5px;
+  background: #f5f5f5 url("../images/black-gmail-sprite.png") no-repeat 7px -43px;
+  border: 1px solid #C2C2C2;
+  border-radius: 0 3px 3px 0;
+  opacity: .55;
+  margin-right: 10px;
+}
+.mail-settings__button_next:hover {
+  opacity: .99;
+}
+.mail-settings__button_setting {
+  display: inline-block;
+  color: transparent;
+  height: 29px;
+  width: 72px;
+  background: #f5f5f5 url("../images/black-gmail-sprite.png") no-repeat 25px -143px;
+  border: 1px solid #C2C2C2;
+  border-radius: 2px;
+  opacity: .55;
+}
+.mail-settings__button_setting:hover {
+  opacity: .99;
+}
+.buttons-position {
+  float: right;
+  margin-right: 20px;
+}
+.chat__data {
+  font-size: 12px;
+  color: #ccc;
+  margin-left: 30px ;
+  padding-top: 100px;
+}
+.chat__profile {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.chat__profile_img {
+  display: inline-block;
+  margin-left: 10px;
   height: 35px;
   width: 35px;
   top: 50px;
+  border-radius: 50%;
   left: 20px;
+  vertical-align: middle;
+}
+.chat__profile_name {
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+  padding-right: 10px;
 }
 .chat__footer {
   position: fixed;
   bottom: 0;
 }
-.chat__button {
-  position: relative;
+.chat__new-chat {
+  display: inline-block;
+  margin-left: 50px;
   bottom: 0;
   left: 60px;
   height: 26px;
   width: 26px;
   color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  background-repeat: no-repeat;
+  background-image: url("../images/sprite.png");
+  background-position: -154px -145px;
+  vertical-align: middle;
+  opacity: .55;
+}
+.chat__new-chat:hover {
+  opacity: .99;
 }

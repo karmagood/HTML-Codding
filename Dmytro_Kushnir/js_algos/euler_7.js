@@ -11,21 +11,56 @@ const areMutuallySimple = (value, primesToCompareList) => {
     return isMutSimple;
 };
 
-const getNthPrime = (number) => {
+const getNthPrime_BasicSolution = (prime_order) => {
+    let primesList = [];
+
+//here used assumption that if condition can be expressed thrue mutual simplicity with previous found simple numbers
+    let k = 0;
+    if (prime_order >= 2){
+        primesList.push(2);
+        k++;
+    }
+    let simpleCandidate = 3;
+    while (k < prime_order){
+        if (areMutuallySimple(simpleCandidate, primesList)){
+                primesList.push(simpleCandidate);
+                k++;
+        }
+        simpleCandidate+=2;
+    }
+    return primesList[prime_order-1];
+};
+
+//TODO refactor this @hit!
+const getNthPrime_Improved = (number) => {
     let primesList = [];
 
 //here used assumption that if condition can be expressed thrue mutual simplicity with previous found simple numbers
     let k = 0;
     let simpleCandidate = 2;
+    if (number < 2)
     while (k < number){
         if (areMutuallySimple(simpleCandidate, primesList)){
-                primesList.push(simpleCandidate);
-                k++;
+            primesList.push(simpleCandidate);
+            k++;
         }
-        simpleCandidate++;
+        simpleCandidate+=2;
     }
     return primesList[number-1];
 };
-
-console.log(getNthPrime(6));
-console.log(getNthPrime(10001));
+console.log(getNthPrime_BasicSolution(6));
+console.time('1');
+console.log(getNthPrime_BasicSolution(10001));
+console.timeEnd('1');
+console.time('1');
+console.log(getNthPrime_BasicSolution(10001));
+console.timeEnd('1');
+console.time('1');
+console.log(getNthPrime_BasicSolution(10001));
+console.timeEnd('1');
+console.time('1');
+console.log(getNthPrime_BasicSolution(10001));
+console.timeEnd('1');
+console.time('1');
+console.log(getNthPrime_BasicSolution(10001));
+console.timeEnd('1');
