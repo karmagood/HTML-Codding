@@ -42,6 +42,4 @@ function smallestPositiveEvenlyDivisible(from, to) {
         return number;
 }
 
-console.time('1');
 console.log(smallestPositiveEvenlyDivisible(1,20));
-console.timeEnd('1');
