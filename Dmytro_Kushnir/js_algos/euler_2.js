@@ -5,27 +5,25 @@
 // By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
 
+const nextFibo = (prePrev, prev) => {
+    return prePrev + prev;
+};
+
 const someDivisorFiboSum = (divisor, Limit) =>{
-    let firstFiboElement = 1, secondFiboElement = 1;
+    let aFiboElement = 1, bFiboElement = 1;
     let buf;
     let accum = 0;
-    while (secondFiboElement < Limit){
-        if (secondFiboElement % divisor === 0){
-            accum += secondFiboElement;
+    while (bFiboElement < Limit){
+        if (bFiboElement % divisor === 0){
+            accum += bFiboElement;
         }
-        buf = firstFiboElement;
-        firstFiboElement = secondFiboElement;
-        secondFiboElement = nextFibonacci(buf, secondFiboElement);
+        buf = aFiboElement;
+        aFiboElement = bFiboElement;
+        bFiboElement = nextFibo(buf, bFiboElement);
     }
     return accum;
 };
 
-const nextFibonacci = (prePrev, prev) => {
-    return prePrev + prev;
-};
-
-
 console.time('1');
 console.log(someDivisorFiboSum(2, 4000000));
 console.timeEnd('1');
-
