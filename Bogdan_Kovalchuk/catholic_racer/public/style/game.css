@@ -1,0 +1,53 @@
+.containter{
+    display: flex;
+    justify-content: center;
+}
+.playground{
+    /*margin: auto;*/
+    /*width: 280px;*/
+
+}
+
+.playground__row{
+    overflow: hidden;
+}
+
+.playground__cell{
+    margin: 2px;
+    height: 20px;
+    width: 20px;
+    background: #efefef;
+    font-size: 8px;
+    text-align: center;
+    vertical-align: 10px;
+
+    float: left;
+    cursor: pointer;
+}
+
+.playground__cell--road{
+    background-color: gold;
+}
+.playground__cell--wall{
+    background-color: brown;
+}
+.playground__cell--block{
+    background-color: black;
+}
+.playground__cell--player{
+    background-color: blue;
+}
+.playground__cell--enemy{
+    background-color: red;
+}
+.playground__cell--fuel{
+    background-color: pink;
+}
+
+.statistic{
+        width: 160px;
+        height: 100px;
+        border: 1px solid lightgrey;
+    padding: 0 20px;
+    /*background-color: black;*/
+}
