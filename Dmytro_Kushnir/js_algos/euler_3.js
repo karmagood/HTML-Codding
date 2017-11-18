@@ -3,7 +3,7 @@
 // What is the largest prime factor of the number 600851475143 ?
 
 
-const largestPrimeFactorBasicSolution = (number) => {
+function largestPrimeFactor(number) {
     let iter = 2;
     const upperBorder = Math.ceil(Math.sqrt(number));
     let maxSimpleDivisor = false;
@@ -17,10 +17,8 @@ const largestPrimeFactorBasicSolution = (number) => {
         }
     }
     return maxSimpleDivisor;
-};
+}
 
+console.log(Math.floor(Math.sqrt(5)));
 
-console.time('1');
-console.log(largestPrimeFactorBasicSolution(600851475143));
-console.timeEnd('1');
-
+console.log(largestPrimeFactor(600851475143));

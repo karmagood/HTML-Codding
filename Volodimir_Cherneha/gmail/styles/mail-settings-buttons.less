@@ -1,0 +1,81 @@
+@gmail-color: #DF4B39;
+@button-color: #f5f5f5;
+@border: #C2C2C2;
+@import "Layout";
+.header__mail-settings {
+  background-color: #fff;
+}
+
+.mail-settings {
+  &__gmail_button {
+    display: inline-block;
+    margin-left: 23px;
+    color: @gmail-color;
+    border: none;
+    background-color: @background;
+    font-size: 20px;
+    font-weight: 500;
+    background-image: url("../images/arrow_down_red.png");
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  &__more {
+    display: inline-block;
+    height: 29px;
+    background: @button-color url("../images/arrow_down_gray.png") no-repeat 59px;
+    width: 72px;
+    border: 1px solid @border;
+    opacity: .75;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 900;
+    &:hover {
+      opacity: .99;
+    }
+  }
+  &__button_previous {
+    display: inline-block;
+    color: transparent;
+    height: 29px;
+    width: 36px;
+    background: @button-color url("../images/black-gmail-sprite.png") no-repeat 7px -19px;
+    border: 1px solid @border;
+    border-radius: 3px 0 0 3px;
+    opacity: .55;
+    &:hover {
+      opacity: .99;
+    }
+  }
+  &__button_next {
+    display: inline-block;
+    color: transparent;
+    height: 29px;
+    width: 36px;
+    margin-left: -5px;
+    background: @button-color url("../images/black-gmail-sprite.png") no-repeat 7px -43px;
+    border: 1px solid @border;
+    border-radius: 0 3px 3px 0;
+    opacity: .55;
+    margin-right: 10px;
+    &:hover {
+      opacity: .99;
+    }
+  }
+  &__button_setting {
+    display: inline-block;
+    color: transparent;
+    height: 29px;
+    width: 72px;
+    background: @button-color url("../images/black-gmail-sprite.png") no-repeat 25px -143px;
+    border: 1px solid @border;
+    border-radius: 2px;
+    opacity: .55;
+    &:hover {
+      opacity: .99;
+    }
+  }
+}
+.buttons-position{
+  float: right;
+  margin-right: 20px;
+}

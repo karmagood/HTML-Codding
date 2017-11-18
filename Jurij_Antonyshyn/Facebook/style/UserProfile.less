@@ -1,0 +1,53 @@
+.UserProfile {
+  background-color: black;
+  height: 248px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+  &__userpic {
+    height: 168px;
+    width: 168px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1;
+    border: 4px solid white;
+    box-shadow: 0px 0px 0px 1px #ccc;
+    border-radius: 3px;
+  }
+  &__username {
+    font-family: SF Optimized, system-ui, -apple-system, BlinkMacSystemFont, ".SFNSText-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+
+    color: white;
+    position: absolute;
+    left: 210px;
+    bottom: 40px;
+    text-shadow: 0px 0px 4px Black;
+  }
+  &__navigation {
+    padding-left: 210px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #e9eaed;
+    height: 43px;
+    z-index: 0;
+  }
+  &__activity {
+    position: absolute;
+    right: 20px;
+    bottom: 60px;
+    width: 151px;
+  }
+  &__button {
+
+  }
+}
