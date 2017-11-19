@@ -16,13 +16,12 @@ const bubbleSort = (arr) => {
         if (!inversionFound)
             break;
         inversionFound = false;
-        console.log(arr);
+        // console.log(arr);
     }
+    return arr;
 };
 
 let test_arr = getRandomArray(10);
 
 console.log(test_arr);
-bubbleSort(test_arr);
-
-// bubbleSort([10,3,2,5]);
+console.log( bubbleSort(test_arr) );
