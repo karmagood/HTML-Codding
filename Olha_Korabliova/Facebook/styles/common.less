@@ -1,0 +1,91 @@
+@import "vars";
+
+body {
+  margin: 0;
+  background-color: @main-grey;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bigger-img {
+  margin: 0 1px 0 1px;
+  width: 138px;
+  height: 138px;
+  border: @main-border;
+}
+
+.smaller-img {
+  margin: 0 1px 0 1px;
+  width: 91px;
+  height: 91px;
+  border: @main-border;
+}
+
+time {
+  color: @title_time;
+  font-size: small;
+}
+
+.user-profile__user-pic {
+  border-radius: 50%;
+}
+
+.aside-block {
+  position: fixed;
+  top: @main-top;
+  bottom: 0;
+  right: 0;
+  width: 210px;
+  overflow: auto;
+  z-index: -5;
+  & footer {
+    & input {
+      position: fixed;
+      width: 190px;
+      height: 25px;
+      bottom: 0;
+      border: @border-settings;
+      border-radius: 3px;
+      right: 26px;
+    }
+    & button {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      width: 26px;
+      padding: 5px 5px 5px 3px;
+      height: 25px;
+    }
+  }
+}
+
+.ad-feed {
+  position: absolute;
+  left: calc(~"25% + 450px");
+  width: 312px;
+}
+
+.ad-feed__block {
+  background-color: @white;
+  border: @main-border;
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.ad-feed__title {
+  color: @title_time;
+  margin: 5px 0 5px 0;
+  font-size: 13px;
+  & a {
+    float: right;
+    color: @main-blue;
+  }
+}

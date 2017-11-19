@@ -1,16 +1,10 @@
-function randomizeArray(n) {
-    let array = [];
-    for (let i = 0; i < n; i++){
-        array.push(Math.floor(Math.random() * 200) - 50);
-    }
-    return array;
-}
+import generateRandomArray from "./../randomArray";
 
-arr = randomizeArray(20);
+let arr = generateRandomArray(20);
 document.getElementById("array_unsorted").innerHTML = arr;
 
 
-function selection_sort(array) {
+function selectionSort(array) {
     let n = array.length;
 
     for (let i = 0; i < n - 1; i++) {
@@ -26,4 +20,4 @@ function selection_sort(array) {
     return array;
 }
 
-document.getElementById("array_sorted").innerHTML = selection_sort(arr);
+document.getElementById("array_sorted").innerHTML = selectionSort(arr);
