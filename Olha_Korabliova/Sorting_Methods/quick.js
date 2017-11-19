@@ -1,7 +1,6 @@
-import generateRandomArray from "./../randomArray";
+const {generateRandomArray} = require("./randomArray");
 
 let arr = generateRandomArray(20);
-document.getElementById("array_unsorted").innerHTML = arr;
 
 function quickSort(array, p, r) {
     let ind;
@@ -37,5 +36,6 @@ function partition(array, p, r) {
     return p;
 }
 
-
-document.getElementById("array_sorted").innerHTML = quickSort(arr, 0, arr.length - 1);
+console.log("unsorted: ", arr);
+let k = quickSort(arr, 0, arr.length - 1);
+console.log("sorted: ", k);

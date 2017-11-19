@@ -1,8 +1,6 @@
-import generateRandomArray from "./../randomArray";
+const {generateRandomArray} = require("./randomArray");
 
 let arr = generateRandomArray(20);
-document.getElementById("array_unsorted").innerHTML = arr;
-
 
 function insertionSort(array) {
     let i = 1;
@@ -17,7 +15,8 @@ function insertionSort(array) {
         i++;
     }
     return array;
-
 }
 
-document.getElementById("array_sorted").innerHTML = insertionSort(arr);
+console.log("unsorted: ", arr);
+let k = insertionSort(arr);
+console.log("sorted: ", k);
