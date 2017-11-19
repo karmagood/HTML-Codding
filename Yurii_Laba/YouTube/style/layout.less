@@ -1,6 +1,6 @@
 .layout {
   margin: 0;
-  background: #ccc;
+  background: #fbf9fb;
 
   &_debug-mode {
     background: blueviolet;
@@ -11,23 +11,40 @@
   }
 
   &__header {
-    height: 30px;
+    height: 56px;
     position: fixed;
     width: 100%;
     top: 0;
+    background-color: #fffeff;
+    display: flex;
   }
 
   &__sidebar {
     position: fixed;
-    width: 150px;
-    top: 30px;
+    width: 228px;
+    top: 56px;
     bottom: 0;
     overflow: auto;
+    background-color: #f6f4f6;
+    padding-top: 20px;
   }
 
   &__main {
-    margin-top: 30px;
-    margin-left: 150px;
+    margin-top: 56px;
+    margin-left: 228px;
+
+  }
+  &__header__left-part {
+    align-items: center;
+    display: flex;
+
+    justify-content: flex-end;
+  }
+  &__header__right-part {
+    align-items: center;
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
   }
 
 }
