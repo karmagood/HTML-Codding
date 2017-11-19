@@ -48,4 +48,4 @@ console.log(test_arr);
 quickSortAlgoRandomPivot(test_arr, 0, test_arr.length);
 console.log(test_arr); // array is mutated
 
-checkArraySorting(iterations = 1000, testSizeFrom = 1, testSizeTo = 500, sortingFunction = quickSort);
+checkArraySorting(iterations = 1000, testSizeFrom = 1, testSizeTo = 500, testElemSizeFrom = 0, testElemSizeTo = 500, sortingFunction = quickSort);

@@ -42,4 +42,4 @@ console.log(test_arr);
 quickSortAlgo(test_arr, 0, test_arr.length);
 console.log(test_arr); // array is mutated
 
-checkArraySorting(iterations = 1000, testSizeFrom = 3, testSizeTo = 300, sortingFunction = quickSort);
+checkArraySorting(iterations = 1000, testSizeFrom = 3, testSizeTo = 300, testElemSizeFrom = 0, testElemSizeTo = 5, sortingFunction = quickSort);

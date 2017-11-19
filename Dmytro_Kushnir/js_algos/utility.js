@@ -6,7 +6,7 @@ const swap = (arr, i, j) => {
 };
 
 
-const checkArraySorting = (iterations, testSizeFrom, testSizeTo, sortingFunction ) => {
+const checkArraySorting = (iterations, testSizeFrom = 3, testSizeTo = 500, testElemSizeFrom = 0, testElemSizeTo = 500,  sortingFunction ) => {
     let i = 0, isSorted = true;
     let original_array_holder;
     while (i++ < iterations && isSorted){
@@ -23,7 +23,7 @@ const checkArraySorting = (iterations, testSizeFrom, testSizeTo, sortingFunction
     }
     else
         console.log("sorting OK");
-    console.log( i-1 + " iterations done. " + "Test_size from " + testSizeFrom + " to " + testSizeTo);
+    console.log( i-1 + " iterations done. " + "Test_size from " + testSizeFrom + " to " + testSizeTo + " test elements values from " + testSizeFrom + " to " + testSizeTo);
 };
 
 const isArraySorted = (arr) => {
@@ -39,11 +39,11 @@ const isArraySorted = (arr) => {
 const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 
-const getRandomArray = (size) => {
+const getRandomArray = (size, arrayElemSizeFrom = 0, arrayElemSizeTo = 500) => {
     let array = [];
 
     for (let i = 0; i < size; ++i) {
-        array.push(getRandomNumber(0, 500));
+        array.push(getRandomNumber(arrayElemSizeFrom, arrayElemSizeTo));
     }
     return array;
 };
@@ -64,10 +64,27 @@ const numberOfSimpleDivisors = (arg) => {
 };
 
 
+const lengthesOfConsecutiveSerieses = (sortedValuesList) => {
+    let ammountsOfDifferentValuesList = [];
+    let thisValuesAmount = 1;
+    let previousValue;
+    for (let el = 0; el < sortedValuesList.length; el ++){
+        if (sortedValuesList[el] === previousValue) thisValuesAmount++;
+        else{
+            if (previousValue !== undefined) ammountsOfDifferentValuesList.push(thisValuesAmount);
+            thisValuesAmount = 1;
+            previousValue = sortedValuesList[el];
+        }
+    }
+    ammountsOfDifferentValuesList.push(thisValuesAmount); //last element is out of cycle
+    return ammountsOfDifferentValuesList;
+};
+
+
 module.exports = {
     getRandomNumber,
     getRandomArray,
     swap,
     isArraySorted,
-    numberOfSimpleDivisors, checkArraySorting
+    numberOfSimpleDivisors, checkArraySorting, lengthesOfConsecutiveSerieses
 };
