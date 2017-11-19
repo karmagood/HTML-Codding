@@ -5534,7 +5534,9 @@ const generateCalendarModel = (day, startDay = 0) => {
     const date = __WEBPACK_IMPORTED_MODULE_0_luxon__["DateTime"].fromJSDate(day);
     const numberOfDays = date.daysInMonth;
 
-    let weekday = date.set({day: 1}).weekday + startDay;
+    // Скоректуємо день початку тиждня відповідно стартового дня
+    // (тиждень може розпочинатись з понеділка, вівторка, чи будь-якого іншого дня)
+    let weekday = (DAYS_AT_THE_WEEK - (startDay - date.set({day: 1}).weekday)) % DAYS_AT_THE_WEEK;
 
     return __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_ramda__["a" /* splitEvery */])(DAYS_AT_THE_WEEK)
         ([
@@ -5549,8 +5551,8 @@ const render = (calendarModel) => {
     `).join("")
 }
 
-for ( let i = 1; i<= 12; i++) {
-    document.body.innerHTML += render(generateCalendarModel(new Date( new Date().setMonth(i) ), 0 ));
+for ( let i = 0; i < 12; i++) {
+    document.body.innerHTML += render(generateCalendarModel(new Date( new Date().setMonth(i) ), 1 ));
 }
 
 
