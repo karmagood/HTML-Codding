@@ -1,9 +1,6 @@
 
 const {swap, getRandomArray, getRandomNumber} = require("./utility.js");
 
-/*
-*
- *  */
 
 const findMinimumIndexBetween = (l, r, arr) => {
   let i = l;
