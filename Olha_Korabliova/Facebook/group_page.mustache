@@ -5,19 +5,22 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/index.css"/>
+    <link rel="stylesheet" href="styles/group_page.css"/>
     <link rel="stylesheet" href="styles/common.css"/>
     <link rel="stylesheet" href="styles/header.css"/>
+    <link rel="stylesheet" href="styles/group_cover.css"/>
     <link rel="stylesheet" href="styles/tool_bar.css"/>
-    <link rel="stylesheet" href="styles/user_post.css"/>
-    <link rel="stylesheet" href="styles/stories.css"/>
-    <link rel="stylesheet" href="styles/friend_suggestion.css"/>
     <link rel="stylesheet" href="styles/info_footer.css"/>
+    <link rel="stylesheet" href="styles/user_post.css"/>
+    <link rel="stylesheet" href="styles/group_members.css"/>
+    <link rel="stylesheet" href="styles/create_group.css"/>
+    <link rel="stylesheet" href="styles/group_suggestions.css">
+    <link rel="stylesheet" href="styles/friend_suggestion.css"/>
     <link rel="stylesheet" href="styles/friend_n_games.css"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <title>Facebook</title>
+    <title>Group Page</title>
 </head>
 <body>
 <header>
@@ -25,15 +28,15 @@
         <img id="logo" src="images/facebook-logo.jpg"/>
     </a>
     <form action="#">
-        <input type="search" placeholder="Search"/>
+        <input type="search" value="CS@UCU"/>
     </form>
     <a href="#">
         <i class="fa fa-search" style="color: black;"></i>
     </a>
     <nav class="header-nav">
-        <a class="header-nav user-profile" href="user_page" title="Profile">
+        <a class="header-nav user-profile" href="#" title="Profile">
             <img class="user-profile__user-pic"
-                 src="images/user_avatar.jpeg"/>
+                 src="rough_files/images/user_avatar.jpeg"/>
             <span id="user-name" style="left: 680px;">Olya</span>
         </a>
         <a id="home" href="index" style="left: 740px;">Home</a>
@@ -54,76 +57,67 @@
         </a>
     </nav>
 </header>
+
 <nav class="tool-bar">
-    <section class="tool-bar__section">
-        <h4 class="tool-bar__section-title">Account Settings</h4>
-        <a class="tool-bar__section-item" href="user_page">
-            <img class="user-profile__user-pic"
-                 src="images/user_avatar.jpeg" style="width: 25px;"/>
-            Olya Korabliova
-        </a>
-        <br>
-        <a class="tool-bar__section-item active" href="#">
-            <i class="fa fa-newspaper-o" style="color: #5D92FF;"></i>
-            News Feed
-        </a>
-        <br>
-        <a class="tool-bar__section-item" href="#">
-            <i class="fa fa-envelope-o" style="color: #5D92FF;"></i>
-            Messenger
-        </a>
-    </section>
-    {{#tool-bar__main-page}}
+    <h1 style="margin-bottom: 10px">CS@UCU</h1>
+    {{#tool-bar__group-page}}
         <section class="tool-bar__section">
-            <h4 class="tool-bar__section-title {{status}}">{{title}}</h4>
+            <h4 class="tool-bar__section-title">{{title}}</h4>
             {{#items}}
-                <a class="tool-bar__section-item" href="{{link}}">
+                <a class="tool-bar__section-item {{status}}" href="{{link}}">
                     <i class="{{icon-class}}" style="{{icon-style}}"></i>
                     {{name}}
                 </a>
                 <br>
             {{/items}}
-            <a class="tool-bar__see-more" href="#">
-                <i class="fa fa-caret-down"> See More...</i>
-            </a>
         </section>
-    {{/tool-bar__main-page}}
-    <section class="tool-bar__section">
-        <h4 class="tool-bar__section-title">Create</h4>
-        <a class="tool-bar__see-more" href="#">Ad</a>
-        <a class="tool-bar__see-more" href="#">Page</a>
-        <a class="tool-bar__see-more" href="#">Group</a>
-        <a class="tool-bar__see-more" href="#">Event</a>
-    </section>
+    {{/tool-bar__group-page}}
 </nav>
+<section class="group__header">
+    <a href="#">
+        <div id="header__cover-photo"></div>
+    </a>
+    <div>
+        {{#group-user-settings}}
+            <a class="header__some-settings" href="#">{{option}}</a>
+        {{/group-user-settings}}
+    </div>
+</section>
 <main>
     <section class="news-feed">
         <div class="news-feed__make-post">
-            <a href="#" style="padding: 3px; color: #4B4F56;">
+            <a class="news-feed__make-post_active" href="#" style="padding: 3px; color: #4b4f56;">
                 <i class="fa fa-pencil-square-o"></i>
-                Make Post
+                Write Post
             </a>
             <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
                 <i class="fa fa-file-photo-o" style="color: #4B4F56;"></i>
-                Photo/Video Album
+                Add Photo/Video
             </a>
             <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
                 <i class="fa fa-video-camera" style="color: #4B4F56;"></i>
-                Video
+                Live Video
+            </a>
+            <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+                More
             </a>
         </div>
         <div class="news-feed__post-content">
             <form>
-                <a class="user-profile" href="user_page" style="text-decoration: none">
+                <a class="user-profile" href="#">
                     <img class="user-profile__user-pic" height="45px"
                          src="images/user_avatar.jpeg"/>
                 </a>
-                <textarea placeholder="What's on your mind, Olya?"></textarea>
+                <textarea placeholder="Write something..."></textarea>
             </form>
             <div class="news-feed__add-content">
                 <a href="#">
                     <i class="fa fa-photo" style="color: #8ABF4C;"></i>
                     Photo/Video
+                </a>
+                <a href="#">
+                    <i class="fa fa-bar-chart" style="color: #8ABF4C;"></i>
+                    Poll
                 </a>
                 <a href="#">
                     <i class="fa fa-smile-o" style="color: #FFD62C;"></i>
@@ -132,7 +126,8 @@
                 <a href="#">...</a>
             </div>
         </div>
-        {{#main-page-posts}}
+        <h5 style="color: #90949C; margin: 5px;">RECENT ACTIVITY</h5>
+        {{#group-page-post}}
             <div class="news-feed__user-post">
                 <a href="{{user-link}}">
                     <img class="user-profile__user-pic" src="{{img-src}}"/>
@@ -171,71 +166,114 @@
                 </div>
                 <div class="user-post__comments">
                     <form class="user-post__comments-form" action="#">
-                        <a href="user_page">
+                        <a href="#">
                             <img class="user-profile__user-pic"
-                                 src="images/user_avatar.jpeg"/>
+                                 src="rough_files/images/user_avatar.jpeg"/>
                         </a>
                         <input type="text" placeholder="Write a comment..."/>
                     </form>
                 </div>
             </div>
-        {{/main-page-posts}}
+        {{/group-page-post}}
+    </section>
+    <section class="ad-feed">
+        <div class="ad-feed__block">
+            <h5 class="ad-feed__title">ADD MEMBERS</h5>
+            <form action="#">
+                <input type="search" placeholder=" + Enter name or email address..."/>
+            </form>
+            <h5 class="ad-feed__title">MEMBERS
+                <a href="#" class="see-more">121 members</a>
+            </h5>
+            <div class="ad-feed__block-item">
+                {{#group-members}}
+                    <a href="{{user-link}}" title="{{user-name}}">
+                        <img class="user-profile__user-pic" src="{{img-src}}"/>
+                    </a>
+                {{/group-members}}
+            </div>
+            <h5 class="ad-feed__title">DESCRIPTION
+                <a href="#" class="see-more">Add a Description</a>
+            </h5>
+            <p>Tell people what this group is about.</p>
+        </div>
+        <div class="ad-feed__block" style="padding-bottom: 10px">
+            <h5 class="ad-feed__title">CREATE NEW GROUPS</h5>
+            <p>Groups make it easier than ever to share with friends, family and teammates.</p>
+            <a id="ad-feed__block-button" href="#">Create Group</a>
+        </div>
+        <div class="ad-feed__block">
+            <h5 class="ad-feed__title">RECENT GROUP PHOTOS
+                <a href="#" class="see-more">See All</a>
+            </h5>
+            <div class="ad-feed__block-item">
+                {{#group-recent-pics}}
+                    <a href="{{link}}">
+                        <img src="{{img-src}}"/>
+                    </a>
+                {{/group-recent-pics}}
+            </div>
+        </div>
+        <div class="ad-feed__block">
+            <h5 class="ad-feed__title">Suggested Groups
+                <a href="#" class="see-more">See All</a>
+            </h5>
+            {{#group-ad}}
+                <div class="ad-feed__group-ads">
+                    <a href="#">
+                        <div class="ad-feed__group-cover"></div>
+                    </a>
+                    <div class="ad-feed__short-group-info">
+                        <a href="{{link}}"><h5 class="ad-feed__group-name">{{group-name}}</h5></a>
+                        <p>{{members}}</p>
+                        <form action="#">
+                            <button type="button">+ Join</button>
+                        </form>
+                    </div>
+                </div>
+            {{/group-ad}}
+        </div>
+        <div class="ad-feed__block">
+            <h5 class="ad-feed__title">People You May Know
+                <a href="#" class="see-more">See All</a>
+            </h5>
+            {{#friends-suggestions}}
+                <div class="ad-feed__block-friend">
+                    <a href="{{user-link}}">
+                        <img class="user-profile__user-pic"
+                             src="{{user-picture}}"/>
+                    </a>
+                    <div class="ad-feed__block-friend-info">
+                        <a class="ad-feed__block-friend-name" href="{{user-link}}">{{user-name}}</a><br>
+                        <a class="ad-feed__block-mutual-frs" href="#">{{mutual-friends}}</a><br>
+                        <form class="ad-feed__block-add-button" action="#">
+                            <button type="button">
+                                <i class="fa fa-user-plus"></i>
+                                Add Friend
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            {{/friends-suggestions}}
+        </div>
+        <div class="ad-feed__block">
+            <div class="ad-feed__block-language">
+                {{#languages}}
+                    <a class="ad-feed__block-language {{status}}" href="{{action}}">
+                        {{language}}
+                    </a>
+                {{/languages}}
+            </div>
+        </div>
+        <footer>
+            {{#info-footer}}
+                <a class="ad-feed__footer-info" href="{{action}}">{{info}}</a>
+            {{/info-footer}}
+        </footer>
     </section>
 </main>
-<section class="ad-feed">
-    <div class="ad-feed__block">
-        <h5 class="ad-feed__title">Stories
-            <i class="fa fa-question-circle-o"
-               title="Stories are photos and videos that only last temporarily. When a friend shares to their story, it'll appear here."
-               style="float: right; font-size: 20px;"></i>
-        </h5>
-        <div class="ad-feed__block-story">
-            <div class="ad-feed__block-story_active">
-                <a href="#">
-                    <img src="images/new_story.png"/>
-                </a>
-            </div>
-            <div class="ad-feed__block-story_empty"></div>
-            <div class="ad-feed__block-story_empty"></div>
-            <div class="ad-feed__block-story_empty"></div>
-        </div>
-    </div>
-    <div class="ad-feed__block">
-        <h5 class="ad-feed__title">People You May Know <a href="#">See All</a></h5>
-        {{#friends-suggestions}}
-            <div class="ad-feed__block-friend">
-                <a class="ad-feed__block-friend user-profile" href="{{user-link}}">
-                    <img class="user-profile__user-pic"
-                         src="{{user-picture}}"/>
-                </a>
-                <div class="ad-feed__block-friend-info">
-                    <a class="ad-feed__block-friend-name" href="{{user-link}}">{{user-name}}</a><br>
-                    <a class="ad-feed__block-mutual-frs" href="#">{{mutual-friends}}</a><br>
-                    <form class="ad-feed__block-add-button" action="#">
-                        <button type="button">
-                            <i class="fa fa-user-plus"></i>
-                            Add Friend
-                        </button>
-                    </form>
-                </div>
-            </div>
-        {{/friends-suggestions}}
-    </div>
-    <div class="ad-feed__block">
-        <div class="ad-feed__block-language">
-            {{#languages}}
-                <a class="ad-feed__block-language {{status}}" href="{{action}}">
-                    {{language}}
-                </a>
-            {{/languages}}
-        </div>
-    </div>
-    <footer>
-        {{#info-footer}}
-            <a class="ad-feed__footer-info" href="{{action}}">{{info}}</a>
-        {{/info-footer}}
-    </footer>
-</section>
+
+
 <aside class="aside-block">
     <section class="aside-block__games">
         <div id="your-games">
@@ -275,7 +313,6 @@
     <section class="aside-block__friends more-contacts">
         <h5 style="color: black;">MORE CONTACTS</h5>
         {{#more-friends}}
-
             <a class="aside-block__friends user-profile" href="{{user-link}}">
                 <p>
                     <img class="user-profile__user-pic" src="{{user-pic}}"/>

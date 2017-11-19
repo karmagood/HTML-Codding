@@ -1,0 +1,45 @@
+@import "vars.less";
+
+.news-feed {
+  position: absolute;
+  margin: 10px;
+  left: calc(~"25% + 65px");
+  top: 390px;
+  width: 670px;
+  padding: 5px;
+}
+
+.nav-bar {
+  padding-top: 5px;
+  & .nav-bar__link {
+    color: @main-blue;
+  }
+}
+
+.nav-bar__block {//}, .ad-feed__block {
+  position: relative;
+  width: 300px;
+  top: 390px;
+  left: calc(~"25% - 250px");
+  padding: 5px 5px 5px 10px;
+  border: @main-border;
+  border-radius: 3px;
+  background-color: @white;
+  margin-top: 10px;
+}
+
+.ad-feed__block {
+  position: relative;
+  left: calc(~"25% - 260px");
+  padding: 0 10px 0 10px;
+  width: 295px;
+  top: 390px;
+
+}
+
+footer {
+  position: relative;
+  top: 390px;
+  left: calc(~"25% - 260px");
+  width: 300px;
+}
