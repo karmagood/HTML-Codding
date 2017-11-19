@@ -1,12 +1,6 @@
-function randomizeArray(n) {
-    let array = [];
-    for (let i = 0; i < n; i++){
-        array.push(Math.floor(Math.random() * 200) - 50);
-    }
-    return array;
-}
+import generateRandomArray from "./../randomArray";
 
-arr = randomizeArray(20);
+let arr = generateRandomArray(20);
 document.getElementById("array_unsorted").innerHTML = arr;
 
 // function merge_sort(array) {
@@ -44,11 +38,11 @@ document.getElementById("array_unsorted").innerHTML = arr;
 //
 
 
-function merge_sort(array, p, q) {
+function mergeSort(array, p, q) {
     let c = Math.floor((p + q) / 2);
     if (p - q > 1) {
-        merge_sort(array, p, c);
-        merge_sort(array, c + 1, q);
+        mergeSort(array, p, c);
+        mergeSort(array, c + 1, q);
     }
     merge(array, p, c, q);
     return array;
@@ -73,4 +67,4 @@ function merge(array, p, c, q) {
 }
 
 
-document.getElementById("array_sorted").innerHTML = merge_sort(arr, 1, arr.length);
+document.getElementById("array_sorted").innerHTML = mergeSort(arr, 1, arr.length);

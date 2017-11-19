@@ -1,16 +1,9 @@
-function randomizeArray(n) {
-    let array = [];
-    for (let i = 0; i < n; i++){
-        array.push(Math.floor(Math.random() * 200) - 50);
-    }
-    return array;
-}
+import generateRandomArray from ".././randomArray";
 
-arr = randomizeArray(20);
+let arr = generateRandomArray(20);
 document.getElementById("array_unsorted").innerHTML = arr;
 
-
-function bubble_sort(array) {
+function bubbleSort(array) {
     let n = array.length;
     while (n > 0) {
         let i = 0;
@@ -25,7 +18,6 @@ function bubble_sort(array) {
         n = i;
     }
     return array;
-
 }
 
-document.getElementById("array_sorted").innerHTML = bubble_sort(arr);
+document.getElementById("array_sorted").innerHTML = bubbleSort(arr);
