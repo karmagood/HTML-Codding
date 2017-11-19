@@ -16,7 +16,6 @@
 //
 //     What is the value of the first triangle number to have over five hundred divisors?
 
-const {swap, getRandomArray, getRandomNumber} = require("./utility");
 
 const nextTriangleNumber = (previousTriangleNumber, indexOfPreviousTriangleNumber) => {
     return previousTriangleNumber + indexOfPreviousTriangleNumber + 1;
