@@ -1,7 +1,7 @@
 let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 let dayPerMonth = ["31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31"];
 
-function displayCalendar(date) {
+const displayCalendar = (date) => {
 
     let currentDate = new Date();
 
@@ -53,7 +53,7 @@ function displayCalendar(date) {
 
     document.getElementById("main-calendar").value = calendarGrid;
 
-}
+};
 
 
 
@@ -83,8 +83,8 @@ window.onload = function () {
     currentDate = new Date();
     displayCalendar(currentDate);
     document.getElementById('button__next-month').onclick = function () {
-        nextDate = increaseMonthAndYear(currentDate);
-        displayCalendar(nextDate);
+        nextDate = decreaseMonthAndYear(currentDate);
+        increaseMonthAndYear(nextDate);
     };
 
     // document.getElementById('button__previous-month').onclick = function() {
