@@ -3,7 +3,9 @@ let SnakeX = 2;
 let SnakeY = 2;
 let Height = 30;
 let Width = 30;
-let interval = 100;
+let interval = 150;
+let growth = 2;
+
 
 //game variables
 let length = 0;
@@ -17,6 +19,8 @@ let WallKill = false;
 let direction = 2;// up = 8 , down = 2, right = 6, left = 4
 let inter;
 let Score = 0;
+let BestScore = 0;
+let Beginning = true;
 
 function Run() {
     Init();
@@ -33,6 +37,8 @@ function Reset() {
     length = 0;
     SnakeX = 2;
     SnakeY = 2;
+    Beginning = true;
+    interval = 150;
     TailX = [SnakeX];
     TailY = [SnakeY];
     GameOver = false;
@@ -114,27 +120,32 @@ function CreateFruit() {
     }
 }
 
-window.addEventListener("keypress", function key() {
-    let key = event.keyCode;
+window.addEventListener("keydown", function key() {
+    let key = window.event.keyCode;
     if (!Running) {
         Running = true;
     }
     switch (key) {
-        case 65:
-        case 97:
-            direction = 4;
+        case 37:
+            if (direction !== 6 || Beginning) {
+                direction = 4;
+            }
             break;
-        case 87:
-        case 119:
-            direction = 8;
+        case 38:
+            if (direction !== 2|| Beginning){
+                direction = 8;
+            }
             break;
-        case 68:
-        case 100:
-            direction = 6;
+        case 39:
+            if(direction !== 4|| Beginning) {
+                direction = 6;
+            }
             break;
-        case 83:
-        case 115:
-            direction = 2;
+
+        case 40:
+            if (direction !== 8|| Beginning){
+                direction = 2;
+            }
             break;
         case 32:
             Running = false;
@@ -180,7 +191,14 @@ function Update() {
     Set(SnakeX, SnakeY, "snake");
     if (SnakeX === FruitX && SnakeY === FruitY) {
         CreateFruit();
-        length += 4;
+        Beginning = false;
+        length += growth;
+        if (interval >= 30){
+            interval -= 10;
+            clearInterval(inter);
+            inter = setInterval(GameLoop, interval);
+        }
+        console.log(interval);
         Score++;
         document.getElementById("score").innerHTML = '' + Score;
     }
@@ -190,6 +208,11 @@ function Update() {
             break;
         }
     }
+    if(Score > BestScore){
+        BestScore = Score;
+        document.getElementById("best-score").innerHTML = 'Best score : ' + BestScore;
+    }
+
 
 }
 

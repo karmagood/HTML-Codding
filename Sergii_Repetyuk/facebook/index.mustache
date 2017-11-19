@@ -2,23 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="style/common.css">
-    <link rel="stylesheet" type="text/css" href="style/Layout.css">
-    <link rel="stylesheet" type="text/css" href="style/Article.css">
-    <link rel="stylesheet" type="text/css" href="style/Navigation.css">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/Layout.css">
+    <link rel="stylesheet" href="style/Article.css">
+    <link rel="stylesheet" href="style/Navigation.css">
     <link rel="stylesheet" href="style/Icon.css">
+    <link rel="stylesheet" href="style/Search.css">
+    <link rel="stylesheet" href="style/Facebook_logo.css">
+    <link rel="stylesheet" href="style/User-profile-link.css">
 </head>
 <body class="Layout">
     <header class="Layout__header">
         <div class="Layout__header-wrapper">
-             Lorem ipsum dolor sit amet.
+            <img class="Facebook_logo" src="http://www.freeiconspng.com/uploads/facebook-f-logo-white-background-21.jpg">
+            <form class="Search">
+                <input class="Search__input" type="search" name="search" placeholder="Пошук">
+                <button class="Search__activate-button" type="button" >
+                    Search
+                </button>
+            </form>
         </div>
     </header>
     <section class="Layout__payload">
         <aside class="Layout__navigation">
             <nav class="Navigation">
-
+                <nav class="User-profile-link">
+                    <img class="User-profile-pic" src="https://scontent.flwo1-1.fna.fbcdn.net/v/t1.0-9/19731797_706298759556415_2690352492526738979_n.jpg?oh=c1b673beadeecced89251e69afe3f24c&oe=5A9F347B">
+                    <a class="User-profile-page" href="111">Сергій Репетюк</a>
+                </nav>
                 <a class="Navigation__item" href="111">
                     <span class="Icon Icon_news"></span> News
                 </a>
@@ -89,37 +101,52 @@
             </nav>
         </aside>
         <main class="Layout__news-line">
-            <article class="Article">
-                <header class="Article__news-title">
-                    <img class="Article__author-photo" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/160909165300-north-korea-nuclear-power-ripley-live-00010121-super-tease.jpg">
-                    <h2 class="Article__title-text">Страдающее средневековье</h2>
-                </header>
-                <p>Вот по настоящему тяжелое детство.</p>
-                <img class="Article__main-image" src="http://www.abc.net.au/news/image/8601612-3x2-940x627.jpg">
-                <footer class="Article__user-choice">
-                    <button class="Article__like">Подобається</button>
-                    <button class="Article__comment">Коментувати</button>
-                    <button class="Article__share">Поширити</button>
-                </footer>
-            </article>
-            <article class="Article">
-                <header class="Article__news-title">
-                    <img class="Article__author-photo" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/160909165300-north-korea-nuclear-power-ripley-live-00010121-super-tease.jpg">
-                    <h2 class="Article__title-text">Страдающее средневековье</h2>
-                </header>
-                <p>Вот по настоящему тяжелое детство.</p>
-                <img class="Article__main-image" src="http://www.abc.net.au/news/image/8601612-3x2-940x627.jpg">
-                <footer class="Article__user-choice">
-                    <button class="Article__like">Подобається</button>
-                    <button class="Article__comment">Коментувати</button>
-                    <button class="Article__share">Поширити</button>
-                </footer>
-            </article>
+            {{#article}}
+                <article class="Article">
+                    <header class="Article__news-title">
+                        <img class="Article__author-photo" src="{{author.picture}}">
+
+                        <h2 class="Article__title-text">
+                            {{#author.name}} {{.}}.{{/author.name}}
+                            {{title}}
+                        </h2>
+                    </header>
+                    {{{description}}}
+
+                    <img class="Article__main-image" src="{{cover}}">
+
+                    <footer class="Article__user-choice">
+                        <button class="Article__like">Подобається</button>
+                        <button class="Article__comment">Коментувати</button>
+                        <button class="Article__share">Поширити</button>
+                    </footer>
+                </article>
+            {{/article}}
         </main>
         <aside class="Layout__additional-info">Lorem ipsum dolor sit amet.</aside>
     </section>
-    <aside class="Layout__chat"> lorem*10Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Alias assumenda atque aut consequuntur corporis delectus, dolor doloribus ea eligendi illo labore modi natus nesciunt odio porro sequi tenetur veritatis voluptatum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo id modi numquam rerum sunt.
-        Illo in sapiente tempora! Assumenda atque cumque minima nisi numquam quibusdam repudiandae sit tempore totam voluptatum?</aside>
+    <aside class="Layout__chat">Ваші сторінки
+
+        СНПТ психологів ЛНУ ім. І. Франка
+
+        КОНТАКТИ
+
+        Igorko Podvirny
+        1год
+        Tanya Kozlovska
+        Надя Лисевич
+        10год
+        Roma Kmyta
+        57хв
+        Yaroslav Rukavets
+        Андрей Вандакуров
+        Юра Старик
+        Volodya Kopitko
+        Оксана Піхур
+        Olia Konyukh
+        Ірочка Чернобель
+        59хв
+        Erika Tovt
+        Ілля Мальцев</aside>
 </body>
 </html>

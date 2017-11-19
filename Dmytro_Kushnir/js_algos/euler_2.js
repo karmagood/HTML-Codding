@@ -24,4 +24,6 @@ const someDivisorFiboSum = (divisor, Limit) =>{
     return accum;
 };
 
+console.time('1');
 console.log(someDivisorFiboSum(2, 4000000));
+console.timeEnd('1');
