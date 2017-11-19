@@ -1,0 +1,196 @@
+body {
+    margin: 65px auto;
+    width: 1200px;
+}
+
+header {
+    margin: auto;
+    width: 1100px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.header-elem {
+    width: 230px;
+}
+
+.header-elem-2 {
+    width: 150px;
+    margin-left: 250px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.nav-bar a{
+    width: 200px;
+    height: 150px;
+    margin-right: 30px;
+}
+
+.last-elem {
+    margin-left: 150px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.middle-elem{
+    margin-left: 30px;
+}
+
+.image-section img {
+    width: 690px;
+    height: 525px;
+}
+
+.img-1 {
+    position: absolute;
+    margin-left: 500px;
+    z-index: 2;
+}
+
+.img-2 {
+    margin-top: 250px;
+}
+
+.text-section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 300px;
+}
+
+.text-section p {
+    width: 250px;
+    margin-right: 200px;
+}
+
+.text-image {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text-image p {
+    margin-right: 30px;
+}
+
+.room-section {
+    margin-top: 650px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.room-section-1 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+.room-section-1 ul {
+    list-style: none;
+}
+
+.room-section-1-1 {
+    margin-right: 175px;
+}
+
+.img-3 {
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 200px;
+    z-index: 2;
+}
+
+.img-4 {
+    width: 270px;
+    height: 800px;
+    margin-left: 180px;
+}
+
+.image-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.view-more {
+    margin: 150px 0 0 400px;
+}
+
+.menu-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+.menu-section-1 {
+    margin-left: 40px;
+    margin-top: 300px;
+    width: 250px;
+    height: 150px;
+}
+
+.img-4 {
+    width: 270px;
+    height: 800px;
+    margin-top: 100px;
+}
+
+.menu-title {
+    padding-top: 200px;
+}
+
+.article-section {
+    width: 640px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.article-section article {
+    width: 250px;
+    height: 400px;
+    margin-right: 20px;
+}
+
+.article-section ul {
+    width: 250px;
+    height: 400px;
+    margin-right: 20px;
+    list-style: none;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-flex {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.footer-flex-1 {
+    width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
