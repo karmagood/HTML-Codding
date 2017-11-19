@@ -1,4 +1,5 @@
 @sprite : "../images/icon-sprite.png";
+@sprite2 : "../images/icon-sprite2.png";
 .Icon {
   margin: 3px;
   height: 19px;
@@ -7,6 +8,21 @@
   vertical-align: middle;
   background-image: url(@sprite);
   background-size: image-width(@sprite)*0.85 image-height(@sprite)*0.85;
+}
+
+.Icon_big.Icon_news {
+  background-size: image-width(@sprite)*1.2 image-height(@sprite)*1.2;
+  background-position: 0 -1147px;
+}
+
+.Icon_big { width: 27px; height: 27px;}
+.Icon_small {}
+.Icon_medium {}
+
+.Icon_friends-requests {
+  background-size: auto;
+  background-position: 2px -432px;
+  background-image: url(../images/icon-sprite2.png);
 }
 
 .Icon_news {
