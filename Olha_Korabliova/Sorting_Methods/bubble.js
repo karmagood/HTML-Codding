@@ -1,7 +1,6 @@
-import generateRandomArray from ".././randomArray";
+const {generateRandomArray} = require("./randomArray");
 
 let arr = generateRandomArray(20);
-document.getElementById("array_unsorted").innerHTML = arr;
 
 function bubbleSort(array) {
     let n = array.length;
@@ -20,4 +19,6 @@ function bubbleSort(array) {
     return array;
 }
 
-document.getElementById("array_sorted").innerHTML = bubbleSort(arr);
+console.log("unsorted: ", arr);
+let k = bubbleSort(arr);
+console.log("sorted: ", k);
