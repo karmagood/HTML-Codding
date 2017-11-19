@@ -76,6 +76,7 @@ class Calendar {
             dayName.innerHTML = daysName[j];
             weekDays.appendChild(dayName);
         }
+
     }
 
     setNextMonth(){
