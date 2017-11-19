@@ -82,7 +82,7 @@ main{
     box-sizing: border-box;
 }
 
-aside{
+.aside_navigation{
     background-color: #F0F0F0;
     width: 240px;
     height: calc(100% - 56px);
@@ -105,11 +105,11 @@ main>section{
     width:calc(100% - 300px);
 }
 
-aside nav{
+.aside_navigation .aside_navigation_nav{
     padding-top: 20px;
 }
 
-aside nav a{
+.aside_navigation .aside_navigation_nav a{
     display: block;
     padding: 0 24px;
     height: 35px;
@@ -122,7 +122,7 @@ aside nav a{
     white-space: nowrap;
 }
 
-aside nav h3{
+.aside_navigation .aside_navigation_nav h3{
     font-family: sans-serif;
     font-size: 14px;
     margin-top: 0px;
@@ -130,7 +130,7 @@ aside nav h3{
     padding: 0 24px;
 }
 
-aside nav section{
+.aside_navigation .aside_navigation_nav section{
     padding: 4px 0;
     border-bottom: 1px #E8E8E8 solid;
     margin-bottom: 10px;
@@ -141,7 +141,7 @@ aside nav section{
     display: inline-block;
 }
 
-aside footer section{
+aside footer nav{
     padding: 0 24px;
 }
 
@@ -163,7 +163,7 @@ aside footer a{
     padding-bottom: 30px;
 }
 
-aside .icon{
+.aside_navigation .icon{
     vertical-align: top;
     background-repeat: no-repeat;
     background-size: contain;

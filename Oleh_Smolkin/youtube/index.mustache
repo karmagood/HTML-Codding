@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Youtube</title>
+</head>
+<body>
+<header>
+    <!--
+    <section id="search_section">
+        <i class="icon" id="hamburger"></i>
+        <img id="logo" src="https://www.youtube.com/yt/about/media/images/brand-resources/logos/YouTube-logo-full_color_light.svg">
+        <input id="search" type="text" placeholder="Пошук">
+    </section>
+    <section id="google_nav">
+        <i class="icon" id="upload">U</i>
+        <i class="icon" id="apps"></i>
+        <i class="icon" id="notifications"></i>
+        <img id="user_icon" src="https://yt3.ggpht.com/-kD4GbPD8tdE/AAAAAAAAAAI/AAAAAAAAAAA/JIuxzATDwrI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+    </section>
+    -->
+</header>
+<main>
+    <aside class="aside_navigation">
+        {{#navigations}}
+        <nav class="aside_navigation_nav">
+            {{#elements}}
+                <a href="">{{.}}</a>
+            {{/elements}}
+        </nav>
+        {{/navigations}}
+        <footer>
+            {{#footer_navigation}}
+            <nav>
+                {{#elements}}
+                <a>{{.}}</a>
+                {{/elements}}
+            </nav>
+            {{/footer_navigation}}
+            <p id="copyright">
+                @ 2017 YouTube, LLC
+            </p>
+        </footer>
+    </aside>
+    <section>
+        {{#channels}}
+        <section class="chanel">
+            <header>
+                <img src="{{icon_url}}">
+                <h3>{{name}}</h3>
+                <small>Рекомендований канал</small>
+
+                <img class="close_icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/52944-200.png">
+                <button class="subscript">
+                    ПІДПИСАТИСЯ {{subscr_count}} ТИС.
+                </button>
+            </header>
+            <section class="list">
+                {{#videos}}
+                <article class="video">
+                    <img src="{{picture_url}}">
+                    <h3>{{name}}</h3>
+                    <aside>
+                        <h4>{{author}}</h4>
+                        <p>{{viewers}} переглядів *</p>
+                        <p>{{date}}</p>
+                    </aside>
+                </article>
+                {{/videos}}
+            </section>
+        </section>
+        {{/channels}}
+    </section>
+</main>
+</body>
+</html>
