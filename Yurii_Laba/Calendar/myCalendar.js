@@ -6,41 +6,44 @@ const displayCalendar = (date) => {
     let currentDate = new Date();
 
     let month = date.getMonth();
+    console.log(month);
     let day = date.getDate();
     let year = date.getFullYear();
 
-    let nextMonth = month + 1;
+    let monthToManipulate = month + 1;
+    console.log(monthToManipulate);
 
-
-    let nextDate = new Date(nextMonth + ' 1 ,' + year);
-    let weekdays = nextDate.getDay();
+    let dateToManipulate = new Date(monthToManipulate + ' 1 ,' + year);
+    console.log(dateToManipulate);
+    let startDayOfMonthToManipulate = dateToManipulate.getDay();
+    console.log(startDayOfMonthToManipulate);
 
     let numOfDays = dayPerMonth[month];
 
     let counter = 1;
-    const calendarGrid = document.getElementById('main-calendar');
+    const mainCalendarGrid = document.getElementById('main-calendar');
 
-    while (calendarGrid.firstChild) {
-        calendarGrid.removeChild(calendarGrid.firstChild);
+    while (mainCalendarGrid.firstChild) {
+        mainCalendarGrid.removeChild(mainCalendarGrid.firstChild);
     }
     while (counter <= numOfDays) {
         let newDay = document.createElement('section');
 
-        if (weekdays > 0) {
-            calendarGrid.appendChild(newDay);
-            weekdays--;
+        if (startDayOfMonthToManipulate > 0) {
+            mainCalendarGrid.appendChild(newDay);
+            startDayOfMonthToManipulate--;
         }
         else {
             if (counter === day && month === currentDate.getMonth()) {
                 newDay.className = 'main-calendar__day__current';
                 newDay.innerText = counter;
-                calendarGrid.appendChild(newDay);
+                mainCalendarGrid.appendChild(newDay);
                 counter++;
 
             } else {
                 newDay.className = 'main-calendar__day';
                 newDay.innerText = counter;
-                calendarGrid.appendChild(newDay);
+                mainCalendarGrid.appendChild(newDay);
                 counter++;
             }
         }
@@ -51,9 +54,10 @@ const displayCalendar = (date) => {
 
     document.getElementById("calendar-header__year").innerHTML = year;
 
-    document.getElementById("main-calendar").value = calendarGrid;
+    document.getElementById("main-calendar").value = mainCalendarGrid;
 
 };
+
 
 
 
@@ -83,12 +87,12 @@ window.onload = function () {
     currentDate = new Date();
     displayCalendar(currentDate);
     document.getElementById('button__next-month').onclick = function () {
-        nextDate = decreaseMonthAndYear(currentDate);
-        increaseMonthAndYear(nextDate);
+        nextDate = increaseMonthAndYear(currentDate);
+        displayCalendar(nextDate);
     };
 
-    // document.getElementById('button__previous-month').onclick = function() {
-    //     previousDate = decreaseMonthAndYear(currentDate);
-    //     previousdisplayCalendar(previousDate);
-    // };
+    document.getElementById('button__previous-month').onclick = function() {
+        previousDate = decreaseMonthAndYear(currentDate);
+        displayCalendar(previousDate);
+    };
 };
