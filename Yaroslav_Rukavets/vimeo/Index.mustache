@@ -8,20 +8,46 @@
         <title>Document</title>
         <link rel="stylesheet" href="style/bLayout.css">
         <link rel="stylesheet" href="style/bHeader.css">
+        <link rel="stylesheet" href="style/bMain-navigation.css">
         <link rel="stylesheet" href="style/bLogo.css">
+        <link rel="stylesheet" href="style/creator-footer.css">
     </head>
     <body class="Layout">
         <header class="Layout__header">
             <div class="Header">
-                <div class="Header__logo-mover">
-                    <div class="Logo">
-                        <img class="Logo__picture" src="http://www.newagora.ca/wp-content/uploads/2017/03/167f9dbd-7f63-46fb-8c3f-d28aeec0a7bb-300x102.png">
+                <div class="Header__wrapper">
+                    <div class="Header__logo-mover">
+                        <div class="Logo">
+                            <img class="Logo__picture" src="http://www.newagora.ca/wp-content/uploads/2017/03/167f9dbd-7f63-46fb-8c3f-d28aeec0a7bb-300x102.png">
+                        </div>
+                    </div>
+                    <div class="Header__main-navigation-mover">
+                        <nav class="Main-navigation">
+                            <button class="Main-navigation__join">Join</button>
+                            <a class="Main-navigation__item" href="">Log in</a>
+                            <a class="Main-navigation__item" href="">Host videos</a>
+                            <a class="Main-navigation__item" href="">Sell</a>
+                            <a class="Main-navigation__item" href="">Watch</a>
+                        </nav>
                     </div>
                 </div>
             </div>
         </header>
         <main class="Layout__payload">
-            Lorem ipsum dolor sit amet.
+            <section class="creator-footer">
+                <div class="creator-footer__wrapper">
+                    <h2 class="creator-footer__title">Welcome to the world’s best community of video creators</h2>
+                    <aside class="creator-footer__link-block">
+                        <a class="creator-footer__link creator-footer__link-find" href="">Find a plan</a>
+                        <a class="creator-footer__link creator-footer__link-join" href="">Join free</a>
+                    </aside>
+                </div>
+                <cite class="creator-footer__picture-info">
+                    Wilderness
+                    <br>from
+                    <strong>Studiocanoe</strong>
+                </cite>
+            </section>
         </main>
         <footer class="Layout__footer"></footer>
     </body>
