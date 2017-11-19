@@ -1,0 +1,135 @@
+.Aside {
+  &__footer-help {
+    border-bottom: 1px solid lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  &__footer-settings {
+    display: block;
+    color: #111111;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+    white-space: nowrap;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+  &__footer-reference,
+  &__footer-feedback {
+    display: block;
+    color: #111111;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+  &__footer-copyright {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  &__footer-copyright-item {
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__footer-terms {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  &__footer-terms-item {
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  &__footer-copyright-line {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@body-color: #111111;
+@font-size: 14px;
+@border-width: 1px;
+@border-style: solid;
+@border-color: lightgray;
+@margin-left: 50px;
+@a-height: 21px;
+
+.Aside {
+  &__section {
+    border-bottom: @border-width @border-style @border-color;
+    vertical-align: middle;
+  }
+
+  &__main-navigation-item,
+  &__section-item {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: @a-height;
+    white-space: nowrap;
+    color: @body-color;
+    font-size: @font-size;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+  &__main-navigation-title,
+  &__section-title {
+    margin-left: 20px;
+  }
+  &__main-navigation-icon,
+  &__main-navigation-title {
+    vertical-align: bottom;
+  }
+  &__section-icon,
+  &__section-title {
+    vertical-align: bottom;
+  }
+
+  &__main-navigation-icon {
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+  }
+
+  &__section-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+
+  &__section-header {
+    text-transform: uppercase;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: @font-size;
+    color: gray;
+    font-weight: 600;
+    letter-spacing: .007px;
+    margin-left: 40px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
+}

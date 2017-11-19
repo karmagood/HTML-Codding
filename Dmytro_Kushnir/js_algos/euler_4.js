@@ -41,11 +41,4 @@ function biggestPalindromProductOf2Numbers(firstFrom, firstTo, secondFrom, secon
     return ( (maxRez > 0) ? maxRez : false )
 }
 
-console.time('1');
 console.log(biggestPalindromProductOf2Numbers(900, 1000, 900, 1000));
-console.timeEnd('1');
-
-
-console.time('2');
-console.log(biggestPalindromProductOf2Numbers(1, 1000, 1, 1000)); // just for fair check
-console.timeEnd('2');
