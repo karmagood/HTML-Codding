@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-image: url(images/main-background.jpg);
+  background-repeat: no-repeat;
+  font-family: 'Didact Gothic', sans-serif; }
+
+button {
+  font-family: 'Didact Gothic', sans-serif; }
+
+/*# sourceMappingURL=main.css.map */
