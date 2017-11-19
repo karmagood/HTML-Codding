@@ -25,5 +25,3 @@ let test_arr = getRandomArray(10);
 
 console.log(test_arr);
 console.log( bubbleSort(test_arr) );
-
-// bubbleSort([10,3,2,5]);

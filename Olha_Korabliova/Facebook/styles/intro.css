@@ -1,0 +1,27 @@
+.nav-bar__block-title {
+  margin: 10px;
+}
+#intro__questions {
+  font-size: 14px;
+  padding: 10px;
+  border: #DDDFE2 solid 1px;
+  border-radius: 5px;
+  background-color: #F6F7F9;
+  margin: 5px 15px 5px 5px;
+}
+#intro__education-etc {
+  border-top: #DDDFE2 solid 1px;
+  margin: 15px 5px 15px 5px;
+  font-size: 13px;
+  padding: 2px;
+}
+#intro__add-links {
+  padding: 5px;
+  border: #4080ff solid 1px;
+  border-radius: 5px;
+  margin: 5px 10px 5px 5px;
+}
+#intro__add-links a {
+  font-size: 13px;
+  color: #4080ff;
+}

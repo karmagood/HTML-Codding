@@ -6,6 +6,21 @@
     height: 800px;
 }
 
+.World__row {
+    overflow: hidden;
+}
+
+.World__cell {
+    /*margin: 2px;*/
+    height: 20px;
+    width: 20px;
+    background: #bdc3c7;
+    font-size: 8px;
+    text-align: center;
+    vertical-align: 10px;
+    float: left;
+    cursor: pointer;
+}
 .piece__row {
     overflow: hidden;
 }
@@ -21,6 +36,7 @@
     float: left;
     cursor: pointer;
 }
+
 
 .piece__cell_empty {
     background-color: transparent !important;

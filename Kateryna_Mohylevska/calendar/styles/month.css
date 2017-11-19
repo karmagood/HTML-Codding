@@ -1,0 +1,17 @@
+.month {
+  color: #fff;
+  background-color: #8e44ad;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .month__previous, .month__next {
+    color: inherit;
+    background: inherit;
+    border: none;
+    height: 38px;
+    font-size: 30px; }
+
+/*# sourceMappingURL=month.css.map */
