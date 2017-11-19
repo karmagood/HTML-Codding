@@ -3,11 +3,11 @@ const {swap, getRandomArray, getRandomNumber, isArraySorted, checkArraySorting} 
 
 
 const quickSort = (test_arr) => {
-    return quickSortAlgo(test_arr, 0, test_arr.length);
+    return quickSortAlgoRandomPivot(test_arr, 0, test_arr.length);
 };
 
 
-const quickSortAlgo = (arr, l , r) =>{
+const quickSortAlgoRandomPivot = (arr, l , r) =>{
     /*
     * sorts using 1 pivot method of sorting in same memory.
      *  */
@@ -18,7 +18,13 @@ const quickSortAlgo = (arr, l , r) =>{
         if (arr[l] > arr[r]) swap(arr, l, r);
         return;
     }
-    const pivot = arr[l];
+
+    //random pivot modification=====================
+    const pivot_index = getRandomNumber(l, r-1);
+    const pivot = arr[pivot_index];
+    swap(arr, l , pivot_index);
+    //random pivot modification======================
+
     let newPivotPosition = l; // track positon on which pivot could be placed
 
     for (let i = l+1; i < r; i++){
@@ -30,8 +36,8 @@ const quickSortAlgo = (arr, l , r) =>{
     }
 
     if (arr[l] > arr[newPivotPosition] ) swap(arr, l, newPivotPosition); // place pivot on its new place
-    quickSortAlgo(arr, l , newPivotPosition);
-    quickSortAlgo(arr, newPivotPosition+1, r);
+    quickSortAlgoRandomPivot(arr, l , newPivotPosition);
+    quickSortAlgoRandomPivot(arr, newPivotPosition+1, r);
     return arr;
 };
 
@@ -39,7 +45,7 @@ let test_arr = getRandomArray(5);
 
 
 console.log(test_arr);
-quickSortAlgo(test_arr, 0, test_arr.length);
+quickSortAlgoRandomPivot(test_arr, 0, test_arr.length);
 console.log(test_arr); // array is mutated
 
-checkArraySorting(iterations = 1000, testSizeFrom = 3, testSizeTo = 300, sortingFunction = quickSort);
+checkArraySorting(iterations = 1000, testSizeFrom = 1, testSizeTo = 500, sortingFunction = quickSort);

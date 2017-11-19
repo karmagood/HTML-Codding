@@ -29,7 +29,7 @@ const checkArraySorting = (iterations, testSizeFrom, testSizeTo, sortingFunction
 const isArraySorted = (arr) => {
     let isSorted = true;
 
-    for (let i = 0; i < arr.length-1 && isSorted; i++){
+    for (let i = 0; arr && i < arr.length-1 && isSorted; i++){
         if (arr[i] > arr[i+1])
             isSorted = false;
     }
