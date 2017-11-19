@@ -1,31 +1,40 @@
-
+@background: #fff;
+@border-color: #e5e5e5;
+@header-color: #f3f3f3;
 .Layout{
   color: #000;
   margin:0;
   min-width:900px;
   &__header{
-    height:110px;
+    height:60px;
     position: relative;
-    background-color:#f3f3f3 ;
-
+    background-color: @header-color ;
+    border-bottom: 1px solid @border-color ;
   }
-
+  &__mail-settings{
+    height: 40px;
+    background-color: @background;
+    border-bottom: 1px solid @border-color;
+    padding-top: 10px;
+  }
   &__aside{
     position: fixed;
     width:200px;
     bottom:0;
-    top:110px;
+    top: 112px;
+    overflow-x: hidden;
+    overflow-y: auto ;
+    background-color: @background;
 
-    overflow: auto;
   }
   &__main{
       left: 200px;
       padding: 0;
       position: fixed;
-      top: 110px;
+      top: 112px;
       overflow: auto;
       bottom: 0;
       right: 0;
-      background: #f1f1f1;
+    background-color: @background;
     }
   }

@@ -1,0 +1,33 @@
+.calendar {
+  width: 490px;
+  margin: auto;
+  position: relative;
+  top: 10px; }
+
+.month {
+  color: #fff;
+  background: #FA5051;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px 10px 0 0; }
+
+.month h2 {
+  padding-top: 10px; }
+
+.month-day {
+  background: #fff;
+  float: left;
+  color: #848484;
+  list-style: none;
+  text-align: center;
+  width: 70px;
+  height: 60px;
+  border: 1px solid #e8e8e8; }
+
+.month-day--prev {
+  color: #e8e8e8; }
+
+.month-day:nth-child(2n+1) {
+  background: #fefce3; }
+
+/*# sourceMappingURL=calendar webpack.css.map */

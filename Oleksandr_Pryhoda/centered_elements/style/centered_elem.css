@@ -1,0 +1,10 @@
+.centered-elem {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    bottom: 40%;
+    left: 40%;
+    width: 20%;
+    height: 30%;
+    text-align: justify;
+}
