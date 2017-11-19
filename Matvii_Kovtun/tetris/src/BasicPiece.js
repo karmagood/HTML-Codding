@@ -5,7 +5,7 @@ import {getRandom, getRandomColor} from "./utils";
 class BasicPiece {
     constructor() {
         this.shape = clone(BasicPiece.shapes[getRandom(0, BasicPiece.shapes.length)]);
-        this.color = getRandomColor();
+        this.color = "black"; // getRandomColor()
     }
 
 

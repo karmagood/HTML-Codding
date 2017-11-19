@@ -2,11 +2,11 @@ import {WORLD_HEIGHT, WORLD_WIDTH, EMPTY, BLOCK, FROZEN} from "./config";
 import Piece from './Piece';
 import Fragment from './Fragment';
 import {intersection, reduce} from 'ramda';
+import {getRandomColor} from './utils';
 
 
 class Board {
-    // TODO: Remove fragmemts[], support binary matrix instead of rebuilding it
-    // TODO: render binary matrix + active fragment, add score
+
 
     constructor(width, height) {
         this.activeFragment = undefined;
@@ -26,11 +26,11 @@ class Board {
 
     render() {
 
-        return `<div class="World">
+        return `<div class="World" style="background-color: ${getRandomColor()}">
                  ${this.entities.map(row => `
                     <div class="World__row">
                         ${row
-            .map(cell => `<div class="World__cell" style="background-color: ${cell || "black"}"></div>`)
+            .map(cell => `<div class="World__cell" style="background-color: ${cell || getRandomColor()}"></div>`)
             .join("")}
                      </div>`).join("")}
                  ${this.getActiveFragment().render()}       
