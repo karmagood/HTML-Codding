@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/friend_suggestion.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Friend Suggestions</title>
+</head>
+<body>
+<div class="ad-feed__block">
+    <h5 class="ad-feed__title">People You May Know <a href="#">See All</a></h5>
+    {{#friends-suggestions}}
+        <div class="ad-feed__block-friend">
+            <a href="{{user-link}}">
+                <img class="user-profile__user-pic"
+                     src="{{user-picture}}"/>
+            </a>
+            <div class="ad-feed__block-friend-info">
+                <a class="ad-feed__block-friend-name" href="{{user-link}}">{{user-name}}</a><br>
+                <a class="ad-feed__block-mutual-frs" href="#">{{mutual-friends}}</a><br>
+                <form class="ad-feed__block-add-button" action="#">
+                    <button type="button">
+                        <i class="fa fa-user-plus"></i>
+                        Add Friend
+                    </button>
+                </form>
+            </div>
+        </div>
+    {{/friends-suggestions}}
+</div>
+</body>
+</html>

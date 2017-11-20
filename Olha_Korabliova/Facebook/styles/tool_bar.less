@@ -1,0 +1,35 @@
+@import "vars.less";
+
+.tool-bar__section-title {
+  color: @dark-grey;
+  margin: 10px 5px 5px 5px;
+}
+
+.tool-bar__section-item {
+  &.active {
+    background-color: @milk;
+    border: @main-border;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  &:not(.tool-bar__see-more) {
+    padding: 0 3px 0 3px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    color: @black;
+    &:hover {
+      background-color: @milk;
+      border: @main-border;
+      border-radius: 3px;
+    }
+    &:active {
+      background-color: @border-grey;
+    }
+  }
+}
+
+.tool-bar__see-more {
+  font-size: 12px;
+  padding-left: 5px;
+  color: @main-blue;
+}
