@@ -7,6 +7,12 @@
 (function () {
     'use strict';
 
+    window.mobilecheck = function() {
+        let check = false;
+        (function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+        return check;
+    };
+
     /**
      *
      * Class representing a cell
@@ -163,16 +169,16 @@
             let temp_x = this.getCoords().x;
             let temp_y = this.getCoords().y;
             switch (direction) {
-                case 'ArrowUp':
+                case 'up':
                     temp_y--;
                     break;
-                case 'ArrowDown':
+                case 'down':
                     temp_y++;
                     break;
-                case 'ArrowLeft':
+                case 'left':
                     temp_x--;
                     break;
-                case 'ArrowRight':
+                case 'right':
                     temp_x++;
                     break;
                 default:
@@ -253,7 +259,11 @@
 
                     if (world[temp_y][temp_x] !== GameMeta.cell.wall &&
                         world[temp_y][temp_x] !== GameMeta.cell.block &&
-                        world[temp_y][temp_x] !== GameMeta.cell.enemy) {
+                        world[temp_y][temp_x] !== GameMeta.cell.enemy &&
+                        world[temp_y][temp_x] !== GameMeta.cell.enemy_from_bottom &&
+                        world[temp_y][temp_x] !== GameMeta.cell.enemy_from_left &&
+                        world[temp_y][temp_x] !== GameMeta.cell.enemy_from_top &&
+                        world[temp_y][temp_x] !== GameMeta.cell.enemy_from_right) {
                         posiableCoords.push({x: temp_x, y: temp_y});
                     }
                 }
@@ -332,7 +342,15 @@
             road: 0,
             wall: 1,
             enemy: 2,
+            enemy_from_top: 21,
+            enemy_from_right: 22,
+            enemy_from_bottom: 23,
+            enemy_from_left: 24,
             player: 3,
+            player_from_top: 31,
+            player_from_right: 32,
+            player_from_bottom: 33,
+            player_from_left: 34,
             block: 4,
             fuel: 5
         }
@@ -364,15 +382,38 @@
                 case GameMeta.cell.road:
                     className = "playground__cell--road";
                     break;
+                case GameMeta.cell.enemy:
+                    className = "playground__cell--enemy";
+                    break;
+                case GameMeta.cell.enemy_from_top:
+                    className = "playground__cell--enemy playground__cell--enemy-from-top";
+                    break;
+                case GameMeta.cell.enemy_from_right:
+                    className = "playground__cell--enemy playground__cell--enemy-from-right";
+                    break;
+                case GameMeta.cell.enemy_from_bottom:
+                    className = "playground__cell--enemy playground__cell--enemy-from-bottom";
+                    break;
+                case GameMeta.cell.enemy_from_left:
+                    className = "playground__cell--enemy playground__cell--enemy-from-left";
+                    break;
                 case GameMeta.cell.player:
                     className = "playground__cell--player";
                     break;
+                case GameMeta.cell.player_from_top:
+                    className = "playground__cell--player playground__cell--player-from-top";
+                    break;
+                case GameMeta.cell.player_from_right:
+                    className = "playground__cell--player playground__cell--player-from-right";
+                    break;
+                case GameMeta.cell.player_from_bottom:
+                    className = "playground__cell--player playground__cell--player-from-bottom";
+                    break;
+                case GameMeta.cell.player_from_left:
+                    className = "playground__cell--player playground__cell--player-from-left";
+                    break;
                 case GameMeta.cell.wall:
                     className = "playground__cell--wall";
-                    break;
-                case GameMeta.cell.enemy:
-                    className = "playground__cell--enemy";
-                    // className = "playground__cell--player";
                     break;
                 case GameMeta.cell.fuel:
                     className = "playground__cell--fuel";
@@ -417,7 +458,7 @@
     class Game {
         constructor(args) {
             let _size = args.size || 10;
-            let _enemiesNumber = args.enemiesNumber || 4;
+            let _enemiesNumber = args.enemiesNumber|| 4;
             let _enemiesPower = args.enemiesPower || 3;
             let _fuelsNumber = args.fuelsNumber || 2;
             let _world, _enemies, _player, _blocks = [], _fuels;
@@ -478,6 +519,10 @@
                 return _world;
             };
 
+            this.addEnemy = () => {
+                _enemies.push(new Enemy(_world));
+            };
+
             this.getEnemies = () => {
                 return _enemies;
             };
@@ -496,15 +541,24 @@
                         newCoords = enemy.move(_world);
                     if( _world[newCoords.y][newCoords.x] === GameMeta.cell.fuel){
                         this.updateFuels(newCoords);
-                        this.addScore(-10);
+                        // this.addScore(-10);
                     }
                     _world[oldCoords.y][oldCoords.x] = GameMeta.cell.road;
-                    _world[newCoords.y][newCoords.x] = GameMeta.cell.enemy;
+                    if(newCoords.y > oldCoords.y)
+                        _world[newCoords.y][newCoords.x] = GameMeta.cell.enemy_from_top;
+                    else if(newCoords.y < oldCoords.y)
+                        _world[newCoords.y][newCoords.x] = GameMeta.cell.enemy_from_bottom;
+                    else if(newCoords.x > oldCoords.x)
+                        _world[newCoords.y][newCoords.x] = GameMeta.cell.enemy_from_left;
+                    else if(newCoords.x < oldCoords.x)
+                        _world[newCoords.y][newCoords.x] = GameMeta.cell.enemy_from_right;
+                    else
+                        _world[newCoords.y][newCoords.x] = GameMeta.cell.enemy;
                     return enemy;
                 });
             };
 
-            this.movePlayer = (oldCoords, newCoords, isOnBlock) => {
+            this.movePlayer = (oldCoords, newCoords, isOnBlock, direction) => {
                 // if old coords not equal to new coords, then player was moved
                 if (newCoords.x !== oldCoords.x || newCoords.y !== oldCoords.y) {
 
@@ -524,12 +578,33 @@
                         this.addScore(10);
                     }
 
+                    switch (direction) {
+                        case 'up':
+                            _world[newCoords.y][newCoords.x] = GameMeta.cell.player_from_bottom;
+                            break;
+                        case 'down':
+                            _world[newCoords.y][newCoords.x] = GameMeta.cell.player_from_top;
+                            break;
+                        case 'left':
+                            _world[newCoords.y][newCoords.x] = GameMeta.cell.player_from_right;
+                            break;
+                        case 'right':
+                            _world[newCoords.y][newCoords.x] = GameMeta.cell.player_from_left;
+                            break;
+                        default:
+                            break;
+                    }
+                    return true;
+                } else{
+                    _world[newCoords.y][newCoords.x] = GameMeta.cell.player;
                 }
+                return false;
 
-                _world[newCoords.y][newCoords.x] = GameMeta.cell.player;
             };
 
             this.addLastMovements = (movement) => {
+                if(movement.type === 'direction')
+                    _lastMovements['prevDirection'] = _lastMovements['direction']?_lastMovements['direction']: null;
                 _lastMovements[movement.type] = movement.val;
             };
 
@@ -545,7 +620,7 @@
             this.updateBlocks = () => {
                 _blocks = _blocks.filter((block) => { // filter block that will be exist after this interval iteration
                     let cellType = _world[block.getCoords().y][block.getCoords().x];
-                    if (block.reduceTime(100) < 0) { // block time is out
+                    if (block.reduceTime(150) < 0) { // block time is out
                         if (Cell.compareCoords(block, _player)) // if player at the time on this block
                             _player.onBlock(false);
                         if (cellType === GameMeta.cell.block) // if depicted block, replace it with road
@@ -577,6 +652,9 @@
             this.updateScore = () => {
                 document.getElementById('score').innerHTML = _score;
             };
+             this.getScore = () => {
+                return _score;
+             };
 
         }
 
@@ -618,10 +696,35 @@
         initControls() {
             document.addEventListener('keydown', (event) => {
                 if (event.code.indexOf('Arrow') !== -1)
-                    this.addLastMovements({type: 'direction', val: event.code});
+                    this.addLastMovements({type: 'direction', val: event.code.split('Arrow')[1].toLowerCase()});
                 if (event.code === 'Space')
                     this.addLastMovements({type: 'supplier', val: event.code});
             });
+        }
+
+        /**
+         * Set event listeners on mobile swipes
+         */
+        initMobileControls() {
+            let buttons = document.getElementsByClassName('controllers__button');
+            // console.log(buttons);
+            for(let i  = 0; i < buttons.length; i++){
+                buttons[i].addEventListener('click', (event) => {
+                    if(event.target.dataset.value === 'space')
+                        this.addLastMovements({type: 'supplier', val: 'space'});
+                    else
+                        this.addLastMovements({type: 'direction', val: event.target.dataset.value});
+                });
+            }
+            // buttons.forEach((button) => {
+            //     button.addEventListener('click', (event) => {
+            //         if(event.target.dataset.value === 'space')
+            //             this.addLastMovements({type: 'supplier', val: 'space'});
+            //         else
+            //             this.addLastMovements({type: 'direction', val: event.target.dataset.value});
+            //
+            //     })
+            // })
         }
 
         /**
@@ -635,8 +738,20 @@
                 this.addLastMovements({type: 'supplier', val: null}); // reset last movement for supplier
             }
 
-            this.movePlayer(this.getPlayer().getCoords(), this.getPlayer().move(this.getWorld(), this.getLastMovements().direction), this.getPlayer().isOnBlock());
-            this.addLastMovements({type: 'direction', val: null}); // reset last movement for direction
+            let isMoved = this.movePlayer(this.getPlayer().getCoords(), this.getPlayer().move(this.getWorld(),
+                this.getLastMovements().direction), this.getPlayer().isOnBlock(), this.getLastMovements().direction);
+            if(!isMoved){
+                this.movePlayer(this.getPlayer().getCoords(), this.getPlayer().move(this.getWorld(),
+                    this.getLastMovements().prevDirection), this.getPlayer().isOnBlock(),this.getLastMovements().prevDirection);
+            } else{
+                this.addLastMovements({type: 'prevDirection', val: this.getLastMovements().direction});  // reset last movement for direction
+            }
+
+            if(Math.floor(this.getScore()/40) === this.getEnemies().length-3)
+                this.addEnemy();
+
+            if(this.isOver())
+                this.stop();
 
             this.updateBlocks();
 
@@ -686,14 +801,17 @@
          */
         start() {
             this.render();
-            this.initControls();
+            if(mobilecheck())
+                this.initMobileControls();
+            else
+                this.initControls();
             this.setInterval(() => {
                 this.calculate();
                 this.render();
                 this.updateScore();
                 if(this.isOver())
                     this.stop();
-            }, 250);
+            }, 150);
             this.clock();
         }
 
@@ -706,11 +824,25 @@
         }
     }
 
-    let game = new Game({
-        size: 20,
-        enemiesNumber: 4,
-        enemiesPower: 3
-    });
 
-    game.start();
+    window.onload = () => {
+        let gameConfig;
+
+        if(mobilecheck()){
+            gameConfig = {
+                size: 10,
+                enemiesNumber: 4
+            };
+        } else{
+            gameConfig = {
+                size: 20,
+                enemiesNumber: 4
+            };
+        }
+
+        let game = new Game(gameConfig);
+
+        game.start();
+    }
+
 }());
