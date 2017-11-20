@@ -2,18 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CatholicRacer</title>
     <link rel="stylesheet" href="style/game.css">
 </head>
 <body>
-<section class="containter">
+<section class="container">
     <div class="playground"></div>
     <div class="statistic">
         <p>Time: <span id="time">00:00:00</span></p>
         <p>Score: <span id="score">0</span></p>
     </div>
+    <div class="controllers">
+        <button class="controllers__button controllers__button--large" data-value="left"><</button>
+
+        <div class="controllers__container">
+            <button class="controllers__button" data-value="up">^</button>
+            <button class="controllers__button" data-value="space">O</button>
+            <button class="controllers__button" data-value="down">v</button>
+        </div>
+        <button class="controllers__button controllers__button--large" data-value="right">></button>
+
+    </div>
 </section>
 
-<script src="game.js"></script>
+<script src="swipe.js"></script>
+<script src="game.js" defer></script>
 </body>
 </html>

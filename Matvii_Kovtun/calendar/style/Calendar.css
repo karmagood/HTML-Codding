@@ -1,0 +1,50 @@
+
+
+.Calendar {
+    margin:10px auto;
+    width: 294px;
+}
+
+
+.Calendar__month {
+    display: inline-block;
+    width: 185px;
+    text-align: center;
+    background-color: yellow;
+    margin:10px 0;
+
+
+}
+
+.Calendar__button_prev {
+
+}
+
+.Calendar__button_next {
+    /*float: right;*/
+}
+
+
+.Calendar__week {
+    overflow: hidden;
+
+}
+
+.Calendar__week-header {
+    overflow: hidden;
+}
+
+.Calendar__day {
+    float: left;
+    width: 40px;
+    height:40px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 40px;   /* text to center*/
+    border:1px solid black;
+    background-color: rgb(142, 68, 173);
+}
+
+.Calendar__day-busy {
+    background-color: red;
+}

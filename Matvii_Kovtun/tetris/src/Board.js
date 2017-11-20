@@ -25,12 +25,12 @@ class Board {
 
 
     render() {
-
-        return `<div class="World" style="background-color: ${getRandomColor()}">
+        //${getRandomColor()}
+        return `<div class="World" style="background-color: #96E7C6 "> 
                  ${this.entities.map(row => `
                     <div class="World__row">
                         ${row
-            .map(cell => `<div class="World__cell" style="background-color: ${cell || getRandomColor()}"></div>`)
+            .map(cell => `<div class="World__cell" style="background-color: ${cell && getRandomColor()}"></div>`)
             .join("")}
                      </div>`).join("")}
                  ${this.getActiveFragment().render()}       
