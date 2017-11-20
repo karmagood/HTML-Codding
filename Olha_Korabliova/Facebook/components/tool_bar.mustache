@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/tool_bar.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Tool Bar</title>
+</head>
+<body>
+<nav class="tool-bar">
+    <section class="tool-bar__section">
+        <h4 class="tool-bar__section-title">Account Settings</h4>
+        <a class="tool-bar__section-item" href="#">
+            <img class="user-profile__user-pic"
+                 src="../images/user_avatar.jpeg" style="width: 25px;"/>
+            Olya Korabliova
+        </a>
+        <br>
+        <a class="tool-bar__section-item active" href="#">
+            <i class="fa fa-newspaper-o" style="color: #5D92FF;"></i>
+            News Feed
+        </a>
+        <br>
+        <a class="tool-bar__section-item" href="#">
+            <i class="fa fa-envelope-o" style="color: #5D92FF;"></i>
+            Messenger
+        </a>
+    </section>
+    {{#tool-bar__main-page}}
+        <section class="tool-bar__section">
+            <h4 class="tool-bar__section-title {{status}}">{{title}}</h4>
+            {{#items}}
+                <a class="tool-bar__section-item" href="{{link}}">
+                    <i class="{{icon-class}}" style="{{icon-style}}"></i>
+                    {{name}}
+                </a>
+                <br>
+            {{/items}}
+            <a class="tool-bar__see-more" href="#">
+                <i class="fa fa-caret-down"> See More...</i>
+            </a>
+        </section>
+    {{/tool-bar__main-page}}
+    <section class="tool-bar__section">
+        <h4 class="tool-bar__section-title">Create</h4>
+        <a class="tool-bar__see-more" href="#">Ad</a>
+        <a class="tool-bar__see-more" href="#">Page</a>
+        <a class="tool-bar__see-more" href="#">Group</a>
+        <a class="tool-bar__see-more" href="#">Event</a>
+    </section>
+</nav>
+</body>
+</html>

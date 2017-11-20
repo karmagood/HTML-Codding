@@ -1,0 +1,68 @@
+@import "vars.less";
+
+.aside-block {
+  border: @border-settings;
+  padding-left: 5px;
+    & h6 {
+    margin: 5px;
+    color: @light-grey;
+  }
+  & img {
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+  }
+}
+
+.aside-block__games.see-more {
+  color: @light-grey;
+  float: right;
+}
+
+#your-games, #recommended-games {
+  border-bottom: @border-settings;
+  padding-bottom: 5px;
+}
+
+.online-friends {
+  border-bottom: @border-settings;
+  overflow: auto;
+  position: relative;
+  height: 45%;
+  padding: 3px;
+  margin: 3px;
+  & a {
+    line-height: 3px;
+    color: @black;
+  }
+}
+
+span.online {
+  background: #42b72a;
+  border-radius: 50%;
+  display: inline-block;
+  height: 6px;
+  margin-left: 4px;
+  width: 6px;
+}
+
+.more-contacts {
+  border-top: @border-settings;
+  overflow: auto;
+  position: relative;
+  height: 45%;
+  padding: 3px;
+  margin: 3px;
+  & a {
+    line-height: 3px;
+    color: @black;
+  }
+  & h5 {
+    padding-top: 5px;
+    margin: 2px;
+  }
+}
+
+.aside-block__friends.user-profile p {
+  font-size: 14px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <title>Friends</title>
+</head>
+<body>
+<section class="nav-bar__block">
+    <h4 class="nav-bar__block-title">Friends</h4>
+    <div class="nav-bar__photos">
+        {{#friends}}
+            <a href="{{photo-link}}">
+                <img class="{{image-class}}" src="{{img-src}}"/>
+            </a>
+            <!--<span>{{friend-name}}</span>-->
+        {{/friends}}
+    </div>
+    <span>See what you have in common with your friends.</span>
+    <form action="#">
+        <button type="button">View</button>
+    </form>
+</section>
+</body>
+</html>
