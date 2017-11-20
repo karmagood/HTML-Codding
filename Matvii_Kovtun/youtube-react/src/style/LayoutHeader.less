@@ -1,0 +1,72 @@
+:root {
+  --icon-width: 24px;
+  --icon-height: 24px;
+  --header-height: calc(46px + 10px * 2);
+}
+
+.layout-header {
+  height: 46px;
+  background-color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  &__search {
+    height: 29px;
+    width: 400px;
+  }
+
+  &__logo {
+    width: 80px;
+    margin-left: 15px;
+    margin-right: 70px;
+    vertical-align: middle;
+    line-height: var(--header-height);
+  }
+
+  &__settings {
+    float: right;
+    vertical-align: middle;
+    text-align: right;
+    //background-color: gold;
+  }
+
+  &__button {
+    color: transparent;
+    width: var(--icon-width);
+    height: var(--icon-height);
+    vertical-align: middle;
+    border: none;
+
+    &-hamburger-menu {
+      background: transparent url("../images/hamburger.svg") no-repeat;
+      &:active, &:focus,
+      &:enabled {
+        outline: none;
+        border: none;
+
+      }
+    }
+
+    &-upload {
+      background: url("../images/upload.svg") no-repeat;
+    }
+
+    &-youtube-apps {
+      background: url("../images/youtube-apps.svg") no-repeat;
+    }
+    &-tools {
+      background: url("../images/tools.svg") no-repeat;
+    }
+  }
+
+  &__google-profile {
+
+  }
+
+  &__search-wrapper {
+    display: inline-block;
+  }
+}

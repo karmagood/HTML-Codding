@@ -1,9 +1,12 @@
+import {MONTHS} from "./const";
+
 class Calendar {
-    constructor(date) {
+    constructor(date,root_element) {
         this.date = date;
-        this.months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        this.months = MONTHS;
         this.month = this.date.getMonth();
         this.year = this.date.getFullYear();
+        this.root_element = root_element;
     }
 
     draw(){
@@ -13,7 +16,7 @@ class Calendar {
     }
 
     drawHeader(){
-        let calendarHeader = document.getElementsByClassName("month")[0];
+        let calendarHeader = this.root_element.querySelector(".month");
 
         let monthAndYear = document.createElement("h2");
         monthAndYear.classList.add("month__name");
@@ -36,7 +39,8 @@ class Calendar {
     }
 
     drawMonthDays(){
-        let monthDays = document.querySelector(".month-days");
+        console.log(this.root_element);
+        let monthDays = this.root_element.querySelector(".month-days");
         let allDays = "";
         let date = new Date(this.year, this.month, 1);
         let weekDay = date.getDay()|| 7;
@@ -67,14 +71,14 @@ class Calendar {
         monthDays.innerHTML = allDays;
         if(this.date.getMonth() == this.month){
             console.log("dsf");
-            let today = document.getElementsByClassName("month-day")[this.date.getDate()+weekDay-2];
+            let today = this.root_element.getElementsByClassName("month-day")[this.date.getDate()+weekDay-2];
             today.classList.add("month-day__today");
 
         }
     }
 
     drawWeekDays(){
-        let weekDays = document.querySelector(".days-name");
+        let weekDays = this.root_element.querySelector(".days-name");
         let daysName = ['MO','TU','WE','TH','FR','SA','SU'];
         for(let j=0; j<7; j++){
             let dayName = document.createElement('p');
@@ -92,7 +96,7 @@ class Calendar {
             this.year += 1;
         }
 
-        let monthName = document.querySelector(".month__name");
+        let monthName = this.root_element.querySelector(".month__name");
         monthName.innerHTML = this.months[this.month] + " " + this.year;
         this.drawMonthDays();
     }
@@ -103,12 +107,16 @@ class Calendar {
             this.month = 11;
             this.year -= 1;
         }
-        let monthName = document.querySelector(".month__name");
+        let monthName = this.root_element.querySelector(".month__name");
         monthName.innerHTML = this.months[this.month] + " " + this.year;
         this.drawMonthDays();
     }
 
 }
-
-let c = new Calendar(new Date());
+let root_element =document.getElementsByClassName("calendar")[0];
+let c = new Calendar(new Date(),root_element);
 c.draw();
+
+let root_element1 =document.getElementsByClassName("calendar")[1];
+let c1 = new Calendar(new Date(),root_element1);
+c1.draw();
