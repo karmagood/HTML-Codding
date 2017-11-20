@@ -65,6 +65,12 @@ class Calendar {
             }
         }
         monthDays.innerHTML = allDays;
+        if(this.date.getMonth() == this.month){
+            console.log("dsf");
+            let today = document.getElementsByClassName("month-day")[this.date.getDate()+weekDay-2];
+            today.classList.add("month-day__today");
+
+        }
     }
 
     drawWeekDays(){
