@@ -1,16 +1,16 @@
 import React from 'react';
-import '../style/LayoutHeader.css'
+import '../style/LayoutHeader.less'
 
 
 const LayoutHeader = ({img}) => (
     <div class="layout-header">
         <form class="layout-header__settings" action="#">
-            <button class="layout-header__upload">Upload video</button>
-            <button class="layout-header__youtube-apps">Open youtube applications</button>
-            <button class="layout-header__tools">Open account settings</button>
-            <button class="layout-header__sign-in">Sign in</button>
+            <button class="layout-header__button layout-header__button-upload">Upload video</button>
+            <button class="layout-header__button layout-header__button-youtube-apps">Open youtube applications</button>
+            <button class="layout-header__button layout-header__button-tools">Open account settings</button>
+            <button class="layout-header__button layout-header__button-sign-in">Sign in</button>
         </form>
-        <button class="layout-header__hamburger-menu">
+        <button class="layout-header__button layout-header__button-hamburger-menu">
 
             Toggle menu
         </button>
