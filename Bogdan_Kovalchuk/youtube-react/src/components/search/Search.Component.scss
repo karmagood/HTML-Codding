@@ -49,6 +49,7 @@ $input-font-size: 16px;
   &__button{
     font-size: $button-font-size;
     color: $color-grey;
+    cursor: pointer;
   }
 
   &__icon--small{
@@ -68,5 +69,6 @@ $input-font-size: 16px;
   &__keyboard-button{
     border: none;
     background-color: transparent;
+    cursor: pointer;
   }
 }

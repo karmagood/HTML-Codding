@@ -1,0 +1,64 @@
+$item-hover-background-color: #ececec;
+$icon-color: hsl(0, 0%, 53.3%);
+$icon-font-size: 24px;
+$list-border-color: #efefef;
+$list-header-color: rgba(17, 17, 17, 0.6);
+
+.AsideList{
+  &__list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid $list-border-color;
+  }
+
+  &__container{
+    padding: 8px 0;
+    &:first-child{
+      padding: 12px 0;
+    }
+  }
+  &__item{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 24px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background-color: $item-hover-background-color;
+    }
+
+    &-icon{
+      height: 24px;
+      color: $icon-color;
+      margin-right: 27px;
+    }
+    &-img{
+      height: 24px;
+      color: $icon-color;
+      margin-right: 27px;
+      border-radius: 50%;
+    }
+
+    &--active{
+      font-weight: 500;
+    }
+
+  }
+  &__header{
+    margin: 0;
+    padding: 8px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    color: $list-header-color;
+    letter-spacing: 0.007px;
+    display: block;
+    font-family: Roboto, Arial, sans-serif;
+
+  }
+
+}

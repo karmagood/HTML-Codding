@@ -3,6 +3,8 @@
  */
 import React from 'react';
 
+import VideoRow from '../../components/video.row/VideoRow.Component';
+
 // css styles
 import './Main.Component.css'
 
@@ -14,6 +16,7 @@ class Main extends  React.Component{
     render(){
         return (
             <main className="Main">
+                <VideoRow/>
             </main>
         );
     }
