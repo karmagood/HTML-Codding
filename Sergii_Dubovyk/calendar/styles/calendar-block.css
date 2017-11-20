@@ -1,0 +1,68 @@
+/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+@font-face {
+  font-family: "Master Works - Demo";
+  src: url("../fonts/mw_demo.ttf"); }
+/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+@font-face {
+  font-family: "Master Works - Demo";
+  src: url("../fonts/mw_demo.ttf"); }
+.calendar-block__calendar-grid {
+  margin-left: 8.5%;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 10% [col-start]);
+  grid-template-rows: repeat(5, 10% [row-start]);
+  grid-column-gap: 3%;
+  grid-row-gap: 7px;
+  font-family: "Master Works - Demo"; }
+  .calendar-block__calendar-grid_header {
+    grid-template-rows: repeat(1, 10% [row-start]); }
+.calendar-block__week-day {
+  width: 90%;
+  height: 60%;
+  margin: 3%;
+  padding: 10px;
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  font-family: inherit; }
+.calendar-block__day {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 3px;
+  color: #393939;
+  width: 90%;
+  height: 60%;
+  margin: 3%;
+  padding: 10px;
+  font-size: 30px;
+  border-radius: 3px; }
+  .calendar-block__day:active {
+    background-color: white; }
+  .calendar-block__day:hover {
+    cursor: pointer;
+    background-color: #FBFF57;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #979797;
+    font-weight: bold; }
+  .calendar-block__day:link {
+    background-color: white; }
+  .calendar-block__day:visited {
+    background-color: white; }
+  .calendar-block__day_hidden {
+    visibility: hidden; }
+.calendar-block__navigation {
+  width: 15px;
+  height: 25px;
+  cursor: pointer; }
+  .calendar-block__navigation_left {
+    position: absolute;
+    left: 2%;
+    top: 50%; }
+  .calendar-block__navigation_right {
+    position: absolute;
+    right: 2%;
+    top: 50%; }
+
+/*# sourceMappingURL=calendar-block.css.map */
