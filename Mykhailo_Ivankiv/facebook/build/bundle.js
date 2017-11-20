@@ -66,11 +66,83 @@
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
+/******/ ({
 
-console.log(111);
+/***/ 0:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Layout__ = __webpack_require__(1);
+
+
+new __WEBPACK_IMPORTED_MODULE_0__Layout__["a" /* default */]()
+    .render()
+    .then( html => document
+        .getElementById("application")
+        .innerHTML = html
+    )
+
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Articles__ = __webpack_require__(33);
+
+
+class Layout {
+    constructor () {
+        this.data = fetch("data/application.json")
+            .then (response=> response.json());
+    }
+
+    render () {
+        return Promise.all([
+            this.data,
+            new __WEBPACK_IMPORTED_MODULE_0__Articles__["a" /* default */]().render()
+
+        ])
+        .then ( ([data, articleHTML]) => `
+            <section>
+                <h1 class="Layout">${data.user.name} : ${data.user.age}</h1>
+                ${articleHTML}
+            </section>
+            `
+        );
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Layout);
+
+/***/ }),
+
+/***/ 33:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+class Articles {
+    constructor () {
+        this.data = fetch("data/articles.json")
+            .then (response => response.json());
+    }
+
+    render () {
+        return this.data
+            .then( data => data.map(article => `
+                <article class="">
+                    <h2>${article.title}</h2> 
+                    <p>${article.description}</p>
+                </article>
+            `).join("")
+            )
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (Articles);
 
 /***/ })
-/******/ ]);
+
+/******/ });
