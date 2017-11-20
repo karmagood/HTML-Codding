@@ -5,12 +5,17 @@ import {getRandom, getRandomColor} from "./utils";
 class BasicPiece {
     constructor() {
         this.shape = clone(BasicPiece.shapes[getRandom(0, BasicPiece.shapes.length)]);
-        this.color = getRandomColor();
+        this.color = "black"; // getRandomColor()
     }
 
 
     rotate() {
         this.shape = transpose(this.shape).map(el => reverse(el));
+
+    };
+
+    rotatePhantom() {
+        return transpose(this.shape).map(el => reverse(el));
 
     };
 
@@ -47,11 +52,32 @@ class BasicPiece {
     }
 }
 
-BasicPiece.shapes = [[[1],
+BasicPiece.shapes = [[
     [1],
     [1],
-    [1]], [[1, 1], [1, 1]],
-    [[1, 0], [1, 1], [1, 0]]];
+    [1],
+    [1]],
+
+    [[1, 1],
+     [1, 1]],
+
+    [[1, 0],
+     [1, 1],
+     [1, 0]],
+
+    [[1, 0],
+     [1, 0],
+     [1, 1]],
+
+    [[0, 1],
+     [0, 1],
+     [1, 1]],
+
+    [[1, 0],
+     [1, 1],
+     [0, 1]]
+
+];
 
 // BasicPiece.shapes = [[[1],[1],[1],[1],[1],[1],[1],[1],[1],[1]]];
 export default BasicPiece;

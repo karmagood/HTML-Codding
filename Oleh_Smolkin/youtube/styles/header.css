@@ -1,0 +1,51 @@
+.header {
+    background-color: #ffffff;
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 16px;
+    z-index: 50;
+}
+
+.header__search-section {
+    float: left;
+    margin-right: -500px;
+}
+
+.header__google-nav {
+    float: right;
+}
+
+.header__logo {
+    height: 18px;
+    margin: 19px;
+}
+
+.header__search {
+    vertical-align: top;
+    height: 24px;
+    margin: 16px;
+    margin-left: 60px;
+    width: 500px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0px 5px;
+}
+
+.header__user-icon {
+    border-radius: 50%;
+    height: 30px;
+    margin: 13px;
+}
+
+.header__icon {
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin: 19px 10px;
+}

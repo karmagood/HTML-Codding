@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/group_cover.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <title>Group Cover</title>
+</head>
+<body>
+<section class="group__header">
+    <a href="#">
+        <div id="header__cover-photo"></div>
+    </a>
+    <div>
+        {{#group-user-settings}}
+            <a class="header__some-settings" href="#">{{option}}</a>
+        {{/group-user-settings}}
+    </div>
+</section>
+</body>
+</html>

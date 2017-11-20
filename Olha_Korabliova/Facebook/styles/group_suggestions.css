@@ -1,0 +1,30 @@
+.ad-feed__short-group-info p {
+  font-size: 12px;
+  color: #90949C;
+  padding-left: 5px;
+}
+.ad-feed__short-group-info form {
+  position: relative;
+  top: -50px;
+  float: right;
+  padding: 10px;
+}
+.ad-feed__short-group-info form button {
+  color: #4B4F56;
+}
+.ad-feed__group-name {
+  color: #365899;
+  margin: 5px;
+}
+.ad-feed__group-cover {
+  padding: 0;
+  background-image: url("../images/cover_photo.jpg");
+  background-size: cover;
+  height: 100px;
+  border-radius: 3px 3px 0 0;
+}
+.ad-feed__group-ads {
+  margin-bottom: 10px;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+}
