@@ -1,0 +1,86 @@
+{
+  "featured_article": {
+    "title": "Computer says NO to HTML5 document outline",
+    "date": "June 9th, 2016",
+    "text": "What a brilliant idea! For the longest time HTML5 specified, and advised developers, that it no longer mattered what the number (1 to 6) was in a heading element (when used in conjunction with sectioningelements). What mattered was the nesting level of the H1-h6 in sectioning elements, just like the XHTML promised land, but […]"
+  },
+  "recent_comments": [
+    {
+      "author": "Steven Vachon",
+      "article": "The details and summary elements"
+    },
+    {
+      "author": "Mark Excell",
+      "article": "The Footer Element Update"
+    },
+    {
+      "author": "Patanjali",
+      "article": "Computer says NO to HTML5 document outline"
+    }, {
+      "author": "Steven Vachon",
+      "article": "The details and summary elements"
+    },
+    {
+      "author": "Mark Excell",
+      "article": "The Footer Element Update"
+    }
+  ],
+  "elements_indexes": [
+    {
+      "group": "Head",
+      "elements": ["doctype", "html", "head", "title", "base", "link", "meta", "style", "script", "noscript"]
+    },
+    {
+      "group": "Sections",
+      "elements": ["doctype", "html", "head", "title", "base", "link", "meta", "style", "script", "noscript"]
+    },
+    {
+      "group": "Grouping",
+      "elements": ["doctype", "html", "head", "title", "base", "link", "meta", "style", "script", "noscript"]
+    }
+  ],
+  "more_posts": [
+    {
+      "title": "Computer says NO to HTML5 document outline",
+      "date": "June 9th, 2016",
+      "text": "What a brilliant idea! For the longest time HTML5 specified, and advised developers, that it no longer mattered what the number (1 to 6) was in a heading element (when used in conjunction with sectioningelements). What mattered was the nesting level of the H1-h6 in sectioning elements, just like the XHTML promised land, but […]"
+    },
+    {
+      "title": "Computer says NO to HTML5 document outline",
+      "date": "June 9th, 2016",
+      "text": "What a brilliant idea! For the longest time HTML5 specified, and advised developers, that it no longer mattered what the number (1 to 6) was in a heading element (when used in conjunction with sectioningelements). What mattered was the nesting level of the H1-h6 in sectioning elements, just like the XHTML promised land, but […]"
+    },
+    {
+      "title": "Computer says NO to HTML5 document outline",
+      "date": "June 9th, 2016",
+      "text": "What a brilliant idea! For the longest time HTML5 specified, and advised developers, that it no longer mattered what the number (1 to 6) was in a heading element (when used in conjunction with sectioningelements). What mattered was the nesting level of the H1-h6 in sectioning elements, just like the XHTML promised land, but […]"
+    },
+    {
+      "title": "Computer says NO to HTML5 document outline",
+      "date": "June 9th, 2016",
+      "text": "What a brilliant idea! For the longest time HTML5 specified, and advised developers, that it no longer mattered what the number (1 to 6) was in a heading element (when used in conjunction with sectioningelements). What mattered was the nesting level of the H1-h6 in sectioning elements, just like the XHTML promised land, but […]"
+    }
+  ],
+  "sponsors": [
+    {
+      "href_url": "",
+      "img_url": "https://s0.2mdn.net/5585042/2_125x125WS_2017_2_Gen_Set1_Btn1_En_.png"
+    },
+    {
+      "href_url": "",
+      "img_url": "https://s3.buysellads.com/1598/289250-1442087157.png"
+    },
+    {
+      "href_url": "",
+      "img_url": "https://s3.buysellads.com/1259338/243103-1414001265.jpeg"
+    },
+    {
+      "href_url": "",
+      "img_url": "https://s3.buysellads.com/creatives/18caf3284da577904f337f9df2bcd465-1498569212.png"
+    }
+  ]
+
+
+
+
+}

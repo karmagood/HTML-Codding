@@ -1,10 +1,13 @@
 // The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
 //
 // Find the sum of all the primes below two million.
+
+// TODO FIX!
+
 'use strict'
 const isMutuallySimple = (value, primesToCompareList) => {
     let isMutSimple = true;
-    for (let i = 0; i < primesToCompareList.length && isMutSimple; i++) {
+    for (let i = 0; i < primesToCompareList.length && isMutSimple; i+=2) {
         isMutSimple = value % primesToCompareList[i] !== 0; // there is no divisors in compareList
     }
     return isMutSimple;

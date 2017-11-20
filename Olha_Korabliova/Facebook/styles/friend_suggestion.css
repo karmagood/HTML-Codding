@@ -1,0 +1,21 @@
+.ad-feed__block-friend {
+  margin: 15px 5px 15px 5px;
+  padding: 0 2px 0 2px;
+}
+.ad-feed__block-friend .user-profile__user-pic {
+  width: 60px;
+  height: 60px;
+}
+a.ad-feed__block-friend-name {
+  font-size: 14px;
+  color: #365899;
+  font-weight: bold;
+}
+.ad-feed__block-mutual-frs {
+  font-size: 12px;
+  color: #90949C;
+}
+.ad-feed__block-friend-info {
+  display: inline-block;
+  margin: 0;
+}
