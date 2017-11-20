@@ -7,11 +7,12 @@ const LayoutHeader = ({img}) => (
         <form class="layout-header__settings" action="#">
             <button class="layout-header__upload">Upload video</button>
             <button class="layout-header__youtube-apps">Open youtube applications</button>
-            <button class="layout-header__settings">Open account settings</button>
+            <button class="layout-header__tools">Open account settings</button>
             <button class="layout-header__sign-in">Sign in</button>
         </form>
         <button class="layout-header__hamburger-menu">
-            Toogle menu
+
+            Toggle menu
         </button>
 
         <img class="layout-header__logo" src={img}/>
