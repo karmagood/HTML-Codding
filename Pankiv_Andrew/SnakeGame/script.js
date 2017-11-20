@@ -29,11 +29,10 @@ let PortalPositions = [[[13, 0], [14, 0], [15, 0], [16, 0]],
     [[29, 13], [29, 14], [29, 15], [29, 16]]];
 
 
-
 function Run() {
     Init();
     Inter = setInterval(GameLoop, interval);
-    Timer = setInterval(PortalTime,1000);
+    Timer = setInterval(PortalTime, 1000);
 
 }
 
@@ -110,7 +109,7 @@ function ReCreatePortals() {
             for (let position = 0; position < PortalPositions[line].length; position++) {
                 if (line < 2) {
                     Set(PortalPositions[line][position][0], PortalPositions[line][position][1], "portal");
-                }else{
+                } else {
                     Set(PortalPositions[line][position][0], PortalPositions[line][position][1], "wall");
                 }
             }
@@ -120,7 +119,7 @@ function ReCreatePortals() {
                 if (line > 1) {
                     Set(PortalPositions[line][position][0], PortalPositions[line][position][1], "portal");
                 }
-                else{
+                else {
                     Set(PortalPositions[line][position][0], PortalPositions[line][position][1], "wall");
                 }
             }
@@ -130,11 +129,11 @@ function ReCreatePortals() {
 }
 
 function PortalTime() {
-    if(Seconds < 0){
+    if (Seconds < 0) {
         Seconds = 10;
     }
     document.getElementById("timer").innerHTML = "Seconds to switch portals: " + Seconds;
-    if(Seconds === 0){
+    if (Seconds === 0) {
         ReCreatePortals();
     }
     Seconds--;
@@ -228,7 +227,7 @@ function GameLoop() {
 function sleep(milliseconds) {
     let start = new Date().getTime();
     for (let i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds){
+        if ((new Date().getTime() - start) > milliseconds) {
             break;
         }
     }
