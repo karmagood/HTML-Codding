@@ -20,6 +20,7 @@
   "homepage": "https://github.com/WebDevCourse2017/HTML-Codding#readme",
   "dependencies": {
     "express": "^4.16.2",
+    "jquery": "^3.2.1",
     "less": "^2.7.3",
     "mustache": "^2.3.0",
     "ramda": "^0.25.0",
