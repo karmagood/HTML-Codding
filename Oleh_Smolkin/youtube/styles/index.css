@@ -1,0 +1,22 @@
+html, body{
+    height: 100%;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #F8F8F8;
+}
+
+main{
+    height: 100%;
+    padding-top: 56px;
+    box-sizing: border-box;
+}
+
+main>section{
+    padding-left: 270px;
+    display: inline-block;
+    vertical-align: top;
+    width:calc(100% - 300px);
+}

@@ -5,43 +5,46 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/chanel.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/aside_block.css">
+    <link rel="stylesheet" href="styles/icons.css">
     <title>Youtube</title>
 </head>
 <body>
-<header>
-    <!--
-    <section id="search_section">
-        <i class="icon" id="hamburger"></i>
-        <img id="logo" src="https://www.youtube.com/yt/about/media/images/brand-resources/logos/YouTube-logo-full_color_light.svg">
-        <input id="search" type="text" placeholder="Пошук">
+<header class="header">
+    <section class="header__search-section">
+        <i class="header__icon" id="icon-hamburger"></i>
+        <img class="header__logo" src="images/logo.svg" alt="Youtube logo">
+        <input class="header__search" type="text" placeholder="Пошук">
     </section>
-    <section id="google_nav">
-        <i class="icon" id="upload">U</i>
-        <i class="icon" id="apps"></i>
-        <i class="icon" id="notifications"></i>
-        <img id="user_icon" src="https://yt3.ggpht.com/-kD4GbPD8tdE/AAAAAAAAAAI/AAAAAAAAAAA/JIuxzATDwrI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+    <section class="header__google-nav">
+        <i class="header__icon icon-upload"></i>
+        <i class="header__icon icon-apps"></i>
+        <i class="header__icon icon-notifications"></i>
+        <img class="header__user-icon" src="images/user_icon.jpg" alt="user icon">
     </section>
-    -->
 </header>
 <main>
-    <aside class="aside_navigation">
+    <aside class="aside-block">
         {{#navigations}}
-        <nav class="aside_navigation_nav">
+        <nav class="aside-block__nav">
             {{#elements}}
-                <a href="">{{.}}</a>
+                <a class="aside-block__nav__link" href="">{{.}}</a>
             {{/elements}}
         </nav>
         {{/navigations}}
-        <footer>
+        <footer class="aside-block__footer">
             {{#footer_navigation}}
-            <nav>
+            <nav class="aside-block__footer__nav">
                 {{#elements}}
-                <a>{{.}}</a>
+                <a class="aside-block__footer__nav__link">{{.}}</a>
                 {{/elements}}
             </nav>
             {{/footer_navigation}}
-            <p id="copyright">
+            <p class="aside-block__copyright">
                 @ 2017 YouTube, LLC
             </p>
         </footer>
@@ -49,25 +52,24 @@
     <section>
         {{#channels}}
         <section class="chanel">
-            <header>
-                <img src="{{icon_url}}">
-                <h3>{{name}}</h3>
-                <small>Рекомендований канал</small>
-
-                <img class="close_icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/52944-200.png">
-                <button class="subscript">
+            <header class="chanel__header">
+                <img class="chanel__icon" src="{{icon_url}}">
+                <h3 class="chanel__title">{{name}}</h3>
+                <small class="chanel__info">Рекомендований канал</small>
+                <img class="chanel__close-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/52944-200.png">
+                <button class="chanel__subscript">
                     ПІДПИСАТИСЯ {{subscr_count}} ТИС.
                 </button>
             </header>
-            <section class="list">
+            <section class="chanel__list-name">
                 {{#videos}}
-                <article class="video">
-                    <img src="{{picture_url}}">
-                    <h3>{{name}}</h3>
+                <article class="chanel__video">
+                    <img class="chanel__video__prewiew-img" src="{{picture_url}}">
+                    <h3 class="chanel__video__title">{{name}}</h3>
                     <aside>
-                        <h4>{{author}}</h4>
-                        <p>{{viewers}} переглядів *</p>
-                        <p>{{date}}</p>
+                        <h4 class="chanel__video__info">{{author}}</h4>
+                        <p class="chanel__video__info">{{viewers}} переглядів *</p>
+                        <p class="chanel__video__info">{{date}}</p>
                     </aside>
                 </article>
                 {{/videos}}
