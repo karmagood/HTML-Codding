@@ -1,0 +1,77 @@
+.aside-block{
+    padding: 20px 0px;
+    background-color: #F0F0F0;
+    width: 240px;
+    height: calc(100% - 56px);
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 5;
+    display: inline-block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.aside-block__footer{
+    font-size: 13px;
+    color: #989898;
+}
+
+.aside-block__nav{
+    padding: 4px 0;
+    border-bottom: 1px #E8E8E8 solid;
+    margin-bottom: 10px;
+}
+
+.aside-block__nav__link{
+    display: block;
+    padding: 0 24px;
+    height: 35px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.aside-block__nav__title {
+    font-family: sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+    color: #989898;
+    padding: 0 24px;
+}
+
+.aside-block__footer__nav{
+    padding: 10px 24px;
+    margin-right: 5px;
+}
+
+.aside-block__footer__nav__link{
+    white-space: nowrap;
+}
+
+.aside-block__copyright{
+    padding: 10px 24px;
+}
+
+.aside-block__nav__icon{
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 20px;
+    opacity: 0.5;
+}
+
+.aside-block__nav__link:before{
+    background: url("http://www.myiconfinder.com/uploads/iconsets/256-256-255dcbc5f25c5a617cd0f7fb5c8c906d-grid.png");
+    background-size: cover;
+    width: 15px;
+    padding: 0 8px;
+    margin-right: 10px;
+}

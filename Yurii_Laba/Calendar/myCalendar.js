@@ -50,16 +50,13 @@ const displayCalendar = (date) => {
     }
 
 
-    document.getElementById("calendar-header__month").innerHTML = monthNames[month];
+    document.getElementById("header-calendar__month").innerHTML = monthNames[month];
 
-    document.getElementById("calendar-header__year").innerHTML = year;
+    document.getElementById("header-calendar__year").innerHTML = year;
 
     document.getElementById("main-calendar").value = mainCalendarGrid;
 
 };
-
-
-
 
 
 const increaseMonthAndYear = (date) => {
@@ -86,12 +83,12 @@ const decreaseMonthAndYear = (date) => {
 window.onload = function () {
     currentDate = new Date();
     displayCalendar(currentDate);
-    document.getElementById('button__next-month').onclick = function () {
+    document.getElementById('footer-calendar__button-next-month').onclick = function () {
         nextDate = increaseMonthAndYear(currentDate);
         displayCalendar(nextDate);
     };
 
-    document.getElementById('button__previous-month').onclick = function() {
+    document.getElementById('footer-calendar__button-previous-month').onclick = function () {
         previousDate = decreaseMonthAndYear(currentDate);
         displayCalendar(previousDate);
     };
