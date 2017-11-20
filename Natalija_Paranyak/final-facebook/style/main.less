@@ -1,14 +1,21 @@
-* {
-    font-family: "Segoe UI", Tahoma;
-}
-p, span{font-size: 13px;}
+
 body {
-    background-color: #e9ebee !important;
-    margin: 0 !important;
+    background-color: #e9ebee;
+    margin: 0;
+    font-family:'Segoe UI Historic', Tahoma;
+    font-size: 13px;
 }
 ul {
     list-style-type: none;
 }
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*MAIN*/
 .main-navigation{position: fixed;
     top: 0; z-index: 1; width: 100%;}
 .main-navigation {
@@ -17,36 +24,55 @@ ul {
     background-color: #3b5998;
     font-weight: bold;
     font-size: 13px;
-    margin: 0 !important;
+    margin: 0 ;
     justify-content: center;
     border-bottom: 1px solid #29487d;
 }
-.main-navigation a:nth-child(n+8){   /*для всіх тіпа іконок*/
+
+/*MAIN PARAGRAPH*/
+.main-navigation__paragraph{
+    color: white;
+}
+/*MAIN SEPARATE*/
+
+.main-navigation__separator{
+    width: 150px
+}
+
+/*MAIN ITEM*/
+
+.main-navigation__item{
     margin-right:2px;
     margin-left: 2px;
     text-indent:-9999px;
     width: 30px;
 }
-.main-navigation a:nth-child(8){
-    background: url("../images/facebook_sprite.png")  -20px -135px;
+
+
+.main-navigation__item_friend{
+    background: url("../../images/facebook_sprite.png")  -20px -135px;
 }
-.main-navigation a:nth-child(9){
-    background: url("../images/facebook_sprite.png")  -48px -135px;
+.main-navigation__item_messenger{
+    background: url("../../images/facebook_sprite.png")  -48px -135px;
 }
-.main-navigation a:nth-child(10){
-    background: url("../images/facebook_sprite.png")  -71px -135px;
+.main-navigation__item_news{
+    background: url("../../images/facebook_sprite.png")  -71px -135px;
 }
-.main-navigation a:nth-child(11){
-    background: url("../images/facebook_sprite.png")  -71px -135px;
+.main-navigation__item_help{
+    background: url("../../images/facebook_sprite.png")  -71px -135px;
 }
-.main-navigation a:nth-child(12){
+.main-navigation__item_quick{
     width: 9.5px;
-    background: url("../images/facebook_sprite.png")  -22px -155px;
+    background: url("../../images/facebook_sprite.png")  -22px -155px;
 }
-.main-navigation  a{
+.main-navigation__item_big {
     margin-right: 8px;
     margin-left: 8px;
 }
+
+
+/*PROFILE IMG*/
+
 .profile-img{
     border-radius: 50%;
     width:30px;
@@ -54,14 +80,25 @@ ul {
     object-fit: cover
 }
 
-input[type="submit"] {
+
+
+
+
+/*MAIN inputs*/
+.main-navigation__input{
+    width: 350px;
+}
+.main-navigation__submit {
     font-family: FontAwesome, sans-serif;
 }
+
+/*MAIN CONTAINER*/
+
 .main-container {
     position: absolute;
     width: 1014px;
     top: 50px;
-    left: calc(43% - 507px);
+    left: calc(~"43% - 507px");
 }
 
 .main-container__nav {
@@ -72,48 +109,53 @@ input[type="submit"] {
     padding-top: 10px;
 }
 
-.main-container__nav__block a {
+/*MAIN LINK A*/
+.main-container__link{
     display: flex;
     align-items: center;
 }
-
-.main-container__nav aside, .main-container__quick ul {
-    overflow: hidden;
-    font-weight: 100;
-    font-size: 13px;
-}
-.main-container__nav section{
-    overflow: hidden;
-    font-weight: 100;
-    font-size: 13px;
-}
-
-a {
-    display: block;
-    color: black;
-    text-decoration: none;
-}
-
-.main-container__nav__block a:hover {
+.main-container__link:hover {
     background-color: #f6f7f9;
 }
 
-.main-container__nav__block p{
+/*ASIDE BLOCK + LINK*/
+.main-container__creation__link {
+    display: inline-block;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.main-container__creation {
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+
+/*MAIN NAV BLOCK*/
+.main-container__nav__block{
+    overflow: hidden;
+    font-weight: 100;
+    font-size: 13px;
+}
+
+/*MAIN NAV P*/
+
+.main-container__nav__paragraph{
+    font-size: 13px;
     margin: 0;
 }
 
-.main-container__nav__block__interesting img{
+/*Main nav img*/
+.main-container__nav__img{
     margin-right: 5px;
     object-fit: none;
     width: 25px;
     height: 25px;
 }
 
-.main-container__nav aside a {
-    display: inline-block;
-    color: darkblue;
-    text-decoration: none;
-}
+
+
 
 .main-container__feeds {
     margin-right: 10px;
@@ -155,7 +197,7 @@ a {
 
 @media screen and (max-width: 1220px) {
     .main-container{
-        left: calc(50% - 507px);
+        left: calc(~"50% - 507px");
     }
 }
 
@@ -180,7 +222,7 @@ a {
 .main-container__feeds__item__post__actions{
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 }
 
 .main-container__feeds__item__post__actions button{
@@ -188,6 +230,7 @@ a {
     border: none;
     cursor:pointer;
     overflow: hidden;
+    margin: 0 10px;
 }
 .main-container__feeds__item__post{
     margin-top: 10px;
@@ -241,3 +284,20 @@ a {
     margin-right: 8px;
     margin-left: 8px;
 }
+
+.main-container__quick__item__friends__propositions button:hover{ background-color: lightgrey}
+
+
+.main-navigation input:nth-of-type(1){
+    margin: 0;
+    border: none;
+    height: 19px;
+    padding: 0;
+}
+
+.main-navigation input:nth-child(3){
+    height: 19px;
+    margin: 0 ;
+    border: none;
+}
+
