@@ -5,13 +5,12 @@ import '../style/LayoutHeader.less'
 const LayoutHeader = ({img}) => (
     <div class="layout-header">
         <form class="layout-header__settings" action="#">
-            <button class="layout-header__button layout-header__button-upload">Upload video</button>
-            <button class="layout-header__button layout-header__button-youtube-apps">Open youtube applications</button>
-            <button class="layout-header__button layout-header__button-tools">Open account settings</button>
-            <button class="layout-header__button layout-header__button-sign-in">Sign in</button>
+            <button class="layout-header__button layout-header__button_upload">Upload video</button>
+            <button class="layout-header__button layout-header__button_youtube-apps">Open youtube applications</button>
+            <button class="layout-header__button layout-header__button_tools">Open account settings</button>
+            <button class="layout-header__button_sign-in">Sign in</button>
         </form>
-        <button class="layout-header__button layout-header__button-hamburger-menu">
-
+        <button class="layout-header__button layout-header__button_hamburger-menu">
             Toggle menu
         </button>
 
@@ -21,7 +20,7 @@ const LayoutHeader = ({img}) => (
                 <input class="layout-header__search" type="search"/>
             </label>
 
-            <button>Search</button>
+            <button class="layout-header__button_search">Search</button>
         </form>
     </div>);
 
