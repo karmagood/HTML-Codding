@@ -1,5 +1,5 @@
 .Tools {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background-image: url("../images/snow-ass.jpg");
     color: white;
     background-position: 50% 0;
@@ -28,6 +28,7 @@
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1rem;
     height: 100%;
+
 }
 
 .Tools__player-conteiner {
@@ -38,4 +39,24 @@
   background-image: url("../images/advertising.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
+}
+
+@media screen and (max-width: 67.5625em) {
+  .Points {
+    display: none;
+  }
+  .Tools__player-conteiner{
+    display: block;
+    align-items: center;
+    float: none;
+    left: 50%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .get-tools-title {
+    display: none;
+  }
+  .Tools__wrapper {
+    max-width: 540px;
+  }
 }
