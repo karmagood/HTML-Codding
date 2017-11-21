@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="facebook_style.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Facebook</title>
 </head>
@@ -10,70 +10,70 @@
 
 
 <header class="main-navigation">
-    <a href="https://www.facebook.com/"><img src="../images/facebook_logo.png" height="25"
+    <a class="main-navigation__item_big" href="https://www.facebook.com/"><img src="../images/facebook_logo.png" height="25"
                                              alt="Facebook logo"/></a>
-    <input type="text" placeholder="Пошук" style="width: 350px;"><input type="submit" value="&#xf002">
-    <div class="main-navigation__separator" style="width: 150px"></div>
-    <a href="https://www.facebook.com/"><img class="profile-img" src="../images/home-team-3.jpg"
+    <input class="main-navigation__input" type="text" placeholder="Пошук"><input class="main-navigation__submit" type="submit" value="&#xf002">
+    <div class="main-navigation__separator"></div>
+    <a  class="main-navigation__item_big" href="https://www.facebook.com/"><img class="profile-img" src="../images/home-team-3.jpg"
                                              alt="Profile photo"></a>
-    <a href="#"><p style="color: white">Наталя</p></a>
-    <a><p style="color: white">Головна </p></a>
-    <a href="#">Запити на дружбу</a>
-    <a href="#">Повідомлення</a>
-    <a href="#">Сповіщення</a>
-    <a href="#">Швидка допомога</a>
-    <a href="#">Швидкий доступ</a>
+    <a class="main-navigation__item_big" href="#"><p class="main-navigation__paragraph" >Наталя</p></a>
+    <a class="main-navigation__item_big"><p class="main-navigation__paragraph" >Головна </p></a>
+    <a class="main-navigation__item main-navigation__item_friend" href="#">Запити на дружбу</a>
+    <a class="main-navigation__item main-navigation__item_messenger" href="#">Повідомлення</a>
+    <a class="main-navigation__item main-navigation__item_news" href="#">Сповіщення</a>
+    <a class="main-navigation__item main-navigation__item_help" href="#">Швидка допомога</a>
+    <a class="main-navigation__item main-navigation__item_quick" href="#">Швидкий доступ</a>
 </header>
 <section class="main-container">
-    <section class="flex-item main-container__nav">
+    <section class="main-container__nav">
         <nav>
             <section class="main-container__nav__block">
 
-                <a href="#">
+                <a class="main-container__link" href="#">
                     <img src="../images/home-team-3.jpg" alt="Profile picture"
-                         style="float: left; margin-right: 5px; border-radius: 50%; width:25px;height: 25px;object-fit: cover;">
-                    <p style="font-size: 13px; margin: 0"> Наталя Параняк</p></a>
+                         style="float: left; margin-right: 5px; margin-left:2px; border-radius: 50%; width:25px;height: 25px;object-fit: cover;">
+                    <p class="main-container__nav__paragraph"> Наталя Параняк</p></a>
 
-                <section class="main-container__nav__block__interesting">
+                <section>
                     {{#dataFacebook}}
                         {{#news-messenger}}
-                            <a href="{{src}}">
-                                <img src="{{img-src}}" style="{{img-options}}">
-                                <p>{{text}}</p></a>
+                            <a class="main-container__link"href="{{src}}">
+                                <img class="main-container__nav__img" src="{{img-src}}" style="{{img-options}}">
+                                <p class="main-container__nav__paragraph">{{text}}</p></a>
                         {{/news-messenger}}
                     {{/dataFacebook}}
                 </section>
-                <h2 style="font-size: 13px; font-weight: bold">Швидкий доступ</h2>
+                <h2 style="font-size: 13px; font-weight: bold; color: dimgrey;">Швидкий доступ</h2>
                 {{#dataFacebook}}
                     {{#menu-items}}
-                        <a href="{{menu-src}}" style="padding: 3px 0;">
+                        <a  class="main-container__link" href="{{menu-src}}" style="padding: 3px 0;">
                             <img src="{{img-src}}" alt="Page 1"
-                                 style="float: left; margin-right: 5px; border-radius: 50%; width:25px;height: 25px;object-fit: cover;">
-                            <p style="margin: 0;">{{name-item}}</p></a>
+                                 style="float: left; margin-right: 5px; margin-left:2px; border-radius: 50%; width:25px;height: 25px;object-fit: cover;">
+                            <p class="main-container__nav__paragraph">{{name-item}}</p></a>
                     {{/menu-items}}
                 {{/dataFacebook}}
-                <h2 style="font-size: 13px; font-weight: bold">Огляд</h2>
-                <section class="main-container__nav__block__interesting">
+                <h2 style="font-size: 13px; font-weight: bold; color: dimgrey">Огляд</h2>
+                <section >
                     {{#dataFacebook}}
                         {{#interesting-things}}
-                            <a href="{{src}}">
-                                <img src="{{img-src}}" style="{{img-options}}">
-                                <p>{{text}}</p></a>
+                            <a class="main-container__link" href="{{src}}">
+                                <img class="main-container__nav__img" src="{{img-src}}" style="{{img-options}}">
+                                <p class="main-container__nav__paragraph">{{text}}</p></a>
                         {{/interesting-things}}
                     {{/dataFacebook}}
                 </section>
             </section>
 
-            <aside class="main-container__nav__creation">
-                <h2 style="font-size: 13px; font-weight: bold">Створити</h2>
-                <a href="https://www.facebook.com/"><p>Реклама</p></a>
-                <a href="https://www.facebook.com/"><p>Сторінки</p></a>
-                <a href="https://www.facebook.com/"><p>Група</p></a>
-                <a href="https://www.facebook.com/"><p>Подія</p></a>
+            <aside class="main-container__creation">
+                <h2 style="font-size: 13px; font-weight: bold; color: dimgrey">Створити</h2>
+                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Реклама</p></a>
+                <a  class="main-container__creation__link"href="https://www.facebook.com/"><p>Сторінки</p></a>
+                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Група</p></a>
+                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Подія</p></a>
             </aside>
         </nav>
     </section>
-    <section class="flex-item main-container__feeds">
+    <section class=" main-container__feeds">
 
         <div class="main-container__feeds__item">
             {{#dataFacebook}}
@@ -96,7 +96,7 @@
 
                         </div>
                         <article
-                                style="font-size: 16px; color: black; font-weight:300; margin-top: 10px;">{{main-post-info}}
+                                style="font-size: 14px; color: black; font-weight:300; margin-top: 10px;">{{main-post-info}}
                             <span style="color: midnightblue; font-weight: 500">{{tags}}</span>
                         </article>
                         <img src="{{post-images-url}}" width="400"
@@ -105,13 +105,13 @@
 
                         <section class="main-container__feeds__item__post__actions">
                             <button type="submit"><i class="fa fa-thumbs-o-up "
-                                                     style="margin-right: 5px"></i>Подобається
+                                                     style="margin-right: 5px; font-size: 18px"></i>Подобається
                             </button>
                             <button type="submit"><i class="fa fa-comments"
-                                                     style="margin-right: 5px"></i>Коментувати
+                                                     style="margin-right: 5px; font-size: 18px"></i>Коментувати
                             </button>
                             <button type="submit"><i class="fa fa-share"
-                                                     style="margin-right: 5px"></i>Поширити
+                                                     style="margin-right: 5px; font-size: 18px"></i>Поширити
                             </button>
                         </section>
 
@@ -122,7 +122,7 @@
         </div>
     </section>
 
-    <section class="flex-item main-container__quick">
+    <section class=" main-container__quick">
         <div class="main-container__quick__item">
             <section class="main-container__quick__item__this__week"
                      style="background-color: white; border-radius: 5px; margin-bottom: 10px;">
@@ -156,7 +156,7 @@
                             </a>
                             <p style="font-size: 13px; font-weight: 300; margin: 0;">{{common-friends-count}} спільних
                                 друга</p>
-                            <button type="submit" style="color: #4b4f56">Підтвердити друга</button>
+                            <button type="submit" style="background-color: lightgrey; box-shadow: none; border: none">Підтвердити друга</button>
                         </section>
                     {{/friends-request}}
                 {{/dataFacebook}}
@@ -194,7 +194,7 @@
 
 </section>
 
-<section class="flex-item main-container__actions">
+<section class=" main-container__actions">
 
     <div>
         <section class="main-container__actions__games">
