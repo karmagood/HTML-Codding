@@ -1,6 +1,6 @@
 :root {
-  --icon-width: 24px;
-  --icon-height: 24px;
+  --icon-width: 27px;
+  --icon-height: 27px;
   --header-height: calc(46px + 10px * 2);
 }
 
@@ -12,10 +12,13 @@
   top: 0;
   right: 0;
   left: 0;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5); /* Параметры тени */
 
   &__search {
     height: 29px;
-    width: 400px;
+    background-color: transparent;
+    border: 1px solid #d3d3d3;
+    width:600px;
   }
 
   &__logo {
@@ -29,8 +32,13 @@
   &__settings {
     float: right;
     vertical-align: middle;
-    text-align: right;
-    //background-color: gold;
+
+  }
+  &__button_sign-in {
+    border: none;
+    background-color: white;
+    text-align: center;
+    color: red;
   }
 
   &__button {
@@ -39,8 +47,10 @@
     height: var(--icon-height);
     vertical-align: middle;
     border: none;
+    margin: 10px 10px;
 
-    &-hamburger-menu {
+
+    &_hamburger-menu {
       background: transparent url("../images/hamburger.svg") no-repeat;
       &:active, &:focus,
       &:enabled {
@@ -50,14 +60,14 @@
       }
     }
 
-    &-upload {
+    &_upload {
       background: url("../images/upload.svg") no-repeat;
     }
 
-    &-youtube-apps {
+    &_youtube-apps {
       background: url("../images/youtube-apps.svg") no-repeat;
     }
-    &-tools {
+    &_tools {
       background: url("../images/tools.svg") no-repeat;
     }
   }
@@ -67,6 +77,33 @@
   }
 
   &__search-wrapper {
+    margin-left: 7px;
     display: inline-block;
   }
+
+  &__button_search {
+    //var(--ytd-searchbox-legacy-button-icon-color)  w:20px, h:20px
+    background: #f8f8f8 url("../images/search.svg") no-repeat center center;
+    color: transparent;
+    width: 65px;
+    border: 1px solid #d3d3d3;
+    height:29px;
+  }
+  //
+  //&__search {
+  //  //var(--yt-searchbox-text-color)
+  //
+  //  //border:none;
+  //  //box-shadow:   none;
+  //  //color: var(--yt-swatch-input-text);
+  //  //font-family: 'Roboto', 'Noto', sans-serif;
+  //  //font-size: 16px;
+  //  //font-weight: 400;
+  //  //line-height: 24px;
+  //  //margin-left: 4px;
+  //  //max-width: 100%;
+  //  //outline: none;
+  //  //text-align: inherit;
+  //  //width: 100%;
+  //}
 }

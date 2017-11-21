@@ -30,9 +30,9 @@ export default [
 
         title: "Subscriptions",
         items: [
-            {img: "#", channelLink: "#", name: "Adam Tuminaro", type: "channel"},
-            {img: "#", channelLink: "#", name: "Billy Talent", type: "channel"},
-            {img: "#", channelLink: "#", name: "TaylorSwiftVEVO", type: "channel"}
+            {img: "https://yt3.ggpht.com/-CeGtALCibbI/AAAAAAAAAAI/AAAAAAAAAAA/pIg0TGZ1Rrg/s88-c-k-no-mo-rj-c0xffffff/photo.jpg", channelLink: "#", name: "Adam Tuminaro", type: "channel"},
+            {img: "https://yt3.ggpht.com/-OiIeK5yXpwo/AAAAAAAAAAI/AAAAAAAAAAA/zlNXod-muJ4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg", channelLink: "#", name: "Billy Talent", type: "channel"},
+            {img: "https://yt3.ggpht.com/-PS6pgnf-7pY/AAAAAAAAAAI/AAAAAAAAAAA/QCBjV6iZUBI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg", channelLink: "#", name: "TaylorSwiftVEVO", type: "channel"}
         ]
     },
 

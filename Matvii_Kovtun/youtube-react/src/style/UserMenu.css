@@ -1,6 +1,9 @@
 
-.user-menu {}
+.user-menu {
+    padding-top: 8px;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
 .user-menu__section-title {
-    padding-left: 10px;
+    padding-left: 24px;
 }
 

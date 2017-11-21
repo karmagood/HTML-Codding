@@ -1,5 +1,10 @@
 
-
 .icon {
+    fill: hsl(0, 0%, 53.3%);
     height: 20px;
+    vertical-align: middle;
+}
+
+.icon_house {
+    fill: red;
 }
