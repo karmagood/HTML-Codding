@@ -1,6 +1,6 @@
 import React from 'react';
 import Video from './Video';
-import '../style/VideoSection.css';
+import '../style/VideoSection.less';
 
 
 

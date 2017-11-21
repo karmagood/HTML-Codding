@@ -3,7 +3,6 @@ import LayoutHeader from './LayoutHeader';
 import UserMenu from './UserMenu';
 import LayoutPayload from './LayoutPayload';
 import "../style/Layout.less";
-
 import logo from '../images/youtube-logo.jpg'
 
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../style/Icon.css"
+import "../style/Icon.less"
 
 
 const Icon = ({icon, svg}) => (

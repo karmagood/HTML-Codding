@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/Video.css'
+import '../style/Video.less'
 
 
 const Video = ({title, videoViews, img, time, channel}) => (
