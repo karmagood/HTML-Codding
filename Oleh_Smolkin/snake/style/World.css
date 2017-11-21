@@ -1,0 +1,62 @@
+.World {
+    margin: auto;
+    width: 600px;
+}
+
+.World__row {
+    overflow: hidden;
+}
+
+.World__cell {
+    height: 15px;
+    width: 15px;
+    background: black;
+    font-size: 8px;
+    text-align: center;
+    vertical-align: 10px;
+
+    float: left;
+    cursor: pointer;
+}
+
+.World__cell_snake {
+    background-color: #00CB79;
+}
+
+.World__cell_block {
+    background: url('../imgs/block.png');
+    background-size: cover;
+}
+
+.World__cell_brick {
+    background: url('../imgs/bricks.png');
+    background-size: cover;
+}
+
+.Tank{
+    width: 30px;
+    height: 30px;
+}
+
+.Tank_player_tank{
+    background: url('../imgs/tank.png');
+    background-size: cover;
+    position: absolute;
+}
+
+.Tank_top_direction{
+    transform: rotate(0deg);
+}
+
+.Tank_right_direction{
+    transform: rotate(90deg);
+}
+
+.Tank_bottom_direction{
+    transform: rotate(180deg);
+}
+
+.Tank_left_direction{
+    transform: rotate(270deg);
+}
+

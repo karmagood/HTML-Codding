@@ -1,0 +1,15 @@
+.ad-feed__block-language {
+  color: #365899;
+  font-size: small;
+}
+.ad-feed__block-language.active {
+  color: #616770;
+}
+.ad-feed__footer-info {
+  color: #616770;
+  font-size: small;
+}
+footer {
+  margin: 10px;
+  padding-left: 10px;
+}

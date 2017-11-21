@@ -1,0 +1,507 @@
+body {
+    margin: 0;
+    background-color: #E9EBEE;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/*===================================================*/
+
+header {
+    position: fixed;
+    height: 45px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    background-color: #4267B2;
+    border-bottom: #29487d solid 1px;
+}
+
+header * {
+    position: absolute;
+    width: 1200px;
+    left: calc(25% - 300px);
+    right: calc(75% - 900px);
+}
+
+a.h-icon i {
+    color: #1A2947;
+    margin: 10px;
+    font-size: 25px;
+}
+
+a.h-icon:hover i {
+    color: #0D1524;
+}
+
+#logo {
+    margin: 5px 0 0 10px;
+    font-size: 30px;
+}
+
+header input {
+    left: 45px;
+    margin-top: 10px;
+    width: 500px;
+    height: 24px;
+}
+
+header i.fa.fa-search {
+    left: 550px;
+    margin: 10px 5px 5px 1px;
+    background-color: #F6F7F9;
+    font-size: 15px;
+    padding: 5px 15px 5px 10px;
+    border-radius: 2px;
+    width: 10px;
+}
+
+header i.fa.fa-search:hover {
+    background-color: #D6D6D6;
+}
+
+#user-name .userpic {
+    left: 650px;
+    width: 30px;
+    margin-top: 5px;
+}
+
+#user-name span {
+    left: 680px;
+}
+
+#home {
+    left: 740px;
+}
+
+#user-name span, #home {
+    padding: 2px 10px 2px 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: Gill Sans, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+#friend-req {
+    left: 850px;
+}
+
+#messages {
+    left: 890px;
+}
+
+#notifications {
+    left: 930px;
+}
+
+#help {
+    left: 990px;
+}
+
+#other-info {
+    left: 1030px;
+}
+
+/*===================================================*/
+
+.tool-bar {
+    position: fixed;
+    top: 45px;
+    width: 240px;
+    line-height: 25px;
+    overflow: auto;
+    bottom: 0;
+    padding-left: 10px;
+    font-size: 14px;
+    left: calc(25% - 300px);
+}
+
+h4, #main-section h5 {
+    color: #90949C;
+    margin: 5px;
+}
+
+.tool-bar li:hover {
+    background-color: #F6F7F9;
+    text-decoration: none;
+    padding: 5px;
+    border: #dddfe2 solid 1px;
+    border-radius: 3px;
+}
+
+.tool-bar li:active {
+    background-color: #DDDFE2;
+}
+
+.tool-bar li {
+    padding: 5px;
+}
+
+/*===================================================*/
+
+#main-section__header {
+    position: absolute;
+    top: 35px;
+    width: 550px;
+    margin: 10px;
+    left: calc(25% - 60px);
+}
+
+#header__cover-photo {
+    background-image: url("../images/view_village.jpg");
+    background-size: cover;
+    width: 800px;
+    height: 300px;
+}
+
+#header__some-settings {
+    width: 780px;
+    background: white;
+    padding: 15px 10px 15px 10px;
+    border: #dddfe2 solid 1px;
+}
+
+#header__some-settings a {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    border: #dddfe2 solid 1px;
+    border-radius: 2px;
+    margin-left: 3px;
+    background-color: #F6F7F9;
+    color: #4b4f56;
+}
+
+/*===================================================*/
+
+#main-section__news-feed {
+    position: absolute;
+    margin: 10px;
+    left: calc(25% - 60px);
+    top: 405px;
+    width: 500px;
+}
+
+#news-feed__make-post {
+    background-color: #F6F7F9;
+    padding: 10px;
+    border: #dddfe2 solid 1px;
+    border-radius: 3px 3px 0 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#news-feed__post-content {
+    padding: 10px;
+    size: 50px;
+    background: white;
+    font-size: 14px;
+    border-left: #dddfe2 solid 1px;
+    border-right: #dddfe2 solid 1px;
+    border-bottom: #dddfe2 solid 1px;
+}
+
+#post-content__add-content {
+    padding: 15px 0 10px 0;
+    margin-top: 5px;
+    border-top: #dddfe2 solid 1px;
+}
+
+#post-content__add-content a {
+    background-color: #F6F7F9;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    color: #4b4f56;
+    font-weight: bold;
+}
+
+#post-content__add-content a:hover {
+    background-color: #DDDFE2;
+}
+
+#main-section__group-post div {
+    background-color: white;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    border: #dddfe2 solid 1px;
+    border-radius: 3px;
+}
+
+#main-section__group-post img.userpic {
+    height: 45px;
+    width: 45px;
+}
+
+#main-section__group-post img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#main-section__group-post div.user-post__comments {
+    border: #DDDFE2 solid 1px;
+    border-radius: 3px;
+    padding: 20px 0 20px 0;
+
+}
+
+div.user-post__comments img {
+    /*float: left;*/
+    /*margin: 5px;*/
+}
+
+div.user-post__comments form {
+    position: relative;
+    left: 10px;
+    /*margin-left: 10px;*/
+}
+
+/*===================================================*/
+
+#main-section__ads-block {
+    position: absolute;
+    top: 405px;
+    left: calc(25% + 452px);
+    width: 310px;
+}
+
+div.ads-block__block {
+    background-color: white;
+    border: #dddfe2 solid 1px;
+    margin: 10px;
+    padding: 5px;
+}
+
+#block__member-list {
+    white-space: nowrap;
+    margin: 5px;
+}
+
+div.ads-block__block p {
+    font-size: small;
+    margin: 5px;
+}
+
+#block__new-group_button-type {
+    background-color: #365899;
+    border-radius: 3px;
+    padding: 2px 8px 2px 8px;
+    color: white;
+    font-size: 13px;
+}
+
+/*---------------------------------------------------*/
+
+#block__recent-photos, .ads-block__block h6 {
+    margin: 5px;
+}
+
+div.block__group-ads_short-group-info p, div.block__pages-ads p {
+    font-size: 12px;
+    color: #90949C;
+}
+
+div.block__group-ads_short-group-info form {
+    position: relative;
+    top: -50px;
+    float: right;
+    padding: 10px;
+}
+
+#block__recent-photos img {
+    width: 80px;
+}
+
+div.block__group-ads {
+    margin: 10px 5px 10px 5px;
+    border: #DDDFE2 solid 1px;
+    border-radius: 3px;
+}
+
+div.block__group-ads_cover {
+    padding: 0;
+    background-image: url("../images/cover_photo.jpg");
+    background-size: cover;
+    height: 100px;
+}
+
+/*---------------------------------------------------*/
+
+div.block__friend-suggestion {
+    margin: 15px 5px 15px 5px;
+    padding: 0 2px 0 2px;
+}
+
+div.block__friend-suggestion img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    float: left;
+    margin: 5px 10px auto auto;
+}
+
+div.block__friend-suggestion a.user-name {
+    font-size: 14px;
+    color: #365899;
+    font-weight: bold;
+}
+
+div.block__friend-suggestion a.mutual-frs {
+    font-size: 12px;
+    color: #90949c;
+}
+
+div.block__friend-suggestion div * {
+    margin: 0;
+}
+
+/*---------------------------------------------------*/
+
+div.block__pages-ads_cover {
+    background-image: url("../images/suggested_page_cover.jpg");
+    background-size: cover;
+    height: 150px;
+}
+
+div.block__pages-ads {
+    margin: 5px;
+}
+
+/*---------------------------------------------------*/
+
+#block__language, #main-section__ads-block footer {
+    font-size: small;
+    margin: 5px;
+}
+
+#main-section__ads-block footer {
+    position: relative;
+    width: 285px;
+    left: 5px;
+    padding-left: 10px;
+}
+
+/*===================================================*/
+/*===================================================*/
+
+.friends-and-games {
+    position: fixed;
+    top: 45px;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    overflow: auto;
+    z-index: -5;
+    border: #a1a6ba solid 1px;
+    padding-left: 5px;
+}
+
+.friends-and-games h6 {
+    margin: 5px;
+    color: #a1a6ba;
+}
+
+.friends-and-games h6 a {
+    color: #a1a6ba;
+    float: right;
+}
+
+.friends-and-games img {
+    height: 20%;
+    width: 20%;
+    border-radius: 50%;
+}
+
+#your-games, #recommended-games {
+    border-bottom: #a1a6ba solid 1px;
+    padding-bottom: 5px;
+}
+
+#online-friends, #more-contacts {
+    overflow: auto;
+    position: relative;
+    height: 45%;
+    padding: 3px;
+    margin: 3px;
+}
+
+#online-friends {
+    border-bottom: #a1a6ba solid 1px;
+}
+
+#more-contacts {
+    border-top: #a1a6ba solid 1px;
+}
+
+#online-friends a, #more-contacts a {
+    line-height: 3px;
+    color: black;
+}
+
+#more-contacts h5 {
+    padding-top: 5px;
+    margin: 2px;
+}
+
+#online-friends span {
+    background: #42b72a;
+    border-radius: 50%;
+    display: inline-block;
+    height: 6px;
+    margin-left: 4px;
+    width: 6px;
+}
+
+.friends-and-games footer input {
+    position: fixed;
+    width: 180px;
+    height: 25px;
+    bottom: 0;
+    border: #a1a6ba solid 1px;
+    border-radius: 3px;
+    right: 26px;
+}
+
+.friends-and-games footer button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 26px;
+    padding: 5px 5px 5px 3px;
+    height: 25px;
+}
+
+/*===================================================*/
+
+img.userpic {
+    border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#post-field__group-post .userpic, #block__member-list img {
+    height: 50px;
+    width: 50px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+time {
+    color: #90949C;
+    font-size: small;
+}
+
+a.see-more {
+    float: right;
+}

@@ -1,0 +1,47 @@
+$author-color: rgb(17, 17, 17);
+$color-grey: rgb(136, 136, 136);
+$label-color: $color-grey;
+$button-color: $color-grey;
+
+.VideoRow{
+  padding: 24px 0;
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  &__avatar{
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  &__author{
+    color: $author-color;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 20px;
+  }
+  &__label{
+    color: $label-color;
+    font-size: 13px;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 18px;
+    margin-left: 8px;
+  }
+  &__button-clear{
+    padding: 8px;
+    border: none;
+    background: transparent;
+    margin-left: auto;
+    color: $button-color;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  &__slider-container{
+    margin-top: 24px;
+  }
+
+}
