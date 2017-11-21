@@ -1,5 +1,4 @@
 import React from 'react';
-import VideoSection from './VideoSection';
 import LayoutHeader from './LayoutHeader';
 import UserMenu from './UserMenu';
 import LayoutPayload from './LayoutPayload';
