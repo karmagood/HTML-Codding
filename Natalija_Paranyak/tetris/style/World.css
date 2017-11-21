@@ -1,0 +1,33 @@
+.World {
+    margin: auto;
+    width: 280px;
+}
+
+.World__row {
+    overflow: hidden;
+}
+
+.World__cell {
+    margin: 2px;
+    height: 10px;
+    width: 10px;
+    background: #efefef;
+    font-size: 8px;
+    text-align: center;
+    vertical-align: 10px;
+
+    float: left;
+    cursor: pointer;
+}
+
+.World__cell_snake {
+    background-color: #00CB79;
+}
+
+.World__cell_food {
+    background-color: red;
+}
+
+.World__cell_barricade {
+    background-color: #0c0c0c;
+}

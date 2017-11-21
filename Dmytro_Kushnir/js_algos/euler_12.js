@@ -16,6 +16,10 @@
 //
 //     What is the value of the first triangle number to have over five hundred divisors?
 
+const {lengthesOfConsecutiveSerieses} = require("./utility.js");
+
+
+
 
 const nextTriangleNumber = (previousTriangleNumber, indexOfPreviousTriangleNumber) => {
     return previousTriangleNumber + indexOfPreviousTriangleNumber + 1;
@@ -38,24 +42,6 @@ const listOfSimpleDivisorsWithRepeatings = (arg) => {
     return simpleDivisors; //because of divisor "1" is not natural number and we have to exclude it from algorithm
 };
 
-
-
-
-const lengthesOfConsecutiveSerieses = (sortedValuesList) => {
-    let numberOfDifferentValues = [];
-    let thisValuesAmount = 1;
-    let previousValue;
-    for (let el = 0; el < sortedValuesList.length; el ++){
-        if (sortedValuesList[el] === previousValue) thisValuesAmount++;
-        else{
-            if (previousValue !== undefined) numberOfDifferentValues.push(thisValuesAmount);
-            thisValuesAmount = 1;
-            previousValue = sortedValuesList[el];
-        }
-    }
-    numberOfDifferentValues.push(thisValuesAmount); //last element is out of cycle
-    return numberOfDifferentValues;
-};
 
 // TODO functionalise
 const reduceMultiplyListElems = (numbersList) => {

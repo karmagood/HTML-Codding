@@ -1,0 +1,10 @@
+body {
+    background-image: url("https://maxoffsky.com/word/wp-content/uploads/2014/04/andreasbg.png");
+}
+
+#jsSnake {
+    display: block;
+    margin: 6% auto;
+    border: 10px solid #657;
+    background-color: #f0f0f0;
+}

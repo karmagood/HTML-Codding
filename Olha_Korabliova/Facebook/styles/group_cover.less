@@ -1,0 +1,31 @@
+@import "vars";
+
+.group__header {
+  & div {
+    width: 780px;
+    background: @white;
+    padding: 15px 10px 15px 10px;
+    border: @main-border;
+  }
+}
+#header__cover-photo {
+  background-image: url("../images/view_village.jpg");
+  background-size: cover;
+  width: 780px;
+  height: 300px;
+}
+
+.header__some-settings {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  border: @main-border;
+  border-radius: 2px;
+  margin-left: 3px;
+  background-color: @milk;
+  color: @dark-grey;
+  &:hover {
+    background-color: @main-grey;
+  }
+}
