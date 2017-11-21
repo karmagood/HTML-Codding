@@ -3,7 +3,12 @@
 export default [
     {
         items: [
-            {icon: "house", channelLink: "#", name: "Main page", svg: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8"},
+            {
+                icon: "house",
+                channelLink: "#",
+                name: "Main page",
+                svg: "M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8"
+            },
             {
                 icon: "flame",
                 channelLink: "#",
@@ -30,9 +35,24 @@ export default [
 
         title: "Subscriptions",
         items: [
-            {img: "https://yt3.ggpht.com/-CeGtALCibbI/AAAAAAAAAAI/AAAAAAAAAAA/pIg0TGZ1Rrg/s88-c-k-no-mo-rj-c0xffffff/photo.jpg", channelLink: "#", name: "Adam Tuminaro", type: "channel"},
-            {img: "https://yt3.ggpht.com/-OiIeK5yXpwo/AAAAAAAAAAI/AAAAAAAAAAA/zlNXod-muJ4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg", channelLink: "#", name: "Billy Talent", type: "channel"},
-            {img: "https://yt3.ggpht.com/-PS6pgnf-7pY/AAAAAAAAAAI/AAAAAAAAAAA/QCBjV6iZUBI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg", channelLink: "#", name: "TaylorSwiftVEVO", type: "channel"}
+            {
+                img: "https://yt3.ggpht.com/-CeGtALCibbI/AAAAAAAAAAI/AAAAAAAAAAA/pIg0TGZ1Rrg/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
+                channelLink: "#",
+                name: "Adam Tuminaro",
+                type: "channel"
+            },
+            {
+                img: "https://yt3.ggpht.com/-OiIeK5yXpwo/AAAAAAAAAAI/AAAAAAAAAAA/zlNXod-muJ4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
+                channelLink: "#",
+                name: "Billy Talent",
+                type: "channel"
+            },
+            {
+                img: "https://yt3.ggpht.com/-PS6pgnf-7pY/AAAAAAAAAAI/AAAAAAAAAAA/QCBjV6iZUBI/s88-c-k-no-mo-rj-c0xffffff/photo.jpg",
+                channelLink: "#",
+                name: "TaylorSwiftVEVO",
+                type: "channel"
+            }
         ]
     },
 
