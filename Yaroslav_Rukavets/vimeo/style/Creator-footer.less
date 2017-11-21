@@ -1,19 +1,24 @@
-.creator-footer {
+.Creator-footer {
   background-image: url(../images/dune.jpg);
   text-align: center;
   position: relative;
   background-size: cover;
   height: 100vh;
   width: 100%;
+  color: #FFF;
 
   &__wrapper {
-    padding-top: 330px;
+    position: absolute;
+    bottom: 5.875rem;
+    left: 1rem;
+    right: 1rem;
   }
 
   &__title {
     color: white;
     max-width: 37.5rem;
     font-size: 2.25rem;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     font-family: Brown-Pro-Regular,sans-serif;
@@ -34,6 +39,7 @@
     font-weight: 400;
     padding: 17px 24px;
     min-width: 7rem;
+    display: inline-block;
   }
 
   &__link-find {
@@ -52,11 +58,19 @@
     position: absolute;
     right: 3.75rem;
     bottom: 1.875rem;
-    color: #FFF;
-    z-index: 1;
     font-style: normal;
     text-align: right;
     font-size: .875rem;
     line-height: 1.25rem;
+  }
+}
+
+@media(max-width: 600px) {
+
+  .Creator-footer {
+    &__link-find,
+    &__link-join {
+      display: inline-block;
+    }
   }
 }
