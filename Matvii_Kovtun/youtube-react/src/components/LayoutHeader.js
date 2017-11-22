@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/LayoutHeader.less'
-
+import LayoutHeaderSearch from './LayoutHeaderSearch';
 
 const LayoutHeader = ({img}) => (
     <div class="layout-header">
@@ -15,13 +15,7 @@ const LayoutHeader = ({img}) => (
         </button>
 
         <img class="layout-header__logo" src={img}/>
-        <form class="layout-header__search-wrapper">
-            <label>
-                <input class="layout-header__search" type="search"/>
-            </label>
-
-            <button class="layout-header__button_search">Search</button>
-        </form>
+        <LayoutHeaderSearch/>
     </div>);
 
 
