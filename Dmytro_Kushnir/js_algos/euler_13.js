@@ -138,10 +138,6 @@ const longMathAdd = (inputMatrix) => {
 } ;
 
 
-// console.log(TasksStrings);
-
-//console.log(fromStringsListToMartrix(TasksStrings, TasksStrings[0].length));
-
 console.log(longMathAdd(fromStringsListToMartrix(TasksStrings, TasksStrings[0].length)).join(""));
 
 

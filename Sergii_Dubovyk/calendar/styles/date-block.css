@@ -1,0 +1,14 @@
+/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+@font-face {
+  font-family: "Master Works - Demo";
+  src: url("../fonts/mw_demo.ttf"); }
+.date-block {
+  display: flex;
+  margin-top: 5%;
+  font-family: "Master Works - Demo";
+  margin-left: 11.5%;
+  text-align: left;
+  font-size: 44px;
+  line-height: 48px; }
+
+/*# sourceMappingURL=date-block.css.map */

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/intro.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <title>Intro</title>
+</head>
+<body>
+<section class="nav-bar__block">
+    <h4 class="nav-bar__block-title">Intro</h4>
+    <div id="intro__questions">
+        <a href="#"> + What makes you happy?</a>
+    </div>
+    <div id="intro__education-etc">
+        {{#education-etc}}
+            <p>{{action}}
+                <a href="{{place-link}}">{{place}}</a>
+            </p>
+        {{/education-etc}}
+    </div>
+    <div class="nav-bar__photos">
+        {{#featured-photos}}
+            <a href="{{photo-link}}">
+                <img class="{{image-class}}" src="{{img-src}}"/>
+            </a>
+        {{/featured-photos}}
+    </div>
+    <div id="intro__add-links">
+        <a href="#"> + Add Instagram, Websites, Other Links</a>
+    </div>
+</section>
+</body>
+</html>

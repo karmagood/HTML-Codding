@@ -1,0 +1,32 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: white;
+    text-align: center;
+    float: left;
+}
+
+#score{
+    font-family: "Arial Narrow", sans-serif;
+}
+
+td{
+
+    overflow: hidden;
+    margin: 2px;
+    height: 15px;
+    width: 15px;
+    background: #F3EFEF;
+}
+
+.snake{
+    background-color: #00CB79;
+}
+
+.wall{
+    border: 2px solid #01579b;
+}
+
+.fruit{
+    background-color: red;
+}

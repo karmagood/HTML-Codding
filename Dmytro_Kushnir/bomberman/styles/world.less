@@ -1,0 +1,40 @@
+@import "style_config";
+
+.World {
+  margin: auto;
+  width: 280px;
+
+  &__row {
+    overflow: scroll;
+  }
+  &__cell {
+    margin: 2px;
+    height: 10px;
+    width: 10px;
+    background: #efefef;
+    font-size: 8px;
+    text-align: center;
+    vertical-align: 10px;
+
+    float: left;
+    cursor: pointer;
+
+    &_snake {
+      background-color: #00CB79;
+    }
+    &_food {
+      background-color: red;
+    }
+    &_barricade {
+      background-color: #0c0c0c;
+    }
+    &_test {
+      background-color: red;
+    }
+
+  }
+
+}
+
+
+

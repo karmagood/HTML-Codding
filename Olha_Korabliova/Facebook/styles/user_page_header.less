@@ -1,0 +1,76 @@
+@import "vars.less";
+
+.user-page-header {
+  position: absolute;
+  top: 45px;
+  left: calc(~"25% - 250px");
+  right: calc(~"75% - 750px");
+  & img {
+    position: absolute;
+    top: 210px;
+    left: 15px;
+    height: 120px;
+    width: 120px;
+    border: @white solid 4px;
+    border-radius: 2px;
+  }
+  & span {
+    position: absolute;
+    top: 250px;
+    left: 165px;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgba(0, 0, 0, .8);
+    font-size: 24px;
+    color: @white;
+  }
+}
+
+.user-page-header__cover-photo {
+  background-image: url("../images/cover_photo.jpg");
+  background-size: cover;
+  width: 1000px;
+  height: 300px;
+  border-left: @cover-photo-border;
+  border-right: @cover-photo-border;
+}
+
+.user-page-header__edit-profile {
+  position: relative;
+  top: -45px;
+  left: 600px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: inherit;
+  text-align: center;
+  padding: 5px 10px 5px 10px;
+  border: @main-border;
+  border-radius: 2px;
+  margin-left: 3px;
+  background-color: @milk;
+  color: @dark-grey;
+  &:hover {
+    background-color: #E9EBEE;
+  }
+}
+
+.user-page-header__about-user-profile {
+  background-color: @white;
+  position: absolute;
+  top: 300px;
+  width: 980px;
+  border: @main-border;
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
+  z-index: -1;
+  & a {
+    position: relative;
+    left: 160px;
+    padding: 10px 25px 10px 25px;
+    border-left: #e9eaed solid 1px;
+    color: @main-blue;
+    font-weight: bold;
+    &:hover {
+      background: @milk;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+a {
+  text-decoration: none;
+}
+
+a, p, time {
+  font-family: "Roboto", sans-serif;
+}
+
+.material-icons {
+  color: #8b898b;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.layout {
+  margin: 0;
+  background-color: #F9F9F9;
+
+  &__header {
+    height: 56px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    box-shadow: 0 2px 2px 0 rgba(245,243,245,1);
+    padding-top: 15px;
+  }
+
+  &__sidebar {
+    position: fixed;
+    width: 240px;
+    top: 56px;
+    bottom: 0;
+    overflow: auto;
+    background-color: #F4F4F4;
+  }
+
+  &__main {
+    margin-top: 60px;
+    margin-left: 240px;
+  }
+}

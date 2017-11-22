@@ -1,86 +1,105 @@
 {
   "application": {
-    "main-navigation": {
-      "title":"Library",
+    "main-navigation": [
+      {
+        "title": false,
+        "items": [
+          {
+            "url": "http://google.com",
+            "title": "Головна",
+            "icon": "https://d30y9cdsu7xlg0.cloudfront.net/png/77002-200.png"
+          },
+          {
+            "url": "http://google.com",
+            "title": "Популярне",
+            "icon": "https://d30y9cdsu7xlg0.cloudfront.net/png/68987-200.png"
+          },
+          {
+            "url": "http://google.com",
+            "title": "Підписки",
+            "icon": "https://www.materialui.co/materialIcons/av/subscriptions_black_192x192.png"
+          }
+        ]
+      },
+      {
+        "title": "Бібліотека",
+        "items": [
+          {
+            "url": "http://google.com",
+            "title": "Історія",
+            "icon": "https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_history_48px-512.png"
+          },
+          {
+            "url": "http://google.com",
+            "title": "Переглянути піз...",
+            "icon": "https://www.materialui.co/materialIcons/action/watch_later_black_192x192.png"
+          },
+          {
+            "url": "http://google.com",
+            "title": "Відео, що сподо...",
+            "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Thumb_up_icon_2.svg/512px-Thumb_up_icon_2.svg.png"
+          }
+        ]
+      }
+    ],
+    "user-preferences": {
+      "title": "Підписки",
       "items": [
         {
           "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "AcademeG",
+          "icon": "https://i.ytimg.com/vi/mrewJHnNGuQ/maxresdefault.jpg"
         },
         {
           "url": "http://google.com",
-          "title": "trending",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "ЛАРИН",
+          "icon": "https://pbs.twimg.com/profile_images/547397233092468736/FHxKK2iw.png"
         },
         {
           "url": "http://google.com",
-          "title": "subscriptions",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "BadComedian",
+          "icon": "https://yt3.ggpht.com/-d30Hu-uB3Ug/AAAAAAAAAAI/AAAAAAAAAAA/oQKRU1upOm8/s900-c-k-no-mo-rj-c0xffffff/photo.jpg"
+        },
+        {
+          "url": "http://google.com",
+          "title": "Wylsacom",
+          "icon": "https://pbs.twimg.com/profile_images/3446721107/52915b3821a3dbbda4ba9390f61144ef.jpeg"
         }
       ]
-    },
-    "user-preferences": {
+    },"secondary-navigation": {
       "items": [
         {
           "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "Переглянути канали",
+          "icon": "https://png.icons8.com/plus/win8/1600"
         },
         {
           "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "Фільми YouTube",
+          "icon": "https://image.flaticon.com/icons/svg/61/61342.svg"
         },
         {
           "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "Налаштування",
+          "icon": "https://image.flaticon.com/icons/svg/17/17214.svg"
         },
         {
           "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "Довідка",
+          "icon": "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-help-circled-128.png"
         },
         {
           "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
-        },
-        {
-          "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
-        },
-        {
-          "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
-        },
-        {
-          "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
-        },
-        {
-          "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
-        },
-        {
-          "url": "http://google.com",
-          "title": "news",
-          "icon": "https://yt3.ggpht.com/-Fg0SqpP5G5I/AAAAAAAAAAI/AAAAAAAAAAA/XfyvtY9gdrA/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+          "title": "Надіслати відгук",
+          "icon": "https://www.materialui.co/materialIcons/action/feedback_black_192x192.png"
         }
       ]
     }
   },
-
   "channel": [
     {
-      "channel_img":"http://www.allthingsloud.com/wp-content/uploads/2017/09/enter_shikari_the_spark.jpg",
-      "channel_name": "Enter Shikari",
-      "number_of_subscribers": "147тис.",
+      "channel_img": "http://www.allthingsloud.com/wp-content/uploads/2017/09/enter_shikari_the_spark.jpg",
+      "title_name": "Enter Shikari",
       "videos": [
         {
           "video_url": "http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg",
@@ -109,14 +128,7 @@
           "channel_name": "Enter Shikari",
           "views": "1 мільйон",
           "data_of_published": "7 днів тому"
-        }
-      ]
-    },
-    {
-      "channel_img":"http://www.allthingsloud.com/wp-content/uploads/2017/09/enter_shikari_the_spark.jpg",
-      "channel_name": "Enter Shikari",
-      "number_of_subscribers": "147тис.",
-      "content": [
+        },
         {
           "video_url": "http://img-fotki.yandex.ru/get/6724/216683536.16/0_b884a_2c897ebe_XXXL.jpg",
           "video_name": "Live Outside",
@@ -148,5 +160,4 @@
       ]
     }
   ]
-
 }

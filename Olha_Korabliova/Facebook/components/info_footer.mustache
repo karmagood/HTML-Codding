@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/info_footer.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <title>Info Footer</title>
+</head>
+<body>
+<div class="ad-feed__block">
+    <div class="ad-feed__block-language">
+        {{#languages}}
+            <a class="ad-feed__block-language {{status}}" href="{{action}}">
+                {{language}}
+            </a>
+        {{/languages}}
+    </div>
+</div>
+<footer>
+    {{#info-footer}}
+        <a class="ad-feed__footer-info" href="{{action}}">{{info}}</a>
+    {{/info-footer}}
+</footer>
+</body>
+</html>

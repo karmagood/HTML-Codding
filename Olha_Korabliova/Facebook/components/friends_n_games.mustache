@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="friend_n_games.css"/>
+    <link rel="stylesheet" href="common.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Friends 'n' Games</title>
+</head>
+<body>
+<aside class="aside-block">
+    <section class="aside-block__games">
+        <div id="your-games">
+            <h6>YOUR GAMES
+                <a href="#" class="aside-block__games see-more" style="font-size: 10px;">MORE</a>
+            </h6>
+            {{#user-games}}
+                <a class="aside-block__games-link" href="{{game-link}}">
+                    <img src="{{img-src}}"/>
+                </a>
+            {{/user-games}}
+        </div>
+        <div id="recommended-games">
+            <h6>RECOMMENDED GAMES
+                <a href="#" class="aside-block__games see-more" style="font-size: 10px;">MORE</a>
+            </h6>
+            <a href="#"><i class="material-icons" style="color: black">keyboard_arrow_left</i></a>
+            {{#games-suggestions}}
+                <a class="aside-block__games-link" href="{{game-link}}">
+                    <img src="{{img-src}}"/>
+                </a>
+            {{/games-suggestions}}
+            <a href="#"><i class="material-icons" style="color: black">keyboard_arrow_right</i></a>
+        </div>
+    </section>
+    <section class="aside-block__friends online-friends">
+        {{#online-friends}}
+            <a class="aside-block__friends user-profile" href="{{user-link}}">
+                <p>
+                    <img class="user-profile__user-pic" src="{{user-pic}}"/>
+                    {{user-name}}
+                    <span class="{{status}}"></span>
+                </p>
+            </a>
+        {{/online-friends}}
+    </section>
+    <section class="aside-block__friends more-contacts">
+        <h5 style="color: black;">MORE CONTACTS</h5>
+        {{#more-friends}}
+
+            <a class="aside-block__friends user-profile" href="{{user-link}}">
+                <p>
+                    <img class="user-profile__user-pic" src="{{user-pic}}"/>
+                    {{user-name}}
+                    <span class="{{status}}"></span>
+                </p>
+            </a>
+        {{/more-friends}}
+    </section>
+    <footer>
+        <form action="#">
+            <input type="search" placeholder="Search">
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </footer>
+</aside>
+</body>
+</html>
