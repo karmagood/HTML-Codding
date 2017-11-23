@@ -6,13 +6,18 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="style/Video.css">
+    <link rel="stylesheet" href="style/Universal-button.css">
     <link rel="stylesheet" href="style/Video-list.css">
 </head>
 <body>
-{{#bestvideo}}
-    <article class="Video-list">
-        <img class="Video-list__video" src="{{image}}"/>
-    </article>
-{{/bestvideo}}
+    <div class="Video-list">
+        {{#bestvideo}}
+            <article class="Video">
+                <img class="Video__screen" src="{{image}}"/>
+            </article>
+        {{/bestvideo}}
+        <button class="Universal-button">Watch</button>
+    </div>
 </body>
 </html>
