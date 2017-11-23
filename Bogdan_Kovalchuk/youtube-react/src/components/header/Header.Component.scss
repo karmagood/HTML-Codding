@@ -1,14 +1,17 @@
 $color-grey: rgba(17, 17, 17, 0.4);
 $button-font-size: 24px;
+$header-background-color: #ffffff;
 
 .Header {
   height: 56px;
   width: 100%;
+  background-color: $header-background-color;
   padding: 0 16px;
   position: fixed;
   top: 0;
   box-sizing: border-box;
-  box-shadow: 0 1px 1px lighten($color-grey, 50%);
+  box-shadow: 0 1px 1px lighten($color-grey, 70%);
+  z-index: 1;
   &__container {
     height: inherit;
     display: flex;
@@ -29,6 +32,7 @@ $button-font-size: 24px;
     color: $color-grey;
     padding: 8px;
     margin-right: 8px;
+    cursor: pointer;
   }
   &__menu-button {
     margin-right: 16px;
@@ -40,10 +44,12 @@ $button-font-size: 24px;
     margin: 0 8px;
     //margin-left: 20px;
     //padding: 0;
-    background-color: red;
+    //background-color: red;
   }
   &__logo-container {
     height: 24px;
+    width: 129px;
+    text-align: left;
   }
   &__logo {
     width: 80px;

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/Best-video.css">
+    <link rel="stylesheet" href="style/Video-list.css">
+    <link rel="stylesheet" href="style/Universal-button.css">
+</head>
+<body>
+    <section class="Best-video">
+        <h2 class="Best-video__section-header">Discover today’s best videos</h2>
+        <h3 class="Best-video__description">Explore incredible shorts, films, and series on Staff Picks, hand-selected each day for endless inspiration.</h3>
+        {{#bestvideo}}
+            <article class="Video-list">
+                <img class="Video-list__video" src="{{image}}"/>
+            </article>
+        {{/bestvideo}}
+        <button class="Universal-button">Watch</button>
+    </section>
+</body>
+</html>
