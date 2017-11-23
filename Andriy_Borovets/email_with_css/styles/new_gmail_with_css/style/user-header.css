@@ -1,0 +1,19 @@
+.user-header{
+    background-color:#f0f0f0;
+    display: block;
+    border-bottom: solid lightgray 1px;
+
+}
+.user-header__ucu-logo{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.user-header__search-field{
+    margin-top: -5px;
+    height: 30px;
+    width: 43%;
+    vertical-align: text-top;
+    border: solid cornflowerblue 1px;
+}
+
+
