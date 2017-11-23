@@ -1,0 +1,75 @@
+@import "vars";
+body {
+  background-color: $bckground;
+  margin-top: 5%;
+  //-webkit-font-smoothing: antialiased;
+  &::selection{background: #FFF776;}
+}
+
+
+.calendar-page {  /* structure goes here */
+  margin-left: 8.5%;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 10% [col-start]);
+  grid-template-rows: repeat(5,10%[row-start]);
+  grid-column-gap: 3%;
+  grid-row-gap: 7px;
+  font-family: $font;
+}
+
+#day-29, #day-30, #day-31 {
+  display: none;
+}
+
+#month-name {
+  font-family: $font;
+  margin-left: 8.5%;
+  margin-bottom: 1%;
+  text-align: left;
+  padding-left: 10px;
+  vertical-align: middle;
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+#calendar-week {
+  margin-left: 8.5%;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(7, 10% [col-start]);
+  grid-template-rows: repeat(1,10%[row-start]);
+  grid-column-gap: 3%;
+  grid-row-gap: 7px;
+  font-family: $font;
+}
+
+.navig-left {
+  float: left;
+  margin-left: 2%;
+  margin-top: 205px;
+}
+
+.navig-left,.navig-right {
+  width: 15px;
+  height: 25px;
+}
+
+.navig-right {
+  float: right;
+  margin-left: 960%;
+  margin-top: -102%;
+}
+
+.calendar-page__week-day  {
+    width: 90%;
+    height: 60%;
+    margin: 3%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    font-family: inherit;
+}
+
