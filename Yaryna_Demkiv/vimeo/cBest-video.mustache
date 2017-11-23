@@ -8,18 +8,29 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/Best-video.css">
     <link rel="stylesheet" href="style/Video-list.css">
+    <link rel="stylesheet" href="style/Video.css">
     <link rel="stylesheet" href="style/Universal-button.css">
+    <link rel="stylesheet" href="style/Discover-wrapper.css">
 </head>
 <body>
     <section class="Best-video">
-        <h2 class="Best-video__section-header">Discover today’s best videos</h2>
-        <h3 class="Best-video__description">Explore incredible shorts, films, and series on Staff Picks, hand-selected each day for endless inspiration.</h3>
-        {{#bestvideo}}
-            <article class="Video-list">
-                <img class="Video-list__video" src="{{image}}"/>
-            </article>
-        {{/bestvideo}}
-        <button class="Universal-button">Watch</button>
+        <div class="Discover-wrapper">
+            <img class="Discover-wrapper__logo" src="https://f.vimeocdn.com/images_v6/marketing/creator_lohp/LOHP_SP.svg" alt="">
+        </div>
+        <div class="Best-video-headers">
+            <h2 class="Best-video-headers__section-header">Discover today’s best videos</h2>
+            <h3 class="Best-video-headers__description">Explore incredible shorts, films, and series on Staff Picks, hand-selected each day for endless inspiration.</h3>
+        </div>
+        <div class="Video-list">
+            {{#bestvideo}}
+                <article class="Video">
+                    <img class="Video__screen" src="{{image}}"/>
+                </article>
+            {{/bestvideo}}
+            <button class="Universal-button">Watch</button>
+        </div>
+
+
     </section>
 </body>
 </html>

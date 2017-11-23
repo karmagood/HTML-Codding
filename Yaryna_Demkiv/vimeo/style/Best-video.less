@@ -3,8 +3,10 @@
 .Best-video {
   color: @color;
   text-align: center;
+}
 
-
+.Best-video-headers {
+  
   &__section-header {
     font-family: sans-serif;
     font-size: 2.25rem;
@@ -19,6 +21,22 @@
     text-align: center;
     font-size: 1.25rem;
     font-weight: 400;
+  }
+
+  @media screen {
+    .Discover-wrapper {
+      display: none;
+    }
+  }
+
+
+  @media screen and (max-width: 37.5em){
+    .Video {
+      display: none;
+    }
+    .Discover-wrapper {
+      display: block;
+    }
   }
 
 }
