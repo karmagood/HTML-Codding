@@ -1,5 +1,5 @@
 .Tools {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     background-image: url("../images/snow-ass.jpg");
     color: white;
     background-position: 50% 0;
@@ -29,7 +29,9 @@
     font-size: 1rem;
     height: 100%;
 }
-
+.get-tools-title {
+  padding-top: 30px;
+}
 .Tools__player-conteiner {
   width: 33.75rem;
   height: 18.75rem;
@@ -39,3 +41,30 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+@media screen and (max-width: 67.5625em) {
+  .Points {
+    display: none;
+  }
+  .Tools__player-conteiner{
+    display: inline-block;
+    align-items: center;
+    float: none;
+    left: 50%;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .get-tools-title {
+    display: none;
+  }
+  .Tools__wrapper {
+    max-width: 540px;
+  }
+}
+
+@media screen and (min-width: 67.5625em) {
+  .Footer {
+    padding-bottom: 100px;
+  }
+}
+

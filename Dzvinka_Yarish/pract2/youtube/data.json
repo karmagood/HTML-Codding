@@ -1,0 +1,9 @@
+{"body":[
+  {"recommended": {"video-ref": "\"https://www.youtube.com/watch?v=ndL_xLnWh_M\"", "img":"\"https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA\"","video-title": "Arctic Monkeys - Why'd You Only Call Me When", "video-publisher":"THE ARCTIC RG",
+  "video-date":"3 years ago •  ", "video-views":"3.6M views"}},
+  {"nav-main": [{"src":"\"home-button.png\"", "text":"Home", "ref":"\"https://www.youtube.com/\""},
+    {"src":"\"fire.png\"", "text":"Trending", "ref":"\"https://www.youtube.com/feed/trending\""},
+    {"src":"\"youtube-play-button.png\"", "text":"Subscriptions", "ref":"\"https://www.youtube.com/feed/subscriptions\""},
+
+  ]}
+  ]}
