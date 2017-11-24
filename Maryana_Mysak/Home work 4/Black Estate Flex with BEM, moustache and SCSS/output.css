@@ -1,0 +1,120 @@
+html {
+  height: 100%;
+  margin: 0; }
+
+body {
+  min-height: 100%;
+  margin: 0; }
+
+.base-list, .main-header .header-part__text, .main-header .navigation__text, .two-pic-section__text, .black-estate-title__text, .side-note__text, .tasting-room__text, .current-releases__text, .current-releases__text-p, .wine-store__text, .wine-store__text-p, .main-footer__text {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #1b1b1b; }
+
+.p-config, .black-estate-title__text, .side-note__text, .current-releases__text-p, .wine-store__text-p {
+  font-size: 19px;
+  line-height: 25px; }
+
+.h1-config, .tasting-room__header {
+  font-size: 36px; }
+
+.margin-top-20 {
+  margin-top: 20px; }
+
+.margin-top-80 {
+  margin-top: 80px; }
+
+.main-header .header-part__text-container {
+  height: 220px; }
+.main-header .header-part__text_font-size-24 {
+  font-size: 24px;
+  text-decoration: none; }
+.main-header .navigation__text-container {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.two-pic-section {
+  height: 100vh;
+  position: relative;
+  margin-top: 70px; }
+  .two-pic-section__img_over {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 101; }
+  .two-pic-section__img_under {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0; }
+    .two-pic-section__img_under:hover {
+      z-index: 102; }
+  .two-pic-section__img_left.grid_10 {
+    left: 0; }
+
+.black-estate-title {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.side-note {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 200px; }
+  .side-note__text-container.grid_5 {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+
+.tasting-room.container_16 {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; }
+
+.tasting-room__header {
+  height: 100px; }
+.tasting-room__main {
+  margin-top: 80px; }
+.tasting-room__item.grid_3 {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.current-releases {
+  margin-top: 100px; }
+  .current-releases__img {
+    width: 250px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -200px; }
+  .current-releases__text-container.grid_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 225px; }
+  .current-releases__items-container {
+    margin-top: 100px; }
+
+.wine-store {
+  height: 100vh; }
+  .wine-store__text_font-size-32 {
+    font-size: 32px; }
+  .wine-store__text-container {
+    margin-top: 200px;
+    height: 300px; }
+    .wine-store__text-container_flex.grid_5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+
+.main-footer {
+  height: calc(100vh + 200px); }
+
+/*# sourceMappingURL=output.css.map */

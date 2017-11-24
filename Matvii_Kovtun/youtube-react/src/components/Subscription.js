@@ -1,6 +1,5 @@
 import React from 'react';
-
-import "../style/Subscription.css";
+import "../style/Subscription.less";
 import Icon from "./Icon";
 
 
