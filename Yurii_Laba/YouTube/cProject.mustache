@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="style/video-section.css">
     <link rel="stylesheet" href="style/video.css">
     <link rel="stylesheet" href="style/layout.css">
-    <link rel="stylesheet" href="style/navigation__block.css">
-    <link rel="stylesheet" href="style/navigation__footer.css">
+    <link rel="stylesheet" href="style/navigation.css">
     <link rel="stylesheet" href="style/humburger.css">
     <link rel="stylesheet" href="style/logo.css">
     <link rel="stylesheet" href="style/search.css">
@@ -23,33 +22,45 @@
         <button class="hamburger"></button>
 
         <div class="logo">
-            <a href="http://google.com"><img class="logo__image"
-                                             src="https://www.youtube.com/yt/about/media/images/brand-resources/logos/YouTube-logo-full_color_light.svg"
-                                             alt=""></a>
+            <a href="http://google.com">
+                <img class="logo__image"
+                     src="https://www.youtube.com/yt/about/media/images/brand-resources/logos/YouTube-logo-full_color_light.svg"
+                     alt="">
+            </a>
         </div>
 
         <div class="search">
             <input class="search__input" title="search" type="text" placeholder="Пошук">
-            <button class="search__button"><img class="search__icon"
-                                                src="https://digiday.com/wp-content/themes/digiday/static/images/icon_search.svg"
-                                                alt=""></button>
+            <button class="search__button">
+                <img class="search__icon"
+                     src="https://digiday.com/wp-content/themes/digiday/static/images/icon_search.svg"
+                     alt="">
+            </button>
         </div>
     </div>
     <div class="layout__header__right-part">
 
         <div class="google-options">
-            <a href="http://google.com" class="google-options__icon"><img class="google-options__image"
-                                                                          src="https://image.flaticon.com/icons/png/128/60/60723.png"
-                                                                          alt=""></a>
-            <a href="http://google.com" class="google-options__icon"><img class="google-options__image"
-                                                                          src="http://www.myiconfinder.com/uploads/iconsets/256-256-255dcbc5f25c5a617cd0f7fb5c8c906d-grid.png"
-                                                                          alt=""></a>
-            <a href="http://google.com" class="google-options__icon"><img class="google-options__image"
-                                                                          src="http://www.download3k.com/article_images/0/384/thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png"
-                                                                          alt=""></a>
-            <a href="http://google.com"><img class="google-options__image__user"
-                                             src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/18664143_1140212246124572_6073999332882978418_n.jpg?oh=bf12a5322a4251f2fda25a123a82f0f5&oe=5A931725"
-                                             alt=""></a>
+            <a href="http://google.com" class="google-options__icon">
+                <img class="google-options__image"
+                     src="https://image.flaticon.com/icons/png/128/60/60723.png"
+                     alt="">
+            </a>
+            <a href="http://google.com" class="google-options__icon">
+                <img class="google-options__image"
+                     src="http://www.myiconfinder.com/uploads/iconsets/256-256-255dcbc5f25c5a617cd0f7fb5c8c906d-grid.png"
+                     alt="">
+            </a>
+            <a href="http://google.com" class="google-options__icon">
+                <img class="google-options__image"
+                     src="http://www.download3k.com/article_images/0/384/thumb_7_fc5baf86b725ec5f2b536d32725f24e3.png"
+                     alt="">
+            </a>
+            <a href="http://google.com">
+                <img class="google-options__image__user"
+                     src="https://scontent.fiev4-1.fna.fbcdn.net/v/t1.0-9/18664143_1140212246124572_6073999332882978418_n.jpg?oh=bf12a5322a4251f2fda25a123a82f0f5&oe=5A931725"
+                     alt="">
+            </a>
         </div>
 
     </div>
@@ -57,49 +68,49 @@
 <aside class="layout__sidebar">
     <nav>
         {{#application.main-navigation}}
-            <div class="navigation__block">
+            <div class="navigation">
                 {{#title}}
-                    <h3 class="navigation__block__title">{{.}}</h3>
+                    <h3 class="navigation__title">{{.}}</h3>
                 {{/title}}
 
                 {{#items}}
-                    <a href="{{url}}" class="navigation__block__item"><img class="navigation__block__image"
+                    <a href="{{url}}" class="navigation__item"><img class="navigation__image"
                                                                            src="{{icon}}">{{title}}</a>
                 {{/items}}
             </div>
         {{/application.main-navigation}}
 
-        <div class="navigation__block">
+        <div class="navigation">
             {{#application.user-preferences}}
                 {{#title}}
-                    <h3 class="navigation__block__title">{{.}}</h3>
+                    <h3 class="navigation__title">{{.}}</h3>
                 {{/title}}
 
                 {{#items}}
-                    <a href="{{url}}" class="navigation__block__item"><img class="navigation__block__image__channel"
+                    <a href="{{url}}" class="navigation__item"><img class="navigation__image__channel"
                                                                            src="{{icon}}">{{title}}</a>
                 {{/items}}
             {{/application.user-preferences}}
         </div>
 
-        <div class="navigation__block">
-            <a href="http://google.com" class="navigation__block__item"><img class="navigation__block__image"
+        <div class="navigation">
+            <a href="http://google.com" class="navigation__item"><img class="navigation__image"
                                                                              src="https://png.icons8.com/plus/win8/1600">Переглянути
                 кан...</a>
         </div>
 
-        <div class="navigation__block">
-            <a href="http://google.com" class="navigation__block__item"><img class="navigation__block__image"
+        <div class="navigation">
+            <a href="http://google.com" class="navigation__item"><img class="navigation__image"
                                                                              src="https://image.flaticon.com/icons/svg/61/61342.svg">Фільми
                 YouTube</a>
         </div>
 
-        <div class="navigation__block">
-            <a href="http://google.com" class="navigation__block__item"><img class="navigation__block__image"
+        <div class="navigation">
+            <a href="http://google.com" class="navigation__item"><img class="navigation__image"
                                                                              src="https://image.flaticon.com/icons/svg/17/17214.svg">Налаштування</a>
-            <a href="http://google.com" class="navigation__block__item"><img class="navigation__block__image"
+            <a href="http://google.com" class="navigation__item"><img class="navigation__image"
                                                                              src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-help-circled-128.png">Довідка</a>
-            <a href="http://google.com" class="navigation__block__item"><img class="navigation__block__image"
+            <a href="http://google.com" class="navigation__item"><img class="navigation__image"
                                                                              src="https://www.materialui.co/materialIcons/action/feedback_black_192x192.png">Надіслати
                 відгук</a>
         </div>
