@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/Sitemap.css">
     <link rel="stylesheet" href="style/Stats-dashboard.css">
     <link rel="stylesheet" href="style/Footer-sitemap.css">
+    <link rel="stylesheet" href="style/Sitemap-small.css">
 </head>
 <body>
     <section class="Footer-sitemap">
@@ -21,6 +22,14 @@
                     {{/items}}
                 </nav>
             {{/sitemap-section}}
+            {{#smallmap}}
+                <div class="Sitemap-small">
+                    <div class="Sitemap-small__item">
+                        <h4 class="Sitemap-small__item-header">{{title}}</h4>
+                        <img class="Sitemap-small__arrow" src="https://www.nordbahnhalle.org/wp-content/uploads/2017/04/select-arrow-down.png"/>
+                    </div>
+                </div>
+            {{/smallmap}}
         </div>
         <div class="Stats-dashboard">
             <h6 class="Stats-dashboard__header">Did you know?</h6>
