@@ -3,7 +3,6 @@ import Video from './Video';
 import '../style/VideoSection.less';
 
 
-
 const VideoSection = ({sectionTitle, items}) => (
     <section class="video-section">
         <h2 class="video-section__title">{sectionTitle}</h2>
