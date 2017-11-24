@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/News.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>News</title>
+</head>
+<body>
+<main class="News">
+    <div class="News__make-post">
+        <a class="News__post-option active" href="#" style="padding: 3px;">
+            <i class="fa fa-pencil-square-o"></i>
+            Make Post
+        </a>
+        <a class="News__post-option" href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+            <i class="fa fa-file-photo-o" style="color: #4B4F56;"></i>
+            Photo/Video Album
+        </a>
+        <a class="News__post-option" href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+            <i class="fa fa-video-camera" style="color: #4B4F56;"></i>
+            Video
+        </a>
+    </div>
+    <div class="News__post-content">
+        <form action="#">
+            <a href="user_page">
+                <img class="News__user-pic" height="45px"
+                     src="images/user_avatar.jpeg"/>
+            </a>
+            <textarea placeholder="What's on your mind, Olya?"></textarea>
+        </form>
+        <div class="News__add-content">
+            <a href="#">
+                <i class="fa fa-photo" style="color: #8ABF4C;"></i>
+                Photo/Video
+            </a>
+            <a href="#">
+                <i class="fa fa-smile-o" style="color: #FFD62C;"></i>
+                Feeling/Activity
+            </a>
+            <a href="#">...</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>
