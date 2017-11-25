@@ -24,8 +24,8 @@ class Video extends Component {
 
     addClickHandler(ev) {
         ev.preventDefault();
-        console.log("PISYA");
-        window.history.pushState({}, "", "video/" + this.props.id);
+        // console.log("PISYA");
+        window.history.pushState({}, "", "/video/" + this.props.id);
     }
 }
 
