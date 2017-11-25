@@ -1,17 +1,29 @@
 import React, {Component} from 'react';
 import '../style/VideoArticle.less';
-
+import VideoArticleInfo from './VideoArticleInfo';
+import VideoArticleDescription from './VideoDescription';
+import NextVideos from './NextVideos';
+import VideoComments from './VideoComments';
 
 class VideoArticle extends Component {
-    render() {
-        return (
-            <article className="video-article">
-                <div style={{background:"black", width:"100%", height:"400px"}}></div>
-                <h2 className="video-article__title">How Bill Gates reads books</h2>
-                <aside className="video-article__options">Lorem ipsum dolor sit amet.</aside>
-                <aside className="video-article__description">Lorem ipsum dolor sit amet.</aside>
-            </article>
 
+    render() {
+        //TODO: rename video-article
+        //TODO: try removing <div>...</div>
+        return (
+            <div>
+                <div style={{background: "black", width: "100%", height: "400px"}}></div>
+                <article className="video-article">
+                    <NextVideos/>
+                    <h1 className="video-article__title">Summer Special Amazing Mix 2017 - Best Of Deep House Sessions
+                        Music 2017 Chill Out Mix by Drop G</h1>
+                    <VideoArticleInfo/>
+                    <VideoArticleDescription/>
+                    <VideoComments/>
+                </article>
+
+
+            </div>
         )
     }
 }
