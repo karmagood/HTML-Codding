@@ -6,8 +6,8 @@
   background-color: #fff;
 }
 
-.mail-settings {
-  &__gmail_button {
+.Mail-buttons {
+  &__gmail{
     display: inline-block;
     margin-left: 23px;
     color: @gmail-color;
@@ -33,7 +33,7 @@
       opacity: .99;
     }
   }
-  &__button_previous {
+  &__previous {
     display: inline-block;
     color: transparent;
     height: 29px;
@@ -46,7 +46,7 @@
       opacity: .99;
     }
   }
-  &__button_next {
+  &__next {
     display: inline-block;
     color: transparent;
     height: 29px;
@@ -61,7 +61,7 @@
       opacity: .99;
     }
   }
-  &__button_setting {
+  &__setting {
     display: inline-block;
     color: transparent;
     height: 29px;
@@ -74,8 +74,37 @@
       opacity: .99;
     }
   }
+  &__refresh {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 72px;
+    height: 29px;
+    overflow: hidden;
+    color: transparent;
+    border: 1px solid @border;
+    border-radius: 2px;
+    background: @button-color url("../images/black-gmail-sprite.png") no-repeat 25px -122px;
+    background-size: auto;
+    opacity: .55;
+    &:hover {
+      opacity: .99;
+    }
+  }
+  &__select{
+    margin-left: 110px;
+    width: 72px;
+    height: 29px;
+    border: 1px solid @border;
+    border-radius: 2px;
+    background: @button-color url("../images/arrow_down_gray.png") no-repeat 48px;
+    opacity: .55;
+    &:hover {
+      opacity: .99;
+    }
+  }
 }
-.buttons-position{
+.buttons_right{
   float: right;
   margin-right: 20px;
 }
