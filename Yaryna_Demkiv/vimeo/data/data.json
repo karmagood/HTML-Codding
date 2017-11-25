@@ -144,5 +144,20 @@
           }
         ]
       }
+  ],
+
+  "smallmap": [
+    {
+      "title": "Vimeo"
+    },
+    {
+      "title": "Help"
+    },
+    {
+      "title": "More"
+    },
+    {
+      "title": "Upgrade"
+    }
   ]
 }
