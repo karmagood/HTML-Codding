@@ -4,102 +4,98 @@
 <head>
     <title>Gmail</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/search-form.css">
-    <link rel="stylesheet" href="styles/mail-list.css">
+    <link rel="stylesheet" href="styles/bLogo.css">
     <link rel="stylesheet" href="styles/Layout.css">
-    <link rel="stylesheet" href="styles/navigation.css">
-    <link rel="stylesheet" href="styles/mail-settings.css">
-    <link rel="stylesheet" href="styles/chat.css">
-    <link rel="stylesheet" href="styles/mail-tab.css">
-    <link rel="stylesheet" href="styles/logo.css">
-    <link rel="stylesheet" href="styles/search.css">
-    <link rel="stylesheet" href="styles/google-apps.css">
-    <link rel="stylesheet" href="styles/button-refresh.css">
-    <link rel="stylesheet" href="styles/select-message-button.css">
-    <link rel="stylesheet" href="styles/button__new-message.css">
-    <link rel="stylesheet" href="styles/chat-buttons.css">
-    <link rel="stylesheet" href="styles/b_footer.css">
+    <link rel="stylesheet" href="styles/bchat.css">
+    <link rel="stylesheet" href="styles/bGoogleApps.css">
+    <link rel="stylesheet" href="styles/bButtonNewMessage.css">
+    <link rel="stylesheet" href="styles/bMail.css">
+    <link rel="stylesheet" href="styles/bMailFooter.css">
+    <link rel="stylesheet" href="styles/bMailNavigation.css">
+    <link rel="stylesheet" href="styles/bMailsButton.css">
+    <link rel="stylesheet" href="styles/bMailTabs.css">
+    <link rel="stylesheet" href="styles/bSearchForm.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body class="Layout">
 <header class="Layout__header">
 
-    <a href="" class="logo">Google</a>
-    <section class="google-apps">
+    <a href="" class="Logo">Google</a>
+    <section class="Apps">
         {{#apps}}
-            <a class="google-apps__link google-apps__link_{{attribute}}" href="">{{title}}</a>
+            <a class="Apps__link Apps__link_{{attribute}}" href="">{{title}}</a>
         {{/apps}}
     </section>
 
-    <form class="search__form" action="">
-        <input class="search__input" type="search" placeholder="">
-        <button class="search__settings" title="Показати параметри пошуку"></button>
-        <button class="search__button search__button_img">Search</button>
+    <form class="Search" action="">
+        <input class="Search__input" type="search" placeholder="">
+        <button class="Search__settings" title="Показати параметри пошуку"></button>
+        <button class="Search__button Search__button_img">Search</button>
     </form>
 
 </header>
-<section class="Layout__mail-settings">
-    <button class="mail-settings__gmail_button">Gmail</button>
-    <button class="select-messages__button">
-        <input type="checkbox" placeholder="">
-    </button>
-    <button class="mail-settings__button_refresh">Оновити</button>
-    <button class="mail-settings__more">Більше</button>
-    <div class="buttons-position">
-        <button class="mail-settings__button_previous">Попереднє</button>
-        <button class="mail-settings__button_next">Наступне</button>
-        <button class="mail-settings__button_setting">Настройки</button>
+<section class="Mail-buttons">
+    {{#buttons}}
+        <button class="Mail-buttons__{{attribute}}">{{title}}</button>
+    {{/buttons}}
+    <div class="buttons_right">
+        {{#button}}
+            <button class="Mail-buttons__{{attribute}}">{{title}}</button>
+        {{/button}}
     </div>
+
 </section>
 
 
 <aside class="Layout__aside">
-    <button class="button__new_message">НАПИСАТИ</button>
-    <nav class="navigation">
+    <button class="Button__new_message">НАПИСАТИ</button>
+    <nav class="Navigation">
         {{#aside}}
-            <a class="navigation__link" href="">{{title}}</a>
+            <a class="Navigation__link" href="">{{title}}</a>
         {{/aside}}
     </nav>
-    <section class="chat">
-    <span class="chat__profile">
-        <img class="chat__profile_img" src="images/photo1.png" alt="">
-        <p class="chat__profile_name">Volodimir</p>
-        <button class="chat__new-chat">Створити чат</button>
+    <section class="Chat">
+    <span class="Chat__profile">
+        <img class="Chat__profile_img" src="images/photo1.png" alt="">
+        <p class="Chat__profile_name">Volodimir</p>
+        <button class="Chat__new-chat">Створити чат</button>
     </span>
-        <aside class="chat__data">
+        <aside class="Chat__data">
             <p>Немає нещодавніх бесід</p>
             <a href="">Розпочати новий сеанс</a>
         </aside>
-        <footer class="chat__footer">
-            <button class="button__contacts">Contacts</button>
-            <button class="button__chats">Chats</button>
-            <button class="button__calls">Calls</button>
+        <footer class="Chat__buttons">
+            <button class="Chat__buttons_contacts">Contacts</button>
+            <button class="Chat__buttons_chats">Chats</button>
+            <button class="Chat__buttons_calls">Calls</button>
         </footer>
     </section>
+
 </aside>
 <main class="Layout__main">
-    <section class="mail-tabs">
-        <a class="mail-tabs__link" href="#"><span class="link__icon_main"></span>Основні</a>
-        <a class="mail-tabs__link" href="#"><span class="link__icon_social"></span>Соцмережі</a>
-        <a class="mail-tabs__link" href="#"><span class="link__icon_ads"></span>Реклама</a>
-    </section><!--
-         -->
-    <section class="mail-list">
+    <section class="Tabs">
+        {{#tabs}}
+        <a class="Tabs__link Tabs__link_{{attribute}} " href="#">{{title}}</a>
+
+    {{/tabs}}
+            </section><!--
+             -->
+    <section class="Mail-list">
         {{#mails}}
-            <article class="mail-list__item">
-                <form action="#" class="mail-list__item-form">
-                    <input class="mail-list__item-checkbox" type="checkbox">
-                    <input class="mail-list__item-checkbox" type="checkbox">
-                    <input class="mail-list__item-checkbox" type="checkbox">
+            <article class="Mail-list__item">
+                <form action="#" class="Mail-list__item-form">
+                    <input class="Mail-list__item-checkbox" type="checkbox">
+                    <input class="Mail-list__item-checkbox" type="checkbox">
+                    <input class="Mail-list__item-checkbox" type="checkbox">
                 </form><!--
                  -->
-                <header class="mail-list__item-sender">
+                <header class="Mail-list__item-sender">
                         {{sender}}
                 </header><!--
-                    --><p class="mail-list__item-paragraph"> {{content}} </p><!--
+                    --><p class="Mail-list__item-paragraph"> {{content}} </p><!--
                   -->
-                <time class="mail-list__item-time">
+                <time class="Mail-list__item-time">
                     {{time}}
                 </time>
             </article>
@@ -107,9 +103,9 @@
     </section>
 
 
-    <footer class="footer">
-        <a class="footer__link" href="">Умови</a>
-        <a class="footer__link" href="">Конфіденційність</a>
+    <footer class="Footer">
+        <a class="Footer__link" href="">Умови</a>
+        <a class="Footer__link" href="">Конфіденційність</a>
     </footer>
 </main>
 </body>

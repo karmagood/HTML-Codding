@@ -8,14 +8,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/bLogo.css">
-    <link rel="stylesheet" href="styles/bTop-navigation.css">
+    <link rel="stylesheet" href="styles/bHeader-navigation.css">
     <link rel="stylesheet" href="styles/bMulticolor.css">
     <link rel="stylesheet" href="styles/bSearch.css">
-    <link rel="stylesheet" href="styles/Layout.css">
     <link rel="stylesheet" href="styles/intro.css">
     <link rel="stylesheet" href="styles/bFuture-list.css">
     <link rel="stylesheet" href="styles/bCreator-footer.css">
-    <link rel="stylesheet" href="styles/bCreator.css">
+    <link rel="stylesheet" href="styles/bUpload.css">
     <link rel="stylesheet" href="styles/bButtons.css">
     <link rel="stylesheet" href="styles/bButtonAction.css">
     <link rel="stylesheet" href="styles/bCreator-footer.css">
@@ -32,37 +31,36 @@
     <link rel="stylesheet" href="styles/Footer-sitemap.css">
     <link rel="stylesheet" href="styles/Sitemap-small.css">
 </head>
-<body class="Layout">
-<header class="Layout__header">
-    <div class="rainbow"></div>
-    <a class="logo" href="">Vimeo</a>
-    <nav class="top-navigation">
-        <a class="top-navigation__link" href="">Join</a>
-        <a class="top-navigation__link" href="">Log in</a>
-        <a class="top-navigation__link" href="">Host video</a>
-        <a class="top-navigation__link" href="">Sell</a>
-        <a class="top-navigation__link" href="">Watch</a>
+<body>
+<header class="Header">
+    <div class="Multicolor"></div>
+    <a class="Logo" href="">Vimeo</a>
+    <nav class="Header__navigation">
+        {{#header-navigation}}
+        <a class="Header__navigation_link" href="">{{title}}</a>
+        {{/header-navigation}}
     </nav>
-    <form class="search-form" action="">
-        <input type="text" class="search-form__input" placeholder="Search videos,people and more">
-        <button class="search-form__button ">Пошук</button>
+    <form class="Search-bar" action="">
+        <input type="text" class="Search-bar__input" placeholder="Search videos,people and more">
+        <button class="Search-bar__button ">Пошук</button>
     </form>
 </header>
-<section class="Layout__intro">
-    <h1 class="intro__text">Where videos come first</h1>
+<section class="Intro">
+    <h1 class="Intro__description">Where videos come first</h1>
     <form action="" class="Buttons">
-        <button class="Buttons__find-plan">Find a plan</button>
-        <button class="Buttons__join">Join free</button>
+        {{#button}}
+        <button class="Buttons__{{link}}">{{title}}</button>
+            {{/button}}
     </form>
 </section>
-<section class="future-list">
-    <h2 class="future-list__description">The high-quality home to make, share, and watch videos</h2>
+<section class="Future-list">
+    <h2 class="Future-list__description">The high-quality home to make, share, and watch videos</h2>
 </section>
-<section class="creator__upload">
-    <img class="balloon__front" src="images/balloon_front_opt.png" alt="">
-    <div class="upload">
-        <h2 class="upload__description upload__description_caption">Host videos in the highest quality possible</h2>
-        <p class="upload__description upload__description_paragraph">Start uploading and enjoy 4K Ultra HD quality, video management tools,
+<section class="Upload">
+    <img class="Balloon__front" src="images/balloon_front_opt.png" alt="">
+    <div class="Upload__description">
+        <h2 class="Upload__description_caption">Host videos in the highest quality possible</h2>
+        <p class="Upload__description_paragraph">Start uploading and enjoy 4K Ultra HD quality, video management tools,
             no ads before, during, or after your videos,
             and professional live streaming plans.</p>
     </div>
@@ -88,35 +86,29 @@
 <section class="Tools">
     <div class="Tools__wrapper">
     <h2 class="get-tools-title_mobile">Get powerful video tools, made for creators and brands</h2>
-    <section class="Tools__player-conteiner">
-        <img class="Tools__player-conteiner_image">
-    </section>
     <aside class="Tools__get-tools">
         <h2 class="get-tools-title">Get powerful video tools, made for creators and brands</h2>
         <section class="Points">
-            <a class="Points__item" href="">Review videos with collaborators
+           {{#points}}
+            <a class="Points__item" href="">{{title}}
                 <span class="Points_image"></span>
             </a>
-            <a class="Points__item" href="">Drive engagement and embed anywhere
-                <span class="Points_image"></span>
-            </a>
-            <a class="Points__item" href="">Easily see how your videos are performing
-                <span class="Points_image"></span>
-            </a>
+            {{/points}}
         </section>
     </aside>
 </div>
     <footer class="Additional-info">
         <p class="Additional-info_more-features">We’ve got tons more features to help your videos go further. See our plans for hosting, live streaming, and selling your videos.</p>
-        <a class="Additonal-info__learn-more" href="https://vimeo.com/upgrade?host">Learn more</a>
+        <a class="Additonal-info__learn-more" href="">Learn more</a>
     </footer>
 </section>
 <section class="Creator-footer">
     <div class="Creator-footer__wrapper">
         <h2 class="Creator-footer__title">Welcome to the world’s best community of video creators</h2>
         <aside class="Buttons">
-            <button class="Buttons__find-plan">Find plan</button>
-            <button class="Buttons__join">Join free</button>
+            {{#button}}
+            <button class="Buttons__{{link}}">{{title}}</button>
+            {{/button}}
         </aside>
     </div>
     <cite class="Creator-footer__picture-info">
