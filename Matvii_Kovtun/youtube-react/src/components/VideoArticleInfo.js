@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import "../style/VideoArticle.less";
 
 
+
 class VideoArticleInfo extends Component {
     render() {
         return (
