@@ -246,29 +246,11 @@
                     <a class="Language__item" href="">Portugues (Brasil)</a>
                 </section>
                 <section class="Company-information">
-                    <a class="Company-information__item" href="https://www.facebook.com/privacy/explanation" title="Дізнайтеся про конфіденційність на Facebook.">
-                        Конфіденційність
-                    </a>
-                    <span>·</span>
-                    <a class="Company-information__item" href="https://www.facebook.com/policies?ref=pf" title="Ознайомтеся з нашими умовами і правилами.">
-                        Умови користування
-                    </a>
-                    <span>·</span>
-                    <a class="Company-information__item" href="https://www.facebook.com/campaign/landing.php?placement=pf_rhc&campaign_id=242449722530626&extra_1=auto" title="Розмістіть рекламу на Facebook.">
-                        Розміщення реклами
-                    </a>
-                    <span>·</span>
-                    <a class="Company-information__item" href="https://www.facebook.com/help/568137493302217" title="Дізнайтеся про рекламу.">
-                        Типи реклами
-                    </a>
-                    <span>·</span>
-                    <a class="Company-information__item" href="https://www.facebook.com/help/cookies?ref_type=sitefooter" title="Cookie-файли у Facebook.">
-                        Реп'яшки
-                    </a>
-                    <span>·</span>
-                    <a class="Company-information__item" href="">
-                        Ще
-                    </a>
+                    {{#Company-info}}
+                        <a class="Company-information__item" href="https://www.facebook.com/privacy/explanation" title="{{text}}">
+                            {{description}}
+                        </a>
+                    {{/Company-info}}
                 </section>
                 <section class="Copyright">
                     <span>Facebook © 2017</span>

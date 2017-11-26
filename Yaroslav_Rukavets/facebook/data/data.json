@@ -64,5 +64,31 @@
       "image": "https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-1/p32x32/12645009_957602557638450_1441479072278307882_n.jpg?oh=9322b55302268c1f5c38cf8ef162e002&oe=5AA143A9",
       "description": "Taras Ovramenko"
     }
+  ],
+
+  "Company-info": [
+    {
+      "text": "Дізнайтеся про конфіденційність на Facebook.",
+      "description": "Конфіденційність · "
+    },
+    {
+      "text": "Ознайомтеся з нашими умовами і правилами.",
+      "description": "Умови користування · "
+    },
+    {
+      "text": "Розмістіть рекламу на Facebook.",
+      "description": "Розміщення реклами · "
+    },
+    {
+      "text": "Дізнайтеся про рекламу.",
+      "description": "Типи реклами · "
+    },
+    {
+      "text": "Cookie-файли у Facebook.",
+      "description": "Реп'яшки · "
+    },
+    {
+      "description": "Ще"
+    }
   ]
 }
