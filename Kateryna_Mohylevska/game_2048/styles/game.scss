@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Clear Sans";
+  src: url(fonts/ClearSans-Regular.woff);
+}
+
+
 .game-name{
   font-family: 'Open Sans', sans-serif;
   color: rgba(0,0,0,0.6);
@@ -20,19 +26,30 @@
   width:350px;
   height: 350px;
   margin-top: 30px;
-  background-color: rgba(0,0,0,0.35);
+  background-color: #bcada1;
   padding: 10px;
   border-radius: 5px;
   &__cell{
     width: 80px;
     height: 80px;
-    background-color: #ddd9d8;
+    background-color: #cec1b4;
     margin-right: 10px;
     margin-bottom: 10px;
-    float: right;
+    float: left;
     border-radius: 5px;
+    color: #796f66;
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+    font-family:"Clear Sans", "Helvetica Neue", Arial, sans-serif;
   }
-  &__cell:nth-child(4n+1){
+  &__cell:nth-child(4n){
     margin-right:0;
+  }
+  &__cell-two{
+    background-color: #efe4da;
+  }
+  &__cell-four{
+    background-color: #ede0c8;
   }
 }

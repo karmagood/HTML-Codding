@@ -6,7 +6,7 @@ const Icon = ({icon, svg}) => (
 
     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
          focusable="false"
-         class={"icon icon_" + icon}>
+         className={"icon icon_" + icon}>
         <g>
             <path d={svg}></path>
         </g>
@@ -14,6 +14,6 @@ const Icon = ({icon, svg}) => (
 
 
 
-)
+);
 
 export default Icon;
