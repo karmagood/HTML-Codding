@@ -6,29 +6,31 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/bLogo.css">
-    <link rel="stylesheet" href="styles/bTop-navigation.css">
-    <link rel="stylesheet" href="styles/bMulticolor.css">
-    <link rel="stylesheet" href="styles/bSearch.css">
-    <link rel="stylesheet" href="styles/Layout.css">
+    <link rel="stylesheet" href="style/Layout.css">
+    <link rel="stylesheet" href="style/Logo.css">
+    <link rel="stylesheet" href="style/Navigation.css">
+    <link rel="stylesheet" href="style/Search.css">
+    <link rel="stylesheet" href="style/Button-action.css">
+    <link rel="stylesheet" href="style/Header.css">
 </head>
-<body class="Layout">
-<header class="Layout__header">
-    <div class="rainbow"></div>
-    <a class="logo" href="">Vimeo</a>
-    <nav class="navigation">
-        <a class="navigation__link" href="">Join</a>
-        <a class="navigation__link" href="">Log in</a>
-        <a class="navigation__link" href="">Host video</a>
-        <a class="navigation__link" href="">Sell</a>
-        <a class="navigation__link" href="">Watch</a>
-    </nav>
-    <form class="search-form" action="">
-        <input type="text" class="search-form__input" placeholder="Search videos,people and more">
-        <button class="search-form__button ">Пошук</button>
-    </form>
-</header>
-
-</body>
+<div class="Header">
+    <!--<div class="rainbow"></div>-->
+    <div class="Header__left">
+        <a class="Logo" href="">Vimeo</a>
+        <nav class="Navigation">
+            <a class="Navigation__item" href="">Join</a>
+            <a class="Navigation__item" href="">Log in</a>
+            <a class="Navigation__item" href="">Host video</a>
+            <a class="Navigation__item" href="">Sell</a>
+            <a class="Navigation__item" href="">Watch</a>
+        </nav>
+    </div>
+    <div class="Header__right">
+        <form class="Search" action="">
+            <input type="text" class="Search__input" placeholder="Search videos,people and more">
+            <button class="Search__button ">Пошук</button>
+        </form>
+        <button class="Button__action_blue">Upload</button>
+    </div>
+</div>
 </html>
