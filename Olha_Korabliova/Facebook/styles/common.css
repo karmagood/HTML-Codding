@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background-color: #E9EBEE;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 14px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+.bigger-img {
+  margin: 0 1px 0 1px;
+  width: 138px;
+  height: 138px;
+  border: #DDDFE2 solid 1px;
+}
+.smaller-img {
+  margin: 0 1px 0 1px;
+  width: 91px;
+  height: 91px;
+  border: #DDDFE2 solid 1px;
+}
+time {
+  color: #90949C;
+  font-size: small;
+}
+.user-profile__user-pic {
+  border-radius: 50%;
+}
+.aside-block {
+  position: fixed;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  width: 210px;
+  overflow: auto;
+  z-index: -5;
+}
+.aside-block footer input {
+  position: fixed;
+  width: 190px;
+  height: 25px;
+  bottom: 0;
+  border: #A1A6BA solid 1px;
+  border-radius: 3px;
+  right: 26px;
+}
+.aside-block footer button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 26px;
+  padding: 5px 5px 5px 3px;
+  height: 25px;
+}
+.ad-feed {
+  position: absolute;
+  left: calc(25% + 450px);
+  width: 312px;
+}
+.ad-feed__block {
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  margin: 10px;
+}
+.ad-feed__title {
+  color: #90949C;
+  margin: 5px 0 5px 0;
+  font-size: 13px;
+}
+.ad-feed__title a {
+  float: right;
+  color: #365899;
+}

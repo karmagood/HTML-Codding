@@ -3,11 +3,8 @@ const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 
 
 let displayedDate;
 
-const renderMonth = (date) => {
-  let daysNumber = getDaysNumInMonth(date);
-  const calendarGrid = document.getElementById('calendar-grid');
-  renderDays(daysNumber, calendarGrid);
-  renderHeader(date);
+const getDaysNumInMonth = (date) => {
+    return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
 };
 
 const renderHeader = (date) => {
@@ -16,29 +13,35 @@ const renderHeader = (date) => {
 };
 
 const renderDays = (daysNumber, calendarGrid) => {
-    while (calendarGrid.firstChild){
-        calendarGrid.removeChild(calendarGrid.firstChild);
-    }
-    for(let dayCounter = 0; dayCounter < daysNumber; dayCounter++){
+    for(let dayCounter = 1; dayCounter <= daysNumber; dayCounter++){
         let newDay = document.createElement('section');
-        newDay.className = 'calendar-page__day';
-        newDay.innerText = dayCounter + 1;
+        newDay.className = 'calendar-block__day';
+        newDay.innerText = dayCounter;
         calendarGrid.appendChild(newDay);
     }
 };
 
-const getDaysNumInMonth = (date) => {
-    return new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
+const clearGrid = (grid) => {
+    while (grid.firstChild){
+        grid.removeChild(grid.firstChild);
+    }
 };
 
-const incrementMonth = (date) => {
-    if (date.getMonth() === 12){
-        date.setMonth(1);
-        date.setYear(date.getFullYear() + 1);
-    } else {
-        date.setMonth(date.getMonth() + 1);
+const renderGridOffset = (grid, offset) => {
+    for(let dayCounter = 0; dayCounter <= offset; dayCounter++){
+        let newDay = document.createElement('section');
+        newDay.className = 'calendar-page__day calendar-page__day_hidden';
+        grid.appendChild(newDay);
     }
-    return date;
+};
+
+const renderMonth = (date) => {
+    const daysNumber = getDaysNumInMonth(date);
+    const calendarGrid = document.getElementById('calendar-grid');
+    clearGrid(calendarGrid);
+    renderGridOffset(calendarGrid, date.getDay() - 1);
+    renderDays(daysNumber, calendarGrid);
+    renderHeader(date);
 };
 
 $(document).ready(() => {
@@ -46,7 +49,7 @@ $(document).ready(() => {
     renderMonth(displayedDate);
 
     $('#incrMonth').on('click', () => {
-        displayedDate = incrementMonth(displayedDate);
+        displayedDate.setMonth(displayedDate.getMonth() + 1);
         renderMonth(displayedDate);
     });
 

@@ -1,27 +1,21 @@
 import React from 'react';
-import '../style/LayoutHeader.css'
-
+import '../style/LayoutHeader.less'
+import LayoutHeaderSearch from './LayoutHeaderSearch';
 
 const LayoutHeader = ({img}) => (
-    <div class="layout-header">
-        <form class="layout-header__settings" action="#">
-            <button class="layout-header__upload">Upload video</button>
-            <button class="layout-header__youtube-apps">Open youtube applications</button>
-            <button class="layout-header__settings">Open account settings</button>
-            <button class="layout-header__sign-in">Sign in</button>
+    <div className="layout-header">
+        <form className="layout-header__settings" action="#">
+            <button className="layout-header__button layout-header__button_upload">Upload video</button>
+            <button className="layout-header__button layout-header__button_youtube-apps">Open youtube applications</button>
+            <button className="layout-header__button layout-header__button_tools">Open account settings</button>
+            <button className="layout-header__button_sign-in">Sign in</button>
         </form>
-        <button class="layout-header__hamburger-menu">
-            Toogle menu
+        <button className="layout-header__button layout-header__button_hamburger-menu">
+            Toggle menu
         </button>
 
-        <img class="layout-header__logo" src={img}/>
-        <form class="layout-header__search-wrapper">
-            <label>
-                <input class="layout-header__search" type="search"/>
-            </label>
-
-            <button>Search</button>
-        </form>
+        <img className="layout-header__logo" src={img}/>
+        <LayoutHeaderSearch/>
     </div>);
 
 

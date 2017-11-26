@@ -1,0 +1,18 @@
+.month-day{
+  background: #fff;
+  float: left;
+  color: #848484;
+  text-align: center;
+  width: 70px;
+  height: 60px;
+  border: 1px solid #e8e8e8;
+  font-size: 15px;
+  &__prev,
+  &__next{
+    color: #e8e8e8;
+  }
+  &__today{
+    background-color: rgba(200,0,255,0.2);
+    color:  #fff;
+  }
+}

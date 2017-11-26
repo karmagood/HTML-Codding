@@ -1,0 +1,16 @@
+.chanel__video{
+    width: 210px;
+    display: inline-block;
+}
+
+.chanel__video__title{
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.chanel__video__info{
+    margin: 0;
+    color: #BEBEBE;
+    font-size: 12px;
+}

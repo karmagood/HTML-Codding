@@ -1,0 +1,11 @@
+/*"Helvetica Neue", Helvetica, Arial, sans-serif;*/
+@font-face {
+  font-family: "Master Works - Demo";
+  src: url("../fonts/mw_demo.ttf"); }
+body {
+  background-color: #FBFF57;
+  margin: 0; }
+  body::selection {
+    background: #FBFF57; }
+
+/*# sourceMappingURL=common.css.map */

@@ -19,7 +19,7 @@ app
             less = await new Promise((res, rej) => {
                 Less.render(
                     less,
-                    {paths: ['.', SOURCE_DIR + "/styles"]},
+                    {paths: ['.', SOURCE_DIR + "/Header"]},
                     (e, output) => e ? rej(e) : res(output)
                 )
             });

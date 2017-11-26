@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/events.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <title>Events</title>
+</head>
+<body>
+<div class="ad-feed__block">
+    {{#events}}
+        <div class="ad-feed__block-event">
+            <a href="{{link}}">
+                <i class="{{icon-class}}" style="{{icon-style}}"></i>
+                {{event}}
+            </a>
+            <time datatype="#">{{event-time}}</time>
+        </div>
+    {{/events}}
+</div>
+</body>
+</html>

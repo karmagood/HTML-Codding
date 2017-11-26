@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/media-screen.css">
+    <link rel="stylesheet" type="text/css" href="style/main-navigation__item.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__nav.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__link.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__creation.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__quick__link.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__quick.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__quick__friends.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__quick__item__recomendation.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__quick__friends__item.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__header.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__actions.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__text.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__actions__contacts.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__actions__item.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__actions.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__actions__friends.css">
+    <link rel="stylesheet" type="text/css" href="style/main-navigatio.css">
+    <link rel="stylesheet" type="text/css" href="style/profile-img.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Facebook</title>
+</head>
+<body>
+
+
+<header class="main-navigation">
+    <a class="main-navigation__item_big" href="https://www.facebook.com/"><img src="../images/facebook_logo.png"
+                                                                               height="25"
+                                                                               alt="Facebook logo"/></a>
+    <input class="main-navigation__input" type="text" placeholder="Пошук"><input class="main-navigation__submit"
+                                                                                 type="submit" value="&#xf002">
+    <div class="main-navigation__separator"></div>
+    <a class="main-navigation__item_big" href="https://www.facebook.com/"><img class="profile-img"
+                                                                               src="../images/home-team-3.jpg"
+                                                                               alt="Profile photo"></a>
+    <a class="main-navigation__item_big" href="#"><p class="main-navigation__paragraph">Наталя</p></a>
+    <a class="main-navigation__item_big"><p class="main-navigation__paragraph">Головна </p></a>
+    <a class="main-navigation__item main-navigation__item_friend" href="#">Запити на дружбу</a>
+    <a class="main-navigation__item main-navigation__item_messenger" href="#">Повідомлення</a>
+    <a class="main-navigation__item main-navigation__item_news" href="#">Сповіщення</a>
+    <a class="main-navigation__item main-navigation__item_help" href="#">Швидка допомога</a>
+    <a class="main-navigation__item main-navigation__item_quick" href="#">Швидкий доступ</a>
+</header>
+<section class="main-container">
+    <section class="main-container__nav">
+        <nav>
+            <section class="main-container__nav__block">
+
+                <a class="main-container__link" href="#">
+                    <img class="main-container__img" src="../images/home-team-3.jpg" alt="Profile picture">
+                    <p class="main-container__nav__paragraph"> Наталя Параняк</p></a>
+
+                <section>
+                    {{#dataFacebook}}
+                        {{#news-messenger}}
+                            <a class="main-container__link" href="{{src}}">
+                                <img class="main-container__nav__img" src="{{img-src}}" style="{{img-options}}">
+                                <p class="main-container__nav__paragraph">{{text}}</p></a>
+                        {{/news-messenger}}
+                    {{/dataFacebook}}
+                </section>
+                <h2 class="main-container__header">Швидкий доступ</h2>
+                {{#dataFacebook}}
+                    {{#menu-items}}
+                        <a class="main-container__link" href="{{menu-src}}" >
+                            <img src="{{img-src}}" alt="Page 1" class="main-container__img">
+                            <p class="main-container__nav__paragraph">{{name-item}}</p></a>
+                    {{/menu-items}}
+                {{/dataFacebook}}
+                <h2 class="main-container__header">Огляд</h2>
+                <section>
+                    {{#dataFacebook}}
+                        {{#interesting-things}}
+                            <a class="main-container__link" href="{{src}}">
+                                <img class="main-container__nav__img" src="{{img-src}}" style="{{img-options}}">
+                                <p class="main-container__nav__paragraph">{{text}}</p></a>
+                        {{/interesting-things}}
+                    {{/dataFacebook}}
+                </section>
+            </section>
+
+            <aside class="main-container__creation">
+                <h2 style="font-size: 13px; font-weight: bold; color: dimgrey">Створити</h2>
+                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Реклама</p></a>
+                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Сторінки</p></a>
+                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Група</p></a>
+                <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Подія</p></a>
+            </aside>
+        </nav>
+    </section>
+    <section class=" main-container__feeds">
+
+        <div>
+            {{#dataFacebook}}
+                {{#posts}}
+                    <section class="main-container__feeds__item">
+                        <a href="{{profile-url}}"><img class="main-container__feeds__img" src="{{profile-picture-url}}"
+                                                       alt="Profile picture" width="55"
+                                                       height="55"></a>
+                        <div style="display: inline-block">
+                            <h2 class="main-container__feeds__header main-container__feeds__header_main"
+                            ><a href="{{profile-url}}"
+                                class="main-container__quick__link_more">{{profile-name}}</a>
+                                <span class="main-container__feeds__header_action">{{user-action}}</span></h2>
+                            <h2 class="main-container__feeds__header main-container__feeds__header_small"><a
+                                    href="{{extra-info-url}}"
+                                    style="display: inline;">{{time-info}}
+                                тому</a><a href="#" style="display: inline;">
+                                {{extra-paragraph}}</a> <i class="fa fa-globe main-container__feeds__icon"></i>
+                            </h2>
+
+                        </div>
+
+
+                        <article class="main-container__feeds__text">{{main-post-info}}
+                            <span class="main-container__feeds__text_tag">{{tags}}</span>
+                        </article>
+
+                        <img class="main-container__feeds__image" src="{{post-images-url}}" width="400"
+                             alt="Post-image">
+
+                        <section class="main-container__feeds__actions">
+                            <button class="main-container__feeds__actions__button" type="submit"><i
+                                    class="fa fa-thumbs-o-up main-container__feeds__actions__button_icon"
+                            ></i>Подобається
+                            </button>
+                            <button class="main-container__feeds__actions__button" type="submit"><i
+                                    class="fa fa-comments main-container__feeds__actions__button_icon"
+                            ></i>Коментувати
+                            </button>
+                            <button class="main-container__feeds__actions__button" type="submit"><i
+                                    class="fa fa-share main-container__feeds__actions__button_icon"
+                            ></i>Поширити
+                            </button>
+                        </section>
+
+
+                    </section>
+                {{/posts}}
+            {{/dataFacebook}}
+        </div>
+    </section>
+
+    <section class=" main-container__quick">
+        <div>
+            <section class="main-container__quick__item">
+                <a href="#" class="main-container__quick__link">
+                    <img class="main-container__quick__link_event" src="../images/gift.png" alt="gift" width="25">
+                    <p class="main-container__quick__link_more">4 запрошення на
+                        подіїї</p></a>
+                <a href="#" class="main-container__quick__link">
+                    <img class="main-container__quick__link_birthday" src="../images/gift.png" alt="gift" width="25">
+                    <p>Сьогодні день народження у <span class="main-container__quick__link_more">Віктора</span>
+                    </p></a>
+            </section>
+
+            <section class="main-container__quick__friends">
+                <h2 class="main-container__quick__header">
+                    Запити на дружбу</h2>
+                <a href="#"
+                   class="main-container__quick__friends__link">Переглянути
+                    більше</a>
+                {{#dataFacebook}}
+                    {{#friends-request}}
+                        <section class="main-container__quick__friends__item" >
+                            <a href="{{friend-src}}"> <img class="main-container__quick__friends__item__img" src="{{friend-image-src}}" height="50" width="50"
+                                                           alt="Friend name"></a>
+                            <a href="#">
+                                <h3 class="main-container__quick__friends__item__header">{{friend-name}}</h3>
+                            </a>
+                            <p class="main-container__quick__friends__item__par">{{common-friends-count}} спільних
+                                друга</p>
+                            <button  class="main-container__quick__friends__item__button" type="submit">
+                                Підтвердити друга
+                            </button>
+                        </section>
+                    {{/friends-request}}
+                {{/dataFacebook}}
+
+
+            </section>
+            <section class="main-container__quick__item__recomendation">
+                <h2 class="main-container__quick__header">
+                    Рекомендовані сторінки</h2>
+                <a href="#" class="main-container__quick__friends__link">Переглянути
+                    всі</a>
+                <section class="main-container__quick__item__recomendation__text">
+                    <a href="#"> <img class="main-container__quick__item__recomendation__img" src="../images/headerimg9.jpg" width="290" alt="Main page image"
+                                      ></a>
+                    <a href="#">
+                        <h3 class="main-container__quick__item__recomendation__header" >
+                            Блог Л.М.</h3>
+                    </a>
+                    <p class="main-container__quick__item__recomendation__par">2345 вподобань</p>
+                    <button type="submit" class="main-container__quick__friends__item__button">Уподобати сторінку</button>
+                </section>
+            </section>
+
+        </div>
+    </section>
+
+</section>
+
+
+
+<section class=" main-container__actions">
+
+    <div>
+        <section class="main-container__actions__games">
+            <h2 class="main-container__quick__header">
+                ВАШІ ІГРИ</h2>
+            <a href="#" class="main-container__quick__friends__link">Ще</a>
+            <section class="main-container__actions__item">
+                <section>
+                    <div class="main-container__actions__item__dialog">
+                        <a href="#"> <img class="main-container__actions__item__dialog__img" src="../images/html5_doctor.jpg" height="45" width="45" alt="Your game"
+                                          ></a>
+                        <a href="#" class="main-container__actions__item--close"></a>
+                    </div>
+                </section>
+                <section>
+                    <div class="main-container__actions__item__dialog">
+                        <a href="#"> <img class="main-container__actions__item__dialog__img" src="../images/headerimg9.jpg" height="45" width="45" alt="Your game"
+                                          ></a>
+                        <a href="#" class="main-container__actions__item--close"></a>
+                    </div>
+                </section>
+                <section>
+                    <div class="main-container__actions__item__dialog">
+                        <a href="#"> <img class="main-container__actions__item__dialog__img" src="../images/facebook_logo.png" height="45" width="45" alt="Your game"
+                                          ></a>
+                        <a href="#" class="main-container__actions__item--close"></a>
+                    </div>
+                </section>
+            </section>
+        </section>
+        <hr>
+        <section class="main-container__actions__friends__feeds">
+            {{#dataFacebook}}
+                {{#friends-feeds}}
+                    <section class="main-container__actions__friends__feeds__item">
+                        <a href="{{friend-src}}">
+                            <img class="main-container__actions__friends__img" src="{{friend-image-src}}" height="40" width="40" alt="Profile img"
+                                 >
+
+                            <p class="main-container__actions__friends__par"><span class="main-container__actions__friends__par_name">{{friend-name}}</span>
+                                {{action}}</p>
+                        </a>
+                    </section>
+                    <hr>
+                {{/friends-feeds}}
+            {{/dataFacebook}}
+
+        </section>
+        <section class="main-container__actions__contacts">
+            {{#dataFacebook}}
+                {{#contacts}}
+                    <section class="main-container__actions__contacts__item"><a href="{{friend-src}}"> <img class="main-container__actions__contacts__img" src="{{friend-image-src}}" height="40" width="40"
+                                                            alt="Profile img">
+                        <p class="main-container__actions__contacts__present">{{friend-name}}</p></a>
+                        <p class="main-container__actions__contacts__present"><i
+                                class="fa fa-circle main-container__actions__contacts__present_active"
+                                ></i></p>
+                    </section>
+                {{/contacts}}
+            {{/dataFacebook}}
+
+
+        </section>
+    </div>
+</section>
+
+</body>
+</html>

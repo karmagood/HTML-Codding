@@ -1,0 +1,61 @@
+@import "_variables";
+
+body {
+  font-size: 0;
+  margin: 0;
+  background: gray;
+}
+
+.calendar {
+  font-size: @day_font-size;
+  width : ( ( 2 * @day_margin ) + @day_size) * 7 ;
+  padding: @calendar_padding;
+  background: green;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+
+  // TODO: Maybe send it to separate block?
+  &__yearnumber{
+    text-align: center;
+    font-style: italic;
+    font-size: 200%;
+    /* header year notion */
+  }
+  &__mounthname{
+    text-align: center;
+    font-style: italic;
+    font-size: 150%;
+    /* header with notion */
+  }
+  &__day{
+    height: @day_size;
+    width: @day_size;
+    background: red;
+    border-radius: @day_round_corners;
+    text-align: center;
+    float: left;
+    margin-left: @day_margin;
+    margin-right: @day_margin;
+    margin-bottom: @day_margin;
+    margin-top: @day_margin;
+    line-height: @day_size;
+
+
+    outline: black solid 1px;
+    &_names{
+      font-style: italic;
+      background: none;
+    }
+    &_active {  }
+    &_empty-filler { display: block  }
+    &_holyday { background: red  }
+  }
+
+}
+
+
+.swipe-button {
+
+}
