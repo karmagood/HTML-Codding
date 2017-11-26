@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="youtube_home.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-left">
+        <img src="menu.png">
+        <img  id="a" src="data:image/png;base64,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">
+    </div>
+    <div  class="header-right">
+        <div class="header-search">
+            <input type="text"  placeholder="Search">
+            <button>
+                <img src="search.png">
+            </button>
+        </div>
+        <div class="header-menu">
+            <img src="upload.png">
+            <img src="grid.png">
+            <img src="notifications-button.png">
+            <img src="https://yt3.ggpht.com/-5UfFj3peeUw/AAAAAAAAAAI/AAAAAAAAAAA/7xDLIZFMdH0/s108-c-k-no-mo-rj-c0xffffff/photo.jpg">
+        </div>
+    </div>
+</header>
+<aside>
+    <nav class="main-nav">
+        <div>
+            <a href="https://www.youtube.com/">
+                <img src="home-button.png">
+                <span>Home</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/feed/trending">
+                <img src="fire.png">
+                <span>Trending</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/feed/subscriptions">
+                <img src="youtube-play-button.png">
+                <span>Subscriptions</span>
+            </a>
+        </div>
+
+    </nav>
+    <nav class="nav-library">
+        <h3>LIBRARY</h3>
+        <div>
+            <a href="https://www.youtube.com/feed/history">
+                <img src="history-clock-button.png">
+                <span>History</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/playlist?list=WL">
+                <img src="clock.png">
+                <span>Watch later</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/playlist?list=LLpaiqTFbEg2QAlTQAwruQDw">
+                <img src="thumb-up-button.png">
+                <span>Liked videos</span>
+            </a>
+        </div>
+    </nav>
+    <nav class="nav-subscriptions">
+        <h3>SUBSCRIPTIONS</h3>
+        <div>
+            <a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw">
+                <img src="https://yt3.ggpht.com/-waYunpNuwpY/AAAAAAAAAAI/AAAAAAAAAAA/UwFbmYRfzyo/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                <span>3Blue1Brown</span>
+                <span class="numb-new-videos">3</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/channel/UCsooa4yRKGN_zEE8iknghZA">
+                <img src="https://yt3.ggpht.com/-mnEpZE0uuus/AAAAAAAAAAI/AAAAAAAAAAA/SM5q4mSZgq4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                <span>TED-Ed</span>
+                <span class="numb-new-videos">2</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/channel/UC4dqLAF7yT-_DqeYisQ001w">
+                <img src="https://yt3.ggpht.com/-55hvE6-u0Jg/AAAAAAAAAAI/AAAAAAAAAAA/k3L9T6S1bEk/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                <span>TheBeatlesVEVO</span>
+                <span class="numb-new-videos">1</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/channel/UC7vVhkEfw4nOGp8TyDk7RcQ">
+                <img src="https://yt3.ggpht.com/-llIsPqYPmIQ/AAAAAAAAAAI/AAAAAAAAAAA/sCayMKvCCaw/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                <span>BostonDynamics</span>
+                <span class="numb-new-videos">1</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/channel/UCOzpgwSVhD9VLZrOvume4YA">
+                <img src="https://yt3.ggpht.com/-eizN9QglIp8/AAAAAAAAAAI/AAAAAAAAAAA/EoD_Aql8bF4/s88-c-k-no-mo-rj-c0xffffff/photo.jpg">
+                <span>Anglophenia</span>
+                <span class="numb-new-videos">3</span>
+            </a>
+        </div>
+    </nav>
+    <nav>
+        <div>
+            <a href="https://www.youtube.com/channels">
+                <img src="plus.png">
+                <span>Browse channels</span>
+            </a>
+        </div>
+    </nav>
+    <nav>
+        <div>
+            <a href="https://www.youtube.com/channel/UClgRkhTL3_hImCAmdLfDE4g">
+                <img src="film-roll.png">
+                <span>YouTube movies</span>
+            </a>
+        </div>
+    </nav>
+    <nav class="nav-settings">
+        <div>
+            <a href="https://www.youtube.com/account">
+                <img src="settings-work-tool.png">
+                <span>Settings</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/">
+                <img src="question-mark.png">
+                <span>Help</span>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/">
+                <img src="failed-sms.png">
+                <span>Send feedback</span>
+            </a>
+        </div>
+    </nav>
+    <div class="aside-footer">
+        <a href="//www.youtube.com/yt/about/">About</a>
+        <a href="//www.youtube.com/yt/press/">Press</a>
+        <a href="//www.youtube.com/yt/copyright/">Copyright</a>
+        <a href="//www.youtube.com/yt/creators/">Creators</a>
+        <a href="//www.youtube.com/yt/advertise/">Advertise</a>
+        <a href="//www.youtube.com/yt/developers/">Developers</a>
+        <a href="//www.youtube.com/yt/+youtube/">+Youtube</a>
+    </div>
+
+</aside>
+<main>
+    <h2>
+        <span>Recommended</span>
+    </h2>
+    <section class="recommended">
+
+        <section class="video">
+            <a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v&#x3D;ndL_xLnWh_M&quot;>
+                <img src=>
+                <span class="video-title">
+                    
+                    </span>
+            </a>
+            <br>
+            <a href="https://www.youtube.com/user/TheArcticRg">
+                <span class="video-publisher"> </span>
+
+            </a>
+            <br>
+            <span class="video-date"></span>
+            <span class="video-views"> </span>
+
+
+        </section>
+        <section class="video">
+            <a href="https://www.youtube.com/watch?v=ndL_xLnWh_M">
+                <img src="https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA">
+                <span class="video-title">
+                        Arctic Monkeys - Why'd You Only Call Me When
+                    </span>
+                <br>
+                <span class="video-publisher"> THE ARCTIC RG</span>
+                <br>
+                <span class="video-date">3 years ago </span>
+                <span class="video-views">3.6M views</span>
+
+            </a>
+
+        </section>
+        <section class="video">
+            <a href="https://www.youtube.com/watch?v=ndL_xLnWh_M">
+                <img src="https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA">
+                <span class="video-title">
+                        Arctic Monkeys - Why'd You Only Call Me When
+                    </span>
+                <br>
+                <span class="video-publisher"> THE ARCTIC RG</span>
+                <br>
+                <span class="video-date">3 years ago</span>
+                <span class="video-views">3.6M views</span>
+
+            </a>
+        </section>
+        <section class="video">
+            <a href="https://www.youtube.com/watch?v=ndL_xLnWh_M">
+                <img src="https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA">
+                <span class="video-title">
+                        Arctic Monkeys - Why'd You Only Call Me When
+                    </span>
+                <br>
+                <span class="video-publisher"> THE ARCTIC RG</span>
+                <br>
+                <span class="video-date">3 years ago</span>
+                <span class="video-views">3.6M views</span>
+
+            </a>
+        </section>
+        <section class="video">
+            <a href="https://www.youtube.com/watch?v=ndL_xLnWh_M">
+                <img src="https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA">
+                <span class="video-title">
+                        Arctic Monkeys - Why'd You Only Call Me When
+                    </span>
+                <br>
+                <span class="video-publisher"> THE ARCTIC RG</span>
+                <br>
+                <span class="video-date">3 years ago</span>
+                <span class="video-views">3.6M views</span>
+
+            </a>
+
+        </section>
+        <section class="video">
+            <a href="https://www.youtube.com/watch?v=ndL_xLnWh_M">
+                <img src="https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA">
+                <span class="video-title">
+                        Arctic Monkeys - Why'd You Only Call Me When
+                    </span>
+                <br>
+                <span class="video-publisher"> THE ARCTIC RG</span>
+                <br>
+                <span class="video-date">3 years ago</span>
+                <span class="video-views">3.6M views</span>
+
+            </a>
+
+        </section>
+        <section class="video">
+            <a href="https://www.youtube.com/watch?v=ndL_xLnWh_M">
+                <img src="https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA">
+                <span class="video-title">
+                        Arctic Monkeys - Why'd You Only Call Me When
+                    </span>
+                <br>
+                <span class="video-publisher"> THE ARCTIC RG</span>
+                <br>
+                <span class="video-date">3 years ago</span>
+                <span class="video-views">3.6M views</span>
+
+            </a>
+        </section>
+        <section class="video">
+            <a href="https://www.youtube.com/watch?v=ndL_xLnWh_M">
+                <img src="https://i.ytimg.com/vi/ndL_xLnWh_M/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCYZyHLY_Fv_-6JGm8AOZ457gHedA">
+                <span class="video-title">
+                        Arctic Monkeys - Why'd You Only Call Me When
+                    </span>
+                <br>
+                <span class="video-publisher"> THE ARCTIC RG</span>
+                <br>
+                <span class="video-date">3 years ago</span>
+                <span class="video-views">3.6M views</span>
+
+            </a>
+
+        </section>
+    </section>
+</main>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,95 @@
+header {
+    top: 0;
+    height: 43px;
+    background-color: #365899;
+    z-index: 1;
+    left: 0;
+}
+
+header * {
+    position: absolute;
+    /*width: 550px;*/
+    left: 90px;
+}
+
+.header__fb-logo {
+    top: 10px;
+    border-radius: 1px/1px;
+    left: 73px;
+    height: 24px;
+    width: 24px;
+}
+
+.header__profile-pic {
+    top: 12px;
+    border-radius: 10px/10px;
+    left: 690px;
+    height: 22px;
+    width: 22px;
+}
+
+
+.header__search-field {
+    left: 103px;
+    height: 22px;
+    width: 442px;
+    margin: 10px 0 0 0;
+    border-radius: 2px/2px;
+    border: transparent;
+}
+
+.header__search-logo {
+    top: 12px;
+    left: 430px;
+    height: 20px;
+    width: 20px;
+}
+
+.header__user-name {
+    top: 15px;
+    left: 720px;
+    font-size: 14px;
+    color: white;
+}
+
+.header__home-button{
+    top: 15px;
+    left: 862px;
+    font-size: 14px;
+    color: white;
+}
+
+.header__friend-requests {
+    top: 8px;
+    left: 825px;
+    height: 30px;
+    width: 45px;
+}
+
+.header__messages {
+    top: 12px;
+    left: 870px;
+    height: 22px;
+    width: 22px;
+}
+
+.header__notifications {
+    left: 895px;
+    height: 45px;
+    width: 45px;
+}
+
+
+.header__quick-help {
+    top: 11px;
+    left: 960px;
+    height: 23px;
+    width: 23px;
+}
+
+.header__settings {
+    top: 16px;
+    left: 990px;
+    height: 15px;
+    width: 15px;
+}
