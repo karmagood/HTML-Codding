@@ -3,10 +3,18 @@
 .Best-video {
   color: @color;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Button__action_blue {
+  align-self: center;
 }
 
 .Best-video-headers {
   max-width: 1080px;
+  margin: 0 auto;
 
   &__section-header {
     font-family: sans-serif;
@@ -25,6 +33,15 @@
   }
 
 }
+
+.Video-list {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 .Discover-wrapper {
   display: none;
 }
@@ -46,4 +63,3 @@
     }
   }
 }
-

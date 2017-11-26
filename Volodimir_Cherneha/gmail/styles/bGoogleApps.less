@@ -1,0 +1,45 @@
+.Apps {
+  float: right;
+  top: 15px;
+  padding: 10px 20px 0 0;
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: transparent;
+    vertical-align: middle;
+    &_more {
+      width: 30px;
+      height: 30px;
+      background-image: url("../images/gmail_sprite.png");
+      background-position: 0 -894px;
+      opacity: .55;
+      background-size: auto;
+    }
+    &_apps:hover{
+      opacity: .85;
+    }
+
+    &_notification {
+      margin: 0 15px 0 15px;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/gmail_sprite.png");
+      opacity: .55;
+      background-color: #000;
+      border-radius: 50%;
+      background-size: 62px 1682px;
+      background-position: 3px -1663px;
+    }
+    &_notification:hover{
+      opacity:0.85;
+    }
+    &_profile {
+
+      width: 32px;
+      height: 32px;
+      background-image: url("../images/photo.png");
+      border-radius: 50%;
+    }
+  }
+}

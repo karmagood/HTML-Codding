@@ -24,8 +24,7 @@
     "jquery": "^3.2.1",
     "less": "^2.7.3",
     "mustache": "^2.3.0",
-    "ramda": "^0.25.0",
-    "webpack": "^3.8.1"
+    "ramda": "^0.25.0"
   },
   "devDependencies": {
     "webpack": "^3.8.1"
