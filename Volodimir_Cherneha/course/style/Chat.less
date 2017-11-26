@@ -1,0 +1,42 @@
+.Chat {
+  border-left: 1px solid lightgrey;
+  height: 100%;
+  padding-top: 15px;
+  overflow: scroll;
+  width: 220px;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  &__user-photo {
+    height: 34px;
+    width: 34px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+  }
+
+  &__search-placeholder {
+    width: 203px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__item {
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 1260px) {
+  .Chat {
+    display: none;
+  }
+}

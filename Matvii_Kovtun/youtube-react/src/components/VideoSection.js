@@ -3,13 +3,12 @@ import Video from './Video';
 import '../style/VideoSection.less';
 
 
-
 const VideoSection = ({sectionTitle, items}) => (
-    <section class="video-section">
-        <h2 class="video-section__title">{sectionTitle}</h2>
-        <div class="video-section__feed">
-            {items.map(({title, videoViews, img, time, channel}) =>
-                <Video {...{title, videoViews, img, time, channel}} />)}
+    <section className="video-section">
+        <h2 className="video-section__title">{sectionTitle}</h2>
+        <div className="video-section__feed">
+            {items.map(({title, videoViews, img, time, channel}, id) =>
+                <Video {...{title, videoViews, img, time, channel, id}} />)}
             <Video/>
         </div>
     </section>

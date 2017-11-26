@@ -1,4 +1,40 @@
 {
+  "header-navigation": [
+    {
+      "title": "Join"
+    },
+    {
+      "title": "Log in"
+    },
+    {
+      "title": "Host video"
+    },
+    {
+      "title": "Sell"
+    },
+    {
+      "title": "Watch"
+    }
+  ],
+  "button": [
+    {
+      "link": "find-plan",
+      "title": "Find a plan"
+    },
+    {
+      "link": "join",
+      "title": "Join free"
+    }
+  ],
+  "points":[
+    {
+      "title":"Review videos with collaborators"
+    },{
+      "title":"Drive engagement and embed anywhere"
+    },{
+      "title":"Easily see how your videos are performing"
+    }
+  ],
   "bestvideo": [
     {
       "image": "/images/665715143_390x220.png"

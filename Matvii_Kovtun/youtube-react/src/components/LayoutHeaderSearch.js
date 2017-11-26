@@ -2,11 +2,11 @@ import React from 'react';
 
 
 const LayoutHeaderSearch = () => (
-    <form class="layout-header__search-wrapper">
+    <form className="layout-header__search-wrapper">
             <label>
-                <input class="layout-header__search" type="search"/>
+                <input className="layout-header__search" type="search"/>
             </label>
-            <button class="layout-header__button_search">Search</button>
+            <button className="layout-header__button_search">Search</button>
     </form>
 );
 

@@ -1,0 +1,32 @@
+.user-header{
+    background-color:#f0f0f0;
+    display:flex;
+    align-items: center;
+    border-bottom: solid lightgray 1px;
+}
+.user-header__ucu-logo{
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 143px;
+    height: 59px;
+    border: 0px;
+}
+.user-header__search-field{
+    height: 25px;
+    width: 45%;
+    border: solid cornflowerblue 1px;
+
+}
+.user-header__search_button{
+    width: 50px;
+    height: 29px;
+    background-color: #4387fd;
+    border: 0;
+    margin-right: auto;
+}
+[class^="user-header__opt-button"]{
+    background-color: transparent;
+    border: transparent;
+    margin-right: 1%;
+}
+
