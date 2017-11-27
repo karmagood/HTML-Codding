@@ -1,0 +1,47 @@
+.Layout__wrapper {
+    width: 1154px;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 143px;
+    padding-right: 143px;
+}
+.Layout__wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.Layot__navigation {
+  background: tomato;
+  order: 1;
+}
+.Layout__events {
+  order: 2;
+  background: deepskyblue;
+}
+.Layout__recipes {
+  order: 3;
+  background: gold;
+}
+.Layout__contact-chef {
+  order: 4;
+  background: hotpink;
+}
+.Layout__contacts {
+  order: 5;
+  background: lightgreen;
+}
+
+@media all and (max-width: 600px) {
+  .Layout__contact-chef,
+  .Layout__contacts,
+  .Layout__recipes {
+    flex: 2 0px;
+  }
+}
+
+
+
+
+
