@@ -8,6 +8,7 @@ import VideoArticle from './VideoArticle';
 
 
 class Layout extends Component {
+    // TODO: make onclick logo to back to main page
     constructor() {
         super();
         (function (history) {

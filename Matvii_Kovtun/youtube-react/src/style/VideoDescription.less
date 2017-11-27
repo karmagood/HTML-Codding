@@ -1,24 +1,47 @@
 .video-description {
-  width: 80%;
-  height: 200px;
+  width: 65%;
   background-color: #4aaee8;
-
+  &__header {
+    padding-top: 17px;
+  }
   &__channel-info {
     display: inline-block;
-
+    margin-left:10px;
   }
   &__channel-title {
 
   }
 
+  &__video-details {
+    padding-left: 95px;
+    padding-top: 20px;
+    padding-right: 50px;
+  }
+
   &__published {
     display: block;
-
+    color: #8b898b;
   }
 
   &__channel-logo {
-    width: 75px;
-    padding-left: 10px;
-    padding-top: 10px;
+    width: 50px;
+    border-radius: 33px;
+  }
+
+  &__button-subscribe {
+    float: right;
+    text-align: center;
+    margin-top: 5px;
+    margin-right: 30px;
+    height: 40px;
+    width: 230px;
+    background-color: hsl(0, 100%, 50%);
+    border: none;
+    border-radius: 2px;
+    font-size: 23px;
+    color: #f8f8f8;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }

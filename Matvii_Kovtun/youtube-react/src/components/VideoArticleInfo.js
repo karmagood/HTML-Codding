@@ -7,7 +7,7 @@ class VideoArticleInfo extends Component {
     render() {
         return (
             <aside className="video-article__info">
-                <span className="video-article__views">7 211 316 просмотро</span>
+                <span className="video-article__views">7 211 316 views</span>
                 <div className="video-article__option">
                     <a href="" className="option__section">
                         <button className="option__button option__button_like">Like</button>
