@@ -24,6 +24,7 @@
     <link rel="stylesheet" type="text/css" href="style/main-container__actions__friends.css">
     <link rel="stylesheet" type="text/css" href="style/main-navigatio.css">
     <link rel="stylesheet" type="text/css" href="style/profile-img.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__actions__search.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,7 +34,7 @@
 
 
 <header class="main-navigation">
-    <a class="main-navigation__item_big" href="https://www.facebook.com/"><img src="../images/facebook_logo.png"
+    <a class="main-navigation__item_big" href="https://www.facebook.com/"><img class="main-navigation__item__logo" src="../images/facebook-icon.jpg"
                                                                                height="25"
                                                                                alt="Facebook logo"/></a>
     <input class="main-navigation__input" type="text" placeholder="Пошук"><input class="main-navigation__submit"
@@ -47,6 +48,7 @@
     <a class="main-navigation__item main-navigation__item_friend" href="#">Запити на дружбу</a>
     <a class="main-navigation__item main-navigation__item_messenger" href="#">Повідомлення</a>
     <a class="main-navigation__item main-navigation__item_news" href="#">Сповіщення</a>
+    <div class="main-navigation__item_liner"></div>
     <a class="main-navigation__item main-navigation__item_help" href="#">Швидка допомога</a>
     <a class="main-navigation__item main-navigation__item_quick" href="#">Швидкий доступ</a>
 </header>
@@ -89,7 +91,7 @@
             </section>
 
             <aside class="main-container__creation">
-                <h2 style="font-size: 13px; font-weight: bold; color: dimgrey">Створити</h2>
+                <h2 class="main-container__header">Створити</h2>
                 <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Реклама</p></a>
                 <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Сторінки</p></a>
                 <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Група</p></a>
@@ -243,7 +245,7 @@
                 </section>
             </section>
         </section>
-        <hr>
+        <hr class="main-container__action__separator">
         <section class="main-container__actions__friends__feeds">
             {{#dataFacebook}}
                 {{#friends-feeds}}
@@ -256,7 +258,7 @@
                                 {{action}}</p>
                         </a>
                     </section>
-                    <hr>
+                    <hr class="main-container__action__separator">
                 {{/friends-feeds}}
             {{/dataFacebook}}
 
@@ -275,6 +277,12 @@
             {{/dataFacebook}}
 
 
+        </section>
+        <section class="main-container__actions__search">
+            <input class="main-container__actions__input" type="text" placeholder="Пошук">
+            <a class="main-container__actions__search__icon main-container__actions__search__icon_setting" href="#">Налаштування</a>
+            <a class="main-container__actions__search__icon main-container__actions__search__icon_new" href="#">Нове повідомлення</a>
+            <a class="main-container__actions__search__icon main-container__actions__search__icon_group" href="#">Створити нову групу</a>
         </section>
     </div>
 </section>
