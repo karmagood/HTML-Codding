@@ -4,16 +4,18 @@ import UserMenu from './UserMenu';
 import LayoutPayload from './LayoutPayload';
 import "../style/Layout.less";
 import logo from '../images/youtube-logo.jpg'
-import VideoArticle from './VideoArticle';
+import VideoArticle from './VideoPage';
 
 
 class Layout extends Component {
+    // TODO: make videosection adjustable to screen (responsive)
+
     constructor() {
         super();
         (function (history) {
             var pushState = history.pushState;
             history.pushState = function (state) {
-                if (typeof history.onpushstate == "function") {
+                if (typeof history.onpushstate === "function") {
                     history.onpushstate({state: state});
                 }
                 // ... whatever else you want to do
@@ -33,14 +35,14 @@ class Layout extends Component {
         let currentPage = window.location.pathname.split("/");
         console.log(currentPage);
 
-        if (currentPage[1] == "")
+        if (currentPage[1] === "")
             return (
                 <div className="layout">
                     <header className="layout__header"><LayoutHeader img={logo}/></header>
                     <aside className="layout__user-menu"><UserMenu/></aside>
                     <main className="layout__payload"><LayoutPayload/></main>
                 </div>);
-        else if (currentPage[1] == "video") {
+        else if (currentPage[1] === "video") {
             let id = currentPage[2];
             return (<div className="layout">
                 <header className="layout__header"><LayoutHeader img={logo}/></header>
