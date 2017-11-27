@@ -11,13 +11,22 @@
 }
 
 .header__youtube-logo {
+    vertical-align: middle;
     width: 100px;
 }
 
-.header__search-field {
+.header__search-form {
+    width: 658px;
+    vertical-align: middle;
     display: inline-block;
 }
 
-.header__settings-buttons {
+.header__search-form_search {
+
+}
+
+.header__settings {
+    vertical-align: middle;
     float: right;
+    margin-top: 17px;
 }
