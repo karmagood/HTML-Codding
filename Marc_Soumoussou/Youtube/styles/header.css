@@ -20,8 +20,13 @@
     display: inline-block;
 }
 
+.header__search-form_search {
+    width: 591px;
+    height: 23px;
+}
+
 .header__settings {
-    vertical-align: middle;
+
     float: right;
-    margin-top: 10px;
+    margin-top: 8.5px;
 }
