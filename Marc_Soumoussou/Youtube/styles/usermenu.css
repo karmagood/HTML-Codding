@@ -14,5 +14,10 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid #efedef;
+}
 
+.home-trending-history {
+    padding: 0 200px 0 70px;
+    line-height: 60px;
+    font-size: 18px;
 }
