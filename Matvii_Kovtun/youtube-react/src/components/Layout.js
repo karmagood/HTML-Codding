@@ -8,8 +8,6 @@ import VideoArticle from './VideoPage';
 
 
 class Layout extends Component {
-    // TODO: make videosection adjustable to screen (responsive)
-
     constructor() {
         super();
         (function (history) {
