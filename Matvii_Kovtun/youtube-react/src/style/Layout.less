@@ -1,28 +1,28 @@
 .layout {
-}
-
-.layout__payload {
-  overflow: hidden;
-  margin-top: 66px;
-  margin-left: 225px;
-  &_video{
-    margin-left: 0px;
+  &__user-menu {
+    overflow: auto;
+    width: 225px;
+    background: #f1f1f1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 68px;
   }
 
+  &__payload {
+    overflow: hidden;
+    margin-top: 66px;
+    margin-left: 225px;
+    &_video {
+      margin: auto;
+      max-width: 1260px;
+    }
+    &_wrapper {
+      margin: 50px auto auto;
+      width: 1200px;
+
+    }
+
+  }
 }
 
-.layout__payload_wrapper {
-  margin: 50px auto auto;
-  width: 1200px;
-
-}
-
-.layout__user-menu {
-  overflow: auto;
-  width: 225px;
-  background: #f1f1f1;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  top: 68px;
-}
