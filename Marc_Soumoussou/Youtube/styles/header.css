@@ -18,7 +18,11 @@
 .header__search-form {
     vertical-align: middle;
     display: inline-block;
-    color: #0C0C0C;
+}
+
+.header__search-form_search {
+    width: 591px;
+    height: 23px;
 }
 
 .header__settings {
