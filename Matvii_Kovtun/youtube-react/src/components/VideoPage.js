@@ -9,7 +9,8 @@ class VideoArticle extends Component {
 
     render() {
         return (
-            <section className="video-page video-page_highlight">
+            // video-page_highlight
+            <section className="video-page">
                 <div className="video-page__video"></div>
                 <article className="video-page__details">
                     <NextVideos/>
