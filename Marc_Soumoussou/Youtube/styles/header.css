@@ -16,17 +16,16 @@
 }
 
 .header__search-form {
-    width: 658px;
     vertical-align: middle;
     display: inline-block;
 }
 
 .header__search-form_search {
-
+    vertical-align: middle;
 }
 
 .header__settings {
     vertical-align: middle;
     float: right;
-    margin-top: 17px;
+    margin-top: 10px;
 }
