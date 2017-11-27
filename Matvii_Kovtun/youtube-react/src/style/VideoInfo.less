@@ -1,14 +1,49 @@
 .video-info {
   //background-color: white;
-  width: 80%;
+  width: 65%;
   line-height: 45px;
+
+  &__button {
+    width: 75px;
+    height: 25px;
+    border: none;
+    margin-right: 7px;
+    color: #8b898b;
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      color: #1A2E3B;
+      margin-right: 5px; // diskach mode
+    }
+
+    &_like {
+      width: 62px;
+      background: url("../images/like.svg") no-repeat;
+      text-align: right;
+
+    }
+
+    &_dislike {
+      background: url("../images/dislike.svg") no-repeat;
+      text-align: right;
+      width: 62px;
+      &:active{
+
+      }
+    }
+  }
+
   &__option {
     float: right;
     margin-right: 30px;
-
   }
   &__views {
     color: #8b898b;
+  }
+  &__border-bottom {
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    width: 96.2%;
   }
 
 }
