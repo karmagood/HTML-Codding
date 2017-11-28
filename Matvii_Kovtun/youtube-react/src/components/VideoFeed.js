@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import '../style/NextVideos.less';
+import '../style/VideoFeed.less';
 
 class NextVideos extends Component {
     render() {
