@@ -1,0 +1,7 @@
+.navigation {
+    font-family: "PT Sans", sans-serif;
+}
+
+.navigation__link {
+    display: block;
+}

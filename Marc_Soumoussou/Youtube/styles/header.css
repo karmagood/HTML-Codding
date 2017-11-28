@@ -1,0 +1,33 @@
+.header {
+    position: fixed;
+    right:0;
+    left: 0;
+    top: 0;
+    background-color: rgba(40, 40, 40, .8);
+}
+
+.header__hamburger-menu {
+    vertical-align: middle;
+}
+
+.header__youtube-logo {
+    vertical-align: middle;
+    width: 100px;
+}
+
+.header__search-form {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.header__search-form_search {
+    font-size: 16px;
+    width: 591px;
+    height: 23px;
+    padding-left: 1%;
+}
+
+.header__settings {
+    float: right;
+    margin-top: 8.5px;
+}
