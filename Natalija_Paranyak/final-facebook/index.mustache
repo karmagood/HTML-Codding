@@ -25,6 +25,13 @@
     <link rel="stylesheet" type="text/css" href="style/main-navigatio.css">
     <link rel="stylesheet" type="text/css" href="style/profile-img.css">
     <link rel="stylesheet" type="text/css" href="style/main-container__actions__search.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__actions.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__publish.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__separator.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__on-mind.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__extend.css">
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -100,7 +107,32 @@
         </nav>
     </section>
     <section class=" main-container__feeds">
+        <div class="main-container__feeds__new">
+            <form class="main-container__feeds__new__actions main-container__feeds__new__actions_new">
 
+                <button class=" main-container__feeds__button main-container__feeds__new__actions_create"> <i class=" main-container__feeds__icons create-post"></i>Створити допис</button>
+                <button class="main-container__feeds__button main-container__feeds__new__actions_album">  <i class="main-container__feeds__icons album-post"></i>Альбом зі світлинами/відео</button>
+                <button class="main-container__feeds__button main-container__feeds__new__actions_video"><i class="main-container__feeds__icons video-post"></i>Відео наживо</button>
+            </form>
+            <section class="main-container__feeds__on-mind">
+                <img class="main-container__feeds__new__on-mind__img" src="images/home-image-1.jpg" height="35">
+                <input class="main-container__feeds__new__on-mind__input" type="text" placeholder="Що у Вас на думці, Наталя?" >
+            </section>
+            <hr class="main-container__feeds__new__separator">
+            <section class="main-container__feeds__new__extend">
+                <form class="main-container__feeds__new__actions">
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_photo"><i class="main-container__feeds__icons photos-post "></i>Світлини/Відео</button>
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_emotions"><i class="main-container__feeds__icons emotions-post"></i> Почуття або дії</button>
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_more"><i class="main-container__feeds__icons more-post"></i></button>
+                </form>
+            </section>
+            <section class="main-container__feeds__new__publish">
+                <form class="main-container__feeds__new__actions main-container__feeds__new__actions_publish">
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_chose"><i class="main-container__feeds__icons public-post"></i>Публічно</button>
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_post"> Опублікувати</button>
+                </form>
+            </section>
+        </div>
         <div>
             {{#dataFacebook}}
                 {{#posts}}
