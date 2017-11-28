@@ -6,8 +6,10 @@ class VideoDescription extends Component {
         return (
             <aside className="video-description">
                 <div className="video-description__header">
-                    <img src="https://yt3.ggpht.com/-IPOer-Fbz-Y/AAAAAAAAAAI/AAAAAAAAAAA/8NAHhG3Ho9s/s88-c-k-no-mo-rj-c0xffffff/photo.jpg" alt=""
-                         className="video-description__channel-logo"/>
+                    <img
+                        src="https://yt3.ggpht.com/-IPOer-Fbz-Y/AAAAAAAAAAI/AAAAAAAAAAA/8NAHhG3Ho9s/s88-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                        alt=""
+                        className="video-description__channel-logo"/>
                     <div className="video-description__channel-info">
                         <span className="video-description__channel-title">Dj Drop G - Deep House</span>
                         <span className="video-description__published">Published: 24 april 2017</span>
@@ -26,6 +28,7 @@ class VideoDescription extends Component {
                     suscipit temporibus totam velit. Ab at consectetur ea eveniet libero nesciunt officia praesentium
                     quis quod, repellat, repudiandae sed.
                 </div>
+                <div className="video-info__border-bottom"></div>
             </aside>
         )
     };
