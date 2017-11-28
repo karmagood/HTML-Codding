@@ -1,0 +1,29 @@
+.tool-bar__section-title {
+  color: #4B4F56;
+  margin: 10px 5px 5px 5px;
+}
+.tool-bar__section-item.active {
+  background-color: #F6F7F9;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.tool-bar__section-item:not(.tool-bar__see-more) {
+  padding: 0 3px 0 3px;
+  font-size: 14px;
+  border: 1px solid transparent;
+  color: black;
+}
+.tool-bar__section-item:not(.tool-bar__see-more):hover {
+  background-color: #F6F7F9;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+}
+.tool-bar__section-item:not(.tool-bar__see-more):active {
+  background-color: #DDDFE2;
+}
+.tool-bar__see-more {
+  font-size: 12px;
+  padding-left: 5px;
+  color: #365899;
+}

@@ -1,0 +1,71 @@
+{
+  "navigation" : [
+    { "title": null,
+      "links": [
+      {
+        "title": "Новини",
+        "url" : "https://www.facebook.com/?sk=nfm",
+        "icon" : "news",
+        "count": 5
+      },
+
+      {
+        "title": "Messenger",
+        "url" : "https://www.facebook.com/?sk=nfm",
+        "icon" : "messenger",
+        "count": 6
+      }
+
+    ],
+
+      "links": [
+        {
+          "title": "Курча.Рефералло.",
+          "url" : "http://333.com",
+          "icon" : "psy-study-help",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "title": "Швидкий доступ",
+      "links": [
+        {
+          "title": "Психологія у Львові.",
+          "url" : "http://111.com",
+          "icon" : "psy",
+          "count": 5
+        },
+        {
+          "title": "Психологія. Львів.",
+          "url" : "http://222.com",
+          "icon" : "psy-in-lvov",
+          "count": 2
+        },
+        {
+          "title": "Курча.Рефералло.",
+          "url" : "http://333.com",
+          "icon" : "psy-study-help",
+          "count": 19
+        }
+      ]
+    },
+    {
+      "title": "Цікаве",
+      "links": [
+        {
+          "title": "Події.",
+          "url" : "http://111.com",
+          "icon" : "events",
+          "count": 5
+        },
+        {
+          "title": "Групи.",
+          "url" : "http://333.com",
+          "icon" : "groups",
+          "count": 70
+        }
+      ]
+    }
+  ]
+}

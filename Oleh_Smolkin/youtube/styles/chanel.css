@@ -1,0 +1,53 @@
+.chanel{
+    border-bottom: 1px #E8E8E8 ridge;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.chanel__header{
+    padding-bottom: 20px;
+}
+
+.chanel__icon{
+    border-radius: 50%;
+    height: 32px;
+}
+
+.chanel__title{
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 8px;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.chanel__info{
+    vertical-align: top;
+    padding-top: 8px;
+    padding-left: 5px;
+    display: inline-block;
+    color: #989898;
+}
+
+.chanel__list-name{
+    width: 200%;
+}
+
+.chanel__close-icon{
+    float: right;
+    height: 25px !important;
+    width: 25px;
+    padding: 5px 15px;
+}
+
+.chanel__subscript{
+    display: inline-block;
+    float: right;
+    vertical-align: top;
+    color: white;
+    background-color: #FF0000;
+    padding: 10px;
+    font-size: 14px;
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Facebook Home Page</title>
+    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="styles/Header.css">
+</head>
+<body>
+<header>
+    <img src="images/fb_logo.jpg" class="header__fb-logo"/>
+    <div>
+        <input class="header__search-field" type="text" placeholder="Search"/>
+        <button><img src="images/magnifier.png" class="header__search-logo"/></button>
+    </div>
+    <nav>
+        <a><img src="images/profile_pic_marc.jpg" class="header__profile-pic"/>
+            <span class="header__user-name">Marc</span></a>
+        <a class="header__home-button">Home</a>
+        <a><img src="images/friend_requests_fb.png" class="header__friend-requests"/></a>
+        <a><img src="images/messenger_logo.png" class="header__messages"/></a>
+        <a><img src="images/notifications_logo.png" class="header__notifications"/></a>
+        <a><img src="images/question_mark_fb.png" class="header__quick-help" /></a>
+        <a><img src="images/fb_options_button.png" class="header__settings"/></a>
+    </nav>
+</header>
+
+<section class="userMenu">
+    <div class="userMenu__user-name"><img src="images/profile_pic_marc.jpg"/>Marc Soum</div>
+    <section>
+        <ul>
+            <li>
+                <a id="newsFeed" class="sectArea"><i class="fa fa-newspaper-o"></i> News Feed</a>
+            </li>
+            <li>
+                <a id="msgR" class="sectArea"><i class="fa fa-envelope-o"></i> Messenger</a>
+            </li>
+        </ul>
+    </section>
+
+    <h2 id="shortCuts" class="sectArea">Shortcuts</h2>
+
+    <section>
+        <ul>
+            <li>
+                <a id="codeSolution" class="sectArea">Code Solution</a>
+            </li>
+            <li>
+                <a id="unityClub" class="sectArea">Unity Club</a>
+            </li>
+        </ul>
+    </section>
+
+    <h2 id="exploreArea" class="sectArea">Explore</h2>
+
+    <section>
+        <ul>
+            <li>
+                <a id="eventsArea" class="sectArea">Events</a>
+            </li>
+            <li>
+                <a id="pagesArea" class="sectArea">Pages</a>
+            </li>
+            <li>
+                <a id="groupsArea" class="sectArea">Groups</a>
+            </li>
+            <li>
+                <a id="friendsArea" class="sectArea">Friends List</a>
+            </li>
+            <li>
+                <a id="pokesArea" class="sectArea">Pokes</a>
+            </li>
+            <li>
+                <a id="gamesArea" class="sectArea">Games</a>
+            </li>
+            <li>
+                <a id="liveVideoArea" class="sectArea">Live Video</a>
+            </li>
+            <li>
+                <a id="onThisDay" class="sectArea">On This Day</a>
+            </li>
+            <li>
+                <a id="sugEditArea" class="sectArea">Suggest Edits</a>
+            </li>
+            <li>
+                <a id="gamesFeedArea" class="sectArea">Games Feed</a>
+            </li>
+            <li>
+                <a id="seeMoreTab" class="sectArea" href="#"><img src="images/fb_options_button.png" id="img1"/>See
+                    More..</a>
+            </li>
+        </ul>
+    </section>
+
+    <h2 id="createArea" class="sectArea">Create</h2>
+
+    <section>
+        <nav id="linksTab" class="sectArea">
+            <a href="#">Ad</a>
+            ·
+            <a href="#">Page</a>
+            ·
+            <a href="#">Group</a>
+            ·
+            <a href="#">Event</a>
+        </nav>
+    </section>
+</section>
+
+<main class="posts">
+    <section id="postArea">
+        <div id="postMaker">
+            <em style="padding: 0 0 0 20px; font-style: normal">Make Post</em>
+            <a class="vl3"></a>
+            <em style="padding: 0 0 0 20px; font-style: normal">Photo/Video Album</em>
+            <a class="vl4"></a>
+            <em style="padding: 0 0 0 20px; font-style: normal">Live Video</em>
+            <hr id="line1">
+            <a><img src="images/profile_pic_marc.jpg" id="ProfPic2"/><textarea
+                    placeholder="What's on your mind, Marc?"></textarea></a>
+            <hr id="line2">
+            <button id="addPhoto">Photo/Video</button>
+            <button id="addFeeling">Feeling/Activity</button>
+        </div>
+    </section>
+
+    <section id="mainPostArea">
+        <div><img src="images/profile_pic_marc.jpg" id="userPic"/></div>
+        <em id="nameName" style="font-style: normal"><b>Noob</b> shared their photo.</em>
+        <em id="postDate" style="font-style: normal">October 14 at 3:15pm</em>
+        <em id="postText" style="font-style: normal">Look at this. What a pic!</em>
+        <div><img src="images/wallpost_pic.jpg" id="postPic"/></div>
+        <hr id="line3">
+        <em id="watcheD" style="font-style: normal">3.2K</em>
+        <em id="commentShare" style="font-style: normal">801 Comments 1 Share</em>
+        <hr id="line4">
+        <button id="likeButton">Like</button>
+        <button id="commentButton">Comment</button>
+        <button id="shareButton">Share</button>
+    </section>
+
+    <section id="calEventArea">
+        <div id="eventsPos"><b>1 event invite</b></div>
+    </section>
+
+    <section id="friendsReqArea">
+        <a id="frReqText">Friends Requests</a>
+        <div><img src="images/profile_pic_marc.jpg" id="userPic1"/></div>
+        <a id="nameOfUSer"><b>Noob Noob</b></a>
+        <a id="mutualFriends">4 mutual friends</a>
+        <button id="confirmButton">Confirm Friend</button>
+        <div id="seeMoreTab2" class="sectArea"><a href="#">See All</a></div>
+    </section>
+
+    <section id="pYMK">
+        <a id="peYouMayKnow">People You May Know</a>
+        <div><img src="images/profile_pic_marc.jpg" id="userPic2"/></div>
+        <a id="nameOfUSer2"><b>Taras Tarasovich</b></a>
+        <a id="mutualFriends2">Friends with Oleg Olegovich</a>
+        <button id="addButton">Add Friend</button>
+        <div id="seeMoreTab3" class="sectArea"><a href="#">See All</a></div>
+    </section>
+
+    <section id="langTab">
+        <div id="firstLangs"><a href="#" style="color: gray">English (US)</a>
+            ·
+            <a href="#">Українська</a>
+            ·
+            <a href="#">Русский</a> ·
+        </div>
+        <div id="lastLangs"><a href="#">Español</a>
+            ·
+            <a href="#">Português (Brasil)</a></div>
+
+        <footer id="footerArea">
+            <a href="https://www.facebook.com/privacy/explanation" style="color: gray">Privacy</a>
+            <a href="https://www.facebook.com/policies?ref=pf" style="color: gray">Terms</a>
+            <a href="https://www.facebook.com/campaign/landing.php?placement=pf_rhc&campaign_id=242449722530626&extra_1=auto"
+               style="color: gray">Advertising</a>
+            <a href="https://www.facebook.com/help/568137493302217" style="color: gray">Ad Choices</a>
+            <a href="https://www.facebook.com/help/cookies?ref_type=sitefooter" style="color: gray">Cookies</a>
+            <a href="#" style="color: gray">More</a>
+            <div style="color: gray">Facebook © 2017</div>
+        </footer>
+    </section>
+</main>
+</body>
+</html>

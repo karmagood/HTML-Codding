@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/Layout.css">
+    <link rel="stylesheet" href="style/Logo.css">
+    <link rel="stylesheet" href="style/Navigation.css">
+    <link rel="stylesheet" href="style/Search.css">
+    <link rel="stylesheet" href="style/Button-action.css">
+    <link rel="stylesheet" href="style/Header.css">
+    <link rel="stylesheet" href="style/Banner.css">
+    <link rel="stylesheet" href="style/Buttons.css">
+    <link rel="stylesheet" href="style/Best-video.css">
+    <link rel="stylesheet" href="style/Video-list.css">
+    <link rel="stylesheet" href="style/Video.css">
+    <link rel="stylesheet" href="style/Button-action.css">
+    <link rel="stylesheet" href="style/Discover-wrapper.css">
+    <link rel="stylesheet" href="style/Sitemap.css">
+    <link rel="stylesheet" href="style/Sitemap-hint.css">
+    <link rel="stylesheet" href="style/Footer-sitemap.css">
+    <link rel="stylesheet" href="style/HeroArticles.css">
+    <link rel="stylesheet" href="style/Sitemap-small.css">
+</head>
+<body class="Layout">
+<header class="Layout__header">
+    <div class="Header">
+        <div class="Header__left">
+            <a class="Logo" href="">Vimeo</a>
+            <nav class="Navigation">
+                <a class="Navigation__item" href="">Join</a>
+                <a class="Navigation__item" href="">Log in</a>
+                <a class="Navigation__item" href="">Host video</a>
+                <a class="Navigation__item" href="">Sell</a>
+                <a class="Navigation__item" href="">Watch</a>
+            </nav>
+        </div>
+        <div class="Header__right">
+            <form class="Search" action="">
+                <input type="text" class="Search__input" placeholder="Search videos,people and more">
+                <button class="Search__button ">Пошук</button>
+            </form>
+            <button class="Button__action_blue">Upload</button>
+        </div>
+    </div>
+</header>
+<main class="Layout__main">
+    <div class="Promo">
+        <article class="Banner">
+            <h1 class="Banner__text">Where videos come first</h1>
+            <form action="" class="Buttons">
+                <button class="Buttons__find-plan">Find a plan</button>
+                <button class="Buttons__join">Join free</button>
+            </form>
+        </article>
+        <article class="Hero-articles">
+
+            <div class="Hero-articles__description-section">
+                <h2 class="Hero-articles__caption">Host videos in the highest quality possible</h2>
+                <p class="Hero-articles__description">Start uploading and enjoy 4K Ultra HD quality, video management tools,
+                    no ads before, during, or after your videos,
+                    and professional live streaming plans.</p>
+                <button class="Hero-articles__action-button">Upload</button>
+            </div>
+        </article>
+            <article class="Best-video">
+            <div class="Discover-wrapper">
+                <img class="Discover-wrapper__logo" src="https://f.vimeocdn.com/images_v6/marketing/creator_lohp/LOHP_SP.svg" alt="">
+            </div>
+            <div class="Best-video-headers">
+                <h2 class="Best-video-headers__section-header">Discover today’s best videos</h2>
+                <h3 class="Best-video-headers__description">Explore incredible shorts, films, and series on Staff Picks, hand-selected each day for endless inspiration.</h3>
+            </div>
+            <div class="Video-list">
+                {{#bestvideo}}
+                    <article class="Video">
+                        <img class="Video__screen" src="{{image}}"/>
+                    </article>
+                {{/bestvideo}}
+            </div>
+            <button class="Button__action Button__action_blue">Watch</button>
+        </article>
+    </div>
+    <section class="Footer-sitemap">
+        <div class="Sitemap">
+            {{#sitemap-section}}
+                <nav class="Sitemap__section">
+                    <h6 class="Sitemap__section-header">{{section-name}}</h6>
+                    {{#items}}
+                        <a class="Sitemap__section-item" href="{{url}}"><span class="Sitemap__section-title">{{title}}</span></a>
+                    {{/items}}
+                </nav>
+            {{/sitemap-section}}
+        </div>
+
+            <nav class="Sitemap-small">
+                {{#smallmap}}
+                <a href="" class="Sitemap-small__item-header">{{title}}</a>
+        {{/smallmap}}
+            </nav>
+
+        <div class="Sitemap-hint">
+            <h6 class="Sitemap-hint__header">Did you know?</h6>
+            <p class="Sitemap-hint__info">Pay a visit to your  <a class="Stats-dashboard__link" href="#">stats dashboard</a> to get powerful insights into how your videos are performing.</p>
+        </div>
+    </section>
+</main>
+<footer class="Layout__footer">
+
+</footer>
+
+</body>
+</html>

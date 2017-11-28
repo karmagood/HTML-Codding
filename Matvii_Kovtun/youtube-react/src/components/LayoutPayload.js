@@ -1,12 +1,12 @@
 import React from 'react';
 import VideoSection from './VideoSection';
-import sections from '../data/sections';
-import '../style/LayoutPayload.css';
+import videos from '../data/videosections';
+import '../style/Layout.less';
 
 const LayoutPayload = () => (
-    <div class="payload__wrapper">
-        {sections.map(({sectionTitle}) =>
-        <VideoSection sectionTitle={sectionTitle}/>)}
+    <div className="layout__payload_wrapper">
+        {videos.map(({sectionTitle, items}) =>
+            <VideoSection {...{sectionTitle, items}}/>)}
     </div>
 );
 

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <title>Group Photos</title>
+</head>
+<body>
+<div class="ad-feed__block">
+    <h5 class="ad-feed__block-title">RECENT GROUP PHOTOS
+        <a href="#" class="see-more">See All</a>
+    </h5>
+    <div class="ad-feed__block-item">
+        {{#group-recent-pics}}
+            <a href="{{link}}">
+                <img src="{{img-src}}"/>
+            </a>
+        {{/group-recent-pics}}
+    </div>
+</div>
+</body>
+</html>

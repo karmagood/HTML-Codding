@@ -1,0 +1,43 @@
+@import "vars";
+
+.group__header, .news-feed {
+  position: relative;
+  top: @main-top - 10px;
+  width: 500px;
+  margin: 10px;
+  left: calc(~"25% - 60px");
+}
+
+.tool-bar {
+  position: fixed;
+  top: @main-top;
+  width: 240px;
+  line-height: 25px;
+  overflow: auto;
+  bottom: 0;
+  padding-left: 10px;
+  font-size: 14px;
+  left: calc(~"25% - 300px");
+}
+
+.ad-feed {
+  top: 430px;
+}
+
+.ad-feed__block {
+  padding: 0 10px 0 10px;
+  & p {
+    font-size: 13px;
+    margin: 5px 0 5px 0;
+  }
+}
+
+.ad-feed__block-item {
+  & .user-profile__user-pic {
+    height: 50px;
+    width: 50px;
+  }
+  & img {
+    width: 80px;
+  }
+}

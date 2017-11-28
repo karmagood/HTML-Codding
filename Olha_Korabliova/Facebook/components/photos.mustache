@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <title>Photos</title>
+</head>
+<body>
+<section class="nav-bar__block">
+    <h4 class="nav-bar__block-title">Photos</h4>
+    <div class="nav-bar__photos">
+        {{#user-photos}}
+            <a href="{{photo-link}}">
+                <img class="{{image-class}}" src="{{img-src}}"/>
+            </a>
+        {{/user-photos}}
+    </div>
+</section>
+</body>
+</html>

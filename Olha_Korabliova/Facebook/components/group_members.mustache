@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/group_members.css"/>
+    <link rel="stylesheet" href="../styles/common.css"/>
+    <title>Group Members</title>
+</head>
+<body>
+<div class="ad-feed__block">
+    <h5 class="ad-feed__block-title">ADD MEMBERS</h5>
+    <form action="#">
+        <input type="search" placeholder="+ Enter name or email address..."/>
+    </form>
+    <h5 class="ad-feed__block-title">MEMBERS
+        <a href="#" class="see-more">121 members</a>
+    </h5>
+    <div class="ad-feed__block-item">
+        {{#group-members}}
+            <a href="{{user-link}}" title="{{user-name}}">
+                <img class="user-profile__user-pic" src="{{img-src}}"/>
+            </a>
+        {{/group-members}}
+    </div>
+    <h5 class="ad-feed__block-title">DESCRIPTION
+        <a href="#" class="see-more">Add a Description</a>
+    </h5>
+    <p>Tell people what this group is about.</p>
+</div>
+
+</body>
+</html>
