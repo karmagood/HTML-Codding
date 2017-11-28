@@ -40,9 +40,9 @@
     font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif; }
   .game__cell:nth-child(4n) {
     margin-right: 0; }
-  .game__cell-two {
+  .game__cell-2 {
     background-color: #efe4da; }
-  .game__cell-four {
+  .game__cell-4 {
     background-color: #ede0c8; }
 
 /*# sourceMappingURL=game.css.map */
