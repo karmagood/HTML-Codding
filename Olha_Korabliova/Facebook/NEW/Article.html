@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/Article.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Article</title>
+</head>
+<body>
+<article class="Article">
+    <header class="Article__header">
+        <img class="Article__user-pic" src="images/friend_photo_main_page.jpg"/>
+        <div class="Article__user-info">
+            <a class="Article__user-name" href="#">Me me</a>
+            <span>{{preposition}} <a class="Article__link" href="#">{{info}}</a></span>
+            <br>
+            <a href="#">
+                <time class="Article__time" datetime="dd.mm.yyyy">{{post-time}}</time>
+            </a>
+        </div>
+    </header>
+    <main class="Article__content">
+        <p class="Article__description">Description</p>
+        <img class="Article__file" src="images/eugene_post_pic.jpg"/>
+    </main>
+    <footer class="Article__reaction-on">
+        <a class="Article__likes-etc" href="#">
+            <i class="fa fa-thumbs-o-up"> Like</i>
+        </a>
+        <a class="Article__likes-etc" href="#">
+            <i class="fa fa-comment-o"> Comment</i>
+        </a>
+        <a class="Article__likes-etc" href="#">
+            <i class="fa fa-send-o"> Share</i>
+        </a>
+    </footer>
+</article>
+</body>
+</html>

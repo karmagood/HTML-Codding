@@ -1,0 +1,29 @@
+html, body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  background-color: #ecf0f1;
+  color: #444;
+  margin: 0;
+  line-height: 1.3; }
+
+a, a:link, a:hover, a:visited {
+  text-decoration: none;
+  color: whitesmoke; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2NvbW1vbi5zY3NzIiwiLi4vbWl4aW5zLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUE7RUFDRSwyQkFBMEI7RUFDMUIsK0JBQThCO0VBQzlCLG9DQUFtQztFQUNuQyxtQ0FBa0M7RUFFbEMsNEhBQTJIO0VBQzNILGlCQUFnQjtFQUNoQiwwQkFBeUI7RUFDekIsWUFBVztFQUNYLFVBQVM7RUFHVCxpQkFBZ0IsRUFBQTs7QUFHbEI7RUNqQkUsc0JBQXFCO0VBQ3JCLGtCQUFpQixFQUFBOztBRG9CbkI7RUFDRSxxQkFBYTtFQUFiLHFCQUFhO0VBQWIsY0FBYTtFQUNiLHlCQUFzQjtNQUF0QixzQkFBc0I7VUFBdEIsd0JBQXNCO0VBQ3RCLDBCQUFrQjtNQUFsQix1QkFBa0I7VUFBbEIsb0JBQWtCO0VBQ2xCLFdBQVUsRUFBQSIsImZpbGUiOiJjb21tb24uY3NzIn0= */

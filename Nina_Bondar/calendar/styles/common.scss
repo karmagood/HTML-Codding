@@ -1,0 +1,6 @@
+@import "vars";
+body {
+  background-color: $bckground;
+  margin: 0;
+  &::selection{background: $bckground;}
+}
