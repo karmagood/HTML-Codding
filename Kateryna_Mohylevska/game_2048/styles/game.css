@@ -40,9 +40,24 @@
     font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif; }
   .game__cell:nth-child(4n) {
     margin-right: 0; }
-  .game__cell-two {
+  .game__cell-2 {
     background-color: #efe4da; }
-  .game__cell-four {
+  .game__cell-4 {
     background-color: #ede0c8; }
+  .game__cell-8 {
+    background-color: #f2b179;
+    color: #f9f6f2; }
+  .game__cell-16 {
+    background-color: #f59563;
+    color: #f9f6f2; }
+  .game__cell-32 {
+    background-color: #f67c5f;
+    color: #f9f6f2; }
+  .game__cell-64 {
+    background-color: #f65e3b;
+    color: #f9f6f2; }
+  .game__cell-128 {
+    background-color: #edcf72;
+    color: #f9f6f2; }
 
 /*# sourceMappingURL=game.css.map */
