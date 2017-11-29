@@ -1,0 +1,81 @@
+@import "vars";
+@import "mixins";
+
+.calendar-block{
+  &__calendar-grid{
+    margin-left: 8.5%;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 10% [col-start]);
+    grid-template-rows: repeat(5,10%[row-start]);
+    grid-column-gap: 3%;
+    grid-row-gap: 7px;
+    font-family: $font;
+
+    &_header{
+      grid-template-rows: repeat(1,10%[row-start]);
+    }
+  }
+
+  &__week-day  {
+    width: 90%;
+    height: 60%;
+    margin: 3%;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: normal;
+    text-align: center;
+    font-family: inherit;
+  }
+
+  &__day{
+    @include day_style();
+    width: 90%;
+    height: 60%;
+    margin: 3%;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 3px;
+
+    &:active{
+      background-color: white;
+    }
+
+    &:hover{
+      cursor: pointer;
+      //@include day_hover(#FFF776);
+      @include day_hover($bckground);
+    }
+
+    &:link{
+      background-color: white;
+    }
+
+    &:visited{
+      background-color: white;
+    }
+
+    &_hidden{
+      visibility: hidden;
+    }
+  }
+
+  &__navigation{
+    width: 15px;
+    height: 25px;
+    cursor: pointer;
+
+    &_left{
+      position: absolute;
+      left:2%;
+      top:50%;
+    }
+
+    &_right{
+      position: absolute;
+      right:2%;
+      top:50%;
+    }
+  }
+}
+
