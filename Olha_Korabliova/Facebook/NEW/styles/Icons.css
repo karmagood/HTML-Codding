@@ -1,0 +1,27 @@
+.Icon {
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  display: inline-block;
+  background-image: url("../images/icons-sprite.png");
+  background-size: 32.4px 1686.6px;
+  vertical-align: middle;
+}
+.Icon_news {
+  background-position: 0 -877px;
+}
+.Icon_messenger {
+  background-position: 0 -500px;
+}
+.Icon_light-bulb {
+  background-position: 0 -1353px;
+}
+.Icon_photo-video-option {
+  background-position: 0 -404px;
+}
+.Icon_feeling-activity-option {
+  background-position: 0 -285px;
+}
+.Icon_more-options {
+  background-position: 0 -324px;
+}

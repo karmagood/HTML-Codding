@@ -15,7 +15,7 @@ class VideoAddComment extends Component {
                         src="https://yt3.ggpht.com/-QrPinFwCTCM/AAAAAAAAAAI/AAAAAAAAAAA/rN5XuKqPQzo/s76-c-k-no-mo-rj-c0xffffff/photo.jpg"
                         alt="" className="video-add-comment__user-logo"/>
                     <textarea name="" id="" cols="30" rows="1"
-                              className="video-add-comment__comment">Write here</textarea>
+                              className="video-add-comment__comment-area">Write here</textarea>
                     <div className="video-add-comment__button-section">
                         <button className="video-add-comment__publish-comment">Publish comment</button>
                         <button className="video-add-comment__cancel-comment">Cancel</button>

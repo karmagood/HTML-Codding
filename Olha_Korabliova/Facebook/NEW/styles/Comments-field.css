@@ -1,0 +1,31 @@
+.Comments {
+  border: #DDDFE2 solid 1px;
+  border-radius: 0 0 3px 3px;
+  background-color: #F6F7F9;
+  color: #365899;
+}
+.Comments__user-pic {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+.Comments__user-reactions {
+  padding: 5px 10px 5px 10px;
+}
+.Comments__user-action {
+  padding-right: 10px;
+  color: #365899;
+}
+.Comments__user-comments {
+  border-top: #DDDFE2 solid 1px;
+  padding: 10px 0 0 10px;
+}
+.Comments__text-area {
+  border-radius: 10px;
+  border: #DDDFE2 solid 1px;
+  padding: 5px;
+  width: 80%;
+  position: relative;
+  top: -17px;
+}
