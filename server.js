@@ -31,6 +31,15 @@ app
             res.sendFile(SOURCE_DIR + req.params[0] + ".css");
         }
     })
+    .get('*.js', async (req, res) => {
+        try {
+            let js = await readFile(SOURCE_DIR + req.params[0] + ".js", {encoding: 'utf8'});
+            res.send(js);
+        } catch (err) {
+            console.log(err);
+            res.sendFile(SOURCE_DIR + req.params[0] + ".css");
+        }
+    })
     .get('/:page?', async (req, res) => {
 
         try {
@@ -50,6 +59,7 @@ app
         }
 
     })
+
 
     .listen(3000, function () {
         console.log('Example app listening on port 3000!')
