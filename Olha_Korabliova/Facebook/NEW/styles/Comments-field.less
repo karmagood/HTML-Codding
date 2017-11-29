@@ -1,0 +1,33 @@
+@import "vars";
+
+.Comments {
+  border: @main-border;
+  border-radius: 0 0 3px 3px;
+  background-color: @milk;
+  color: @main-blue;
+  &__user-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+  }
+  &__user-reactions {
+    padding: 5px 10px 5px 10px;
+  }
+  &__user-action {
+    padding-right: 10px;
+    color: @main-blue;
+  }
+  &__user-comments {
+    border-top: @main-border;
+    padding: 10px 0 0 10px;
+  }
+  &__text-area {
+    border-radius: 10px;
+    border: @main-border;
+    padding: 5px;
+    width: 80%;
+    position: relative;
+    top: -17px;
+  }
+}
