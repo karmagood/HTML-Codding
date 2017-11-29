@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="main-header__left-section">
+        <a href="#" class="main-header__text"><img  src="fblogotry.png" alt="Facebook" class="main-header__logo"></a>
+        <form class="search-form" action="" method="get">
+          <input class="search-form__input" type="text" name="fname" placeholder="Пошук">
+          <button type="submit" class="search-form__search-button glyphicon glyphicon-search"></button>
+        </form>
+      </section>
+      <section class="main-header__right-section">
+        <nav class="navigation">
+          <a href="#" class="navigation__button_mypage">
+            <img class="navigation__user-pic" src="me.jpg" alt="">
+            <span class="navigation__text">Maryana</span>
+          </a>
+          <a href="#" class="navigation__button_mainpage navigation__text">Головна</a>
+        </nav>
+        <section class="icons-container">
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-user"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-envelope"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-globe"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-question-sign"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-chevron-down"></span>
+            </summary>
+          </details>
+        </section>
+      </section>
+    </header>
+    <section class="main-section">
+      <aside class="menu">
+        <header class="menu__header">
+          <img class="menu__user-picture" src="me.jpg" alt="">
+          <h6 class="menu__user-name">MaryanaMysak</h6>
+        </header>
+      </aside>
+      <main class="page-main">
+        <main class="user-feed">
+          <!-- <header class="block create-post">
+            <nav class="navigation">
+              <button type="button" name="button" class="navigation__button navigation__button_first-button">
+                <span class="navigation__icon glyphicon glyphicon-pencil"></span>
+                <span class="navigation__text">Допис</span>
+              </button>
+              <button type="button" name="button" class="navigation__button">
+                <span class="navigation__icon glyphicon glyphicon-camera"></span>
+                <span class="navigation__text">Світлини</span>
+              </button>
+              <button type="button" name="button" class="navigation__button">
+                <span class="navigation__icon glyphicon glyphicon-facetime-video"></span>
+                <span class="navigation__text">Відео наживо</span>
+              </button>
+              <button type="button" name="button" class="navigation__button">
+                <span class="navigation__icon glyphicon glyphicon-flag"></span>
+                <span class="navigation__text">Життєва подія</span>
+              </button>
+            </nav>
+            <form class="new-post-form">
+              <section class="new-post-form__textarea">
+                <img class="new-post-form__pic" src="me.jpg" alt="">
+                <textarea class="new-post-form__input" name="name" rows="8" cols="80" placeholder="Що у Вас на думці?"></textarea>
+              </section>
+              <footer class="new-post-form__footer">
+                  <select name="" class="new-post-form__select">
+                    <option class="new-post-form__option" value="">Друзі</option>
+                    <option class="new-post-form__option" value="">Публічно</option>
+                  </select>
+                  <input class="new-post-form__submit" type="submit" name="" value=Опублікувати>
+              </footer>
+            </form>
+          </header>
+            <article class="block feed-article">
+              <header class="article-head block__header">
+                <img class="article-head__pic" src="aleks.jpg" alt="">
+                <section class="article-head__user-message">
+                  <section class="article-head__text-container">
+                    <a href="#" class="article-head__text article-head__text_link article-head__text_user-that-posted">Aleks Zinevych</a>
+                    <span class="article-head__text article-head__text_plane">is attending</span>
+                    <a class="article-head__text article-head__text_link" href="#"> Screamo-концерт у покинутому скейт-парку</a>
+                    <span class="article-head__text article-head__text_plane">with</span>
+                    <a class="article-head__text article-head__text_link" href="#">Павло Березін</a>
+                    <span class="article-head__text article-head__text_plane">and</span>
+                    <a class="article-head__text article-head__text_link" href="#">Maryana Mysak</a>
+                  </section>
+                  <time class="article-head__post-time">
+                    <a class="article-head__text article-head__text_time" href="#">17 вересня о 19:56 </a>
+                    <a class="article-head__text article-head__text_time" href="#">Lviv, Lviv Oblast</a>
+                    <button type="button" name="button" class="article-head__button glyphicon glyphicon-user"></button>
+                  </time>
+                </section>
+                <span class="article-head__icon glyphicon glyphicon-option-horizontal"></span>
+              </header>
+              <main class="article-content">
+                  <img class="article-content__pic" src="wall.jpg" alt="">
+              </main>
+              <footer class="article-footer">
+                <section class="like-section">
+                  <div class="like-section__symbol">
+                    <span class="like-section__icon glyphicon glyphicon-thumbs-up"></span>
+                    <a href="#" class="like-section__text">Подобається</a>
+                  </div>
+                  <div class="like-section__symbol">
+                    <span class="like-section__icon glyphicon glyphicon-comment"></span>
+                    <a href="#" class="like-section__text">Коментувати</a>
+                  </div>
+                  <div class="like-section__symbol">
+                    <span class="like-section__icon glyphicon glyphicon-share-alt"></span>
+                    <a href="#" class="like-section__text">Поширити</a>
+                  </div>
+                </section>
+                <section class="comment-section">
+                  <img class="comment-section__pic" src="me.jpg" alt="">
+                  <section class="comment-section__input-container">
+                    <input class="comment-section__input" type="text" name="" value="" placeholder="Прокоментуйте...">
+                      <img class="comment-section__icon"src="smile.png" alt="">
+                      <img class="comment-section__icon"src="photo.png" alt="">
+                      <img class="comment-section__icon"src="gif.png" alt="">
+                      <img class="comment-section__icon"src="stickers.png" alt="">
+                  </section>
+                </section>
+              </footer>
+            </article>
+            <article class="block feed-article">
+              <header class="article-head block__header">
+                <img class="article-head__pic" src="me.jpg" alt="">
+                <section class="article-head__user-message">
+                  <section class="article-head__text-container">
+                    <a href="#" class="article-head__text article-head__text_link article-head__text_user-that-posted">Maryana Mysak</a>
+                    <span class="article-head__text article-head__text_link">оновила обкладинку.</span>
+                  </section>
+                  <time class="article-head__post-time">
+                    <a class="article-head__text article-head__text_time" href="#">11 вересня о 23:24</a>
+                    <button type="button" name="button" class="article-head__button glyphicon glyphicon-globe"></button>
+                  </time>
+                </section>
+                <span class="article-head__icon glyphicon glyphicon-option-horizontal"></span>
+              </header>
+              <main class="article-content">
+                <img class="article-content__pic article-content__pic_post2" src="background.jpg" alt="">
+              </main>
+              <footer class="article-footer">
+                <section class="like-section">
+                  <div class="like-section__symbol">
+                    <span class="like-section__icon glyphicon glyphicon-thumbs-up"></span>
+                    <a href="#" class="like-section__text">Подобається</a>
+                  </div>
+                  <div class="like-section__symbol">
+                    <span class="like-section__icon glyphicon glyphicon-comment"></span>
+                    <a href="#" class="like-section__text">Коментувати</a>
+                  </div>
+                  <div class="like-section__symbol">
+                    <span class="like-section__icon glyphicon glyphicon-share-alt"></span>
+                    <a href="#" class="like-section__text">Поширити</a>
+                  </div>
+                </section>
+                <section class="comment-section">
+                  <img class="comment-section__pic" src="me.jpg" alt="">
+                  <section class="comment-section__input-container">
+                    <input class="comment-section__input" type="text" name="" value="" placeholder="Прокоментуйте...">
+                      <img class="comment-section__icon" src="smile.png" alt="">
+                      <img class="comment-section__icon" src="photo.png" alt="">
+                      <img class="comment-section__icon" src="gif.png" alt="">
+                      <img class="comment-section__icon" src="stickers.png" alt="">
+                  </section>
+                </section>
+              </footer>
+            </article>
+            <div class="empty"></div> -->
+        </main>
+        <aside class="suggestions">
+
+
+
+        </aside>
+      </main>
+      <aside class="friends-bar-container">
+        <header class="friends-bar__header"></header>
+        <main class="friends-bar">
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="aleks.jpg" alt="">
+                <span class="friend__name">Aleks Zinevych</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="iryna.jpg" alt="">
+                <span class="friend__name">Iryna Stepaniak</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="max.jpg" alt="">
+                <span class="friend__name">Maks Charuk</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="maxym.jpg" alt="">
+                <span class="friend__name">Max Cipher</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="mykhailo.jpg" alt="">
+                <span class="friend__name">Mykhailo Ivankiv</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="aleks.jpg" alt="">
+                <span class="friend__name">Aleks Zinevych</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="iryna.jpg" alt="">
+                <span class="friend__name">Iryna Stepaniak</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="max.jpg" alt="">
+                <span class="friend__name">Maks Charuk</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="maxym.jpg" alt="">
+                <span class="friend__name">Max Cipher</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="mykhailo.jpg" alt="">
+                <span class="friend__name">Mykhailo Ivankiv</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="aleks.jpg" alt="">
+                <span class="friend__name">Aleks Zinevych</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="iryna.jpg" alt="">
+                <span class="friend__name">Iryna Stepaniak</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="max.jpg" alt="">
+                <span class="friend__name">Maks Charuk</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="maxym.jpg" alt="">
+                <span class="friend__name">Max Cipher</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="mykhailo.jpg" alt="">
+                <span class="friend__name">Mykhailo Ivankiv</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="aleks.jpg" alt="">
+                <span class="friend__name">Aleks Zinevych</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="iryna.jpg" alt="">
+                <span class="friend__name">Iryna Stepaniak</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="max.jpg" alt="">
+                <span class="friend__name">Maks Charuk</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="maxym.jpg" alt="">
+                <span class="friend__name">Max Cipher</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="mykhailo.jpg" alt="">
+                <span class="friend__name">Mykhailo Ivankiv</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+        </main>
+        <footer class="footer">
+          <span class="footer__icon glyphicon glyphicon-search"></span>
+            <input class="footer__input" type="text" name="" value="" placeholder="Пошук">
+          <span class="footer__icon glyphicon glyphicon-cog"></span>
+          <span class="footer__icon glyphicon glyphicon-edit"></span>
+          <span class="footer__icon glyphicon glyphicon-user"></span>
+        </footer>
+      </aside>
+    </section>
+  </body>
+</html>

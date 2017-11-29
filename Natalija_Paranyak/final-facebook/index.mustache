@@ -24,6 +24,14 @@
     <link rel="stylesheet" type="text/css" href="style/main-container__actions__friends.css">
     <link rel="stylesheet" type="text/css" href="style/main-navigatio.css">
     <link rel="stylesheet" type="text/css" href="style/profile-img.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__actions__search.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__actions.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__publish.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__separator.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__on-mind.css">
+    <link rel="stylesheet" type="text/css" href="style/main-container__feeds__new__extend.css">
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,7 +41,7 @@
 
 
 <header class="main-navigation">
-    <a class="main-navigation__item_big" href="https://www.facebook.com/"><img src="../images/facebook_logo.png"
+    <a class="main-navigation__item_big" href="https://www.facebook.com/"><img class="main-navigation__item__logo" src="../images/facebook-icon.jpg"
                                                                                height="25"
                                                                                alt="Facebook logo"/></a>
     <input class="main-navigation__input" type="text" placeholder="Пошук"><input class="main-navigation__submit"
@@ -47,6 +55,7 @@
     <a class="main-navigation__item main-navigation__item_friend" href="#">Запити на дружбу</a>
     <a class="main-navigation__item main-navigation__item_messenger" href="#">Повідомлення</a>
     <a class="main-navigation__item main-navigation__item_news" href="#">Сповіщення</a>
+    <div class="main-navigation__item_liner"></div>
     <a class="main-navigation__item main-navigation__item_help" href="#">Швидка допомога</a>
     <a class="main-navigation__item main-navigation__item_quick" href="#">Швидкий доступ</a>
 </header>
@@ -89,7 +98,7 @@
             </section>
 
             <aside class="main-container__creation">
-                <h2 style="font-size: 13px; font-weight: bold; color: dimgrey">Створити</h2>
+                <h2 class="main-container__header">Створити</h2>
                 <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Реклама</p></a>
                 <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Сторінки</p></a>
                 <a class="main-container__creation__link" href="https://www.facebook.com/"><p>Група</p></a>
@@ -98,7 +107,32 @@
         </nav>
     </section>
     <section class=" main-container__feeds">
+        <div class="main-container__feeds__new">
+            <form class="main-container__feeds__new__actions main-container__feeds__new__actions_new">
 
+                <button class=" main-container__feeds__button main-container__feeds__new__actions_create"> <i class=" main-container__feeds__icons create-post"></i>Створити допис</button>
+                <button class="main-container__feeds__button main-container__feeds__new__actions_album">  <i class="main-container__feeds__icons album-post"></i>Альбом зі світлинами/відео</button>
+                <button class="main-container__feeds__button main-container__feeds__new__actions_video"><i class="main-container__feeds__icons video-post"></i>Відео наживо</button>
+            </form>
+            <section class="main-container__feeds__on-mind">
+                <img class="main-container__feeds__new__on-mind__img" src="images/home-image-1.jpg" height="35">
+                <input class="main-container__feeds__new__on-mind__input" type="text" placeholder="Що у Вас на думці, Наталя?" >
+            </section>
+            <hr class="main-container__feeds__new__separator">
+            <section class="main-container__feeds__new__extend">
+                <form class="main-container__feeds__new__actions">
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_photo"><i class="main-container__feeds__icons photos-post "></i>Світлини/Відео</button>
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_emotions"><i class="main-container__feeds__icons emotions-post"></i> Почуття або дії</button>
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_more"><i class="main-container__feeds__icons more-post"></i></button>
+                </form>
+            </section>
+            <section class="main-container__feeds__new__publish">
+                <form class="main-container__feeds__new__actions main-container__feeds__new__actions_publish">
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_chose"><i class="main-container__feeds__icons public-post"></i>Публічно</button>
+                    <button class="main-container__feeds__button main-container__feeds__new__actions_post"> Опублікувати</button>
+                </form>
+            </section>
+        </div>
         <div>
             {{#dataFacebook}}
                 {{#posts}}
@@ -243,7 +277,7 @@
                 </section>
             </section>
         </section>
-        <hr>
+        <hr class="main-container__action__separator">
         <section class="main-container__actions__friends__feeds">
             {{#dataFacebook}}
                 {{#friends-feeds}}
@@ -256,7 +290,7 @@
                                 {{action}}</p>
                         </a>
                     </section>
-                    <hr>
+                    <hr class="main-container__action__separator">
                 {{/friends-feeds}}
             {{/dataFacebook}}
 
@@ -275,6 +309,12 @@
             {{/dataFacebook}}
 
 
+        </section>
+        <section class="main-container__actions__search">
+            <input class="main-container__actions__input" type="text" placeholder="Пошук">
+            <a class="main-container__actions__search__icon main-container__actions__search__icon_setting" href="#">Налаштування</a>
+            <a class="main-container__actions__search__icon main-container__actions__search__icon_new" href="#">Нове повідомлення</a>
+            <a class="main-container__actions__search__icon main-container__actions__search__icon_group" href="#">Створити нову групу</a>
         </section>
     </div>
 </section>
