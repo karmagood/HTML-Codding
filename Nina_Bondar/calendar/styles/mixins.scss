@@ -1,0 +1,16 @@
+@import "vars";
+
+@mixin day_style(){
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: $font-color;
+}
+
+@mixin day_hover($color){
+    background-color: $color;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 3px 10px #979797;
+    font-weight: bold;
+}

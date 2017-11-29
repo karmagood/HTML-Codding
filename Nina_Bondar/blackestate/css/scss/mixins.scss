@@ -1,0 +1,4 @@
+@mixin style_of_head_link($txtdeco){
+  color: #1b1b1b;
+  text-decoration: $txtdeco;
+}
