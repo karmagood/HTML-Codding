@@ -1,0 +1,43 @@
+.Friend-suggest {
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 5px;
+}
+.Friend-suggest__item {
+  margin: 15px 5px 15px 5px;
+  padding: 0 2px 0 2px;
+}
+.Friend-suggest__title {
+  color: #A1A6BA;
+  margin: 5px;
+}
+.Friend-suggest__link {
+  float: right;
+  text-decoration: none;
+  color: #365899;
+}
+.Friend-suggest__link:hover {
+  text-decoration: underline;
+}
+.Friend-suggest__user-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.Friend-suggest__user-name {
+  font-size: 14px;
+  color: #365899;
+  font-weight: bold;
+}
+.Friend-suggest__mutual-frs {
+  font-size: 12px;
+  color: #90949C;
+}
+.Friend-suggest__user-info {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: -6px;
+}
