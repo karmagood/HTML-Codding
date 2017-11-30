@@ -99,9 +99,9 @@
     "link": "Ще"
   }],
   "facebook": "Facebook © 2017",
-  "userPost": "Допис",
+  "userPost": "Створити допис",
   "liveVideo": "Відео наживо",
-  "lifeEvent": "Життєва подія",
+  "postPicture": "Альбоми зі світлинами/відео",
   "textareaPlaceholder": "Що у Вас на думці?",
   "public": "Публічно",
   "publish": "Опублікувати",
@@ -116,6 +116,7 @@
   "postPlace1": "Lviv, Lviv Oblast",
   "postPic1Src": "wall.jpg",
   "like": "Подобається",
+  "likePage": "Уподобати сторінку",
   "comment": "Коментувати",
   "share": "Поширити",
   "commnetPlaceholder": "Прокоментуйте...",
@@ -194,5 +195,84 @@
   },{
     "src": "mykhailo.jpg",
     "name": "Mykhailo Ivankiv"
-  }]
+  }],
+  "menuNewsPic":"menu-1.png",
+  "menuNews":"Новини",
+  "menuMessenger":"Messenger",
+  "menuMessengerPic":"menu-2.png",
+  "menuHeader2":"Швидкий доступ",
+  "menuHeader3":"Цікаве",
+  "menuHeader4":"Створити",
+  "menuHeader2Items": [{
+    "src": "menu-3.png",
+    "name": "Code Solution"
+  },{
+    "src": "menu-4.png",
+    "name": "CS@UCU"
+  }],
+  "menuHeader3Items": [{
+    "src": "menu-5.png",
+    "name": "Події"
+  },{
+    "src": "menu-6.png",
+    "name": "Фан-клуби"
+  },{
+    "src": "menu-7.png",
+    "name": "Групи"
+  },{
+    "src": "menu-8-9.png",
+    "name": "Друзі"
+  },{
+    "src": "menu-8-9.png",
+    "name": "Списки друзів"
+  },{
+    "src": "menu-10.png",
+    "name": "Цього дня"
+  },{
+    "src": "menu-11.png",
+    "name": "Штурханці"
+  },{
+    "src": "menu-12.png",
+    "name": "Потік сторінок"
+  },{
+    "src": "menu-13.png",
+    "name": "Світлини"
+  },{
+    "src": "menu-14.png",
+    "name": "Ігри"
+  }],
+  "menuFooterFirstItem":"Реклама",
+  "menuFooterItems":[{
+    "name":"Сторінка"
+  },{
+    "name":"Група"
+  },{
+    "name":"Подія"
+  }],
+  "newPostPic1":"new-post-pic.png",
+  "newPostPic2":"new-post-face.png",
+  "newPostButton1":"Cвітлини/Відео",
+  "newPostButton2":"Почуття або дії",
+  "dotsPic":"dots.png",
+  "publishes":"Публікації",
+  "publishesFriends1": "Max",
+  "publishesFriends2": "Iryna",
+  "publishesFriends1Src":"max.jpg",
+  "publishesFriends2Src":"iryna.jpg",
+  "invitationsPic1":"menu-5.png",
+  "invitationsPic2":"gift.png",
+  "invitationsText1":"3 запрошення на події",
+  "invitationsFriendBd":"Черняхович Андрій",
+  "invitationHeader":"Рекомендовані сторінки",
+  "seeAll":"Переглянути всі",
+  "suggestionGroupLogo":"me.jpg",
+  "groupName":"UCU Hash Code",
+  "groupDesc":"Подія",
+  "groupPic":"group-pic.jpg",
+  "111":"111",
+  "111":"111",
+  "111":"111",
+  "111":"111",
+  "111":"111",
+  "111":"111"
 }

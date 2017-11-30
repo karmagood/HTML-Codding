@@ -1,4 +1,5 @@
-# Sergey Dubovyk Web-dev couse homeworks folder
+# Sergey Dubovyk Web-dev couse homeworks folder (deprecated)
+# GO-TO: Nina_Bondar to see recent updates of the team
 
 ## Intro
 
