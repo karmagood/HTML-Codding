@@ -1,0 +1,45 @@
+@import "vars";
+
+.Friend-suggest {
+  background-color: white;
+  border: @main-border;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 5px;
+  &__item {
+    margin: 15px 5px 15px 5px;
+    padding: 0 2px 0 2px;
+  }
+  &__title {
+    color: @light-grey;
+    margin: 5px;
+  }
+  &__link {
+    float: right;
+    text-decoration: none;
+    color: @main-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__user-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  &__user-name {
+    font-size: 14px;
+    color: @main-blue;
+    font-weight: bold;
+  }
+  &__mutual-frs {
+    font-size: 12px;
+    color: @title_time;
+  }
+  &__user-info {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: -6px;
+  }
+}
