@@ -1,4 +1,254 @@
 {
+  "Tool-bar": [
+    {
+      "nav": [
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        }
+      ],
+      "title": "Shortcuts"
+    },
+    {
+      "nav": [
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        }
+      ],
+      "title": "Explore"
+    }
+  ],
+  "News": {
+      "header": [
+        {
+          "icon-class": "Icon_pencil",
+          "item": "Make Post",
+          "action": "#",
+          "first": "first",
+          "status": "active"
+        },
+        {
+          "icon-class": "Icon_photo-camera",
+          "item": "Photo/Video Album",
+          "action": "#",
+          "first": null,
+          "status": null
+        },
+        {
+          "icon-class": "Icon_video-camera",
+          "item": "Video",
+          "action": "#",
+          "first": null,
+          "status": null
+        }
+      ],
+      "footer": [
+        {
+          "item": "Photo/Video",
+          "icon-class": "Icon_photo-video-option",
+          "action": "#"
+        },
+        {
+          "item": "Feeling/Activity",
+          "icon-class": "Icon_feeling-activity-option",
+          "action": "#"
+        },
+        {
+          "item": "",
+          "icon-class": "Icon_more-options",
+          "action": "#"
+        }
+      ]
+    },
+  "Article-and-Comments": [
+    {
+      "Article-header": {
+        "user-name": "Me me",
+        "user-img": "images/friend_photo_main_page.jpg",
+        "user-link": "#",
+        "additional-info": {
+          "preposition": "in",
+          "info": "Lviv, Ukraine",
+          "info-link": "#"
+        },
+        "post-time": "11.11.2017"
+      },
+      "Article-content": {
+        "description": "Description",
+        "file-src": "images/eugene_post_pic.jpg"
+      },
+      "Comments": {
+        "reactions": {
+          "who-liked": "123 likes",
+          "who-shared": "2 shares"
+        },
+        "items": [
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          }
+        ]
+      }
+    },
+    {
+      "Article-header": {
+        "user-name": "Me me",
+        "user-img": "images/friend_photo_main_page.jpg",
+        "user-link": "#",
+        "additional-info": {
+          "preposition": "in",
+          "info": "Lviv, Ukraine",
+          "info-link": "#"
+        },
+        "post-time": "11.11.2017"
+      },
+      "Article-content": {
+        "description": "Description",
+        "file-src": "images/eugene_post_pic.jpg"
+      },
+      "Comments": {
+        "reactions": {
+          "who-liked": "123 likes",
+          "who-shared": "2 shares"
+        },
+        "items": [
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          }
+        ]
+      }
+    },
+    {
+      "Article-header": {
+        "user-name": "Me me",
+        "user-img": "images/friend_photo_main_page.jpg",
+        "user-link": "#",
+        "additional-info": {
+          "preposition": "in",
+          "info": "Lviv, Ukraine",
+          "info-link": "#"
+        },
+        "post-time": "11.11.2017"
+      },
+      "Article-content": {
+        "description": "Description",
+        "file-src": "images/eugene_post_pic.jpg"
+      },
+      "Comments": {
+        "reactions": {
+          "who-liked": "123 likes",
+          "who-shared": "2 shares"
+        },
+        "items": [
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          }
+        ]
+      }
+    }
+  ],
+  // TODO Comments UP
+//TODO  "Stories": [],
+  "Events": [
+    {
+      "event": "1 request from Anna Anna",
+      "link": "#",
+      "event-time": null,
+      "icon-class": "Icon Icon_request"
+    },
+    {
+      "event": "Екслюзивні семінари...",
+      "link": "#",
+      "event-time": "on Monday",
+      "icon-class": "Icon Icon_calendar"
+    },
+    {
+      "event": "Anna Anna's birthday",
+      "link": "#",
+      "event-time": "is today",
+      "icon-class": "Icon Icon_gift"
+    }
+  ],
+
+
   "main-page-posts": [
     {
       "user-link": "#",
@@ -256,29 +506,6 @@
       "user-name": "Mama Tato",
       "user-link": "#",
       "mutual-friends": "50 mutual friends."
-    }
-  ],
-  "events": [
-    {
-      "event": "1 request from Anna Anna",
-      "link": "#",
-      "event-time": null,
-      "icon-class": "fa fa-question",
-      "icon-style": "color: #F1C40F;"
-    },
-    {
-      "event": "Екслюзивні семінари...",
-      "link": "#",
-      "event-time": "on Monday",
-      "icon-class": "fa fa-calendar",
-      "icon-style": "color: #D14357;"
-    },
-    {
-      "event": "Anna Anna's birthday",
-      "link": "#",
-      "event-time": "is today",
-      "icon-class": "fa fa-gift",
-      "icon-style": "color: #D14357;"
     }
   ],
   "user-games": [

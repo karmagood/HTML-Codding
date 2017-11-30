@@ -1,7 +1,6 @@
 @import "vars";
 
 .Tool-bar {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
   &__user-pic {
     width: 30px;
@@ -24,6 +23,12 @@
     border: 1px solid transparent;
     color: black;
     padding-left: 5px;
+    &.active {
+      font-weight: bold;
+      background-color: @milk;
+      border: @main-border;
+      border-radius: 3px;
+    }
     &:hover {
       background-color: @milk;
       border: @main-border;

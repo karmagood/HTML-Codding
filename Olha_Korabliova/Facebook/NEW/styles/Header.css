@@ -53,6 +53,10 @@
   left: 0;
   margin-left: 7px;
   top: -7px;
+  color: #1A2947;
+}
+.Header__nav-item:hover {
+  color: #0D1524;
 }
 .Header__facebook-logo {
   height: 20px;
