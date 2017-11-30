@@ -4,11 +4,11 @@ import Icon from "./Icon";
 
 
 const Subscription = ({channelLink, img, name, icon, svg}) => (
-    <a class="subscription" href={channelLink}>
+    <a className="subscription" href={channelLink}>
         {icon && <Icon {...{icon, svg}}/>}
-        {img && <span class="subscription__image"
+        {img && <span className="subscription__image"
                       style={{backgroundImage: "url(" + img + ")"}}></span>}
-        <span class="subscription__text">{name}</span>
+        <span className="subscription__text">{name}</span>
     </a>
 );
 

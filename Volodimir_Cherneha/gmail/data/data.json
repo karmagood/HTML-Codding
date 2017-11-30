@@ -1,91 +1,107 @@
 {
-  "mails":[
+  "mails": [
     {
-      "sender":"GitHub",
-      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
-      "time":"28 окт. (5 дн. назад)"
+      "sender": "GitHub",
+      "content": "Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time": "28 окт. (5 дн. назад)"
     },
     {
-      "sender":"GitHub",
-      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
-      "time":"28 окт. (5 дн. назад)"
+      "sender": "GitHub",
+      "content": "Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time": "28 окт. (5 дн. назад)"
     },
     {
-      "sender":"GitHub",
-      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
-      "time":"28 окт. (5 дн. назад)"
-    },    {
-      "sender":"GitHub",
-      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
-      "time":"28 окт. (5 дн. назад)"
+      "sender": "GitHub",
+      "content": "Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time": "28 окт. (5 дн. назад)"
     },
     {
-      "sender":"GitHub",
-      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
-      "time":"28 окт. (5 дн. назад)"
+      "sender": "GitHub",
+      "content": "Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time": "28 окт. (5 дн. назад)"
     },
     {
-      "sender":"GitHub",
-      "content":"Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
-      "time":"28 окт. (5 дн. назад)"
+      "sender": "GitHub",
+      "content": "Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time": "28 окт. (5 дн. назад)"
+    },
+    {
+      "sender": "GitHub",
+      "content": "Please verify your email address.- Hi @chvolodymyr!Help us secure your GitHub account by verifying your email address (vcherneha26@gmail.com). This lets youaccess all of GitHub's features.",
+      "time": "28 окт. (5 дн. назад)"
     }
   ],
-  "tabs":[
-    {
-      "title":"Вхідні"
+  "tabs": [
+    {  "attribute":"main",
+      "title": "Вхідні"
     },
     {
-      "title":"Соцмережі"
+      "attribute":"social",
+      "title": "Соцмережі"
     },
     {
-      "title":"Реклама"
+      "attribute":"ads",
+      "title": "Реклама"
     }
   ],
-  "aside":[
+  "aside": [
     {
-      "title":"Inbox"
+      "title": "Inbox"
     },
     {
-      "title":"Drafts"
+      "title": "Drafts"
     },
     {
-      "title":"With star"
+      "title": "With star"
     },
     {
-      "title":"Sent"
+      "title": "Sent"
     }
   ],
-  "apps":[
+  "apps": [
     {
-      "attribute":"apps",
-      "title":"Google apps"
+      "attribute": "more",
+      "title": "Google apps"
     },
     {
-      "attribute":"notification",
-      "title":"Notification"
+      "attribute": "notification",
+      "title": "Notification"
     },
     {
-      "attribute":"profile",
-      "title":"Profile"
+      "attribute": "profile",
+      "title": "Profile"
     }
   ],
-  "buttons":[
+  "buttons": [
     {
-      "attribute":"refresh",
-      "title":"Refresh"
+      "attribute": "gmail",
+      "title": "Gmail"
     },
     {
-      "attribute":"previous",
-      "title":"Попереднє"
+      "attribute": "select",
+      "title": "Обрати"
     },
     {
-      "attribute":"next",
-      "title":"Наступне"
+      "attribute": "refresh",
+      "title": "Оновити"
     },
     {
-      "attribute":"setting",
-      "title":"Настройки"
-   }
+      "attribute": "more",
+      "title": "Більше"
+    }
+  ],
+  "button": [
+    {
+      "attribute": "previous",
+      "title": "Попереднє"
+    },
+    {
+      "attribute": "next",
+      "title": "Наступне"
+    },
+    {
+      "attribute": "setting",
+      "title": "Настройки"
+    }
   ]
-
 }

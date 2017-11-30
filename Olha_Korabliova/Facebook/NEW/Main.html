@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/Article.css"/>
+    <link rel="stylesheet" href="styles/Comments-field.css"/>
+    <link rel="stylesheet" href="styles/Main.css"/>
+    <link rel="stylesheet" href="styles/Header.css"/>
+    <link rel="stylesheet" href="styles/Tool-bar.css"/>
+    <link rel="stylesheet" href="styles/Icons.css"/>
+    <link rel="stylesheet" href="styles/News.css"/>
+    <link rel="stylesheet" href="styles/Facebook.css"/>
+    <link rel="stylesheet" href="styles/stories.css"/>
+    <link rel="stylesheet" href="styles/friend_suggestion.css"/>
+    <link rel="stylesheet" href="styles/info_footer.css"/>
+    <link rel="stylesheet" href="styles/friend_n_games.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>Facebook</title>
+</head>
+<body class="Facebook">
+<header class="Header">
+    <div class="Header__wrapper">
+        <a href="index">
+            <span class="Header__facebook-logo"></span>
+        </a>
+        <form action="#">
+            <input class="Header__search-field" type="search" placeholder="Search"/>
+            <button class="Header__search-button" type="button"></button>
+        </form>
+        <nav class="Header__nav">
+            <a href="user_page" title="Profile">
+                <img class="Header__nav-user-pic"
+                     src="images/user_avatar.jpeg"/>
+                <span class="Header__nav-user-name">Olya</span>
+            </a>
+            <a class="Header__nav-item" href="index" style="color: white">Home</a>
+            <a class="Header__nav-item" href="#" title="Friends Requests">
+                <i class="fa fa-user-o"></i>
+            </a>
+            <a class="Header__nav-item" href="#" title="Messages">
+                <i class="fa fa-envelope-o"></i>
+            </a>
+            <a class="Header__nav-item" href="#" title="Notifications">
+                <i class="fa fa-globe"></i>
+            </a>
+            <a class="Header__nav-item" href="#" title="Quick Help">
+                <i class="fa fa-question-circle-o"></i>
+            </a>
+            <a class="Header__nav-item" href="#">
+                <i class="fa fa-caret-down"></i>
+            </a>
+        </nav>
+    </div>
+</header>
+    <section class="Facebook__payload">
+        <aside class="Tool-bar">
+            <nav class="Tool-bar__nav">
+                <a class="Tool-bar__item" href="user_page">
+                    <img class="Tool-bar__user-pic"
+                         src="images/user_avatar.jpeg"/>
+                    <span class="Tool-bar__user-name">Olya Korabliova</span>
+                </a>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_news"></span>News Feed
+                </a>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_messenger"></span>Messenger
+                </a>
+            </nav>
+            <nav class="Tool-bar__nav">
+                <h4 class="Tool-bar__nav-title">Shortcuts</h4>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_light-bulb"></span>CS@UCU
+                </a>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_light-bulb"></span>CS@UCU
+                </a>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_light-bulb"></span>CS@UCU
+                </a>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_light-bulb"></span>CS@UCU
+                </a>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_light-bulb"></span>CS@UCU
+                </a>
+            </nav>
+            <nav class="Tool-bar__nav">
+                <h4 class="Tool-bar__nav-title">Create</h4>
+                <a class="Tool-bar__more" href="#">Ad</a>
+                <a class="Tool-bar__more" href="#">Page</a>
+                <a class="Tool-bar__more" href="#">Group</a>
+                <a class="Tool-bar__more" href="#">Event</a>
+            </nav>
+        </aside>
+        <main class="Facebook__news-line">
+            <div class="News">
+                <header class="News__make-post">
+                    <a class="News__post-option first active" href="#">
+                        <span class="News__icon Icon_pencil"></span>Make Post
+                    </a>
+                    <a class="News__post-option" href="#">
+                        <span class="News__icon Icon_photo-camera"></span>Photo/Video Album
+                    </a>
+                    <a class="News__post-option" href="#">
+                        <span class="News__icon Icon_video-camera"></span>Video
+                    </a>
+                </header>
+                <div class="News__content">
+                    <form action="#">
+                        <a href="user_page">
+                            <img class="News__user-pic" src="images/user_avatar.jpeg"/>
+                        </a>
+                        <textarea placeholder="What's on your mind, Olya?"></textarea>
+                    </form>
+                    <footer class="News__additional">
+                        <a class="News__more-options" href="#">
+                            <span class="Icon Icon_photo-video-option"></span>Photo/Video
+                        </a>
+                        <a class="News__more-options" href="#">
+                            <span class="Icon Icon_feeling-activity-option"></span>Feeling/Activity
+                        </a>
+                        <a class="News__more-options" href="#">
+                            <span class="Icon Icon_more-options"></span>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+            <article class="Article">
+                <header class="Article__header">
+                    <img class="Article__user-pic" src="images/friend_photo_main_page.jpg"/>
+                    <div class="Article__user-info">
+                        <a class="Article__user-name" href="#">Me me</a>
+                        <span>{{preposition}} <a class="Article__link" href="#">{{info}}</a></span>
+                        <br>
+                        <a href="#">
+                            <time class="Article__time" datetime="dd.mm.yyyy">{{post-time}}</time>
+                        </a>
+                    </div>
+                </header>
+                <main class="Article__content">
+                    <p class="Article__description">Description</p>
+                    <img class="Article__file" src="images/eugene_post_pic.jpg"/>
+                </main>
+                <footer class="Article__reaction-on">
+                    <a class="Article__likes-etc" href="#">
+                        <i class="fa fa-thumbs-o-up"> Like</i>
+                    </a>
+                    <a class="Article__likes-etc" href="#">
+                        <i class="fa fa-comment-o"> Comment</i>
+                    </a>
+                    <a class="Article__likes-etc" href="#">
+                        <i class="fa fa-send-o"> Share</i>
+                    </a>
+                </footer>
+            </article>
+            <footer class="Comments">
+                <div class="Comments__user-reactions">
+                    <a class="Comments__user-action" href="#">
+                        <i class="fa fa-thumbs-up"> {{who-liked}}</i>
+                    </a>
+                    <a class="Comments__user-action" href="#">
+                        <i class="fa fa-send"> {{who-shared}}</i>
+                    </a>
+                </div>
+                <div class="Comments__user-comments">
+                    <form action="#">
+                        <a href="user_page">
+                            <img class="Comments__user-pic"
+                                 src="images/user_avatar.jpeg"/>
+                        </a>
+                        <input class="Comments__text-area" type="text" placeholder="Write a comment..."/>
+                    </form>
+                </div>
+            </footer>
+            <article class="Article">
+                <header class="Article__header">
+                    <img class="Article__user-pic" src="images/friend_photo_main_page.jpg"/>
+                    <div class="Article__user-info">
+                        <a class="Article__user-name" href="#">Me me</a>
+                        <span>{{preposition}} <a class="Article__link" href="#">{{info}}</a></span>
+                        <br>
+                        <a href="#">
+                            <time class="Article__time" datetime="dd.mm.yyyy">{{post-time}}</time>
+                        </a>
+                    </div>
+                </header>
+                <main class="Article__content">
+                    <p class="Article__description">Description</p>
+                    <img class="Article__file" src="images/eugene_post_pic.jpg"/>
+                </main>
+                <footer class="Article__reaction-on">
+                    <a class="Article__likes-etc" href="#">
+                        <i class="fa fa-thumbs-o-up"> Like</i>
+                    </a>
+                    <a class="Article__likes-etc" href="#">
+                        <i class="fa fa-comment-o"> Comment</i>
+                    </a>
+                    <a class="Article__likes-etc" href="#">
+                        <i class="fa fa-send-o"> Share</i>
+                    </a>
+                </footer>
+            </article>
+            <footer class="Comments">
+                <div class="Comments__user-reactions">
+                    <a class="Comments__user-action" href="#">
+                        <i class="fa fa-thumbs-up"> {{who-liked}}</i>
+                    </a>
+                    <a class="Comments__user-action" href="#">
+                        <i class="fa fa-send"> {{who-shared}}</i>
+                    </a>
+                </div>
+                <div class="Comments__user-comments">
+                    <form action="#">
+                        <a href="user_page">
+                            <img class="Comments__user-pic"
+                                 src="images/user_avatar.jpeg"/>
+                        </a>
+                        <input class="Comments__text-area" type="text" placeholder="Write a comment..."/>
+                    </form>
+                </div>
+            </footer>
+        </main>
+    </section>
+</body>
+</html>

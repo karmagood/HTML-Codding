@@ -1,0 +1,37 @@
+@color: #111111;
+@font-size: 14px;
+@margin-top: 10px;
+@margin-left: 50px;
+@margin-bottom: 10px;
+@font-family: Roboto, Arial, sans-serif;
+@text-decoration: none;
+
+.Help {
+  border-bottom: 1px solid lightgray;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &__settings,
+  &__reference,
+  &__feedback {
+    display: block;
+    color: @color;
+    font-size: @font-size;
+    margin-top: @margin-top;
+    text-decoration: @text-decoration;
+    margin-left: @margin-left;
+    margin-bottom: @margin-bottom;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+    white-space: nowrap;
+    font-family: @font-family;
+  }
+
+  &__reference,
+  &__feedback {
+    background-color: transparent;
+    border: none;
+    padding-left: 0;
+  }
+}

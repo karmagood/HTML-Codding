@@ -1,0 +1,97 @@
+@import url(bMailsButton);
+.Chat {
+  &__data {
+    font-size: 12px;
+    color: #ccc;
+    margin-left: 30px;
+    padding-top: 100px;
+  }
+  &__profile {
+    border-top: 1px solid @border-color;
+    border-bottom: 1px solid @border-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    &_img {
+      display: inline-block;
+      margin-left: 10px;
+      height: 35px;
+      width: 35px;
+      top: 50px;
+      border-radius: 50%;
+      left: 20px;
+      vertical-align: middle;
+    }
+    &_name {
+
+      display: inline-block;
+      font-size: 14px;
+      vertical-align: middle;
+      padding-right: 10px;
+    }
+  }
+  &__new-chat {
+    display: inline-block;
+    margin-left: 50px;
+    bottom: 0;
+    left: 60px;
+    height: 26px;
+    width: 26px;
+    color: transparent;
+    border: 1px solid @border-color;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    background-image: url("../images/sprite.png");
+    background-position: -154px -145px;
+    vertical-align: middle;
+    opacity: .55;
+    &:hover {
+      opacity: .99;
+    }
+  }
+  &__buttons {
+    position: fixed;
+    bottom: 0;
+    &_contacts {
+      margin-left: 25px;
+      color: transparent;
+      background-image: url("../images/contacts_icon.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 37px;
+      height: 32px;
+      border: none;
+      opacity: .55;
+      &:hover {
+        opacity: .99;
+      }
+    }
+    &_chats {
+      color: transparent;
+      background-image: url("../images/hangouts_black.png");
+      background-repeat: no-repeat;
+      background-position: 4px -149px;
+      width: 37px;
+      height: 32px;
+      border: none;
+      opacity: .55;
+      &:hover {
+        opacity: .99;
+      }
+    }
+    &_calls {
+      color: transparent;
+      background-image: url("../images/hangouts_black.png");
+      background-repeat: no-repeat;
+      background-position: 4px -382px;
+      width: 37px;
+      height: 30px;
+      border: none;
+      opacity: .55;
+      &:hover {
+        opacity: .99;
+      }
+    }
+  }
+}
+
+

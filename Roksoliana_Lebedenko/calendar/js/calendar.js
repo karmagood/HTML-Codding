@@ -1,4 +1,4 @@
-function Calendar(container) {
+const Calendar = (container) => {
   let self = this;
 
   this.element = document.querySelector(container);
@@ -39,15 +39,15 @@ function Calendar(container) {
     calendarBody.innerHTML = generateCalendarBody();
   };
 
-  function drawCalendar(){
+  const drawCalendar = () =>{
     self.element.classList.add("calendar");
     drawCalendarHeader();
     drawCalendarBody();
     generateCalendarBody();
     drawCalendarFooter();
 
-  }
-  function drawCalendarHeader() {
+  };
+  const drawCalendarHeader = () => {
     let header = document.createElement("header");
     header.className = "calendar__header";
 
@@ -69,8 +69,8 @@ function Calendar(container) {
     header.appendChild(nextBtn);
 
     self.element.appendChild(header);
-  }
-  function drawCalendarFooter() {
+  };
+  const drawCalendarFooter = () =>{
     let footer = document.createElement("footer");
     footer.className = "calendar__footer";
 
@@ -78,8 +78,8 @@ function Calendar(container) {
         self.weekArray.join("</div><div class='calendar__day'>") + "</div>";
 
     self.element.appendChild(footer);
-  }
-  function drawCalendarBody() {
+  };
+  const drawCalendarBody = () => {
     let body = document.createElement("div");
     body.className = "calendar__body";
     body.innerHTML = generateCalendarBody();
@@ -88,23 +88,20 @@ function Calendar(container) {
 
 
     self.element.appendChild(body);
-  }
+  };
 
-   function generateCalendarBody(){
+   const generateCalendarBody = () =>{
     let month = new Date(self.year, self.month, 1),
       monthFirstDay = (month.getDay() || 7),
       monthLength = (new Date(self.year, self.month + 1, 0)).getDate(),
       prevMonthLength = (new Date(self.year, self.month, 0)).getDate(),
-
       monthStr = "",
       i;
-
     for (i = 0; i < monthFirstDay - 1; i++){
       monthStr = "<div class='calendar__day calendar__day--disabled'><span>" +
                   (prevMonthLength - i) +
                   "</span></div>" + monthStr;
     }
-
     for (i = 0; i < monthLength; i++){
       let isSelected = (new Date(self.selectedDay.getFullYear(), self.selectedDay.getMonth(),
           self.selectedDay.getDate())).getTime() === (new Date(self.year, self.month, i+1)).getTime();
@@ -112,14 +109,12 @@ function Calendar(container) {
       monthStr += "<div class='calendar__day" + (isSelected ? " calendar__day--selected" : "")
           + "'><span>" + (i + 1) + "</span></div>";
     }
-
     for (i = 0; i < (42 - (monthFirstDay - 1) - monthLength); i++){
       monthStr += "<div class='calendar__day calendar__day--disabled'><span>" + (i + 1) + "</span></div>";
     }
-
     return monthStr;
-  }
-function onDayClick(event){
+  };
+const onDayClick = (event) =>{
         let target = event.target;
         while (target !== event.currentTarget) {
             if (isDay(target) && !isDaySelected(target)) {
@@ -128,19 +123,17 @@ function onDayClick(event){
             }
       target = target.parentNode;
     }
-  }
-  function isDay(element){
+  };
+  const isDay = (element) =>{
     return element.classList.contains("calendar__day");
-  }
-  function isDaySelected(day){
+  };
+  const isDaySelected = (day) =>{
     return day.classList.contains("calendar__day--selected");
-  }
-  function selectDay(day){
+  };
+  const selectDay = (day) =>{
     let currentlySelectedDay = self.element.querySelector(".calendar__day_busy");
-    //if (currentlySelectedDay) currentlySelectedDay.classList.remove("calendar__day_busy");
-
     day.classList.add("calendar__day_busy");
     self.selectedDay = new Date(self.year, self.month, parseInt(day.children[0].innerHTML));
-  }
+  };
   drawCalendar();
-}
+};

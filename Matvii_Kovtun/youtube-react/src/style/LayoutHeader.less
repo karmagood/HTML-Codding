@@ -12,13 +12,17 @@
   top: 0;
   right: 0;
   left: 0;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5); /* Параметры тени */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Параметры тени */
 
   &__search {
     height: 29px;
     background-color: transparent;
     border: 1px solid #d3d3d3;
-    width:600px;
+    width: 600px;
+    @media (max-width: 1080px) {
+      width: 300px;
+    }
+
   }
 
   &__logo {
@@ -42,16 +46,20 @@
   }
 
   &__button {
+    background: no-repeat;
     color: transparent;
     width: var(--icon-width);
     height: var(--icon-height);
     vertical-align: middle;
     border: none;
     margin: 10px 10px;
-
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.5);
+    }
 
     &_hamburger-menu {
-      background: transparent url("../images/hamburger.svg") no-repeat;
+      background: transparent url("../images/hamburger.svg");
       &:active, &:focus,
       &:enabled {
         outline: none;
@@ -61,14 +69,14 @@
     }
 
     &_upload {
-      background: url("../images/upload.svg") no-repeat;
+      background: url("../images/upload.svg");
     }
 
     &_youtube-apps {
-      background: url("../images/youtube-apps.svg") no-repeat;
+      background: url("../images/youtube-apps.svg");
     }
     &_tools {
-      background: url("../images/tools.svg") no-repeat;
+      background: url("../images/tools.svg");
     }
   }
 
@@ -86,7 +94,7 @@
     color: transparent;
     width: 65px;
     border: 1px solid #d3d3d3;
-    height:29px;
+    height: 29px;
     background-size: 24px 23px;
   }
 }

@@ -1,0 +1,23 @@
+.user-menu {
+    position: fixed;
+    line-height: 40px;
+    float: left;
+    width: 240px;
+    height: 800px;
+    background-color: rgba(40, 40, 40, .8);
+    overflow: auto;
+}
+
+.main-buttons {
+    width: 240px;
+    height: 177px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #efedef;
+}
+
+.home-trending-history {
+    padding: 0 200px 0 70px;
+    line-height: 60px;
+    font-size: 18px;
+}

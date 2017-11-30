@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="main-header__left-section">
+        <a href="#" class="main-header__text"><img  src="{{fbLogoSrc}}" alt="Facebook" class="main-header__logo"></a>
+        <form class="search-form" action="" method="get">
+          <input class="search-form__input" type="text" name="fname" placeholder="{{search}}">
+          <button type="submit" class="search-form__search-button glyphicon glyphicon-search"></button>
+        </form>
+      </section>
+      <section class="main-header__right-section">
+        <nav class="navigation">
+          <a href="#" class="navigation__button_mypage">
+            <img class="navigation__user-pic" src="{{userMainPicture}}" alt="">
+            <span class="navigation__text">{{userName}}</span>
+          </a>
+          <a href="#" class="navigation__button_mainpage navigation__text">{{mainPage}}</a>
+        </nav>
+        <section class="icons-container">
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-user"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-envelope"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-globe"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-question-sign"></span>
+            </summary>
+          </details>
+          <details class="icons-container__details">
+            <summary class="icons-container__summary">
+              <span class="icons-container__icon glyphicon glyphicon-chevron-down"></span>
+            </summary>
+          </details>
+        </section>
+      </section>
+    </header>
+    <section class="main-section">
+      <main class="page-main">
+        <header class="user-header">
+          <section class="banner-pic">
+            <img class="banner-pic__background-pic" alt="profile backround" src="{{backgroundImg}}">
+            <section class="banner-pic__content">
+              <section class="banner-pic__user-container">
+                <div class="main-img-container">
+                  <img class="main-img-container__img" src="{{userMainPicture}}" alt="profile image">
+                </div>
+                <span class="banner-pic__user-name">{{userName}} {{userSurname}}</span>
+              </section>
+              <section class="buttons-container">
+                <button type="button" name="button" class="buttons-container__button">{{editProfileButton}}</button>
+                <div class="buttons-container__two-buttons">
+                  <button type="button" name="button" class="buttons-container__button buttons-container__button_journal-button">{{journalOfActiveButton}}</button>
+                  <button type="button" name="button" class="buttons-container__button buttons-container__button_more-button">{{threeDots}}</button>
+                </div>
+              </section>
+            </section>
+          </section>
+          <nav class="navigation">
+            <button class="navigation__button" type="button" name="button">{{lifeFeed}}</button>
+            <button class="navigation__button" type="button" name="button">{{aboutUser}}</button>
+            <button class="navigation__button" type="button" name="button">{{userFriends}}</button>
+            <button class="navigation__button" type="button" name="button">{{userPictures}}</button>
+            <button class="navigation__button navigation__button_endline" type="button" name="button">{{moreButton}}</button>
+          </nav>
+        </header>
+        <section class="user-info-and-feed">
+          <aside class="all-user-info">
+            <section class="block user-info">
+              <header class="block__header">
+                <img class="block__logo" src="{{aboutPicSrc}}" alt="">
+                <span class="block__header-text">{{aboutUser}}</span>
+              </header>
+              <hr class="user-info__underline">
+              <section class="user-info__content">
+                <article class="user-info__article">
+                  <span class="user-info__icon glyphicon glyphicon-education"></span>
+                  <h4 class="user-info__text">{{goTo}}</h4>
+                  <a class="user-info__text user-info__text_link" href="#">{{userSchool}}</a>
+                </article>
+                <article class="user-info__article">
+                  <span class="user-info__icon glyphicon glyphicon-home"></span>
+                  <h4 class="user-info__text">{{liveIn}}</h4>
+                  <a class="user-info__text user-info__text_link" href="#">{{userHometown}}</a>
+                </article>
+                <article class="user-info__article">
+                  <span class="user-info__icon glyphicon glyphicon-map-marker"></span>
+                  <h4 class="user-info__text">{{from}}</h4>
+                  <a class="user-info__text user-info__text_link" href="#">{{userHometown}}</a>
+                </article>
+              </section>
+            </section>
+            <section class="block user-pic">
+              <header class="block__header">
+                <img class="block__logo" src="{{picturesPicSrc}}" alt="">
+                <span class="block__header-text">{{userPictures}}</span>
+              </header>
+              <section class="user-pic__content">
+                {{#userPics}}
+                  <img class="user-pic__picture" src="{{src}}" alt="">
+                {{/userPics}}
+              </section>
+            </section>
+            <section class="block user-friends">
+              <header class="block__header">
+                <img src="{{friendsPicSRC}}" class="block__logo" alt="">
+                <span class="block__header-text">{{userFriends}}</span>
+              </header>
+              <section class="user-friends__content">
+                {{#userFrnd}}
+                  <section class="user-friend">
+                    <img class="user-friend__picture"src="{{src}}" alt="">
+                    <span class="user-friend__name">{{name}}</span>
+                  </section>
+                {{/userFrnd}}
+              </section>
+            </section>
+            <section class="block user-albums">
+              <header class="block__header">
+                <img class="block__logo" src="{{userAlbumsPicSrc}}" alt="">
+                <span class="block__header-text">{{userAlbums}}</span>
+              </header>
+            </section>
+            <footer class="footer">
+              <section class="block language-sec">
+                <div class="language-sec__language">
+                  <a href="#" class="language-sec__text language-sec__text_first-lang">{{firstLanguage}}</a>
+                  {{#langauges}}
+                    <a class="language-sec__text" href="#">{{name}}</a>
+                  {{/langauges}}
+                </div>
+                <button type="button" name="button" class="language-sec__button glyphicon glyphicon-plus"></button>
+              </section>
+              <nav class="navigation">
+                <a href="#" class="navigation__text navigation__text_first-a-footer">{{footerFirstLink}}</a>
+                {{#footerLinks}}
+                  <a class="navigation__text" href="#">{{link}}</a>
+                {{/footerLinks}}
+              </nav>
+              <span class="footer__end">{{facebook}}</span>
+              <div class="empty"></div>
+            </footer>
+          </aside>
+          <main class="user-feed">
+            <header class="block create-post">
+              <nav class="navigation">
+                <button type="button" name="button" class="navigation__button navigation__button_first-button">
+                  <span class="navigation__icon glyphicon glyphicon-pencil"></span>
+                  <span class="navigation__text">{{userPost}}</span>
+                </button>
+                <button type="button" name="button" class="navigation__button">
+                  <span class="navigation__icon glyphicon glyphicon-camera"></span>
+                  <span class="navigation__text">{{userPictures}}</span>
+                </button>
+                <button type="button" name="button" class="navigation__button">
+                  <span class="navigation__icon glyphicon glyphicon-facetime-video"></span>
+                  <span class="navigation__text">{{liveVideo}}</span>
+                </button>
+                <button type="button" name="button" class="navigation__button">
+                  <span class="navigation__icon glyphicon glyphicon-flag"></span>
+                  <span class="navigation__text">{{lifeEvent}}</span>
+                </button>
+              </nav>
+              <form class="new-post-form">
+                <section class="new-post-form__textarea">
+                  <img class="new-post-form__pic" src="me.jpg" alt="">
+                  <textarea class="new-post-form__input" name="name" rows="8" cols="80" placeholder="{{textareaPlaceholder}}"></textarea>
+                </section>
+                <footer class="new-post-form__footer">
+                    <select name="" class="new-post-form__select">
+                      <option class="new-post-form__option" value="">{{userFriends}}</option>
+                      <option class="new-post-form__option" value="">{{public}}</option>
+                    </select>
+                    <input class="new-post-form__submit" type="submit" name="" value={{publish}}>
+                </footer>
+              </form>
+            </header>
+              <article class="block feed-article">
+                <header class="article-head block__header">
+                  <img class="article-head__pic" src="{{aleksZinevychPicSrc}}" alt="">
+                  <section class="article-head__user-message">
+                    <section class="article-head__text-container">
+                      <a href="#" class="article-head__text article-head__text_link article-head__text_user-that-posted">{{aleksZinevych}}</a>
+                      <span class="article-head__text article-head__text_plane">{{isAttending}}</span>
+                      <a class="article-head__text article-head__text_link" href="#"> {{postText}}</a>
+                      <span class="article-head__text article-head__text_plane">{{with}}</span>
+                      <a class="article-head__text article-head__text_link" href="#">{{friendNamePost}}</a>
+                      <span class="article-head__text article-head__text_plane">{{and}}</span>
+                      <a class="article-head__text article-head__text_link" href="#">{{userName}} {{userSurname}}</a>
+                    </section>
+                    <time class="article-head__post-time">
+                      <a class="article-head__text article-head__text_time" href="#">{{postDate1}} </a>
+                      <a class="article-head__text article-head__text_time" href="#">{{postPlace1}}</a>
+                      <button type="button" name="button" class="article-head__button glyphicon glyphicon-user"></button>
+                    </time>
+                  </section>
+                  <span class="article-head__icon glyphicon glyphicon-option-horizontal"></span>
+                </header>
+                <main class="article-content">
+                    <img class="article-content__pic" src="{{postPic1Src}}" alt="">
+                </main>
+                <footer class="article-footer">
+                  <section class="like-section">
+                    <div class="like-section__symbol">
+                      <span class="like-section__icon glyphicon glyphicon-thumbs-up"></span>
+                      <a href="#" class="like-section__text">{{like}}</a>
+                    </div>
+                    <div class="like-section__symbol">
+                      <span class="like-section__icon glyphicon glyphicon-comment"></span>
+                      <a href="#" class="like-section__text">{{comment}}</a>
+                    </div>
+                    <div class="like-section__symbol">
+                      <span class="like-section__icon glyphicon glyphicon-share-alt"></span>
+                      <a href="#" class="like-section__text">{{share}}</a>
+                    </div>
+                  </section>
+                  <section class="comment-section">
+                    <img class="comment-section__pic" src="{{userMainPicture}}" alt="">
+                    <section class="comment-section__input-container">
+                      <input class="comment-section__input" type="text" name="" value="" placeholder="{{commnetPlaceholder}}">
+                      {{#commentPics}}
+                        <img class="comment-section__icon"src="{{src}}" alt="">
+                      {{/commentPics}}
+                    </section>
+                  </section>
+                </footer>
+              </article>
+              <article class="block feed-article">
+                <header class="article-head block__header">
+                  <img class="article-head__pic" src="{{userMainPicture}}" alt="">
+                  <section class="article-head__user-message">
+                    <section class="article-head__text-container">
+                      <a href="#" class="article-head__text article-head__text_link article-head__text_user-that-posted">{{userName}} {{userSurname}}</a>
+                      <span class="article-head__text article-head__text_link">{{updateBack}}</span>
+                    </section>
+                    <time class="article-head__post-time">
+                      <a class="article-head__text article-head__text_time" href="#">{{postDate2}}</a>
+                      <button type="button" name="button" class="article-head__button glyphicon glyphicon-globe"></button>
+                    </time>
+                  </section>
+                  <span class="article-head__icon glyphicon glyphicon-option-horizontal"></span>
+                </header>
+                <main class="article-content">
+                  <img class="article-content__pic article-content__pic_post2" src="{{backgroundImg}}" alt="">
+                </main>
+                <footer class="article-footer">
+                  <section class="like-section">
+                    <div class="like-section__symbol">
+                      <span class="like-section__icon glyphicon glyphicon-thumbs-up"></span>
+                      <a href="#" class="like-section__text">{{like}}</a>
+                    </div>
+                    <div class="like-section__symbol">
+                      <span class="like-section__icon glyphicon glyphicon-comment"></span>
+                      <a href="#" class="like-section__text">{{comment}}</a>
+                    </div>
+                    <div class="like-section__symbol">
+                      <span class="like-section__icon glyphicon glyphicon-share-alt"></span>
+                      <a href="#" class="like-section__text">{{share}}</a>
+                    </div>
+                  </section>
+                  <section class="comment-section">
+                    <img class="comment-section__pic" src="{{userMainPicture}}" alt="">
+                    <section class="comment-section__input-container">
+                      <input class="comment-section__input" type="text" name="" value="" placeholder="{{commnetPlaceholder}}">
+                      {{#commentPics}}
+                        <img class="comment-section__icon" src="{{src}}" alt="">
+                      {{/commentPics}}
+                    </section>
+                  </section>
+                </footer>
+              </article>
+              <div class="empty"></div>
+          </main>
+        </section>
+      </main>
+      <aside class="friends-bar-container">
+        <header class="friends-bar__header"></header>
+        <main class="friends-bar">
+          {{#asideFriends}}
+            <a class="friend" href="#">
+              <div class="friend__name-and-pic">
+                <img class="friend__pic" src="{{src}}" alt="">
+                <span class="friend__name">{{name}}</span>
+              </div>
+              <span class="friend__online">	&#9679;</span>
+            </a>
+          {{/asideFriends}}
+        </main>
+        <footer class="footer">
+          <span class="footer__icon glyphicon glyphicon-search"></span>
+            <input class="footer__input" type="text" name="" value="" placeholder="{{search}}">
+          <span class="footer__icon glyphicon glyphicon-cog"></span>
+          <span class="footer__icon glyphicon glyphicon-edit"></span>
+          <span class="footer__icon glyphicon glyphicon-user"></span>
+        </footer>
+      </aside>
+    </section>
+  </body>
+</html>
