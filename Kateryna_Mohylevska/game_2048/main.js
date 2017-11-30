@@ -173,6 +173,3 @@ let game = new Game(document.body);
 game.start();
 
 
-let score = document.querySelector(".score");
-score.innerHTML = "score: 0";
-
