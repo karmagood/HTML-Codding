@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles/user_page.css"/>
+    <link rel="stylesheet" href="styles/common.css"/>
+    <link rel="stylesheet" href="styles/Header.css"/>
+    <link rel="stylesheet" href="styles/user_page_header.css"/>
+    <link rel="stylesheet" href="styles/intro.css"/>
+    <link rel="stylesheet" href="styles/info_footer.css"/>
+    <link rel="stylesheet" href="styles/user_post.css"/>
+    <link rel="stylesheet" href="styles/friend_n_games.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <title>User Page</title>
+</head>
+<body>
+<header>
+    <a href="index">
+        <img id="logo" src="images/facebook-logo.jpg"/>
+    </a>
+    <form action="#">
+        <input type="search" value="Olya Korabliova"/>
+    </form>
+    <a href="#">
+        <i class="fa fa-search" style="color: black;"></i>
+    </a>
+    <nav class="header-nav">
+        <a class="header-nav user-profile" href="user_page" title="Profile">
+            <img class="user-profile__user-pic"
+                 src="images/user_avatar.jpeg"/>
+            <span id="user-name" style="left: 680px;">Olya</span>
+        </a>
+        <a id="home" href="index" style="left: 740px;">Home</a>
+        <a class="header-nav__h-icon" href="#" title="Friends Requests" style="left: 850px;">
+            <i class="fa fa-user-o"></i>
+        </a>
+        <a class="header-nav__h-icon" href="#" title="Messages" style="left: 890px;">
+            <i class="fa fa-envelope-o"></i>
+        </a>
+        <a class="header-nav__h-icon" href="#" title="Notifications" style="left: 930px;">
+            <i class="fa fa-globe"></i>
+        </a>
+        <a class="header-nav__h-icon" href="#" title="Quick Help" style="left: 990px;">
+            <i class="fa fa-question-circle-o"></i>
+        </a>
+        <a class="header-nav__h-icon" href="#" style="left: 1030px;">
+            <i class="fa fa-caret-down"></i>
+        </a>
+    </nav>
+</header>
+<section class="user-page-header">
+    <a href="#">
+        <div class="user-page-header__cover-photo"></div>
+    </a>
+    <a href="#">
+        <img src="images/user_avatar.jpeg"/>
+        <span>Olya Korabliova</span>
+    </a>
+    <a class="user-page-header__edit-profile" href="#">Edit Profile</a>
+    <a class="user-page-header__edit-profile" href="#" title="See your activity on Facebook">View Activity Log</a>
+    <a class="user-page-header__edit-profile" href="#" title="More">...</a>
+    <div class="user-page-header__about-user-profile">
+        <a href="#" style="color: #4b4f56;">Timeline</a><a href="#">About</a><a href="#">Friends</a><a
+            href="#">Photos</a><a href="#" style="border-right: #e9eaed solid 1px;">More</a>
+    </div>
+</section>
+<nav class="nav-bar">
+    <section class="nav-bar__block">
+        <h4 class="nav-bar__block-title">Intro</h4>
+        <div id="intro__questions">
+            <a class="nav-bar__link" href="#"> + What makes you happy?</a>
+        </div>
+        <div id="intro__education-etc">
+            {{#education-etc}}
+                <p>{{action}}
+                    <a href="{{place-link}}">{{place}}</a>
+                </p>
+            {{/education-etc}}
+        </div>
+        <div class="nav-bar__photos">
+            {{#featured-photos}}
+                <a href="{{photo-link}}">
+                    <img class="{{image-class}}" src="{{img-src}}"/>
+                </a>
+            {{/featured-photos}}
+        </div>
+        <div id="intro__add-links">
+            <a href="#"> + Add Instagram, Websites, Other Links</a>
+        </div>
+    </section>
+    <section class="nav-bar__block">
+        <h4 class="nav-bar__block-title">Photos</h4>
+        <div class="nav-bar__photos">
+            {{#user-photos}}
+                <a href="{{photo-link}}">
+                    <img class="{{image-class}}" src="{{img-src}}"/>
+                </a>
+            {{/user-photos}}
+        </div>
+    </section>
+    <section class="nav-bar__block">
+        <h4 class="nav-bar__block-title">Friends</h4>
+        <div class="nav-bar__photos">
+            {{#friends}}
+                <a href="{{photo-link}}">
+                    <img class="{{image-class}}" src="{{img-src}}"/>
+                </a>
+                <!--<span>{{friend-name}}</span>-->
+            {{/friends}}
+        </div>
+        <span>See what you have in common with your friends.</span>
+        <form action="#">
+            <button type="button">View</button>
+        </form>
+    </section>
+    <section class="nav-bar__block">
+        <h4 class="nav-bar__block-title">Featured Albums</h4>
+    </section>
+    <div class="ad-feed__block">
+        <div class="ad-feed__block-language">
+            {{#languages}}
+                <a class="ad-feed__block-language {{status}}" href="{{action}}">
+                    {{language}}
+                </a>
+            {{/languages}}
+        </div>
+    </div>
+    <footer>
+        {{#info-footer}}
+            <a class="ad-feed__footer-info" href="{{action}}">{{info}}</a>
+        {{/info-footer}}
+    </footer>
+</nav>
+<main>
+    <section class="news-feed">
+        <div class="news-feed__make-post">
+            <a class="news-feed__make-post_active" href="#" style="padding: 3px; color: #4b4f56;">
+                <i class="fa fa-pencil-square-o"></i>
+                Make Post
+            </a>
+            <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+                <i class="fa fa-file-photo-o" style="color: #4B4F56;"></i>
+                Photo/Video
+            </a>
+            <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+                <i class="fa fa-video-camera" style="color: #4B4F56;"></i>
+                Live Video
+            </a>
+            <a href="#" style="border-left: 2px solid #ced0d4; padding-left: 7px;">
+                <i class="fa fa-flag" style="color: #4B4F56;"></i>
+                Live Event
+            </a>
+        </div>
+        <div class="news-feed__post-content">
+            <form>
+                <a href="user_page">
+                    <img class="user-profile__user-pic" height="45px"
+                         src="images/user_avatar.jpeg"/>
+                </a>
+                <textarea placeholder="What's on your mind?"></textarea>
+            </form>
+            <div class="news-feed__add-content">
+                <a href="#">
+                    <i class="fa fa-photo" style="color: #8ABF4C;"></i>
+                    Photo/Video
+                </a>
+                <a href="#">
+                    <i class="fa fa-smile-o" style="color: #FFD62C;"></i>
+                    Feeling/Activity
+                </a>
+                <a href="#">...</a>
+            </div>
+        </div>
+        {{#user-page-post}}
+            <div class="news-feed__user-post">
+                <a href="{{user-link}}">
+                    <img class="user-profile__user-pic" src="{{img-src}}"/>
+                </a>
+                <div class="user-profile__info">
+                    <a class="user-profile__name" href="{{user-link}}">{{name}}</a>
+                    {{#add-info}}
+                        <span>{{preposition}} <a href="#">{{info}}</a></span>
+                    {{/add-info}}
+                    <br>
+                    <a href="#">
+                        <time datetime="dd.mm.yyyy">{{post-time}}</time>
+                    </a>
+                </div>
+                <p>{{description}}</p>
+                <img class="news-feed__user-file" src="{{file}}"/>
+                <br>
+                <a class="user-post__like-comm-share" href="#">
+                    <i class="fa fa-thumbs-o-up"> Like</i>
+                </a>
+                <a class="user-post__like-comm-share" href="#">
+                    <i class="fa fa-comment-o"> Comment</i>
+                </a>
+                <a class="user-post__like-comm-share" href="#">
+                    <i class="fa fa-send-o"> Share</i>
+                </a>
+            </div>
+            <div class="who-likes-shared-commented">
+                <div class="user-post__likes-shares">
+                    <a class="who-liked" href="#">
+                        <i class="fa fa-thumbs-up"> {{who-liked}}</i>
+                    </a>
+                    <a class="who-liked" href="#">
+                        <i class="fa fa-send"> {{who-shared}}</i>
+                    </a>
+                </div>
+                <div class="user-post__comments">
+                    <form class="user-post__comments-form" action="#">
+                        <a href="#">
+                            <img class="user-profile__user-pic"
+                                 src="images/user_avatar.jpeg"/>
+                        </a>
+                        <input type="text" placeholder="Write a comment..."/>
+                    </form>
+                </div>
+            </div>
+        {{/user-page-post}}
+    </section>
+</main>
+<aside class="aside-block">
+    <section class="aside-block__games">
+        <div id="your-games">
+            <h6>YOUR GAMES
+                <a href="#" class="aside-block__games see-more" style="font-size: 10px;">MORE</a>
+            </h6>
+            {{#user-games}}
+                <a class="aside-block__games-link" href="{{game-link}}">
+                    <img src="{{img-src}}"/>
+                </a>
+            {{/user-games}}
+        </div>
+        <div id="recommended-games">
+            <h6>RECOMMENDED GAMES
+                <a href="#" class="aside-block__games see-more" style="font-size: 10px;">MORE</a>
+            </h6>
+            <a href="#"><i class="material-icons" style="color: black">keyboard_arrow_left</i></a>
+            {{#games-suggestions}}
+                <a class="aside-block__games-link" href="{{game-link}}">
+                    <img src="{{img-src}}"/>
+                </a>
+            {{/games-suggestions}}
+            <a href="#"><i class="material-icons" style="color: black">keyboard_arrow_right</i></a>
+        </div>
+    </section>
+    <section class="aside-block__friends online-friends">
+        {{#online-friends}}
+            <a class="aside-block__friends user-profile" href="{{user-link}}">
+                <p>
+                    <img class="user-profile__user-pic" src="{{user-pic}}"/>
+                    {{user-name}}
+                    <span class="{{status}}"></span>
+                </p>
+            </a>
+        {{/online-friends}}
+    </section>
+    <section class="aside-block__friends more-contacts">
+        <h5 style="color: black;">MORE CONTACTS</h5>
+        {{#more-friends}}
+            <a class="aside-block__friends user-profile" href="{{user-link}}">
+                <p>
+                    <img class="user-profile__user-pic" src="{{user-pic}}"/>
+                    {{user-name}}
+                    <span class="{{status}}"></span>
+                </p>
+            </a>
+        {{/more-friends}}
+    </section>
+    <footer>
+        <form action="#">
+            <input type="search" placeholder="Search">
+            <button>
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+    </footer>
+</aside>
+</body>
+</html>

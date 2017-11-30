@@ -1,0 +1,49 @@
+.Tool-bar {
+  font-size: 13px;
+}
+.Tool-bar__user-pic {
+  width: 30px;
+  border-radius: 50%;
+}
+.Tool-bar__user-name {
+  position: relative;
+  top: -8px;
+}
+.Tool-bar__nav {
+  padding: 5px;
+}
+.Tool-bar__nav-title {
+  margin: 0;
+}
+.Tool-bar__item {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  text-decoration: none;
+  border: 1px solid transparent;
+  color: black;
+  padding-left: 5px;
+}
+.Tool-bar__item.active {
+  font-weight: bold;
+  background-color: #F6F7F9;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+}
+.Tool-bar__item:hover {
+  background-color: #F6F7F9;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+}
+.Tool-bar__item:active {
+  background-color: #DDDFE2;
+}
+.Tool-bar__more {
+  font-size: 11px;
+  padding-left: 5px;
+  color: #365899;
+}
+.Tool-bar__more:hover {
+  text-decoration: underline;
+}

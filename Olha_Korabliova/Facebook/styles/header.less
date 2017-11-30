@@ -1,3 +1,4 @@
+@import "vars";
 header {
   position: fixed;
   height: @main-top;
@@ -53,11 +54,13 @@ a.header-nav__h-icon {
   width: 25px;
 }
 
-.header-nav .user-profile__user-pic {
-  left: 650px;
-  width: 30px;
-  margin-top: 5px;
-  border-radius: 50%;
+.header-nav {
+  & .user-profile__user-pic {
+    left: 650px;
+    width: 30px;
+    margin-top: 5px;
+    border-radius: 50%;
+  }
 }
 
 #user-name, #home {

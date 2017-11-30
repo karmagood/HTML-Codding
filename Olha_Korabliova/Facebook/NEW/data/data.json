@@ -1,0 +1,1206 @@
+{
+  "Tool-bar": [
+    {
+      "nav": [
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        }
+      ],
+      "title": "Shortcuts"
+    },
+    {
+      "nav": [
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        },
+        {
+          "item": "CS@UCU",
+          "link": "#",
+          "icon-class": "Icon_light-bulb"
+        }
+      ],
+      "title": "Explore"
+    }
+  ],
+  "News": {
+      "header": [
+        {
+          "icon-class": "Icon_pencil",
+          "item": "Make Post",
+          "action": "#",
+          "first": "first",
+          "status": "active"
+        },
+        {
+          "icon-class": "Icon_photo-camera",
+          "item": "Photo/Video Album",
+          "action": "#",
+          "first": null,
+          "status": null
+        },
+        {
+          "icon-class": "Icon_video-camera",
+          "item": "Video",
+          "action": "#",
+          "first": null,
+          "status": null
+        }
+      ],
+      "footer": [
+        {
+          "item": "Photo/Video",
+          "icon-class": "Icon_photo-video-option",
+          "action": "#"
+        },
+        {
+          "item": "Feeling/Activity",
+          "icon-class": "Icon_feeling-activity-option",
+          "action": "#"
+        },
+        {
+          "item": "",
+          "icon-class": "Icon_more-options",
+          "action": "#"
+        }
+      ]
+    },
+  "Article-and-Comments": [
+    {
+      "Article-header": {
+        "user-name": "Me me",
+        "user-img": "images/friend_photo_main_page.jpg",
+        "user-link": "#",
+        "additional-info": {
+          "preposition": "in",
+          "info": "Lviv, Ukraine",
+          "info-link": "#"
+        },
+        "post-time": "11.11.2017"
+      },
+      "Article-content": {
+        "description": "Description",
+        "file-src": "images/eugene_post_pic.jpg"
+      },
+      "Comments": {
+        "reactions": {
+          "who-liked": "123 likes",
+          "who-shared": "2 shares"
+        },
+        "items": [
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          }
+        ]
+      }
+    },
+    {
+      "Article-header": {
+        "user-name": "Me me",
+        "user-img": "images/friend_photo_main_page.jpg",
+        "user-link": "#",
+        "additional-info": {
+          "preposition": "in",
+          "info": "Lviv, Ukraine",
+          "info-link": "#"
+        },
+        "post-time": "11.11.2017"
+      },
+      "Article-content": {
+        "description": "Description",
+        "file-src": "images/eugene_post_pic.jpg"
+      },
+      "Comments": {
+        "reactions": {
+          "who-liked": "123 likes",
+          "who-shared": "2 shares"
+        },
+        "items": [
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          }
+        ]
+      }
+    },
+    {
+      "Article-header": {
+        "user-name": "Me me",
+        "user-img": "images/friend_photo_main_page.jpg",
+        "user-link": "#",
+        "additional-info": {
+          "preposition": "in",
+          "info": "Lviv, Ukraine",
+          "info-link": "#"
+        },
+        "post-time": "11.11.2017"
+      },
+      "Article-content": {
+        "description": "Description",
+        "file-src": "images/eugene_post_pic.jpg"
+      },
+      "Comments": {
+        "reactions": {
+          "who-liked": "123 likes",
+          "who-shared": "2 shares"
+        },
+        "items": [
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          },
+          {
+            "user-link": "#",
+            "user-name": "Hero hero",
+            "text": "Hi!"
+          }
+        ]
+      }
+    }
+  ],
+  // TODO Comments UP
+//TODO  "Stories": [],
+  "Events": [
+    {
+      "event": "1 request from Anna Anna",
+      "link": "#",
+      "event-time": null,
+      "icon-class": "Icon Icon_request"
+    },
+    {
+      "event": "Екслюзивні семінари...",
+      "link": "#",
+      "event-time": "on Monday",
+      "icon-class": "Icon Icon_calendar"
+    },
+    {
+      "event": "Anna Anna's birthday",
+      "link": "#",
+      "event-time": "is today",
+      "icon-class": "Icon Icon_gift"
+    }
+  ],
+
+
+  "main-page-posts": [
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Eugene Eugene",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/eugene_post_pic.jpg",
+      "who-liked": "10 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Юльця Юльця",
+      "add-info": {
+        "preposition": "is in",
+        "info": "Przemysl, Poland"
+      },
+      "post-time": "01.10.2017",
+      "description": null,
+      "file": "images/yultsa_post_pic.jpg",
+      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Tamila Tamila",
+      "add-info": {
+        "preposition": "with",
+        "info": "Роман Роман"
+      },
+      "post-time": "01.10.2017",
+      "description": "Бажаємо всім продуктивного дня!",
+      "file": "images/tamila_post_pic.jpg",
+      "who-liked": "Olya Olya and 55 others",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Oles Oles",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
+      "file": "images/oles_post_pic.jpg",
+      "who-liked": "Катя Катя and 13 others",
+      "who-shared": "7 Shares"
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Eugene Eugene",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/eugene_post_pic.jpg",
+      "who-liked": "10 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Юльця Юльця",
+      "add-info": {
+        "preposition": "is in",
+        "info": "Przemysl, Poland"
+      },
+      "post-time": "01.10.2017",
+      "description": null,
+      "file": "images/yultsa_post_pic.jpg",
+      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Tamila Tamila",
+      "add-info": {
+        "preposition": "with",
+        "info": "Роман Роман"
+      },
+      "post-time": "01.10.2017",
+      "description": "Бажаємо всім продуктивного дня!",
+      "file": "images/tamila_post_pic.jpg",
+      "who-liked": "Olya Olya and 55 others",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Oles Oles",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
+      "file": "images/oles_post_pic.jpg",
+      "who-liked": "Катя Катя and 13 others",
+      "who-shared": "7 Shares"
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Eugene Eugene",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/eugene_post_pic.jpg",
+      "who-liked": "10 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Юльця Юльця",
+      "add-info": {
+        "preposition": "is in",
+        "info": "Przemysl, Poland"
+      },
+      "post-time": "01.10.2017",
+      "description": null,
+      "file": "images/yultsa_post_pic.jpg",
+      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Tamila Tamila",
+      "add-info": {
+        "preposition": "with",
+        "info": "Роман Роман"
+      },
+      "post-time": "01.10.2017",
+      "description": "Бажаємо всім продуктивного дня!",
+      "file": "images/tamila_post_pic.jpg",
+      "who-liked": "Olya Olya and 55 others",
+      "who-shared": null
+    },
+    {
+      "user-link": "#",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Oles Oles",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
+      "file": "images/oles_post_pic.jpg",
+      "who-liked": "Катя Катя and 13 others",
+      "who-shared": "7 Shares"
+    }
+  ],
+  "user-page-post": [
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": "3 Shares"
+    }
+  ],
+  "group-page-post": [
+    {
+      "user-link": "user_page",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Not Me",
+      "add-info": null,
+      "post-time": "11.11.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/recent_group_photo_1.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "20.10.2017",
+      "description": ":)",
+      "file": "images/recent_group_photo_2.jpg",
+      "who-liked": "23 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Super Man",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Good morning people!",
+      "file": "images/recent_group_photo_3.jpg",
+      "who-liked": "120 likes",
+      "who-shared": "9 Shares"
+    }
+  ],
+  "friends-suggestions": [
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Violetta Violetta",
+      "user-link": "#",
+      "mutual-friends": "Max Max is a mutual friend."
+    },
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Vira Vira",
+      "user-link": "#",
+      "mutual-friends": "Oleg Oleg is a mutual friend."
+    },
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Roman Roman",
+      "user-link": "#",
+      "mutual-friends": "5 mutual friends."
+    },
+    {
+      "user-picture": "images/friend_suggestion_avatar.png",
+      "user-name": "Mama Tato",
+      "user-link": "#",
+      "mutual-friends": "50 mutual friends."
+    }
+  ],
+  "user-games": [
+    {
+      "game-link": "#",
+      "img-src": "images/agario_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/jetpack_game.jpg"
+    }
+  ],
+  "games-suggestions": [
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    }
+  ],
+  "online-friends": [
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/bogdan_avatar.png",
+      "user-name": "Bogdan Bogdan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/maria_avatar.png",
+      "user-name": "Maria Maria",
+      "status": "online"
+    }
+  ],
+  "more-friends": [
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/kira_avatar.png",
+      "user-name": "Kira Kira",
+      "status": null
+    },
+    {
+      "user-link": "#",
+      "user-pic": "images/ivan_avatar.jpg",
+      "user-name": "Ivan Ivan",
+      "status": "online"
+    }
+  ],
+  "friends": [
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    },
+    {
+      "friend-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/friend_avatar_photos_block_user_page.png",
+      "friend-name": "Michael Michael"
+    }
+  ],
+  "user-photos": [
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    }
+  ],
+  "education-etc": [
+    {
+      "action": "Studied German Language at ",
+      "place-link": "#",
+      "place": "Universität Passau"
+    },
+    {
+      "action": "Studies Computer Science at ",
+      "place-link": "#",
+      "place": "Ukrainian Catholic University"
+    },
+    {
+      "action": "Went to ",
+      "place-link": "#",
+      "place": "Lviv Physics and Mathematics Lyceum"
+    },
+    {
+      "action": "From ",
+      "place-link": "#",
+      "place": "Lviv, Ukraine"
+    }
+  ],
+  "featured-photos": [
+    {
+      "photo-link": "#",
+      "image-class": "bigger-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "bigger-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "photo-link": "#",
+      "image-class": "smaller-img",
+      "img-src": "images/featured_photo.jpg"
+    }
+  ],
+  "languages": [
+    {
+      "status": "active",
+      "language": "English (US)",
+      "action": "#"
+    },
+    {
+      "lang-class": null,
+      "language": "Українська",
+      "action": "#"
+    },
+    {
+      "lang-class": null,
+      "language": "Русский",
+      "action": "#"
+    },
+    {
+      "lang-class": null,
+      "language": "Español",
+      "action": "#"
+    },
+    {
+      "lang-class": null,
+      "language": "Português (Brasil)",
+      "action": "#"
+    }
+  ],
+  "info-footer": [
+    {
+      "action": "#",
+      "info": "Privacy"
+    },
+    {
+      "action": "#",
+      "info": "Terms"
+    },
+    {
+      "action": "#",
+      "info": "Advertising"
+    },
+    {
+      "action": "#",
+      "info": "Ad Choices"
+    },
+    {
+      "action": "#",
+      "info": "Cookies"
+    },
+    {
+      "action": "#",
+      "info": "More"
+    },
+    {
+      "action": "#",
+      "info": "Facebook © 2017"
+    }
+  ],
+  "tool-bar__main-page": [
+    {
+      "title": "Shortcuts",
+      "items": [
+        {
+          "link": "group_page",
+          "icon-class": "fa fa-lightbulb-o",
+          "icon-style": "color: #FDE01F;",
+          "status": null,
+          "name": "CS@UCU"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-star-o",
+          "icon-style": "color: #fde01f;",
+          "status": null,
+          "name": "Волонтери"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-bus",
+          "icon-style": "color: #34495E;",
+          "status": null,
+          "name": "Мандрівки"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-hand-rock-o",
+          "icon-style": "color: #A96930;",
+          "status": null,
+          "name": "ТРЕНІНГ в УКУ"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-book",
+          "icon-style": "color: #990099;",
+          "status": null,
+          "name": "Educational Project Show"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-home",
+          "icon-style": "color: #ff9999;",
+          "status": null,
+          "name": "Збірка на УКУ"
+        }
+      ]
+    },
+    {
+      "title": "Explore",
+      "items": [
+        {
+          "link": "#",
+          "icon-class": "fa fa-calendar",
+          "icon-style": "color: #D14357;",
+          "status": null,
+          "name": "Events"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-bookmark",
+          "icon-style": "color: #D14357;",
+          "status": null,
+          "name": "Pages"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-group",
+          "icon-style": "color: #5D92FF;",
+          "status": null,
+          "name": "Groups"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-archive",
+          "icon-style": "color: #A96930;",
+          "status": null,
+          "name": "Saved"
+        }
+      ]
+    }
+  ],
+  "tool-bar__group-page": [
+    {
+      "title": "Closed Group",
+      "items": [
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "About"
+        },
+        {
+          "link": "group_page",
+          "icon-class": null,
+          "icon-style": null,
+          "status": "active",
+          "name": "Discussion"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Members"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Events"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Videos"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Photos"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Files"
+        }
+      ]
+    },
+    {
+      "title": "Shortcuts",
+      "items": [
+        {
+          "link": "#",
+          "icon-class": "fa fa-lightbulb-o",
+          "icon-style": "color: #FDE01F;",
+          "status": null,
+          "name": "CS@UCU"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-star-o",
+          "icon-style": "color: #fde01f;",
+          "status": null,
+          "name": "Волонтери"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-bus",
+          "icon-style": "color: #34495E;",
+          "status": null,
+          "name": "Мандрівки"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-hand-rock-o",
+          "icon-style": "color: #A96930;",
+          "status": null,
+          "name": "ТРЕНІНГ в УКУ"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-book",
+          "icon-style": "color: #990099;",
+          "status": null,
+          "name": "Educational Project Show"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-home",
+          "icon-style": "color: #ff9999;",
+          "status": null,
+          "name": "Збірка на УКУ"
+        }
+      ]
+    }
+  ],
+  "group-user-settings": [
+    {
+      "option": "Joined"
+    },
+    {
+      "option": "Notifications"
+    },
+    {
+      "option": "Share"
+    },
+    {
+      "option": "..."
+    }
+  ],
+  "group-members": [
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    }
+  ],
+  "group-recent-pics": [
+    {
+      "link": "#",
+      "img-src": "images/recent_group_photo_1.jpg"
+    },
+    {
+      "link": "#",
+      "img-src": "images/recent_group_photo_2.jpg"
+    },
+    {
+      "link": "#",
+      "img-src": "images/recent_group_photo_3.jpg"
+    }
+  ],
+  "group-ad": [
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    },
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    },
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    },
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    }
+  ]
+}

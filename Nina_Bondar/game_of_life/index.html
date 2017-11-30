@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">`
+    <title>Conway`s Game of Life</title>
+    <link rel="stylesheet" href="styles/game-grid.css">
+    <link rel="stylesheet" href="styles/controls.css">
+    <link rel="stylesheet" href="styles/common.css">
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/gol_main.js"></script>
+    <script src="js/gol_render.js"></script>
+</head>
+
+<body>
+    <article style="margin-right: auto; margin-left: auto;">
+        <section id="game-grid" class="game-grid">
+        </section>
+        <section class="controls">
+            <button id="start-simulation">Start</button>
+            <button id="stop-simulation">Stop</button>
+            <button id="generate-cells">Generate</button>
+        </section>
+    </article>
+</body>
+</html>
