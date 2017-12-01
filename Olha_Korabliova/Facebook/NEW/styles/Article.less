@@ -1,0 +1,47 @@
+@import "vars";
+
+.Article {
+  background-color: white;
+  border: @main-border;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  margin-top: 10px;
+  padding: 10px;
+  &__user-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+  }
+  &__user-info {
+    display: inline-block;
+    position: relative;
+    top: -8px;
+  }
+  &__description {
+    margin: 5px 0 5px 0;
+  }
+  &__link, &__user-name {
+    margin: 0;
+    font-weight: bold;
+    color: @main-blue;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__time {
+    color: @title_time;
+  }
+  &__description {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+  }
+  &__file {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &__likes-etc {
+    padding-right: 10px;
+    color: @grey-info;
+  }
+}
