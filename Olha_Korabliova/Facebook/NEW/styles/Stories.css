@@ -1,0 +1,24 @@
+.Stories {
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  padding: 5px;
+}
+.Stories__title {
+  color: #A1A6BA;
+  margin: 5px;
+}
+.Stories__item {
+  background-color: #F6F7F9;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin: 3px;
+  display: inline-block;
+}
+.Stories__story-pic {
+  border: #557AD5 solid 2px;
+  border-radius: 50%;
+  height: 45px;
+  padding: 2px;
+}

@@ -11,7 +11,7 @@ const PROJECT_ROOT = process.argv[2];
 const SOURCE_DIR = __dirname + "/" + PROJECT_ROOT;
 
 app
-    .use('/images', express.static(SOURCE_DIR + "/images"))
+    .use(express.static(SOURCE_DIR))
 
     .get('*.css', async (req, res) => {
         try {
@@ -28,15 +28,6 @@ app
             res.send(less.css);
 
         } catch (err) {
-            res.sendFile(SOURCE_DIR + req.params[0] + ".css");
-        }
-    })
-    .get('*.js', async (req, res) => {
-        try {
-            let js = await readFile(SOURCE_DIR + req.params[0] + ".js", {encoding: 'utf8'});
-            res.send(js);
-        } catch (err) {
-            console.log(err);
             res.sendFile(SOURCE_DIR + req.params[0] + ".css");
         }
     })

@@ -1,5 +1,4 @@
 .Tool-bar {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
 }
 .Tool-bar__user-pic {
@@ -25,6 +24,12 @@
   border: 1px solid transparent;
   color: black;
   padding-left: 5px;
+}
+.Tool-bar__item.active {
+  font-weight: bold;
+  background-color: #F6F7F9;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
 }
 .Tool-bar__item:hover {
   background-color: #F6F7F9;
