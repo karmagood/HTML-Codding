@@ -8,39 +8,96 @@
     <title>Eaty</title>
 </head>
 <body>
-    <header>
-        <a class="Logo" href="#">
-            Eaty
-        </a>
-        <nav class="Site-menu">
-            <a href="#">Home</a>
-            <a href="#">Eventi</a>
-            <a href="#">Ricette</a>
-            <a href="#">Chef a domicilio</a>
-            <a href="#">Contatti</a>
-        </nav>
+    <header class="Layout__header">
+        <div class="Header">
+            <a class="Logo" href="#">Eaty</a>
+            <nav class="Site-menu">
+                <a class="Site-menu__item Site-menu__item_selected" href="#">Home</a>
+                <a class="Site-menu__item" href="#">Eventi</a>
+                <a class="Site-menu__item" href="#">Ricette</a>
+                <a class="Site-menu__item" href="#">Chef a domicilio</a>
+                <a class="Site-menu__item" href="#">Contatti</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="Banner">
-            <h1>Ogni giorno nuove esperienze</h1>
-            <h2>Scopri sapori, culture e amici con il social eating</h2>
-            <buton>Scopri gli altri eventi</buton>
+            <h1 class="Banner__header">Ogni giorno nuove esperienze</h1>
+            <h2 class="Banner__description">Scopri sapori, culture e amici con il social eating</h2>
+            <button class="Banner__button">Scopri gli altri eventi</button>
         </section>
+        <article class="Crossbanner-article">
+            <div class="Crossbanner-article__background">
+                <section class="Background-description">
+                    <h2 class="Background-description__header">I nostri eventi</h2>
+                    <p>Questo mese hai tanti buoni motivi per provare il social eating! Non ti resta che provarli tutti.</p>
+                </section>
+                <section class="Background-images">
+                    <img class="Background-images__svg-item" src="images/008-groceries.png" alt="Groseries">
+                    <img class="Background-images__svg-item" src="images/006-vegetables.png" alt="Vegetables">
+                    <img class="Background-images__svg-item" src="images/004-carrot.png" alt="Carrot">
+                    <img class="Background-images__svg-item" src="images/003-cheese.png" alt="Cheese">
+                    <img class="Background-images__svg-item" src="images/002-juice.png" alt="Juice">
+                    <img class="Background-images__svg-item" src="images/001-spaghetti.png" alt="Spagetti">
+                    <img class="Background-images__svg-item" src="images/007-lemonade.png" alt="Lemonade">
+                    <img class="Background-images__svg-item" src="images/005-apple.png" alt="Apple">
+                </section>
+            </div>
+            <div class="Crossbanner-article__front">
+                <section class="Crossbanner-article__plaintext">
+                    <p>In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia.</p>
+                    <button>Scopri gli altri eventi</button>
+                </section>
+                <section class="Crossbanner-article__backgrounded-text">
+                    <div>
+                        <h6>ARIA DI AUTUNNO</h6>
+                        <p>Autunno alle porte?<br>Noi siamo pronti con i fiche autunnali!</p>
+                    </div>
+                    <div>
+                        <h6>MARE</h6>
+                        <p>Frutti di mare che passione!<br>Ecco l’evento perfetto</p>
+                    </div>
+                    <div>
+                        <h6>NOVELLE COUISINE</h6>
+                        <p>Un evento da leccarsi le dita!<br>10 specialità mai provate</p>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <div class="divider"></div>
         <article>
-            
+            <section class="Plaintext">
+                <h6>LASCIATI ISPIRARE</h6>
+                <h5>Patate alla brace con buccia</h5>
+                <p>In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia, vivono i testi casuali. Vivono isolati nella cittadina di Lettere, sulle coste del Semantico, un immenso oceano linguistico.</p>
+                <button>Scopri le altre ricette</button>
+            </section>
+            <section class="Backgrounded-text-small">
+                <h6>RICETTE</h6>
+                <p>Prova la nostra ricetta delle patate arrosto al timo!</p>
+            </section>
+            <img src="images/patate-al-rosmarino.png" alt="Potato">
         </article>
         <article>
-
-        </article>
-        <article>
-
-        </article>
-        <article>
-
+            <img src="images/210-e-3-eee-275-c-22-d-813-a-4520-e-1-b-6-b-208-d-chef.png" alt="Chefcoock">
+            <section>
+                <h4>Vuoi uno chef a casa tua?</h4>
+                <h5>Organizza i tuoi eventi senza pensare a nulla</h5>
+                <p>In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia, vivono i testi casuali. Vivono isolati nella cittadina di Lettere, sulle coste del Semantico, un immenso oceano linguistico.</p>
+                <button>Contatta uno chef</button>
+            </section>
         </article>
     </main>
     <footer>
-
+        <p>In una terra lontana, dietro le montagne Parole, lontani dalle terre di Vocalia e Consonantia, vivono i testi casuali. Vivono isolati nella cittadina di Lettere, sulle coste del Semantico.</p>
+        <form action="search">
+            <input type="text" placeholder="Inserisci la tua email">
+            <button>Iscriviti</button>
+        </form>
+        <div class="Copyright-info">
+            <p>Eaty Copiright 2017 all rights reserved</p>
+            <p>Designed by Rendemarco</p>
+        </div>
     </footer>
 </body>
 </html>
