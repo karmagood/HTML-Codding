@@ -1,0 +1,19 @@
+.row-center-content {
+  -webkit-box-flex: 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.preview-image {
+  margin: 30px;
+  height: 150px;
+  width: auto; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlcy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0Usb0JBQW1CO0VBQ25CLCtCQUE4QjtFQUM5Qiw4QkFBNkI7RUFFN0IscUJBQWE7RUFBYixxQkFBYTtFQUFiLGNBQWE7RUFFYixtQkFBYztNQUFkLGVBQWM7RUFHZCx5QkFBdUI7TUFBdkIsc0JBQXVCO1VBQXZCLHdCQUF1QixFQUFBOztBQUd6QjtFQUNFLGFBQVk7RUFDWixjQUFhO0VBQ2IsWUFBVyxFQUFBIiwiZmlsZSI6InN0eWxlcy5jc3MifQ== */

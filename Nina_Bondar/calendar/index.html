@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png">
+    <title>Calendar</title>
+</head>
+<body>
+    <header class="date-block">
+        <section id="month-name" class="date-block__month"></section><br>
+        <section id="year-num" class="date-block__year"></section>
+    </header>
+
+    <header class="calendar-block__calendar-grid calendar-block__calendar-grid_header">
+        <section class="calendar-block__week-day">Monday</section>
+        <section class="calendar-block__week-day">Tuesday</section>
+        <section class="calendar-block__week-day">Wednesday</section>
+        <section class="calendar-block__week-day">Thursday</section>
+        <section class="calendar-block__week-day">Friday</section>
+        <section class="calendar-block__week-day">Saturday</section>
+        <section class="calendar-block__week-day">Sunday</section>
+    </header>
+    <article class="calendar-block">
+        <nav class="calendar-block__navigation calendar-block__navigation_left">
+            <img id="decrMonth" class='navig-left__img' src="img/left.svg" alt="prev" onerror="alert('that is all for his year');">
+        </nav>
+        <main id="calendar-grid" class="calendar-block__calendar-grid"></main>
+        <nav class="calendar-block__navigation calendar-block__navigation_right">
+            <img id="incrMonth" src="img/right.svg" alt="next" onerror="alert('that is all for this year');">
+        </nav>
+    </article>
+    <script src="build/bundle.js"></script>
+</body>
+</html>

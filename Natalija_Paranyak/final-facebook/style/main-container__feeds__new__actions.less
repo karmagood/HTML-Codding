@@ -1,35 +1,48 @@
+@color_1: #365899;
+@background_color_1: #dddfe2;
+@border_color_1: #dddfe2;
 
-.main-container__feeds__new__actions_photo,
-.main-container__feeds__new__actions_emotions,
+.main-container__feeds__new__actions_photo {
+  border-radius: 20px;
+  margin: 0 3px;
+  padding: 4px 12px;
+  &:hover {
+    background-color: @background_color_1;
+    border-color: @border_color_1;
+  }
+}
+.main-container__feeds__new__actions_emotions {
+  border-radius: 20px;
+  margin: 0 3px;
+  padding: 4px 12px;
+  &:hover {
+    background-color: @background_color_1;
+    border-color: @border_color_1;
+  }
+}
 .main-container__feeds__new__actions_more {
   border-radius: 20px;
-}
-
-.main-container__feeds__new__actions_more {
   width: 40px;
+  margin: 0 3px;
+  padding: 4px 12px;
+  &:hover {
+    background-color: @background_color_1;
+    border-color: @border_color_1;
+  }
 }
-
-.main-container__feeds__new__actions_album,
+.main-container__feeds__new__actions_album {
+  border-left: 1px solid #ced0d4;
+  padding: 0 0 0 8px;
+  margin: 4px;
+  color: @color_1;
+}
 .main-container__feeds__new__actions_video {
   border-left: 1px solid #ced0d4;
   padding: 0 0 0 8px;
   margin: 4px;
-  color: #365899;
-
+  color: @color_1;
+  border-radius: 0 0 10px 0;
 }
-
 .main-container__feeds__new__actions_create {
   border-radius: 10px 0 0 0;
-}
-
-.main-container__feeds__new__actions_video {
-  border-radius: 0 0 10px 0;
-
-}
-
-.main-container__feeds__new__actions_more,
-.main-container__feeds__new__actions_emotions,
-.main-container__feeds__new__actions_photo {
-  margin: 0 3px;
-  padding: 4px 12px;
 }

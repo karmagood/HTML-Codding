@@ -78,24 +78,3 @@ const simulateNIterations = (field, iterationsNum) => {
   }
   return field;
 };
-
-const getAliveCellsNum = (field) => {
-    let alive = 0;
-    field.forEach((val) => {
-        val.forEach((cell) => {alive += (cell === 1) ? 1 : 0;})
-
-    });
-    return alive;
-}
-
-
-var field = randomFillField(generateField(20), 0.7);
-console.log(field);
-field = simulateNIterations(field, 1);
-console.log(getAliveCellsNum(field));
-field = simulateNIterations(field, 1);
-console.log(getAliveCellsNum(field));
-field = simulateNIterations(field, 1);
-console.log(getAliveCellsNum(field));
-field = simulateNIterations(field, 1);
-console.log(getAliveCellsNum(field));
