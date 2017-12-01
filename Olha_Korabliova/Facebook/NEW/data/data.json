@@ -410,7 +410,111 @@
         "action": "#",
         "info": "Facebook © 2017"
       }
-    ]
+    ],
+    "Side-bar": {
+      "online-users": [
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+        }
+      ],
+      "more-contacts": [
+        {
+          "link": "#",
+          "pic": "images/bogdan_avatar.png",
+          "name": "Bogdan Bogdan",
+          "online": null
+        },
+        {
+          "link": "#",
+          "pic": "images/kira_avatar.png",
+          "name": "Kira Arik",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/bogdan_avatar.png",
+          "name": "Bogdan Bogdan",
+          "online": null
+        },
+        {
+          "link": "#",
+          "pic": "images/kira_avatar.png",
+          "name": "Kira Arik",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/bogdan_avatar.png",
+          "name": "Bogdan Bogdan",
+          "online": null
+        },
+        {
+          "link": "#",
+          "pic": "images/kira_avatar.png",
+          "name": "Kira Arik",
+          "online": "Side-bar__icon Icon3_green-dot"
+        }
+      ]
+    }
   },
 
 
