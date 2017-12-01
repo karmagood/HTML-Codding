@@ -1,58 +1,61 @@
+@background_color_1: white;
+@background_color_2: #f6f7f9;
+@border_color_1: #f6f7f9;
+
 .main-container__feeds__new {
-  background-color: white;
+  background-color: @background_color_1;
   border: #ced0d4 1px solid;
   border-radius: 10px;
   margin-top: 10px;
 }
-
-.main-container__feeds__new__actions_new{
-  background-color: #f6f7f9;
+.main-container__feeds__new__actions_new {
+  background-color: @background_color_2;
   border-bottom: #ced0d4 1px solid;
   border-radius: 10px 10px 0 0;
 }
-
-.main-container__feeds__new__separator{
+.main-container__feeds__new__separator {
   width: 95%;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;}
-.main-container__feeds__icons{
+  border-top: 1px solid #cccccc;
+}
+.main-container__feeds__icons {
   display: inline-block;
   height: 16px;
   width: 16px;
   vertical-align: middle;
+  margin-right: 4px;
 }
-.main-container__feeds__button{
-background-color: #f6f7f9;
-  border-color: #f6f7f9;
-
-  border-style:solid;
-padding: 5px}
-
-.create-post{
+.main-container__feeds__button {
+  background-color: @background_color_2;
+  border-color: @border_color_1;
+  cursor: pointer;
+  border-style: solid;
+  padding: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  &:focus {
+    outline: 0;
+  }
+}
+.create-post {
   background: url("../images/sprite_4.png") 0 -71px;
-
 }
-
-.album-post{
+.album-post {
   background: url("../images/sprite_4.png") -18px -71px;
 }
-
-.video-post{
+.video-post {
   background: url("../images/sprite_4.png") -421px -51px;
 }
-
-.photos-post{
+.photos-post {
   background: url("../images/sprite_5.png") -2px -536px;
 }
-
-.emotions-post{
+.emotions-post {
   background: url("../images/sprite_5.png") -2px -430px;
 }
-
-.more-post{
+.more-post {
   background: url("../images/sprite_5.png") -2px -472px;
 }
-
-.public-post{  background: url("../images/sprite_5.png") -18px -1918px;
+.public-post {
+  background: url("../images/sprite_5.png") -18px -1918px;
 }

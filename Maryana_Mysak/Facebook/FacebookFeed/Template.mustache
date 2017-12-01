@@ -3,6 +3,7 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <script src="Index.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -52,14 +53,53 @@
     </header>
     <section class="main-section">
       <aside class="menu">
-        <header class="menu__header">
-          <img class="menu__user-picture" src="{{userMainPicture}}" alt="">
-          <h6 class="menu__user-name">{{userName}}{{userSurname}}</h6>
-        </header>
+        <a class="header section-container">
+          <img class="header__user-picture" src="{{userMainPicture}}" alt="">
+          <span class="section-container__text">{{userName}} {{userSurname}}</span>
+        </a>
+        <main class="main">
+          <section class="block">
+            <a class="section-container section-container_active">
+              <img class="section-container__pic" src="{{menuNewsPic}}" alt="">
+              <span class="section-container__text">{{menuNews}}</span>
+            </a>
+            <a class="section-container">
+              <img class="section-container__pic" src="{{menuMessengerPic}}" alt="">
+              <span class="section-container__text">{{menuMessenger}}</span>
+            </a>
+          </section>
+          <section class="block">
+            <span class="block__header">{{menuHeader2}}</span>
+            {{#menuHeader2Items}}
+            <a class="section-container">
+              <img class="section-container__pic" src="{{src}}" alt="">
+              <span class="section-container__text">{{name}}</span>
+            </a>
+            {{/menuHeader2Items}}
+          </section>
+          <section class="block">
+            <span class="block__header">{{menuHeader3}}</span>
+            {{#menuHeader3Items}}
+            <a class="section-container">
+              <img class="section-container__pic" src="{{src}}" alt="">
+              <span class="section-container__text">{{name}}</span>
+            </a>
+            {{/menuHeader3Items}}
+          </section>
+          <section class="block footer">
+            <span class="block__header">{{menuHeader4}}</span>
+            <div>
+              <a href="#" class="footer__text footer__text_first">{{menuFooterFirstItem}}</a>
+              {{#menuFooterItems}}
+                <a href="#" class="footer__text">{{name}}</a>
+              {{/menuFooterItems}}
+            </div>
+          </section>
+        </main>
       </aside>
       <main class="page-main">
         <main class="user-feed">
-          <!-- <header class="block create-post">
+           <header class="block create-post">
             <nav class="navigation">
               <button type="button" name="button" class="navigation__button navigation__button_first-button">
                 <span class="navigation__icon glyphicon glyphicon-pencil"></span>
@@ -67,15 +107,11 @@
               </button>
               <button type="button" name="button" class="navigation__button">
                 <span class="navigation__icon glyphicon glyphicon-camera"></span>
-                <span class="navigation__text">{{userPictures}}</span>
+                <span class="navigation__text">{{postPicture}}</span>
               </button>
               <button type="button" name="button" class="navigation__button">
                 <span class="navigation__icon glyphicon glyphicon-facetime-video"></span>
                 <span class="navigation__text">{{liveVideo}}</span>
-              </button>
-              <button type="button" name="button" class="navigation__button">
-                <span class="navigation__icon glyphicon glyphicon-flag"></span>
-                <span class="navigation__text">{{lifeEvent}}</span>
               </button>
             </nav>
             <form class="new-post-form">
@@ -84,11 +120,17 @@
                 <textarea class="new-post-form__input" name="name" rows="8" cols="80" placeholder="{{textareaPlaceholder}}"></textarea>
               </section>
               <footer class="new-post-form__footer">
-                  <select name="" class="new-post-form__select">
-                    <option class="new-post-form__option" value="">{{userFriends}}</option>
-                    <option class="new-post-form__option" value="">{{public}}</option>
-                  </select>
-                  <input class="new-post-form__submit" type="submit" name="" value={{publish}}>
+                <section class="new-post-form__button">
+                  <img src="{{newPostPic1}}" alt="">
+                  <span class="new-post-form__button-text">{{newPostButton1}}</span>
+                </section>
+                <section class="new-post-form__button">
+                  <img src="{{newPostPic2}}" alt="">
+                  <span class="new-post-form__button-text">{{newPostButton2}}</span>
+                </section>
+                <section class="new-post-form__button">
+                  <img src="{{dotsPic}}" alt="">
+                </section>
               </footer>
             </form>
           </header>
@@ -158,7 +200,7 @@
                 <span class="article-head__icon glyphicon glyphicon-option-horizontal"></span>
               </header>
               <main class="article-content">
-                <img class="article-content__pic article-content__pic_post2" src="{{backgroundImg}}" alt="">
+                <img class="article-content__pic" src="{{backgroundImg}}" alt="">
               </main>
               <footer class="article-footer">
                 <section class="like-section">
@@ -186,12 +228,88 @@
                 </section>
               </footer>
             </article>
-            <div class="empty"></div> -->
+            <div class="empty"></div>
         </main>
         <aside class="suggestions">
-
-
-
+          <section class="block publishes">
+            <div class="block__header publishes__header">
+              <span class="block__suggestion-header">{{publishes}}</span>
+              <span class="block__suggestion-header glyphicon glyphicon-question-sign"></span>
+            </div>
+            <section class="publishes__pics-container">
+              <section class="publishes__publish-container">
+                <div class="publishes__pic-container publishes__pic-container_active">
+                  <img class="publishes__pic" src="{{publishesFriends1Src}}" alt="">
+                </div>
+                <span class="publishes__publisher-name">{{publishesFriends1}}</span>
+              </section>
+              <section class="publishes__publish-container">
+                <div class="publishes__pic-container publishes__pic-container_active">
+                  <img class="publishes__pic" src="{{publishesFriends2Src}}" alt="">
+                </div>
+                <span class="publishes__publisher-name">{{publishesFriends2}}</span>
+              </section>
+              <section class="publishes__publish-container">
+                <div class="publishes__pic-container publishes__pic-container_emty"></div>
+              </section>
+              <section class="publishes__publish-container">
+                <div class="publishes__pic-container publishes__pic-container_emty"></div>
+              </section>
+            </section>
+          </section>
+          <section class="block invitations">
+            <section class="invitations__invitation">
+              <img class="invitations__icon" src="{{invitationsPic1}}" alt="">
+              <a class="invitations__text" href="#">{{invitationsText1}}</a>
+            </section>
+            <section class="invitations__invitation">
+              <img class="invitations__icon" src="{{invitationsPic2}}" alt="">
+              <a href="#" class="invitations__text">{{invitationsFriendBd}}</a>
+            </section>
+          </section>
+          <section class="block recommended">
+            <section class="block__header recommended__header">
+              <span class="block__suggestion-header">{{invitationHeader}}</span>
+              <a class="recommended__header-text" href="#">{{seeAll}}</a>
+            </section>
+            <section class="recommended__content">
+              <article class="group">
+                <header class="group__header">
+                  <img class="group__logo" src="{{suggestionGroupLogo}}" alt="">
+                  <div class="group__header-text-container">
+                    <a class="group__header-text group__header-text_name">{{groupName}}</a>
+                    <span class="group__header-text group__header-text_desc">{{groupDesc}}</span>
+                  </div>
+                </header>
+                <main class="group__main">
+                  <img class="group__pic" src="{{groupPic}}" alt="">
+                </main>
+                <footer class="group__footer">
+                  <span class="group__footer-text group__footer-text_icon glyphicon glyphicon-thumbs-up"></span>
+                  <span class="group__footer-text">{{likePage}}</span>
+                </footer>
+              </article>
+            </section>
+          </section>
+          <footer class="footer">
+            <section class="block language-sec">
+              <div class="language-sec__language">
+                <a href="#" class="language-sec__text language-sec__text_first-lang">{{firstLanguage}}</a>
+                {{#langauges}}
+                <a class="language-sec__text" href="#">{{name}}</a>
+                {{/langauges}}
+              </div>
+              <button type="button" name="button" class="language-sec__button glyphicon glyphicon-plus"></button>
+            </section>
+            <nav class="navigation">
+              <a href="#" class="navigation__text navigation__text_first-a-footer">{{footerFirstLink}}</a>
+              {{#footerLinks}}
+              <a class="navigation__text" href="#">{{link}}</a>
+              {{/footerLinks}}
+            </nav>
+            <span class="footer__end">{{facebook}}</span>
+            <div class="empty"></div>
+          </footer>
         </aside>
       </main>
       <aside class="friends-bar-container">

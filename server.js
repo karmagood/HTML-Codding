@@ -11,7 +11,7 @@ const PROJECT_ROOT = process.argv[2];
 const SOURCE_DIR = __dirname + "/" + PROJECT_ROOT;
 
 app
-    .use('/images', express.static(SOURCE_DIR + "/images"))
+    .use(express.static(SOURCE_DIR))
 
     .get('*.css', async (req, res) => {
         try {
@@ -50,6 +50,7 @@ app
         }
 
     })
+
 
     .listen(3000, function () {
         console.log('Example app listening on port 3000!')
