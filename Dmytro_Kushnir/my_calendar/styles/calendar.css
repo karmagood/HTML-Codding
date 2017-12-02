@@ -1,0 +1,59 @@
+(node) util.print is deprecated. Use console.log instead.
+body {
+  font-size: 0;
+  margin: 0;
+  background: gray;
+}
+.calendar {
+  font-size: 20px;
+  width: 322px;
+  padding: 20px;
+  background: green;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.calendar__yearnumber {
+  text-align: center;
+  font-style: italic;
+  font-size: 200%;
+  /* header year notion */
+}
+.calendar__monthname {
+  text-align: center;
+  font-style: italic;
+  font-size: 150%;
+  /* header with notion */
+}
+.calendar__weekday-panel {
+  background-color: orange;
+  display: flex;
+}
+.calendar__dates-panel {
+  margin-top: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  background-color: yellow;
+}
+.calendar__day {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: antiquewhite;
+  border-radius: 5px;
+  text-align: center;
+  float: left;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  margin-top: 3px;
+  line-height: 40px;
+  outline: black solid 1px;
+}
+.calendar__day_names {
+  font-style: italic;
+  background: none;
+}
+.calendar__day_weekend {
+  background: #dc143c;
+}
