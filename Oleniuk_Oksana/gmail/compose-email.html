@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/email_form.css" rel="stylesheet" type="text/css">
 
     <title>GMAIL</title>
 </head>
@@ -51,15 +52,19 @@
                 <div id="nav-group-left" class="nav-button-style">
                     <a href="/"><img class="logo" src="images/archive.svg"></a>
                 </div>
-                <div id="nav-group-middle" class="nav-button-style"><a href="/"><img class="logo" src="images/archive.svg"></a>
+                <div id="nav-group-middle" class="nav-button-style"><a href="/"><img class="logo"
+                                                                                     src="images/archive.svg"></a>
                 </div>
-                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo" src="images/bin.svg"></a>
+                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo"
+                                                                                    src="images/bin.svg"></a>
                 </div>
                 <!---->
-                <div id="nav-group-left" class="nav-button-style"><a href="/"><img class="logo" src="images/file.svg"></a>
+                <div id="nav-group-left" class="nav-button-style"><a href="/"><img class="logo"
+                                                                                   src="images/file.svg"></a>
                     <span>🢓</span>
                 </div>
-                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo" src="images/tap.svg"></a>
+                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo"
+                                                                                    src="images/tap.svg"></a>
                     <span>🢓</span>
                 </div>
                 <!---->
@@ -84,7 +89,7 @@
         <!--left navigation starts-->
         <div class="grid-item">
             <div>
-                <button id="aside-red-button"><a href="compose-email.html">COMPOSE</button>
+                <button id="aside-red-button"><a href="compose-email.html">COMPOSE</a></button>
                 <ul class="nav-ul">
                     <li>Inbox</li>
                     <li>Starred</li>
@@ -96,7 +101,8 @@
             <hr>
             <div class="inline-flex-container">
 
-                <div id="margin-item"><p><img id="circle-photo" src="images/oksana-photo.jpg" height="25" width="25"/></p>
+                <div id="margin-item"><p><img id="circle-photo" src="images/oksana-photo.jpg" height="25" width="25"/>
+                </p>
                 </div>
                 <div id="margin-item"><p>Oksana</p></div>
                 <div id="margin-item"><span>🢓</span></div>
@@ -116,18 +122,24 @@
 
             </div>
             <hr>
-                    <footer>
-                        <div class="inline-flex-container">
-                            <ul>
-                                <li><div class="logo"><img src="images/person.svg"></img></div></li>
+            <footer>
+                <div class="inline-flex-container">
+                    <ul>
+                        <li>
+                            <div class="logo"><img src="images/person.svg"></img></div>
+                        </li>
 
 
-                                <li><div class="logo"><img src="images/chat.svg"></img></div></li>
+                        <li>
+                            <div class="logo"><img src="images/chat.svg"></img></div>
+                        </li>
 
-                                <li><div class="logo"><img src="images/phone.svg"></img></div></li>
-                            </ul>
-                        </div>
-                    </footer>
+                        <li>
+                            <div class="logo"><img src="images/phone.svg"></img></div>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
 
 
         </div>
@@ -136,49 +148,39 @@
         <!--left navifation ends-->
         <!--letters list starts-->
         <div class="grid-item">
-            <section>
-
-                <div class="inline-flex-container">
-                    <div id="left"></div>
-                    <div id="medium"><h4>Unity</h4></div>
-                    <div id="right">
-                        <p>
-                            <time>12:43</time>
-                        </p>
-                    </div>
-                </div>
-                <div class="inline-flex-container">
-                    <div id="left"><input type="checkbox" value="1" name=""></input></div>
-                    <div id="medium"><p>A new Asset Store experience</p></div>
-                    <div id="right"><p>☆</p></div>
-                </div>
-
-                <div class="inline-flex-container">
-                    <div id="left"></div>
-                    <div id="medium">
-                        <small>Coming soon to a browser near..</small>
-                    </div>
-                    <div id="right"></div>
-                </div>
-
-
-                <hr>
-
-            </section>
+            <section id="emails"></section>
         </div>
         <!--letter list ends-->
         <!--open letter starts-->
         <div class="grid-item">
-            <div class="big-margin">
-            <p id="center-text">No conversation selected</p>
-            <p id="center-text"><small>Using 0.55 GB<br>
-                <ins>Manage</ins></small></p></div>
+            <!--<div class="big-margin">-->
+            <!--<p id="center-text">No conversation selected</p>-->
+            <!--<p id="center-text"><small>Using 0.55 GB<br>-->
+            <!--<ins>Manage</ins></small></p></div>-->
+
+            <div class="email-form">
+                <div class="email-form__header">
+                    <div class="inline-flex-container">
+                        <div class="email-form__header_text">New Message</div>
+                        <div class="email-form__header_lables">_</div>
+                        <div class="email-form__header_lables">⇗</div>
+                        <div class="email-form__header_lables"><a class="email-form__header_lables-exit" href="index.html">x</a></div>
+                    </div>
+                </div>
+
+            <form action = "/addEmail" id="addEmail">
+                <input class="email-form__input" type="text" name="name" placeholder="to"/>
+                <hr>
+                <input class="email-form__input" type="text" name="subject" placeholder="Subject"/>
+                <hr>
+                <input class="email-form__input-letter" type="text" name="letter"/>
+                <hr>
+                <button class="email-form__button">Send</button>
+            </form>
+            </div>
         </div>
-        <!--open letter ends-->
 
-
-        <!--main content ends-->
-    </div>
 </section>
+<script src="build/bundle.js"></script>
 </body>
 </html>
