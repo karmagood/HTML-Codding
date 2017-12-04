@@ -3,6 +3,23 @@ import "../style/VideoAddComment.less";
 
 
 class VideoAddComment extends Component {
+    constructor() {
+        super();
+        this.classes = {acceptButtonStyle: ["video-add-comment__publish-comment"]}
+    }
+
+    handleClick() {
+        this.setState({a: "just change to make rerender"});
+        console.log(this.classes.acceptButtonStyle.join(" "));
+        if (this.classes.acceptButtonStyle.includes("video-add-comment__publish-comment_red")) {
+            const index = this.classes.acceptButtonStyle.indexOf("video-add-comment__publish-comment_red");
+            if (index !== -1) this.classes.acceptButtonStyle.splice(index, 1);
+        } else {
+            this.classes.acceptButtonStyle.push("video-add-comment__publish-comment_red");
+        }
+    }
+
+
     render() {
         return (
             <section className="video-add-comment">
@@ -17,7 +34,9 @@ class VideoAddComment extends Component {
                     <textarea name="" id="" cols="30" rows="1"
                               className="video-add-comment__comment-area">Write here</textarea>
                     <div className="video-add-comment__button-section">
-                        <button className="video-add-comment__publish-comment">Publish comment</button>
+                        <button className={this.classes.acceptButtonStyle.join(" ")}
+                                onClick={this.handleClick.bind(this)}>Publish comment
+                        </button>
                         <button className="video-add-comment__cancel-comment">Cancel</button>
                     </div>
 
