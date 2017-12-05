@@ -13,6 +13,7 @@
   &__post-option {
     color: @main-blue;
     padding: 0 7px 0 7px;
+    font-size: 12px;
     &.active {color: @dark-grey;}
     &:not(.first) {border-left: 2px solid #ced0d4;}
   }
@@ -21,6 +22,13 @@
     width: 45px;
     height: 45px;
     margin-right: 5px;
+  }
+  &__text-input {
+    border: none;
+    width: 70%;
+    position: relative;
+    top: -17px;
+    font-size: 14px;
   }
   &__content {
     padding: 10px;
@@ -42,12 +50,13 @@
     padding: 5px;
     margin: 5px;
     color: @dark-grey;
+    font-size: 12px;
     font-weight: bold;
     &:hover {background-color: @border-grey;}
   }
   &__icon {
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     margin: 3px;
     display: inline-block;
     background-image: url(@sprite);
@@ -56,6 +65,6 @@
   }
 }
 
-.Icon_pencil {background-position: 502px -68px;}
-.Icon_photo-camera {background-position: 485px -68px;}
-.Icon_video-camera {background-position: -418px 252px;}
+.Icon_pencil {background-position: 502px -71px;}
+.Icon_photo-camera {background-position: 485px -69px;}
+.Icon_video-camera {background-position: -419px 251px;}

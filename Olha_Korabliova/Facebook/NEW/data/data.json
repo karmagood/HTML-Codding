@@ -410,162 +410,114 @@
         "action": "#",
         "info": "Facebook © 2017"
       }
-    ]
+    ],
+    "Side-bar": {
+      "online-users": [
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/ivan_avatar.jpg",
+          "name": "Ivan Navi",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/maria_avatar.png",
+          "name": "Maria Airam",
+          "online": "Side-bar__icon Icon3_green-dot"
+        }
+      ],
+      "more-contacts": [
+        {
+          "link": "#",
+          "pic": "images/bogdan_avatar.png",
+          "name": "Bogdan Bogdan",
+          "online": null
+        },
+        {
+          "link": "#",
+          "pic": "images/kira_avatar.png",
+          "name": "Kira Arik",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/bogdan_avatar.png",
+          "name": "Bogdan Bogdan",
+          "online": null
+        },
+        {
+          "link": "#",
+          "pic": "images/kira_avatar.png",
+          "name": "Kira Arik",
+          "online": "Side-bar__icon Icon3_green-dot"
+        },
+        {
+          "link": "#",
+          "pic": "images/bogdan_avatar.png",
+          "name": "Bogdan Bogdan",
+          "online": null
+        },
+        {
+          "link": "#",
+          "pic": "images/kira_avatar.png",
+          "name": "Kira Arik",
+          "online": "Side-bar__icon Icon3_green-dot"
+        }
+      ]
+    }
   },
 
 
-  "main-page-posts": [
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Eugene Eugene",
-      "add-info": null,
-      "post-time": "01.10.2017",
-      "description": "Fall is here @ Rosewood Winery",
-      "file": "images/eugene_post_pic.jpg",
-      "who-liked": "10 likes",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Юльця Юльця",
-      "add-info": {
-        "preposition": "is in",
-        "info": "Przemysl, Poland"
-      },
-      "post-time": "01.10.2017",
-      "description": null,
-      "file": "images/yultsa_post_pic.jpg",
-      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Tamila Tamila",
-      "add-info": {
-        "preposition": "with",
-        "info": "Роман Роман"
-      },
-      "post-time": "01.10.2017",
-      "description": "Бажаємо всім продуктивного дня!",
-      "file": "images/tamila_post_pic.jpg",
-      "who-liked": "Olya Olya and 55 others",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Oles Oles",
-      "add-info": null,
-      "post-time": "01.10.2017",
-      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
-      "file": "images/oles_post_pic.jpg",
-      "who-liked": "Катя Катя and 13 others",
-      "who-shared": "7 Shares"
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Eugene Eugene",
-      "add-info": null,
-      "post-time": "01.10.2017",
-      "description": "Fall is here @ Rosewood Winery",
-      "file": "images/eugene_post_pic.jpg",
-      "who-liked": "10 likes",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Юльця Юльця",
-      "add-info": {
-        "preposition": "is in",
-        "info": "Przemysl, Poland"
-      },
-      "post-time": "01.10.2017",
-      "description": null,
-      "file": "images/yultsa_post_pic.jpg",
-      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Tamila Tamila",
-      "add-info": {
-        "preposition": "with",
-        "info": "Роман Роман"
-      },
-      "post-time": "01.10.2017",
-      "description": "Бажаємо всім продуктивного дня!",
-      "file": "images/tamila_post_pic.jpg",
-      "who-liked": "Olya Olya and 55 others",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Oles Oles",
-      "add-info": null,
-      "post-time": "01.10.2017",
-      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
-      "file": "images/oles_post_pic.jpg",
-      "who-liked": "Катя Катя and 13 others",
-      "who-shared": "7 Shares"
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Eugene Eugene",
-      "add-info": null,
-      "post-time": "01.10.2017",
-      "description": "Fall is here @ Rosewood Winery",
-      "file": "images/eugene_post_pic.jpg",
-      "who-liked": "10 likes",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Юльця Юльця",
-      "add-info": {
-        "preposition": "is in",
-        "info": "Przemysl, Poland"
-      },
-      "post-time": "01.10.2017",
-      "description": null,
-      "file": "images/yultsa_post_pic.jpg",
-      "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Tamila Tamila",
-      "add-info": {
-        "preposition": "with",
-        "info": "Роман Роман"
-      },
-      "post-time": "01.10.2017",
-      "description": "Бажаємо всім продуктивного дня!",
-      "file": "images/tamila_post_pic.jpg",
-      "who-liked": "Olya Olya and 55 others",
-      "who-shared": null
-    },
-    {
-      "user-link": "#",
-      "img-src": "images/friend_photo_main_page.jpg",
-      "name": "Oles Oles",
-      "add-info": null,
-      "post-time": "01.10.2017",
-      "description": "Taize в м.Базель, реєстрація до 26 ЖОВТНЯ 2017\nПожертва: 150Є+200грн + внесок Taize 40Євро\nДля детальнішої інформації звертайтеся:\nОлесь - 0987850314; ca-manch@ua.fm\nНаталя (Тернопіль) - 0988458672",
-      "file": "images/oles_post_pic.jpg",
-      "who-liked": "Катя Катя and 13 others",
-      "who-shared": "7 Shares"
-    }
-  ],
   "user-page-post": [
     {
       "user-link": "user_page",
@@ -670,202 +622,6 @@
     {
       "game-link": "#",
       "img-src": "images/pool_game.jpg"
-    }
-  ],
-  "online-friends": [
-    {
-      "user-link": "#",
-      "user-pic": "images/bogdan_avatar.png",
-      "user-name": "Bogdan Bogdan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/maria_avatar.png",
-      "user-name": "Maria Maria",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/bogdan_avatar.png",
-      "user-name": "Bogdan Bogdan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/maria_avatar.png",
-      "user-name": "Maria Maria",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/bogdan_avatar.png",
-      "user-name": "Bogdan Bogdan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/maria_avatar.png",
-      "user-name": "Maria Maria",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/bogdan_avatar.png",
-      "user-name": "Bogdan Bogdan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/maria_avatar.png",
-      "user-name": "Maria Maria",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/bogdan_avatar.png",
-      "user-name": "Bogdan Bogdan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/maria_avatar.png",
-      "user-name": "Maria Maria",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/bogdan_avatar.png",
-      "user-name": "Bogdan Bogdan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/maria_avatar.png",
-      "user-name": "Maria Maria",
-      "status": "online"
-    }
-  ],
-  "more-friends": [
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/kira_avatar.png",
-      "user-name": "Kira Kira",
-      "status": null
-    },
-    {
-      "user-link": "#",
-      "user-pic": "images/ivan_avatar.jpg",
-      "user-name": "Ivan Ivan",
-      "status": "online"
     }
   ],
   "friends": [
