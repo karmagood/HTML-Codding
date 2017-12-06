@@ -44,7 +44,6 @@
 
 .best-of-youtube{
     text-decoration: none;
-    display: block;
     font-size: 16px;
     color: whitesmoke;
     padding: 0 var(--user-menu-padding-left);
@@ -60,6 +59,7 @@
     line-height: 30px;
     font-size: 16px;
     color: whitesmoke;
+    display: block;
     padding: 7px var(--user-menu-padding-left);
 }
 
@@ -176,11 +176,3 @@
     vertical-align: middle;
     margin-right: 27px;
 }
-
-.hamburger-icon {
-    height: 25px;
-    width: 25px;
-    vertical-align: middle;
-    text-align: center;
-}
-
