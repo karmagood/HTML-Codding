@@ -20,7 +20,7 @@
 
 .home-trending-history {
     line-height: 30px;
-    font-size: 16px;
+    font-size: 15px;
     color: whitesmoke;
     text-decoration: none;
     display: block;
@@ -36,35 +36,15 @@
 }
 
 .user-menu__best-of-youtube {
-    height: 360px;
-    padding-top: 12px;
+    height: 350px;
     padding-bottom: 12px;
     border-bottom: 1px solid gray;
-}
-
-.best-of-youtube {
-    text-decoration: none;
-    font-size: 16px;
-    color: whitesmoke;
-    display: block;
 }
 
 .best-of-youtube__title {
     font-size: 16px;
     color: whitesmoke;
     padding: 0 var(--user-menu-padding-left);
-}
-
-.best-of-youtube__content {
-    line-height: 30px;
-    font-size: 16px;
-    color: whitesmoke;
-    display: block;
-    padding: 7px var(--user-menu-padding-left);
-}
-
-.best-of-youtube__content:hover {
-    background-color: rgba(136,136,136,1);
 }
 
 .user-menu__browse-channels {
@@ -75,24 +55,8 @@
     display: block;
 }
 
-.browse-channels{
-    text-decoration: none;
-}
-
-.browse-channels__content {
-    line-height: 30px;
-    font-size: 16px;
-    color: whitesmoke;
-    padding: 7px var(--user-menu-padding-left);
-}
-
-.browse-channels__content:hover {
-    background-color: rgba(136,136,136,1);
-}
-
 .user-menu__sign-in {
-    height: 150px;
-    padding-top: 12px;
+    height: 130px;
     padding-bottom: 12px;
     border-bottom: 1px solid gray;
     display: block;
@@ -116,26 +80,10 @@
 }
 
 .user-menu__settings-help-feedback {
-    height: 120px;
+    height: 135px;
     padding-top: 12px;
     padding-bottom: 12px;
     border-bottom: 1px solid gray;
-}
-
-.settings-help-feedback {
-    text-decoration: none;
-}
-
-.settings-help-feedback__content {
-    line-height: 40px;
-    font-size: 16px;
-    display: block;
-    color: whitesmoke;
-    padding: 0 var(--user-menu-padding-left);
-}
-
-.settings-help-feedback__content:hover {
-    background-color: rgba(136,136,136,1);
 }
 
 .user-menu__info {
