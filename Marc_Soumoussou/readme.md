@@ -11,9 +11,10 @@
 - [x] Fix text-decoration for usermenu
 - [x] Add variable for padding
 - [ ] css --> less
-- [ ] Add icons
+- [x] Add icons
 - [ ] Learn the difference between margin, padding and border.
-
+- [x] Finish Youtube Header
+- [x] Finish Youtube User Menu
 ### Загальні зауваження
 ###### *31.10/2017* 
 - Якщо я не побачу прогресу, то ти іспит не складеш. Часу залишилось дуже мало. Тому поспіши робити завдання. Або ж шукай чим займатимешся після сесії.
