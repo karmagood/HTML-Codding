@@ -1,0 +1,14 @@
+.Events {
+  margin-top: 10px;
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 12px;
+}
+.Events__item-link {
+  color: black;
+}
+.Events__item-time {
+  color: #90949C;
+}

@@ -1,0 +1,76 @@
+.News__make-post {
+  background-color: #F6F7F9;
+  padding: 7px 0 7px 0;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.News__post-option {
+  color: #365899;
+  padding: 0 7px 0 7px;
+  font-size: 12px;
+}
+.News__post-option.active {
+  color: #4B4F56;
+}
+.News__post-option:not(.first) {
+  border-left: 2px solid #ced0d4;
+}
+.News__user-pic {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+.News__text-input {
+  border: none;
+  width: 70%;
+  position: relative;
+  top: -17px;
+  font-size: 14px;
+}
+.News__content {
+  padding: 10px;
+  size: 50px;
+  background: white;
+  font-size: 14px;
+  border: #DDDFE2 solid 1px;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+}
+.News__additional {
+  padding-top: 15px;
+  margin-top: 5px;
+  border-top: #DDDFE2 solid 1px;
+}
+.News__more-options {
+  background-color: #F6F7F9;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #4B4F56;
+  font-size: 12px;
+  font-weight: bold;
+}
+.News__more-options:hover {
+  background-color: #DDDFE2;
+}
+.News__icon {
+  height: 18px;
+  width: 18px;
+  margin: 3px;
+  display: inline-block;
+  background-image: url("../images/icon-sprite-1.png");
+  background-size: 500px 100px;
+  vertical-align: middle;
+}
+.Icon_pencil {
+  background-position: 502px -71px;
+}
+.Icon_photo-camera {
+  background-position: 485px -69px;
+}
+.Icon_video-camera {
+  background-position: -419px 251px;
+}

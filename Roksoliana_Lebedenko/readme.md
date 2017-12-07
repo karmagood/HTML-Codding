@@ -20,7 +20,7 @@ npm install
 ```
 node server.js Roksoliana_Lebedenko/youtube 
 ```
-Твій сайт буде доступний [тут](http://localhost:3000/). Всі `.mustache` шаблони компілюватимуться автоматично з даними
+Твій сайт буде доступний [тут](http://localhost:3000/ ). Всі `.mustache` шаблони компілюватимуться автоматично з даними
  що записані в файлі `data/data.json`. Тобто якщо ти переходитимеш по сторінках [channel_page](http://localhost:3000/channel_page)
 [index](http://localhost:3000/index), [video_page](http://localhost:3000/video_page), все повинно працювати автоматично.
  

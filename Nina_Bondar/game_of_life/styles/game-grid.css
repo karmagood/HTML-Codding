@@ -1,0 +1,19 @@
+.game-grid {
+  display: grid;
+  margin-right: auto;
+  margin-left: auto;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: repeat(15, 40px); }
+  .game-grid__cell {
+    background-color: #bcb9bf;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px; }
+    .game-grid__cell_alive {
+      background-color: #5ebf4b; }
+
+/*# sourceMappingURL=game-grid.css.map */

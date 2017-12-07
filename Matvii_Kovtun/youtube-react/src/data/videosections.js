@@ -37,7 +37,42 @@ export default [
                 img: "https://i.ytimg.com/vi/WJOYTNK2MZc/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCWDRMyuDLdITXuIxoyMIaVhnJDBg",
                 time: "Week ago",
                 channel: "MissDeep MIX"
-            }]
+            }, {
+                title: "Best Music Special Favorite Mix 2017 - Best Of Deep",
+                videoViews: "26k",
+                img: "https://i.ytimg.com/vi/WJOYTNK2MZc/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCWDRMyuDLdITXuIxoyMIaVhnJDBg",
+                time: "Week ago",
+                channel: "MissDeep MIX"
+            },
+            {
+                title: "Best Music Special Favorite Mix 2017 - Best Of Deep",
+                videoViews: "26k",
+                img: "https://i.ytimg.com/vi/WJOYTNK2MZc/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCWDRMyuDLdITXuIxoyMIaVhnJDBg",
+                time: "Week ago",
+                channel: "MissDeep MIX"
+            },
+            {
+                title: "Best Music Special Favorite Mix 2017 - Best Of Deep",
+                videoViews: "26k",
+                img: "https://i.ytimg.com/vi/WJOYTNK2MZc/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCWDRMyuDLdITXuIxoyMIaVhnJDBg",
+                time: "Week ago",
+                channel: "MissDeep MIX"
+            },
+            {
+                title: "Best Music Special Favorite Mix 2017 - Best Of Deep",
+                videoViews: "26k",
+                img: "https://i.ytimg.com/vi/WJOYTNK2MZc/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCWDRMyuDLdITXuIxoyMIaVhnJDBg",
+                time: "Week ago",
+                channel: "MissDeep MIX"
+            },
+            {
+                title: "Best Music Special Favorite Mix 2017 - Best Of Deep",
+                videoViews: "26k",
+                img: "https://i.ytimg.com/vi/WJOYTNK2MZc/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCWDRMyuDLdITXuIxoyMIaVhnJDBg",
+                time: "Week ago",
+                channel: "MissDeep MIX"
+            }
+        ]
     },
     {
         sectionTitle: "New",
@@ -76,7 +111,7 @@ export default [
                 time: "2 years ago",
                 channel: "Dj Drop G"
             }]
-    },{
+    }, {
         sectionTitle: "New",
         items: [{
             title: "Special Hot Drop G Mix 2017 - Best Of Deep House",
