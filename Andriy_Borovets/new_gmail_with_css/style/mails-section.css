@@ -1,0 +1,10 @@
+.mails-section{
+    width: 88%;
+    background-color: #f0f0f0;
+    border-bottom: #e5e5e5 1px solid;
+
+}
+.mails-section__mail{
+    display: flex;
+    align-self: center
+}
