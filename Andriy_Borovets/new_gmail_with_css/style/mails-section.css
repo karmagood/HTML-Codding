@@ -5,6 +5,29 @@
 
 }
 .mails-section__mail{
-    display: flex;
-    align-self: center
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.mails-section__mail__check-box{
+    float: left;
+    margin-left: 1%;
+}
+.mails-section__mail__star-img{
+    display: block;
+    margin: auto;
+    float: left;
+    margin-right: 2%;
+}
+.mails-section__mail__subject{
+    margin-left: 3%;
+}
+.mails-section__mail__text{
+    color: gray;
+    overflow: hidden;
+    width: 2%;
+}
+.mails-section__mail__time{
+    float: right;
+    margin-right: 1%;
 }
