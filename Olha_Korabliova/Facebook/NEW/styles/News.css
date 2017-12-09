@@ -9,6 +9,7 @@
 .News__post-option {
   color: #365899;
   padding: 0 7px 0 7px;
+  font-size: 12px;
 }
 .News__post-option.active {
   color: #4B4F56;
@@ -49,6 +50,7 @@
   padding: 5px;
   margin: 5px;
   color: #4B4F56;
+  font-size: 12px;
   font-weight: bold;
 }
 .News__more-options:hover {

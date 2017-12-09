@@ -147,13 +147,13 @@
                     {{/Article-content}}
                     <footer class="Article__reaction-on">
                         <a class="Article__likes-etc" href="#">
-                            <i class="fa fa-thumbs-o-up"> Like</i>
+                            <span class="Article__icon Icon_like"></span>Like
                         </a>
                         <a class="Article__likes-etc" href="#">
-                            <i class="fa fa-comment-o"> Comment</i>
+                            <span class="Article__icon Icon_comment"></span>Comment
                         </a>
                         <a class="Article__likes-etc" href="#">
-                            <i class="fa fa-send-o"> Share</i>
+                            <span class="Article__icon Icon_share"></span>Share
                         </a>
                     </footer>
                 </article>
@@ -171,12 +171,24 @@
                         {{/reactions}}
                         <!--TODO: add user comments + data.json items-->
                         <div class="Comments__user-comments">
-                            <form action="#">
-                                <a href="user_page">
-                                    <img class="Comments__user-pic"
-                                         src="images/user_avatar.jpeg"/>
-                                </a>
+                            <a href="user_page">
+                                <img class="Comments__user-pic"
+                                     src="images/user_avatar.jpeg"/>
+                            </a>
+                            <form action="#" class="Comments__add-item">
                                 <input class="Comments__text-area" type="text" placeholder="Write a comment..."/>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_smile-gray"></span>
+                                </a>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_photo-gray"></span>
+                                </a>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_gif-gray"></span>
+                                </a>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_stiker-gray"></span>
+                                </a>
                             </form>
                         </div>
                     </footer>

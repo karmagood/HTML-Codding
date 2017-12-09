@@ -114,6 +114,7 @@ margin-top: 2%;
     border-radius: 3px;
     margin-top: 3%;
     margin-left: 10%;
+    text-decoration: none;
 }
 
 ul > li {
@@ -177,7 +178,10 @@ hr {
 h4{
     /*line-height: 0.1;*/
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 p{
 margin: 0;
     text-decoration: none;
