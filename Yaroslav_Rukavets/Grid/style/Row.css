@@ -1,0 +1,65 @@
+.Grid-12__row-columns-1,
+.Grid-12__row-columns-2,
+.Grid-12__row-columns-3,
+.Grid-12__row-columns-4,
+.Grid-12__row-columns-5,
+.Grid-12__row-columns-6,
+.Grid-12__row-columns-7,
+.Grid-12__row-columns-8,
+.Grid-12__row-columns-9,
+.Grid-12__row-columns-10,
+.Grid-12__row-columns-11,
+.Grid-12__row-columns-12 {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Grid-12 .Grid-12__row-columns-1 {
+    width: 60px;
+}
+
+.Grid-12 .Grid-12__row-columns-2 {
+    width: 140px;
+}
+
+.Grid-12 .Grid-12__row-columns-3 {
+    width: 220px;
+}
+
+.Grid-12 .Grid-12__row-columns-4 {
+    width: 300px;
+}
+
+.Grid-12 .Grid-12__row-columns-5 {
+    width: 380px;
+}
+
+.Grid-12 .Grid-12__row-columns-6 {
+    width: 460px;
+}
+
+.Grid-12 .Grid-12__row-columns-7 {
+    width: 540px;
+}
+
+.Grid-12 .Grid-12__row-columns-8 {
+    width: 620px;
+}
+
+.Grid-12 .Grid-12__row-columns-9 {
+    width: 700px;
+}
+
+.Grid-12 .Grid-12__row-columns-10 {
+    width: 780px;
+}
+
+.Grid-12 .Grid-12__row-columns-11 {
+    width: 860px;
+}
+
+.Grid-12 .Grid-12__row-columns-12 {
+    width: 940px;
+}
