@@ -6,6 +6,8 @@
     <link rel="stylesheet" type="text/css" href="style/common.css"> <!-- body style -->
     <link rel="stylesheet" type="text/css" href="style/user-header.css"> <!-- first header style -->
     <link rel="stylesheet" type="text/css" href="style/mail-header.css"> <!-- second header style -->
+    <link rel="stylesheet" type="text/css" href="style/side-menu.css"> <!-- side menu style -->
+    <link rel="stylesheet" type="text/css" href="style/mails_section.css"> <!-- all mails style -->
 </head>
 <body>
 <header class="user-header">
@@ -41,7 +43,7 @@
         <option value="Більше">Більше</option>
     </select>
     <b class="mail-header__num-of-mails">1-50</b>
-    з
+    &nbspз&nbsp
     <b>1260</b>
     <button class="mail-header__nav-button1">
         <img src="style/images/left-pointer.svg">
@@ -57,7 +59,36 @@
     </button>
 </header>
 <hr>
-<aside class="side_menu"></aside>
-<main class="mails_section"></main>
+<aside class="side-menu">
+    <button class="side-menu__send-button">
+        Надіслати
+    </button>
+    <div class="side-menu__buttons-section">
+        <a href="#" style="color: #d14836"><b>Вхідні</b></a>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side_menu__buttons">Із зірочкою</button>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side_menu__buttons">
+            Надіслані
+        </button>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side_menu__buttons">
+            <b>Чернетки (6)</b>
+        </button>
+    </div>
+    <div class="side-menu__buttons-section">
+        <button class="side_menu__buttons">
+            Більше
+        </button>
+    </div>
+</aside>
+<main class="mails-section">
+    <section class="mails-section__mail">
+        <a class="mails-section__mail__subject">Уряд студентів</a>
+    </section>
+</main>
 </body>
 </html>

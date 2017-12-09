@@ -1,0 +1,25 @@
+.side-menu{
+    margin-left: 2%;
+    float: left;
+    width: 10%;
+
+}
+.side-menu__buttons-section{
+    margin-top: 2%;
+}
+.side-menu__send-button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+    width: 100px;
+    height: 30px;
+    padding: -10px;
+    border: transparent;
+    border-radius: 2px;
+    background-color: #d14836;
+}
+.side_menu__buttons{
+    background-color: transparent;
+    border: transparent;
+    margin-left: -5px;
+}
