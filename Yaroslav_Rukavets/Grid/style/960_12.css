@@ -8,6 +8,21 @@ body {
     width: 960px;
 }
 
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Cell {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Bocks {
+    display: flex;
+
+}
+
 .Grid-12__row-columns-1,
 .Grid-12__row-columns-2,
 .Grid-12__row-columns-3,
@@ -38,6 +53,16 @@ body {
 .Grid-12__position_push_10, .Grid-12__position_pull_10,
 .Grid-12__position_push_11, .Grid-12__position_pull_11 {
     position: relative;
+}
+
+.Grid-12__position_push_6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Grid-12__position_pull_6 {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
