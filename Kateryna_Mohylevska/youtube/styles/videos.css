@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.videos {
+  cursor: pointer;
+  margin-right: 4px;
+  margin-bottom: 24px;
+  display: inline-block; }
+  .videos:nth-child(4n+4) {
+    margin-right: 0; }
+  .videos__details {
+    display: flex;
+    flex-direction: column; }
+  .videos__channel-name, .videos__time, .videos__views {
+    color: #8b898b;
+    font-size: 13px; }
+  .videos__views:after {
+    content: "тАв";
+    margin: 0 4px; }
+  .videos__channel-name:hover {
+    color: #2b2b2b; }
+  .videos__name {
+    font-size: 14px; }
+
+/*# sourceMappingURL=videos.css.map */

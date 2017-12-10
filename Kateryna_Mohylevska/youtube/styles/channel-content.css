@@ -1,0 +1,57 @@
+.channel {
+  margin-top: 56px;
+  margin-left: 240px;
+  overflow: hidden; }
+  .channel__background {
+    background-image: url("//yt3.ggpht.com/t_f8tEONxU5NFvN6oTGz-74G_cBVCeOIsuXGXi6xNw81rEeTMWpU2FUThwKIDLjPOZq5wFk9MA=w1060-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no");
+    height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .channel__header {
+    padding: 16px 107px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.03); }
+  .channel__img {
+    border-radius: 50%;
+    margin-right: 24px; }
+  .channel__header-left {
+    display: flex;
+    align-items: center; }
+  .channel__name {
+    margin: 0;
+    font-weight: normal; }
+  .channel__followers {
+    width: 400px;
+    margin: 0;
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 14px; }
+  .channel__nav {
+    padding: 0 107px;
+    background-color: rgba(0, 0, 0, 0.03); }
+  .channel__nav-elem {
+    text-transform: uppercase;
+    background-color: transparent;
+    font-size: 14px;
+    color: rgba(17, 17, 17, 0.6);
+    padding: 16px 25px;
+    font-weight: bolder;
+    cursor: pointer; }
+  .channel__nav-search {
+    display: none; }
+  .channel_nav-selected {
+    color: #111111;
+    border-bottom: 3px solid rgba(17, 17, 17, 0.6); }
+
+.channel-links {
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 240px;
+  position: absolute;
+  right: 16px;
+  top: 180px; }
+  .channel-links__elem {
+    display: none; }
+
+/*# sourceMappingURL=channel-content.css.map */

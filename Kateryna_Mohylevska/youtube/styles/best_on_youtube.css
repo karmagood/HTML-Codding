@@ -1,0 +1,20 @@
+.best-on-youtube {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #efedef;
+  padding: 8px 0; }
+  .best-on-youtube__icon::before {
+    border-radius: 50%;
+    background-size: 100%;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    content: ""; }
+  .best-on-youtube__title {
+    font-size: 14px;
+    padding-left: 24px;
+    color: #8b898b;
+    text-transform: uppercase;
+    margin: 10px 0; }
+
+/*# sourceMappingURL=best_on_youtube.css.map */
