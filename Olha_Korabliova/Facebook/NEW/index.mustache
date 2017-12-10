@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="styles/Friend-suggest.css"/>
     <link rel="stylesheet" href="styles/Languages.css"/>
     <link rel="stylesheet" href="styles/Info-footer.css"/>
-
-    <!--<link rel="stylesheet" href="styles/friend_n_games.css"/>-->
+    <link rel="stylesheet" href="styles/Side-bar.css"/>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
@@ -61,223 +60,239 @@
     </div>
 </header>
 <section class="Facebook__payload">
-    <aside class="Tool-bar">
-        <nav class="Tool-bar__nav">
-            <a class="Tool-bar__item" href="user_page">
-                <img class="Tool-bar__user-pic"
-                     src="images/user_avatar.jpeg"/>
-                <span class="Tool-bar__user-name">Olya Korabliova</span>
-            </a>
-            <a class="Tool-bar__item active" href="#">
-                <span class="Icon Icon_news"></span>News Feed
-            </a>
-            <a class="Tool-bar__item" href="#">
-                <span class="Icon Icon_messenger"></span>Messenger
-            </a>
-        </nav>
-        {{#Tool-bar}}
+    {{#Index}}
+        <aside class="Tool-bar">
             <nav class="Tool-bar__nav">
-                <h4 class="Tool-bar__nav-title">{{title}}</h4>
-                {{#nav}}
-                    <a class="Tool-bar__item" href="{{link}}">
-                        <span class="Icon {{icon-class}}"></span>{{item}}
-                    </a>
-                {{/nav}}
+                <a class="Tool-bar__item" href="user_page">
+                    <img class="Tool-bar__user-pic"
+                         src="images/user_avatar.jpeg"/>
+                    <span class="Tool-bar__user-name">Olya Korabliova</span>
+                </a>
+                <a class="Tool-bar__item active" href="#">
+                    <span class="Icon Icon_news"></span>News Feed
+                </a>
+                <a class="Tool-bar__item" href="#">
+                    <span class="Icon Icon_messenger"></span>Messenger
+                </a>
             </nav>
-        {{/Tool-bar}}
-        <nav class="Tool-bar__nav">
-            <h4 class="Tool-bar__nav-title">Create</h4>
-            <a class="Tool-bar__more" href="#">Ad</a>
-            <a class="Tool-bar__more" href="#">Page</a>
-            <a class="Tool-bar__more" href="#">Group</a>
-            <a class="Tool-bar__more" href="#">Event</a>
-        </nav>
-    </aside>
-    <main class="Facebook__news-line">
-        {{#News}}
-            <div class="News">
-                <header class="News__make-post">
-                    {{#header}}
-                        <a class="News__post-option {{first}} {{status}}" href="{{action}}">
-                            <span class="News__icon {{icon-class}}"></span>{{item}}
+            {{#Tool-bar}}
+                <nav class="Tool-bar__nav">
+                    <h4 class="Tool-bar__nav-title">{{title}}</h4>
+                    {{#nav}}
+                        <a class="Tool-bar__item" href="{{link}}">
+                            <span class="Icon {{icon-class}}"></span>{{item}}
                         </a>
-                    {{/header}}
-                </header>
-                <div class="News__content">
-                    <form action="#">
-                        <a href="user_page">
-                            <img class="News__user-pic" src="images/user_avatar.jpeg"/>
-                        </a>
-                        <textarea placeholder="What's on your mind, Olya?"></textarea>
-                    </form>
-                    <footer class="News__additional">
-                        {{#footer}}
-                            <a class="News__more-options" href="{{action}}">
-                                <span class="Icon {{icon-class}}"></span>{{item}}
+                    {{/nav}}
+                </nav>
+            {{/Tool-bar}}
+            <nav class="Tool-bar__nav">
+                <h4 class="Tool-bar__nav-title">Create</h4>
+                <a class="Tool-bar__more" href="#">Ad</a>
+                <a class="Tool-bar__more" href="#">Page</a>
+                <a class="Tool-bar__more" href="#">Group</a>
+                <a class="Tool-bar__more" href="#">Event</a>
+            </nav>
+        </aside>
+        <main class="Facebook__news-line">
+            {{#News}}
+                <div class="News">
+                    <header class="News__make-post">
+                        {{#header}}
+                            <a class="News__post-option {{first}} {{status}}" href="{{action}}">
+                                <span class="News__icon {{icon-class}}"></span>{{item}}
                             </a>
-                        {{/footer}}
-                    </footer>
-                </div>
-            </div>
-        {{/News}}
-        {{#Article-and-Comments}}
-            <article class="Article">
-                {{#Article-header}}
-                    <header class="Article__header">
-                        <img class="Article__user-pic" src="{{user-img}}"/>
-                        <div class="Article__user-info">
-                            <a class="Article__user-name" href="{{user-link}}">{{user-name}}</a>
-                            {{#additional-info}}
-                                <span>{{preposition}}
-                                    <a class="Article__link" href="{{info-link}}">{{info}}</a>
-                        </span>
-                            {{/additional-info}}
-                            <br>
-                            <a href="#">
-                                <time class="Article__time" datetime="dd.mm.yyyy">{{post-time}}</time>
-                            </a>
-                        </div>
+                        {{/header}}
                     </header>
-                {{/Article-header}}
-                {{#Article-content}}
-                    <main class="Article__content">
-                        <p class="Article__description">{{description}}</p>
-                        <img class="Article__file" src="{{file-src}}"/>
-                    </main>
-                {{/Article-content}}
-                <footer class="Article__reaction-on">
-                    <a class="Article__likes-etc" href="#">
-                        <i class="fa fa-thumbs-o-up"> Like</i>
-                    </a>
-                    <a class="Article__likes-etc" href="#">
-                        <i class="fa fa-comment-o"> Comment</i>
-                    </a>
-                    <a class="Article__likes-etc" href="#">
-                        <i class="fa fa-send-o"> Share</i>
-                    </a>
-                </footer>
-            </article>
-            {{#Comments}}
-                <footer class="Comments">
-                    {{#reactions}}
-                        <div class="Comments__user-reactions">
-                            <a class="Comments__user-action" href="#">
-                                <i class="fa fa-thumbs-up"> {{who-liked}}</i>
+                    <div class="News__content">
+                        <form class="News__form" action="#">
+                            <a href="user_page">
+                                <img class="News__user-pic" src="images/user_avatar.jpeg"/>
                             </a>
-                            <a class="Comments__user-action" href="#">
-                                <i class="fa fa-send"> {{who-shared}}</i>
-                            </a>
-                        </div>
-                    {{/reactions}}
-                    <!--TODO: add user comments + data.json items-->
-                    <div class="Comments__user-comments">
-                        <form action="#">
+                            <input class="News__text-input" name="text" placeholder="What's on your mind, Olya?"/>
+                        </form>
+                        <footer class="News__additional">
+                            {{#footer}}
+                                <a class="News__more-options" href="{{action}}">
+                                    <span class="Icon {{icon-class}}"></span>{{item}}
+                                </a>
+                            {{/footer}}
+                        </footer>
+                    </div>
+                </div>
+            {{/News}}
+            {{#Article-and-Comments}}
+                <article class="Article">
+                    {{#Article-header}}
+                        <header class="Article__header">
+                            <img class="Article__user-pic" src="{{user-img}}"/>
+                            <div class="Article__user-info">
+                                <a class="Article__user-name" href="{{user-link}}">{{user-name}}</a>
+                                {{#additional-info}}
+                                    <span>{{preposition}}
+                                        <a class="Article__link" href="{{info-link}}">{{info}}</a>
+                                    </span>
+                                {{/additional-info}}
+                                <br>
+                                <a href="#">
+                                    <time class="Article__time" datetime="dd.mm.yyyy">{{post-time}}</time>
+                                </a>
+                            </div>
+                        </header>
+                    {{/Article-header}}
+                    {{#Article-content}}
+                        <main class="Article__content">
+                            <p class="Article__description">{{description}}</p>
+                            <img class="Article__file" src="{{file-src}}"/>
+                        </main>
+                    {{/Article-content}}
+                    <footer class="Article__reaction-on">
+                        <a class="Article__likes-etc" href="#">
+                            <span class="Article__icon Icon_like"></span>Like
+                        </a>
+                        <a class="Article__likes-etc" href="#">
+                            <span class="Article__icon Icon_comment"></span>Comment
+                        </a>
+                        <a class="Article__likes-etc" href="#">
+                            <span class="Article__icon Icon_share"></span>Share
+                        </a>
+                    </footer>
+                </article>
+                {{#Comments}}
+                    <footer class="Comments">
+                        {{#reactions}}
+                            <div class="Comments__user-reactions">
+                                <a class="Comments__user-action" href="#">
+                                    <i class="fa fa-thumbs-up"> {{who-liked}}</i>
+                                </a>
+                                <a class="Comments__user-action" href="#">
+                                    <i class="fa fa-send"> {{who-shared}}</i>
+                                </a>
+                            </div>
+                        {{/reactions}}
+                        <!--TODO: add user comments + data.json items-->
+                        <div class="Comments__user-comments">
                             <a href="user_page">
                                 <img class="Comments__user-pic"
                                      src="images/user_avatar.jpeg"/>
                             </a>
-                            <input class="Comments__text-area" type="text" placeholder="Write a comment..."/>
-                        </form>
+                            <form action="#" class="Comments__add-item">
+                                <input class="Comments__text-area" type="text" placeholder="Write a comment..."/>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_smile-gray"></span>
+                                </a>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_photo-gray"></span>
+                                </a>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_gif-gray"></span>
+                                </a>
+                                <a class="Comments__item_icon" href="#">
+                                    <span class="Comments__icon Icon_stiker-gray"></span>
+                                </a>
+                            </form>
+                        </div>
+                    </footer>
+                {{/Comments}}
+            {{/Article-and-Comments}}
+        </main>
+        <aside class="Facebook__ad-feed">
+            <!--TODO -- write stories to json-->
+            <div class="Stories">
+                <h5 class="Stories__title">Stories
+                    <i class="fa fa-question-circle-o"
+                       title="Stories are photos and videos that only last temporarily. When a friend shares to their story, it'll appear here."
+                       style="float: right; font-size: 20px;"></i>
+                </h5>
+                <div class="Stories__block">
+                    <div class="Stories__item">
+                        <a href="#">
+                            <img class="Stories__story-pic" src="images/new_story.png"/>
+                        </a>
                     </div>
-                </footer>
-            {{/Comments}}
-        {{/Article-and-Comments}}
-    </main>
-    <aside class="Facebook__ad-feed">
-        <div class="Stories">
-            <h5 class="Stories__title">Stories
-                <i class="fa fa-question-circle-o"
-                   title="Stories are photos and videos that only last temporarily. When a friend shares to their story, it'll appear here."
-                   style="float: right; font-size: 20px;"></i>
-            </h5>
-            <div class="Stories__block">
-                <div class="Stories__item">
-                    <a href="#">
-                        <img class="Stories__story-pic" src="images/new_story.png"/>
+                    <div class="Stories__item"></div>
+                    <div class="Stories__item"></div>
+                    <div class="Stories__item"></div>
+                </div>
+            </div>
+            <div class="Events">
+                {{#Events}}
+                    <div class="Events__item">
+                        <a class="Events__item-link" href="{{link}}">
+                            <span class="{{icon-class}}"></span>{{event}}
+                        </a>
+                        <time class="Events__item-time" datatype="#">{{event-time}}</time>
+                    </div>
+                {{/Events}}
+            </div>
+            <div class="Friend-suggest">
+                <h5 class="Friend-suggest__title">People You May Know <a class="Friend-suggest__link" href="#">See
+                    All</a>
+                </h5>
+                {{#Friend-suggest}}
+                    <div class="Friend-suggest__item">
+                        <a href="{{user-link}}">
+                            <img class="Friend-suggest__user-pic"
+                                 src="{{user-pic}}"/>
+                        </a>
+                        <div class="Friend-suggest__user-info">
+                            <a class="Friend-suggest__user-name" href="#">{{user-name}}</a><br>
+                            <a class="Friend-suggest__mutual-frs" href="#">{{mutual-friends}}</a><br>
+                            <button class="Friend-suggest__button" type="button">
+                                <i class="fa fa-user-plus"></i>
+                                Add Friend
+                            </button>
+                        </div>
+                    </div>
+                {{/Friend-suggest}}
+            </div>
+            <div class="Languages">
+                {{#Languages}}
+                    <a class="Languages__item {{status}}" href="{{action}}">
+                        {{language}}
                     </a>
-                </div>
-                <div class="Stories__item"></div>
-                <div class="Stories__item"></div>
-                <div class="Stories__item"></div>
+                {{/Languages}}
             </div>
-        </div>
-        <div class="Events">
-            {{#Events}}
-            <div class="Events__item">
-                <a class="Events__item-link" href="{{link}}">
-                    <span class="{{icon-class}}"></span>{{event}}
-                </a>
-                <time class="Events__item-time" datatype="#">{{event-time}}</time>
+            <footer class="Info-footer">
+                {{#Info-footer}}
+                    <a class="Info-footer__item" href="{{action}}">{{info}}</a>
+                {{/Info-footer}}
+            </footer>
+        </aside>
+        {{#Side-bar}}
+            <div class="Side-bar">
+                {{#online-users}}
+                    <a class="Side-bar__item" href="{{link}}">
+                        <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
+                        <span class="{{online}}"></span>
+                    </a>
+                {{/online-users}}
+                <h5 class="Side-bar__more-contacts-title">MORE CONTACTS</h5>
+                {{#more-contacts}}
+                    <a class="Side-bar__item" href="{{link}}">
+                        <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
+                        <span class="{{online}}"></span>
+                    </a>
+                {{/more-contacts}}
+                <footer class="Side-bar__search">
+                    <form class="Search">
+                        <a class="Search__item_icon" href="#">
+                            <span class="Search__icon Icon2_find"></span>
+                        </a>
+                        <input class="Search__input" type="search" name="search" placeholder="Search">
+                        <a class="Search__item_icon" href="#">
+                            <span class="Search__icon Icon4_settings"></span>
+                        </a>
+                        <a class="Search__item_icon" href="#">
+                            <span class="Search__icon Icon4_new-message"></span>
+                        </a>
+                        <a class="Search__item_icon" href="#">
+                            <span class="Search__icon Icon4_create-group"></span>
+                        </a>
+                    </form>
+                </footer>
             </div>
-            {{/Events}}
-        </div>
-        <div class="Friend-suggest">
-            <h5 class="Friend-suggest__title">People You May Know <a class="Friend-suggest__link" href="#">See All</a>
-            </h5>
-            <div class="Friend-suggest__item">
-                <a href="#">
-                    <img class="Friend-suggest__user-pic"
-                         src="images/friend_suggestion_avatar.png"/>
-                </a>
-                <div class="Friend-suggest__user-info">
-                    <a class="Friend-suggest__user-name" href="#">{{user-name}}</a><br>
-                    <a class="Friend-suggest__mutual-frs" href="#">{{mutual-friends}}</a><br>
-                    <button class="Friend-suggest__button" type="button">
-                        <i class="fa fa-user-plus"></i>
-                        Add Friend
-                    </button>
-                </div>
-            </div>
-            <div class="Friend-suggest__item">
-                <a href="#">
-                    <img class="Friend-suggest__user-pic"
-                         src="images/friend_suggestion_avatar.png"/>
-                </a>
-                <div class="Friend-suggest__user-info">
-                    <a class="Friend-suggest__user-name" href="#">{{User-name}}</a><br>
-                    <a class="Friend-suggest__mutual-frs" href="#">{{mutual-friends}}</a><br>
-                    <button class="Friend-suggest__button" type="button">
-                        <i class="fa fa-user-plus"></i>
-                        Add Friend
-                    </button>
-                </div>
-            </div>
-            <div class="Friend-suggest__item">
-                <a href="#">
-                    <img class="Friend-suggest__user-pic"
-                         src="images/friend_suggestion_avatar.png"/>
-                </a>
-                <div class="Friend-suggest__user-info">
-                    <a class="Friend-suggest__user-name" href="#">{{user-name}}</a><br>
-                    <a class="Friend-suggest__mutual-frs" href="#">{{mutual-friends}}</a><br>
-                    <button class="Friend-suggest__button" type="button">
-                        <i class="fa fa-user-plus"></i>
-                        Add Friend
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="Languages">
-            <a class="Languages__item active" href="#">
-                {{language}}
-            </a>
-            <a class="Languages__item" href="#">
-                {{language}}
-            </a>
-            <a class="Languages__item" href="#">
-                {{language}}
-            </a>
-            <a class="Languages__item" href="#">
-                {{language}}
-            </a>
-        </div>
-        <footer class="Info-footer">
-            <a class="Info-footer__item" href="#">{{info}}</a>
-            <a class="Info-footer__item" href="#">{{info}}</a>
-            <a class="Info-footer__item" href="#">{{info}}</a>
-            <a class="Info-footer__item" href="#">{{info}}</a>
-        </footer>
-    </aside>
+        {{/Side-bar}}
+    {{/Index}}
 </section>
 </body>
 </html>

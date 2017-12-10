@@ -9,6 +9,7 @@
 .News__post-option {
   color: #365899;
   padding: 0 7px 0 7px;
+  font-size: 12px;
 }
 .News__post-option.active {
   color: #4B4F56;
@@ -21,6 +22,13 @@
   width: 45px;
   height: 45px;
   margin-right: 5px;
+}
+.News__text-input {
+  border: none;
+  width: 70%;
+  position: relative;
+  top: -17px;
+  font-size: 14px;
 }
 .News__content {
   padding: 10px;
@@ -42,14 +50,15 @@
   padding: 5px;
   margin: 5px;
   color: #4B4F56;
+  font-size: 12px;
   font-weight: bold;
 }
 .News__more-options:hover {
   background-color: #DDDFE2;
 }
 .News__icon {
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   margin: 3px;
   display: inline-block;
   background-image: url("../images/icon-sprite-1.png");
@@ -57,11 +66,11 @@
   vertical-align: middle;
 }
 .Icon_pencil {
-  background-position: 502px -68px;
+  background-position: 502px -71px;
 }
 .Icon_photo-camera {
-  background-position: 485px -68px;
+  background-position: 485px -69px;
 }
 .Icon_video-camera {
-  background-position: -418px 252px;
+  background-position: -419px 251px;
 }

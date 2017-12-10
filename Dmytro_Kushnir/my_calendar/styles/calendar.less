@@ -23,16 +23,32 @@ body {
     font-size: 200%;
     /* header year notion */
   }
-  &__mounthname{
+  &__monthname{
     text-align: center;
     font-style: italic;
     font-size: 150%;
     /* header with notion */
   }
+
+  &__weekday-panel{
+    background-color: orange;
+    display: flex;
+    //width: 7 * (@day_size + 2*  @day_margin) ;
+    //height: @day_size + 2 * @day_margin;
+  }
+
+  &__dates-panel{
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: yellow;
+  }
+
   &__day{
+    display:inline-block;
     height: @day_size;
     width: @day_size;
-    background: red;
+    background: antiquewhite;
     border-radius: @day_round_corners;
     text-align: center;
     float: left;
@@ -48,9 +64,9 @@ body {
       font-style: italic;
       background: none;
     }
-    &_active {  }
-    &_empty-filler { display: block  }
-    &_holyday { background: red  }
+    //&_active {  }
+    //&_empty-filler { display: block  }
+    &_weekend { background: crimson  }
   }
 
 }
