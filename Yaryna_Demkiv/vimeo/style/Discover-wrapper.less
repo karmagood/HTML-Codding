@@ -3,7 +3,7 @@
   width: 100%;
   height: 59vh;
   background-size: auto;
-  background-image: url("https://f.vimeocdn.com/images_v6/marketing/creator_lohp/SP_Panels_375_2x.png");
+  background-image: url("https://f.vimeocdn.com/images_v6/marketing/creator_lohp/SP_Panels_768_2x.jpg");
   background-position: center;
   &__logo {
     width: 35vh;
@@ -14,12 +14,15 @@
 
   }
 }
- /* @media(max-width: 37.5em)
-  {
-    &__logo{
-      width:35vh;
-      position: absolute;
-      margin-left: 44vh;
-      margin-top: 12vh;
-    }
-  }} */
+
+@media screen and (max-width: 48em)
+{
+.Discover-wrapper {
+  display: none;
+  }
+}
+@media(max-width: 37.5em) {
+  .Discover-wrapper {
+    display: block;
+  }
+}
