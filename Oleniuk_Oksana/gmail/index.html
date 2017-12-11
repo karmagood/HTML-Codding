@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/common.css" rel="stylesheet" type="text/css">
+    <link href="styles/email-form.css" rel="stylesheet" type="text/css">
+    <link href="styles/general-menu.css" rel="stylesheet" type="text/css">
+    <link href="styles/header.css" rel="stylesheet" type="text/css">
+    <link href="styles/aside-menu.css" rel="stylesheet" type="text/css">
 
     <title>GMAIL</title>
 </head>
@@ -12,20 +16,21 @@
     <section class="header">
         <div id="grid-nav-1">
             <div class="grid-item">
-                <img src="images/ucu_logo.png" height="60" width="202"/>
+                <img class="header__pics" src="images/ucu_logo.png"/>
             </div>
-            <div class="grid-item">
+            <div class="grid-item" id="header__search">
                 <form>
-                    <input id="nav-search-input"></input>
-                    <button id="nav-submit-input"><img src="images/Search.png" width="18" height="18"></button>
+                    <input class="header__search_form"></input>
+                    <button class="header__search_submit"><img class="header__pics_search" src="images/Search.png">
+                    </button>
+
                 </form>
             </div>
-            <div class="grid-item" id="logo-nav">
+            <div class="grid-item" id="header__pics_nav">
 
-                <img src="images/google_not.png" height="32" width="32">
-                <img src="images/apps_logo.png" height="32" width="32">
-                <img id="circle-photo" src="images/oksana-photo.jpg" height="32" width="32">
-
+                <img class="header__pics_nav_size" src="images/google_not.png">
+                <img class="header__pics_nav_size" src="images/apps_logo.png">
+                <img id="circle-photo" class="header__pics_nav_size" src="images/oksana-photo.jpg">
 
             </div>
         </div>
@@ -37,33 +42,43 @@
     <section>
         <div id="grid-nav-2">
             <div class="grid-item">
-                <h2 id="mail-nav-2">Mail <span class="expander">🢓</span></h2>
+                <h2 class="general-menu__header">Mail <span class="expander">🢓</span></h2>
             </div>
-            <div class="grid-item" id="logo-inline">
+            <div class="grid-item" id="general-menu__nav">
                 <!--checkbox with dropmenu starts-->
-                <div id="margin-nav" class="nav-button-style">
+                <div class="general-menu__button-left">
 
-                    <a href="/"><img class="logo" src="images/check.svg"></a>
+                    <a href="/"><img class="general-menu__button-logo" src="images/check.svg"></a>
                     <span>🢓</span>
 
                 </div>
 
-                <div id="nav-group-left" class="nav-button-style">
-                    <a href="/"><img class="logo" src="images/archive.svg"></a>
+                <div class="general-menu__button-right">
+                    <a href="/"><img class="general-menu__button-logo" src="images/archive.svg"></a>
                 </div>
-                <div id="nav-group-middle" class="nav-button-style"><a href="/"><img class="logo" src="images/archive.svg"></a>
+                <div class="general-menu__button-left">
+                    <a href="/"><img class="general-menu__button-logo"
+                                     src="images/archive.svg"></a>
+
                 </div>
-                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo" src="images/bin.svg"></a>
+                <div class="general-menu__button-middle"><a href="/"><img
+                        class="general-menu__button-logo"
+                        src="images/bin.svg"></a>
                 </div>
                 <!---->
-                <div id="nav-group-left" class="nav-button-style"><a href="/"><img class="logo" src="images/file.svg"></a>
+                <div class="general-menu__button-right"><a href="/"><img
+                        class="general-menu__button-logo"
+                        src="images/file.svg"></a>
                     <span>🢓</span>
                 </div>
-                <div id="nav-group-right" class="nav-button-style"><a href="/"><img class="logo" src="images/tap.svg"></a>
+                <div class="general-menu__button-left" class="general-menu__button-right"><a href="/"><img
+                        class="general-menu__button-logo"
+                        src="images/tap.svg"></a>
                     <span>🢓</span>
                 </div>
                 <!---->
-                <div class="nav-button-style"><a href="/"><img class="logo" src="images/sm.svg"></a>
+                <div class="general-menu__button-right"><a href="/"><img class="general-menu__button-logo"
+                                                                         src="images/sm.svg"></a>
                     <span>🢓</span>
                 </div>
 
@@ -83,102 +98,89 @@
     <div id="grid-nav-3">
         <!--left navigation starts-->
         <div class="grid-item">
-            <div>
-                <button id="aside-red-button"><a href="compose-email.html">COMPOSE</button>
-                <ul class="nav-ul">
-                    <li>Inbox</li>
-                    <li>Starred</li>
-                    <li>Send Main</li>
-                    <li>Drafts</li>
-                    <li>More<span>🢓</span></li>
-                </ul>
-            </div>
-            <hr>
-            <div class="inline-flex-container">
 
-                <div id="margin-item"><p><img id="circle-photo" src="images/oksana-photo.jpg" height="25" width="25"/></p>
-                </div>
-                <div id="margin-item"><p>Oksana</p></div>
-                <div id="margin-item"><span>🢓</span></div>
-                <div id="margin-item">
+            <button id="aside-red-button" class="aside-menu__button">COMPOSE</button>
+            <ul class="aside-menu__nav">
+                <li>Inbox</li>
+                <li>Starred</li>
+                <li>Send Main</li>
+                <li>Drafts</li>
+                <li>More<span>🢓</span></li>
+            </ul>
+
+            <hr>
+            <!--<div class="inline-flex-container">-->
+            <div id="aside-menu__inline">
+                <div class="aside-menu__button-item">
+                    <img id="circle-photo" class="aside-menu__button-item_picture" src="images/oksana-photo.jpg"/></div>
+                <div class="aside-menu__button-item"><p>Oksana</p></div>
+                <div class="aside-menu__button-item"><span>🢓</span></div>
+                <div class="aside-menu__button-item">
                     <button>+</button>
                 </div>
                 <!--<hr></hr>-->
                 <!--</figure>-->
+
             </div>
             <hr>
-            <div>
+            <!--<div>-->
                 <img src="images/quaote.svg" height="176" width="176"></img>
-                <p id="center-text">
-                    <small>No recent chats</small>
-                </p>
+                <div class="aside-menu__text">
+                    No recent chats
+                </div>
                 <p id="blue-text"><a href="/">Start a new one</a></p>
 
-            </div>
+            <!--</div>-->
             <hr>
-                    <footer>
-                        <div class="inline-flex-container">
-                            <ul>
-                                <li><div class="logo"><img src="images/person.svg"></img></div></li>
 
+            <div id="aside-menu__inline">
+                <div class="aside-menu__button-item"><img src="images/person.svg"></div>
+                <div class="aside-menu__button-item"><img src="images/chat.svg"></div>
+                <div class="aside-menu__button-item"><img src="images/phone.svg"></div>
+            </div>
 
-                                <li><div class="logo"><img src="images/chat.svg"></img></div></li>
+        </div>
+            <!--letter list ends-->
+            <!--open letter starts-->
+            <div class="grid-item">
+                <section id="emails"></section>
+            </div>
+            <!--letter list ends-->
+            <!--open letter starts-->
+            <div class="grid-item">
+                <div id="myModal" class="email-form__modal">
 
-                                <li><div class="logo"><img src="images/phone.svg"></img></div></li>
-                            </ul>
+                    <!-- Modal content -->
+                    <div class="email-form__modal-content">
+                        <div class="email-form">
+                            <div class="email-form__header">
+                                <div class="inline-flex-container">
+                                    <div class="email-form__header_text">New Message</div>
+                                    <div class="email-form__header_lables">_</div>
+                                    <div class="email-form__header_lables">⇗</div>
+                                    <span class="email-form__close">&times;</span>
+                                    <div class="email-form__header_lables"><a class="email-form__header_lables-exit"
+                                                                              href="index.html">x</a></div>
+                                </div>
+                            </div>
+
+                            <form action="/addEmail" id="addEmail">
+                                <input class="email-form__input" type="text" name="name" placeholder="to"/>
+                                <hr>
+                                <input class="email-form__input" type="text" name="subject" placeholder="Subject"/>
+                                <hr>
+                                <input class="email-form__input-letter" type="text" name="letter"/>
+                                <hr>
+                                <button class="email-form__button">Send</button>
+                            </form>
                         </div>
-                    </footer>
-
-
-        </div>
-
-
-        <!--left navifation ends-->
-        <!--letters list starts-->
-        <div class="grid-item">
-            <section>
-
-                <div class="inline-flex-container">
-                    <div id="left"></div>
-                    <div id="medium"><h4>Unity</h4></div>
-                    <div id="right">
-                        <p>
-                            <time>12:43</time>
-                        </p>
                     </div>
                 </div>
-                <div class="inline-flex-container">
-                    <div id="left"><input type="checkbox" value="1" name=""></input></div>
-                    <div id="medium"><p>A new Asset Store experience</p></div>
-                    <div id="right"><p>☆</p></div>
-                </div>
-
-                <div class="inline-flex-container">
-                    <div id="left"></div>
-                    <div id="medium">
-                        <small>Coming soon to a browser near..</small>
-                    </div>
-                    <div id="right"></div>
-                </div>
-
-
-                <hr>
-
-            </section>
-        </div>
-        <!--letter list ends-->
-        <!--open letter starts-->
-        <div class="grid-item">
-            <div class="big-margin">
-            <p id="center-text">No conversation selected</p>
-            <p id="center-text"><small>Using 0.55 GB<br>
-                <ins>Manage</ins></small></p></div>
-        </div>
-        <!--open letter ends-->
-
-
-        <!--main content ends-->
+            </div>
     </div>
+
+
 </section>
+<script src="build/bundle.js"></script>
 </body>
 </html>
