@@ -1,0 +1,51 @@
+.header {
+    background-color: #F1F1F1;
+    border-bottom: 1px solid #cecaca;
+
+}
+#header__search{
+    align-items: center;
+    display: inline-flex;
+}
+.header__search_form{
+    width: 60%;
+    height: 4ex;
+    border: 1px solid #cecaca;
+
+}
+.header__search_submit{
+     width: 8%;
+     height: 4ex;
+     background-color: #4485F4;
+     border: 1px solid #4485F4;
+     margin-left: -3.5px;
+     border-bottom-right-radius: 1px;
+     border-top-right-radius: 1px;
+ }
+.header__pics{
+    height:100%;
+    width:100%;
+}
+.header__pics_search{
+    height:90%;
+    width:30%;
+}
+/*Need to improve // why works only if id*/
+#header__pics_nav{
+    align-items: center;
+    display: flex;
+}
+.header__pics_nav_size{
+    height:31px;
+    width: 31px;
+    margin-left: 15px;
+}
+.aside-menu__text{
+    text-align: center;
+    color: #777;
+text-decoration: none;
+font-size: 15.5px;
+line-height: 1.5;
+}
+
+
