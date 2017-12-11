@@ -1,0 +1,48 @@
+.comments-element {
+  display: flex;
+  margin-bottom: 16px; }
+  .comments-element__name {
+    margin: 0;
+    float: left;
+    margin-right: 8px; }
+  .comments-element__time {
+    font-size: 13px;
+    color: rgba(17, 17, 17, 0.6); }
+  .comments-element__text {
+    font-size: 14px;
+    margin: 3px 0; }
+  .comments-element__respond {
+    margin-top: 4px;
+    height: 32px;
+    display: flex;
+    align-items: center; }
+  .comments-element__answer {
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 14px;
+    padding: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 16px; }
+  .comments-element__answer:hover {
+    color: #111111; }
+  .comments-element__respond-number {
+    color: rgba(17, 17, 17, 0.6);
+    font-size: 14px;
+    margin-right: 16px; }
+  .comments-element__like, .comments-element__dislike {
+    font-size: 16px;
+    margin: 0 8px; }
+    .comments-element__like:hover, .comments-element__dislike:hover {
+      color: #111111; }
+  .comments-element__see-comments {
+    font-size: 14px;
+    padding: 0;
+    margin: 7px 0; }
+    .comments-element__see-comments::after {
+      content: "";
+      background-image: url("../images/icons/drop_down.svg");
+      display: inline-block;
+      width: 19px;
+      height: 15px; }
+
+/*# sourceMappingURL=comments-element.css.map */
