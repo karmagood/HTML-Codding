@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles/icon.css">
     <link rel="stylesheet" href="styles/best_on_youtube.css">
     <link rel="stylesheet" href="styles/channel-content.css">
+    <link rel="stylesheet" href="styles/videos.css">
 </head>
 <body>
 <header class="main-header">
@@ -84,10 +85,10 @@
     <section class="channel__background">
         <nav class="channel-links">
             <a href="" class="channel-links__site">INNA's Website</a>
-            <a href="" class="channel-links__elem">INNA's Facebook</a>
-            <a href="" class="channel-links__elem">INNA's Instagram</a>
-            <a href="" class="channel-links__elem">INNA's Twitter</a>
-            <a href="" class="channel-links__elem">INNA's iTunes</a>
+            <a href="" class="channel-links__elem channel-links__facebook">INNA's Facebook</a>
+            <a href="" class="channel-links__elem channel-links__insta">INNA's Instagram</a>
+            <a href="" class="channel-links__elem channel-links__twit">INNA's Twitter</a>
+            <a href="" class="channel-links__elem channel-links__itunes">INNA's iTunes</a>
         </nav>
     </section>
     <section class="channel__header">
@@ -110,6 +111,55 @@
         <button class="channel__nav-elem">про канал</button>
         <button class="channel__nav-elem channel__nav-search">пошук</button>
     </nav>
+    <section class="channel__content">
+        <section class="channel-main-video">
+            <iframe width="424" height="238" src="https://www.youtube.com/embed/OfS1jFck8YQ" frameborder="0"
+                    gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <article class="channel-main-video__info">
+                <h2 class="videos__name">INNA - Nirvana | Official Music Video </h2>
+                <p class="videos__views">11 240 226 переглядів</p>
+                <time datetime="2017-11-28" class="videos__time">2 тижні тому</time>
+                <p class="channel-main-video__description">Official music video by INNA performing the single "Nirvana".
+                    (C) & (P) 2017 Global Records</p>
+                <p class="channel-main-video__concerts">Concerts: booking@innaofficial.com
+                    Licensing@globalrecords.com </p>
+                <a href="" class="channel-main-video__more">докладніше</a>
+            </article>
+        </section>
+
+        <aside class="featured-channels">
+            {{#featured-channels}}
+                <h2 class="featured-channels__title">{{name}}</h2>
+                <div class="featured-channels__info">
+                    {{#data}}
+                        <h3 class="featured-channels__name">{{channel-name}}</h3>
+                        <button class="featured-channels__follow">підписатися</button>
+                    {{/data}}
+                </div>
+            {{/featured-channels}}
+        </aside>
+        {{#channel-videos}}
+            <section class="channel-videos">
+                <header class="channel-videos__header">
+                    <h2 class="channel-videos__name">{{name}}</h2>
+                    <a href="" class="channel-videos__play-all">Відтворити все</a>
+                </header>
+                <div>
+                    {{#videos}}
+                        <article class="videos">
+                            <img src="{{url}}" alt="video" width="210px">
+                            <h3 class="videos__name"><a class="video__name_link" href="video-page">{{video-name}}</a>
+                            </h3>
+                            <aside class="videos__details">
+                                <span class="videos__views">{{views}} переглядів</span>
+                                <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
+                            </aside>
+                        </article>
+                    {{/videos}}
+                </div>
+            </section>
+        {{/channel-videos}}
+    </section>
 </main>
 
 </body>

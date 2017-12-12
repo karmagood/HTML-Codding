@@ -11,13 +11,15 @@
     flex-direction: column; }
   .videos__channel-name, .videos__time, .videos__views {
     color: #8b898b;
-    font-size: 13px; }
+    font-size: 13px;
+    margin: 0; }
   .videos__views:after {
     content: "тАв";
     margin: 0 4px; }
   .videos__channel-name:hover {
     color: #2b2b2b; }
   .videos__name {
-    font-size: 14px; }
+    font-size: 14px;
+    width: 210px; }
 
 /*# sourceMappingURL=videos.css.map */
