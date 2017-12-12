@@ -1,5 +1,7 @@
 .main-section {
     display: block;
+    margin-left: 240px;
+    margin-top: 56px;
 }
 
 .main-section__content {
@@ -15,7 +17,7 @@
     color: whitesmoke;
 }
 
-.main-section-video {
+.video-block__video-preview {
     height: 125px;
     width: 207px;
 }
@@ -29,19 +31,20 @@
 
 .content-section__custom {
     border: none;
+    padding-bottom: 20px;
 }
 
 .video-block {
     display: inline-block;
 }
 
-.video-description {
+.video-block__description {
     font-size: 12px;
     width: 207px;
     display: block;
 }
 
-.video-description__title {
+.video-block__title {
     text-decoration: none;
     color: whitesmoke;
     height: 30px;
@@ -50,13 +53,13 @@
 
 }
 
-.video-description__channel-name {
+.video-block__channel-name {
     display: block;
     margin-top: 10px;
     color: rgba(136,136,136,1);
 }
 
-.video-description__date-views {
+.video-block__date-views {
     display: block;
     font-size: 10px;
     margin-top: 5px;
