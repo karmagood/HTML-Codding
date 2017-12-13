@@ -51,9 +51,9 @@
     <section class="best-on-youtube">
         <h4 class="best-on-youtube__title">Найкраще на youtube</h4>
         {{#best-on-youtube}}
-        <a href="/" class="guide__chapter best-on-youtube__icon {{class-name}}">
-            {{name}}
-        </a>
+            <a href="/" class="guide__chapter best-on-youtube__icon {{class-name}}">
+                {{name}}
+            </a>
         {{/best-on-youtube}}
     </section>
     <div class="guide__see-chanel">
@@ -67,15 +67,15 @@
     </div>
     <nav class="guide__settings">
         {{#settings-model}}
-        <a href="/" class="guide__chapter {{class-name}}">
-            {{name}}
-        </a>
+            <a href="/" class="guide__chapter {{class-name}}">
+                {{name}}
+            </a>
         {{/settings-model}}
     </nav>
 
     <footer class="app-model">
         {{#application-model}}
-        <a href="/" class="app-model__link">{{name}}</a>
+            <a href="/" class="app-model__link">{{name}}</a>
         {{/application-model}}
         <br><br>
         <p>© 2017 YouTube, LLC</p>
@@ -84,16 +84,14 @@
 
 <main class="content">
     <section class="content__recommended">
-        <header>
-            <h2 class="content__recommended-name">Рекомендовано</h2>
-        </header>
+        <h2 class="content__recommended-name">Рекомендовано</h2>
         <div>
             {{#recommended}}
                 <article class="videos">
                     <img src="{{url}}" alt="video" width="210px">
                     <h3 class="videos__name"><a class="video__name_link" href="video-page">{{video-name}}</a></h3>
                     <aside class="videos__details">
-                        <a  class="videos__channel-name" href="/">{{channel-name}}</a>
+                        <a class="videos__channel-name" href="/">{{channel-name}}</a>
                         <span class="videos__views">{{views}} переглядів</span>
                         <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
                     </aside>
@@ -113,19 +111,20 @@
                     <h2 class="channel-video__name">{{channel-name}}</h2>
                     <p class="channel-video__recommended">Рекомендований канал</p>
                 </div>
-                <button class="button-follow">Підписатися <span class="button-follow_darker">{{channel-followers}}</span> </button>
+                <button class="button-follow">Підписатися <span
+                        class="button-follow_darker">{{channel-followers}}</span></button>
             </header>
-                {{#channel-content}}
-                    <section class="videos">
-                        <img src="{{url}}" alt="video" width="210px">
-                        <h3 class="videos__name">{{video-name}}</h3>
-                        <aside class="videos__details">
-                            <a href="/" class="videos__channel-name">{{channel-name}}</a>
-                            <span class="videos__views">{{views}} переглядів</span>
-                            <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
-                        </aside>
-                    </section>
-                {{/channel-content}}
+            {{#channel-content}}
+                <section class="videos">
+                    <img src="{{url}}" alt="video" width="210px">
+                    <h3 class="videos__name">{{video-name}}</h3>
+                    <aside class="videos__details">
+                        <a href="/" class="videos__channel-name">{{channel-name}}</a>
+                        <span class="videos__views">{{views}} переглядів</span>
+                        <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
+                    </aside>
+                </section>
+            {{/channel-content}}
         </section>
     {{/channels}}
 </main>
