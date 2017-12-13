@@ -1,11 +1,40 @@
-.Article {
+.Promoarticle {
   width: fit-content;
   display: flex;
+  flex-direction: column;
 
-  &__block {
-    height: 200px;
-    background-color: #3b5ca0;
-    border: 3px solid black;
+  &__top, &__bottom {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__header {
+    font-family: Baskerville, sans-serif;
+    font-size: 54px;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    font-family: GillSans, sans-serif;
+    font-size: 27px;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 78px;
+  }
+
+  &__item {
+   height: auto;
+   }
+
+  &__about-item {
+    font-family: GillSans;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: left;
+    color: #000000;
   }
 
 }
