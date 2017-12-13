@@ -1,0 +1,72 @@
+.Comments {
+  border: #DDDFE2 solid 1px;
+  border-radius: 0 0 3px 3px;
+  background-color: #F6F7F9;
+  color: #365899;
+}
+.Comments__user-pic {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  float: left;
+}
+.Comments__user-reactions {
+  padding: 5px 10px 5px 10px;
+}
+.Comments__user-action {
+  padding-right: 10px;
+  color: #365899;
+}
+.Comments__user-comments {
+  border-top: #DDDFE2 solid 1px;
+  padding: 10px 0 0 10px;
+  height: 55px;
+}
+.Comments__add-item {
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  border: #DDDFE2 solid 1px;
+  padding: 5px;
+  width: 400px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 55px;
+}
+.Comments__text-area {
+  width: 200px;
+  padding: 0;
+  border: none;
+}
+.Comments__icon {
+  width: 16px;
+  height: 16px;
+  float: right;
+  margin: 2px 10px 0 0;
+  background-image: url(../images/icon-sprite-1.png);
+}
+.Icon_smile-gray {
+  background-position: -97px 151px;
+}
+.Icon_smile-gray:hover {
+  background-position: -114px 151px;
+}
+.Icon_photo-gray {
+  background-position: -63px 151px;
+}
+.Icon_photo-gray:hover {
+  background-position: -80px 151px;
+}
+.Icon_gif-gray {
+  background-position: -131px 151px;
+}
+.Icon_gif-gray:hover {
+  background-position: -148px 151px;
+}
+.Icon_stiker-gray {
+  background-position: -216px 151px;
+}
+.Icon_stiker-gray:hover {
+  background-position: -233px 151px;
+}

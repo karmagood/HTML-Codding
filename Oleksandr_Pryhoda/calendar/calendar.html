@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/calendar.js"></script>
+    <link rel="stylesheet" href="style/calendar.css">
+    <title>Calendar</title>
+</head>
+<body>
+    <header class="calendar">
+        <span id="calendar__year" class="calendar__year-month"></span>
+        <span id="calendar__month" class="calendar__year-month"></span>
+        <input id="calendar__previous-month-button" class="calendar__button" type="submit" value="&#x3c;"/>
+        <input id="calendar__next-month-button" class="calendar__button" type="submit" value="&#x3e;"/>
+        <input id="calendar__previous-year-button" class="calendar__button" type="submit" value="&#x3c;"/>
+        <input id="calendar__next-year-button" class="calendar__button" type="submit" value="&#x3e;"/>
+    </header>
+    <main>
+        <section class="calendar__week">
+            <span class="calendar__week-days calendar__days">Mon</span>
+            <span class="calendar__week-days calendar__days">Tue</span>
+            <span class="calendar__week-days calendar__days">Wed</span>
+            <span class="calendar__week-days calendar__days">Thu</span>
+            <span class="calendar__week-days calendar__days">Fri</span>
+            <span class="calendar__week-days calendar__days">Sat</span>
+            <span class="calendar__week-days calendar__days">Sun</span>
+        </section>
+        <section id="calendar__numbers" class="calendar__month-days"></section>
+    </main>
+</body>
+</html>

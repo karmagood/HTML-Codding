@@ -1,0 +1,68 @@
+.Article {
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  margin-top: 10px;
+  padding: 10px;
+}
+.Article__user-pic {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+}
+.Article__user-info {
+  display: inline-block;
+  position: relative;
+  top: -8px;
+}
+.Article__description {
+  margin: 5px 0 5px 0;
+}
+.Article__link,
+.Article__user-name {
+  margin: 0;
+  font-weight: bold;
+  color: #365899;
+}
+.Article__link:hover,
+.Article__user-name:hover {
+  text-decoration: underline;
+}
+.Article__time {
+  color: #90949C;
+}
+.Article__description {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+}
+.Article__file {
+  max-width: 100%;
+  max-height: 100%;
+}
+.Article__reaction-on {
+  margin-top: 5px;
+}
+.Article__likes-etc {
+  padding-right: 10px;
+  color: #616770;
+}
+.Article__icon {
+  height: 18px;
+  width: 18px;
+  margin-top: -3px;
+  margin-right: 3px;
+  display: inline-block;
+  background-image: url("../images/icon-sprite9.png");
+  vertical-align: middle;
+}
+.Icon_like {
+  background-position: 30px 204px;
+}
+.Icon_comment {
+  background-position: 30px 242px;
+}
+.Icon_share {
+  background-position: 0 109px;
+}

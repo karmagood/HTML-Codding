@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INNA - YouTube</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main-header.css">
+    <link rel="stylesheet" href="styles/guide.css">
+    <link rel="stylesheet" href="styles/button-follow.css">
+    <link rel="stylesheet" href="styles/search.css">
+    <link rel="stylesheet" href="styles/app-model.css">
+    <link rel="stylesheet" href="styles/icon.css">
+    <link rel="stylesheet" href="styles/best_on_youtube.css">
+    <link rel="stylesheet" href="styles/channel-content.css">
+    <link rel="stylesheet" href="styles/videos.css">
+</head>
+<body>
+<header class="main-header">
+    <aside class="main-header_left-aside">
+        <i class="main-header__details material-icons">menu</i>
+        <img class="main-header__logo" src="images/youtube-logo.jpg" alt="youtube logo" width="80px" height="18px">
+        <sup class="main-header__ua">UA</sup>
+    </aside>
+    <form action="" class="search">
+        <input class="search__write" type="text" value="Пошук">
+        <i class="material-icons search__keyboard">keyboard</i>
+        <button class="search__button">
+            <i class="material-icons search__img-search">search</i>
+        </button>
+    </form>
+    <aside class="main-header_right-aside">
+        <i class="material-icons main-header_right-icon">file_upload</i>
+        <i class="material-icons main-header_right-icon">apps</i>
+        <i class="material-icons main-header_right-icon">more_vert</i>
+        <a href="/" class="main-header__signin">УВІЙТИ</a>
+    </aside>
+</header>
+
+
+<aside class="guide">
+    <nav class="guide__data-model">
+        {{#data-model}}
+            <a href="/" class="guide__chapter {{class-name}}">
+                {{name}}
+            </a>
+        {{/data-model}}
+    </nav>
+    <section class="best-on-youtube">
+        <h4 class="best-on-youtube__title">Найкраще на youtube</h4>
+        {{#best-on-youtube}}
+            <a href="/" class="guide__chapter best-on-youtube__icon {{class-name}}">
+                {{name}}
+            </a>
+        {{/best-on-youtube}}
+    </section>
+    <div class="guide__see-chanel">
+        <a href="/" class="guide__chapter icon__see-chanel">
+            Переглянути канали
+        </a>
+    </div>
+    <div class="guide__signin-for-chanel">
+        <p>Увійдіть, щоб переглянути свої канали та рекомендації</p>
+        <a href="/" class="guide__signin-link">Увійти</a>
+    </div>
+    <nav class="guide__settings">
+        {{#settings-model}}
+            <a href="/" class="guide__chapter {{class-name}}">
+                {{name}}
+            </a>
+        {{/settings-model}}
+    </nav>
+
+    <footer class="app-model">
+        {{#application-model}}
+            <a href="/" class="app-model__link">{{name}}</a>
+        {{/application-model}}
+        <br><br>
+        <p>© 2017 YouTube, LLC</p>
+    </footer>
+</aside>
+
+<main class="channel">
+    <section class="channel__background">
+        <nav class="channel-links">
+            <a href="" class="channel-links__site">INNA's Website</a>
+            <a href="" class="channel-links__elem channel-links__facebook">INNA's Facebook</a>
+            <a href="" class="channel-links__elem channel-links__insta">INNA's Instagram</a>
+            <a href="" class="channel-links__elem channel-links__twit">INNA's Twitter</a>
+            <a href="" class="channel-links__elem channel-links__itunes">INNA's iTunes</a>
+        </nav>
+    </section>
+    <section class="channel__header">
+        <div class="channel__header-left">
+            <img src="https://yt3.ggpht.com/-3KOOl-4KIq4/AAAAAAAAAAI/AAAAAAAAAAA/_NUtebsNGvw/s288-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                 width="80px" height="80px" alt="channel profile image" class="channel__img">
+            <div>
+                <h1 class="channel__name">INNA</h1>
+                <p class="channel__followers">3 480 309 користувачів підписалися</p>
+            </div>
+        </div>
+        <button class="button-follow">Підписатися</button>
+    </section>
+    <nav class="channel__nav">
+        <button class="channel__nav-elem channel_nav-selected">головна</button>
+        <button class="channel__nav-elem">відео</button>
+        <button class="channel__nav-elem">списки відтворення</button>
+        <button class="channel__nav-elem">спільнота</button>
+        <button class="channel__nav-elem">канали</button>
+        <button class="channel__nav-elem">про канал</button>
+        <button class="channel__nav-elem channel__nav-search">пошук</button>
+    </nav>
+    <section class="channel__content">
+        <section class="channel-main-video">
+            <iframe width="424" height="238" src="https://www.youtube.com/embed/OfS1jFck8YQ" frameborder="0"
+                    gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            <article class="channel-main-video__info">
+                <h2 class="videos__name">INNA - Nirvana | Official Music Video </h2>
+                <p class="videos__views">11 240 226 переглядів</p>
+                <time datetime="2017-11-28" class="videos__time">2 тижні тому</time>
+                <p class="channel-main-video__description">Official music video by INNA performing the single "Nirvana".
+                    (C) & (P) 2017 Global Records</p>
+                <p class="channel-main-video__concerts">Concerts: booking@innaofficial.com
+                    Licensing@globalrecords.com </p>
+                <a href="" class="channel-main-video__more">докладніше</a>
+            </article>
+        </section>
+
+        <aside class="featured-channels">
+            {{#featured-channels}}
+                <h2 class="featured-channels__title">{{name}}</h2>
+                <div class="featured-channels__info">
+                    {{#data}}
+                        <h3 class="featured-channels__name">{{channel-name}}</h3>
+                        <button class="featured-channels__follow">підписатися</button>
+                    {{/data}}
+                </div>
+            {{/featured-channels}}
+        </aside>
+        {{#channel-videos}}
+            <section class="channel-videos">
+                <header class="channel-videos__header">
+                    <h2 class="channel-videos__name">{{name}}</h2>
+                    <a href="" class="channel-videos__play-all">Відтворити все</a>
+                </header>
+                <div>
+                    {{#videos}}
+                        <article class="videos">
+                            <img src="{{url}}" alt="video" width="210px">
+                            <h3 class="videos__name"><a class="video__name_link" href="video-page">{{video-name}}</a>
+                            </h3>
+                            <aside class="videos__details">
+                                <span class="videos__views">{{views}} переглядів</span>
+                                <time class="videos__time" datetime="{{datetime}}">{{time}}</time>
+                            </aside>
+                        </article>
+                    {{/videos}}
+                </div>
+            </section>
+        {{/channel-videos}}
+    </section>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+.Languages {
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.Languages__item {
+  color: #365899;
+  font-size: 12px;
+}
+.Languages__item.active {
+  color: #616770;
+}

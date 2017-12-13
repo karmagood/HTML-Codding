@@ -1,0 +1,67 @@
+.video-info {
+  //background-color: white;
+  width: 100%;
+  line-height: 45px;
+
+  &__button {
+    width: 75px;
+    height: 25px;
+    border: none;
+    margin-right: 7px;
+    color: #8b898b;
+    transition: transform 0.4s ease;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+    &:active {
+      transform: scale(1.4);
+      //box-shadow: inset 0 0 20px rgba(250, 0, 0, 0.5);
+    }
+
+    &_like {
+      width: 62px;
+      background: url("../images/like.svg") no-repeat;
+      text-align: right;
+    }
+
+    &_dislike {
+      background: url("../images/dislike.svg") no-repeat;
+      text-align: right;
+      width: 62px;
+      &:active {
+      }
+    }
+
+    &_share {
+      background: url("../images/share.svg") no-repeat;
+      text-align: right;
+      width: 69px;
+    }
+
+    &_add {
+      background: url("../images/add.svg") no-repeat;
+      color: transparent;
+      width: 25px;
+    }
+
+    &_more {
+      background: url("../images/more.svg") no-repeat;
+      color: transparent;
+      width: 25px;
+    }
+  }
+
+  &__option {
+    float: right;
+    margin-right: 13px;
+  }
+  &__views {
+    color: #8b898b;
+  }
+  &__border-bottom {
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+    width: 96.2%;
+  }
+}

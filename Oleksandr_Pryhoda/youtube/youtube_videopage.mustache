@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style_videopage/layout.css">
+    <link rel="stylesheet" href="style/style_videopage/header.css">
+    <link rel="stylesheet" href="style/style_videopage/video.css">
+    <link rel="stylesheet" href="style/style_videopage/sidebar_.css">
+    <link rel="stylesheet" href="style/style_videopage/main-video.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <title>Youtube</title>
+</head>
+<body class="layout layout_debug-mode">
+<header class="layout__header header">
+    <button class="header__burger_menu"><i class="material-icons">menu</i></button>
+    <div class="header__logo">
+        <a href="" class="header__logo">
+            <img class="header__logo-img" src="images/youtube_logo.png" alt="">
+            <sup class="header__logo-sup">UA</sup>
+        </a>
+    </div>
+    <div class="header__search">
+        <input class="header__search-input" type="text" placeholder="Пошук">
+        <i class="material-icons header__search-keyboard">keyboard</i>
+        <button class="header__search-button"><i class="material-icons ">search</i></button>
+    </div>
+    <div class="header__options">
+        <button class="header__options-icon"><i class="material-icons">file_upload</i></button>
+        <button class="header__options-icon"><i class="material-icons">apps</i></button>
+        <button class="header__options-icon"><i class="material-icons">notifications</i></button>
+        <a href="" class="header__options-img"><img src="images/fb_profile_image.jpg"></a>
+    </div>
+</header>
+    <aside class="layout__sidebar sidebar">
+        <section class="sidebar__text">
+            <p class="sidebar__text-1">Наступне</p>
+            <p class="sidebar__text-2">Автоматичне відтворення</p>
+            <button class="sidebar__text-button"></button>
+        </section>
+        {{#recommendation-chapters}}
+        <section class="sidebar__video">
+            <article class="video">
+                <img class="video__cover" src="images/motivation.jpg" alt="" title="">
+                <div class="video__description">
+                    <h2 class="video__title">Best Motivation</h2>
+                    <aside>
+                        <h6 class="video__channel-name">Black Johns</h6>
+                        <p class="video__view-count">25 млн переглядів •</p>
+                    </aside>
+                </div>
+            </article>
+            <div class="sidebar__first-video"></div>
+            {{#video-list}}
+            <article class="video">
+                <img class="video__cover" src="{{image-url}}" alt="" title="">
+                <div class="video__description">
+                    <h2 class="video__title">{{title}}</h2>
+                    <aside>
+                        <h6 class="video__channel-name">{{author}}</h6>
+                        <p class="video__view-count">{{view-count}} переглядів •</p>
+                    </aside>
+                </div>
+            </article>
+            {{/video-list}}
+        </section>
+        {{/recommendation-chapters}}
+        <button class="sidebar__show-more-button" type="submit" value="show more">Показати більше</button>
+    </aside>
+    <main class="layout__main">
+        <section class="main-video">
+            <div class="main-video__container">
+                <iframe width="1280" height="720" src="https://www.youtube.com/embed/_oO-LFVMvJc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+            <h5 class="main-video__title">AWOLNATION - Jailbreak (AUDIO + LYRICS)</h5>
+            <section class="main-video__actions">
+                <p class="main-video__actions-views">36 823 переглядів</p>
+                <div class="main-video__actions-icons">
+                    <a href=""><i class="material-icons main-video__actions-icon">thumb_up</i> 85</a>
+                    <a href=""><i class="material-icons main-video__actions-icon">thumb_down</i> 36</a>
+                    <a href=""><i class="material-icons main-video__actions-icon">reply</i> ПОДІЛИТИСЯ</a>
+                    <a href=""><i class="material-icons main-video__actions-icon">playlist_add</i></a>
+                    <a href=""><i class="material-icons main-video__actions-icon">more_horiz</i></a>
+                </div>
+            </section>
+            <div class="main-video__border"></div>
+            <section class="main-video__author">
+                <img class="main-video__author-image" src="images/jailbreak.jpg" alt="">
+                <div class="main-video__author-title">
+                    <h6>Best Music</h6>
+                    <p>Опубліковано 18 трав. 2015 р.</p>
+                </div>
+                <button class="main-video__author-subscribe-button">Підписатися 745</button>
+                <section class="main-video__author-description">
+                    <p>
+                        Lyric video AWOLNATION - Jailbreak<br>
+                        All rights served to AWOLNATION.<br><br>
+                        REQUESTS FOR LYRIC VIDEOS? COMMENT BELOW!
+                    </p>
+                    <p class="main-video__author-category">Категорія <span>Музика</span></p>
+                    <p class="main-video__author-license">Ліцензія <span>Стандартна ліцензія YouTube</span></p>
+                    <a class="main-video__author-show-less" href="">ПОКАЗАТИ МЕНШЕ</a>
+                </section>
+            </section>
+            <div class="main-video__border"></div>
+            <section class="main-video__comments-number">
+                <p>3 коментарі</p>
+                <a href=""><i class="material-icons main-video__actions-icon">sort</i>ПОРЯДОК СОРТУВАННЯ</a>
+            </section>
+            <section class="main-video__add-comment">
+                <img class="main-video__author-image" src="images/fb_profile_image.jpg" alt="">
+                <input type="text" placeholder="Додайте коментар для всіх...">
+                <section class="main-video__add-comment-buttons">
+                    <button class="main-video__add-comment-button1">Cancel</button>
+                    <button class="main-video__add-comment-button2">Коментувати</button>
+                </section>
+            </section>
+            <section class="main-video__comments">
+                <img class="main-video__author-image" src="images/fb_profile_image.jpg" alt="">
+                <section class="main-video__comments-details">
+                    <section class="main-video__comments-title">
+                        <h6>Oleksandr Pryhoda</h6>
+                        <time>2 роки тому</time>
+                    </section>
+                    <p class="main-video__comments-text">
+                        Sail is one of the best songs ever made, but I am starting to hope Awolnation would
+                        have never made it. Every time people talk about Awolnation its Sail, Sail, Sail...
+                        They are so much more, so clever. Jailbreak is in my TOP3 in which refuse to include
+                        Sail. There is something really comforting in the melody, I can put this song in a
+                        loop on a 2 hour drive just let my thoughts wander. From "Run" I would thou say
+                        Hollow Moon is Awolnation song as it purest.﻿
+                    </p>
+                    <section class="main-video__comments-actions">
+                        <a href="">Відповісти</a>
+                        <p>35</p>
+                        <a href=""><i class="material-icons ">thumb_up</i></a>
+                        <a href=""><i class="material-icons main-video__actions-icon">thumb_down</i></a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
