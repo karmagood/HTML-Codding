@@ -7,8 +7,9 @@
     float: left;
     width: 240px;
     height: 800px;
-    background-color: rgb(35,35,35);
+    background-color: #1b1b1b;
     overflow: auto;
+    /*margin-top: 1px;*/
 }
 
 .user-menu__options {
@@ -28,7 +29,7 @@
 }
 
 .home-trending-history:hover {
-    background-color: rgba(136,136,136,1);
+    background-color: #888888;
 }
 
 .home-trending-history__content {
@@ -98,7 +99,7 @@
 
 .info__content {
     font-size: 12px;
-    color: hsl(0, 0%, 53.3%);
+    color: #888888;
 }
 
 .user-menu__icons {
