@@ -1,0 +1,121 @@
+:root {
+    --user-menu-padding-left: 24px;
+}
+
+.user-menu {
+    position: fixed;
+    float: left;
+    width: 240px;
+    height: 100%;
+    background-color: #1b1b1b;
+    overflow: auto;
+    &__options {
+        height: 135px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid gray;
+    }
+    &__best-of-youtube {
+        height: 346px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid gray;
+    }
+    &__browse-channels {
+        height: 45px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-bottom: 1px solid gray;
+        display: block;
+    }
+    &__sign-in {
+        height: 130px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid gray;
+        display: block;
+        color: whitesmoke;
+    }
+    &__settings-help-feedback {
+        height: 135px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        border-bottom: 1px solid gray;
+    }
+    &__info {
+        line-height: 25px;
+        padding-top: 20px;
+        padding-left: var(--user-menu-padding-left);
+        width: 133px;
+    }
+    &__icons {
+        height: 25px;
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+    &__info-2 {
+        margin-top: -10px;
+        line-height: 25px;
+        padding-top: 20px;
+        padding-left: var(--user-menu-padding-left);
+        width: 113px;
+    }
+    &__copyright {
+        margin-top: 5px;
+        line-height: 25px;
+        padding-top: 20px;
+        padding-left: var(--user-menu-padding-left);
+        width: 150px;
+        text-decoration: none;
+        height: 120px;
+        color: whitesmoke;
+        font-size: 12px;
+    }
+}
+
+.home-trending-history {
+    line-height: 30px;
+    font-size: 15px;
+    color: whitesmoke;
+    text-decoration: none;
+    display: block;
+    padding: 7px var(--user-menu-padding-left);
+    &:hover {
+        background-color: #888888;
+    }
+    &__content {
+        vertical-align: middle;
+    }
+}
+
+.best-of-youtube {
+    &__title {
+        font-size: 16px;
+        color: whitesmoke;
+        padding: 0 var(--user-menu-padding-left);
+    }
+}
+
+.sign-in {
+    &__content {
+        line-height: 25px;
+        font-size: 16px;
+        text-decoration: none;
+        display: block;
+        padding: 0 var(--user-menu-padding-left);
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        color: whitesmoke;
+        font-size: 16px;
+        margin-left: 18px;
+    }
+}
+
+.info {
+    text-decoration: none;
+    &__content {
+        font-size: 12px;
+        color: #888888;
+    }
+}
