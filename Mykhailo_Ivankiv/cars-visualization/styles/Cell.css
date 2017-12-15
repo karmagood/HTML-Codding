@@ -1,0 +1,17 @@
+.Cell {}
+
+.Cell_boolean_true,
+.Cell_boolean_false {
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 100%;
+}
+
+.Cell_boolean_true  { background: #3498db;}
+.Cell_boolean_false {background: #ecf0f1;}
+
+.Cell_currency {
+    font-family: PT Sans, sans-serif;
+    font-size: 13px;
+    margin-left: 10px;
+}
