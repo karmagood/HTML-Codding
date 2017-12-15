@@ -30,6 +30,6 @@
     "ramda": "^0.25.0"
   },
   "devDependencies": {
-    "webpack": "^3.8.1"
+    "webpack": "^3.9.1"
   }
 }

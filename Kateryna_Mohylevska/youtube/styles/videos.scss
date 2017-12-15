@@ -16,6 +16,7 @@
   &__views{
     color: #8b898b;
     font-size: 13px;
+    margin: 0;
   }
   &__views:after{
     content: "•";
@@ -27,5 +28,7 @@
 
   &__name{
     font-size: 14px;
+    width: 210px;
   }
+
 }
