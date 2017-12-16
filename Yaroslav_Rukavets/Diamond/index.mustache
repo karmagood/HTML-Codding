@@ -6,56 +6,103 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
-        <link rel="stylesheet" href="style/layout.css">
         <link rel="stylesheet" href="style/common.css">
+        <link rel="stylesheet" href="style/Header.css">
+        <link rel="stylesheet" href="style/yLayout.css">
+        <link rel="stylesheet" href="style/Search.css">
+        <link rel="stylesheet" href="style/Logo.css">
+        <link rel="stylesheet" href="style/Log-in.css">
         <link rel="stylesheet" href="style/Promotion-text.css">
         <link rel="stylesheet" href="style/Merchandise-picture.css">
         <link rel="stylesheet" href="style/Product-catalog.css">
         <link rel="stylesheet" href="style/Grid/960_12.css">
+        <link rel="stylesheet" href="style/12_col.css">
     </head>
     <body class="Layout">
-        <header class="Layout__header"></header>
+        <header class="Layout__header">
+            <section class="Header">
+                <nav class="Header__top">
+                    <p class="Header__top-navigation">United Stats</p>
+                    <p class="Header__top-navigation">Find a Store</p>
+                    <p class="Header__top-navigation">Contact us</p>
+                </nav>
+                <section class="Header__bottom">
+                    <div class="Header__bottom-left">
+                        <img class="Header__menu-link"
+                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png">
+                        <p class="Header__menu-name">Extra</p>
+                        <form class="Search" action="">
+                            <img class="Search__icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/105498-200.png"/>
+                            <input class="Search__input" type="search" placeholder="Search">
+                        </form>
+                    </div>
+                    <div class="Header__bottom-center">
+                        <div class="Logo">
+                            <img class="Logo__image" src="../images/Diamond-logo.png">
+                            <p class="Logo__name">DIAMOND</p>
+                            <p class="Logo__description">--fashion--</p>
+                        </div>
+                    </div>
+                    <div class="Header__bottom-right">
+                        <div class="Log-in">
+                            <img class="Log-in__image Log-in__image_account" src="images/icons8-customer-50.png" alt="">
+                            <p class="Log-in__title">Account</p>
+                        </div>
+                        <div class="Log-in">
+                            <img class="Log-in__image Log-in__image_cart" src="https://png.icons8.com/material/540/add-shopping-cart.png" alt="">
+                            <p class="Log-in__title">Cart</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </header>
         <main class="Layout__payload">
             <article class="Hero-article Promotion-text">
-                <p class="Promotion-text__heading">PEOPLE READY-TO-HELP</p>
-                <p class="Main-title">Provides All Essential Accessory Tips</p>
-                <a class="Promotion-text_link" href="#">Discover  the  meshe  shows</a>
+                <div class="Promotion-text__wrapper">
+                    <p class="Promotion-text__heading">PEOPLE READY-TO-HELP</p>
+                    <p class="Main-title">Provides All Essential Accessory Tips</p>
+                    <a class="Promotion-text__link" href="#">Discover  the  meshe  shows</a>
+                </div>
             </article>
-            <article class="Hero-article Product-catalog">
-                <p class="Main-title">Our accessory for ladies</p>
-                <p class="Additional-title">Creating Remarkable ladies bags Prints in 2 Colors Combination</p>
-                <section class="Product-catalog__section Grid-12__position_prefix-1 Grid-12__row-columns-2">
-                    <img class="Product-catalog__picture_1 Merchandise-picture" src="images/bag1.jpg" alt="">
-                    <p class="Product-catalog__section-name">Snake bag</p>
-                </section>
-                <section class="Product-catalog__section Grid-12__position_prefix-1 Grid-12__row-columns-2">
-                    <img class="Product-catalog__picture_2 Merchandise-picture" src="images/bag2.jpg" alt="">
-                    <p class="Product-catalog__section-name">Woman bag</p>
-                </section>
-                <section class="Product-catalog__section Grid-12__position_prefix-1">
-                    <img class="Product-catalog__picture_3 Merchandise-picture" src="images/bag3.jpg" alt="">
-                    <p class="Product-catalog__section-name">Fashionest bag</p>
-                </section>
-                <section class="Product-catalog__section Grid-12__position_prefix-1">
-                    <img class="Product-catalog__picture_4 Merchandise-picture" src="images/bag4.jpg" alt="">
-                    <p class="Product-catalog__section-name">Black stylish bag</p>
-                </section>
-                <section class="Product-catalog__section">
-                    <img class="Product-catalog__picture_5 Merchandise-picture" src="images/Futures-shoes.jpg" alt="">
-                    <p class="Product-catalog__section-name">Futures shoes</p>
-                </section>
-                <section class="Product-catalog__section">
-                    <img class="Product-catalog__picture_6 Merchandise-picture" src="images/Nice-shoes.jpg" alt="">
-                    <p class="Product-catalog__section-name">Nice Shoes</p>
-                </section>
-                <section class="Product-catalog__section">
-                    <img class="Product-catalog__picture_7 Merchandise-picture" src="images/Fashionest-sandals.jpg" alt="">
-                    <p class="Product-catalog__section-name">Fashionest sandals</p>
-                </section>
-                <section class="Product-catalog__section">
-                    <img class="Product-catalog__picture_8 Merchandise-picture" src="images/Stylish-sandals.jpg" alt="">
-                    <p class="Product-catalog__section-name">stylish sandals</p>
-                </section>
+            <article class="Product-catalog">
+                <p class="Main-title Grid__cell_6 Grid__prefix_3">Our accessory for ladies</p>
+                <p class="Additional-title Grid__cell_8 Grid__prefix_2">Creating Remarkable ladies bags Prints in 2 Colors Combination</p>
+                <div class="Product-catalog__top">
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_1 Merchandise-picture" src="images/bag1.jpg" alt="">
+                        <p class="Product-catalog__section-name">Snake bag</p>
+                    </section>
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_2 Merchandise-picture" src="images/bag2.jpg" alt="">
+                        <p class="Product-catalog__section-name">Woman bag</p>
+                    </section>
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_3 Merchandise-picture" src="images/bag3.jpg" alt="">
+                        <p class="Product-catalog__section-name">Fashionest bag</p>
+                    </section>
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_4 Merchandise-picture" src="images/bag4.jpg" alt="">
+                        <p class="Product-catalog__section-name">Black stylish bag</p>
+                    </section>
+                </div>
+                <div class="Product-catalog__bottom">
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_5 Merchandise-picture" src="images/Futures-shoes.jpg" alt="">
+                        <p class="Product-catalog__section-name">Futures shoes</p>
+                    </section>
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_6 Merchandise-picture" src="images/Nice-shoes.jpg" alt="">
+                        <p class="Product-catalog__section-name">Nice Shoes</p>
+                    </section>
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_7 Merchandise-picture" src="images/Fashionest-sandals.jpg" alt="">
+                        <p class="Product-catalog__section-name">Fashionest sandals</p>
+                    </section>
+                    <section class="Product-catalog__section Grid__cell_3">
+                        <img class="Product-catalog__picture_8 Merchandise-picture" src="images/Stylish-sandals.jpg" alt="">
+                        <p class="Product-catalog__section-name">stylish sandals</p>
+                    </section>
+                </div>
             </article>
             <article class="Hero-article Interesting-things">
                 <p class=" Interesting-things__rubric-name">STYLERS PHILOSOPHY</p>

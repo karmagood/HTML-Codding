@@ -1,11 +1,23 @@
 .Product-catalog {
-  background-image: url("../images/12_col.gif");
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  /*background-image: url("../images/12_col.gif");*/
+
+  &__top, &__bottom {
+    display: flex;
+    justify-content: space-around;
+  }
 
   &__section {
-    display: inline-block;
+    height: auto;
   }
 
   &__section-name {
     font-family: GillSans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    text-align: left;
   }
+
 }
