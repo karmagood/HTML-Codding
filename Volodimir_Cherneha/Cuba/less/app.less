@@ -1,0 +1,117 @@
+@font-face {
+    font-family:Avenir; /* Имя шрифта */
+    src: url(../fonts/AvenirNext-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+body{
+    margin:0 0;
+    font-family: Avenir;
+    
+}
+.wrapper{
+    width: 970px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+
+
+.Section{
+    text-align: center;
+    &__img{
+        width: 570px;
+        z-index: -1;
+        border-radius: 5px;
+        &_position{
+            &_right{
+                position: relative;
+                left: 412px;
+                margin-top: -348px;
+            }
+            &_left{
+                position: relative;
+                margin-top: -309px;
+                margin-bottom: 50px;
+               
+            }
+        }
+    }
+        &__block-article{
+            width: 470px;
+            padding: 40px 40px 40px 40px;
+            text-align: left;
+            box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+            background-color: #fff;
+                &_left{
+                position: relative;
+                    margin-top: 100px;
+                }
+                &_right{
+                    position: relative;
+                    left: 433px;
+                    margin-top: 100px;
+                }
+                &_caption{
+                    font-family: Georgia;
+                    font-size: 24px;
+                    line-height: 1.04;
+                    text-align: left;
+                    color: #4e5665;
+                    margin:5px;
+                }
+                &_description{
+                    font-size: 16px;
+                    line-height: 1.75;
+                    color: #505050;
+                }
+            
+                &__vacation{
+                    margin-top: 80px;
+                }
+                &__about{
+                    margin-top: 80px;
+                }
+            
+                &__caption{
+                font-size: 32px;
+                line-height: 1.19;
+                color: #4e5665;
+                margin-bottom: 10px;
+                }
+                &__description{
+                    font-size: 16px;
+                    line-height: 1.75;
+                    color: #505050;
+                    text-align: left;
+                    letter-spacing: -0.4px;
+                }
+             }
+            &__atribute{
+            
+            margin-bottom: 50px;
+            &_hover{
+                font-size: 16px;
+                margin-top: -25px;
+                font-weight: 600;
+                line-height: 1.75;
+                color: #ecb84c;
+                }
+            
+              &_image{
+              position: relative;
+             left: -130px;
+            }  
+        }
+    }
+
+.Link{
+    &__read_more{
+    
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.75;
+        color: #ecb84c;
+    }
+}
+
