@@ -6,27 +6,30 @@
     <title>Footer</title>
     <link rel="stylesheet" href="style/Footer.css">
     <link rel="stylesheet" href="style/Footer-fast-access-menu.css">
-    <link rel="stylesheet" href="style/Grid/960_12.css">
+    <link rel="stylesheet" href="style/12_col.css">
     <link rel="stylesheet" href="style/Image-social-networks.css">
+    <link rel="stylesheet" href="style/Label.css">
 
 </head>
 <body>
     <footer class="Footer">
-        <section class="Footer__subscribe-menu">
-                <p class="Footer__subscribe-menu_title">Let’s keep the conversation going</p>
-                <p class="Footer Footer__subscribe-menu_subscribe-description">Receive our newsletter and discover our stories, collections, and surprises.</p>
-            <form class="Footer__subscribe-menu_subscribe-email-place">
-                <input class="Footer__subscribe-menu_email" type="email" placeholder="Email">
-                <button class="Footer__subscribe-menu_subscribe-button">Subscribe</button>
-            </form>
-            <p class="Footer__subscribe-menu_user-agreement">By subscribing to our newsletter, you agree that your data will be processed in compliance with our General
+        <section class="Footer__subscribe-menu ">
+                <p class="Footer__subscribe-menu_title Grid__cell_6 Grid__prefix_1">Let’s keep the conversation going</p>
+            <div class="Email-wrapper">
+                <p class="Footer Footer__subscribe-menu_subscribe-description Grid__cell_6 Grid__prefix_1">Receive our newsletter and discover our stories, collections, and surprises.</p>
+                <form class="Footer__subscribe-menu_subscribe-email-place Grid__cell_5 ">
+                    <input class="Footer__subscribe-menu_email Grid__cell_6 " type="email" placeholder="Email">
+                    <button class="Footer__subscribe-menu_subscribe-button Grid__cell_4">Subscribe</button>
+                </form>
+            </div>
+            <p class="Footer__subscribe-menu_user-agreement Grid__cell_11 Grid__prefix_1">By subscribing to our newsletter, you agree that your data will be processed in compliance with our General
                 <a class="Footer__subscribe-menu_user-agreement_privacy-policy" href="#">Terms and Conditions of Use</a>
                 and our
                 <a class="Footer__subscribe-menu_user-agreement_privacy-policy" href="#">PrivacyPolicy</a>
             </p>
         </section>
-
-        <section class="Footer Footer-fast-access-menu">
+        <div class="Fast-access-wrapper">
+        <section class="Footer-fast-access-menu Grid__cell_3">
             <p class="Footer-fast-access-menu_title">Services</p>
             <a class="Footer-fast-access-menu_link" href="#">Contact Us</a>
             <a class="Footer-fast-access-menu_link" href="#">FAQ</a>
@@ -34,7 +37,7 @@
             <a class="Footer-fast-access-menu_link" href="#">Gifting</a>
             <a class="Footer-fast-access-menu_link" href="#">Made to Measure</a>
         </section>
-        <section class="Footer Footer-fast-access-menu">
+        <section class="Footer-fast-access-menu Grid__cell_3">
             <p class="Footer-fast-access-menu_title">Orders</p>
             <a class="Footer-fast-access-menu_link" href="#">Payment</a>
             <a class="Footer-fast-access-menu_link" href="#">Shipping</a>
@@ -42,7 +45,7 @@
             <a class="Footer-fast-access-menu_link" href="#">Track orders</a>
             <a class="Footer-fast-access-menu_link" href="#">Exchange & returns</a>
         </section>
-        <section class="Footer Footer-fast-access-menu">
+        <section class="Footer-fast-access-menu Grid__cell_3">
             <p class="Footer-fast-access-menu_title">Diamond House</p>
             <a class="Footer-fast-access-menu_link" href="#">The Hermès Foundation</a>
             <a class="Footer-fast-access-menu_link" href="#">Careers</a>
@@ -50,7 +53,7 @@
             <a class="Footer-fast-access-menu_link" href="#">Finance</a>
             <a class="Footer-fast-access-menu_link" href="#">Our partner brands</a>
         </section>
-        <section class="Footer Footer-fast-access-menu">
+        <section class="Footer-fast-access-menu Grid__cell_3">
             <p class="Footer-fast-access-menu_title">Legal</p>
             <a class="Footer-fast-access-menu_link" href="#">Terms and conditions</a>
             <a class="Footer-fast-access-menu_link" href="#">Privacy & cookies</a>
@@ -59,16 +62,22 @@
             <a class="Footer-fast-access-menu_link" href="#">Legal issues</a>
             <a class="Footer-fast-access-menu_link" href="#">Accessibility</a>
         </section>
+        </div>
         <div class="dividing-line"></div>
-        <section class="Footer__social-networks">
-            <span class="Image_gmail Image-social-networks"></span>
-            <span class="Image_twitter Image-social-networks"></span>
-            <span class="Image_facebook Image-social-networks"></span>
-            <span class="Image_instagram Image-social-networks"></span>
+        <section class="Footer__social-networks Grid__cell_3">
+            <span class="Image_gmail Image-social-networks Grid__cell_2"></span>
+            <span class="Image_twitter Image-social-networks Grid__cell_2"></span>
+            <span class="Image_facebook Image-social-networks Grid__cell_2"></span>
+            <span class="Image_instagram Image-social-networks Grid__cell_2"></span>
         </section>
-        <section class="Footer__copyright">
+        <section class="Footer__copyright Grid__cell_4 Grid__prefix_5">
             Morocco   © Copyright Uixone, Sarl  2017
         </section>
+        <div class="Label Footer-logo  Grid__cell_2 Grid__prefix_5">
+            <img class="Label__logo" src="../images/Diamond-logo.png">
+            <p class="Label__name">DIAMOND</p>
+            <p class="Label__description">--fashion--</p>
+        </div>
     </footer>
 </body>
 </html>
