@@ -10,7 +10,18 @@
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    
+    &::after{
+        position: absolute;
+        left: 5px;
+        right: 5px;
+        bottom: 5px;
+        top: 5px;
+        border-left: 2px solid red;
+        border-right: 2px solid red;
+        border-top:2px solid red;
+        content: '';
+        z-index: 100;
+    }
     &__caption{
         font-size:200px;
         margin: auto;
@@ -22,5 +33,23 @@
         font-size:24px; 
         text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
         margin: 24px auto;
+        &:before{
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: ~"calc( 50% - 199px)";
+            right: 0;
+            border-top: 1px solid red;
+
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: ~"calc( 50% - 100px)";
+            left: 0;
+            border-top: 1px solid red;
+
+        }
     }
 }
