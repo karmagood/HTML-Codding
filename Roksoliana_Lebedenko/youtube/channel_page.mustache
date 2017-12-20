@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="styles/header-layout__google-options.css">
     <link rel="stylesheet" href="styles/header-layout__logo.css">
     <link rel="stylesheet" href="styles/header-layout__search.css">
-    <link rel="stylesheet" href="styles/channel-page/main.css">
+    <link rel="stylesheet" href="styles/channel-page/main-layout-channel.css">
     <link rel="stylesheet" href="styles/channel-page/main__header.css">
     <link rel="stylesheet" href="styles/aside-guide-content__block.css">
     <link rel="stylesheet" href="styles/aside__block.css">
     <link rel="stylesheet" href="styles/aside__footer.css">
+    <link rel="stylesheet" href="styles/channel-page/channel_navigation.css">
+    <link rel="stylesheet" href="styles/video-block__main-content.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,13 +41,67 @@
         <button class="header-layout__google-options_img"></button>
     </div>
 </header>
-<main class="main">
-    <header class="main__header">
-        <img src="https://yt3.ggpht.com/njLcfrobcky9s9mJ-BpfWzzzFPiMcoGkvcZ7Gt26I-iJ2a1XKCLdgdn_IxelT2dxMYQvaN4DOJY=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no"
-             alt="">
+<main class="main-layout-channel">
+    <header class="main-layout-channel__header">
+        <img src="https://yt3.ggpht.com/Gab059EY_ZdA-qldmZ7wnDn0YXsNtn5TGBLfnBQZPmRUJLDNEB0i5360ymAnXH5maFU4PSiDvA=w2560-fcrop64=1,00005a57ffffa5a8-nd-c0xffffffff-rj-k-no" alt="">
+        <div class="main-layout-channel__description">
+            <div class="main-layout-channel__description_title">
+                <img src="https://yt3.ggpht.com/-Yn_PpHByTN8/AAAAAAAAAAI/AAAAAAAAAAA/p7Om3nMN3Bk/s288-c-k-no-mo-rj-c0xffffff/photo.jpg" alt="">
+                <div class="main-layout-channel__description_subscribers">
+                    <h1>Ed Sheeran</h1>
+                    <span>24 763 087 користувачів підписалися</span>
+                </div>
+            </div>
+            <div class="main-layout-channel__button">
+                <button>
+                    <span>Підписатися</span>
+                    <span>24 тис.</span>
+                </button>
+            </div>
+        </div>
+        <section class="channel_navigation">
+            <button>Головна</button>
+            <button>Відео</button>
+            <button>Списки відтворення</button>
+            <button>Канали</button>
+            <button>Про канал</button>
+        </section>
     </header>
-    <main class="main__main"></main>
-    <aside class="main__aside"></aside>
+    <section class="main-layout-channel__newest-video">
+        <iframe width="424" height="238" src="https://www.youtube.com/embed/2Vv-BfVoq4g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        <div class="main-layout-channel__newest-video_info">
+            <h3>Ed Sheeran - Perfect (Official Music Video)</h3>
+            <span>336 350 771 перегляд <span class="main-layout-channel__newest-video_dot"></span> 1 місяць тому</span>
+            <span class="main-layout-channel__newest-video_emoji1">: <a href="">https://ad.gt/yt-perfect</a></span>
+            <span class="main-layout-channel__newest-video_emoji2">: <a href="">https://atlanti.cr/yt-album</a></span>
+            <span>Subscribe to Ed's channel: <a href="">http://bit.ly/SubscribeToEdSheeran</a></span>
+            <span>Follow Ed on...</span>
+            <span>Facebook: <a href="">http://www.facebook.com/EdSheeranMusic</a></span>
+            <span>Twitter: <a href="">http://twitter.com/edsheeran</a></span>
+            <span>Докладніше</span>
+        </div>
+    </section>
+    {{#video-block}}
+        <section class="main-layout-channel__video-block">
+            <article class="video-block">
+                <div class="video-block__main-content">
+                    {{#video-list}}
+                        <div class="video-block__video">
+                            <img class="video-block__cover-img" src="{{cover-image-url}}" alt="">
+                            <div class="video-block__description">
+                                <h3><a href="video_page">{{title}}</a></h3>
+                                <a href="">
+                                    <span>{{subtitle}}</span>
+                                    <span class="video-block__view-count">{{view-count}} млн перегляди</span>
+                                    <span>{{publication-date}}</span>
+                                </a>
+                            </div>
+                        </div>
+                    {{/video-list}}
+                </div>
+            </article>
+        </section>
+    {{/video-block}}
 </main>
 <aside class="aside-guide-content">
     {{#aside-content}}
