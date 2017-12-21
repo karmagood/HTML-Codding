@@ -101,6 +101,48 @@
       ]
     }
   ],
+  "aside-channel-content": [
+    {
+      "channels-block": [
+        {
+          "title": "Warner Music Group",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Gingerbread Man Record",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "TOPSIFY",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Atlantic Records",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Jess Glynne",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Rudimental",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Saint Raymond",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Foy Vance",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Passenger",
+          "cover-img": "../../images/hamburger_menu.svg"
+        }
+      ]
+    }
+  ],
   "video-block": [
     {
       "chapter-title": "Поп-музика",
