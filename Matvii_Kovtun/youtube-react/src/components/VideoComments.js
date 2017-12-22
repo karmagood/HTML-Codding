@@ -7,12 +7,11 @@ import data from '../data/comments.json';
 
 class VideoComments extends Component {
     render() {
-        return (
-            <div>
-                <VideoAddComment/>
-                {data.Comments.map(({userLogo, userName, publishDate, comment}) =>
-                    <VideoComment {...{userLogo, userName, publishDate, comment}}/>)}
-            </div>);
+        return (<div>
+            <VideoAddComment/>
+            {data.Comments.map(({userLogo, userName, publishDate, comment}) =>
+                <VideoComment {...{userLogo, userName, publishDate, comment}}/>)}
+        </div>);
     }
 }
 
