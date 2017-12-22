@@ -32,14 +32,13 @@ class VideoAddComment extends Component {
                         src="https://yt3.ggpht.com/-QrPinFwCTCM/AAAAAAAAAAI/AAAAAAAAAAA/rN5XuKqPQzo/s76-c-k-no-mo-rj-c0xffffff/photo.jpg"
                         alt="" className="video-add-comment__user-logo"/>
                     <textarea name="" id="" cols="30" rows="1"
-                              className="video-add-comment__comment-area">Write here</textarea>
+                              className="video-add-comment__comment-area" placeholder="Write here"></textarea>
                     <div className="video-add-comment__button-section">
                         <button className={this.classes.acceptButtonStyle.join(" ")}
                                 onClick={this.handleClick.bind(this)}>Publish comment
                         </button>
                         <button className="video-add-comment__cancel-comment">Cancel</button>
                     </div>
-
                 </div>
 
             </section>)
