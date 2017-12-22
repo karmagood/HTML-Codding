@@ -1,9 +1,16 @@
 .Promoarticle {
-  margin: 66px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  &__top, &__bottom {
+    display: flex;
+    justify-content: space-around;
+  }
 
   &__header {
     font-family: Baskerville, sans-serif;
-    font-size: 54px;
+    font-size: 48px;
     color: #000000;
     text-align: center;
     margin-bottom: 12px;
@@ -11,31 +18,23 @@
 
   &__description {
     font-family: GillSans, sans-serif;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 300;
     text-align: center;
     color: #000000;
     margin-bottom: 78px;
   }
 
-  &__main {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  &__item {
+   height: auto;
+   }
 
-  &__main-item {
-    max-width: 100%;
-  }
-
-  &__main-item-photo {
-    max-width: 100%;
-  }
-
-  &__main-item-about {
+  &__about-item {
     font-family: GillSans;
     font-size: 28px;
     font-weight: 300;
     text-align: left;
     color: #000000;
   }
+
 }
