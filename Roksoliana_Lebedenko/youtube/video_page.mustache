@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/header-layout.css">
     <link rel="stylesheet" href="styles/header-layout__google-options.css">
     <link rel="stylesheet" href="styles/header-layout__logo.css">
@@ -11,6 +10,7 @@
     <link rel="stylesheet" href="styles/video-page/main-layout-video.css">
     <link rel="stylesheet" href="styles/video-page/aside-layout-video.css">
     <link rel="stylesheet" href="styles/video-page/video-section.css">
+    <link rel="stylesheet" href="styles/main-layout-video__comments.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -51,7 +51,22 @@
     </div>
     <div class="main-layout-video__author"></div>
     <div class="main-layout-video__description"></div>
-    <div class="main-layout-video__comments"> </div>
+    <div class="main-layout-video__comments">
+        <form class="comment-form">
+            <div class="comment-form__textarea">
+                <img class="comment-form__user-img"
+                     src="https://yt3.ggpht.com/-7a06iItlnVc/AAAAAAAAAAI/AAAAAAAAAAA/KfKn20_ZfWI/s76-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                     alt="">
+                <textarea name="message" placeholder="Додайте коментар для всіх..." autocomplete="off" rows="1" required="" maxlength="1000"></textarea>
+            </div>
+            <div class="comment-form__submit">
+                <span class="comment-form__condition">Виконуючи цю дію, ви створюєте канал і приймаєте Умови використання YouTube.</span>
+                <button class="comment-form__cancel-btn">Cancel</button>
+                <input type="submit" class="comment-form__submit-btn" value="Коментувати"/>
+            </div>
+        </form>
+        <div class="comment-list"></div>
+    </div>
     </section>
     <aside class="aside-layout-video">
         <header class="aside-layout-video__header">
@@ -76,6 +91,5 @@
         {{/video-block}}
     </aside>
 </main>
-
 </body>
 </html>
