@@ -13,13 +13,13 @@
     flex-direction: column;
     &::after{
         position: absolute;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        top: 5px;
-        border-left: 2px solid red;
-        border-right: 2px solid red;
-        border-top:2px solid red;
+        left: 40px;
+        right: 40px;
+        bottom: 40px;
+        top: 40px;
+        border-left: 2px solid white;
+        border-right: 2px solid white;
+        border-top:2px solid white;
         content: '';
         z-index: 100;
     }
@@ -30,27 +30,27 @@
         color:#fff;
     }
     &__description{
-    
+
         color:#fff;
-        font-size:24px; 
+        font-size:24px;
         text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
         margin: 24px auto;
         &:before{
+            left: 40px;
             position: absolute;
             content: '';
             height: 1px;
-            width: ~"calc( 100% - 100px)";
-            right: 0;
-            border-top: 1px solid red;
+            width: ~"calc( 100% - 80px)";
+            border-bottom: 2px solid white;
 
         }
         &after{
             position: absolute;
             content: '';
             height: 1px;
-            width: ~"calc( 100% - 100px)";
+            width: ~"calc( 100% - 80px)";
             left: 0;
-            border-top: 1px solid red;
+            border-top: 1px solid white;
 
         }
     }
