@@ -7,22 +7,46 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Document</title>
         <link rel="stylesheet" href="style/Header.css">
-        <link rel="stylesheet" href="style/Label.css">
+        <link rel="stylesheet" href="style/yLayout.css">
+        <link rel="stylesheet" href="style/Search.css">
+        <link rel="stylesheet" href="style/Logo.css">
+        <link rel="stylesheet" href="style/Log-in.css">
     </head>
     <body>
         <section class="Header">
-            <span class="Header__menu-link"></span>
-            <span class="Header__menu-name">Extra</span>
-            <form class="Header__form" action="">
-                <span class="Header__search-icon"></span>
-                <input class="Header__search" type="search" placeholder="Search">
-            </form>
-
-            <div class="Label">
-                <img class="Label__logo" src="../images/Diamond-logo.png">
-                <p class="Label__name">DIAMOND</p>
-                <p class="Label__description">--fashion--</p>
-            </div>
+            <nav class="Header__top">
+                <p class="Header__top-navigation">United Stats</p>
+                <p class="Header__top-navigation">Find a Store</p>
+                <p class="Header__top-navigation">Contact us</p>
+            </nav>
+            <section class="Header__bottom">
+                <div class="Header__bottom-left">
+                    <img class="Header__menu-link"
+                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png">
+                    <p class="Header__menu-name">Extra</p>
+                    <form class="Search" action="">
+                        <img class="Search__icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/105498-200.png"/>
+                        <input class="Search__input" type="search" placeholder="Search">
+                    </form>
+                </div>
+                <div class="Header__bottom-center">
+                    <div class="Logo">
+                        <img class="Logo__image" src="../images/Diamond-logo.png">
+                        <p class="Logo__name">DIAMOND</p>
+                        <p class="Logo__description">--fashion--</p>
+                    </div>
+                </div>
+                <div class="Header__bottom-right">
+                    <div class="Log-in">
+                        <img class="Log-in__image Log-in__image_account" src="images/icons8-customer-50.png" alt="">
+                        <p class="Log-in__title">Account</p>
+                    </div>
+                    <div class="Log-in">
+                        <img class="Log-in__image Log-in__image_cart" src="https://png.icons8.com/material/540/add-shopping-cart.png" alt="">
+                        <p class="Log-in__title">Cart</p>
+                    </div>
+                </div>
+            </section>
         </section>
     </body>
 </html>
