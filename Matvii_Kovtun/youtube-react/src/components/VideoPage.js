@@ -23,10 +23,7 @@ class VideoArticle extends Component {
                     <div className="video-page__article-description">
                         <VideoArticleDescription/>
                     </div>
-
-                    <div className="video-page__comments">
-                        <VideoComments/>
-                    </div>
+                    <VideoComments/>
                 </article>
             </section>
         )
