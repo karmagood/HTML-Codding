@@ -1,20 +1,23 @@
 import React, {Component} from 'react';
 import '../style/VideoFeed.less';
-import VideoNextVideoPreview from "./VideoNextVideoPreview";
+import NextVideo from "./NextVideo";
+import videofeed from "../data/videofeed";
 
 
 class NextVideos extends Component {
     render() {
         return (
-            <section className="next-videos">
-                <div className="next-videos__autoplay">
-                    <div className="next-videos__header">
-                        <h3 className="next-videos__title">Next video</h3>
-                        <button className="next-videos__autoplay-toggle">Autoplay</button>
+            <section className="video-feed">
+                <div className="video-feed__autoplay">
+                    <div className="video-feed__header">
+                        <h3 className="video-feed__title">Next video</h3>
+                        <button className="video-feed__autoplay-toggle">Autoplay</button>
                     </div>
-                    <VideoNextVideoPreview/>
+                    {videofeed.map(({videoTitle, videoImage, videoViews, videoChannelTittle}) =>
+                        <NextVideo {...{videoTitle, videoImage, videoViews, videoChannelTittle}}/>)}
+                    <div className="video-feed__border-bottom"></div>
                 </div>
-                <div className="next-videos__video">
+                <div className="video-feed__video">
                 </div>
             </section>
         )
