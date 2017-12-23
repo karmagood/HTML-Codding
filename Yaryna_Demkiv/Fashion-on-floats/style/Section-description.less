@@ -10,8 +10,14 @@
   font-weight: normal;
   font-style: normal;
 }
-
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('../fonts/GillSans-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 .Section-description {
+
 
   &__header {
     font-family: 'GillSansMT', sans-serif;
@@ -19,6 +25,7 @@
     text-align: center;
     color: #868686;
     margin-bottom: 0;
+    margin-top: 100px;
   }
 
   &__title {
@@ -28,15 +35,25 @@
     color: #000000;
     margin-bottom: 0;
     margin-top: 20px;
+
+    &_small {
+      font-size: 36px;
+      margin-top: 100px;
+    }
   }
 
   &__description {
-    font-family: 'GillSansMT', sans-serif;
+    font-family: 'GillSans-Light', sans-serif;
     font-size: 24px;
     font-weight: 300;
     text-align: center;
     color: #000000;
     margin-bottom: 30px;
+
+    &_small {
+      font-size: 20px;
+
+    }
   }
 
   &__link {
@@ -49,6 +66,10 @@
     text-decoration: underline;
     color: #797979;
     margin-top: 40px;
+
+    &_shift {
+      margin-left: 150px;
+    }
   }
 
   &__image {
