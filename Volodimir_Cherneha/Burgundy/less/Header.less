@@ -12,13 +12,13 @@
     flex-direction: column;
     &::after{
         position: absolute;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        top: 5px;
-        border-left: 2px solid red;
-        border-right: 2px solid red;
-        border-top:2px solid red;
+        left: 40px;
+        right: 40px;
+        bottom: 40px;
+        top: 40px;
+        border-left: 2px solid #8c001a;
+        border-right: 2px solid #8c001a;
+        border-top:2px solid  #8c001a;
         content: '';
         z-index: 100;
     }
@@ -37,18 +37,19 @@
             position: absolute;
             content: '';
             height: 1px;
-            width: ~"calc( 50% - 199px)";
-            right: 0;
-            border-top: 1px solid red;
-
+            width: ~"calc( 50% - 240px)";
+            right: 40px;
+            border-top: 2px solid #8c001a;
+            bottom: 38px;
         }
         &:after{
             position: absolute;
             content: '';
             height: 1px;
-            width: ~"calc( 50% - 100px)";
-            left: 0;
-            border-top: 1px solid red;
+            width: ~"calc( 50% - 240px)";
+            left: 40px;
+            border-top: 2px solid;
+            bottom: 38px;
 
         }
     }

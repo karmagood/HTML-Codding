@@ -1,0 +1,43 @@
+.Roundabout{
+    height: 480px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ &__image{
+    position: absolute;
+    box-shadow: 0 2px 40px 0 rgba(0, 0, 0, 0.2);
+    &_center{
+        margin-left: 14%;
+        &::after{
+            content:' ';
+            background-image: url(http://res.cloudinary.com/dnc8zjt4d/image/upload/c_scale,w_40/v1513996023/uparrow_dblzi4.gif);
+            position: absolute;
+            width: 40px;
+            height:40px;
+            z-index: 100;
+        }
+        &::before{
+            content:' ';
+            background-image: url(http://res.cloudinary.com/dnc8zjt4d/image/upload/c_scale,w_40/a_180/v1513996387/uparrow_xqiqgy.gif);
+            
+            position: absolute;
+            width: 40px;
+            height:40px;
+            z-index: 100;
+        }
+    }       
+
+  
+    &_second{
+        
+        &_left{
+            margin-top: 30px;
+            left: 650px;
+        }
+        &_right{
+            margin-top: 30px;
+            right: 650px;
+        }
+    }
+    
+ }
+}
