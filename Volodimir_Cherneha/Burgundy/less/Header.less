@@ -1,10 +1,10 @@
-
-.Header{
+@main-color: #8c001a;
+.Destination{
     width: 99.9%;
     height: 100vh;
     padding: 1px;
     background-color: #ccc;
-    background-image: url(http://andykatzphotography.com/wp-content/uploads/2016/04/Burgundy-3-1.jpg);
+    background-image: url(http://res.cloudinary.com/dnc8zjt4d/image/upload/v1514010737/large_r7v1bb.jpg);
     background-size: 100%;
     background-position-y: 100%;
     background-repeat: no-repeat;
@@ -12,13 +12,13 @@
     flex-direction: column;
     &::after{
         position: absolute;
-        left: 5px;
-        right: 5px;
-        bottom: 5px;
-        top: 5px;
-        border-left: 2px solid red;
-        border-right: 2px solid red;
-        border-top:2px solid red;
+        left: 40px;
+        right: 40px;
+        bottom: 20px;
+        top: 40px;
+        border-left: 2px solid @main-color;
+        border-right: 2px solid @main-color;
+        border-top:2px solid  @main-color;
         content: '';
         z-index: 100;
     }
@@ -31,24 +31,25 @@
     &__description{
         color:#fff;
         font-size:24px; 
-        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
-        margin: 24px auto;
-        &:before{
+        text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+        margin: 22px auto;
+        &::before{
             position: absolute;
             content: '';
             height: 1px;
-            width: ~"calc( 50% - 199px)";
-            right: 0;
-            border-top: 1px solid red;
-
+            width: ~"calc( 50% - 270px)";
+            right: 40px;
+            border-top: 2px solid @main-color;
+            bottom: 18px;
         }
-        &:after{
+        &::after{
             position: absolute;
             content: '';
             height: 1px;
-            width: ~"calc( 50% - 100px)";
-            left: 0;
-            border-top: 1px solid red;
+            width: ~"calc( 50% - 270px)";
+            left: 40px;
+            border-top: 2px solid  @main-color ;
+            bottom: 18px;
 
         }
     }
