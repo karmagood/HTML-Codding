@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/header-layout.css">
     <link rel="stylesheet" href="styles/header-layout__google-options.css">
     <link rel="stylesheet" href="styles/header-layout__logo.css">
     <link rel="stylesheet" href="styles/header-layout__search.css">
-    <link rel="stylesheet" href="styles/video-page/main_video.css">
-    <link rel="stylesheet" href="styles/video-page/aside_video.css">
+    <link rel="stylesheet" href="styles/video-page/main-layout-video.css">
+    <link rel="stylesheet" href="styles/video-page/aside-layout-video.css">
+    <link rel="stylesheet" href="styles/video-page/video-section.css">
+    <link rel="stylesheet" href="styles/main-layout-video__comments.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,12 +18,11 @@
 </head>
 <body>
 <header class="header-layout">
-    <button class="hamburger-menu"></button>
-    <div class="header-layout__logo">
-        <a class="header-layout__logo header-layout__logo_img" href="index"><img src="images/youtube_icon.png" alt=""></a>
-        <a class="header-layout__logo_text" href="index">YouTube<sup class="header-layout__logo_country-code">UA</sup></a>
 
-    </div>
+    <div class="header-layout__logo">
+        <button class="hamburger-menu"></button>
+        <a class="header-layout__logo header-layout__logo_img" href="index"><img src="images/youtube_icon.png" alt=""></a>
+        <a class="header-layout__logo_text" href="index">YouTube<sup class="header-layout__logo_country-code">UA</sup></a></div>
     <div class="header-layout__search">
         <form action="#">
             <input class="header-layout__search_input" title="search" type="text" placeholder="Пошук">
@@ -36,52 +36,60 @@
         <button class="header-layout__google-options_img"></button>
     </div>
 </header>
-<main class="main">
-    <iframe class="main__video" width="854" height="480" src="https://www.youtube.com/embed/uRuTlXdLt5w?autoplay=1"
-            frameborder="0" allowfullscreen></iframe>
-    <h1 class="main__video_title">Fresian Horses</h1>
-    <div class="main__video_info"></div>
-    <div class="main__author"></div>
-    <div class="main__description"></div>
-    <div class="main__comments"> </div>
-
+<main class="main-layout-video">
+    <section class="video-section">
+        <iframe class="main-layout-video__frame" width="854" height="480" src="https://www.youtube.com/embed/kJQP7kiw5Fk?autoplay=1" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <h1 class="main-layout-video__title">Luis Fonsi - Despacito ft. Daddy Yankee</h1>
+    <div class="main-layout-video__info">
+        <span class="main-layout-video__view-count">4 490 112 884 перегляди</span>
+        <div class="main-layout-video__options">
+            <span class="main-layout-video__options_like-icon"></span>
+            <span class="main-layout-video__options_like">24 млн</span>
+            <span class="main-layout-video__options_dislike">2 млн</span>
+            <span class="main-layout-video__options_share">поділитися</span>
+        </div>
+    </div>
+    <div class="main-layout-video__author"></div>
+    <div class="main-layout-video__description"></div>
+    <div class="main-layout-video__comments">
+        <form class="comment-form">
+            <div class="comment-form__textarea">
+                <img class="comment-form__user-img"
+                     src="https://yt3.ggpht.com/-7a06iItlnVc/AAAAAAAAAAI/AAAAAAAAAAA/KfKn20_ZfWI/s76-c-k-no-mo-rj-c0xffffff/photo.jpg"
+                     alt="">
+                <textarea name="message" placeholder="Додайте коментар для всіх..." autocomplete="off" rows="1" required="" maxlength="1000"></textarea>
+            </div>
+            <div class="comment-form__submit">
+                <span class="comment-form__condition">Виконуючи цю дію, ви створюєте канал і приймаєте Умови використання YouTube.</span>
+                <button class="comment-form__cancel-btn">Cancel</button>
+                <input type="submit" class="comment-form__submit-btn" value="Коментувати"/>
+            </div>
+        </form>
+        <div class="comment-list"></div>
+    </div>
+    </section>
+    <aside class="aside-layout-video">
+        <header class="aside-layout-video__header">
+            <span class="aside-layout-video__header_next">Наступне</span>
+            <div>
+                <span class="aside-layout-video__header_auto">Автоматичне відтворення</span>
+            </div>
+        </header>
+        {{#video-block}}
+            {{#video-list}}
+                <div class="aside-layout-video__video">
+                    <img class="aside-layout-video__cover-img" src="{{cover-image-url}}" alt="">
+                    <div class="aside-layout-video__description">
+                        <h3><a href="video_page">{{title}}</a></h3>
+                        <a href="">
+                            <span>{{subtitle}}</span>
+                            <span class="aside-layout-video__view-count">{{view-count}} млн перегляди</span>
+                        </a>
+                    </div>
+                </div>
+            {{/video-list}}
+        {{/video-block}}
+    </aside>
 </main>
-<aside class="aside">
-    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos esse iure natus nisi placeat, repellendus
-        voluptates. Assumenda error nihil non? Ad aut dolorum, fugiat labore qui ratione tempore veritatis voluptate!
-    </div>
-    <div>A dolorum exercitationem iure maxime rerum unde. Aspernatur, aut beatae commodi cupiditate debitis dolorum enim
-        eveniet, hic id laboriosam modi nihil nobis nulla numquam qui rerum, sit soluta velit veniam.
-    </div>
-    <div>Alias cumque dolore ipsum nemo nostrum praesentium quas quos sequi similique. Animi, autem cumque ea ex
-        expedita illo natus nobis nulla officia porro qui repellat vitae voluptas voluptatem voluptates. Officiis.
-    </div>
-    <div>Dicta eum eveniet illum, iusto maiores natus praesentium quis quod recusandae suscipit vel voluptate,
-        voluptatem. Aliquam amet asperiores at, impedit odio possimus qui quia quidem. Ab et fuga harum sunt.
-    </div>
-    <div>Aliquid animi autem beatae consequuntur culpa dolorem doloremque doloribus eum illum laborum magnam, maiores
-        maxime minus mollitia nam nesciunt non numquam odio placeat porro quisquam repellat repellendus saepe ullam vel?
-    </div>
-    <div>Accusamus accusantium adipisci architecto blanditiis consectetur cumque inventore ipsam labore magni molestias
-        nam odio officiis, recusandae repellendus sunt veritatis vero. Deserunt dolores incidunt iure maxime mollitia
-        neque nesciunt quia sunt.
-    </div>
-    <div>Aperiam at autem culpa, debitis dignissimos, doloremque doloribus earum error esse eveniet exercitationem, hic
-        iste laboriosam mollitia natus porro possimus quidem quod reiciendis tempore velit vitae voluptates.
-        Consequatur, eos, eum.
-    </div>
-    <div>Amet atque deleniti dolore optio placeat quis sequi ut! Aliquam blanditiis, commodi, consequatur cum
-        dignissimos, dolor fugit harum inventore ipsa ipsum iste magni molestiae mollitia quia sapiente unde veniam
-        voluptas!
-    </div>
-    <div>Accusantium esse maiores tempore. Adipisci delectus deleniti eos fuga iusto labore necessitatibus odio,
-        officiis praesentium provident, quasi rem, sit tenetur? Debitis exercitationem explicabo minima nihil officiis
-        optio quia unde voluptate?
-    </div>
-    <div>Modi officiis quam rerum. Ipsum iusto omnis optio. Architecto commodi consequatur, culpa, cupiditate dolorem
-        fugit, impedit minus nesciunt quaerat quisquam sapiente tempore. Debitis fugiat, illum impedit nostrum quis
-        saepe suscipit?
-    </div>
-</aside>
 </body>
 </html>

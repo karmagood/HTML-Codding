@@ -1,0 +1,12 @@
+.app-model {
+  padding: 12px 27px;
+  color: #8b898b;
+  font-size: 13px; }
+  .app-model__link {
+    margin-right: 8px;
+    color: #8b898b; }
+  .app-model__link:nth-child(8) {
+    display: inline-block;
+    margin-top: 20px; }
+
+/*# sourceMappingURL=app-model.css.map */

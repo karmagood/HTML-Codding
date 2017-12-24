@@ -101,33 +101,75 @@
       ]
     }
   ],
+  "aside-channel-content": [
+    {
+      "channels-block": [
+        {
+          "title": "Warner Music Group",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Gingerbread Man Record",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "TOPSIFY",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Atlantic Records",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Jess Glynne",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Rudimental",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Saint Raymond",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Foy Vance",
+          "cover-img": "../../images/hamburger_menu.svg"
+        },
+        {
+          "title": "Passenger",
+          "cover-img": "../../images/hamburger_menu.svg"
+        }
+      ]
+    }
+  ],
   "video-block": [
     {
       "chapter-title": "Поп-музика",
       "video-list": [
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/kJQP7kiw5Fk/mqdefault_6s.webp?du=3000&sqp=CN7K6tAF&rs=AOn4CLDQqjqm4MHAC2hKsaX-an-a7Eqk3w",
+          "cover-image-url": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB2bd60UNUuZyYhSR_Fvj_BZDrZSw",
           "title": "Luis Fonsi - Despacito ",
           "subtitle": "LuisFonsiVEVO",
           "view-count": "4,4 млн",
           "publication-date": "10 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/JGwWNGJdvx8/mqdefault_6s.webp?du=3000&sqp=CLag6tAF&rs=AOn4CLBoO1QUp7_Dw7s_m-87QcXB151XOw",
+          "cover-image-url": "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDi92xCRDXUjA9LE1afIvayq8sQag",
           "title": "Ed Sheeran - Shape of You ",
           "subtitle": "Ed Sheeran",
           "view-count": "2.7 млрд",
           "publication-date": "9 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/iGk5fR-t5AU/mqdefault_6s.webp?du=3000&sqp=CNCb6tAF&rs=AOn4CLDByDs2_UlZ3kWOok7U8Uuxdw8b6w",
+          "cover-image-url": "https://i.ytimg.com/vi/nfs8NYg7yQM/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAVN0RbysFs5lCiBR1ler3AUVX4NA",
           "title": "Katy Perry - Swish Swish",
           "subtitle": "KatyPerryVEVO",
           "view-count": "337 млн",
           "publication-date": "3 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/09R8_2nJtjg/mqdefault_6s.webp?du=3000&sqp=CPi26tAF&rs=AOn4CLAIq3WnMKkpsxQbsJI-lex_7xyk1Q",
+          "cover-image-url": "https://i.ytimg.com/vi/09R8_2nJtjg/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCReiFH333U_FijHSoKdMBfVSVKRA",
           "title": "Maroon 5 - Sugar",
           "subtitle": "Maroon5VEVO",
           "view-count": "2,4 млн",
@@ -139,28 +181,28 @@
       "chapter-title": "Поп-музика",
       "video-list": [
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/kJQP7kiw5Fk/mqdefault_6s.webp?du=3000&sqp=CN7K6tAF&rs=AOn4CLDQqjqm4MHAC2hKsaX-an-a7Eqk3w",
+          "cover-image-url": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB2bd60UNUuZyYhSR_Fvj_BZDrZSw",
           "title": "Luis Fonsi - Despacito ",
           "subtitle": "LuisFonsiVEVO",
           "view-count": "4,4 млн",
           "publication-date": "10 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/JGwWNGJdvx8/mqdefault_6s.webp?du=3000&sqp=CLag6tAF&rs=AOn4CLBoO1QUp7_Dw7s_m-87QcXB151XOw",
+          "cover-image-url": "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDi92xCRDXUjA9LE1afIvayq8sQag",
           "title": "Ed Sheeran - Shape of You ",
           "subtitle": "Ed Sheeran",
           "view-count": "2.7 млрд",
           "publication-date": "9 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/iGk5fR-t5AU/mqdefault_6s.webp?du=3000&sqp=CNCb6tAF&rs=AOn4CLDByDs2_UlZ3kWOok7U8Uuxdw8b6w",
+          "cover-image-url": "https://i.ytimg.com/vi/nfs8NYg7yQM/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAVN0RbysFs5lCiBR1ler3AUVX4NA",
           "title": "Katy Perry - Swish Swish",
           "subtitle": "KatyPerryVEVO",
           "view-count": "337 млн",
           "publication-date": "3 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/09R8_2nJtjg/mqdefault_6s.webp?du=3000&sqp=CPi26tAF&rs=AOn4CLAIq3WnMKkpsxQbsJI-lex_7xyk1Q",
+          "cover-image-url": "https://i.ytimg.com/vi/09R8_2nJtjg/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCReiFH333U_FijHSoKdMBfVSVKRA",
           "title": "Maroon 5 - Sugar",
           "subtitle": "Maroon5VEVO",
           "view-count": "2,4 млн",
@@ -172,28 +214,28 @@
       "chapter-title": "Поп-музика",
       "video-list": [
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/kJQP7kiw5Fk/mqdefault_6s.webp?du=3000&sqp=CN7K6tAF&rs=AOn4CLDQqjqm4MHAC2hKsaX-an-a7Eqk3w",
+          "cover-image-url": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB2bd60UNUuZyYhSR_Fvj_BZDrZSw",
           "title": "Luis Fonsi - Despacito ",
           "subtitle": "LuisFonsiVEVO",
           "view-count": "4,4 млн",
           "publication-date": "10 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/JGwWNGJdvx8/mqdefault_6s.webp?du=3000&sqp=CLag6tAF&rs=AOn4CLBoO1QUp7_Dw7s_m-87QcXB151XOw",
+          "cover-image-url": "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDi92xCRDXUjA9LE1afIvayq8sQag",
           "title": "Ed Sheeran - Shape of You ",
           "subtitle": "Ed Sheeran",
           "view-count": "2.7 млрд",
           "publication-date": "9 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/iGk5fR-t5AU/mqdefault_6s.webp?du=3000&sqp=CNCb6tAF&rs=AOn4CLDByDs2_UlZ3kWOok7U8Uuxdw8b6w",
+          "cover-image-url": "https://i.ytimg.com/vi/nfs8NYg7yQM/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAVN0RbysFs5lCiBR1ler3AUVX4NA",
           "title": "Katy Perry - Swish Swish",
           "subtitle": "KatyPerryVEVO",
           "view-count": "337 млн",
           "publication-date": "3 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/09R8_2nJtjg/mqdefault_6s.webp?du=3000&sqp=CPi26tAF&rs=AOn4CLAIq3WnMKkpsxQbsJI-lex_7xyk1Q",
+          "cover-image-url": "https://i.ytimg.com/vi/09R8_2nJtjg/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCReiFH333U_FijHSoKdMBfVSVKRA",
           "title": "Maroon 5 - Sugar",
           "subtitle": "Maroon5VEVO",
           "view-count": "2,4 млн",
@@ -205,28 +247,28 @@
       "chapter-title": "Поп-музика",
       "video-list": [
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/kJQP7kiw5Fk/mqdefault_6s.webp?du=3000&sqp=CN7K6tAF&rs=AOn4CLDQqjqm4MHAC2hKsaX-an-a7Eqk3w",
+          "cover-image-url": "https://i.ytimg.com/vi/kJQP7kiw5Fk/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLB2bd60UNUuZyYhSR_Fvj_BZDrZSw",
           "title": "Luis Fonsi - Despacito ",
           "subtitle": "LuisFonsiVEVO",
           "view-count": "4,4 млн",
           "publication-date": "10 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/JGwWNGJdvx8/mqdefault_6s.webp?du=3000&sqp=CLag6tAF&rs=AOn4CLBoO1QUp7_Dw7s_m-87QcXB151XOw",
+          "cover-image-url": "https://i.ytimg.com/vi/JGwWNGJdvx8/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLDi92xCRDXUjA9LE1afIvayq8sQag",
           "title": "Ed Sheeran - Shape of You ",
           "subtitle": "Ed Sheeran",
           "view-count": "2.7 млрд",
           "publication-date": "9 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/iGk5fR-t5AU/mqdefault_6s.webp?du=3000&sqp=CNCb6tAF&rs=AOn4CLDByDs2_UlZ3kWOok7U8Uuxdw8b6w",
+          "cover-image-url": "https://i.ytimg.com/vi/nfs8NYg7yQM/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAVN0RbysFs5lCiBR1ler3AUVX4NA",
           "title": "Katy Perry - Swish Swish",
           "subtitle": "KatyPerryVEVO",
           "view-count": "337 млн",
           "publication-date": "3 місяців тому"
         },
         {
-          "cover-image-url": "https://i.ytimg.com/an_webp/09R8_2nJtjg/mqdefault_6s.webp?du=3000&sqp=CPi26tAF&rs=AOn4CLAIq3WnMKkpsxQbsJI-lex_7xyk1Q",
+          "cover-image-url": "https://i.ytimg.com/vi/09R8_2nJtjg/hqdefault.jpg?sqp=-oaymwEWCNIBEHZIWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLCReiFH333U_FijHSoKdMBfVSVKRA",
           "title": "Maroon 5 - Sugar",
           "subtitle": "Maroon5VEVO",
           "view-count": "2,4 млн",
