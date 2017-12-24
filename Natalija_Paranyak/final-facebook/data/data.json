@@ -1,240 +1,428 @@
 {
-  "dataFacebook": [
+  "posts": [
     {
-      "posts": [
-
-        {
-          "profile-picture-url": "../images/home-image-4.jpg",
-          "profile-url": "#",
-          "profile-name": "Dima Artin",
-          "user-action": "додав нову світлину",
-          "time-info": "3 години",
-          "main-post-info": "Сьогодні вночі скрутили дзеркала на вул. Шота Руставелі. По вулиці, як мінімум, ще в одної машини. Скручували скоріш за все ті, в яких скло з підігрівом. Щось раніше за таке навіть не чув.",
-          "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg"
-        },
-        {
-          "profile-picture-url": "../images/home-image-1.jpg",
-          "profile-url": "#",
-          "profile-name": "Петро Петренко",
-          "user-action": "додав нову світлину",
-          "extra-info-url": "#",
-          "extra-paragraph": "Instagram",
-          "time-info": "23 хвилини",
-          "main-post-info": "Надзвичайно приємно отримувати нагороди! Дякую Львівському державному університету фізичної культури!",
-          "tags": "#ЛДУФК #альмаматер",
-          "post-images-url": "../images/home-image-4.jpg"
-        },
-        {
-          "profile-picture-url": "../images/home-image-1.jpg",
-          "profile-url": "#",
-          "profile-name": "Петро Петренко",
-          "user-action": "разом з ",
-          "extra-info-url": "#",
-          "extra-paragraph": "Віктор Віктор",
-          "time-info": "3 хвилини",
-          "main-post-info": "засновник скаутського руху Роберт Байден Поувел в своєму останньою листі писав, що на його думку, всі ми народжені на цей світ аби бути щасливими. і що найпевніший шлях бути щасливим, то допомагати іншим.сьогодні разом з ще майже 20 менторами будемо допомагати пів сотні діачат робити їхні перші кроки в програмуванні і вивченні angular, писати туду аплікуху",
-          "post-images-url": "../images/p-stv-music-awards-2013-venice-art-pavilion-500x380.jpg"
-        },
-        {
-          "profile-picture-url": "../images/home-team-3.jpg",
-          "profile-url": "#",
-          "profile-name": "Уляна Романів",
-          "time-info": "50 хвилин",
-          "main-post-info": "Вражає скільки проповідей у наших церквах мають просто морально-психологічний характер, практично без прив'язки до Христа. Звісно, що і такі елементи проповіді часом потрібні, бо можуть бути зв'язкою між Євангелієм і нашим щоденним досвідом. Але ця суцільна психологізація й моралізація досягла таких масштабів, що проповіді власне Христа, Доброї Новини і християнської віри за ними майже не чути... В принципі, якщо забрати деякі елементи (типу біблійних цитат), то така проповідь могла б прозвучати в мечеті, в будійському храмі чи на семінарі з поп-психології... До речі, в молодих священиків ця тенденція сильніша, ніж у старших.",
-          "post-images-url": "../images/coffee.jpg"
-        }
-      ],
-      "friends-request": [
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-3.jpg",
-          "friend-name": "Ruslan Varenyk",
-          "common-friends-count": "2"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-3.jpg",
-          "friend-name": "Ruslan Varenyk",
-          "common-friends-count": "2"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-3.jpg",
-          "friend-name": "Ruslan Varenyk",
-          "common-friends-count": "2"
-        }
-      ],
-      "friends-feeds": [
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-3.jpg",
-          "friend-name": "Ruslana Varenyk",
-          "action": "вподобала світлину від Uliana Skrypnyk"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/w3c.png",
-          "friend-name": "Ruslana Varenyk",
-          "action": "вподобала світлину від Uliana Skrypnyk"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-3.jpg",
-          "friend-name": "Ruslana Varenyk",
-          "action": "вподобала світлину від Uliana Skrypnyk"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-21.jpg",
-          "friend-name": "Ruslana Varenyk",
-          "action": "вподобала світлину від Uliana Skrypnyk"
-        }
-      ],
-      "contacts": [
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-21.jpg",
-          "friend-name": "Petr White"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-image-1.jpg",
-          "friend-name": "Ruslana Varenyk"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-team-3.jpg",
-          "friend-name": "Віктор Віктор"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-image-4.jpg",
-          "friend-name": "Анна-Марія Білик"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/w3c.png",
-          "friend-name": "Ruslana Varenyk"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-image-1.jpg",
-          "friend-name": "White Night"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/about-graphics-4.png",
-          "friend-name": "Зуслана Борщ"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/coffee.jpg",
-          "friend-name": "Mister Igor"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-image-4.jpg",
-          "friend-name": "Анна-Марія Білик"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/w3c.png",
-          "friend-name": "Ruslana Varenyk"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-image-1.jpg",
-          "friend-name": "White Night"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/about-graphics-4.png",
-          "friend-name": "Зуслана Борщ"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/coffee.jpg",
-          "friend-name": "Mister Igor"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-image-4.jpg",
-          "friend-name": "Анна-Марія Білик"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/w3c.png",
-          "friend-name": "Ruslana Varenyk"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/home-image-1.jpg",
-          "friend-name": "White Night"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/about-graphics-4.png",
-          "friend-name": "Зуслана Борщ"
-        },
-        {
-          "friend-src": "#",
-          "friend-image-src": "../images/coffee.jpg",
-          "friend-name": "Mister Igor"
-        }
-      ],
-      "menu-items": [
-        {
-          "menu-src": "#",
-          "img-src": "../images/home-image-1.jpg",
-          "name-item": "Магазин Віктор"
-        },
-        {
-          "menu-src": "#",
-          "img-src": "../images/headerimg9.jpg",
-          "name-item": "Магазин Віктор"
-        },
-        {
-          "menu-src": "#",
-          "img-src": "../images/home-image-4.jpg",
-          "name-item": " Дитячий довідник"
-        },
-        {
-          "menu-src": "#",
-          "img-src": "../images/home-team-3.jpg",
-          "name-item": "Кафе Вікторія"
-        },
-        {
-          "menu-src": "#",
-          "img-src": "../images/home-team-21.jpg",
-          "name-item": "Вареники ТУТ"
-        }
-      ],
-      "news-messenger" :[
-        {"src" : "#",
-          "img-src": "../images/facebbok_sprites.png",
-        "img-options" :"object-position:  -43px -357px ;",
-        "text" : "Новини"},
-        {"src" : "#",
-          "img-src": "../images/facebook_sprite.png",
-          "img-options" :"object-position:   -48px -98px",
-          "text" : "Messenger"}
-      ],
-      "interesting-things":[
-        {"src" : "#",
-          "img-src": "../images/facebbok_sprites.png",
-          "img-options" :"object-position:  -43px -10px ;",
-          "text" : "Події"},
-        {
-          "src" : "#",
-          "img-src": "../images/facebbok_sprites.png",
-          "img-options" :"object-position:  -43px -40px ;",
-          "text" : "Групи"
-        },
-        {"src" : "#",
-          "img-src": "../images/facebbok_sprites.png",
-          "img-options" :"object-position:  -43px -70px ;",
-          "text" : "Фан-клуби"}
-      ]
+      "id": 1,
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "Сьогодні вночі скрутили дзеркала на вул. Шота Руставелі. По вулиці, як мінімум, ще в одної машини. Скручували скоріш за все ті, в яких скло з підігрівом. Щось раніше за таке навіть не чув.",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg"
+    },
+    {
+      "id": 2,
+      "profile-picture-url": "../images/home-image-1.jpg",
+      "profile-url": "#",
+      "profile-name": "Петро Петренко",
+      "user-action": "додав нову світлину",
+      "extra-info-url": "#",
+      "extra-paragraph": "Instagram",
+      "time-info": "23 хвилини",
+      "main-post-info": "Надзвичайно приємно отримувати нагороди! Дякую Львівському державному університету фізичної культури!",
+      "tags": "#ЛДУФК #альмаматер",
+      "post-images-url": "../images/home-image-4.jpg"
+    },
+    {
+      "id": 3,
+      "profile-picture-url": "../images/home-image-1.jpg",
+      "profile-url": "#",
+      "profile-name": "Петро Петренко",
+      "user-action": "разом з ",
+      "extra-info-url": "#",
+      "extra-paragraph": "Віктор Віктор",
+      "time-info": "3 хвилини",
+      "main-post-info": "засновник скаутського руху Роберт Байден Поувел в своєму останньою листі писав, що на його думку, всі ми народжені на цей світ аби бути щасливими. і що найпевніший шлях бути щасливим, то допомагати іншим.сьогодні разом з ще майже 20 менторами будемо допомагати пів сотні діачат робити їхні перші кроки в програмуванні і вивченні angular, писати туду аплікуху",
+      "post-images-url": "../images/p-stv-music-awards-2013-venice-art-pavilion-500x380.jpg"
+    },
+    {
+      "id": 4,
+      "profile-picture-url": "../images/home-team-3.jpg",
+      "profile-url": "#",
+      "profile-name": "Уляна Романів",
+      "time-info": "50 хвилин",
+      "main-post-info": "Вражає скільки проповідей у наших церквах мають просто морально-психологічний характер, практично без прив'язки до Христа. Звісно, що і такі елементи проповіді часом потрібні, бо можуть бути зв'язкою між Євангелієм і нашим щоденним досвідом. Але ця суцільна психологізація й моралізація досягла таких масштабів, що проповіді власне Христа, Доброї Новини і християнської віри за ними майже не чути... В принципі, якщо забрати деякі елементи (типу біблійних цитат), то така проповідь могла б прозвучати в мечеті, в будійському храмі чи на семінарі з поп-психології... До речі, в молодих священиків ця тенденція сильніша, ніж у старших.",
+      "post-images-url": "../images/coffee.jpg"
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "dsefrtgyuji",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 5
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "dsefrtgyuji",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 6
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 7
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 8
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 9
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 10
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 11
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 12
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 13
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhu",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 14
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdfwtrfgyhuswdrftgyhujhikshd\nfghjkl",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 15
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdrfgyujitrsgyujdhjn fvfgbdyuiuol dfghgj",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 16
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdrfgyujitrsgyujdhjn fvfgbdyuiuol dfghgj",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 17
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdrfgyujitrsgyujdhjn fvfgbdyuiuol dfghgj",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 18
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "sdrfgyujitrsgyujdhjn fvfgbdyuiuol dfghgj",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 19
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 20
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "dsfgh",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 21
+    },
+    {
+      "profile-picture-url": "../images/home-image-4.jpg",
+      "profile-url": "#",
+      "profile-name": "Dima Artin",
+      "user-action": "додав нову світлину",
+      "time-info": "3 години",
+      "main-post-info": "aaaa",
+      "post-images-url": "../images/p-stockholm-fashion-destination-last-iceland-sunshine-500x380.jpg",
+      "id": 22
     }
-  ]
+  ],
+  "friends-request": [
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-3.jpg",
+      "friend-name": "Ruslan Varenyk",
+      "common-friends-count": "2"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-3.jpg",
+      "friend-name": "Ruslan Varenyk",
+      "common-friends-count": "2"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-3.jpg",
+      "friend-name": "Ruslan Varenyk",
+      "common-friends-count": "2"
+    }
+  ],
+  "friends-feeds": [
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-3.jpg",
+      "friend-name": "Ruslana Varenyk",
+      "action": "вподобала світлину від Uliana Skrypnyk"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/w3c.png",
+      "friend-name": "Ruslana Varenyk",
+      "action": "вподобала світлину від Uliana Skrypnyk"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-3.jpg",
+      "friend-name": "Ruslana Varenyk",
+      "action": "вподобала світлину від Uliana Skrypnyk"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-21.jpg",
+      "friend-name": "Ruslana Varenyk",
+      "action": "вподобала світлину від Uliana Skrypnyk"
+    }
+  ],
+  "contacts": [
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-21.jpg",
+      "friend-name": "Petr White"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-image-1.jpg",
+      "friend-name": "Ruslana Varenyk"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-team-3.jpg",
+      "friend-name": "Віктор Віктор"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-image-4.jpg",
+      "friend-name": "Анна-Марія Білик"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/w3c.png",
+      "friend-name": "Ruslana Varenyk"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-image-1.jpg",
+      "friend-name": "White Night"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/about-graphics-4.png",
+      "friend-name": "Зуслана Борщ"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/coffee.jpg",
+      "friend-name": "Mister Igor"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-image-4.jpg",
+      "friend-name": "Анна-Марія Білик"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/w3c.png",
+      "friend-name": "Ruslana Varenyk"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-image-1.jpg",
+      "friend-name": "White Night"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/about-graphics-4.png",
+      "friend-name": "Зуслана Борщ"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/coffee.jpg",
+      "friend-name": "Mister Igor"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-image-4.jpg",
+      "friend-name": "Анна-Марія Білик"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/w3c.png",
+      "friend-name": "Ruslana Varenyk"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/home-image-1.jpg",
+      "friend-name": "White Night"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/about-graphics-4.png",
+      "friend-name": "Зуслана Борщ"
+    },
+    {
+      "friend-src": "#",
+      "friend-image-src": "../images/coffee.jpg",
+      "friend-name": "Mister Igor"
+    }
+  ],
+  "menu-items": [
+    {
+      "menu-src": "#",
+      "img-src": "../images/home-image-1.jpg",
+      "name-item": "Магазин Віктор"
+    },
+    {
+      "menu-src": "#",
+      "img-src": "../images/headerimg9.jpg",
+      "name-item": "Магазин Віктор"
+    },
+    {
+      "menu-src": "#",
+      "img-src": "../images/home-image-4.jpg",
+      "name-item": " Дитячий довідник"
+    },
+    {
+      "menu-src": "#",
+      "img-src": "../images/home-team-3.jpg",
+      "name-item": "Кафе Вікторія"
+    },
+    {
+      "menu-src": "#",
+      "img-src": "../images/home-team-21.jpg",
+      "name-item": "Вареники ТУТ"
+    }
+  ],
+  "news-messenger": [
+    {
+      "src": "#",
+      "img-src": "../images/facebbok_sprites.png",
+      "img-options": "object-position:  -43px -357px ;",
+      "text": "Новини"
+    },
+    {
+      "src": "#",
+      "img-src": "../images/facebook_sprite.png",
+      "img-options": "object-position:   -48px -98px",
+      "text": "Messenger"
+    }
+  ],
+  "interesting-things": [
+    {
+      "src": "#",
+      "img-src": "../images/facebbok_sprites.png",
+      "img-options": "object-position:  -43px -10px ;",
+      "text": "Події"
+    },
+    {
+      "src": "#",
+      "img-src": "../images/facebbok_sprites.png",
+      "img-options": "object-position:  -43px -40px ;",
+      "text": "Групи"
+    },
+    {
+      "src": "#",
+      "img-src": "../images/facebbok_sprites.png",
+      "img-options": "object-position:  -43px -70px ;",
+      "text": "Фан-клуби"
+    }
+  ],
+  "comments": []
 }
