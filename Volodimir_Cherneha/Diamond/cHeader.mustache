@@ -1,53 +1,55 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Document</title>
-        <link rel="stylesheet" href="style/Layout.css">
-        <link rel="stylesheet" href="style/Hamburger.css">
-        <link rel="stylesheet" href="style/Search.css">
-        <link rel="stylesheet" href="style/Logo.css">
-        <link rel="stylesheet" href="style/Log-in.css">
-        <link rel="stylesheet" href="style/Header.css">
-    </head>
-    <body>
-        <div class="Header">
-            <nav class="Header__top">
-                <p class="Header__top-navigation">United Stats</p>
-                <p class="Header__top-navigation">Find a Store</p>
-                <p class="Header__top-navigation">Contact us</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/Navigation.css">
+    <link rel="stylesheet" href="style/Search-in.css">
+    <link rel="stylesheet" href="style/Logo.css">
+    <link rel="stylesheet" href="style/User-options.css">
+    <link rel="stylesheet" href="style/Header.css">
+</head>
+<body>
+    <header class="Header">
+        <section class="Header__top">
+            <nav class="Navigation">
+                <a href="#" class="Navigation__item">United Stats</a>
+                <a href="#" class="Navigation__item">Find a Store</a>
+                <a href="#" class="Navigation__item">Contact us</a>
             </nav>
-            <section class="Header__bottom">
-                <div class="Header__bottom-left">
-                    <img class="Hamburger"
-                         src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png">
-                    <p class="Header__bottom-extra">Extra</p>
-                    <form class="Search" action="">
-                        <img class="Search__icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/105498-200.png"/>
-                        <input class="Search__input" type="search" placeholder="Search">
-                    </form>
-                </div>
-                <div class="Header__bottom-center">
-                    <div class="Logo">
-                        <img class="Logo__image" src="../img/Diamond-logo.png">
-                        <p class="Logo__name">DIAMOND</p>
-                        <p class="Logo__description">--fashion--</p>
-                    </div>
-                </div>
-                <div class="Header__bottom-right">
-                    <div class="Log-in">
-                        <img class="Log-in__image Log-in__image_account" src="img/icons8-customer-50.png" alt="">
-                        <p class="Log-in__title">Account</p>
-                    </div>
-                    <div class="Log-in">
-                        <img class="Log-in__image Log-in__image_cart" src="https://png.icons8.com/material/540/add-shopping-cart.png" alt="">
-                        <p class="Log-in__title">Cart</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </body>
+        </section>
+        <section class="Header__bottom">
+            <div class="Search-in">
+                <button class="Search-in__menu-button">
+                    <img class="Search-in__hamburger" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png">
+                </button>
+                <form class="Search-in__form">
+                    <img class="Search-in__icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/105498-200.png"/>
+                    <input class="Search-in__input" type="search" placeholder="Search">
+                </form>
+            </div>
+            <div class="Logo">
+                <img class="Logo__image" src="../img/Diamond-logo.png">
+                <p class="Logo__name">DIAMOND</p>
+                <p class="Logo__description">--fashion--</p>
+            </div>
+            <div class="User-options">
+                <a href="#"><figure class="User-options__item">
+                    <img class="User-options__image" src="img/icons8-customer-50.png" alt="icon">
+                    <figcaption class="User-options__caption">Account</figcaption>
+                </figure>
+                </a>
+                <a href="#">
+                    <figure class="User-options__item">
+                        <img class="User-options__image" src="https://png.icons8.com/material/540/add-shopping-cart.png" alt="icon">
+                        <figcaption class="User-options__caption">Cart</figcaption>
+                    </figure>
+                </a>
+            </div>
+        </section>
+    </header>
+</body>
 </html>
