@@ -118,76 +118,11 @@
             <div class = "Show-hide__content">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aspernatur cumque distinctio enim est exercitationem fuga molestiae nemo nesciunt optio perferendis porro provident qui sint ut vel velit, voluptas voluptatibus.
             </div>
-
             <button class="Show-hide__toggle">Expand</button>
         </div>
 
-
     </section>
 
-    <script>
-        const findParentBySelector = (selector, el) => {
-            const father = el.parentNode;
-            if (father.nodeName === "BODY") { return null; }
-            if (father.matches(selector)) {
-                return father;
-            } else {
-                return findParentBySelector (selector, father)
-            }
-        };
-
-        const togglers = document.querySelectorAll(".Show-hide__toggle");
-
-        for (let i =0; i < togglers.length; i++) {
-            togglers[i].addEventListener("click", function () {
-
-                const container = findParentBySelector (".Show-hide", this);
-
-                if (container) {
-                    const content = container.querySelector(".Show-hide__content")
-
-                    if (content) {
-                        content
-                            .classList
-                            .toggle("Show-hide__content_hidden")
-                    }
-                }
-
-            })
-        }
-    </script>
-
-    <script>
-        const Comments = document.querySelectorAll(".Comments");
-        for (let i =0 ; i < Comments.length; i++) {
-            Comments[i]
-                .querySelector(".Comments__load-more")
-                .addEventListener("click", function () {
-                    const component = Comments[i];
-                    const wrapper = component.querySelector(".Comments__wrapper");
-
-                    const hidden = wrapper
-                        .querySelectorAll(".Comments__comment_hidden");
-
-                    if (hidden.length) {
-                        for (let i =0 ; i < 2; i++) {
-                            if (hidden[i]) {
-                                hidden[i]
-                                    .classList
-                                    .remove("Comments__comment_hidden")
-                            }
-                        }
-
-                    } else {
-                        component
-                            .querySelector(".Comments__load-more")
-                            .classList
-                            .add("Comments__load-more_hidden")
-                    }
-
-                })
-        }
-
-    </script>
+    <script src="build.js"></script>
 </body>
 </html>
