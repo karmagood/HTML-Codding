@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/Article.css"/>
+    <title>Article</title>
+</head>
+<body>
+{{#Index.Article-and-Comments}}
+    <article class="Article">
+        {{#Article-header}}
+            <header class="Article__header">
+                <img class="Article__user-pic" src="{{user-img}}"/>
+                <div class="Article__user-info">
+                    <a class="Article__user-name" href="{{user-link}}">{{user-name}}</a>
+                    {{#additional-info}}
+                        <span>{{preposition}}
+                            <a class="Article__link" href="{{info-link}}">{{info}}</a>
+                                </span>
+                    {{/additional-info}}
+                    <br>
+                    <a href="#">
+                        <time class="Article__time" datetime="dd.mm.yyyy">{{post-time}}</time>
+                    </a>
+                </div>
+            </header>
+        {{/Article-header}}
+        {{#Article-content}}
+            <main class="Article__content">
+                <p class="Article__description">{{description}}</p>
+                <img class="Article__file" src="{{file-src}}"/>
+            </main>
+        {{/Article-content}}
+        <footer class="Article__reaction-on">
+            <a class="Article__likes-etc" href="#">
+                <span class="Article__icon9 Icon9_like"></span>Like
+            </a>
+            <a class="Article__likes-etc" href="#">
+                <span class="Article__icon9 Icon9_comment"></span>Comment
+            </a>
+            <a class="Article__likes-etc" href="#">
+                <span class="Article__icon9 Icon9_share"></span>Share
+            </a>
+        </footer>
+    </article>
+{{/Index.Article-and-Comments}}
+</body>
+</html>

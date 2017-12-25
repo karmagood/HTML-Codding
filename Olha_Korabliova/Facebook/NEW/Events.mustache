@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/Events.css"/>
+    <link rel="stylesheet" href="styles/Icons.css"/>
+    <title>Events</title>
+</head>
+<body>
+<div class="Events">
+    {{#Index.Events}}
+        <div class="Events__item">
+            <a class="Events__item-link" href="{{link}}">
+                <span class="{{icon-class}}"></span>{{event}}
+            </a>
+            <time class="Events__item-time" datatype="#">{{event-time}}</time>
+        </div>
+    {{/Index.Events}}
+</div>
+</body>
+</html>
