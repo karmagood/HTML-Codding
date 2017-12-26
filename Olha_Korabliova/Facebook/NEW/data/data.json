@@ -353,168 +353,168 @@
         "user-link": "#",
         "mutual-friends": "50 mutual friends."
       }
-    ],
-    "Languages": [
-      {
-        "status": "active",
-        "language": "English (US)",
-        "action": "#"
-      },
-      {
-        "status": null,
-        "language": "Українська",
-        "action": "#"
-      },
-      {
-        "status": null,
-        "language": "Русский",
-        "action": "#"
-      },
-      {
-        "status": null,
-        "language": "Español",
-        "action": "#"
-      },
-      {
-        "status": null,
-        "language": "Português (Brasil)",
-        "action": "#"
-      }
-    ],
-    "Info-footer": [
-      {
-        "action": "#",
-        "info": "Privacy"
-      },
-      {
-        "action": "#",
-        "info": "Terms"
-      },
-      {
-        "action": "#",
-        "info": "Advertising"
-      },
-      {
-        "action": "#",
-        "info": "Ad Choices"
-      },
-      {
-        "action": "#",
-        "info": "Cookies"
-      },
-      {
-        "action": "#",
-        "info": "More"
-      },
-      {
-        "action": "#",
-        "info": "Facebook © 2017"
-      }
-    ],
-    "Side-bar": {
-      "online-users": [
-        {
-          "link": "#",
-          "pic": "images/ivan_avatar.jpg",
-          "name": "Ivan Navi",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/maria_avatar.png",
-          "name": "Maria Airam",
-          "online": "Side-bar__icon Icon3_green-dot"
-
-        },
-        {
-          "link": "#",
-          "pic": "images/ivan_avatar.jpg",
-          "name": "Ivan Navi",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/maria_avatar.png",
-          "name": "Maria Airam",
-          "online": "Side-bar__icon Icon3_green-dot"
-
-        },
-        {
-          "link": "#",
-          "pic": "images/ivan_avatar.jpg",
-          "name": "Ivan Navi",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/maria_avatar.png",
-          "name": "Maria Airam",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/ivan_avatar.jpg",
-          "name": "Ivan Navi",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/maria_avatar.png",
-          "name": "Maria Airam",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/ivan_avatar.jpg",
-          "name": "Ivan Navi",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/maria_avatar.png",
-          "name": "Maria Airam",
-          "online": "Side-bar__icon Icon3_green-dot"
-        }
-      ],
-      "more-contacts": [
-        {
-          "link": "#",
-          "pic": "images/bogdan_avatar.png",
-          "name": "Bogdan Bogdan",
-          "online": null
-        },
-        {
-          "link": "#",
-          "pic": "images/kira_avatar.png",
-          "name": "Kira Arik",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/bogdan_avatar.png",
-          "name": "Bogdan Bogdan",
-          "online": null
-        },
-        {
-          "link": "#",
-          "pic": "images/kira_avatar.png",
-          "name": "Kira Arik",
-          "online": "Side-bar__icon Icon3_green-dot"
-        },
-        {
-          "link": "#",
-          "pic": "images/bogdan_avatar.png",
-          "name": "Bogdan Bogdan",
-          "online": null
-        },
-        {
-          "link": "#",
-          "pic": "images/kira_avatar.png",
-          "name": "Kira Arik",
-          "online": "Side-bar__icon Icon3_green-dot"
-        }
-      ]
+    ]
+  },
+  "Languages": [
+    {
+      "status": "active",
+      "language": "English (US)",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Українська",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Русский",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Español",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Português (Brasil)",
+      "action": "#"
     }
+  ],
+  "Info-footer": [
+    {
+      "action": "#",
+      "info": "Privacy"
+    },
+    {
+      "action": "#",
+      "info": "Terms"
+    },
+    {
+      "action": "#",
+      "info": "Advertising"
+    },
+    {
+      "action": "#",
+      "info": "Ad Choices"
+    },
+    {
+      "action": "#",
+      "info": "Cookies"
+    },
+    {
+      "action": "#",
+      "info": "More"
+    },
+    {
+      "action": "#",
+      "info": "Facebook © 2017"
+    }
+  ],
+  "Side-bar": {
+    "online-users": [
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+      }
+    ],
+    "more-contacts": [
+      {
+        "link": "#",
+        "pic": "images/bogdan_avatar.png",
+        "name": "Bogdan Bogdan",
+        "online": null
+      },
+      {
+        "link": "#",
+        "pic": "images/kira_avatar.png",
+        "name": "Kira Arik",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/bogdan_avatar.png",
+        "name": "Bogdan Bogdan",
+        "online": null
+      },
+      {
+        "link": "#",
+        "pic": "images/kira_avatar.png",
+        "name": "Kira Arik",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/bogdan_avatar.png",
+        "name": "Bogdan Bogdan",
+        "online": null
+      },
+      {
+        "link": "#",
+        "pic": "images/kira_avatar.png",
+        "name": "Kira Arik",
+        "online": "Side-bar__icon Icon3_green-dot"
+      }
+    ]
   },
 
 

@@ -21,24 +21,16 @@
             <span class="Icon Icon_messenger"></span>Messenger
         </a>
     </nav>
-    <nav class="Tool-bar__nav">
-        <h4 class="Tool-bar__nav-title">Shortcuts</h4>
-        <a class="Tool-bar__item" href="#">
-            <span class="Icon Icon_light-bulb"></span>CS@UCU
-        </a>
-        <a class="Tool-bar__item" href="#">
-            <span class="Icon Icon_light-bulb"></span>CS@UCU
-        </a>
-        <a class="Tool-bar__item" href="#">
-            <span class="Icon Icon_light-bulb"></span>CS@UCU
-        </a>
-        <a class="Tool-bar__item" href="#">
-            <span class="Icon Icon_light-bulb"></span>CS@UCU
-        </a>
-        <a class="Tool-bar__item" href="#">
-            <span class="Icon Icon_light-bulb"></span>CS@UCU
-        </a>
-    </nav>
+    {{#Index.Tool-bar}}
+        <nav class="Tool-bar__nav">
+            <h4 class="Tool-bar__nav-title">{{title}}</h4>
+            {{#nav}}
+                <a class="Tool-bar__item" href="{{link}}">
+                    <span class="Icon {{icon-class}}"></span>{{item}}
+                </a>
+            {{/nav}}
+        </nav>
+    {{/Index.Tool-bar}}
     <nav class="Tool-bar__nav">
         <h4 class="Tool-bar__nav-title">Create</h4>
         <a class="Tool-bar__more" href="#">Ad</a>

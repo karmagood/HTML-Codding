@@ -15,7 +15,7 @@
   padding: 5px 10px 5px 10px;
 }
 .Comments__user-action {
-  padding-right: 10px;
+  padding-right: 20px;
   color: #365899;
 }
 .Comments__user-comments {
@@ -39,34 +39,59 @@
   padding: 0;
   border: none;
 }
-.Comments__icon {
+.Comments__icon1 {
   width: 16px;
   height: 16px;
   float: right;
   margin: 2px 10px 0 0;
-  background-image: url(../images/icon-sprite-1.png);
+  background-image: url("../images/icon-sprite1.png");
 }
-.Icon_smile-gray {
+.Comments__icon9 {
+  height: 18px;
+  width: 18px;
+  margin-top: -3px;
+  margin-right: 3px;
+  display: inline-block;
+  background-image: url("../images/icon-sprite9.png");
+  vertical-align: middle;
+}
+.Comments__time {
+  color: #90949C;
+}
+.Comments__item {
+  border: black solid 1px;
+  padding: 5px 5px 5px 10px;
+}
+.Comments__text {
+  width: 95%;
+  color: #000;
+  word-wrap: break-word;
+  margin: 2px;
+}
+.Icon1_smile-gray {
   background-position: -97px 151px;
 }
-.Icon_smile-gray:hover {
+.Icon1_smile-gray:hover {
   background-position: -114px 151px;
 }
-.Icon_photo-gray {
+.Icon1_photo-gray {
   background-position: -63px 151px;
 }
-.Icon_photo-gray:hover {
+.Icon1_photo-gray:hover {
   background-position: -80px 151px;
 }
-.Icon_gif-gray {
+.Icon1_gif-gray {
   background-position: -131px 151px;
 }
-.Icon_gif-gray:hover {
+.Icon1_gif-gray:hover {
   background-position: -148px 151px;
 }
-.Icon_stiker-gray {
+.Icon1_stiker-gray {
   background-position: -216px 151px;
 }
-.Icon_stiker-gray:hover {
+.Icon1_stiker-gray:hover {
   background-position: -233px 151px;
+}
+.Icon9_like-blue {
+  background-position: -19px 223px;
 }
