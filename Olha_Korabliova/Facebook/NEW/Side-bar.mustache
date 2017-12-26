@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/Side-bar.css"/>
+    <title>Side Bar</title>
+</head>
+<body>
+{{#Side-bar}}
+    <div class="Side-bar">
+        {{#online-users}}
+            <a class="Side-bar__item" href="{{link}}">
+                <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
+                <span class="{{online}}"></span>
+            </a>
+        {{/online-users}}
+        <h5 class="Side-bar__more-contacts-title">MORE CONTACTS</h5>
+        {{#more-contacts}}
+            <a class="Side-bar__item" href="{{link}}">
+                <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
+                <span class="{{online}}"></span>
+            </a>
+        {{/more-contacts}}
+        <footer class="Side-bar__search">
+            <form class="Search">
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon2_find"></span>
+                </a>
+                <input class="Search__input" type="search" name="search" placeholder="Search">
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon4_settings"></span>
+                </a>
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon4_new-message"></span>
+                </a>
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon4_create-group"></span>
+                </a>
+            </form>
+        </footer>
+    </div>
+{{/Side-bar}}
+</body>
+</html>

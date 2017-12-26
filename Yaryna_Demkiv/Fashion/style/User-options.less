@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../fonts/helveticaneuecyr-light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.User-options {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    margin: 0;
+  }
+  &__item:nth-child(1) {
+    margin-right: 40px;
+  }
+  &__image {
+   /* margin-left: 65px;*/
+    height: 42px;
+    width: 42px;
+    opacity: 0.5;
+    display: inline-block;
+    vertical-align: middle;
+   }
+
+  &__caption {
+    font-family: "HelveticaNeueCyr-Light", sans-serif;
+    font-size: 24px;
+    letter-spacing: 1.1px;
+    color: #6c7178;
+    /*margin-left: 5px;*/
+    /*margin-bottom: 5px;*/
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.User-options a {
+  text-decoration: none;
+}

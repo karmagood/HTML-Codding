@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'GillSansMT';
+  src: url('../fonts/GIL_Sans_MT.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'BaskOldFace';
+  src: url('../fonts/BASKVILL.TTF');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GillSans-Light';
+  src: url('../fonts/GillSans-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.Section-description {
+
+
+  &__header {
+    font-family: 'GillSansMT', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #868686;
+    margin-bottom: 0;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__title {
+    font-family: 'BaskOldFace', sans-serif;
+    font-size: 42px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &_small {
+      font-size: 36px;
+      margin-top: 100px;
+    }
+  }
+
+  &__description {
+    font-family: 'GillSans-Light', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+
+    &_small {
+      font-size: 20px;
+
+    }
+  }
+
+  &__link {
+    font-family: 'GillSansMT', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.17;
+    letter-spacing: 2.2px;
+    text-align: center;
+    text-decoration: underline;
+    color: #797979;
+    margin-top: 40px;
+
+
+   /* &_shift {
+     margin-left: 200px;
+    }*/
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border: none;
+    background-size: cover;
+    background-color: #8b898b;
+    background-position: center;
+    margin-top: 40px;
+
+   /* &_jewelry {
+      background-image: url("http://res.cloudinary.com/dvhn8lvvz/image/upload/c_scale,h_424,w_752/v1513250638/makeup-brush-1768790_640_uujdzz.jpg");
+    }
+    &_style {
+      background-image: url("http://res.cloudinary.com/dvhn8lvvz/image/upload/c_scale,e_art:primavera,h_424,w_752/v1513215285/pexels-photo-206296_znhguv.jpg");
+    }
+    &_cosmetics {
+      background-image: url("http://res.cloudinary.com/dvhn8lvvz/image/upload/c_scale,h_424,w_752/v1513299896/coconut-oil-in-jar-2089930_640_wvntdd.jpg");
+    } */
+  }
+
+  &_contacts {
+    display: flex;
+  }
+
+  &__contacts-item {
+    width: 50%;
+    text-align: center;
+
+  }
+}

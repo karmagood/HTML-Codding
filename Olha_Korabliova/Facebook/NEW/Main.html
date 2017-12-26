@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/Article.css"/>
-    <link rel="stylesheet" href="styles/Comments-field.css"/>
+    <link rel="stylesheet" href="styles/Comments.css"/>
     <link rel="stylesheet" href="styles/Main.css"/>
     <link rel="stylesheet" href="styles/Header.css"/>
     <link rel="stylesheet" href="styles/Tool-bar.css"/>
@@ -151,23 +151,23 @@
             </main>
             <footer class="Article__reaction-on">
                 <a class="Article__likes-etc" href="#">
-                    <span class="Article__icon Icon_like"></span>Like
+                    <span class="Article__icon9 Icon9_like"></span>Like
                 </a>
                 <a class="Article__likes-etc" href="#">
-                    <span class="Article__icon Icon_comment"></span>Comment
+                    <span class="Article__icon9 Icon9_comment"></span>Comment
                 </a>
                 <a class="Article__likes-etc" href="#">
-                    <span class="Article__icon Icon_share"></span>Share
+                    <span class="Article__icon9 Icon9_share"></span>Share
                 </a>
             </footer>
         </article>
         <footer class="Comments">
             <div class="Comments__user-reactions">
                 <a class="Comments__user-action" href="#">
-                    <i class="fa fa-thumbs-up"> {{who-liked}}</i>
+                    <span class="Comments__icon9 Icon9_like-blue"></span>{{who-liked}}
                 </a>
                 <a class="Comments__user-action" href="#">
-                    <i class="fa fa-send"> {{who-shared}}</i>
+                    {{who-shared}}
                 </a>
             </div>
             <div class="Comments__user-comments">
@@ -177,19 +177,54 @@
                 </a>
                 <form action="#" class="Comments__add-item">
                     <input class="Comments__text-area" type="text" placeholder="Write a comment..."/>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_smile-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_smile-gray"></span>
                     </a>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_photo-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_photo-gray"></span>
                     </a>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_gif-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_gif-gray"></span>
                     </a>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_stiker-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_stiker-gray"></span>
                     </a>
                 </form>
+            </div>
+            <div class="Comments__item">
+                <a href="#">
+                    <img class="Comments__user-pic" src="images/kira_avatar.png"/>
+                    <span class="Comments__user-name">Kira Arik</span>
+                </a>
+                <time class="Comments__time" datetime="dd.mm.yyyy">01.10.2017</time>
+                <p class="Comments__text">Hello, my dear! aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores blanditiis commodi dicta dolorem
+                    doloremque enim nostrum numquam porro quae quis, quisquam repellendus reprehenderit sapiente sunt ullam
+                    unde. Accusamus accusantium adipisci aspernatur assumenda atque autem beatae blanditiis consectetur enim et
+                    exercitationem impedit inventore labore, maxime molestiae necessitatibus nostrum pariatur praesentium
+                    provident quaerat quidem sed sequi suscipit tempora ut veniam vitae. Ad, asperiores commodi dolorum earum
+                    eius incidunt ipsa iste magnam possimus qui quos recusandae similique sit, tempora voluptates? Adipisci,
+                    animi at aut commodi cum dolorum ex fugit impedit incidunt iste magni, nam nihil non nostrum omnis
+                    perspiciatis provident, quaerat sit veritatis voluptate. Ab amet animi asperiores autem cum delectus dolore
+                    ducimus excepturi expedita explicabo, iusto laborum, molestiae nemo neque quisquam quos recusandae sint
+                    temporibus unde voluptatem. Animi corporis eligendi, fuga impedit itaque molestias neque, nesciunt nobis non
+                    odit perferendis, possimus rem repellendus reprehenderit sapiente tenetur ut vel voluptate voluptatibus!
+                </p>
+            </div>
+            <div class="Comments__item">
+                <a href="#">
+                    <img class="Comments__user-pic" src="images/kira_avatar.png"/>
+                    <span class="Comments__user-name">Kira Arik</span>
+                </a>
+                <time class="Comments__time" datetime="dd.mm.yyyy">01.10.2017</time>
+                <p class="Comments__text">Hello, my dear!</p>
+            </div>
+            <div class="Comments__item">
+                <a href="#">
+                    <img class="Comments__user-pic" src="images/kira_avatar.png"/>
+                    <span class="Comments__user-name">Kira Arik</span>
+                </a>
+                <p class="Comments__text">Hello, my dear!</p>
             </div>
         </footer>
         <article class="Article">
@@ -210,23 +245,23 @@
             </main>
             <footer class="Article__reaction-on">
                 <a class="Article__likes-etc" href="#">
-                    <span class="Article__icon Icon_like"></span>Like
+                    <span class="Article__icon9 Icon9_like"></span>Like
                 </a>
                 <a class="Article__likes-etc" href="#">
-                    <span class="Article__icon Icon_comment"></span>Comment
+                    <span class="Article__icon9 Icon9_comment"></span>Comment
                 </a>
                 <a class="Article__likes-etc" href="#">
-                    <span class="Article__icon Icon_share"></span>Share
+                    <span class="Article__icon9 Icon9_share"></span>Share
                 </a>
             </footer>
         </article>
         <footer class="Comments">
             <div class="Comments__user-reactions">
                 <a class="Comments__user-action" href="#">
-                    <i class="fa fa-thumbs-up"> {{who-liked}}</i>
+                    <span class="Comments__icon9 Icon9_like-blue"></span>{{who-liked}}
                 </a>
                 <a class="Comments__user-action" href="#">
-                    <i class="fa fa-send"> {{who-shared}}</i>
+                    {{who-shared}}
                 </a>
             </div>
             <div class="Comments__user-comments">
@@ -236,19 +271,54 @@
                 </a>
                 <form action="#" class="Comments__add-item">
                     <input class="Comments__text-area" type="text" placeholder="Write a comment..."/>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_smile-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_smile-gray"></span>
                     </a>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_photo-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_photo-gray"></span>
                     </a>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_gif-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_gif-gray"></span>
                     </a>
-                    <a class="Comments__item_icon" href="#">
-                        <span class="Comments__icon Icon_stiker-gray"></span>
+                    <a href="#">
+                        <span class="Comments__icon1 Icon1_stiker-gray"></span>
                     </a>
                 </form>
+            </div>
+            <div class="Comments__item">
+                <a href="#">
+                    <img class="Comments__user-pic" src="images/kira_avatar.png"/>
+                    <span class="Comments__user-name">Kira Arik</span>
+                </a>
+                <time class="Comments__time" datetime="dd.mm.yyyy">01.10.2017</time>
+                <p class="Comments__text">Hello, my dear!aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad asperiores blanditiis commodi dicta dolorem
+                    doloremque enim nostrum numquam porro quae quis, quisquam repellendus reprehenderit sapiente sunt ullam
+                    unde. Accusamus accusantium adipisci aspernatur assumenda atque autem beatae blanditiis consectetur enim et
+                    exercitationem impedit inventore labore, maxime molestiae necessitatibus nostrum pariatur praesentium
+                    provident quaerat quidem sed sequi suscipit tempora ut veniam vitae. Ad, asperiores commodi dolorum earum
+                    eius incidunt ipsa iste magnam possimus qui quos recusandae similique sit, tempora voluptates? Adipisci,
+                    animi at aut commodi cum dolorum ex fugit impedit incidunt iste magni, nam nihil non nostrum omnis
+                    perspiciatis provident, quaerat sit veritatis voluptate. Ab amet animi asperiores autem cum delectus dolore
+                    ducimus excepturi expedita explicabo, iusto laborum, molestiae nemo neque quisquam quos recusandae sint
+                    temporibus unde voluptatem. Animi corporis eligendi, fuga impedit itaque molestias neque, nesciunt nobis non
+                    odit perferendis, possimus rem repellendus reprehenderit sapiente tenetur ut vel voluptate voluptatibus!
+                </p>
+            </div>
+            <div class="Comments__item">
+                <a href="#">
+                    <img class="Comments__user-pic" src="images/kira_avatar.png"/>
+                    <span class="Comments__user-name">Kira Arik</span>
+                </a>
+                <time class="Comments__time" datetime="dd.mm.yyyy">01.10.2017</time>
+                <p class="Comments__text">Hello, my dear!</p>
+            </div>
+            <div class="Comments__item">
+                <a href="#">
+                    <img class="Comments__user-pic" src="images/kira_avatar.png"/>
+                    <span class="Comments__user-name">Kira Arik</span>
+                </a>
+                <p class="Comments__text">Hello, my dear!</p>
             </div>
         </footer>
     </main>
