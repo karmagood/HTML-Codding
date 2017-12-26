@@ -1,0 +1,8 @@
+.Cover__photo {
+  background-image: url("../images/cover_photo.jpg");
+  background-size: cover;
+  width: auto;
+  height: 350px;
+  border-left: #4B4F56 solid 1px;
+  border-right: #4B4F56 solid 1px;
+}

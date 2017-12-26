@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  background-color: #E9EBEE;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
 .Facebook {
   margin-right: 205px;
 }
@@ -16,4 +22,8 @@
   float: left;
   width: 250px;
   margin-left: 10px;
+}
+.Tool-bar {
+  float: left;
+  width: 180px;
 }

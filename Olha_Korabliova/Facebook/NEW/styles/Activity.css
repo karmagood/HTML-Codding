@@ -1,0 +1,23 @@
+.Activity__button {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  border: #DDDFE2 solid 1px;
+  border-radius: 2px;
+  margin-left: 3px;
+  background-color: #F6F7F9;
+  color: #4B4F56;
+}
+.Activity__button:hover {
+  background-color: #E9EBEE;
+}
+.Activity__icon1 {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url("../images/icon-sprite1.png");
+  vertical-align: middle;
+}
+.Icon1_edit-pencil {
+  background-position: -42px 49px;
+}

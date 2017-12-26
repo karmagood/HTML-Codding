@@ -1,0 +1,22 @@
+@import "vars";
+
+.Profile-bar {
+  background-color: white;
+  border: @main-border;
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
+  //z-index: 1;
+  &__item {
+    position: relative;
+    left: 160px;
+    padding: 11px 25px 11px 25px;
+    border-left: @active-grey solid 1px;
+    border-right: @active-grey solid 1px;
+    color: @main-blue;
+    font-weight: bold;
+    &.active {color: @dark-grey;}
+    &:hover {
+      background-color: @main-grey;
+    }
+  }
+}

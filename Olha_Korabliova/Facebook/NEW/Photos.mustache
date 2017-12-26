@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/Photos.css"/>
+    <title>Photos</title>
+</head>
+<body>
+<section class="Photos">
+    <h4 class="Photos__title">
+        <span class="Photos__icon Icon_photos"></span>Photos
+    </h4>
+    {{#user-photos}}
+        <a href="{{photo-link}}">
+            <img class="Photos__photo {{image-class}}" src="{{img-src}}"/>
+        </a>
+    {{/user-photos}}
+</section>
+</body>
+</html>

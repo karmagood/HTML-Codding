@@ -1,0 +1,71 @@
+.Intro {
+  padding: 5px 5px 5px 10px;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 10px;
+}
+.Intro__title {
+  margin: 10px;
+}
+.Intro__questions {
+  font-size: 14px;
+  padding: 10px;
+  border: #DDDFE2 solid 1px;
+  border-radius: 5px;
+  background-color: #F6F7F9;
+  margin: 5px 15px 5px 5px;
+}
+.Intro__link {
+  color: #365899;
+}
+.Intro__education-etc {
+  border-top: #DDDFE2 solid 1px;
+  margin: 15px 5px 0 5px;
+  font-size: 13px;
+  padding: 2px;
+}
+.Intro__add {
+  padding: 5px;
+  border: #4080ff solid 1px;
+  border-radius: 5px;
+  margin: 5px 10px 5px 2px;
+}
+.Intro__add-button {
+  font-size: 13px;
+  color: #4080ff;
+}
+.Intro__photo {
+  border: #DDDFE2 solid 1px;
+}
+.Intro__photo.bigger {
+  width: 140px;
+}
+.Intro__photo.smaller {
+  width: 91px;
+}
+.Intro__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+  display: inline-block;
+  background-image: url("../images/icons-user-page-1.png");
+  background-size: 97px 425px;
+  vertical-align: middle;
+}
+.Icon_globe {
+  background-position: -49px 338px;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 5px 0;
+}
+.Icon_student-hat {
+  background-position: -34px 183px;
+}
+.Icon_location {
+  background-position: -17px 166px;
+}
+.Icon_info-block {
+  background-position: -51px 183px;
+}

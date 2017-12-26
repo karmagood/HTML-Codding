@@ -1,0 +1,25 @@
+@import "vars";
+@sprite: "../images/icons-user-page-2.png";
+
+.Featured-albums {
+  padding: 5px 5px 5px 10px;
+  border: @main-border;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 10px;
+  &__title {
+    margin: 10px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-bottom: 3px;
+    display: inline-block;
+    background-image: url(@sprite);
+    background-size: image-width(@sprite) image-height(@sprite);
+    vertical-align: middle;
+  }
+}
+
+.Icon_albums {background-position: 0 166px;}

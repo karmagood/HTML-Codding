@@ -40,7 +40,7 @@
     border-radius: 0 0 3px 3px;
   }
   &__additional {
-    padding-top: 15px;
+    padding-top: 10px;
     margin-top: 5px;
     border-top: @main-border;
   }
@@ -63,8 +63,40 @@
     background-size: image-width(@sprite) image-height(@sprite);
     vertical-align: middle;
   }
+  &__control {
+    padding-top: 10px;
+    border-top: @main-border;
+    margin-top: 15px;
+  }
+  &__button {
+    &_access {
+      border: @main-border;
+      padding: 5px 0 5px 5px;
+      background-color: @milk;
+      color: @dark-grey;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      text-align: center;
+      margin: 5px;
+    }
+    &_post {
+      padding: 5px 10px 5px 10px;
+      background-color: @main-blue;
+      color: white;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 2px;
+      text-align: center;
+      margin: 5px;
+    }
+  }
 }
 
 .Icon_pencil {background-position: 502px -71px;}
 .Icon_photo-camera {background-position: 485px -69px;}
 .Icon_video-camera {background-position: -419px 251px;}
+.Icon_life-event {background-position: -419px 251px;}
+
+.Icon_friends {background-position: -350px 151px;}
+.Icon_down {background-position: -300px 151px;}

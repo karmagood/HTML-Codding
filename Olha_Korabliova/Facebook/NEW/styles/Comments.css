@@ -29,13 +29,13 @@
   border-radius: 10px;
   border: #DDDFE2 solid 1px;
   padding: 5px;
-  width: 400px;
+  min-width: 400px;
   position: absolute;
   margin-top: 10px;
   margin-left: 55px;
 }
 .Comments__text-area {
-  width: 200px;
+  width: 290px;
   padding: 0;
   border: none;
 }

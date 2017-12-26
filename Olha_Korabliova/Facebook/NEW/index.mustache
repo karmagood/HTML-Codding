@@ -7,18 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/Article.css"/>
     <link rel="stylesheet" href="styles/Comments.css"/>
-    <link rel="stylesheet" href="styles/Main.css"/>
+    <link rel="stylesheet" href="styles/Index.css"/>
     <link rel="stylesheet" href="styles/Header.css"/>
     <link rel="stylesheet" href="styles/Tool-bar.css"/>
     <link rel="stylesheet" href="styles/Icons.css"/>
     <link rel="stylesheet" href="styles/News.css"/>
-    <link rel="stylesheet" href="styles/Facebook.css"/>
     <link rel="stylesheet" href="styles/Stories.css"/>
     <link rel="stylesheet" href="styles/Events.css"/>
     <link rel="stylesheet" href="styles/Friend-suggest.css"/>
     <link rel="stylesheet" href="styles/Languages.css"/>
     <link rel="stylesheet" href="styles/Info-footer.css"/>
     <link rel="stylesheet" href="styles/Side-bar.css"/>
+    <link rel="stylesheet" href="styles/Common.css"/>
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
@@ -257,40 +258,41 @@
             {{/Info-footer}}
         </footer>
     </aside>
-    {{#Side-bar}}
-        <div class="Side-bar">
-            {{#online-users}}
-                <a class="Side-bar__item" href="{{link}}">
-                    <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
-                    <span class="{{online}}"></span>
-                </a>
-            {{/online-users}}
-            <h5 class="Side-bar__more-contacts-title">MORE CONTACTS</h5>
-            {{#more-contacts}}
-                <a class="Side-bar__item" href="{{link}}">
-                    <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
-                    <span class="{{online}}"></span>
-                </a>
-            {{/more-contacts}}
-            <footer class="Side-bar__search">
-                <form class="Search">
-                    <a class="Search__item_icon" href="#">
-                        <span class="Search__icon Icon2_find"></span>
-                    </a>
-                    <input class="Search__input" type="search" name="search" placeholder="Search">
-                    <a class="Search__item_icon" href="#">
-                        <span class="Search__icon Icon4_settings"></span>
-                    </a>
-                    <a class="Search__item_icon" href="#">
-                        <span class="Search__icon Icon4_new-message"></span>
-                    </a>
-                    <a class="Search__item_icon" href="#">
-                        <span class="Search__icon Icon4_create-group"></span>
-                    </a>
-                </form>
-            </footer>
-        </div>
-    {{/Side-bar}}
 </section>
+{{#Side-bar}}
+    <div class="Side-bar">
+        {{#online-users}}
+            <a class="Side-bar__item" href="{{link}}">
+                <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
+                <span class="{{online}}"></span>
+            </a>
+        {{/online-users}}
+        <h5 class="Side-bar__more-contacts-title">MORE CONTACTS</h5>
+        {{#more-contacts}}
+            <a class="Side-bar__item" href="{{link}}">
+                <img class="Side-bar__user-pic" src="{{pic}}"/>{{name}}
+                <span class="{{online}}"></span>
+            </a>
+        {{/more-contacts}}
+        <footer class="Side-bar__search">
+            <form class="Search">
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon2_find"></span>
+                </a>
+                <input class="Search__input" type="search" name="search" placeholder="Search">
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon4_settings"></span>
+                </a>
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon4_new-message"></span>
+                </a>
+                <a class="Search__item_icon" href="#">
+                    <span class="Search__icon Icon4_create-group"></span>
+                </a>
+            </form>
+        </footer>
+    </div>
+{{/Side-bar}}
+<!--</section>-->
 </body>
 </html>

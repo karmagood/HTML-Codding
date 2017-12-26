@@ -1,0 +1,68 @@
+@import "vars.less";
+@sprite: "../images/icons-user-page-1.png";
+
+.Intro {
+  padding: 5px 5px 5px 10px;
+  border: @main-border;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 10px;
+  &__title {
+    margin: 10px;
+  }
+  &__questions {
+    font-size: 14px;
+    padding: 10px;
+    border: @main-border;
+    border-radius: 5px;
+    background-color: @milk;
+    margin: 5px 15px 5px 5px;
+  }
+  &__link{color: @main-blue;}
+  &__education-etc {
+    border-top: @main-border;
+    margin: 15px 5px 0 5px;
+    font-size: 13px;
+    padding: 2px;
+  }
+  &__add {
+    padding: 5px;
+    border: @light-blue solid 1px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 2px;
+    &-button {
+      font-size: 13px;
+      color: @light-blue;
+    }
+  }
+  &__photo {
+    border: @main-border;
+    &.bigger {
+      width: 140px;
+    }
+    &.smaller {
+      width: 91px;
+    }
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    display: inline-block;
+    background-image: url(@sprite);
+    background-size: image-width(@sprite) image-height(@sprite);
+    vertical-align: middle;
+  }
+}
+
+.Icon_globe {
+  background-position: -49px 338px;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px 5px 0;
+}
+
+.Icon_student-hat {background-position: -34px 183px;}
+.Icon_location {background-position: -17px 166px;}
+.Icon_info-block {background-position: -51px 183px;}
