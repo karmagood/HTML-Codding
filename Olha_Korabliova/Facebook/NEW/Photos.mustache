@@ -9,15 +9,17 @@
     <title>Photos</title>
 </head>
 <body>
-<section class="Photos">
-    <h4 class="Photos__title">
-        <span class="Photos__icon Icon_photos"></span>Photos
-    </h4>
-    {{#user-photos}}
-        <a href="{{photo-link}}">
-            <img class="Photos__photo {{image-class}}" src="{{img-src}}"/>
-        </a>
-    {{/user-photos}}
-</section>
+{{#Profile.Photos}}
+    <section class="Photos">
+        <h4 class="Photos__title">
+            <span class="Photos__icon Icon_photos"></span>Photos
+        </h4>
+        {{#user-photos}}
+            <a href="{{photo-link}}">
+                <img class="Photos__photo {{image-class}}" src="{{img-src}}"/>
+            </a>
+        {{/user-photos}}
+    </section>
+{{/Profile.Photos}}
 </body>
 </html>

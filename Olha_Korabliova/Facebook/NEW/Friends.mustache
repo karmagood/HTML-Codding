@@ -9,15 +9,17 @@
     <title>Friends</title>
 </head>
 <body>
-<section class="Friends">
-    <h4 class="Friends__title">
-        <span class="Friends__icon Icon_friends"></span>Friends
-    </h4>
-    {{#friends}}
-        <a href="{{friend-link}}">
-            <img class="Friends__photo {{image-class}}" src="{{img-src}}"/>
-        </a>
-    {{/friends}}
-</section>
+{{#Profile.Friends}}
+    <section class="Friends">
+        <h4 class="Friends__title">
+            <span class="Friends__icon Icon_friends"></span>Friends
+        </h4>
+        {{#friends}}
+            <a href="{{friend-link}}">
+                <img class="Friends__photo {{image-class}}" src="{{img-src}}"/>
+            </a>
+        {{/friends}}
+    </section>
+{{/Profile.Friends}}
 </body>
 </html>

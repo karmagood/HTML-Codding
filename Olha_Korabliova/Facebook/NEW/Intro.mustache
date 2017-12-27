@@ -9,31 +9,33 @@
     <title>Intro</title>
 </head>
 <body>
-<section class="Intro">
-    <h4 class="Intro__title">
-        <span class="Intro__icon Icon_globe"></span>Intro
-    </h4>
-    <div class="Intro__questions">
-        <a class="Intro__link" href="#"> + What makes you happy?</a>
-    </div>
-    <div class="Intro__education-etc">
-        {{#education-etc}}
-            <p>
-                <span class="Intro__icon {{icon}}"></span>{{action}}
-                <a class="Intro__link" href="{{place-link}}">{{place}}</a>
-            </p>
-        {{/education-etc}}
-    </div>
-    <div class="Intro__photos">
-        {{#featured-photos}}
-            <a href="{{photo-link}}">
-                <img class="Intro__photo {{image-class}}" src="{{img-src}}"/>
-            </a>
-        {{/featured-photos}}
-    </div>
-    <div class="Intro__add">
-        <a class="Intro__add-button" href="#"> + Add Instagram, Websites, Other Links</a>
-    </div>
-</section>
+{{#Profile.Intro}}
+    <section class="Intro">
+        <h4 class="Intro__title">
+            <span class="Intro__icon Icon_globe"></span>Intro
+        </h4>
+        <div class="Intro__questions">
+            <a class="Intro__link" href="#"> + What makes you happy?</a>
+        </div>
+        <div class="Intro__education-etc">
+            {{#education-etc}}
+                <p>
+                    <span class="Intro__icon {{icon}}"></span>{{action}}
+                    <a class="Intro__link" href="{{place-link}}">{{place}}</a>
+                </p>
+            {{/education-etc}}
+        </div>
+        <div class="Intro__photos">
+            {{#featured-photos}}
+                <a href="{{photo-link}}">
+                    <img class="Intro__photo {{image-class}}" src="{{img-src}}"/>
+                </a>
+            {{/featured-photos}}
+        </div>
+        <div class="Intro__add">
+            <a class="Intro__add-button" href="#"> + Add Instagram, Websites, Other Links</a>
+        </div>
+    </section>
+{{/Profile.Intro}}
 </body>
 </html>

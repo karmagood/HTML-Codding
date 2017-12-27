@@ -554,8 +554,178 @@
           ]
         }
       }
-    ]
+    ],
+    "Intro": {
+      "education-etc": [
+        {
+          "icon": "Icon_student-hat",
+          "action": "Studied German Language at ",
+          "place-link": "#",
+          "place": "Universität Passau"
+        },
+        {
+          "icon": "Icon_student-hat",
+          "action": "Studies Computer Science at ",
+          "place-link": "#",
+          "place": "Ukrainian Catholic University"
+        },
+        {
+          "icon": "Icon_student-hat",
+          "action": "Went to ",
+          "place-link": "#",
+          "place": "Lviv Physics and Mathematics Lyceum"
+        },
+        {
+          "icon": "Icon_location",
+          "action": "From ",
+          "place-link": "#",
+          "place": "Lviv, Ukraine"
+        },
+        {
+          "icon": "Icon_info-block",
+          "action": "Followed by ",
+          "place-link": "#",
+          "place": "27 people"
+        }
+      ],
+      "featured-photos": [
+        {
+          "photo-link": "#",
+          "image-class": "bigger",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "bigger",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        }
+      ]
+    },
+    "Photos": {
+      "user-photos": [
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        }
+      ]
+    },
+    "Friends": {
+      "friends": [
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        }
+      ]
+    },
+    "Featured-albums": {}
   },
+
   "Languages": [
     {
       "status": "active",
@@ -719,6 +889,8 @@
   },
 
 
+
+
   "user-page-post": [
     {
       "user-link": "user_page",
@@ -823,168 +995,6 @@
     {
       "game-link": "#",
       "img-src": "images/pool_game.jpg"
-    }
-  ],
-  "friends": [
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    },
-    {
-      "friend-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/friend_avatar_photos_block_user_page.png",
-      "friend-name": "Michael Michael"
-    }
-  ],
-  "user-photos": [
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    }
-  ],
-  "education-etc": [
-    {
-      "icon": "Icon_student-hat",
-      "action": "Studied German Language at ",
-      "place-link": "#",
-      "place": "Universität Passau"
-    },
-    {
-      "icon": "Icon_student-hat",
-      "action": "Studies Computer Science at ",
-      "place-link": "#",
-      "place": "Ukrainian Catholic University"
-    },
-    {
-      "icon": "Icon_student-hat",
-      "action": "Went to ",
-      "place-link": "#",
-      "place": "Lviv Physics and Mathematics Lyceum"
-    },
-    {
-      "icon": "Icon_location",
-      "action": "From ",
-      "place-link": "#",
-      "place": "Lviv, Ukraine"
-    },
-    {
-      "icon": "Icon_info-block",
-      "action": "Followed by ",
-      "place-link": "#",
-      "place": "27 people"
-    }
-  ],
-  "featured-photos": [
-    {
-      "photo-link": "#",
-      "image-class": "bigger",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "bigger",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
-    },
-    {
-      "photo-link": "#",
-      "image-class": "smaller",
-      "img-src": "images/featured_photo.jpg"
     }
   ],
 
