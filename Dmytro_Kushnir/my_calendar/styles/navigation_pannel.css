@@ -1,0 +1,6 @@
+(node) util.print is deprecated. Use console.log instead.
+.navigaton {
+  color: red;
+  padding: 5px;
+  display: flex;
+}

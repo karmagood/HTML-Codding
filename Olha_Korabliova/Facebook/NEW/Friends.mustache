@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/Friends.css"/>
+    <title>Friends</title>
+</head>
+<body>
+{{#Profile.Friends}}
+    <section class="Friends">
+        <h4 class="Friends__title">
+            <span class="Friends__icon Icon_friends"></span>Friends
+        </h4>
+        {{#friends}}
+            <a href="{{friend-link}}">
+                <img class="Friends__photo {{image-class}}" src="{{img-src}}"/>
+            </a>
+        {{/friends}}
+    </section>
+{{/Profile.Friends}}
+</body>
+</html>

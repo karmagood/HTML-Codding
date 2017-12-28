@@ -1,0 +1,52 @@
+@import "_variables";
+
+@day_size : 40px;
+@day_margin: 3px;
+
+.calendar {
+    width: (@day_size  + (@day_margin * 2)) * 7;
+    margin: 10px auto;
+    clear: both;
+
+    &_three-day-week {
+        width: (@day_size  + (@day_margin * 2)) * 3;
+        margin: 10px auto;
+    }
+
+    &__noday-filler{
+      color: @day-color;
+      border-radius: @day_margin;
+      margin: @day_margin;
+      height: @day_size;
+      width: @day_size;
+      line-height: @day_size;
+    }
+
+    &__day {
+      //todo use display : none
+        color: @day-color;
+        border-radius: @day_margin;
+        margin: @day_margin;
+        height: @day_size;
+        width: @day_size;
+        line-height: @day_size;
+
+        overflow: hidden;
+        float: left;
+        background: #ccc;
+        text-align: center;
+
+        &_active    { background: @company-color; }
+        &_busy      { background: #00CB79; }
+        &_disabled  { opacity: 0.5; }
+    }
+}
+
+
+
+
+
+
+
+
+

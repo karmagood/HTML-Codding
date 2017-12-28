@@ -1,0 +1,93 @@
+.news-feed__make-post {
+  background-color: #F6F7F9;
+  padding: 10px;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+.news-feed__make-post a {
+  color: #365899;
+}
+.news-feed__make-post .news-feed__make-post_active {
+  color: #4B4F56;
+}
+.news-feed__post-content {
+  padding: 10px;
+  size: 50px;
+  background: white;
+  font-size: 14px;
+  border: #DDDFE2 solid 1px;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+}
+.news-feed__add-content {
+  padding: 15px 0 10px 0;
+  margin-top: 5px;
+  border-top: #DDDFE2 solid 1px;
+}
+.news-feed__add-content a {
+  background-color: #F6F7F9;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #4b4f56;
+  font-weight: bold;
+}
+.news-feed__add-content a:hover {
+  background-color: #DDDFE2;
+}
+.user-profile__info {
+  display: inline-block;
+}
+.user-profile__info a {
+  color: #365899;
+}
+.user-profile__info a.user-profile__name {
+  font-weight: bold;
+}
+.news-feed__user-post {
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px;
+  border: #DDDFE2 solid 1px;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+}
+.news-feed__user-post .user-profile__user-pic {
+  height: 45px;
+  width: 45px;
+}
+.news-feed__user-post .news-feed__user-file {
+  max-width: 100%;
+  max-height: 100%;
+}
+.who-liked i {
+  color: #365899;
+}
+.user-post__like-comm-share i {
+  color: #616770;
+}
+.who-likes-shared-commented {
+  border: #DDDFE2 solid 1px;
+  border-radius: 0 0 3px 3px;
+  background-color: #f7f6f9;
+}
+.who-likes-shared-commented .user-profile__user-pic {
+  height: 40px;
+  width: 40px;
+}
+.who-likes-shared-commented .user-post__likes-shares {
+  padding: 5px 10px 5px 10px;
+}
+.who-likes-shared-commented .user-post__comments {
+  border-top: #DDDFE2 solid 1px;
+  padding: 10px;
+}
+.who-likes-shared-commented .user-post__comments input {
+  border-radius: 10px;
+  border: #DDDFE2 solid 1px;
+  padding: 5px;
+  margin-left: 5px;
+  width: 85%;
+}

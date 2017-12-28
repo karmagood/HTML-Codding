@@ -1,19 +1,19 @@
 import React from 'react';
-import "../style/Icon.css"
+import "../style/Icon.less"
 
 
-const Icon = ({icon}) => (
+const Icon = ({icon, svg}) => (
 
     <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet"
          focusable="false"
-         class="icon">
+         className={"icon icon_" + icon}>
         <g>
-            <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8"></path>
+            <path d={svg}></path>
         </g>
     </svg>
 
 
 
-)
+);
 
 export default Icon;

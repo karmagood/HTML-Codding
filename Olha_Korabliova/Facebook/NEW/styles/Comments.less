@@ -1,0 +1,103 @@
+@import "vars";
+
+.Comments {
+  border: @main-border;
+  border-radius: 0 0 3px 3px;
+  background-color: @milk;
+  color: @main-blue;
+  &__user-pic {
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+    float: left;
+  }
+  &__user-reactions {
+    padding: 5px 10px 5px 10px;
+  }
+  &__user-action {
+    padding-right: 20px;
+    color: @main-blue;
+  }
+  &__user-comments {
+    border-top: @main-border;
+    padding: 10px 0 0 10px;
+    height: 55px;
+  }
+  &__add-item {
+    height: 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: @main-border;
+    padding: 5px;
+    min-width: 400px;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 55px;
+  }
+  &__text-area {
+    width: 290px;
+    padding: 0;
+    border: none;
+  }
+  &__icon1 {
+    width: 16px;
+    height: 16px;
+    float: right;
+    margin: 2px 10px 0 0;
+    background-image: url("../images/icon-sprite1.png");
+  }
+  &__icon9 {
+    height: 18px;
+    width: 18px;
+    margin-top: -3px;
+    margin-right: 3px;
+    display: inline-block;
+    background-image: url("../images/icon-sprite9.png");
+    vertical-align: middle;
+  }
+  &__time {color: @title_time;}
+  &__item {
+    border: black solid 1px;
+    padding: 5px 5px 5px 10px;
+    //margin: 5px;
+  }
+  &__text {
+    width: 95%;
+    color: #000;
+    word-wrap: break-word;
+    margin: 2px;
+  }
+}
+
+.Icon1_smile-gray {
+  background-position: -97px 151px;
+  &:hover {
+    background-position: -114px 151px;
+  }
+}
+
+.Icon1_photo-gray {
+  background-position: -63px 151px;
+  &:hover {
+    background-position: -80px 151px;
+  }
+}
+
+.Icon1_gif-gray {
+  background-position: -131px 151px;
+  &:hover {
+    background-position: -148px 151px;
+  }
+}
+
+.Icon1_stiker-gray {
+  background-position: -216px 151px;
+  &:hover {
+    background-position: -233px 151px;
+  }
+}
+
+.Icon9_like-blue {
+  background-position: -19px 223px;
+}

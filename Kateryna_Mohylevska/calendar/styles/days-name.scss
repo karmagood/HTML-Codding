@@ -1,0 +1,14 @@
+.days-name{
+  padding: 0;
+  top:10px;
+  position: relative;
+  &__name{
+    width: 70px;
+    background: #fff;
+    display: inline-block;
+    color: #848484;
+    text-align: center;
+    margin: 0;
+    border: 1px solid #e8e8e8;
+  }
+}

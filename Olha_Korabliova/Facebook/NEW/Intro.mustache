@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/Intro.css"/>
+    <title>Intro</title>
+</head>
+<body>
+{{#Profile.Intro}}
+    <section class="Intro">
+        <h4 class="Intro__title">
+            <span class="Intro__icon Icon_globe"></span>Intro
+        </h4>
+        <div class="Intro__questions">
+            <a class="Intro__link" href="#"> + What makes you happy?</a>
+        </div>
+        <div class="Intro__education-etc">
+            {{#education-etc}}
+                <p>
+                    <span class="Intro__icon {{icon}}"></span>{{action}}
+                    <a class="Intro__link" href="{{place-link}}">{{place}}</a>
+                </p>
+            {{/education-etc}}
+        </div>
+        <div class="Intro__photos">
+            {{#featured-photos}}
+                <a href="{{photo-link}}">
+                    <img class="Intro__photo {{image-class}}" src="{{img-src}}"/>
+                </a>
+            {{/featured-photos}}
+        </div>
+        <div class="Intro__add">
+            <a class="Intro__add-button" href="#"> + Add Instagram, Websites, Other Links</a>
+        </div>
+    </section>
+{{/Profile.Intro}}
+</body>
+</html>

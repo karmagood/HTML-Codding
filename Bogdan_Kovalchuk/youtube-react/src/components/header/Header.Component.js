@@ -29,7 +29,7 @@ class Header extends React.Component {
                     <div className="Header__buttons-container Header__container">
                         <button className="Header__button"><i className="material-icons">file_upload</i></button>
                         <button className="Header__button"><i className="material-icons">apps</i></button>
-                        <button className="Header__button"><i className="material-icons">add_alert</i></button>
+                        <button className="Header__button"><i className="material-icons">notifications</i></button>
                         <button className="Header__button Header__profile-button">
                             <img className="Header__profile-avatar" src={avatar} alt=""/>
                         </button>

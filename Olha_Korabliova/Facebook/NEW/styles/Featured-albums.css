@@ -1,0 +1,23 @@
+.Featured-albums {
+  padding: 5px 5px 5px 10px;
+  border: #DDDFE2 solid 1px;
+  border-radius: 3px;
+  background-color: white;
+  margin-top: 10px;
+}
+.Featured-albums__title {
+  margin: 10px;
+}
+.Featured-albums__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  display: inline-block;
+  background-image: url("../images/icons-user-page-2.png");
+  background-size: 26px 242px;
+  vertical-align: middle;
+}
+.Icon_albums {
+  background-position: 0 166px;
+}

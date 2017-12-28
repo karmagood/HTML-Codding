@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+}
+
+.Chart {
+    background: url("../pattern.svg");
+    padding: 40px 0;
+}
+
+.Chart__bar {
+    background: #e67e22;
+    margin: 5px;
+}

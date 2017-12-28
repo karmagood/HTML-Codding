@@ -1,5 +1,4 @@
 {
-
   "data-model": [
     {
       "name": "Головна",
@@ -14,8 +13,90 @@
       "class-name": "icon__history-img"
     }
   ],
-
-
+  "featured-channels": [
+    {
+      "name": "Featured channels",
+      "data": [
+        {
+          "channel-name": "Global Records"
+        },
+        {
+          "channel-name": "Global Records"
+        },
+        {
+          "channel-name": "Global Records"
+        }
+      ]
+    },
+    {
+      "name": "Схожі канали",
+      "data": [
+        {
+          "channel-name": "Cat Music"
+        },
+        {
+          "channel-name": "Cat Music"
+        },
+        {
+          "channel-name": "Cat Music"
+        }
+      ]
+    }
+  ],
+  "channel-videos": [
+    {
+      "name":"Популярні завантаження",
+      "videos":[
+        {
+          "url": "https://i.ytimg.com/vi/i7wveOu5hkQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjVyjI739aIKYLut7iYCqlISl4yA",
+          "video-name": "INNA - Yalla | Official Music Video",
+          "views": "238 млн ",
+          "datetime": "2015-02-14",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/i7wveOu5hkQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjVyjI739aIKYLut7iYCqlISl4yA",
+          "video-name": "INNA - Yalla | Official Music Video",
+          "views": "238 млн ",
+          "datetime": "2015-02-14",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/i7wveOu5hkQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjVyjI739aIKYLut7iYCqlISl4yA",
+          "video-name": "INNA - Yalla | Official Music Video",
+          "views": "238 млн ",
+          "datetime": "2015-02-14",
+          "time": "2 роки тому"
+        }
+      ]
+    },
+    {
+      "name":"Музичні відео",
+      "videos":[
+        {
+          "url": "https://i.ytimg.com/vi/i7wveOu5hkQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjVyjI739aIKYLut7iYCqlISl4yA",
+          "video-name": "INNA - Yalla | Official Music Video",
+          "views": "238 млн ",
+          "datetime": "2015-02-14",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/i7wveOu5hkQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjVyjI739aIKYLut7iYCqlISl4yA",
+          "video-name": "INNA - Yalla | Official Music Video",
+          "views": "238 млн ",
+          "datetime": "2015-02-14",
+          "time": "2 роки тому"
+        },
+        {
+          "url": "https://i.ytimg.com/vi/i7wveOu5hkQ/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBjVyjI739aIKYLut7iYCqlISl4yA",
+          "video-name": "INNA - Yalla | Official Music Video",
+          "views": "238 млн ",
+          "datetime": "2015-02-14",
+          "time": "2 роки тому"
+        }
+      ]
+    }
+  ],
   "best-on-youtube": [
     {
       "name": "Музика",
@@ -46,8 +127,6 @@
       "class-name": "icon__spherical-video-img"
     }
   ],
-
-
   "settings-model": [
     {
       "name": "Налаштування",
@@ -62,9 +141,7 @@
       "class-name": "icon__response-img"
     }
   ],
-
-
-  "application-model":[
+  "application-model": [
     {
       "name": "Інфо"
     },
@@ -99,8 +176,6 @@
       "name": "Спробувати нові функції"
     }
   ],
-
-
   "recommended": [
     {
       "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
@@ -167,7 +242,6 @@
       "time": "2 роки тому"
     }
   ],
-
   "channels": [
     {
       "channel-name": "serial",
@@ -246,58 +320,58 @@
       ]
     }
   ],
-  "comments":[
+  "comments": [
     {
-      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "profile-img": "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "name": "Denis Sensey",
       "time": "2 роки тому",
-      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "comment-text": "Маленькие они все прикольные и хорошие:)﻿",
       "number": "15"
     },
     {
-      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "profile-img": "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "name": "Denis Sensey",
       "time": "2 роки тому",
-      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "comment-text": "Маленькие они все прикольные и хорошие:)﻿",
       "number": "15"
     },
     {
-      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "profile-img": "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "name": "Denis Sensey",
       "time": "2 роки тому",
-      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "comment-text": "Маленькие они все прикольные и хорошие:)﻿",
       "number": "15"
     },
     {
-      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "profile-img": "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "name": "Denis Sensey",
       "time": "2 роки тому",
-      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "comment-text": "Маленькие они все прикольные и хорошие:)﻿",
       "number": "15"
     },
     {
-      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "profile-img": "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "name": "Denis Sensey",
       "time": "2 роки тому",
-      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "comment-text": "Маленькие они все прикольные и хорошие:)﻿",
       "number": "15"
     },
     {
-      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "profile-img": "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "name": "Denis Sensey",
       "time": "2 роки тому",
-      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "comment-text": "Маленькие они все прикольные и хорошие:)﻿",
       "number": "15"
     },
     {
-      "profile-img":"https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
+      "profile-img": "https://yt3.ggpht.com/-pED72tp_J4I/AAAAAAAAAAI/AAAAAAAAAAA/NSdSLw9JUtE/s48-c-k-no-mo-rj-c0xffffff/photo.jpg",
       "name": "Denis Sensey",
       "time": "2 роки тому",
-      "comment-text":"Маленькие они все прикольные и хорошие:)﻿",
+      "comment-text": "Маленькие они все прикольные и хорошие:)﻿",
       "number": "15"
     }
   ],
-  "next-videos":[
+  "next-videos": [
     {
       "url": "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg",
       "video-name": "Маленький милый котёнок",

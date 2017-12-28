@@ -1,0 +1,21 @@
+.Profile-bar {
+  background-color: white;
+  border: #DDDFE2 solid 1px;
+  padding: 10px;
+  border-radius: 0 0 2px 2px;
+}
+.Profile-bar__item {
+  position: relative;
+  left: 160px;
+  padding: 11px 25px 11px 25px;
+  border-left: #E9EAED solid 1px;
+  border-right: #E9EAED solid 1px;
+  color: #365899;
+  font-weight: bold;
+}
+.Profile-bar__item.active {
+  color: #4B4F56;
+}
+.Profile-bar__item:hover {
+  background-color: #E9EBEE;
+}

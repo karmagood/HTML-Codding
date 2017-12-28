@@ -1,0 +1,19 @@
+.User__pic {
+  position: relative;
+  top: 55px;
+  left: -15px;
+  height: 120px;
+  width: 120px;
+  border: white solid 4px;
+  border-radius: 2px;
+  z-index: 1;
+}
+.User__name {
+  position: relative;
+  top: -150px;
+  left: 40px;
+  font-weight: bold;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+  font-size: 24px;
+  color: white;
+}

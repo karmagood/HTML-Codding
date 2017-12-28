@@ -1,3 +1,10 @@
+$main-background-color: #fafafa;
+
 .Main{
   position: relative;
+  height: 1000px;
+  background-color: $main-background-color;
+  margin-top: 57px;
+  margin-left: 240px;
+  padding: 0 100px;
 }

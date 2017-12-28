@@ -1,0 +1,56 @@
+@main-color: #ecb84c;
+.Destination{
+    width: 99.9%;
+    height: 100vh;
+    padding: 1px;
+    background-color: #ccc;
+    background-image: url(http://res.cloudinary.com/vcherneha/image/upload/v1512864329/cuba_tourism_photo_of_a_street_naklsd.jpg);
+    background-size: 100%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    &::after{
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: 20px;
+        top: 40px;
+        border-left: 2px solid @main-color;
+        border-right: 2px solid @main-color;
+        border-top:2px solid  @main-color;
+        content: '';
+        z-index: 100;
+    }
+    &__caption{
+        font-size:200px;
+        margin: auto;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+        color:#fff;
+    }
+    &__description{
+        color:#fff;
+        font-size:24px; 
+        text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+        margin: 22px auto;
+        &::before{
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: ~"calc( 50% - 270px)";
+            right: 40px;
+            border-top: 2px solid @main-color;
+            bottom: 18px;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: ~"calc( 50% - 270px)";
+            left: 40px;
+            border-top: 2px solid  @main-color ;
+            bottom: 18px;
+
+        }
+    }
+}

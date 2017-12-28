@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/Navigation.css">
+    <link rel="stylesheet" href="style/Icon.css">
+</head>
+<body>
+    {{#navigation}}
+        <nav class="Navigation">
+            {{#links}}
+                <a class="Navigation__item" href={{{url}}}>
+                    <span class="Icon Icon_{{icon}}"></span>{{title}}
+                </a>
+            {{/links}}
+        </nav>
+    {{/navigation}}
+     <nav class="Navigation">
+        <h3 class="Navigation__title">Швидкий доступ</h3>
+
+        <a class="Navigation__item" href="https://www.facebook.com/?sk=nf">
+            <span class="Icon Icon_plain"></span>ITmomsWP
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/?sk=nf">
+            <span class="Icon Icon_plain"></span>Сучасні Берегині
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/?sk=nf">
+            <span class="Icon Icon_plain"></span>Найкращі розвиваючі ігри
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/?sk=nf">
+            <span class="Icon Icon_plain"></span>Батьківство
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/?sk=nf">
+            <span class="Icon Icon_plain"></span>Вижити в декреті
+        </a>
+    </nav>
+    <nav class="Navigation">
+        <h3 class="Navigation__title">Цікаве</h3>
+
+        <a class="Navigation__item" href="https://www.facebook.com/groups/">
+            <span class="Icon Icon_events"></span>Події
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/groups/">
+            <span class="Icon Icon_groups"></span>Групи
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/groups/">
+            <span class="Icon Icon_friends"></span>Друзі
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/groups/">
+            <span class="Icon Icon_fan_club"></span>Фан-клуби
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/groups/">
+            <span class="Icon Icon_friend-list"></span>Список друзів
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/groups/">
+            <span class="Icon Icon_saved"></span>Збрежені
+        </a>
+        <a class="Navigation__item" href="https://www.facebook.com/groups/">
+            <span class="Icon Icon_direct-translation"></span>
+            Пряма трансяляція
+        </a>
+    </nav>
+     <nav class="Navigation">
+         <h3 class="Navigation__title">Створити</h3>
+         <a class="Navigation__create-items" href="https://www.facebook.com/campaign/landing.php?placement=bkmk_adcr&campaign_id=433405496710037&extra_1=campaign">Реклама</a>
+         <a class="Navigation__create-items" href="https://www.facebook.com/campaign/landing.php?placement=bkmk_adcr&campaign_id=433405496710037&extra_1=campaign">Сторінка</a>
+         <a class="Navigation__create-items" href="https://www.facebook.com/campaign/landing.php?placement=bkmk_adcr&campaign_id=433405496710037&extra_1=campaign">Група</a>
+         <a class="Navigation__create-items" href="https://www.facebook.com/campaign/landing.php?placement=bkmk_adcr&campaign_id=433405496710037&extra_1=campaign">Подія</a>
+     </nav>
+
+</body>
+</html>

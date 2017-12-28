@@ -1,0 +1,48 @@
+.mail-header{
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+}
+.mail-header__main-selector{
+    margin-left: 2%;
+    margin-right: 7%;
+    font-size: 20px;
+    color: #d14836;
+    vertical-align:top;
+    border: transparent;
+}
+.mail-header__mail-selector{
+    width: 5%;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: solid lightgray 1px;
+    border-radius: 2px;
+}
+.mail-header__mail-selector__choice{
+    color: gray;
+    margin-left:-10% ;
+    border: transparent;
+    background-color: transparent;
+}
+.mail-header__refresh-button{
+    width: 5%;
+    height: 30px;
+    margin-left: 1%;
+    background-color: #f0f0f0;
+    border: solid lightgray 1px;
+    color: gray;
+    border-radius: 2px;
+}
+.mail-header__num-of-mails{
+    margin-left: auto;
+}
+[class^="mail-header__nav-button"]{
+    background-color: #f0f0f0;
+    border: solid lightgray 1px;
+    margin-left: 1%;
+    border-radius: 2px;
+}
+
+.mail-header__nav-button4{
+    margin-right: 2%;
+}

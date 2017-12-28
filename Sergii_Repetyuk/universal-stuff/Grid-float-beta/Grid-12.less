@@ -1,0 +1,68 @@
+@column-number : 12;
+@width : 1160px;
+@gutter : 10px;
+
+.spirit () {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  display: block;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+}
+
+.cell    ( @i ) { width: (@width / @column-number) * @i  - ( @gutter * 2) ; }
+.push    ( @i ) { position: relative; left: (@width / @column-number) * @i ; }
+.pull    ( @i ) { position: relative; left: -(@width / @column-number) * @i ; }
+.prefix  ( @i ) { padding-left: (@width / @column-number) * @i ; }
+.suffix  ( @i ) { padding-right: (@width / @column-number) * @i ; }
+
+.generate-cell(@n, @i: 1) when (@i =< @n) {
+  &_@{i}        { .cell(@i);   }
+  &_push_@{i}   { .push(@i);   }
+  &_pull_@{i}   { .pull(@i);   }
+  &_prefix_@{i} { .prefix(@i); }
+  &_suffix_@{i} { .suffix(@i); }
+
+  .generate-cell(@n, (@i + 1));
+}
+
+.Grid-float {
+  margin-left: auto;
+  margin-right: auto;
+  width: @width;
+
+  &_12:after { clear: both; }
+
+  &_12:before,
+  &_12:after {
+    content: '.';
+    .spirit ();
+  }
+
+  &__clear {
+    clear: both;
+    .spirit ();
+  }
+
+  &__cell {
+    display: inline;
+    float: left;
+    margin-left: @gutter;
+    margin-right: @gutter;
+
+    &_clearfix:after { clear: both; }
+
+    &_clearfix:before,
+    &_clearfix:after {
+      content: '.';
+      .spirit ();
+    }
+
+    &_alpha { margin-left: 0; }
+    &_omega { margin-right: 0; }
+
+    .generate-cell(@column-number);
+  }
+}

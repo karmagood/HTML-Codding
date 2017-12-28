@@ -1,0 +1,43 @@
+<section class="main-container__feeds__item">
+    <a href="{{profile-url}}"><img class="main-container__feeds__img" src="{{profile-picture-url}}"
+                                   alt="Profile picture" width="55"
+                                   height="55"></a>
+    <div style="display: inline-block">
+        <h2 class="main-container__feeds__header main-container__feeds__header_main"
+        ><a href="{{profile-url}}"
+            class="main-container__quick__link_more">{{profile-name}}</a>
+            <span class="main-container__feeds__header_action">{{user-action}}</span></h2>
+        <h2 class="main-container__feeds__header main-container__feeds__header_small"><a
+                href="{{extra-info-url}}"
+                style="display: inline;">{{time-info}}
+            тому</a><a href="#" style="display: inline;">
+            {{extra-paragraph}}</a> <i class="fa fa-globe main-container__feeds__icon"></i>
+        </h2>
+
+    </div>
+
+
+    <article class="main-container__feeds__text">{{main-post-info}}
+        <span class="main-container__feeds__text_tag">{{tags}}</span>
+    </article>
+
+    <img class="main-container__feeds__image" src="{{post-images-url}}" width="400"
+    >
+
+    <section class="main-container__feeds__actions">
+        <button class="main-container__feeds__actions__button" type="submit"><i
+                class="fa fa-thumbs-o-up main-container__feeds__actions__button_icon"
+        ></i>Подобається
+        </button>
+        <button class="main-container__feeds__actions__button" type="submit"><i
+                class="fa fa-comments main-container__feeds__actions__button_icon"
+        ></i>Коментувати
+        </button>
+        <button class="main-container__feeds__actions__button" type="submit"><i
+                class="fa fa-share main-container__feeds__actions__button_icon"
+        ></i>Поширити
+        </button>
+    </section>
+
+
+</section>

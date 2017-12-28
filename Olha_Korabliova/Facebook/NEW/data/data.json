@@ -1,0 +1,1267 @@
+{
+  "Index": {
+    "Tool-bar": [
+      {
+        "nav": [
+          {
+            "item": "CS@UCU",
+            "link": "#",
+            "icon-class": "Icon_light-bulb",
+            "status": null
+          },
+          {
+            "item": "Волонтери",
+            "link": "#",
+            "icon-class": "Icon_groups",
+            "status": null
+          },
+          {
+            "item": "Мандрівки",
+            "link": "#",
+            "icon-class": "Icon_house",
+            "status": null
+          },
+          {
+            "item": "ТРЕНІНГ в УКУ",
+            "link": "#",
+            "icon-class": "Icon_fist",
+            "status": null
+          },
+          {
+            "item": "Educational Project",
+            "link": "#",
+            "icon-class": "Icon_education",
+            "status": null
+          },
+          {
+            "item": "Збірка на УКУ",
+            "link": "#",
+            "icon-class": "Icon_win-cup",
+            "status": null
+          }
+        ],
+        "title": "Shortcuts"
+      },
+      {
+        "nav": [
+          {
+            "item": "Events",
+            "link": "#",
+            "icon-class": "Icon_calendar25",
+            "status": null
+          },
+          {
+            "item": "Pages",
+            "link": "#",
+            "icon-class": "Icon_pages",
+            "status": null
+          },
+          {
+            "item": "Groups",
+            "link": "#",
+            "icon-class": "Icon_groups",
+            "status": null
+          },
+          {
+            "item": "Saved",
+            "link": "#",
+            "icon-class": "Icon_saved",
+            "status": null
+          },
+          {
+            "item": "Friend List",
+            "link": "#",
+            "icon-class": "Icon_friend-list",
+            "status": null
+          },
+          {
+            "item": "On This Day",
+            "link": "#",
+            "icon-class": "Icon_on-this-day",
+            "status": null
+          },
+          {
+            "item": "Pokes",
+            "link": "#",
+            "icon-class": "Icon_pokes",
+            "status": null
+          },
+          {
+            "item": "Pages Feed",
+            "link": "#",
+            "icon-class": "Icon_pages-feed",
+            "status": null
+          },
+          {
+            "item": "Photos",
+            "link": "#",
+            "icon-class": "Icon_photos",
+            "status": null
+          },
+          {
+            "item": "Games",
+            "link": "#",
+            "icon-class": "Icon_games",
+            "status": null
+          }
+        ],
+        "title": "Explore"
+      }
+    ],
+    "News": {
+      "header": [
+        {
+          "icon-class": "Icon_pencil",
+          "item": "Make Post",
+          "action": "#",
+          "first": "first",
+          "status": "active"
+        },
+        {
+          "icon-class": "Icon_photo-camera",
+          "item": "Photo/Video Album",
+          "action": "#",
+          "first": null,
+          "status": null
+        },
+        {
+          "icon-class": "Icon_video-camera",
+          "item": "Video",
+          "action": "#",
+          "first": null,
+          "status": null
+        }
+      ],
+      "footer": [
+        {
+          "item": "Photo/Video",
+          "icon-class": "Icon_photo-video-option",
+          "action": "#"
+        },
+        {
+          "item": "Feeling/Activity",
+          "icon-class": "Icon_feeling-activity-option",
+          "action": "#"
+        },
+        {
+          "item": "",
+          "icon-class": "Icon_more-options",
+          "action": "#"
+        }
+      ]
+    },
+    "Article-and-Comments": [
+      {
+        "Article-header": {
+          "user-name": "Eugene Eugene",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": null,
+          "post-time": "01.10.2017"
+        },
+        "Article-content": {
+          "description": "Fall is here @ Rosewood Winery",
+          "file-src": "images/eugene_post_pic.jpg"
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "10 likes",
+            "who-shared": null
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      },
+      {
+        "Article-header": {
+          "user-name": "Юльця Юльця",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": {
+            "preposition": "is in",
+            "info": "Przemysl, Poland",
+            "info-link": "#"
+          },
+          "post-time": "01.10.2017"
+        },
+        "Article-content": {
+          "description": null,
+          "file-src": "images/yultsa_post_pic.jpg"
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+            "who-shared": null
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      },
+      {
+        "Article-header": {
+          "user-name": "Tamila Tamila",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": {
+            "preposition": "with",
+            "info": "Роман Роман",
+            "info-link": "#"
+          },
+          "post-time": "11.10.2017"
+        },
+        "Article-content": {
+          "description": "Бажаємо всім продуктивного дня!",
+          "file-src": "images/tamila_post_pic.jpg"
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "Olya Olya and 55 others",
+            "who-shared": null
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      },
+      {
+        "Article-header": {
+          "user-name": "Me me",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": {
+            "preposition": "in",
+            "info": "Lviv, Ukraine",
+            "info-link": "#"
+          },
+          "post-time": "10.09.2017"
+        },
+        "Article-content": {
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "file-src": null
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "123 likes",
+            "who-shared": "2 shares"
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      }
+    ],
+    "Events": [
+      {
+        "event": "1 request from Anna Anna",
+        "link": "#",
+        "event-time": null,
+        "icon-class": "Icon Icon_request"
+      },
+      {
+        "event": "Екслюзивні семінари...",
+        "link": "#",
+        "event-time": "on Monday",
+        "icon-class": "Icon Icon_calendar23"
+      },
+      {
+        "event": "Anna Anna's birthday",
+        "link": "#",
+        "event-time": "is today",
+        "icon-class": "Icon Icon_calendar21"
+      }
+    ],
+    "Friend-suggest": [
+      {
+        "user-pic": "images/friend_suggestion_avatar.png",
+        "user-name": "Violetta Violetta",
+        "user-link": "#",
+        "mutual-friends": "Max Max is a mutual friend."
+      },
+      {
+        "user-pic": "images/friend_suggestion_avatar.png",
+        "user-name": "Vira Vira",
+        "user-link": "#",
+        "mutual-friends": "Oleg Oleg is a mutual friend."
+      },
+      {
+        "user-pic": "images/friend_suggestion_avatar.png",
+        "user-name": "Roman Roman",
+        "user-link": "#",
+        "mutual-friends": "5 mutual friends."
+      },
+      {
+        "user-pic": "images/friend_suggestion_avatar.png",
+        "user-name": "Mama Tato",
+        "user-link": "#",
+        "mutual-friends": "50 mutual friends."
+      }
+    ]
+  },
+  "Profile": {
+    "News": {
+      "header": [
+        {
+          "icon-class": "Icon_pencil",
+          "item": "Make Post",
+          "action": "#",
+          "first": "first",
+          "status": "active"
+        },
+        {
+          "icon-class": "Icon_photo-camera",
+          "item": "Photo/Video",
+          "action": "#",
+          "first": null,
+          "status": null
+        },
+        {
+          "icon-class": "Icon_video-camera",
+          "item": "Live Video",
+          "action": "#",
+          "first": null,
+          "status": null
+        },
+        {
+          "icon-class": "Icon_life-event",
+          "item": "Life Event",
+          "action": "#",
+          "first": null,
+          "status": null
+        }
+      ],
+      "footer": [
+        {
+          "item": "Photo/Video",
+          "icon-class": "Icon_photo-video-option",
+          "action": "#"
+        },
+        {
+          "item": "Feeling/Activity",
+          "icon-class": "Icon_feeling-activity-option",
+          "action": "#"
+        },
+        {
+          "item": "",
+          "icon-class": "Icon_more-options",
+          "action": "#"
+        }
+      ]
+    },
+    "Article-and-Comments": [
+      {
+        "Article-header": {
+          "user-name": "Olya Korabliova",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": null,
+          "post-time": "01.10.2017"
+        },
+        "Article-content": {
+          "description": "Fall is here @ Rosewood Winery",
+          "file-src": "images/eugene_post_pic.jpg"
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "10 likes",
+            "who-shared": null
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      },
+      {
+        "Article-header": {
+          "user-name": "Olya Korabliova",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": null,
+          "post-time": "01.10.2017"
+        },
+        "Article-content": {
+          "description": null,
+          "file-src": "images/yultsa_post_pic.jpg"
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "Kate Kate, Sofiya Sofiya and 24 others",
+            "who-shared": null
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      },
+      {
+        "Article-header": {
+          "user-name": "Olya Korabliova",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": {
+            "preposition": "with",
+            "info": "Роман Роман",
+            "info-link": "#"
+          },
+          "post-time": "11.10.2017"
+        },
+        "Article-content": {
+          "description": "Бажаємо всім продуктивного дня!",
+          "file-src": "images/tamila_post_pic.jpg"
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "Olya Olya and 55 others",
+            "who-shared": null
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      },
+      {
+        "Article-header": {
+          "user-name": "Olya Korabliova",
+          "user-img": "images/friend_photo_main_page.jpg",
+          "user-link": "#",
+          "additional-info": null,
+          "post-time": "10.09.2017"
+        },
+        "Article-content": {
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "file-src": null
+        },
+        "Comments": {
+          "reactions": {
+            "who-liked": "123 likes",
+            "who-shared": "2 shares"
+          },
+          "items": [
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            },
+            {
+              "user-link": "#",
+              "user-name": "Hero hero",
+              "text": "Hi!"
+            }
+          ]
+        }
+      }
+    ],
+    "Intro": {
+      "education-etc": [
+        {
+          "icon": "Icon_student-hat",
+          "action": "Studied German Language at ",
+          "place-link": "#",
+          "place": "Universität Passau"
+        },
+        {
+          "icon": "Icon_student-hat",
+          "action": "Studies Computer Science at ",
+          "place-link": "#",
+          "place": "Ukrainian Catholic University"
+        },
+        {
+          "icon": "Icon_student-hat",
+          "action": "Went to ",
+          "place-link": "#",
+          "place": "Lviv Physics and Mathematics Lyceum"
+        },
+        {
+          "icon": "Icon_location",
+          "action": "From ",
+          "place-link": "#",
+          "place": "Lviv, Ukraine"
+        },
+        {
+          "icon": "Icon_info-block",
+          "action": "Followed by ",
+          "place-link": "#",
+          "place": "27 people"
+        }
+      ],
+      "featured-photos": [
+        {
+          "photo-link": "#",
+          "image-class": "bigger",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "bigger",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        }
+      ]
+    },
+    "Photos": {
+      "user-photos": [
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        },
+        {
+          "photo-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/featured_photo.jpg"
+        }
+      ]
+    },
+    "Friends": {
+      "friends": [
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        },
+        {
+          "friend-link": "#",
+          "image-class": "smaller",
+          "img-src": "images/friend_avatar_photos_block_user_page.png",
+          "friend-name": "Michael Michael"
+        }
+      ]
+    },
+    "Featured-albums": {}
+  },
+
+  "Languages": [
+    {
+      "status": "active",
+      "language": "English (US)",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Українська",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Русский",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Español",
+      "action": "#"
+    },
+    {
+      "status": null,
+      "language": "Português (Brasil)",
+      "action": "#"
+    }
+  ],
+  "Info-footer": [
+    {
+      "action": "#",
+      "info": "Privacy"
+    },
+    {
+      "action": "#",
+      "info": "Terms"
+    },
+    {
+      "action": "#",
+      "info": "Advertising"
+    },
+    {
+      "action": "#",
+      "info": "Ad Choices"
+    },
+    {
+      "action": "#",
+      "info": "Cookies"
+    },
+    {
+      "action": "#",
+      "info": "More"
+    },
+    {
+      "action": "#",
+      "info": "Facebook © 2017"
+    }
+  ],
+  "Side-bar": {
+    "online-users": [
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/ivan_avatar.jpg",
+        "name": "Ivan Navi",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/maria_avatar.png",
+        "name": "Maria Airam",
+        "online": "Side-bar__icon Icon3_green-dot"
+      }
+    ],
+    "more-contacts": [
+      {
+        "link": "#",
+        "pic": "images/bogdan_avatar.png",
+        "name": "Bogdan Bogdan",
+        "online": null
+      },
+      {
+        "link": "#",
+        "pic": "images/kira_avatar.png",
+        "name": "Kira Arik",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/bogdan_avatar.png",
+        "name": "Bogdan Bogdan",
+        "online": null
+      },
+      {
+        "link": "#",
+        "pic": "images/kira_avatar.png",
+        "name": "Kira Arik",
+        "online": "Side-bar__icon Icon3_green-dot"
+      },
+      {
+        "link": "#",
+        "pic": "images/bogdan_avatar.png",
+        "name": "Bogdan Bogdan",
+        "online": null
+      },
+      {
+        "link": "#",
+        "pic": "images/kira_avatar.png",
+        "name": "Kira Arik",
+        "online": "Side-bar__icon Icon3_green-dot"
+      }
+    ]
+  },
+
+
+
+
+  "user-page-post": [
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/view_village.jpg",
+      "who-liked": "40 likes",
+      "who-shared": "3 Shares"
+    }
+  ],
+  "group-page-post": [
+    {
+      "user-link": "user_page",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Not Me",
+      "add-info": null,
+      "post-time": "11.11.2017",
+      "description": "Fall is here @ Rosewood Winery",
+      "file": "images/recent_group_photo_1.jpg",
+      "who-liked": "40 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/user_avatar.jpeg",
+      "name": "Olya Korabliova",
+      "add-info": null,
+      "post-time": "20.10.2017",
+      "description": ":)",
+      "file": "images/recent_group_photo_2.jpg",
+      "who-liked": "23 likes",
+      "who-shared": null
+    },
+    {
+      "user-link": "user_page",
+      "img-src": "images/friend_photo_main_page.jpg",
+      "name": "Super Man",
+      "add-info": null,
+      "post-time": "01.10.2017",
+      "description": "Good morning people!",
+      "file": "images/recent_group_photo_3.jpg",
+      "who-liked": "120 likes",
+      "who-shared": "9 Shares"
+    }
+  ],
+
+  "user-games": [
+    {
+      "game-link": "#",
+      "img-src": "images/agario_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/jetpack_game.jpg"
+    }
+  ],
+  "games-suggestions": [
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    },
+    {
+      "game-link": "#",
+      "img-src": "images/pool_game.jpg"
+    }
+  ],
+
+  "tool-bar__main-page": [
+    {
+      "title": "Shortcuts",
+      "items": [
+        {
+          "link": "group_page",
+          "icon-class": "fa fa-lightbulb-o",
+          "icon-style": "color: #FDE01F;",
+          "status": null,
+          "name": "CS@UCU"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-star-o",
+          "icon-style": "color: #fde01f;",
+          "status": null,
+          "name": "Волонтери"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-bus",
+          "icon-style": "color: #34495E;",
+          "status": null,
+          "name": "Мандрівки"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-hand-rock-o",
+          "icon-style": "color: #A96930;",
+          "status": null,
+          "name": "ТРЕНІНГ в УКУ"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-book",
+          "icon-style": "color: #990099;",
+          "status": null,
+          "name": "Educational Project Show"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-home",
+          "icon-style": "color: #ff9999;",
+          "status": null,
+          "name": "Збірка на УКУ"
+        }
+      ]
+    },
+    {
+      "title": "Explore",
+      "items": [
+        {
+          "link": "#",
+          "icon-class": "fa fa-calendar",
+          "icon-style": "color: #D14357;",
+          "status": null,
+          "name": "Events"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-bookmark",
+          "icon-style": "color: #D14357;",
+          "status": null,
+          "name": "Pages"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-group",
+          "icon-style": "color: #5D92FF;",
+          "status": null,
+          "name": "Groups"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-archive",
+          "icon-style": "color: #A96930;",
+          "status": null,
+          "name": "Saved"
+        }
+      ]
+    }
+  ],
+  "tool-bar__group-page": [
+    {
+      "title": "Closed Group",
+      "items": [
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "About"
+        },
+        {
+          "link": "group_page",
+          "icon-class": null,
+          "icon-style": null,
+          "status": "active",
+          "name": "Discussion"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Members"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Events"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Videos"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Photos"
+        },
+        {
+          "link": "#",
+          "icon-class": null,
+          "icon-style": null,
+          "status": null,
+          "name": "Files"
+        }
+      ]
+    },
+    {
+      "title": "Shortcuts",
+      "items": [
+        {
+          "link": "#",
+          "icon-class": "fa fa-lightbulb-o",
+          "icon-style": "color: #FDE01F;",
+          "status": null,
+          "name": "CS@UCU"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-star-o",
+          "icon-style": "color: #fde01f;",
+          "status": null,
+          "name": "Волонтери"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-bus",
+          "icon-style": "color: #34495E;",
+          "status": null,
+          "name": "Мандрівки"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-hand-rock-o",
+          "icon-style": "color: #A96930;",
+          "status": null,
+          "name": "ТРЕНІНГ в УКУ"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-book",
+          "icon-style": "color: #990099;",
+          "status": null,
+          "name": "Educational Project Show"
+        },
+        {
+          "link": "#",
+          "icon-class": "fa fa-home",
+          "icon-style": "color: #ff9999;",
+          "status": null,
+          "name": "Збірка на УКУ"
+        }
+      ]
+    }
+  ],
+  "group-user-settings": [
+    {
+      "option": "Joined"
+    },
+    {
+      "option": "Notifications"
+    },
+    {
+      "option": "Share"
+    },
+    {
+      "option": "..."
+    }
+  ],
+  "group-members": [
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    },
+    {
+      "user-link": "#",
+      "user-name": "Miho Miho",
+      "img-src": "images/featured_photo.jpg"
+    }
+  ],
+  "group-recent-pics": [
+    {
+      "link": "#",
+      "img-src": "images/recent_group_photo_1.jpg"
+    },
+    {
+      "link": "#",
+      "img-src": "images/recent_group_photo_2.jpg"
+    },
+    {
+      "link": "#",
+      "img-src": "images/recent_group_photo_3.jpg"
+    }
+  ],
+  "group-ad": [
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    },
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    },
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    },
+    {
+      "group-cover": "images/view_village.jpg",
+      "group-name": "MMMMM",
+      "members": "35 members",
+      "link": "#"
+    }
+  ]
+}

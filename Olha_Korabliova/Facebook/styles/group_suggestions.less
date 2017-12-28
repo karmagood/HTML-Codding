@@ -1,0 +1,37 @@
+@import "vars";
+
+.ad-feed__short-group-info {
+  & p{
+    font-size: 12px;
+    color: @title_time;
+    padding-left: 5px;
+  }
+  & form {
+    position: relative;
+    top: -50px;
+    float: right;
+    padding: 10px;
+    & button {
+      color: @dark-grey;
+    }
+  }
+}
+
+.ad-feed__group-name {
+  color: @main-blue;
+  margin: 5px;
+}
+
+.ad-feed__group-cover {
+  padding: 0;
+  background-image: url("../images/cover_photo.jpg");
+  background-size: cover;
+  height: 100px;
+  border-radius: 3px 3px 0 0;
+}
+
+.ad-feed__group-ads {
+  margin-bottom: 10px;
+  border: @main-border;
+  border-radius: 3px;
+}

@@ -3,17 +3,18 @@
 <head>
     <meta content="UTF-8">
     <title>YouTube</title>
+    <link rel="shortcut icon" href="https://www.youtube.com/yts/img/favicon_144-vfliLAfaB.png">
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/main-page/header-layout.css">
-    <link rel="stylesheet" href="styles/main-page/header-layout__search.css">
-    <link rel="stylesheet" href="styles/main-page/header-layout__logo.css">
-    <link rel="stylesheet" href="styles/main-page/header-layout__google-options.css">
-    <link rel="stylesheet" href="styles/main-page/main.css">
-    <link rel="stylesheet" href="styles/main-page/main__header.css">
-    <link rel="stylesheet" href="styles/main-page/main__article.css">
-    <link rel="stylesheet" href="styles/main-page/aside-guide-content__block.css">
-    <link rel="stylesheet" href="styles/main-page/aside__block.css">
-    <link rel="stylesheet" href="styles/main-page/aside__footer.css">
+    <link rel="stylesheet" href="styles/header-layout.css">
+    <link rel="stylesheet" href="styles/header-layout__search.css">
+    <link rel="stylesheet" href="styles/header-layout__logo.css">
+    <link rel="stylesheet" href="styles/header-layout__google-options.css">
+    <link rel="stylesheet" href="styles/main-layout.css">
+    <link rel="stylesheet" href="styles/video-block__header.css">
+    <link rel="stylesheet" href="styles/video-block__main-content.css">
+    <link rel="stylesheet" href="styles/aside-guide-content__block.css">
+    <link rel="stylesheet" href="styles/aside__block.css">
+    <link rel="stylesheet" href="styles/aside__footer.css">
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,8 +22,9 @@
 </head>
 <body>
 <header class="header-layout">
-    <button class="hamburger-menu"></button>
+
     <div class="header-layout__logo">
+        <button class="hamburger-menu"></button>
         <a class="header-layout__logo header-layout__logo_img" href="index"><img src="images/youtube_icon.png" alt=""></a>
         <a class="header-layout__logo_text" href="index">YouTube<sup class="header-layout__logo_country-code">UA</sup></a>
 
@@ -40,19 +42,19 @@
         <button class="header-layout__google-options_img"></button>
     </div>
 </header>
-<main class="main">
-    <div class="main__content">
-        {{#chapters}}
-            <article class="article">
-                <header class="article__header">
-                    <div class="article__header_logo">
+<main class="main-layout">
+    <div class="main-layout__content">
+        {{#video-block}}
+            <article class="video-block">
+                <header class="video-block__header">
+                    <div class="video-block__logo">
                         <a href="channel_page">
-                            <img src="https://yt3.ggpht.com/tjt5PzE-7BcPS7jLMfPuTinVAmIk3dzMwwnUDrltyaGhY0zmfCokxGMuwq_GH-TCyz2UuWwOw-s5Ge8y=s88-nd-c-c0xffffffff-rj-k-no" alt="">
-                            <span class="article__header_title">Голос – тема</span>
+                            <img src="https://yt3.ggpht.com/pHwZj3tkgC3SJFbuqebBoT7WtVcIwAijEmcbe9VDCauv9ZlG6uS2zjvZQUSO7SfFqa3xjYqGp_L4QbM7=s88-nd-c-c0xffffffff-rj-k-no" alt="">
+                            <span class="video-block__title">Поп-музика</span>
                         </a>
                         <small>Рекомендований канал</small>
                     </div>
-                    <div class="article__header_button">
+                    <div class="video-block__button">
                         <button>
                             <span>Підписатися</span>
                             <span>24 тис.</span>
@@ -60,15 +62,15 @@
                         <button class="hamburger-menu"></button>
                     </div>
                 </header>
-                <div class="article__main-content">
+                <div class="video-block__main-content">
                     {{#video-list}}
-                        <div class="article__main-content_video">
-                            <img src="{{cover-image-url}}" alt="">
-                            <div class="article__main-content_description">
+                        <div class="video-block__video">
+                            <img class="video-block__cover-img" src="{{cover-image-url}}" alt="">
+                            <div class="video-block__description">
                                 <h3><a href="video_page">{{title}}</a></h3>
                                 <a href="">
                                     <span>{{subtitle}}</span>
-                                    <span class="article__view-count">{{view-count}} млн перегляди</span>
+                                    <span class="video-block__view-count">{{view-count}} млн перегляди</span>
                                     <span>{{publication-date}}</span>
                                 </a>
                             </div>
@@ -76,102 +78,68 @@
                     {{/video-list}}
                 </div>
             </article>
-        {{/chapters}}
+        {{/video-block}}
     </div>
 </main>
 <aside class="aside-guide-content">
+    {{#aside-content}}
     <div class="aside-guide-content__block aside-guide-content__block_home">
+        {{#home-block}}
         <a class="menu-block" href="">
             <span class="menu-block__icon"></span>
-            <span class="menu-block__text menu-block__text_home">Головна</span>
+            <span class="menu-block__text menu-block__text_home">{{title}}</span>
         </a>
-        <a class="menu-block" href="">
-            <span class="menu-block__icon"></span>
-            <span class="menu-block__text">Популярне</span>
-        </a>
-        <a class="menu-block" href="">
-            <span class="menu-block__icon"></span>
-            <span class="menu-block__text">Підписки</span>
-        </a>
+    {{/home-block}}
     </div>
     <div class="aside-guide-content__block">
         <h3 class="aside-guide-content__block_title">Бібліотека</h3>
+        {{#library-block}}
         <a class="menu-block" href="">
             <span class="menu-block__icon"></span>
-            <span class="menu-block__text">Історія</span>
+            <span class="menu-block__text_hidden">{{title}}</span>
         </a>
-        <a class="menu-block" href="">
-            <span class="menu-block__icon"></span>
-            <span class="menu-block__text_hidden">Переглянути пізніше</span>
-        </a>
+        {{/library-block}}
     </div>
     <div class="aside-guide-content__block">
         <h3 class="aside-guide-content__block_title">Підписки</h3>
+        {{#subscribe-block}}
         <a class="menu-block" href="">
-            <img class="menu-block__img" src="//i.ytimg.com/i/esO4-UStBz-iTTgkY645yw/1.jpg" alt="" height="24"
+            <img class="menu-block__img" src="{{cover-img}}" alt="" height="24"
                  width="24">
-            <span class="menu-block__text menu-block__text_hidden">Популярні на YouTube</span>
+            <span class="menu-block__text menu-block__text_hidden">{{title}}</span>
         </a>
-        <a class="menu-block" href="">
-            <img class="menu-block__img" src="//i.ytimg.com/i/-9-kyTW8ZkZNDHQJ6FgpwQ/1.jpg" alt="" height="24"
-                 width="24">
-            <span class="menu-block__text">Музика</span>
-        </a>
-        <a class="menu-block" href="">
-            <img class="menu-block__img" src="//i.ytimg.com/i/Egdi0XIXXZ-qJOFPf4JSKw/1.jpg" alt="" height="24"
-                 width="24">
-            <span class="menu-block__text">Спорт</span>
-        </a>
-        <a class="menu-block" href="">
-            <img class="menu-block__img" src="//i.ytimg.com/i/OpNcN46UbXVtpKMrmU4Abg/1.jpg" alt="" height="24"
-                 width="24">
-            <span class="menu-block__text">Комп'ютерні ігри</span>
-        </a>
+        {{/subscribe-block}}
     </div>
+    {{#films-block}}
     <div class="aside-guide-content__block">
         <a class="menu-block" href="">
-            <img class="menu-block__img" src="//s.ytimg.com/yts/img/innertube/guide/add_channel_guide-vflSJDanE.png"
+            <img class="menu-block__img" src="{{cover-img}}"
                  alt="">
-            <span class="menu-block__text_hidden">Переглянути канали</span>
+            <span class="menu-block__text_hidden">{{title}}</span>
         </a>
     </div>
+    {{/films-block}}
     <div class="aside-guide-content__block">
+        {{#settings-block}}
         <a class="menu-block" href="">
-            <span class="menu-block__icon"></span>
-            <span class="menu-block__text">Фільми YouTube</span>
+            <img class="menu-block__img" src="{{cover-img}}"
+                 alt="">
+            <span class="menu-block__text">{{title}}</span>
         </a>
-    </div>
-    <div class="aside-guide-content__block">
-        <a class="menu-block" href="">
-            <span class="menu-block__icon"></span>
-            <span class="menu-block__text">Налаштування</span>
-        </a>
-        <a class="menu-block" href="">
-            <span class="menu-block__icon"></span>
-            <span class="menu-block__text">Довідка</span>
-        </a>
-        <a class="menu-block" href="">
-            <span class="menu-block__icon"></span>
-            <span class="menu-block__text">Надіслати відгук</span>
-        </a>
+        {{/settings-block}}
     </div>
     <div class="aside-guide-content__footer">
-        <a href="">Інфо</a>
-        <a href="">Преса</a>
-        <a href="">Авторські права</a>
-        <a href="">Творці</a>
-        <a href="">Реклама</a>
-        <a href="">Розробники</a>
-        <a href="">+YouTube</a>
+        {{#footer-block}}
+        <a href="">{{title}}</a>
+    {{/footer-block}}
     </div>
     <div class="aside-guide-content__footer aside-guide-content__footer_conditions">
-        <a href="">Умови</a>
-        <a href="">Конфіденційність</a>
-        <a href="">Політика та безпека</a>
-        <a href="">Спробувати нові функції</a>
+        {{#conditions-block}}
+        <a href="">{{title}}</a>
+        {{/conditions-block}}
     </div>
     <div class="aside-guide-content__footer aside-guide-content__footer_ownership">© 2017 YouTube, LLC</div>
-
+    {{/aside-content}}
 </aside>
 </body>
 </html>

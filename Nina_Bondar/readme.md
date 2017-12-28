@@ -1,9 +1,16 @@
-### TODO: 
-###### *31.10/2017*
-- [ ] структурувати завдання згідно вимог описаних в [readme](https://github.com/WebDevCourse2017/HTML-Codding/blob/master/readme.md)
+# Nina Bondar & Sergey Dubovyk superb team folder
 
-- [ ] папка .sass-cache це службова папка для sass препроцесора. Цю папку не варто добавляти до репозиторію. Видали її, і добав в `.gitignore` файл.
-- [ ] Зараз у тебе трішки не вірний підхід до організації бему. Спробуй дотримуватись підходу "в одному .scss файлі один блок". [Тут](https://github.com/WebDevCourse2017/HTML-Codding/tree/master/Mykhailo_Ivankiv/BEM) можеш підглянути на приклад організації проекту. (Зверни увагу, на файлик common.less, це не блок, а опис загальних, базових стилів проекту)  
+## Intro
 
-### Загальні зауваження 
-- Пиши осмислені коміт меседжі *bem&scss progress(HW 5)* - поганий опис коміту. [Ось](https://medium.com/@steveamaza/how-to-write-a-proper-git-commit-message-e028865e5791) прості рекомендації, щодо того, як писати коміт повідомлення. 
+This is a folder for a web-development progress of a great team by:
+
+* Sergey Dubovyk
+* Nina Bondar
+
+## Structure
+
+Folders are named according to the global repository naming convention.
+
+## License
+
+All the source code in this folder is published under GNU LGPLv3.

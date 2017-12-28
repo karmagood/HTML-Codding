@@ -1,0 +1,24 @@
+.tool-bar {
+  position: fixed;
+  top: 50px;
+  width: 240px;
+  line-height: 25px;
+  overflow: auto;
+  bottom: 0;
+  padding-left: 10px;
+  font-size: 14px;
+  left: calc(25% - 300px);
+}
+.news-feed {
+  position: relative;
+  margin: 10px;
+  left: calc(25% - 60px);
+  top: 45px;
+  width: 500px;
+}
+.ad-feed {
+  top: 45px;
+}
+.ad-feed__block {
+  padding: 5px;
+}
